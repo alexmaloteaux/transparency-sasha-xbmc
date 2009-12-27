@@ -1,0 +1,194 @@
+<window id="2600">
+	<defaultcontrol always="true">5999</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath>$INFO[Skin.String(Custom_Back_Weather_Folder)]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<visible>Skin.HasSetting(Enable_Custom_Back_Weather) + Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath>special://skin/images/backgrounds/weather-conditional/$INFO[Weather.FanartCode]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		</control>
+		<control type="largeimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>special://skin/images/backgrounds/background-weather.jpg</texture>
+			<aspectratio>scale</aspectratio>
+			<visible>!Skin.HasSetting(Enable_Custom_Back_Weather) + Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+		</control>
+		<control type="button" id="5999">
+			<description>fake button to steal focus</description>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>-</onclick>
+		</control>
+		<control type="group">
+			<include>ContentFade</include>
+			<include>Window_OpenClose_Right_Panel_Animation</include>
+			<include condition="IsEmpty(Weather.Plugin)">weather</include>
+			<include condition="!IsEmpty(Weather.Plugin)">weatherplus</include>
+		</control>
+		<control type="group">
+			<posy>23</posy>
+			<include>ContentFade</include>
+			<include>Window_OpenClose_Left_Panel_Animation</include>
+			<include condition="IsEmpty(Weather.Plugin)">CommonNowPlaying</include>
+			<control type="group" id="9000">
+				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
+				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
+				<animation effect="slide" start="0,0" end="176,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="251,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>-16</posy>
+					<height>16</height>
+					<texture border="0,0,15,0">shadow-top2.png</texture>
+					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
+					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
+				</control>
+				<control type="spincontrolex" id="3">
+					<description>change location button</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<font>-</font>
+					<textoffsetx>5</textoffsetx>
+					<include>ButtonCommonValues</include>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>603</onup>
+					<ondown>2</ondown>
+				</control>
+				<control type="label">
+					<description>change location label</description>
+					<posx>13</posx>
+					<posy>0</posy>
+					<height>44</height>
+					<width>270</width>
+					<font>font-20</font>
+					<label>21873</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="2">
+					<description>Refresh button</description>
+					<posx>0</posx>
+					<posy>45</posy>
+					<include>ButtonCommonValues</include>
+					<label>103</label>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>3</onup>
+					<ondown>5</ondown>
+				</control>
+				<control type="button" id="5">
+					<description>Custom Weather Script Button</description>
+					<posx>0</posx>
+					<posy>90</posy>
+					<label>$INFO[Skin.String(WeatherScript_Label)]</label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
+					<include>ButtonCommonValues</include>
+					<visible>Skin.HasSetting(WeatherScript_Enable) + !IsEmpty(Skin.String(WeatherScript_Label))</visible>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+				</control>
+				<control type="button" id="4">
+					<description>Settings button</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<label>5</label>
+					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+					<include>ButtonCommonValues</include>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>5</onup>
+					<ondown>610</ondown>
+					<animation effect="slide" end="0,-45" time="0" condition="!Control.IsVisible(5)">Conditional</animation>
+				</control>
+				<control type="button" id="610">
+					<description>Fake Button to fix Player Controls Navigation</description>
+					<onup>4</onup>
+					<ondown>603</ondown>
+					<visible>false</visible>
+				</control>
+				<control type="group">
+					<posx>0</posx>
+					<posy>180</posy>
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">conditional</animation>
+					<include>CommonNowPlaying_Controls</include>
+				</control>
+				<control type="button" id="611">
+					<description>Fake Button to fix Player Controls Navigation</description>
+					<onup>607</onup>
+					<ondown>3</ondown>
+					<visible>false</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>182</posy>
+					<height>16</height>
+					<texture border="0,0,5,0">shadow-bottom2.png</texture>
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">conditional</animation>
+					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
+					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
+					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<include>ContentFade</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>74</height>
+				<texture>Header.png</texture>
+			</control>
+			<control type="label">
+				<include>WindowTitleCommons</include>
+				<label>XBMC - $LOCALIZE[8]</label>
+			</control>
+			<control type="label" id="1">
+				<description>weather location label</description>
+				<posx>12r</posx>
+				<posy>5</posy>
+				<width>500</width>
+				<height>20</height>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<info>Weather.Location</info>
+				<include>Window_OpenClose_Animation</include>
+			</control>
+		</control>
+	</controls>
+</window>
