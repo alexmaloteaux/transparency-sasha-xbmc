@@ -1,0 +1,226 @@
+<window id="1112" type="dialog">
+	<defaultcontrol>61</defaultcontrol>
+	<include>dialogeffect</include>
+	<controls>
+		<control type="group">
+			<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+			<posx>130</posx>
+			<posy>76</posy>
+			<control type="label">
+				<description>Item Title value</description>
+				<posx>40</posx>
+				<posy>45</posy>
+				<width>930</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>darkblue</textcolor>
+				<label>Transparency!</label>
+				<font>font-32</font>
+			</control>
+			<control type="image">
+				<posx>90</posx>
+				<posy>84</posy>
+				<width>830</width>
+				<height>2</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="label">
+				<posx>50</posx>
+				<posy>108</posy>
+				<width>910</width>
+				<height>400</height>
+				<label>[B]![/B]</label>
+				<textcolor>white</textcolor>
+				<font>font-480</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="true">Conditional</animation>
+			</control>
+			<control type="scrollbar" id="61">
+				<posx>950</posx>
+				<posy>100</posy>
+				<width>20</width>
+				<height>420</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+				<onleft>61</onleft>
+				<onright>61</onright>
+				<ondown>61</ondown>
+				<onup>61</onup>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+			<control type="textbox" id="5">
+				<description>textarea</description>
+				<posx>50</posx>
+				<posy>115</posy>
+				<width>910</width>
+				<height>400</height>
+				<font>font-23</font>
+				<align>center</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>61</pagecontrol>
+				<autoscroll time="1000" delay="5000" repeat="7500">true</autoscroll>
+				<label>
+
+
+
+[COLOR=darkblue][B]Transparency![/B][/COLOR]
+
+[B]Would Like To Thank:[/B]
+
+
+
+
+[COLOR=darkblue]Hosting Service:[/COLOR]
+TheQuestor [COLOR=lightblue]- xbmc nightly builds[/COLOR]
+dynamix [COLOR=lightblue]- alternate download site[/COLOR]
+Bram77 [COLOR=lightblue]- xbmc xbox skins[/COLOR]
+
+
+[COLOR=darkblue]Graphics:[/COLOR]
+Burncycle [COLOR=lightblue]- partial home menu button design[/COLOR]
+
+
+[COLOR=darkblue]Fonts:[/COLOR]
+tikkiew [COLOR=lightblue]- bigger font sizes[/COLOR]
+
+
+[COLOR=darkblue]Media Flagging:[/COLOR]
+krypt2nite
+Imaginos
+ccMatrix
+
+
+[COLOR=darkblue]Weather Fanart:[/COLOR]
+timdog82001 [COLOR=lightblue]- Weather Fanart Pack[/COLOR]
+Silverxxx [COLOR=lightblue]- Home Weather Fanart[/COLOR]
+
+
+[COLOR=darkblue]Animated Weather Icons:[/COLOR]
+Silverxxx
+
+
+[COLOR=darkblue]ClearArt:[/COLOR]
+reaven
+
+
+[COLOR=darkblue]cdArt:[/COLOR]
+reaven
+
+
+[COLOR=darkblue]Record Label Logo's:[/COLOR]
+Ninjamawwe
+
+
+[COLOR=darkblue]Studio Logo's:[/COLOR]
+Cosmor
+
+
+[COLOR=darkblue]Background Animation:[/COLOR]
+CF2009
+
+
+[COLOR=darkblue]Trailer Preview:[/COLOR]
+anoobie
+
+
+[COLOR=darkblue]Recently Added Script:[/COLOR]
+Nuka1195
+
+
+[COLOR=darkblue]OSD Subtitle Script skin code:[/COLOR]
+Amet
+
+
+[COLOR=darkblue]Home Fanart Backdrops:[/COLOR]
+francyboy [COLOR=lightblue]- for the idea & Movies backdrop[/COLOR]
+Steveb [COLOR=lightblue]- for the TV Shows & Music backdrops[/COLOR]
+
+
+[COLOR=darkblue]Translations:[/COLOR]
+queeup [COLOR=lightblue]- Turkish[/COLOR]
+macchina [COLOR=lightblue]- German[/COLOR]
+francyboy [COLOR=lightblue]- Italian[/COLOR]
+darknoir [COLOR=lightblue]- French[/COLOR]
+Shalashaska [COLOR=lightblue]- French[/COLOR]
+jpf55 [COLOR=lightblue]- French[/COLOR]
+bardenas [COLOR=lightblue]- Spanish[/COLOR]
+junk [COLOR=lightblue]- Swedish[/COLOR]
+blittan [COLOR=lightblue]- Swedish[/COLOR]
+taxigps [COLOR=lightblue]- Chinese (Simple)[/COLOR]
+xbs08 [COLOR=lightblue]- Portuguese[/COLOR]
+dynamix [COLOR=lightblue]- Dutch[/COLOR]
+LinarSavion [COLOR=lightblue]- Hebrew[/COLOR]
+gugahoi [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
+rbonon [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
+medvedic [COLOR=lightblue]- Serbian[/COLOR]
+r1ctus [COLOR=lightblue]- Hungarian[/COLOR]
+airplanez [COLOR=lightblue]- Korean[/COLOR]
+YOkerman [COLOR=lightblue]- Norwegian[/COLOR]
+Requiem [COLOR=lightblue]- Norwegian[/COLOR]
+Jokkvahl [COLOR=lightblue]- Norwegian[/COLOR]
+ydatografida [COLOR=lightblue]- Greek[/COLOR]
+Dannermax [COLOR=lightblue]- Danish[/COLOR]
+perfecblue [COLOR=lightblue]- Chinese (Traditional)[/COLOR]
+ffws [COLOR=lightblue]- Spanish (Mexico)[/COLOR]
+davidw [COLOR=lightblue]- German (Austria)[/COLOR]
+dml7 [COLOR=lightblue]- Polish[/COLOR]
+Mika Pirinen [COLOR=lightblue]- Finnish[/COLOR]
+
+and everyone else who helped out translating Transparency!
+
+
+[COLOR=darkblue]Credits:[/COLOR]
+djh_[COLOR=lightblue] - Aeon[/COLOR]
+digitalhigh[COLOR=lightblue] - Serenity[/COLOR]
+ekim232[COLOR=lightblue] - The Operation MOD[/COLOR]
+scarfa[COLOR=lightblue] - Rapier[/COLOR]
+djdafreund[COLOR=lightblue] - Back-Row[/COLOR]
+
+i'm sure i've borrowed a few lines of &lt;code&gt; from all of you.  ;-)
+
+
+
+
+[COLOR=darkblue]Each and Everyone of You:[/COLOR]
+For Submitting Bug Reports
+Making Feature Request
+Posting New Idea's
+
+...And All The Thanx I've Received!
+
+
+
+
+
+
+[COLOR=darkblue]LAST BUT NOT LEAST:[/COLOR]
+Jezz_X[COLOR=lightblue] - For the great PM3.HD skin![/COLOR]
+
+
+
+
+
+
+
+
+
+[COLOR=darkblue][B]Transparency![/B][/COLOR]
+A FanArt Skin by ronie
+
+
+
+
+
+
+				</label>
+			</control>
+		</control>
+	</controls>
+</window>

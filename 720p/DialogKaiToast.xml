@@ -1,0 +1,49 @@
+<window id="107">
+	<include>dialogeffect</include>
+	<coordinates>
+		<system>1</system>
+		<posx>440</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<visible>![Window.IsVisible(136) | Window.IsVisible(145) | Window.IsVisible(104)]</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>35</height>
+				<texture border="16,0,16,0">popup-small.png</texture>
+			</control>
+			<control type="image" id="400">
+				<description>avatar</description>
+				<posx>20</posx>
+				<posy>2</posy>
+				<width>30</width>
+				<height>30</height>
+				<aspectratio>keep</aspectratio>
+				<texture>DefaultFile.png</texture>
+			</control>
+			<control type="label" id="401">
+				<description>Line 1 Label</description>
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>16</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-15b</font>
+			</control>
+			<control type="label" id="402">
+				<description>Line 2 Label</description>
+				<posx>50</posx>
+				<posy>15</posy>
+				<width>350</width>
+				<height>16</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-15b</font>
+			</control>
+		</control>
+	</controls>
+</window>
