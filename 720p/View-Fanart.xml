@@ -91,6 +91,7 @@
 	<include name="Fanart-Videos_Root_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(56) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
 			<control type="image">
 				<posx>0</posx>
@@ -114,6 +115,10 @@
 				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(56) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>10</posx>
 				<posy>480</posy>
@@ -127,6 +132,7 @@
 	<include name="Fanart-Videos_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(56) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
 			<control type="image">
@@ -245,38 +251,6 @@
 				<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
 				<scrollspeed>0</scrollspeed>
 			</control>
-			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!Window.IsVisible(28)</visible>
-			</control>
-			<control type="image">
-				<posx>-6</posx>
-				<posy>398</posy>
-				<width>263</width>
-				<height>328</height>
-				<texture>dvdcase.png</texture>
-				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
-				<bordersize>16</bordersize>
-				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>30</posx>
-				<posy>412</posy>
-				<width>198</width>
-				<height>288</height>
-				<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
-				<texture diffuse="gamecase-diffuse.png">$INFO[Listitem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
 			<control type="button" id="7005">
 				<posx>776</posx>
 				<posy>596</posy>
@@ -337,7 +311,45 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>Control.IsVisible(56) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+			<control type="image">
+				<posx>38</posx>
+				<posy>418</posy>
+				<width>198</width>
+				<height>288</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<visible>!Window.IsVisible(28)</visible>
+			</control>
+			<control type="image">
+				<posx>-6</posx>
+				<posy>398</posy>
+				<width>263</width>
+				<height>328</height>
+				<texture>dvdcase.png</texture>
+				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
+				<bordersize>16</bordersize>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<visible>!Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<posy>412</posy>
+				<width>198</width>
+				<height>288</height>
+				<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+				<texture diffuse="gamecase-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<visible>Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
+		<control type="group">
 			<visible>Control.IsVisible(56) + Container.Content(TVShows)</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay16</include>
 			<control type="image">
 				<posx>0</posx>
@@ -390,14 +402,6 @@
 				<visible>!Window.IsVisible(Videofiles)</visible>
 			</control>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<visible>stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
 				<posx>25</posx>
 				<posy>532</posy>
 				<width>350</width>
@@ -424,15 +428,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + Container.Content(Seasons)</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay16</include>
-			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
-				<width>875</width>
-				<height>186</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<visible>Control.IsVisible(56) + Container.Content(TVShows)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>38</posx>
 				<posy>418</posy>
@@ -441,24 +438,17 @@
 				<texture>$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(56) + Container.Content(Seasons)</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay16</include>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
-				<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>-6</posx>
-				<posy>398</posy>
-				<width>263</width>
-				<height>328</height>
-				<texture>dvdcase.png</texture>
-				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
-				<bordersize>16</bordersize>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<posx>0</posx>
+				<posy>522</posy>
+				<width>875</width>
+				<height>186</height>
+				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="image">
 				<posx>273</posx>
@@ -509,7 +499,40 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>Control.IsVisible(56) + Container.Content(Seasons)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>38</posx>
+				<posy>418</posy>
+				<width>198</width>
+				<height>288</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>38</posx>
+				<posy>418</posy>
+				<width>198</width>
+				<height>288</height>
+				<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>-6</posx>
+				<posy>398</posy>
+				<width>263</width>
+				<height>328</height>
+				<texture>dvdcase.png</texture>
+				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
+				<bordersize>16</bordersize>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
+		<control type="group">
 			<visible>Control.IsVisible(56) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
+			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay18</include>
 			<control type="image">
 				<posx>0</posx>
@@ -527,27 +550,6 @@
 				<height>151</height>
 				<texture border="10">underlay.png</texture>
 				<visible>[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
-			</control>
-			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
-			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<visible>stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>531</posy>
-				<width>298</width>
-				<height>168</height>
-				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
-				<bordertexture border="9">video-shadow.png</bordertexture>
-				<bordersize>8</bordersize>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>317</posx>
@@ -692,6 +694,31 @@
 				<visible>!Skin.HasSetting(Enable_MusicVideos_Media_Flags) + Container.Content(MusicVideos) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(56) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
+			<control type="image">
+				<posx>38</posx>
+				<posy>418</posy>
+				<width>198</width>
+				<height>288</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>531</posy>
+				<width>298</width>
+				<height>168</height>
+				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
+				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<bordertexture border="9">video-shadow.png</bordertexture>
+				<bordersize>8</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
 	</include>
 	<include name="Fanart-Music">
 		<control type="list" id="55">
@@ -813,6 +840,7 @@
 	<include name="Fanart-Music_Root_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(55) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)]</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
 			<control type="image">
 				<posx>0</posx>
@@ -849,6 +877,7 @@
 	<include name="Fanart-Artists_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
 			<control type="image">
 				<posx>0</posx>
@@ -921,6 +950,7 @@
 	<include name="Fanart-AlbumsSongs_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(55) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)]</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay111</include>
 			<control type="image">
 				<posx>0</posx>
@@ -1290,6 +1320,7 @@
 	<include name="Fanart-ProgramsPicturesScripts-Extras">
 		<control type="group">
 			<visible>Control.IsVisible(598) + [Window.IsVisible(1) | [Window.IsVisible(2) + Skin.HasSetting(ContentComics)] | Window.IsVisible(20)]</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
 				<posx>0</posx>
@@ -1356,6 +1387,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(598) + Window.IsVisible(2) + Skin.HasSetting(ContentPictures)</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
 				<posx>0</posx>
