@@ -316,6 +316,7 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
+			<include>Window_OpenClose_Header_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
 			<control type="image">
 				<posx>0</posx>
@@ -339,7 +340,6 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[Container(20).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages]</label>
-				<include>Window_OpenClose_Animation</include>
 				<visible>Control.HasFocus(20) | Control.HasFocus(30)</visible>
 			</control>
 			<control type="label">
@@ -353,7 +353,6 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[Container(21).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(21).CurrentPage]/$INFO[Container(21).NumPages]</label>
-				<include>Window_OpenClose_Animation</include>
 				<visible>Control.HasFocus(21) | Control.HasFocus(31)</visible>
 			</control>
 		</control>

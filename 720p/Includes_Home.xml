@@ -89,10 +89,6 @@
 		<animation effect="slide" start="-300,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" end="-300,0" start="0,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 	</include>
-	<include name="Window_OpenClose_Footer_Animation">
-		<animation effect="slide" start="0,70" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-0,70" time="400" tween="quadratic" easing="out">WindowClose</animation>
-	</include>
 	<include name="homestatsinfo">
 		<animation type="Visible">
 			<effect type="fade" start="0" end="100" time="300" />

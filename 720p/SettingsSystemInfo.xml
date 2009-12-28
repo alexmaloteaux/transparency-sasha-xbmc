@@ -228,17 +228,20 @@
 				</control>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>74</height>
-			<texture>Header.png</texture>
-		</control>
-		<control type="label">
-			<include>WindowTitleCommons</include>
-			<label>XBMC - $LOCALIZE[130]</label>
+		<control type="group">
+			<include>Window_OpenClose_Header_Animation</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>74</height>
+				<texture>Header.png</texture>
+			</control>
+			<control type="label">
+				<include>WindowTitleCommons</include>
+				<label>XBMC - $LOCALIZE[130]</label>
+			</control>
 		</control>
 	</controls>
 </window>

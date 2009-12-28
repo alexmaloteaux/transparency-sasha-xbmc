@@ -253,7 +253,6 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<label>$INFO[Container.NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages]</label>
-			<include>Window_OpenClose_Animation</include>
 		</control>
 	</include>
 	<include name="CommonNowPlaying">
@@ -850,6 +849,5 @@
 		<scroll>false</scroll>
 		<align>left</align>
 		<aligny>center</aligny>
-		<include>Window_OpenClose_Animation</include>
 	</include>
 </includes>
