@@ -4,7 +4,7 @@
 	<views>55,50,51,53,59,500,599</views>
 	<controls>
 		<control type="largeimage">
-			<description>album and song fanart</description>
+			<description>album and song level fanart</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -16,7 +16,7 @@
 			<visible>!IsEmpty(Fanart.Image)</visible>
 		</control>
 		<control type="largeimage">
-			<description>artist fanart</description>
+			<description>artist level fanart</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>

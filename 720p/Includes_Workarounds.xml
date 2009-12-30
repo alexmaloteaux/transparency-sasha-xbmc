@@ -108,7 +108,8 @@
 			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/fanart.jpg</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image)) + Skin.HasSetting(FanartNoVisualisation)</visible>
+			<include>VisibleFadeEffect</include>
+			<visible>Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image)) + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation)]</visible>
 		</control>
 	</include>
 	<include name="fanartslideshow-musicvisualisation">
