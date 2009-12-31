@@ -124,7 +124,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>750</fadetime>
-			<include>backgroundanimation2</include>
+			<include condition="!Skin.HasSetting(FanartSlideshowAnimation)">backgroundanimation2</include>
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + Skin.HasSetting(FanartSlideshowNoVisualisation)</visible>
 		</control>

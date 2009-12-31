@@ -269,6 +269,20 @@
 						<width>880</width>
 						<height>35</height>
 						<font>font-20</font>
+						<label>- $LOCALIZE[12379]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(FanartSlideshowAnimation)</onclick>
+						<selected>!Skin.HasSetting(FanartSlideshowAnimation)</selected>
+						<enable>Skin.HasSetting(FanartSlideshowNoVisualisation)</enable>
+					</control>
+					<control type="radiobutton" id="117">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
 						<label>31148</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -280,7 +294,7 @@
 						<onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
 						<selected>Skin.HasSetting(CDWallNoVisualisation)</selected>
 					</control>
-					<control type="radiobutton" id="117">
+					<control type="radiobutton" id="118">
 						<width>880</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -293,7 +307,7 @@
 						<onclick>Skin.ToggleSetting(CDArt)</onclick>
 						<selected>!Skin.HasSetting(CDArt)</selected>
 					</control>
-					<control type="button" id="118">
+					<control type="button" id="119">
 						<description>Music Folder Path</description>
 						<width>880</width>
 						<height>35</height>
@@ -307,7 +321,7 @@
 						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | !Skin.HasSetting(CDArt)</enable>
 					</control>
-					<control type="button" id="119">
+					<control type="button" id="120">
 						<description>CD Wall Folder Path</description>
 						<width>880</width>
 						<height>35</height>
@@ -321,12 +335,12 @@
 						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(CDWallNoVisualisation)</enable>
 					</control>
-					<control type="image" id="120">
+					<control type="image" id="121">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="121">
+					<control type="radiobutton" id="122">
 						<description>Fullscreen Trailer</description>
 						<width>880</width>
 						<height>35</height>
@@ -340,12 +354,12 @@
 						<onclick>Skin.ToggleSetting(Fullscreen_Trailer)</onclick>
 						<selected>Skin.HasSetting(Fullscreen_Trailer)</selected>
 					</control>
-					<control type="image" id="122">
+					<control type="image" id="123">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="123">
+					<control type="radiobutton" id="124">
 						<description>Startup Playlist</description>
 						<width>880</width>
 						<height>35</height>
@@ -359,7 +373,7 @@
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
-					<control type="button" id="124">
+					<control type="button" id="125">
 						<description>Startup Playlist Path</description>
 						<width>880</width>
 						<height>35</height>
@@ -373,12 +387,12 @@
 						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
-					<control type="image" id="125">
+					<control type="image" id="126">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="126">
+					<control type="radiobutton" id="127">
 						<description>SafeMode</description>
 						<width>880</width>
 						<height>35</height>
@@ -392,7 +406,7 @@
 						<onclick>Skin.ToggleSetting(SafeMode)</onclick>
 						<selected>Skin.HasSetting(SafeMode)</selected>
 					</control>
-					<control type="radiobutton" id="127">
+					<control type="radiobutton" id="128">
 						<description>Hate Transparency</description>
 						<width>880</width>
 						<height>35</height>
@@ -406,17 +420,17 @@
 						<onclick>Skin.ToggleSetting(HateTransparency)</onclick>
 						<selected>Skin.HasSetting(HateTransparency)</selected>
 					</control>
-					<control type="group" id="128">
+					<control type="group" id="129">
 						<width>880</width>
 						<height>35</height>
-						<control type="grouplist" id="129">
+						<control type="grouplist" id="130">
 							<orientation>horizontal</orientation>
 							<width>880</width>
 							<height>35</height>
 							<itemgap>0</itemgap>
-							<onup>127</onup>
+							<onup>128</onup>
 							<ondown>102</ondown>
-							<control type="radiobutton" id="130">
+							<control type="radiobutton" id="131">
 								<description>Transparency Level 20</description>
 								<width>176</width>
 								<height>35</height>
@@ -436,7 +450,7 @@
 								<selected>Skin.HasSetting(Trans_20)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="131">
+							<control type="radiobutton" id="132">
 								<description>Transparency Level 40</description>
 								<width>176</width>
 								<height>35</height>
@@ -456,7 +470,7 @@
 								<selected>Skin.HasSetting(Trans_40)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 								</control>
-							<control type="radiobutton" id="132">
+							<control type="radiobutton" id="133">
 								<description>Transparency Level 60</description>
 								<width>176</width>
 								<height>35</height>
@@ -476,7 +490,7 @@
 								<selected>Skin.HasSetting(Trans_60)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="133">
+							<control type="radiobutton" id="134">
 								<description>Transparency Level 80</description>
 								<width>176</width>
 								<height>35</height>
@@ -496,7 +510,7 @@
 								<selected>Skin.HasSetting(Trans_80)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="134">
+							<control type="radiobutton" id="135">
 								<description>Transparency Level 100</description>
 								<width>176</width>
 								<height>35</height>
