@@ -133,7 +133,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(56) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
 			<control type="image">
 				<posx>0</posx>
@@ -532,7 +532,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(56) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
+			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay18</include>
 			<control type="image">
 				<posx>0</posx>
@@ -697,7 +697,6 @@
 		<control type="group">
 			<visible>Control.IsVisible(56) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
 			<control type="image">
 				<posx>38</posx>
 				<posy>418</posy>
