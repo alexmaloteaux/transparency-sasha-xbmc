@@ -775,7 +775,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.1.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.1.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -838,7 +838,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.2.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.2.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -901,7 +901,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.3.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.3.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -964,7 +964,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.4.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.4.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -1027,7 +1027,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.5.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.5.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -1090,7 +1090,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.6.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.6.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -1153,7 +1153,7 @@
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label fallback="-">$INFO[Window(Weather).Property(Daily.7.Date)]</label>
+					<label fallback="-">$INFO[Window(Weather).Property(Daily.7.ShortDate)]</label>
 				</control>
 				<control type="label">
 					<posx>0</posx>
