@@ -262,7 +262,6 @@
 					<ondown>50</ondown>
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
-					<onclick>Action(Queue,25)</onclick>
 					<onclick>RunScript(special://home/scripts/Home Theater Experience/default.py)</onclick>
 					<visible>Skin.HasSetting(hometheater) + Container.Content(Movies)</visible>
 				</control>
