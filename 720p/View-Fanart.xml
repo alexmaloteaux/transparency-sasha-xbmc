@@ -285,16 +285,6 @@
 				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(28) + Skin.HasSetting(Fullscreen_Trailer)</visible>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			</control>
-			<control type="videowindow">
-				<description>trailer preview</description>
-				<posx>270</posx>
-				<posy>200</posy>
-				<width>578</width>
-				<height>325</height>
-				<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
-				<visible>Player.HasVideo + !Window.IsVisible(VideoFiles) + !Window.IsVisible(28) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
-			</control>
 			<control type="group">
 				<visible>Control.IsVisible(56) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(28)] + !Window.IsVisible(VideoFiles)</visible>
 				<control type="grouplist">
@@ -308,6 +298,21 @@
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				</control>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(56) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<control type="videowindow">
+				<description>trailer preview</description>
+				<posx>270</posx>
+				<posy>200</posy>
+				<width>578</width>
+				<height>325</height>
+				<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<visible>Player.HasVideo + !Window.IsVisible(VideoFiles) + !Window.IsVisible(28) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -928,22 +933,22 @@
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
-		</control>
-		<control type="textbox">
-			<description>Description Value for Artist</description>
-			<posx>225</posx>
-			<posy>605</posy>
-			<width>636</width>
-			<height>85</height>
-			<font>font-19</font>
-			<align>justify</align>
-			<textcolor>white</textcolor>
-			<pagecontrol>9999999999</pagecontrol>
-			<label>$INFO[ListItem.Property(Artist_Description)]</label>
-			<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
-			<animation effect="fade" time="200">Visible</animation>
-			<animation effect="fade" time="200">Hidden</animation>
+			<control type="textbox">
+				<description>Description Value for Artist</description>
+				<posx>225</posx>
+				<posy>605</posy>
+				<width>636</width>
+				<height>85</height>
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<pagecontrol>9999999999</pagecontrol>
+				<label>$INFO[ListItem.Property(Artist_Description)]</label>
+				<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
+				<animation effect="fade" time="200">Visible</animation>
+				<animation effect="fade" time="200">Hidden</animation>
+			</control>
 		</control>
 	</include>
 	<include name="Fanart-AlbumsSongs_Extras">
