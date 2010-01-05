@@ -406,17 +406,6 @@
 				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(Videofiles)</visible>
 			</control>
-			<control type="image">
-				<posx>25</posx>
-				<posy>532</posy>
-				<width>350</width>
-				<height>166</height>
-				<aspectratio align="left" aligny="center">keep</aspectratio>
-				<align>left</align>
-				<texture diffuse="banner-diffuse.png">$INFO[Listitem.icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Window.IsVisible(Videofiles) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
 				<posx>40</posx>
@@ -435,6 +424,17 @@
 		<control type="group">
 			<visible>Control.IsVisible(56) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>25</posx>
+				<posy>532</posy>
+				<width>350</width>
+				<height>166</height>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<align>left</align>
+				<texture diffuse="banner-diffuse.png">$INFO[Listitem.icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>Window.IsVisible(Videofiles) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
 			<control type="image">
 				<posx>38</posx>
 				<posy>418</posy>
