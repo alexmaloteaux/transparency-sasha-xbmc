@@ -223,8 +223,11 @@
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
 			</control>
 		</control>
+	</include>
+	<include name="Icons-Movies_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(57) + !Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay24</include>
 			<control type="image">
 				<posx>330</posx>

@@ -7,7 +7,7 @@
 			<height>240</height>
 			<visible>Control.IsVisible(500)</visible>
 			<texture>white-reflect.png</texture>
-			<include>Window_OpenClose_Animation</include>
+			<include>VisibleFadeEffect3</include>
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
@@ -588,11 +588,11 @@
 			</control>
 		</control>
 		<control type="group" id="7000">
-			<include>Window_OpenClose_Animation</include>
 			<posy>260</posy>
 			<visible>Control.IsVisible(500) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
 			<control type="group">
 				<posx>80</posx>
+				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>36</posx>
@@ -627,6 +627,7 @@
 			</control>
 			<control type="group">
 				<posx>180</posx>
+				<include>Window_OpenClose_Visible_Coverflow(-2)_Animation</include>
 				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>36</posx>
@@ -661,6 +662,7 @@
 			</control>
 			<control type="group">
 				<posx>280</posx>
+				<include>Window_OpenClose_Visible_Coverflow(-1)_Animation</include>
 				<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>36</posx>
@@ -695,6 +697,7 @@
 			</control>
 			<control type="group">
 				<posx>900</posx>
+				<include>Window_OpenClose_Visible_Coverflow(3)_Animation</include>
 				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>36</posx>
@@ -729,6 +732,7 @@
 			</control>
 			<control type="group">
 				<posx>800</posx>
+				<include>Window_OpenClose_Visible_Coverflow(2)_Animation</include>
 				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>36</posx>
@@ -763,6 +767,7 @@
 			</control>
 			<control type="group">
 				<posx>700</posx>
+				<include>Window_OpenClose_Visible_Coverflow(1)_Animation</include>
 				<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>36</posx>
@@ -797,6 +802,7 @@
 			</control>
 			<control type="group">
 				<posx>490</posx>
+				<include>Window_OpenClose_Visible_Coverflow(0)_Animation</include>
 				<control type="image">
 					<posx>36</posx>
 					<posy>5</posy>
@@ -861,7 +867,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>15</posy>
-			<include>Window_OpenClose_Animation</include>
+			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(500)</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay11</include>
 			<control type="image">
@@ -934,7 +940,7 @@
 			<height>300</height>
 			<visible>Control.IsVisible(500)</visible>
 			<texture>white-reflect.png</texture>
-			<include>Window_OpenClose_Animation</include>
+			<include>VisibleFadeEffect3</include>
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
@@ -2091,11 +2097,11 @@
 			</control>
 		</control>
 		<control type="group" id="7000">
-			<include>Window_OpenClose_Animation</include>
 			<posy>345</posy>
 			<visible>Control.IsVisible(500) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
 			<control type="group">
 				<posx>20</posx>
+				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
 				<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>34</posx>
@@ -2166,6 +2172,7 @@
 			</control>
 			<control type="group">
 				<posx>120</posx>
+				<include>Window_OpenClose_Visible_Coverflow(-2)_Animation</include>
 				<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>34</posx>
@@ -2236,6 +2243,7 @@
 			</control>
 			<control type="group">
 				<posx>220</posx>
+				<include>Window_OpenClose_Visible_Coverflow(-1)_Animation</include>
 				<animation effect="rotatey" center="200" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>34</posx>
@@ -2306,6 +2314,7 @@
 			</control>
 			<control type="group">
 				<posx>900</posx>
+				<include>Window_OpenClose_Visible_Coverflow(3)_Animation</include>
 				<animation effect="rotatey" center="1280" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>34</posx>
@@ -2376,6 +2385,7 @@
 			</control>
 			<control type="group">
 				<posx>800</posx>
+				<include>Window_OpenClose_Visible_Coverflow(2)_Animation</include>
 				<animation effect="rotatey" center="1180" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>34</posx>
@@ -2446,6 +2456,7 @@
 			</control>
 			<control type="group">
 				<posx>700</posx>
+				<include>Window_OpenClose_Visible_Coverflow(1)_Animation</include>
 				<animation effect="rotatey" center="1080" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
 					<posx>34</posx>
@@ -2516,6 +2527,7 @@
 			</control>
 			<control type="group">
 				<posx>460</posx>
+				<include>Window_OpenClose_Visible_Coverflow(0)_Animation</include>
 				<control type="image">
 					<posx>34</posx>
 					<posy>28</posy>
@@ -2610,21 +2622,13 @@
 					<height>318</height>
 					<texture></texture>
 				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
-					<width>360</width>
-					<height>327</height>
-					<texture></texture>
-				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
 			<posx>0</posx>
 			<posy>15</posy>
-			<include>Window_OpenClose_Animation</include>
+			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(500)</visible>
-
 			<control type="image">
 				<posx>0</posx>
 				<posy>13</posy>

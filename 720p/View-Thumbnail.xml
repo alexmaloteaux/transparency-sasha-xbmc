@@ -715,8 +715,11 @@
 				</control>
 			</focusedlayout>
 		</control>
+	</include>
+	<include name="Thumbnail-Videos_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(53) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
+			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
 			<control type="image">
 				<posx>330</posx>

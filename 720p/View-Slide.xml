@@ -558,232 +558,240 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>489</posy>
-			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
-			<control type="image">
-				<posx>-169</posx>
-				<posy>129</posy>
-				<width>72</width>
-				<height>101</height>
-				<texture>$INFO[Container(596).ListItem(-7).Icon]</texture>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-6)_Animation</include>
+				<control type="image">
+					<posx>-48</posx>
+					<posy>128</posy>
+					<width>73</width>
+					<height>102</height>
+					<texture>$INFO[Container(596).ListItem(-6).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>-58</posx>
+					<posy>126</posy>
+					<width>85</width>
+					<height>105</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(-6).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>-159</posx>
-				<posy>127</posy>
-				<width>84</width>
-				<height>104</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-7).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-5)_Animation</include>
+				<control type="image">
+					<posx>37</posx>
+					<posy>126</posy>
+					<width>74</width>
+					<height>104</height>
+					<texture>$INFO[Container(596).ListItem(-5).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>27</posx>
+					<posy>125</posy>
+					<width>86</width>
+					<height>106</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(-5).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>-48</posx>
-				<posy>128</posy>
-				<width>73</width>
-				<height>102</height>
-				<texture>$INFO[Container(596).ListItem(-6).Icon]</texture>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-4)_Animation</include>
+				<control type="image">
+					<posx>124</posx>
+					<posy>122</posy>
+					<width>77</width>
+					<height>108</height>
+					<texture>$INFO[Container(596).ListItem(-4).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>113</posx>
+					<posy>120</posy>
+					<width>89</width>
+					<height>111</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(-4).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>-58</posx>
-				<posy>126</posy>
-				<width>85</width>
-				<height>105</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-6).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-3)_Animation</include>
+				<control type="image">
+					<posx>214</posx>
+					<posy>114</posy>
+					<width>83</width>
+					<height>116</height>
+					<texture>$INFO[Container(596).ListItem(-3).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>202</posx>
+					<posy>112</posy>
+					<width>97</width>
+					<height>119</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(-3).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>37</posx>
-				<posy>126</posy>
-				<width>74</width>
-				<height>104</height>
-				<texture>$INFO[Container(596).ListItem(-5).Icon]</texture>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-2)_Animation</include>
+				<control type="image">
+					<posx>312</posx>
+					<posy>97</posy>
+					<width>94</width>
+					<height>132</height>
+					<texture>$INFO[Container(596).ListItem(-2).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>299</posx>
+					<posy>95</posy>
+					<width>110</width>
+					<height>136</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>27</posx>
-				<posy>125</posy>
-				<width>86</width>
-				<height>106</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-5).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-1)_Animation</include>
+				<control type="image">
+					<posx>425</posx>
+					<posy>65</posy>
+					<width>117</width>
+					<height>164</height>
+					<texture>$INFO[Container(596).ListItem(-1).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>409</posx>
+					<posy>64</posy>
+					<width>136</width>
+					<height>167</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(-1).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>124</posx>
-				<posy>122</posy>
-				<width>77</width>
-				<height>108</height>
-				<texture>$INFO[Container(596).ListItem(-4).Icon]</texture>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(0)_Animation</include>
+				<control type="image">
+					<posx>567</posx>
+					<posy>0</posy>
+					<width>164</width>
+					<height>228</height>
+					<texture>$INFO[Container(596).ListItem(0).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>545</posx>
+					<posy>-2</posy>
+					<width>190</width>
+					<height>233</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(0).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>113</posx>
-				<posy>120</posy>
-				<width>89</width>
-				<height>111</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-4).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(1)_Animation</include>
+				<control type="image">
+					<posx>751</posx>
+					<posy>65</posy>
+					<width>117</width>
+					<height>164</height>
+					<texture>$INFO[Container(596).ListItem(1).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>735</posx>
+					<posy>64</posy>
+					<width>136</width>
+					<height>167</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(1).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>214</posx>
-				<posy>114</posy>
-				<width>83</width>
-				<height>116</height>
-				<texture>$INFO[Container(596).ListItem(-3).Icon]</texture>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(2)_Animation</include>
+				<control type="image">
+					<posx>884</posx>
+					<posy>97</posy>
+					<width>94</width>
+					<height>132</height>
+					<texture>$INFO[Container(596).ListItem(2).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>871</posx>
+					<posy>95</posy>
+					<width>110</width>
+					<height>136</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(2).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>202</posx>
-				<posy>112</posy>
-				<width>97</width>
-				<height>119</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-3).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(3)_Animation</include>
+				<control type="image">
+					<posx>993</posx>
+					<posy>114</posy>
+					<width>83</width>
+					<height>116</height>
+					<texture>$INFO[Container(596).ListItem(3).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>981</posx>
+					<posy>112</posy>
+					<width>97</width>
+					<height>119</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(3).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>312</posx>
-				<posy>97</posy>
-				<width>94</width>
-				<height>132</height>
-				<texture>$INFO[Container(596).ListItem(-2).Icon]</texture>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(4)_Animation</include>
+				<control type="image">
+					<posx>1089</posx>
+					<posy>122</posy>
+					<width>77</width>
+					<height>108</height>
+					<texture>$INFO[Container(596).ListItem(4).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>1078</posx>
+					<posy>120</posy>
+					<width>89</width>
+					<height>111</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(4).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>299</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>136</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(5)_Animation</include>
+				<control type="image">
+					<posx>1177</posx>
+					<posy>126</posy>
+					<width>74</width>
+					<height>104</height>
+					<texture>$INFO[Container(596).ListItem(5).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>1167</posx>
+					<posy>125</posy>
+					<width>86</width>
+					<height>106</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(5).Label,..)</visible>
+				</control>
 			</control>
-			<control type="image">
-				<posx>425</posx>
-				<posy>65</posy>
-				<width>117</width>
-				<height>164</height>
-				<texture>$INFO[Container(596).ListItem(-1).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>409</posx>
-				<posy>64</posy>
-				<width>136</width>
-				<height>167</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(-1).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>567</posx>
-				<posy>0</posy>
-				<width>164</width>
-				<height>228</height>
-				<texture>$INFO[Container(596).ListItem(0).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>545</posx>
-				<posy>-2</posy>
-				<width>190</width>
-				<height>233</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(0).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>751</posx>
-				<posy>65</posy>
-				<width>117</width>
-				<height>164</height>
-				<texture>$INFO[Container(596).ListItem(1).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>735</posx>
-				<posy>64</posy>
-				<width>136</width>
-				<height>167</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(1).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>884</posx>
-				<posy>97</posy>
-				<width>94</width>
-				<height>132</height>
-				<texture>$INFO[Container(596).ListItem(2).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>871</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>136</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(2).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>993</posx>
-				<posy>114</posy>
-				<width>83</width>
-				<height>116</height>
-				<texture>$INFO[Container(596).ListItem(3).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>981</posx>
-				<posy>112</posy>
-				<width>97</width>
-				<height>119</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(3).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>1089</posx>
-				<posy>122</posy>
-				<width>77</width>
-				<height>108</height>
-				<texture>$INFO[Container(596).ListItem(4).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>1078</posx>
-				<posy>120</posy>
-				<width>89</width>
-				<height>111</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(4).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>1177</posx>
-				<posy>126</posy>
-				<width>74</width>
-				<height>104</height>
-				<texture>$INFO[Container(596).ListItem(5).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>1167</posx>
-				<posy>125</posy>
-				<width>86</width>
-				<height>106</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(5).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>1263</posx>
-				<posy>128</posy>
-				<width>73</width>
-				<height>102</height>
-				<texture>$INFO[Container(596).ListItem(6).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>1253</posx>
-				<posy>126</posy>
-				<width>85</width>
-				<height>105</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(6).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>1348</posx>
-				<posy>129</posy>
-				<width>72</width>
-				<height>101</height>
-				<texture>$INFO[Container(596).ListItem(7).Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>1338</posx>
-				<posy>127</posy>
-				<width>84</width>
-				<height>104</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem(7).Label,..)</visible>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(6)_Animation</include>
+				<control type="image">
+					<posx>1263</posx>
+					<posy>128</posy>
+					<width>73</width>
+					<height>102</height>
+					<texture>$INFO[Container(596).ListItem(6).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>1253</posx>
+					<posy>126</posy>
+					<width>85</width>
+					<height>105</height>
+					<texture>dvdcase.png</texture>
+					<visible>!stringcompare(ListItem(6).Label,..)</visible>
+				</control>
 			</control>
 		</control>
 		<control type="wraplist" id="596">
@@ -818,7 +826,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>15</posy>
-			<include>Window_OpenClose_Animation</include>
+			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(596)</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay114</include>
 			<control type="image">

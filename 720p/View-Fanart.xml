@@ -853,14 +853,6 @@
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>480</posy>
-				<width>214</width>
-				<height>214</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
-			</control>
 			<control type="label">
 				<posx>257</posx>
 				<posy>614</posy>
@@ -877,6 +869,18 @@
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(55) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)]</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>10</posx>
+				<posy>480</posy>
+				<width>214</width>
+				<height>214</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>$INFO[Listitem.Icon]</texture>
+			</control>
+		</control>
 	</include>
 	<include name="Fanart-Artists_Extras">
 		<control type="group">
@@ -889,35 +893,6 @@
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
-			</control>
-			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
-				<width>210</width>
-				<height>210</height>
-				<aspectratio scalediffuse="keep">scale</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
-				<bordersize>6</bordersize>
-				<visible>stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
-				<width>210</width>
-				<height>210</height>
-				<texture>thumb-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
-				<width>210</width>
-				<height>210</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<bordersize>6</bordersize>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>225</posx>
@@ -950,6 +925,39 @@
 				<animation effect="fade" time="200">Hidden</animation>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<aspectratio scalediffuse="keep">scale</aspectratio>
+				<texture>$INFO[Listitem.Icon]</texture>
+				<bordersize>6</bordersize>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<texture>thumb-shadow.png</texture>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<bordersize>6</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
 	</include>
 	<include name="Fanart-AlbumsSongs_Extras">
 		<control type="group">
@@ -964,54 +972,6 @@
 				<texture border="10">underlay.png</texture>
 			</control>
 			<include condition="!Window.IsVisible(Musicfiles) + !Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
-			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
-				<width>210</width>
-				<height>210</height>
-				<aspectratio scalediffuse="keep">scale</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
-				<bordersize>6</bordersize>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>34</posx>
-				<posy>499</posy>
-				<width>208</width>
-				<height>208</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[Listitem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Window.IsVisible(Musicfiles) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>34</posx>
-				<posy>499</posy>
-				<width>208</width>
-				<height>208</height>
-				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>8</posx>
-				<posy>492</posy>
-				<width>245</width>
-				<height>225</height>
-				<texture>cdcase-shadow.png</texture>
-				<description>music fanart view</description>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos)</visible>
-			</control>
-			<control type="image">
-				<posx>12</posx>
-				<posy>496</posy>
-				<width>236</width>
-				<height>214</height>
-				<texture>cdcase.png</texture>
-				<description>music fanart view</description>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos)</visible>
-			</control>
 			<control type="label">
 				<posx>262</posx>
 				<posy>577</posy>
@@ -1144,18 +1104,6 @@
 				<label>$INFO[MusicPlayer.Time]</label>
 				<visible>ListItem.IsPlaying + !Container.Content(MusicVideos)</visible>
 			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>562</posy>
-				<width>256</width>
-				<height>144</height>
-				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
-				<bordertexture border="9">video-shadow.png</bordertexture>
-				<bordersize>8</bordersize>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
 			<control type="label">
 				<posx>278</posx>
 				<posy>572</posy>
@@ -1230,6 +1178,70 @@
 				<label>$INFO[ListItem.year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
 				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(55) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)]</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<aspectratio scalediffuse="keep">scale</aspectratio>
+				<texture>$INFO[Listitem.Icon]</texture>
+				<bordersize>6</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>34</posx>
+				<posy>499</posy>
+				<width>208</width>
+				<height>208</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="thumb-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>Window.IsVisible(Musicfiles) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>34</posx>
+				<posy>499</posy>
+				<width>208</width>
+				<height>208</height>
+				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>492</posy>
+				<width>245</width>
+				<height>225</height>
+				<texture>cdcase-shadow.png</texture>
+				<description>music fanart view</description>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos)</visible>
+			</control>
+			<control type="image">
+				<posx>12</posx>
+				<posy>496</posy>
+				<width>236</width>
+				<height>214</height>
+				<texture>cdcase.png</texture>
+				<description>music fanart view</description>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>562</posy>
+				<width>256</width>
+				<height>144</height>
+				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
+				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<bordertexture border="9">video-shadow.png</bordertexture>
+				<bordersize>8</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 	</include>
@@ -1348,6 +1360,10 @@
 				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(598) + [Window.IsVisible(1) | [Window.IsVisible(2) + Skin.HasSetting(ContentComics)] | Window.IsVisible(20)]</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>10</posx>
 				<posy>414</posy>
@@ -1399,70 +1415,6 @@
 				<width>875</width>
 				<height>115</height>
 				<texture border="10">underlay.png</texture>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/bmp.png</texture>
-				<visible>substring(Listitem.Filename,.bmp)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/gif.png</texture>
-				<visible>substring(Listitem.Filename,.gif)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/jpg.png</texture>
-				<visible>substring(Listitem.Filename,.jpg) | substring(Listitem.Filename,.jpeg,right)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/png.png</texture>
-				<visible>substring(Listitem.Filename,.png)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/tga.png</texture>
-				<visible>substring(Listitem.Filename,.tga)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/tiff.png</texture>
-				<visible>substring(Listitem.Filename,.tiff)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/wmf.png</texture>
-				<visible>substring(Listitem.Filename,.wmf)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>510</posy>
-				<width>210</width>
-				<height>210</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<visible>stringcompare(Listitem.Label,..) | !Control.IsVisible(7010)</visible>
 			</control>
 			<control type="label">
 				<posx>247</posx>
@@ -1533,6 +1485,74 @@
 				<ondown>7009</ondown>
 				<onleft>9000</onleft>
 				<onright>598</onright>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(598) + Window.IsVisible(2) + Skin.HasSetting(ContentPictures)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/bmp.png</texture>
+				<visible>substring(Listitem.Filename,.bmp)</visible>
+			</control>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/gif.png</texture>
+				<visible>substring(Listitem.Filename,.gif)</visible>
+			</control>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/jpg.png</texture>
+				<visible>substring(Listitem.Filename,.jpg) | substring(Listitem.Filename,.jpeg,right)</visible>
+			</control>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/png.png</texture>
+				<visible>substring(Listitem.Filename,.png)</visible>
+			</control>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/tga.png</texture>
+				<visible>substring(Listitem.Filename,.tga)</visible>
+			</control>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/tiff.png</texture>
+				<visible>substring(Listitem.Filename,.tiff)</visible>
+			</control>
+			<control type="image" id="7010">
+				<posx>50</posx>
+				<posy>510</posy>
+				<width>156</width>
+				<height>210</height>
+				<texture>special://skin/images/foldericons/pictures/wmf.png</texture>
+				<visible>substring(Listitem.Filename,.wmf)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>510</posy>
+				<width>210</width>
+				<height>210</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(Listitem.Label,..) | !Control.IsVisible(7010)</visible>
 			</control>
 		</control>
 	</include>

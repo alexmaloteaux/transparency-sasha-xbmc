@@ -1135,29 +1135,6 @@
 							</control>
 						</focusedlayout>
 					</control>
-					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay26</include>
-					<control type="image">
-						<posx>330</posx>
-						<posy>618</posy>
-						<width>626</width>
-						<height>42</height>
-						<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
-						<visible>PVR.HasTimer</visible>
-					</control>
-					<control type="label">
-						<description>Next timer date</description>
-						<posx>300</posx>
-						<posy>623</posy>
-						<width>680</width>
-						<height>35</height>
-						<font>font-20</font>
-						<align>center</align>
-						<aligny>center</aligny>
-						<scroll>false</scroll>
-						<textcolor>white</textcolor>
-						<label>$INFO[PVR.NextTimer]</label>
-						<visible>PVR.HasTimer</visible>
-					</control>
 				</control>
 				<!-- EGP search group -->
 				<control type="group">
@@ -1327,10 +1304,10 @@
 		</control>
 		<control type="group">
 			<include>ContentFade2</include>
-			<include>Window_OpenClose_Animation</include>
 			<control type="group">
 				<posx>60</posx>
 				<visible>Control.IsVisible(10)</visible>
+				<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay52</include>
 				<control type="image">
 					<posx>-60</posx>
@@ -1570,6 +1547,7 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(11)</visible>
+				<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
 				<control type="image">
 					<posx>0</posx>
@@ -1577,16 +1555,6 @@
 					<width>875</width>
 					<height>148</height>
 					<texture border="10">underlay.png</texture>
-				</control>
-				<control type="image">
-					<posx>8</posx>
-					<posy>505</posy>
-					<width>210</width>
-					<height>210</height>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-					<bordersize>6</bordersize>
-					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 				<control type="label">
 					<posx>225</posx>
@@ -1614,20 +1582,11 @@
 					<pagecontrol>9999999999</pagecontrol>
 					<label>$INFO[Container(11).ListItem.Plot]</label>
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<animation effect="fade" time="200">Visible</animation>
-					<animation effect="fade" time="200">Hidden</animation>
 				</control>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(12)</visible>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
-				<control type="image">
-					<posx>0</posx>
-					<posy>560</posy>
-					<width>875</width>
-					<height>148</height>
-					<texture border="10">underlay.png</texture>
-				</control>
+				<visible>Control.IsVisible(11)</visible>
+				<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 				<control type="image">
 					<posx>8</posx>
 					<posy>505</posy>
@@ -1637,6 +1596,18 @@
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 					<bordersize>6</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(12)</visible>
+				<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
+				<control type="image">
+					<posx>0</posx>
+					<posy>560</posy>
+					<width>875</width>
+					<height>148</height>
+					<texture border="10">underlay.png</texture>
 				</control>
 				<control type="label">
 					<posx>225</posx>
@@ -1664,20 +1635,11 @@
 					<pagecontrol>9999999999</pagecontrol>
 					<label>$INFO[Container(12).ListItem.Plot]</label>
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<animation effect="fade" time="200">Visible</animation>
-					<animation effect="fade" time="200">Hidden</animation>
 				</control>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(13)</visible>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
-				<control type="image">
-					<posx>0</posx>
-					<posy>560</posy>
-					<width>875</width>
-					<height>148</height>
-					<texture border="10">underlay.png</texture>
-				</control>
+				<visible>Control.IsVisible(12)</visible>
+				<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 				<control type="image">
 					<posx>8</posx>
 					<posy>505</posy>
@@ -1687,6 +1649,18 @@
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 					<bordersize>6</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(13)</visible>
+				<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
+				<control type="image">
+					<posx>0</posx>
+					<posy>560</posy>
+					<width>875</width>
+					<height>148</height>
+					<texture border="10">underlay.png</texture>
 				</control>
 				<control type="label">
 					<posx>225</posx>
@@ -1727,8 +1701,47 @@
 					<pagecontrol>9999999999</pagecontrol>
 					<label>$INFO[Container(13).ListItem.Plot]</label>
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<animation effect="fade" time="200">Visible</animation>
-					<animation effect="fade" time="200">Hidden</animation>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(13)</visible>
+				<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+				<control type="image">
+					<posx>8</posx>
+					<posy>505</posy>
+					<width>210</width>
+					<height>210</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+					<bordersize>6</bordersize>
+					<fadetime>IconCrossfadeTime</fadetime>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(14)</visible>
+				<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay26</include>
+				<control type="image">
+					<posx>330</posx>
+					<posy>618</posy>
+					<width>626</width>
+					<height>42</height>
+					<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
+					<visible>PVR.HasTimer</visible>
+				</control>
+				<control type="label">
+					<description>Next timer date</description>
+					<posx>300</posx>
+					<posy>623</posy>
+					<width>680</width>
+					<height>35</height>
+					<font>font-20</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<scroll>false</scroll>
+					<textcolor>white</textcolor>
+					<label>$INFO[PVR.NextTimer]</label>
+					<visible>PVR.HasTimer</visible>
 				</control>
 			</control>
 		</control>

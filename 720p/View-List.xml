@@ -704,8 +704,11 @@
 			<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			<visible>Control.IsVisible(51) + Container.Content(Episodes)</visible>
 		</control>
+	</include>
+	<include name="List_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(51) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
+			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
 			<control type="image">
 				<posx>330</posx>

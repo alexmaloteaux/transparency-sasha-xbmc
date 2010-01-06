@@ -315,6 +315,12 @@
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</include>
+	<include name="VisibleFadeEffect3">
+		<animation effect="fade" time="500">Visible</animation>
+		<animation effect="fade" time="500">Hidden</animation>
+		<animation effect="fade" time="500">WindowOpen</animation>
+		<animation effect="fade" time="500">WindowClose</animation>
+	</include>
 	<include name="Window_OpenClose_Animation">
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
@@ -327,6 +333,41 @@
 		<animation effect="slide" start="0,70" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="0,70" time="400" tween="quadratic" easing="out">WindowClose</animation>
 	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(-3)_Animation">
+		<animation effect="slide" start="-700,0" end="0,0" time="600" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-700,0" time="600" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="-700,0" end="0,0" time="600" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(-2)_Animation">
+		<animation effect="slide" start="-700,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-700,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="-700,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(-1)_Animation">
+		<animation effect="slide" start="-700,0" end="0,0" time="200" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-700,0" time="200" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="-700,0" end="0,0" time="200" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(0)_Animation">
+		<animation effect="slide" start="0,500" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,500" time="500" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="0,500" end="0,0" time="500" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(1)_Animation">
+		<animation effect="slide" start="700,0" end="0,0" time="200" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="700,0" time="200" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="700,0" end="0,0" time="200" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(2)_Animation">
+		<animation effect="slide" start="700,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="700,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="700,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Coverflow(3)_Animation">
+		<animation effect="slide" start="700,0" end="0,0" time="600" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="700,0" time="600" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="700,0" end="0,0" time="600" tween="quadratic" easing="out">Visible</animation>
+	</include>
 	<include name="Window_OpenClose_Visible_FanartInfo_Animation">
 		<animation effect="slide" start="0,200" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="0,200" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -336,6 +377,81 @@
 		<animation effect="slide" start="-320,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-320,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 		<animation effect="slide" start="-320,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_MediaFlags_Animation">
+		<animation effect="slide" start="0,130" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,130" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="0,130" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(-6)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="800" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="800" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="800" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(-5)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="700" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="700" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="700" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(-4)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="600" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="600" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="600" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(-3)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="500" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="500" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="500" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(-2)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="400" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="400" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="400" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(-1)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="300" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="300" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="300" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(0)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="200" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="200" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="200" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(1)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="300" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="300" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="300" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(2)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="400" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="400" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="400" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(3)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="500" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="500" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="500" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(4)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="600" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="600" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="600" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(5)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="700" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="700" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="700" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_Slide(6)_Animation">
+		<animation effect="slide" start="0,250" end="0,0" time="800" tween="back" easing="inout">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,250" time="800" tween="back" easing="inout">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" time="800" tween="back" easing="inout">Visible</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_TopInfo_Animation">
+		<animation effect="slide" start="0,-130" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-130" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="0,-130" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
 	</include>
 	<include name="Window_OpenClose_Left_Panel_Animation">
 		<animation effect="slide" start="-400,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
