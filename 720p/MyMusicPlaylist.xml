@@ -58,9 +58,9 @@
 				<include>Window_OpenClose_Right_Panel_Animation</include>
 				<include>ContentPanel</include>
 				<include>FullList</include>
-				<include>List</include>
-				<include>MediaInfo-Music</include>
-				<include>Fanart-Music</include>
+				<include condition="!Hide-Music-List">List</include>
+				<include condition="!Hide-Music-MediaInfo">MediaInfo-Music</include>
+				<include condition="!Hide-Music-Fanart">Fanart-Music</include>
 				<include>AllViewCommonPageControls</include>
 				<include>ScrollOffsetLabel</include>
 				<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(55) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
@@ -71,7 +71,7 @@
 		</control>
 		<control type="group">
 			<include>ContentFade2</include>
-			<include>Fanart-AlbumsSongs_Extras</include>
+			<include condition="!Hide-Music-Fanart">Fanart-AlbumsSongs_Extras</include>
 		</control>
 		<control type="group">
 			<posy>23</posy>
