@@ -5013,19 +5013,6 @@
 						<onclick>Skin.ToggleSetting(Hide-Videos-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Icons)</selected>
 					</control>
-					<control type="radiobutton" id="810">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
-						<label>$LOCALIZE[3] - $LOCALIZE[20445]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
-						<onclick>Skin.ToggleSetting(Hide-Videos-Fanart)</onclick>
-						<selected>Skin.HasSetting(Hide-Videos-Fanart)</selected>
-					</control>
 				</control>
 				<control type="scrollbar" id="899">
 					<posx>1083</posx>

@@ -61,7 +61,7 @@
 				<include>ContentPanel</include>
 				<include>FullList</include>
 				<include condition="!Skin.HasSetting(Hide-Videos-List)">List</include>
-				<include condition="!Skin.HasSetting(Hide-Videos-Fanart)">Fanart-Videos</include>
+				<include>Fanart-Videos</include>
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include>
 				<include>AllViewCommonPageControls</include>
 				<include>ScrollOffsetLabel</include>
@@ -69,7 +69,7 @@
 		</control>
 		<control type="group">
 			<include>ContentFade2</include>
-			<include condition="!Skin.HasSetting(Hide-Videos-Fanart)">Fanart-Videos_Extras</include>
+			<include>Fanart-Videos_Extras</include>
 		</control>
 		<control type="group">
 			<posy>23</posy>

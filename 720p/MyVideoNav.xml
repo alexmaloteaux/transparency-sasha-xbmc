@@ -147,8 +147,8 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
-			<include condition="!Skin.HasSetting(Hide-Videos-CoverFlow)">CoverFlow-Movies</include>	<!-- view id = 500 -->
-			<include condition="!Skin.HasSetting(Hide-Videos-Slide)">Slide</include>  		<!-- view id = 596 -->
+			<include condition="!Skin.HasSetting(Hide-Videos-CoverFlow)">CoverFlow-Movies</include>		 <!-- view id = 500 -->
+			<include condition="!Skin.HasSetting(Hide-Videos-Slide)">Slide</include>  			 <!-- view id = 596 -->
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
@@ -160,13 +160,13 @@
 				<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="[Control.IsVisible(55) | Control.IsVisible(56)] + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + ![Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(500) | Control.IsVisible(596)]">Conditional</animation>
 				<include>ContentPanel</include>
-				<include>FullList</include> 						<!-- view id = 50 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-List)">List</include> 			<!-- view id = 51 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-Thumbnail)">Thumbnail-Videos</include> 	<!-- view id = 53 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-WideIcon)">WideIcon</include> 		<!-- view id = 54 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-Fanart)">Fanart-Videos</include> 	<!-- view id = 56 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies</include>		<!-- view id = 57 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include> 	<!-- view id = 58 --> 
+				<include>FullList</include> 								 <!-- view id = 50 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-List)">List</include> 			 <!-- view id = 51 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-Thumbnail)">Thumbnail-Videos</include>  <!-- view id = 53 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-WideIcon)">WideIcon</include> 		 <!-- view id = 54 -->
+				<include>Fanart-Videos</include> 	<!-- view id = 56 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies</include>		 <!-- view id = 57 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include>  <!-- view id = 58 --> 
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-TVShows</include> <!-- view id = 59 -->
 				<include>AllViewCommonPageControls</include>
 				<include>ScrollOffsetLabel</include>
@@ -178,8 +178,8 @@
 			<include condition="!Skin.HasSetting(Hide-Videos-Thumbnail)">Thumbnail-Videos_Extras</include> 
 			<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies_Extras</include>	
 			<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies_Extras</include> 
-			<include condition="!Skin.HasSetting(Hide-Videos-Fanart)">Fanart-Videos_Root_Extras</include>
-			<include condition="!Skin.HasSetting(Hide-Videos-Fanart)">Fanart-Videos_Extras</include>
+			<include>Fanart-Videos_Root_Extras</include>
+			<include>Fanart-Videos_Extras</include>
 		</control>
 		<control type="group">
 			<posy>23</posy>
