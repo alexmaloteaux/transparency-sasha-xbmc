@@ -96,6 +96,17 @@
 					<align>center</align>
 					<visible>Skin.String(SkinSettings,6)</visible>
 				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>125</posy>
+					<width>880</width>
+					<height>50</height>
+					<font>font-32</font>
+					<label>14018</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<visible>Skin.String(SkinSettings,7)</visible>
+				</control>
 				<control type="image">
 					<posx>400</posx>
 					<posy>160</posy>
@@ -4889,6 +4900,149 @@
 						<visible>Control.HasFocus(714)</visible>
 					</control>
 				</control>
+				<control type="grouplist" id="801">
+					<visible>Skin.String(SkinSettings,7)</visible>
+					<posx>200</posx>
+					<posy>185</posy>
+					<width>880</width>
+					<height>381</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>899</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>899</onright>
+					<onup>801</onup>
+					<ondown>801</ondown>
+					<control type="label" id="802">
+						<description>Disabled Views</description>
+						<width>880</width>
+						<height>25</height>
+						<font>font-20</font>
+						<label>31149</label>
+						<textcolor>lightblue</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="803">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[535]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-List)</selected>
+					</control>
+					<control type="radiobutton" id="804">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[21371]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-Thumbnail)</selected>
+					</control>
+					<control type="radiobutton" id="805">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[544]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-MediaInfo)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-MediaInfo)</selected>
+					</control>
+					<control type="radiobutton" id="806">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[33031]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-CoverFlow)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-CoverFlow)</selected>
+					</control>
+					<control type="radiobutton" id="807">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[31035]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-Slide)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-Slide)</selected>
+					</control>
+					<control type="radiobutton" id="808">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[31034]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-WideIcon)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-WideIcon)</selected>
+					</control>
+					<control type="radiobutton" id="809">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[536]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-Icons)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-Icons)</selected>
+					</control>
+					<control type="radiobutton" id="810">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[3] - $LOCALIZE[20445]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Videos-Fanart)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-Fanart)</selected>
+					</control>
+				</control>
+				<control type="scrollbar" id="899">
+					<posx>1083</posx>
+					<posy>182</posy>
+					<width>20</width>
+					<height>393</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+					<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+					<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+					<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+					<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+					<onleft>801</onleft>
+					<onright>9000</onright>
+					<showonepage>true</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Skin.String(SkinSettings,7)</visible>
+				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -4984,33 +5138,45 @@
 					<ondown>800</ondown>
 				</control>
 				<control type="button" id="800">
-					<description>Reload Skin button</description>
+					<description>Views Options</description>
 					<posx>0</posx>
 					<posy>270</posy>
 					<include>ButtonCommonValues</include>
-					<label>20183</label>
-					<onclick>XBMC.ReloadSkin()</onclick>
-					<onclick>SetFocus(8000)</onclick>
-					<onleft>701</onleft>
-					<onright>701</onright>
+					<label>582</label>
+					<onfocus>Skin.SetString(SkinSettings,7)</onfocus>
+					<onleft>801</onleft>
+					<onright>801</onright>
 					<onup>700</onup>
 					<ondown>900</ondown>
 				</control>
 				<control type="button" id="900">
-					<description>Transparency! Thanx button</description>
+					<description>Reload Skin button</description>
 					<posx>0</posx>
 					<posy>315</posy>
+					<include>ButtonCommonValues</include>
+					<label>20183</label>
+					<onclick>XBMC.ReloadSkin()</onclick>
+					<onclick>SetFocus(900)</onclick>
+					<onleft>701</onleft>
+					<onright>701</onright>
+					<onup>800</onup>
+					<ondown>901</ondown>
+				</control>
+				<control type="button" id="901">
+					<description>Transparency! Thanx button</description>
+					<posx>0</posx>
+					<posy>360</posy>
 					<include>ButtonCommonValues</include>
 					<label>Transparency!</label>
 					<onclick>ActivateWindow(1112)</onclick>
 					<onleft>701</onleft>
 					<onright>701</onright>
-					<onup>800</onup>
+					<onup>900</onup>
 					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>900</onup>
+					<onup>901</onup>
 					<ondown>603</ondown>
 					<visible>false</visible>
 				</control>
@@ -5027,7 +5193,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>362</posy>
+					<posy>407</posy>
 					<height>16</height>
 					<texture border="0,0,5,0">shadow-bottom2.png</texture>
 					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
