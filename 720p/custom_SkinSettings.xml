@@ -4905,7 +4905,7 @@
 					<posx>200</posx>
 					<posy>185</posy>
 					<width>880</width>
-					<height>381</height>
+					<height>400</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>899</pagecontrol>
 					<onleft>9000</onleft>
@@ -5013,12 +5013,181 @@
 						<onclick>Skin.ToggleSetting(Hide-Videos-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Icons)</selected>
 					</control>
+					<control type="radiobutton" id="810">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[2] - $LOCALIZE[535]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Music-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-List)</selected>
+					</control>
+					<control type="radiobutton" id="811">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[2] - $LOCALIZE[21371]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Music-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-Thumbnail)</selected>
+					</control>
+					<control type="radiobutton" id="812">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[2] - $LOCALIZE[544]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Music-MediaInfo)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-MediaInfo)</selected>
+					</control>
+					<control type="radiobutton" id="813">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[2] - $LOCALIZE[33031]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Music-CoverFlow)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-CoverFlow)</selected>
+					</control>
+					<control type="radiobutton" id="814">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[2] - $LOCALIZE[536]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Music-Icons)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-Icons)</selected>
+					</control>
+					<control type="radiobutton" id="815">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[1] - $LOCALIZE[535]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Pictures-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Pictures-List)</selected>
+					</control>
+					<control type="radiobutton" id="816">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[1] - $LOCALIZE[21371]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Pictures-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Pictures-Thumbnail)</selected>
+					</control>
+					<control type="radiobutton" id="817">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[1] - $LOCALIZE[31033]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Pictures-PicThumb)</onclick>
+						<selected>Skin.HasSetting(Hide-Pictures-PicThumb)</selected>
+					</control>
+					<control type="radiobutton" id="818">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[1] - $LOCALIZE[31036]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Pictures-Polaroid)</onclick>
+						<selected>Skin.HasSetting(Hide-Pictures-Polaroid)</selected>
+					</control>
+					<control type="radiobutton" id="819">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[0] - $LOCALIZE[535]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Programs-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Programs-List)</selected>
+					</control>
+					<control type="radiobutton" id="820">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[0] - $LOCALIZE[21371]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
+					</control>
+					<control type="radiobutton" id="821">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[247] - $LOCALIZE[535]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Scripts-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Scripts-List)</selected>
+					</control>
+					<control type="radiobutton" id="822">
+						<width>880</width>
+						<height>35</height>
+						<font>font-20</font>
+						<label>$LOCALIZE[247] - $LOCALIZE[21371]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="7">list-focus.png</texturefocus>
+						<texturenofocus border="7">list-nofocus.png</texturenofocus>
+						<textureradioon>radiobutton-focus.png</textureradioon>
+						<onclick>Skin.ToggleSetting(Hide-Scripts-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Scripts-Thumbnail)</selected>
+					</control>
 				</control>
 				<control type="scrollbar" id="899">
 					<posx>1083</posx>
 					<posy>182</posy>
 					<width>20</width>
-					<height>393</height>
+					<height>402</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 					<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 					<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
@@ -5169,7 +5338,7 @@
 				</control>
 				<control type="group">
 					<posx>0</posx>
-					<posy>360</posy>
+					<posy>405</posy>
 					<include>CommonNowPlaying_Controls</include>
 				</control>
 				<control type="button" id="611">
