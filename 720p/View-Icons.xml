@@ -99,8 +99,8 @@
 						<height>245</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="21,3,161,245" end="-8,-69,240,368" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="21,3,161,245" start="-8,-69,240,368" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="21,3,161,245" end="-16,-69,240,368" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="21,3,161,245" start="-16,-69,240,368" time="200">unfocus</animation>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -110,8 +110,8 @@
 						<height>245</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
-						<animation reversible="false" effect="zoom" start="21,3,161,245" end="-8,-69,240,368" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="21,3,161,245" start="-8,-69,240,368" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="21,3,161,245" end="-16,-69,240,368" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="21,3,161,245" start="-16,-69,240,368" time="200">unfocus</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -121,8 +121,8 @@
 						<height>252</height>
 						<texture>dvdcase.png</texture>
 						<aspectratio>stretch</aspectratio>
-						<animation reversible="false" effect="zoom" start="0,0,186,252" end="-41,-74,279,378" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="0,0,186,252" start="-41,-74,279,378" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="0,0,186,252" end="-49,-74,279,378" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="0,0,186,252" start="-49,-74,279,378" time="200">unfocus</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -132,8 +132,8 @@
 						<height>245</height>
 						<aspectratio>stretch</aspectratio>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="21,255,161,245" end="-8,297,240,368" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="21,255,161,245" start="-8,297,240,368" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="21,255,161,245" end="-16,307,240,368" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="21,255,161,245" start="-16,307,240,368" time="200">unfocus</animation>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -143,8 +143,8 @@
 						<height>245</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Thumb]</texture>
-						<animation reversible="false" effect="zoom" start="21,255,161,245" end="-8,297,240,368" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="21,255,161,245" start="-8,297,240,368" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="21,255,161,245" end="-16,307,240,368" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="21,255,161,245" start="-16,307,240,368" time="200">unfocus</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -154,8 +154,8 @@
 						<height>252</height>
 						<aspectratio>stretch</aspectratio>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
-						<animation reversible="false" effect="zoom" start="0,252,186,252" end="-41,294,279,378" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="0,252,186,252" start="-41,294,279,378" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="0,252,186,252" end="-49,304,279,378" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="0,252,186,252" start="-49,304,279,378" time="200">unfocus</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -166,8 +166,8 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
-						<animation reversible="false" effect="zoom" start="147,214,35,35" end="178,243,53,53" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="147,214,35,35" start="178,243,53,53" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="147,214,35,35" end="172,245,53,53" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="147,214,35,35" start="172,245,53,53" time="200">unfocus</animation>
 					</control>
 				</focusedlayout>
 			</control>
