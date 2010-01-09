@@ -1,6 +1,14 @@
 <includes>
 	<include name="weather">
 		<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus">Conditional</animation>
+		<control type="button" id="5999">
+			<description>fake button to steal focus</description>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>-</onclick>
+		</control>
 		<include>ContentPanel</include>
 		<control type="group">
 			<posx>175</posx>
@@ -650,9 +658,9 @@
 		<include condition="Skin.HasSetting(HateTransparency)">T-Panel3</include>
 		<control type="image">
 			<posx>83</posx>
-			<posy>53</posy>
+			<posy>38</posy>
 			<width>1114</width>
-			<height>425</height>
+			<height>450</height>
 			<colordiffuse>AAFFFFFF</colordiffuse>
 			<texture border="30">panel.png</texture>
 			<bordertexture border="45">panel-shadow.png</bordertexture>
@@ -660,10 +668,10 @@
 		</control>
 		<control type="group">
 			<posx>125</posx>
-			<posy>90</posy>
+			<posy>100</posy>
 			<control type="label">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>-20</posy>
 				<width>400</width>
 				<height>20</height>
 				<textcolor>blue</textcolor>
@@ -672,7 +680,7 @@
 			</control>	
 			<control type="label">
 				<posx>390</posx>
-				<posy>25</posy>
+				<posy>15</posy>
 				<width>400</width>
 				<height>20</height>
 				<align>right</align>
@@ -728,20 +736,58 @@
 			<height>350</height>
 			<texture>separator2.png</texture>
 		</control>
-		<control type="multiimage">
-			<description>radar multiimage</description>
+		<control type="label">
 			<posx>560</posx>
-			<posy>90</posy>
-			<width>600</width>
-			<height>350</height>
-			<aligny>center</aligny>
-			<info>Window.Property(MapPath)</info>
-			<texture diffuse="weather-diffuse.png"></texture>
-			<timeperimage>1000</timeperimage>
-			<pauseatend>1000</pauseatend>
-			<fadetime>0</fadetime>
-			<randomize>false</randomize>
-			<loop>yes</loop>
+			<posy>436</posy>
+			<width>570</width>
+			<height>20</height>
+			<align>center</align>
+			<textcolor>blue</textcolor>
+			<font>font-20</font>
+			<align>center</align>
+			<label>[B]$INFO[Window.Property(Weather.CurrentMap)][/B]</label>
+		</control>
+		<control type="button" id="5999">
+			<description>up</description>
+			<posx>1134</posx>
+			<posy>212</posy>
+			<width>38</width>
+			<height>38</height>
+			<texturefocus>scroll-up-focus-2.png</texturefocus>
+			<texturenofocus>scroll-up-2.png</texturenofocus>
+			<onclick>-</onclick>
+			<onup>5997</onup>
+			<ondown>5998</ondown>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+		</control>
+		<control type="button" id="5998">
+			<description>down</description>
+			<posx>1134</posx>
+			<posy>262</posy>
+			<width>38</width>
+			<height>38</height>
+			<texturefocus>scroll-down-focus-2.png</texturefocus>
+			<texturenofocus>scroll-down-2.png</texturenofocus>
+			<onclick>-</onclick>
+			<onup>5999</onup>
+			<ondown>5997</ondown>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+		</control>
+		<control type="button" id="5997">
+			<description>zoom</description>
+			<posx>1136</posx>
+			<posy>430</posy>
+			<width>30</width>
+			<height>30</height>
+			<texturefocus>magnifier-focus.png</texturefocus>
+			<texturenofocus>magnifier-nofocus.png</texturenofocus>
+			<onclick>-</onclick>
+			<onup>5998</onup>
+			<ondown>5999</ondown>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
 		</control>
 		<include condition="Skin.HasSetting(HateTransparency)">T-Underlay21</include>
 		<control type="image">
@@ -1189,11 +1235,27 @@
 				</control>
 			</control>
 		</control>
+		<control type="multiimage">
+			<description>radar multiimage</description>
+			<posx>560</posx>
+			<posy>80</posy>
+			<width>570</width>
+			<height>350</height>
+			<aligny>center</aligny>
+			<info>Window.Property(MapPath)</info>
+			<texture diffuse="weather-diffuse.png"></texture>
+			<timeperimage>1000</timeperimage>
+			<pauseatend>1000</pauseatend>
+			<fadetime>0</fadetime>
+			<randomize>false</randomize>
+			<loop>yes</loop>
+			<animation effect="zoom" start="560,80,570,350" end="132,80,998,612" time="300" condition="Control.HasFocus(5997)">Conditional</animation>
+		</control>
 	</include>
 	<include name="WeatherPlus_Current_Icon">
 		<control type="image">
 			<posx>0</posx>
-			<posy>35</posy>
+			<posy>30</posy>
 			<width>200</width>
 			<height>200</height>
 			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
@@ -1202,7 +1264,7 @@
 	<include name="WeatherPlus_Animated_Current_Icon">
 		<control type="multiimage">
 			<posx>0</posx>
-			<posy>35</posy>
+			<posy>30</posy>
 			<width>200</width>
 			<height>200</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Current.FanartCode)]</imagepath>

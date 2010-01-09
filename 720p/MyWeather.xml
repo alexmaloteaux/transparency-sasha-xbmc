@@ -37,14 +37,6 @@
 			<aspectratio>scale</aspectratio>
 			<visible>!Skin.HasSetting(Enable_Custom_Back_Weather) + Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 		</control>
-		<control type="button" id="5999">
-			<description>fake button to steal focus</description>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onclick>-</onclick>
-		</control>
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
