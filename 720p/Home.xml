@@ -73,7 +73,8 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
-			<include condition="!Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
+			<include condition="IsEmpty(Weather.Plugin) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
+			<include condition="!IsEmpty(Weather.Plugin) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
 			<include condition="!Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
 			<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
 			<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>

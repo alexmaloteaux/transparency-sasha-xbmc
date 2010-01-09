@@ -302,7 +302,6 @@
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
-			<visible>!Skin.HasSetting(Animate_Home_Weather_Icon)</visible>
 		</control>
 	</include>
 	<include name="Home_Weather_Icon">
@@ -313,7 +312,303 @@
 			<width>116</width>
 			<height>116</height>
 			<texture>$INFO[Weather.Conditions]</texture>
-			<visible>Skin.HasSetting(Animate_Home_Weather_Icon)</visible>
+		</control>
+	</include>
+	<include name="WeatherPlusInfo">
+		<control type="group">
+			<posx>680</posx>
+			<posy>490</posy>
+			<visible>[Container(5040).HasFocus(14) | Container(5041).HasFocus(7)] + Weather.IsFetched + !Player.HasMedia</visible>
+			<include>homestatsinfo</include>
+			<animation effect="slide" end="0,-65" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
+			<control type="image">
+				<description>gradient</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>600</width>
+				<height>150</height>
+				<texture border="2">gradient.png</texture>
+			</control>
+			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icons</include>
+			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icons</include>
+			<control type="label">
+				<description>location label</description>
+				<posx>472</posx>
+				<posy>10</posy>
+				<height>30</height>
+				<width>500</width>
+				<label>[B]$INFO[Weather.Location][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-25</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Conditions Label</description>
+				<posx>472</posx>
+				<posy>32</posy>
+				<height>30</height>
+				<width>500</width>
+				<label>$INFO[Weather.Conditions]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-21</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Temp Label</description>
+				<posx>472</posx>
+				<posy>54</posy>
+				<height>30</height>
+				<width>500</width>
+				<label>$INFO[Weather.Temperature]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-21</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>160</posx>
+				<posy>85</posy>
+				<width>80</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.1.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>230</posx>
+				<posy>85</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.2.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>290</posx>
+				<posy>85</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.3.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>350</posx>
+				<posy>85</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.4.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>410</posx>
+				<posy>85</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.5.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>470</posx>
+				<posy>85</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.6.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>530</posx>
+				<posy>85</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-19</font>
+				<label>$INFO[Window(Weather).Property(Daily.7.ShortDay)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>lightblue</textcolor>
+			</control>
+		</control>
+	</include>
+	<include name="Home_Animated_Weather_Icons">
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>490</posx>
+			<posy>0</posy>
+			<width>90</width>
+			<height>90</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Weather.FanartCode]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>180</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>240</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>300</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>360</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>420</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>480</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+		<control type="multiimage">
+			<description>Weather image</description>
+			<posx>540</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Home_Weather_Icons">
+		<control type="image">
+			<description>Weather image</description>
+			<posx>490</posx>
+			<posy>0</posy>
+			<width>90</width>
+			<height>90</height>
+			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>180</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>240</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>300</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>360</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>420</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>480</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
+		</control>
+		<control type="image">
+			<description>Weather image</description>
+			<posx>540</posx>
+			<posy>109</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="SystemInfo">
