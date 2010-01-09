@@ -61,6 +61,7 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<include>DialogFade</include>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
 			<control type="label">
 				<description>Album Title value</description>
 				<posx>40</posx>
@@ -199,7 +200,7 @@
 				<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(12)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-				<visible>!Control.HasFocus(49) + !Control.HasFocus(50) + !Control.HasFocus(61)</visible>
+				<visible>Control.HasFocus(5) | Control.HasFocus(6) | Control.HasFocus(10) | Control.HasFocus(12)</visible>
 			</control>
 			<control type="label">
 				<posx>325</posx>
@@ -417,11 +418,26 @@
 				<subtype>page</subtype>
 				<font>font-19</font>
 				<onleft>61</onleft>
-				<onright>61</onright>
+				<onright>1112</onright>
 				<ondown>5</ondown>
 				<onup>50</onup>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
+			</control>
+			<control type="button" id="1112">
+				<posx>1250</posx>
+				<posy>701</posy>
+				<width>20</width>
+				<height>20</height>
+				<label>-</label>
+				<font>-</font>
+				<texturefocus>magnifier-small-focus.png</texturefocus>
+				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
+				<onleft>61</onleft>
+				<onright>61</onright>
+				<onup>11</onup>
+				<ondown>5</ondown>
+				<onclick>ActivateWindow(1113)</onclick>
 			</control>
 			<control type="group">
 				<visible>Container.Content(Artists)</visible>

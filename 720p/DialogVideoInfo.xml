@@ -62,6 +62,7 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<include>DialogFade</include>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
 			<control type="label">
 				<description>Item Title value</description>
 				<posx>40</posx>
@@ -388,11 +389,26 @@
 				<subtype>page</subtype>
 				<font>font-19</font>
 				<onleft>61</onleft>
-				<onright>61</onright>
+				<onright>1112</onright>
 				<ondown>5</ondown>
 				<onup>50</onup>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
+			</control>
+			<control type="button" id="1112">
+				<posx>1250</posx>
+				<posy>701</posy>
+				<width>20</width>
+				<height>20</height>
+				<label>-</label>
+				<font>-</font>
+				<texturefocus>magnifier-small-focus.png</texturefocus>
+				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
+				<onleft>61</onleft>
+				<onright>61</onright>
+				<onup>11</onup>
+				<ondown>5</ondown>
+				<onclick>ActivateWindow(1113)</onclick>
 			</control>
 			<control type="group">
 				<visible>!Container.Content(TVShows) + !Container.Content(Episodes) + !Container.Content(MusicVideos)</visible>
