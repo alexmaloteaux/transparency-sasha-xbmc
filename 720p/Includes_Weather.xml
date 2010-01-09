@@ -1196,9 +1196,9 @@
 			<showonepage>true</showonepage>
 		</control>
 		<control type="list" id="49">
-			<posx>673</posx>
+			<posx>683</posx>
 			<posy>436</posy>
-			<width>370</width>
+			<width>350</width>
 			<height>20</height>
 			<onleft>9000</onleft>
 			<onright>5999</onright>
@@ -1208,9 +1208,9 @@
 			<scrolltime>0</scrolltime>
 			<itemlayout height="20">
 				<control type="label">
-					<posx>185</posx>
+					<posx>175</posx>
 					<posy>0</posy>
-					<width>370</width>
+					<width>350</width>
 					<height>20</height>
 					<font>font-20</font>
 					<align>center</align>
@@ -1223,16 +1223,16 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>370</width>
+					<width>350</width>
 					<height>20</height>
 					<texture border="7">list-focus2.png</texture>
 					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 					<visible>Control.HasFocus(49)</visible>
 				</control>
 				<control type="label">
-					<posx>185</posx>
+					<posx>175</posx>
 					<posy>0</posy>
-					<width>370</width>
+					<width>350</width>
 					<height>20</height>
 					<font>font-20</font>
 					<align>center</align>
@@ -1431,6 +1431,8 @@
 			<ondown>5999</ondown>
 			<onleft>5999</onleft>
 			<onright>5999</onright>
+			<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
+			<visible>!Control.HasFocus(5998)</visible>
 		</control>
 	</include>
 	<include name="WeatherPlus_Current_Icon">

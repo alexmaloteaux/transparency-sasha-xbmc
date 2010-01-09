@@ -71,7 +71,7 @@
 					<onleft>5999</onleft>
 					<onright>5999</onright>
 					<onup>603</onup>
-					<ondown>2</ondown>
+					<ondown>101</ondown>
 				</control>
 				<control type="label">
 					<description>change location label</description>
@@ -86,21 +86,58 @@
 					<align>left</align>
 					<aligny>center</aligny>
 				</control>
+				<control type="button" id="101">
+					<description>Current button</description>
+					<posx>0</posx>
+					<posy>45</posy>
+					<include>ButtonCommonValues</include>
+					<label>33006</label>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>3</onup>
+					<ondown>102</ondown>
+					<visible>!IsEmpty(Weather.Plugin)</visible>
+				</control>
+				<control type="button" id="102">
+					<description>Hourly button</description>
+					<posx>0</posx>
+					<posy>90</posy>
+					<include>ButtonCommonValues</include>
+					<label>33036</label>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>101</onup>
+					<ondown>103</ondown>
+					<visible>!IsEmpty(Weather.Plugin)</visible>
+				</control>
+				<control type="button" id="103">
+					<description>10 day button</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>31600</label>
+					<onleft>5999</onleft>
+					<onright>5999</onright>
+					<onup>102</onup>
+					<ondown>2</ondown>
+					<visible>!IsEmpty(Weather.Plugin)</visible>
+				</control>
 				<control type="button" id="2">
 					<description>Refresh button</description>
 					<posx>0</posx>
-					<posy>45</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
 					<onleft>5999</onleft>
 					<onright>5999</onright>
-					<onup>3</onup>
+					<onup>103</onup>
 					<ondown>5</ondown>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 				</control>
 				<control type="button" id="5">
 					<description>Custom Weather Script Button</description>
 					<posx>0</posx>
-					<posy>90</posy>
+					<posy>225</posy>
 					<label>$INFO[Skin.String(WeatherScript_Label)]</label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
 					<include>ButtonCommonValues</include>
@@ -109,11 +146,12 @@
 					<onright>5999</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 				</control>
 				<control type="button" id="4">
 					<description>Settings button</description>
 					<posx>0</posx>
-					<posy>135</posy>
+					<posy>270</posy>
 					<label>5</label>
 					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 					<include>ButtonCommonValues</include>
@@ -121,7 +159,8 @@
 					<onright>5999</onright>
 					<onup>5</onup>
 					<ondown>610</ondown>
-					<animation effect="slide" end="0,-45" time="0" condition="!Control.IsVisible(5)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>
@@ -131,8 +170,9 @@
 				</control>
 				<control type="group">
 					<posx>0</posx>
-					<posy>180</posy>
+					<posy>315</posy>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 					<include>CommonNowPlaying_Controls</include>
 				</control>
 				<control type="button" id="611">
@@ -143,11 +183,12 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>182</posy>
+					<posy>317</posy>
 					<height>16</height>
 					<texture border="0,0,5,0">shadow-bottom2.png</texture>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">conditional</animation>
-					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
 				</control>
