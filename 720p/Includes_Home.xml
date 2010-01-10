@@ -348,10 +348,10 @@
 			<control type="label">
 				<description>Conditions Label</description>
 				<posx>472</posx>
-				<posy>32</posy>
+				<posy>35</posy>
 				<height>30</height>
 				<width>500</width>
-				<label>$INFO[Weather.Conditions]</label>
+				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Conditions]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Current.Wind)]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-21</font>
@@ -360,10 +360,10 @@
 			<control type="label">
 				<description>Temp Label</description>
 				<posx>472</posx>
-				<posy>54</posy>
+				<posy>57</posy>
 				<height>30</height>
 				<width>500</width>
-				<label>$INFO[Weather.Temperature]</label>
+				<label>[COLOR=lightblue]$LOCALIZE[401]: [/COLOR]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[393]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[391]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-21</font>
@@ -372,11 +372,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>160</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>80</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.1.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.1.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
@@ -384,11 +384,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>230</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>60</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.2.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.2.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
@@ -396,11 +396,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>290</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>60</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.3.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.3.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
@@ -408,11 +408,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>350</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>60</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.4.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.4.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
@@ -420,11 +420,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>410</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>60</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.5.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.5.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
@@ -432,11 +432,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>470</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>60</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.6.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.6.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
@@ -444,11 +444,11 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>530</posx>
-				<posy>85</posy>
+				<posy>90</posy>
 				<width>60</width>
 				<height>20</height>
-				<font>font-19</font>
-				<label>$INFO[Window(Weather).Property(Daily.7.ShortDay)]</label>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.7.ShortDay)][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
