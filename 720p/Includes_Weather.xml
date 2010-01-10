@@ -1513,14 +1513,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly1_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly1_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1590,14 +1584,8 @@
 					<height>172</height>
 					<texture border="2">gradient-down.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly2_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly2_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1667,14 +1655,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly3_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly3_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1744,14 +1726,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly4_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly4_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1821,14 +1797,8 @@
 					<height>172</height>
 					<texture border="2">gradient-down.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly5_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly5_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1898,14 +1868,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly6_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly6_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1975,14 +1939,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly7_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly7_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2052,14 +2010,8 @@
 					<height>172</height>
 					<texture border="2">gradient-down.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.8.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly8_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly8_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2129,14 +2081,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.9.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly9_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly9_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2206,14 +2152,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.10.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly10_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly10_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2283,14 +2223,8 @@
 					<height>172</height>
 					<texture border="2">gradient-down.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.11.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly11_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly11_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2360,14 +2294,8 @@
 					<height>172</height>
 					<texture border="2">gradient-up.png</texture>
 				</control>
-				<control type="image">
-					<posx>142</posx>
-					<posy>65</posy>
-					<width>140</width>
-					<height>140</height>
-					<texture>$INFO[Window.Property(Hourly.12.OutlookIcon)]</texture>
-					<colordiffuse>99FFFFFF</colordiffuse>
-				</control>
+				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Hourly12_Icon</include>
+				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Hourly12_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2591,6 +2519,282 @@
 			<width>90</width>
 			<height>90</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Hourly1_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly2_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly3_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly4_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly5_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly6_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly7_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly8_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.8.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly9_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.9.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly10_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.10.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly11_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.11.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Hourly12_Icon">
+		<control type="image">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Hourly.12.OutlookIcon)]</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly1_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.1.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly2_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.2.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly3_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.3.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly4_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.4.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly5_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.5.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly6_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.6.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly7_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.7.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly8_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.8.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly9_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.9.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly10_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.10.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly11_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.11.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Hourly12_Icon">
+		<control type="multiimage">
+			<posx>142</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.12.FanartCode)]</imagepath>
+			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
