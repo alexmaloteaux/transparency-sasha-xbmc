@@ -1,5 +1,5 @@
 <window id="2600">
-	<defaultcontrol always="true">5999</defaultcontrol>
+	<defaultcontrol always="true">6000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="multiimage">
@@ -68,8 +68,8 @@
 					<font>-</font>
 					<textoffsetx>5</textoffsetx>
 					<include>ButtonCommonValues</include>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>603</onup>
 					<ondown>101</ondown>
 				</control>
@@ -92,8 +92,8 @@
 					<posy>45</posy>
 					<include>ButtonCommonValues</include>
 					<label>33006</label>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>3</onup>
 					<ondown>102</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,1)</onfocus>
@@ -105,8 +105,8 @@
 					<posy>90</posy>
 					<include>ButtonCommonValues</include>
 					<label>33036</label>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>101</onup>
 					<ondown>103</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
@@ -118,8 +118,8 @@
 					<posy>135</posy>
 					<include>ButtonCommonValues</include>
 					<label>31600</label>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>102</onup>
 					<ondown>2</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,3)</onfocus>
@@ -131,8 +131,8 @@
 					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>103</onup>
 					<ondown>5</ondown>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
@@ -145,8 +145,8 @@
 					<onclick>XBMC.RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
 					<include>ButtonCommonValues</include>
 					<visible>Skin.HasSetting(WeatherScript_Enable) + !IsEmpty(Skin.String(WeatherScript_Label))</visible>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
@@ -158,8 +158,8 @@
 					<label>5</label>
 					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 					<include>ButtonCommonValues</include>
-					<onleft>5999</onleft>
-					<onright>5999</onright>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
 					<onup>5</onup>
 					<ondown>610</ondown>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">Conditional</animation>

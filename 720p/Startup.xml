@@ -8,7 +8,7 @@
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
+			<visible>!Skin.HasSetting(Use_Startup_Playlist) + IsEmpty(Weather.Plugin)</visible>
 		</control>
 		<control type="button" id="10">
 			<description>trigger with startup Playlist</description>
@@ -17,7 +17,26 @@
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+			<visible>Skin.HasSetting(Use_Startup_Playlist) + IsEmpty(Weather.Plugin)</visible>
+		</control>
+		<control type="button" id="10">
+			<description>trigger</description>
+			<onfocus>Skin.SetBool(Startup)</onfocus>
+			<onfocus>$INFO[Skin.String(WeatherPlusMap)]</onfocus>
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(Use_Startup_Playlist) + !IsEmpty(Weather.Plugin)</visible>
+		</control>
+		<control type="button" id="10">
+			<description>trigger with startup Playlist</description>
+			<onfocus>Skin.SetBool(Startup)</onfocus>
+			<onfocus>$INFO[Skin.String(WeatherPlusMap)]</onfocus>
+			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(Use_Startup_Playlist) + !IsEmpty(Weather.Plugin)</visible>
 		</control>
 	</controls>
 </window>
