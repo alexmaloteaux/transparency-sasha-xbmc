@@ -656,6 +656,9 @@
 	</include>
 	<include name="weatherplus">
 		<include condition="Skin.HasSetting(HateTransparency)">T-Panel3</include>
+		<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+		<visible>!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3)</visible>
 		<control type="image">
 			<posx>83</posx>
 			<posy>38</posy>

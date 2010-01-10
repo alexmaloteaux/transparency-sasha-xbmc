@@ -321,7 +321,7 @@
 			<visible>[Container(5040).HasFocus(14) | Container(5041).HasFocus(7)] + Weather.IsFetched + !Player.HasMedia</visible>
 			<include>homestatsinfo</include>
 			<animation effect="slide" end="0,-65" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient5</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>0</posx>

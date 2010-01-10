@@ -96,6 +96,7 @@
 					<onright>5999</onright>
 					<onup>3</onup>
 					<ondown>102</ondown>
+					<onfocus>Skin.SetString(WeatherPlus,1)</onfocus>
 					<visible>!IsEmpty(Weather.Plugin)</visible>
 				</control>
 				<control type="button" id="102">
@@ -108,6 +109,7 @@
 					<onright>5999</onright>
 					<onup>101</onup>
 					<ondown>103</ondown>
+					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
 					<visible>!IsEmpty(Weather.Plugin)</visible>
 				</control>
 				<control type="button" id="103">
@@ -120,6 +122,7 @@
 					<onright>5999</onright>
 					<onup>102</onup>
 					<ondown>2</ondown>
+					<onfocus>Skin.SetString(WeatherPlus,3)</onfocus>
 					<visible>!IsEmpty(Weather.Plugin)</visible>
 				</control>
 				<control type="button" id="2">
