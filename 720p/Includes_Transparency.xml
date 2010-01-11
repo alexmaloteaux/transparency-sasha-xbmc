@@ -311,6 +311,26 @@
 			<include>T-Level</include>
 		</control>
 	</include>
+	<include name="T-Gradient8">
+		<control type="image">
+			<posx>-2</posx>
+			<posy>33</posy>
+			<width>428</width>
+			<height>172</height>
+			<texture border="2">gradient-up.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Gradient9">
+		<control type="image">
+			<posx>-2</posx>
+			<posy>33</posy>
+			<width>428</width>
+			<height>172</height>
+			<texture border="2">gradient-down.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-Underlay11">
 		<control type="image">
 			<posx>0</posx>
@@ -520,6 +540,26 @@
 			<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
 			<include>T-Level</include>
 			<visible>PVR.HasTimer</visible>
+		</control>
+	</include>
+	<include name="T-Underlay27">
+		<control type="image">
+			<posx>0</posx>
+			<posy>33</posy>
+			<width>1280</width>
+			<height>344</height>
+			<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay28">
+		<control type="image">
+			<posx>0</posx>
+			<posy>377</posy>
+			<width>1280</width>
+			<height>344</height>
+			<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+			<include>T-Level</include>
 		</control>
 	</include>
 	<include name="T-Underlay31">
