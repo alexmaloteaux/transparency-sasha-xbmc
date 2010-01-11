@@ -45,7 +45,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label2</info>
-					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Window.IsVisible(28) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>603</posx>
@@ -54,7 +54,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Window.IsVisible(28) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="29" width="665">
@@ -99,7 +99,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label2</info>
-					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>603</posx>
@@ -108,7 +108,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Window.IsVisible(28) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
 		</control>
@@ -158,7 +158,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<bordersize>8</bordersize>
-				<visible>Container.Content(MusicVideos) + stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>-4</posx>
@@ -170,7 +170,7 @@
 				<bordertexture border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>-4</posx>
@@ -180,7 +180,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture flipy="true" diffuse="video-diffuse-mirror.png">$INFO[ListItem.Icon]</texture>
 				<bordersize>8</bordersize>
-				<visible>Container.Content(MusicVideos) + stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>-4</posx>
@@ -192,7 +192,7 @@
 				<bordertexture flipy="true" diffuse="video-diffuse-mirror.png" border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>28</posx>
@@ -227,7 +227,7 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Genre Value</description>
@@ -240,7 +240,7 @@
 				<aligny>center</aligny>
 				<font>font-20</font>
 				<scroll>false</scroll>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Year txt</description>
@@ -253,7 +253,7 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Year Value</description>
@@ -266,7 +266,7 @@
 				<aligny>center</aligny>
 				<font>font-20</font>
 				<scroll>false</scroll>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Studio txt</description>
@@ -279,7 +279,7 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Studio Value</description>
@@ -292,7 +292,7 @@
 				<aligny>center</aligny>
 				<font>font-20</font>
 				<scroll>false</scroll>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -314,12 +314,12 @@
 			<pagecontrol>9999999999</pagecontrol>
 			<label>$INFO[ListItem.Plot]</label>
 			<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<visible>Control.IsVisible(58) + [Container.Content(Movies) | Container.Content(MusicVideos) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(58) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(28)]</visible>
 		</control>
 	</include>
 	<include name="MediaInfo-Movies_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(58) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Container.Content(MusicVideos) | Window.IsVisible(28)] + !Window.IsVisible(VideoFiles)</visible>
+			<visible>Control.IsVisible(58) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(28)] + !Window.IsVisible(VideoFiles)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
 			<control type="image">
@@ -328,7 +328,16 @@
 				<width>626</width>
 				<height>42</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)</visible>
+				<visible>[!Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)]</visible>
+			</control>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay22</include>
+			<control type="image">
+				<posx>330</posx>
+				<posy>618</posy>
+				<width>626</width>
+				<height>42</height>
+				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
+				<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags) + Container.Content(Episodes)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay23</include>
 			<control type="image">
@@ -349,6 +358,17 @@
 				<orientation>horizontal</orientation>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(Movies)</visible>
+			</control>
+			<control type="grouplist">
+				<posx>355</posx>
+				<posy>620</posy>
+				<width>577</width>
+				<height>40</height>
+				<itemgap>13</itemgap>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
+				<visible>Container.Content(Episodes)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>355</posx>
