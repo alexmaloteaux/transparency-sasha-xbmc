@@ -65,12 +65,12 @@
 				<posy>260</posy>
 				<width>420</width>
 				<height>30</height>
-				<info>Window.Property(Current.Condition)</info>
+				<label>[B]$INFO[Window.Property(Current.Condition)][/B]</label>
 				<wrapmultiline>true</wrapmultiline>
-				<font>font-23</font>
+				<font>font-32</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
+				<textcolor>lightblue</textcolor>
 			</control>
 			<control type="image">
 				<posx>20</posx>
