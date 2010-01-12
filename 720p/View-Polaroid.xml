@@ -1,9 +1,9 @@
 <includes>
 	<include name="Polaroid">
 		<control type="list" id="597">
-			<posx>50</posx>
+			<posx>392</posx>
 			<posy>240</posy>
-			<width>1050</width>
+			<width>384</width>
 			<height>345</height>
 			<onleft>597</onleft>
 			<onright>597</onright>
@@ -14,8 +14,8 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<preloaditems>4</preloaditems>
-			<itemlayout height="378" width="345" />
-			<focusedlayout height="378" width="345">
+			<itemlayout height="1" width="1" />
+			<focusedlayout width="378" height="345" >
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
