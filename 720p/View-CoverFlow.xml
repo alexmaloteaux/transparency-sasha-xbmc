@@ -839,9 +839,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Container.Content(Movies)</visible>
-			<posx>0</posx>
+			<posx>490</posx>
 			<posy>260</posy>
-			<width>1280</width>
+			<width>306</width>
 			<height>440</height>
 			<onleft>57</onleft>
 			<onright>57</onright>
@@ -852,9 +852,9 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<focusedposition>3</focusedposition>
-			<itemlayout height="429" width="257">
+			<itemlayout height="1" width="1">
 			</itemlayout>
-			<focusedlayout height="429" width="257">
+			<focusedlayout height="440" width="300">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2600,10 +2600,10 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles) | [Container.Content(Albums) | Container.Content(Songs)] | Container.Content(Songs) | Window.IsVisible(Musicfiles)</visible>
-			<posx>0</posx>
+			<posx>460</posx>
 			<posy>345</posy>
-			<width>1280</width>
-			<height>350</height>
+			<width>324</width>
+			<height>318</height>
 			<onleft>57</onleft>
 			<onright>57</onright>
 			<onup>9000</onup>
@@ -2613,7 +2613,7 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<focusedposition>3</focusedposition>
-			<itemlayout height="318" width="318" />
+			<itemlayout height="1" width="1" />
 			<focusedlayout height="318" width="318">
 				<control type="image">
 					<posx>34</posx>
