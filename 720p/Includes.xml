@@ -564,6 +564,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>XBMC.PlayerControl(Previous)</onclick>
+				<hitrect x="-45" y="-10" w="68" h="45" />
 			</control>
 			<control type="button" id="601">
 				<posx>23</posx>
@@ -579,6 +580,7 @@
 				<ondown>611</ondown>
 				<onclick>Up</onclick>
 				<onclick>XBMC.PlayerControl(Stop)</onclick>
+				<hitrect x="23" y="-10" w="23" h="45" />
 			</control>
 			<control type="togglebutton" id="603">
 				<posx>46</posx>
@@ -596,6 +598,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>XBMC.PlayerControl(Play)</onclick>
+				<hitrect x="46" y="-10" w="23" h="45" />
 			</control>
 			<control type="button" id="602">
 				<posx>69</posx>
@@ -610,6 +613,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>XBMC.PlayerControl(Next)</onclick>
+				<hitrect x="69" y="-10" w="23" h="45" />
 			</control>
 			<control type="button" id="608">
 				<posx>92</posx>
@@ -624,6 +628,7 @@
 				<onright>605</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
+				<hitrect x="92" y="-10" w="23" h="45" />
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -695,6 +700,7 @@
 				<onright>606</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
+				<hitrect x="115" y="-10" w="23" h="45" />
 			</control>
 			<control type="button" id="606">
 				<posx>138</posx>
@@ -709,6 +715,24 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>FullScreen</onclick>
+				<hitrect x="138" y="-10" w="32" h="45" />
+				<visible>!Skin.HasSetting(WideSideMenuButtons)</visible>
+			</control>
+			<control type="button" id="606">
+				<posx>138</posx>
+				<posy>0</posy>
+				<width>23</width>
+				<height>25</height>
+				<label>-</label>
+				<texturefocus>smallplayer-fullscreen-focus.png</texturefocus>
+				<texturenofocus>smallplayer-fullscreen-nofocus.png</texturenofocus>
+				<onleft>605</onleft>
+				<onright>600</onright>
+				<onup>610</onup>
+				<ondown>611</ondown>
+				<onclick>FullScreen</onclick>
+				<hitrect x="138" y="-10" w="70" h="45" />
+				<visible>Skin.HasSetting(WideSideMenuButtons)</visible>
 			</control>
 		</control>
 	</include>
