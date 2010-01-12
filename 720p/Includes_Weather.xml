@@ -53,7 +53,7 @@
 				<font>font-80</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -142,7 +142,7 @@
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
@@ -153,7 +153,7 @@
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
@@ -232,7 +232,7 @@
 				<posx>110</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -255,7 +255,7 @@
 				<posx>290</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -316,7 +316,7 @@
 				<posx>110</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -339,7 +339,7 @@
 				<posx>290</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -400,7 +400,7 @@
 				<posx>110</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -423,7 +423,7 @@
 				<posx>290</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -484,7 +484,7 @@
 				<posx>110</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -507,7 +507,7 @@
 				<posx>290</posx>
 				<posy>50</posy>
 				<height>20</height>
-				<label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -690,7 +690,7 @@
 					<height>20</height>
 					<textcolor>blue</textcolor>
 					<font>font-23c</font>
-					<label>[B]$INFO[Window(Weather).Property(Location)][/B]</label>
+					<label>[B]$INFO[Window.Property(Location)][/B]</label>
 				</control>	
 				<control type="label">
 					<posx>390</posx>
@@ -700,47 +700,47 @@
 					<align>right</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-20</font>
-					<label>$INFO[Window(Weather).Property(Updated)]</label>
+					<label>$INFO[Window.Property(Updated)]</label>
 				</control>
 				<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Current_Icon</include>
 				<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Current_Icon</include>
 				<control type="label">
 					<posx>188</posx>
-					<posy>70</posy>
+					<posy>50</posy>
 					<width>240</width>
 					<height>80</height>
 					<font>font-80</font>
 					<align>center</align>
-					<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+					<label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				</control>
 				<control type="label">
 					<posx>198</posx>
-					<posy>150</posy>
+					<posy>130</posy>
 					<width>220</width>
 					<height>20</height>
 					<font>font-30</font>
 					<align>center</align>
 					<textcolor>lightblue</textcolor>
 					<wrapmultiline>true</wrapmultiline>
-					<label fallback="-">$INFO[Window(Weather).Property(Hourly.1.Outlook)]</label>
+					<label fallback="-">$INFO[Window.Property(Current.Condition)]</label>
 				</control>
 				<control type="label">
 					<posx>140</posx>
-					<posy>227</posy>
+					<posy>208</posy>
 					<width>150</width>
-					<height>120</height>
+					<height>130</height>
 					<align>right</align>
 					<textcolor>lightblue</textcolor>
 					<font>font-23</font>
-					<label>$LOCALIZE[402][CR]$LOCALIZE[406][CR]$LOCALIZE[403][CR]$LOCALIZE[405][CR]$LOCALIZE[404]</label>
+					<label>$LOCALIZE[33021][CR]$LOCALIZE[402][CR]$LOCALIZE[406][CR]$LOCALIZE[403][CR]$LOCALIZE[405][CR]$LOCALIZE[404]</label>
 				</control>
 				<control type="label">
 					<posx>160</posx>
-					<posy>227</posy>
+					<posy>208</posy>
 					<width>250</width>
-					<height>120</height>
+					<height>130</height>
 					<font>font-23</font>
-					<label>$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][CR]$INFO[Window(Weather).Property(Current.Humidity)][CR]$INFO[Window(Weather).Property(Current.UVIndex)][CR]$INFO[Window(Weather).Property(Current.DewPoint)]$INFO[System.TemperatureUnits][CR]$INFO[Window(Weather).Property(Current.Wind)]</label>
+					<label>$INFO[Window.Property(Hourly.1.Precipitation),,%][CR]$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(Current.Humidity)][CR]$INFO[Window.Property(Current.UVIndex)][CR]$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(Current.Wind)]</label>
 				</control>
 			</control>
 			<control type="image">
@@ -772,7 +772,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.1.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.1.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -782,7 +782,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.1.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.1.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -791,7 +791,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -800,7 +800,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day1_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day1_Icon</include>
@@ -814,7 +814,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.1.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.1.Outlook)]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -835,7 +835,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.2.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.2.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -845,7 +845,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.2.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.2.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -854,7 +854,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.2.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.2.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -863,7 +863,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.2.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.2.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day2_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day2_Icon</include>
@@ -877,7 +877,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.2.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.2.Outlook)]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -898,7 +898,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.3.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.3.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -908,7 +908,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.3.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.3.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -917,7 +917,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.3.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.3.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -926,7 +926,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.3.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.3.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day3_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day3_Icon</include>
@@ -940,7 +940,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.3.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.3.Outlook)]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -961,7 +961,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.4.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.4.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -971,7 +971,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.4.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.4.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -980,7 +980,7 @@
 						<height>60</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.4.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.4.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -989,7 +989,7 @@
 						<height>80</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.4.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.4.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day4_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day4_Icon</include>
@@ -1003,7 +1003,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.4.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.4.Outlook)]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -1024,7 +1024,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.5.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.5.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1034,7 +1034,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.5.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.5.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1043,7 +1043,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.5.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.5.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1052,7 +1052,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.5.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.5.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day5_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day5_Icon</include>
@@ -1066,7 +1066,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.5.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.5.Outlook)]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -1087,7 +1087,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.6.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.6.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1097,7 +1097,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.6.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.6.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1106,7 +1106,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.6.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.6.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1115,7 +1115,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.6.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.6.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day6_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day6_Icon</include>
@@ -1129,7 +1129,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.6.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.6.Outlook)]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -1150,7 +1150,7 @@
 						<align>center</align>
 						<textcolor>blue</textcolor>
 						<font>font-20c</font>
-						<label fallback="-">[B]$INFO[Window(Weather).Property(Daily.7.ShortDay)][/B]</label>
+						<label fallback="-">[B]$INFO[Window.Property(Daily.7.ShortDay)][/B]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1160,7 +1160,7 @@
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-20</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.7.ShortDate)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.7.ShortDate)]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1169,7 +1169,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[393]: $INFO[Window(Weather).Property(Daily.7.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[393]: $INFO[Window.Property(Daily.7.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -1178,7 +1178,7 @@
 						<height>20</height>
 						<align>center</align>
 						<font>font-18</font>
-						<label fallback="-">$LOCALIZE[391]: $INFO[Window(Weather).Property(Daily.7.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+						<label fallback="-">$LOCALIZE[391]: $INFO[Window.Property(Daily.7.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day7_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day7_Icon</include>
@@ -1192,7 +1192,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>lightblue</textcolor>
 						<font>font-18</font>
-						<label fallback="-">$INFO[Window(Weather).Property(Daily.7.Outlook)]</label>
+						<label fallback="-">$INFO[Window.Property(Daily.7.Outlook)]</label>
 					</control>
 				</control>
 			</control>
@@ -1277,181 +1277,181 @@
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.1)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.1)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.1)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.1)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.1))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.2)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.2)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.2)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.2)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.2))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.3)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.3)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.3)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.3)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.3))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.4)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.4)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.4)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.4)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.4))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.5)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.5)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.5)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.5)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.5))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.6)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.6)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.6)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.6)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.6))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.7)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.7)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.7)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.7)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.7))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.8)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.8)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.8)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.8)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.8))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.9)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.9)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.9)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.9)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.9))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.10)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.10)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.10)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.10)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.10))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.11)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.11)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.11)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.11)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.11))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.12)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.12)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.12)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.12)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.12))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.13)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.13)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.13)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.13)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.13))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.14)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.14)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.14)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.14)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.14))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.15)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.15)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.15)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.15)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.15))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.16)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.16)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.16)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.16)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.16))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.17)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.17)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.17)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.17)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.17))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.18)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.18)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.18)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.18)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.18))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.19)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.19)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.19)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.19)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.19))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.20)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.20)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.20)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.20)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.20))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.21)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.21)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.21)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.21)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.21))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.22)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.22)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.22)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.22)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.22))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.23)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.23)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.23)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.23)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.23))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.24)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.24)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.24)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.24)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.24))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.25)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.25)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.25)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.25)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.25))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.26)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.26)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.26)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.26)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.26))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.27)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.27)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.27)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.27)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.27))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.28)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.28)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.28)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.28)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.28))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.29)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.29)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.29)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.29)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.29))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window.Property(MapList.1.MapLabel.30)]</label>
 						<onclick>$INFO[Window.Property(MapList.1.MapOnclick.30)]</onclick>
-						<onclick>Skin.SetString(WeatherPlusMap,$INFO[Window.Property(MapList.1.MapOnclick.30)])</onclick>
+						<onclick>Skin.SetString(TWC.DefaultMap,$INFO[Window.Property(MapList.1.MapLabel.30)])</onclick>
 						<visible>!IsEmpty(Window.Property(MapList.1.MapLabel.30))</visible>
 					</item>
 				</content>
@@ -2481,15 +2481,61 @@
 						<posx>0</posx>
 						<posy>10</posy>
 						<width>232</width>
-						<height>40</height>
+						<height>20</height>
 						<align>center</align>
-						<font>font-23</font>
+						<font>font-25</font>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.1.LongDay)][/B][CR][COLOR=lightblue]$INFO[Window.Property(Daily.1.LongDate)][/COLOR]</label>
+						<label>[B]$INFO[Window.Property(Daily.1.LongDay)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>35</posy>
+						<width>232</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Daily.1.LongDate)][/B]</label>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Daily1_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Daily1_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>206</posy>
+						<width>232</width>
+						<height>40</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font-24c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Daily.1.Outlook)][/B]</label>
+						<wrapmultiline>true</wrapmultiline>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>259</posy>
+						<width>232</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>310</posy>
+						<width>232</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Daily.1.WindSpeed)] $INFO[Window.Property(Daily.1.ShortWindDirection)][/B]</label>
+					</control>
 				</control>
 				<control type="group">
 					<description>Daily.2</description>
@@ -2659,16 +2705,16 @@
 	<include name="WeatherPlus_Current_Icon">
 		<control type="image">
 			<posx>0</posx>
-			<posy>30</posy>
+			<posy>10</posy>
 			<width>200</width>
 			<height>200</height>
-			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+			<texture>$INFO[Window.Property(Current.ConditionIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Current_Icon">
 		<control type="multiimage">
 			<posx>0</posx>
-			<posy>30</posy>
+			<posy>10</posy>
 			<width>200</width>
 			<height>200</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Current.FanartCode)]</imagepath>
@@ -2683,7 +2729,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day1_Icon">
@@ -2692,7 +2738,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.1.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2704,7 +2750,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day2_Icon">
@@ -2713,7 +2759,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2725,7 +2771,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day3_Icon">
@@ -2734,7 +2780,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2746,7 +2792,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day4_Icon">
@@ -2755,7 +2801,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.4.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2767,7 +2813,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day5_Icon">
@@ -2776,7 +2822,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.5.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2788,7 +2834,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day6_Icon">
@@ -2797,7 +2843,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.6.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2809,7 +2855,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<texture>$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
+			<texture>$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlus_Animated_Day7_Icon">
@@ -2818,7 +2864,7 @@
 			<posy>100</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.7.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -2950,7 +2996,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.1.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.1.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -2963,7 +3009,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.2.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.2.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -2976,7 +3022,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.3.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.3.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -2989,7 +3035,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.4.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.4.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3002,7 +3048,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.5.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.5.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3015,7 +3061,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.6.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.6.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3028,7 +3074,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.7.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.7.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3041,7 +3087,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.8.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.8.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3054,7 +3100,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.9.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.9.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3067,7 +3113,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.10.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.10.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3080,7 +3126,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.11.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.11.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3093,7 +3139,7 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.12.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Hourly.12.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -3106,10 +3152,208 @@
 			<posy>65</posy>
 			<width>140</width>
 			<height>140</height>
-			<imagepath>special://skin/images/foldericons/weather/$INFO[Window(Weather).Property(Hourly.12.FanartCode)]</imagepath>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.1.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily2_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.2.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily3_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.3.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily4_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.4.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily5_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.5.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily6_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.6.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily7_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.7.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily8_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.8.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily9_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.9.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Daily10_Icon">
+		<control type="multiimage">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Daily.10.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Daily1_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily2_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily3_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily4_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily5_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily6_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily7_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily8_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.8.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily9_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.9.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Daily10_Icon">
+		<control type="image">
+			<posx>46</posx>
+			<posy>65</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Daily.10.OutlookIcon)]</texture>
 		</control>
 	</include>
 </includes>
