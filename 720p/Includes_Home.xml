@@ -351,7 +351,7 @@
 				<posy>35</posy>
 				<height>30</height>
 				<width>500</width>
-				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Conditions]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Current.Wind)]</label>
+				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Conditions]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.WindSpeed)] $INFO[Window(Weather).Property(Daily.1.ShortWindDirection)]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-21</font>
