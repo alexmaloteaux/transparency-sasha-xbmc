@@ -970,6 +970,16 @@
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
+				<visible>!Container.Content(MusicVideos)</visible>
+			</control>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay116</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>522</posy>
+				<width>875</width>
+				<height>186</height>
+				<texture border="10">underlay.png</texture>
+				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<include condition="!Window.IsVisible(Musicfiles) + !Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			<control type="label">
@@ -1105,9 +1115,9 @@
 				<visible>ListItem.IsPlaying + !Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>278</posx>
-				<posy>572</posy>
-				<width>590</width>
+				<posx>317</posx>
+				<posy>535</posy>
+				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
@@ -1115,14 +1125,14 @@
 				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>$INFO[ListItem.Title]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>278</posx>
-				<posy>600</posy>
-				<width>590</width>
+				<posx>317</posx>
+				<posy>563</posy>
+				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
 				<textcolor>white</textcolor>
@@ -1135,9 +1145,9 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>278</posx>
-				<posy>632</posy>
-				<width>590</width>
+				<posx>317</posx>
+				<posy>595</posy>
+				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
@@ -1150,9 +1160,9 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>278</posx>
-				<posy>652</posy>
-				<width>590</width>
+				<posx>317</posx>
+				<posy>615</posy>
+				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
@@ -1165,9 +1175,9 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>278</posx>
-				<posy>672</posy>
-				<width>590</width>
+				<posx>317</posx>
+				<posy>635</posy>
+				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
@@ -1233,15 +1243,15 @@
 			</control>
 			<control type="image">
 				<posx>10</posx>
-				<posy>562</posy>
-				<width>256</width>
-				<height>144</height>
+				<posy>531</posy>
+				<width>298</width>
+				<height>168</height>
 				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
 				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
 				<bordertexture border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(MusicVideos)</visible>
 			</control>
 		</control>
 	</include>

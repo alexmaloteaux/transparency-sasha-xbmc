@@ -401,7 +401,7 @@
 			<width>875</width>
 			<height>186</height>
 			<texture border="10">underlay.png</texture>
-			<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags)</visible>
+			<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -412,7 +412,7 @@
 			<width>875</width>
 			<height>151</height>
 			<texture border="10">underlay.png</texture>
-			<visible>Skin.HasSetting(Enable_TVShows_Media_Flags)</visible>
+			<visible>[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -433,6 +433,7 @@
 			<width>875</width>
 			<height>148</height>
 			<texture border="10">underlay.png</texture>
+			<visible>!Container.Content(MusicVideos)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -475,6 +476,17 @@
 			<height>100</height>
 			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 			<visible>!Skin.HasSetting(Enable_Movies_Media_Flags) + !Window.IsVisible(VideoFiles) </visible>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay116">
+		<control type="image">
+			<posx>0</posx>
+			<posy>522</posy>
+			<width>875</width>
+			<height>186</height>
+			<texture border="10">underlay.png</texture>
+			<visible>Container.Content(MusicVideos)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
