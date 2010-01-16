@@ -118,7 +118,7 @@
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<texture>$INFO[ListItem.Icon]</texture>
 					<animation reversible="false" effect="zoom" start="30,-2,194,151" end="-36,-97,326,254" time="200">focus</animation>
-					<animation reversible="false" effect="zoom" start="-67,-97,326,254" end="30,-2,194,151" time="200">unfocus</animation>
+					<animation reversible="false" effect="zoom" start="-36,-97,326,254" end="30,-2,194,151" time="200">unfocus</animation>
 					<bordersize>12</bordersize>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
@@ -130,7 +130,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="picture-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 					<animation reversible="false" effect="zoom" start="30,-2,194,151" end="-36,-97,326,254" time="200">focus</animation>
-					<animation reversible="false" effect="zoom" start="-67,-97,326,254" end="30,-2,194,151" time="200">unfocus</animation>
+					<animation reversible="false" effect="zoom" start="-36,-97,326,254" end="30,-2,194,151" time="200">unfocus</animation>
 					<bordertexture border="13">picture-shadow.png</bordertexture>
 					<bordersize>12</bordersize>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
