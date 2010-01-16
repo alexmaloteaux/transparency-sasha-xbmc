@@ -205,21 +205,38 @@
 					<aligny>center</aligny>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
-					<visible>!System.GetBool(pvrplayback.timeshift)]</visible>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="label">
-					<description>time label</description>
-					<posx>325</posx>
-					<posy>134</posy>
-					<width>280</width>
-					<height>25</height>
-					<textcolor>lightblue</textcolor>
-					<label>$INFO[PVR.Time]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+				<control type="group">
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<control type="label">
+						<description>time label</description>
+						<posx>325</posx>
+						<posy>134</posy>
+						<width>280</width>
+						<height>25</height>
+						<textcolor>lightblue</textcolor>
+						<label>$INFO[VideoPlayer.Time]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<visible>!System.GetBool(pvrplayback.timeshift)]</visible>
+					</control>
+					<control type="label">
+						<description>time label</description>
+						<posx>325</posx>
+						<posy>134</posy>
+						<width>280</width>
+						<height>25</height>
+						<textcolor>lightblue</textcolor>
+						<label>$INFO[PVR.Time]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+					</control>
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
@@ -229,19 +246,22 @@
 					<height>15</height>
 					<info>Player.Progress</info>
 				</control>
-				<control type="label">
-					<description>time label</description>
-					<posx>750</posx>
-					<posy>134</posy>
-					<width>280</width>
-					<height>25</height>
-					<textcolor>white</textcolor>
-					<label>timeshift$INFO[PVR.TimeshiftDuration]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+				<control type="group">
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<control type="label">
+						<description>time label</description>
+						<posx>750</posx>
+						<posy>134</posy>
+						<width>280</width>
+						<height>25</height>
+						<textcolor>white</textcolor>
+						<label>timeshift$INFO[PVR.TimeshiftDuration]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+					</control>
 				</control>
 				<control type="label">
 					<description>time label</description>
@@ -255,21 +275,38 @@
 					<aligny>center</aligny>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
-					<visible>!System.GetBool(pvrplayback.timeshift)]</visible>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="label">
-					<description>time label</description>
-					<posx>1255</posx>
-					<posy>134</posy>
-					<width>280</width>
-					<height>25</height>
-					<textcolor>lightblue</textcolor>
-					<label>$INFO[PVR.Duration]</label>
-					<align>right</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+				<control type="group">
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<control type="label">
+						<description>time label</description>
+						<posx>1255</posx>
+						<posy>134</posy>
+						<width>280</width>
+						<height>25</height>
+						<textcolor>lightblue</textcolor>
+						<label>$INFO[Player.Duration]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<visible>!System.GetBool(pvrplayback.timeshift)]</visible>
+					</control>
+					<control type="label">
+						<description>time label</description>
+						<posx>1255</posx>
+						<posy>134</posy>
+						<width>280</width>
+						<height>25</height>
+						<textcolor>lightblue</textcolor>
+						<label>$INFO[PVR.Duration]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+					</control>
 				</control>
 				<control type="grouplist">
 					<posx>662</posx>
