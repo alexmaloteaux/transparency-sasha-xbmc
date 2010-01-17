@@ -3365,7 +3365,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="509">
-						<label>$LOCALIZE[31209] [B]$LOCALIZE[8][/B]</label>
+						<label>$LOCALIZE[31209] $LOCALIZE[8]</label>
 						<onclick>Skin.ToggleSetting(WeatherScript_Enable)</onclick>
 						<selected>Skin.HasSetting(WeatherScript_Enable)</selected>
 					</control>
