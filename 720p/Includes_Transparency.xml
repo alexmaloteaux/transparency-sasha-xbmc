@@ -1,5 +1,6 @@
 <includes>
 	<include name="T-Level">
+		<include condition="!Skin.HasSetting(Trans_20) + !Skin.HasSetting(Trans_40) + !Skin.HasSetting(Trans_60) + !Skin.HasSetting(Trans_80) + !Skin.HasSetting(Trans_100)">T-Level0</include>
 		<include condition="Skin.HasSetting(Trans_20)">T-Level20</include>
 		<include condition="Skin.HasSetting(Trans_40)">T-Level40</include>
 		<include condition="Skin.HasSetting(Trans_60)">T-Level60</include>
@@ -7,11 +8,15 @@
 		<include condition="Skin.HasSetting(Trans_100)">T-Level100</include>
 	</include>
 	<include name="T-Level-SB">
+		<include condition="!Skin.HasSetting(Trans_20) + !Skin.HasSetting(Trans_40) + !Skin.HasSetting(Trans_60) + !Skin.HasSetting(Trans_80) + !Skin.HasSetting(Trans_100)">T-Level-SB0</include>
 		<include condition="Skin.HasSetting(Trans_20)">T-Level-SB20</include>
 		<include condition="Skin.HasSetting(Trans_40)">T-Level-SB40</include>
 		<include condition="Skin.HasSetting(Trans_60)">T-Level-SB60</include>
 		<include condition="Skin.HasSetting(Trans_80)">T-Level-SB80</include>
 		<include condition="Skin.HasSetting(Trans_100)">T-Level-SB100</include>
+	</include>
+	<include name="T-Level0">
+		<colordiffuse>00FFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level20">
 		<colordiffuse>2FFFFFFF</colordiffuse>
@@ -27,6 +32,9 @@
 	</include>
 	<include name="T-Level100">
 		<colordiffuse>FFFFFFFF</colordiffuse>
+	</include>
+	<include name="T-Level-SB0">
+		<colordiffuse>8FFFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level-SB20">
 		<colordiffuse>AFFFFFFF</colordiffuse>
