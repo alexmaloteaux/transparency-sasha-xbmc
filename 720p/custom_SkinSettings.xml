@@ -127,15 +127,7 @@
 					<onup>101</onup>
 					<ondown>101</ondown>
 					<control type="radiobutton" id="102">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31116</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(WideSideMenuButtons)</onclick>
 						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(WideSideMenuButtons)</selected>
@@ -146,29 +138,13 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="104">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[31143]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(FanartShort)</onclick>
 						<onclick>Skin.Reset(FanartLong)</onclick>
 						<selected>Skin.HasSetting(FanartShort)</selected>
 					</control>
 					<control type="radiobutton" id="105">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[31144]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(FanartLong)</onclick>
 						<onclick>Skin.Reset(FanartShort)</onclick>
 						<selected>Skin.HasSetting(FanartLong)</selected>
@@ -179,15 +155,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="107">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31133</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Artist_Album_Order)</onclick>
 						<selected>Skin.HasSetting(Artist_Album_Order)</selected>
 					</control>
@@ -197,15 +165,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="109">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20189</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
@@ -215,30 +175,15 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="111">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31126</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(ClearArt)</onclick>
 						<selected>Skin.HasSetting(ClearArt)</selected>
 					</control>
 					<control type="button" id="112">
 						<description>TV Shows Folder Path</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31128</label>
+						<label>- $LOCALIZE[31128]</label>
 						<label2>$INFO[Skin.String(TVShows_Folder_Path)]</label2>
 						<onclick>Skin.SetPath(TVShows_Folder_Path)</onclick>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(ClearArt)</enable>
 					</control>
 					<control type="image" id="113">
@@ -247,103 +192,49 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="114">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31124</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
 						<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
 						<onclick>Skin.ToggleSetting(FanartNoVisualisation)</onclick>
 						<selected>Skin.HasSetting(FanartNoVisualisation)</selected>
 					</control>
 					<control type="radiobutton" id="115">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31147</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
 						<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
 						<onclick>Skin.ToggleSetting(FanartSlideshowNoVisualisation)</onclick>
 						<selected>Skin.HasSetting(FanartSlideshowNoVisualisation)</selected>
 					</control>
 					<control type="radiobutton" id="116">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>- $LOCALIZE[12379]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(FanartSlideshowAnimation)</onclick>
 						<selected>!Skin.HasSetting(FanartSlideshowAnimation)</selected>
 						<enable>Skin.HasSetting(FanartSlideshowNoVisualisation)</enable>
 					</control>
 					<control type="radiobutton" id="117">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31148</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
 						<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
 						<onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
 						<selected>Skin.HasSetting(CDWallNoVisualisation)</selected>
 					</control>
 					<control type="radiobutton" id="118">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31125</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(CDArt)</onclick>
 						<selected>!Skin.HasSetting(CDArt)</selected>
 					</control>
 					<control type="button" id="119">
 						<description>Music Folder Path</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31127</label>
+						<label>- $LOCALIZE[31127]</label>
 						<label2>$INFO[Skin.String(Music_Folder_Path)]</label2>
 						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | !Skin.HasSetting(CDArt)</enable>
 					</control>
 					<control type="button" id="120">
 						<description>CD Wall Folder Path</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31145</label>
+						<label>- $LOCALIZE[31145]</label>
 						<label2>$INFO[Skin.String(CDWall_Folder_Path)]</label2>
 						<onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(CDWallNoVisualisation)</enable>
 					</control>
 					<control type="image" id="121">
@@ -353,15 +244,7 @@
 					</control>
 					<control type="radiobutton" id="122">
 						<description>Fullscreen Trailer</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
 						<label>31146</label>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Fullscreen_Trailer)</onclick>
 						<selected>Skin.HasSetting(Fullscreen_Trailer)</selected>
 					</control>
@@ -372,30 +255,16 @@
 					</control>
 					<control type="radiobutton" id="124">
 						<description>Startup Playlist</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>21398</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
 					<control type="button" id="125">
 						<description>Startup Playlist Path</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<textcolor>lightgrey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>15311</label>
+						<label>- $LOCALIZE[15311]</label>
 						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
 						<onclick>Skin.SetFile(Startup_Playlist_Path)</onclick>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
 					<control type="image" id="126">
@@ -405,29 +274,13 @@
 					</control>
 					<control type="radiobutton" id="127">
 						<description>SafeMode</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31115</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(SafeMode)</onclick>
 						<selected>Skin.HasSetting(SafeMode)</selected>
 					</control>
 					<control type="radiobutton" id="128">
 						<description>Hate Transparency</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31140</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(HateTransparency)</onclick>
 						<selected>Skin.HasSetting(HateTransparency)</selected>
 					</control>
@@ -445,14 +298,9 @@
 								<description>Transparency Level 20</description>
 								<width>176</width>
 								<height>35</height>
-								<font>font-20</font>
 								<label>20%</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<texturenofocus border="7">list-nofocus.png</texturenofocus>
-								<textureradioon>radiobutton-focus.png</textureradioon>
 								<onclick>Skin.ToggleSetting(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
 								<onclick>Skin.Reset(Trans_60)</onclick>
@@ -465,14 +313,9 @@
 								<description>Transparency Level 40</description>
 								<width>176</width>
 								<height>35</height>
-								<font>font-20</font>
 								<label>40%</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<texturenofocus border="7">list-nofocus.png</texturenofocus>
-								<textureradioon>radiobutton-focus.png</textureradioon>
 								<onclick>Skin.ToggleSetting(Trans_40)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_60)</onclick>
@@ -485,14 +328,9 @@
 								<description>Transparency Level 60</description>
 								<width>176</width>
 								<height>35</height>
-								<font>font-20</font>
 								<label>60%</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<texturenofocus border="7">list-nofocus.png</texturenofocus>
-								<textureradioon>radiobutton-focus.png</textureradioon>
 								<onclick>Skin.ToggleSetting(Trans_60)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
@@ -505,14 +343,9 @@
 								<description>Transparency Level 80</description>
 								<width>176</width>
 								<height>35</height>
-								<font>font-20</font>
 								<label>80%</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<texturenofocus border="7">list-nofocus.png</texturenofocus>
-								<textureradioon>radiobutton-focus.png</textureradioon>
 								<onclick>Skin.ToggleSetting(Trans_80)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
@@ -525,14 +358,9 @@
 								<description>Transparency Level 100</description>
 								<width>176</width>
 								<height>35</height>
-								<font>font-20</font>
 								<label>100%</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<texturenofocus border="7">list-nofocus.png</texturenofocus>
-								<textureradioon>radiobutton-focus.png</textureradioon>
 								<onclick>Skin.ToggleSetting(Trans_100)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
@@ -575,45 +403,21 @@
 					<ondown>201</ondown>
 					<control type="radiobutton" id="203">
 						<description>Horizontal</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31118</label>
 						<onclick>Skin.ToggleSetting(HorizontalHomeMenu)</onclick>
 						<selected>Skin.HasSetting(HorizontalHomeMenu)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="204">
 						<description>Wide Home Buttons</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31117</label>
 						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
 						<selected>Skin.HasSetting(WideHomeMenu)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="205">
 						<description>Use Videos in file mode</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31119</label>
 						<onclick>Skin.ToggleSetting(VideosFilesInHome)</onclick>
 						<selected>Skin.HasSetting(VideosFilesInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="image" id="206">
 						<width>880</width>
@@ -624,263 +428,118 @@
 						<description>Disabled Menu Items</description>
 						<width>880</width>
 						<height>25</height>
-						<font>font-20</font>
-						<label>31120</label>
+						<label>[B]$LOCALIZE[31120][/B]</label>
 						<textcolor>lightblue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="208">
 						<description>Hide Videos in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>10006</label>
 						<onclick>Skin.ToggleSetting(VideosInHome)</onclick>
 						<selected>Skin.HasSetting(VideosInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="209">
 						<description>Hide Movies in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20342</label>
 						<onclick>Skin.ToggleSetting(MoviesInHome)</onclick>
 						<selected>!Skin.HasSetting(MoviesInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="210">
 						<description>Hide TV-Shows in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20343</label>
 						<onclick>Skin.ToggleSetting(TVShowsInHome)</onclick>
 						<selected>!Skin.HasSetting(TVShowsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="211">
 						<description>Hide MusicVideos in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20389</label>
 						<onclick>Skin.ToggleSetting(MusicVideosInHome)</onclick>
 						<selected>!Skin.HasSetting(MusicVideosInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="212">
 						<description>Hide Videos Plugins in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>1037</label>
 						<onclick>Skin.ToggleSetting(VideosPluginsInHome)</onclick>
 						<selected>!Skin.HasSetting(VideosPluginsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="213">
 						<description>Hide Apple Movie Trailers in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31403</label>
 						<onclick>Skin.ToggleSetting(TrailersInHome)</onclick>
 						<selected>!Skin.HasSetting(TrailersInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="214">
 						<description>Hide TV in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31500</label>
 						<onclick>Skin.ToggleSetting(TVInHome)</onclick>
 						<selected>!Skin.HasSetting(TVInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="215">
 						<description>Hide Music in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>10005</label>
 						<onclick>Skin.ToggleSetting(MusicInHome)</onclick>
 						<selected>Skin.HasSetting(MusicInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="216">
 						<description>Hide Pictures in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>10002</label>
 						<onclick>Skin.ToggleSetting(PicturesInHome)</onclick>
 						<selected>Skin.HasSetting(PicturesInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="217">
 						<description>Hide Comics in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31405</label>
 						<onclick>Skin.ToggleSetting(ComicsInHome)</onclick>
 						<selected>!Skin.HasSetting(ComicsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="218">
 						<description>Hide Programs in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>0</label>
 						<onclick>Skin.ToggleSetting(ProgramsInHome)</onclick>
 						<selected>Skin.HasSetting(ProgramsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="219">
 						<description>Hide Games in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>15016</label>
 						<onclick>Skin.ToggleSetting(GamesInHome)</onclick>
 						<selected>!Skin.HasSetting(GamesInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="220">
 						<description>Hide Emulators in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31402</label>
 						<onclick>Skin.ToggleSetting(EmulatorsInHome)</onclick>
 						<selected>!Skin.HasSetting(EmulatorsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="221">
 						<description>Hide Weather in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>12600</label>
 						<onclick>Skin.ToggleSetting(WeatherInHome)</onclick>
 						<selected>Skin.HasSetting(WeatherInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="222">
 						<description>Hide Scripts in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>10020</label>
 						<onclick>Skin.ToggleSetting(ScriptsInHome)</onclick>
 						<selected>Skin.HasSetting(ScriptsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="223">
 						<description>Hide Favourites in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>1036</label>
 						<onclick>Skin.ToggleSetting(FavouritesInHome)</onclick>
 						<selected>Skin.HasSetting(FavouritesInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="224">
 						<description>Hide Settings in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[5] $LOCALIZE[31142]</label>
 						<onclick>Skin.ToggleSetting(SettingsInHome)</onclick>
 						<selected>Skin.HasSetting(SettingsInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="225">
 						<description>Hide Play Disc in home</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[341]</label>
 						<onclick>Skin.ToggleSetting(PlayDiscInHome)</onclick>
 						<selected>!Skin.HasSetting(PlayDiscInHome)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="image" id="226">
 						<width>880</width>
@@ -889,101 +548,45 @@
 					</control>
 					<control type="radiobutton" id="227">
 						<description>enable recent movies info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20386</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentMovies)</onclick>
 						<selected>!Skin.HasSetting(HomepageRecentMovies)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="228">
 						<description>enable recent tv-shows info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20387</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentTVShows)</onclick>
 						<selected>!Skin.HasSetting(HomepageRecentTVShows)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="229">
 						<description>enable recent music info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>359</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentAlbums)</onclick>
 						<selected>!Skin.HasSetting(HomepageRecentAlbums)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="230">
 						<description>enable weather info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20084</label>
 						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="231">
 						<description>enable System info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20085</label>
 						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
 						<selected>!Skin.HasSetting(homepageSysteminfo)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="232">
 						<description>enable video info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20176</label>
 						<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 					<control type="radiobutton" id="233">
 						<description>enable music info</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>20083</label>
 						<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageMusicinfo)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 					</control>
 				</control>
 				<control type="scrollbar" id="299">
@@ -1010,15 +613,9 @@
 						<posy>185</posy>
 						<width>325</width>
 						<height>35</height>
-						<font>font-20</font>
 						<label>31134</label>
 						<onclick>Skin.ToggleSetting(AnimateBackgrounds)</onclick>
 						<selected>Skin.HasSetting(AnimateBackgrounds)</selected>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onleft>9000</onleft>
 						<onright>399</onright>
 						<onup>302</onup>
@@ -1048,8 +645,6 @@
 								<posy>0</posy>
 								<width>305</width>
 								<height>35</height>
-								<font>font-20</font>
-								<textcolor>white</textcolor>
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
@@ -1077,8 +672,6 @@
 								<posy>0</posy>
 								<width>305</width>
 								<height>35</height>
-								<font>font-20</font>
-								<textcolor>white</textcolor>
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
@@ -1351,7 +944,6 @@
 						<height>35</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font-20</font>
 						<label>$INFO[Container(302).ListItem.label]</label>
 						<textcolor>lightblue</textcolor>
 					</control>
@@ -1366,9 +958,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1385,9 +974,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1404,9 +990,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1429,9 +1012,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1449,9 +1029,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1469,9 +1046,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1489,14 +1063,9 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31030</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
-							<textureradiooff>radiobutton-nofocus.png</textureradiooff>
 							<onclick>Skin.ToggleSetting(Home_Movies_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Home_Movies_Fanart_Background)</selected>
 							<onleft>307</onleft>
@@ -1511,9 +1080,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>33063</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1529,13 +1095,7 @@
 							<posy>80</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>$LOCALIZE[31134]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.ToggleSetting(Animate_Home_Movies_Fanart_Background)</onclick>
 							<selected>!Skin.HasSetting(Animate_Home_Movies_Fanart_Background)</selected>
 							<onup>307</onup>
@@ -1549,13 +1109,7 @@
 							<posy>110</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>$LOCALIZE[33071]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.ToggleSetting(Custom_Home_Movies_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Custom_Home_Movies_Fanart_Background)</selected>
 							<onup>311</onup>
@@ -1569,14 +1123,8 @@
 							<posy>140</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>- $LOCALIZE[15311]</label>
 							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)][/COLOR]</label2>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.SetPath(Custom_Home_Movies_Fanart_Background_Path)</onclick>
 							<enable>Skin.HasSetting(Custom_Home_Movies_Fanart_Background)</enable>
 							<onup>312</onup>
@@ -1598,9 +1146,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1618,9 +1163,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1638,9 +1180,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1658,14 +1197,9 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31030</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
-							<textureradiooff>radiobutton-nofocus.png</textureradiooff>
 							<onclick>Skin.ToggleSetting(Home_TVShows_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Home_TVShows_Fanart_Background)</selected>
 							<onleft>307</onleft>
@@ -1680,9 +1214,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>33063</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1698,13 +1229,7 @@
 							<posy>80</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>$LOCALIZE[31134]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.ToggleSetting(Animate_Home_TVShows_Fanart_Background)</onclick>
 							<selected>!Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)</selected>
 							<onup>307</onup>
@@ -1718,13 +1243,7 @@
 							<posy>110</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>$LOCALIZE[33071]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.ToggleSetting(Custom_Home_TVShows_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)</selected>
 							<onup>311</onup>
@@ -1738,14 +1257,8 @@
 							<posy>140</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>- $LOCALIZE[15311]</label>
 							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)][/COLOR]</label2>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.SetPath(Custom_Home_TVShows_Fanart_Background_Path)</onclick>
 							<enable>Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)</enable>
 							<onup>312</onup>
@@ -1767,9 +1280,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1786,9 +1296,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1805,9 +1312,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1830,9 +1334,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1849,9 +1350,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1868,9 +1366,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1893,9 +1388,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1912,9 +1404,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1931,9 +1420,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1956,9 +1442,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1975,9 +1458,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -1994,9 +1474,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2019,9 +1496,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2039,9 +1513,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2059,9 +1530,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2079,14 +1547,9 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31030</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
-							<textureradiooff>radiobutton-nofocus.png</textureradiooff>
 							<onclick>Skin.ToggleSetting(Home_Music_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Home_Music_Fanart_Background)</selected>
 							<onleft>307</onleft>
@@ -2101,9 +1564,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>33063</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2119,13 +1579,7 @@
 							<posy>80</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>$LOCALIZE[31134]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.ToggleSetting(Animate_Home_Music_Fanart_Background)</onclick>
 							<selected>!Skin.HasSetting(Animate_Home_Music_Fanart_Background)</selected>
 							<onup>307</onup>
@@ -2139,13 +1593,7 @@
 							<posy>110</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>$LOCALIZE[33071]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.ToggleSetting(Custom_Home_Music_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Custom_Home_Music_Fanart_Background)</selected>
 							<onup>311</onup>
@@ -2159,14 +1607,8 @@
 							<posy>140</posy>
 							<width>505</width>
 							<height>30</height>
-							<font>font-20</font>
 							<label>- $LOCALIZE[15311]</label>
 							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)][/COLOR]</label2>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="7">list-focus.png</texturefocus>
-							<texturenofocus border="7">list-nofocus.png</texturenofocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<onclick>Skin.SetPath(Custom_Home_Music_Fanart_Background_Path)</onclick>
 							<enable>Skin.HasSetting(Custom_Home_Music_Fanart_Background)</enable>
 							<onup>312</onup>
@@ -2188,9 +1630,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2207,9 +1646,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2226,9 +1662,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2251,9 +1684,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2270,9 +1700,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2289,9 +1716,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2314,9 +1738,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2333,9 +1754,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2352,9 +1770,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2377,9 +1792,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2396,9 +1808,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2415,9 +1824,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2440,9 +1846,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2459,9 +1862,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2478,9 +1878,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2503,9 +1900,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2523,9 +1917,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2543,9 +1934,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2563,14 +1951,9 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31122</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
-							<textureradiooff>radiobutton-nofocus.png</textureradiooff>
 							<onclick>Skin.ToggleSetting(Home_Weather_Conditional_Backgrounds)</onclick>
 							<selected>!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)</selected>
 							<onleft>302</onleft>
@@ -2591,9 +1974,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2610,9 +1990,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2629,9 +2006,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2654,9 +2028,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2673,9 +2044,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2692,9 +2060,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2717,9 +2082,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2736,9 +2098,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2755,9 +2114,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2780,9 +2136,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2800,9 +2153,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2820,9 +2170,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2846,9 +2193,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2866,9 +2210,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2886,9 +2227,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2912,9 +2250,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2932,9 +2267,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2952,9 +2284,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2978,9 +2307,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2998,9 +2324,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3018,9 +2341,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3044,9 +2364,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3064,9 +2381,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3084,9 +2398,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3110,9 +2421,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3130,9 +2438,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3150,9 +2455,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3176,9 +2478,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3196,9 +2495,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3216,9 +2512,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3242,9 +2535,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3262,9 +2552,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3282,9 +2569,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3308,9 +2592,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3328,9 +2609,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3348,9 +2626,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3374,9 +2649,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3394,9 +2666,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3414,9 +2683,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3440,9 +2706,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3460,9 +2723,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3480,9 +2740,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3506,9 +2763,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3526,9 +2780,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3546,9 +2797,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3572,9 +2820,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3592,9 +2837,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3612,9 +2854,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3638,9 +2877,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3659,9 +2895,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3680,9 +2913,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3701,13 +2931,9 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31122</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
-							<textureradioon>radiobutton-focus.png</textureradioon>
 							<textureradionooff>radiobutton-nofocus.png</textureradionooff>
 							<onclick>Skin.ToggleSetting(Weather_Conditional_Backgrounds)</onclick>
 							<selected>!Skin.HasSetting(Weather_Conditional_Backgrounds)</selected>
@@ -3729,9 +2955,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3749,9 +2972,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3769,9 +2989,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3795,9 +3012,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3815,9 +3029,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3835,9 +3046,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3861,9 +3069,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3881,9 +3086,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3901,9 +3103,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3927,9 +3126,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31113</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3947,9 +3143,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>31114</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3967,9 +3160,6 @@
 							<width>165</width>
 							<height>35</height>
 							<label>571</label>
-							<font>font-20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
 							<align>center</align>
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -3988,7 +3178,6 @@
 						<width>505</width>
 						<height>20</height>
 						<aligny>center</aligny>
-						<font>font-20</font>
 						<haspath>true</haspath>
 						<align>center</align>
 						<label fallback="571">$INFO[Container(302).ListItem.Thumb]</label>
@@ -4035,28 +3224,12 @@
 					<onup>401</onup>
 					<ondown>401</ondown>
 					<control type="radiobutton" id="403">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[10000] - $LOCALIZE[31135]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Animate_Home_Weather_Icon)</onclick>
 						<selected>!Skin.HasSetting(Animate_Home_Weather_Icon)</selected>
 					</control>
 					<control type="radiobutton" id="404">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[8] - $LOCALIZE[31135]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Animate_Weather_Page_Icons)</onclick>
 						<selected>!Skin.HasSetting(Animate_Weather_Page_Icons)</selected>
 					</control>
@@ -4066,41 +3239,17 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="406">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31136]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_Foldericons_Movies_Genre)</onclick>
 						<selected>!Skin.HasSetting(Enable_Foldericons_Movies_Genre)</selected>
 					</control>
 					<control type="radiobutton" id="407">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31136]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_Foldericons_TVShows_Genre)</onclick>
 						<selected>!Skin.HasSetting(Enable_Foldericons_TVShows_Genre)</selected>
 					</control>
 					<control type="radiobutton" id="408">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[2] - $LOCALIZE[31136]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_Foldericons_Music_Genre)</onclick>
 						<selected>!Skin.HasSetting(Enable_Foldericons_Music_Genre)</selected>
 					</control>
@@ -4110,67 +3259,27 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="410">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31137]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_Movies_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Movies_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="411">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31137]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_TVShows_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_TVShows_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="412">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20389] - $LOCALIZE[31137]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_MusicVideos_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_MusicVideos_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="413">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[31500] - $LOCALIZE[31137]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_TV_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_TV_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="414">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[2] - $LOCALIZE[31137]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_Music_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Music_Media_Flags)</selected>
 					</control>
@@ -4180,41 +3289,17 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="416">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20342] - $LOCALIZE[16102]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_Movies_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Movies_Watched_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="417">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20343] - $LOCALIZE[16102]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_TVShows_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="418">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[20389] - $LOCALIZE[16102]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Enable_MusicVideos_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</selected>
 					</control>
@@ -4248,29 +3333,13 @@
 					<onup>501</onup>
 					<ondown>501</ondown>
 					<control type="radiobutton" id="503">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31141</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(SubsScript_Enable)</onclick>
 						<selected>Skin.HasSetting(SubsScript_Enable)</selected>
 					</control>
 					<control type="button" id="504">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(SubsScript_Path)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.SetFile(SubsScript_Path,.py)</onclick>
 						<enable>Skin.HasSetting(SubsScript_Enable)</enable>
 					</control>
@@ -4280,29 +3349,13 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="506">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>31208</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
 						<selected>Skin.HasSetting(LyricScript_Enable)</selected>
 					</control>
 					<control type="button" id="507">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.SetFile(LyricScript_Path,.py)</onclick>
 						<enable>Skin.HasSetting(LyricScript_Enable)</enable>
 					</control>
@@ -4312,43 +3365,19 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="509">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[31209] [B]$LOCALIZE[8][/B]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(WeatherScript_Enable)</onclick>
 						<selected>Skin.HasSetting(WeatherScript_Enable)</selected>
 					</control>
 					<control type="button" id="510">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>- $LOCALIZE[31203]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(WeatherScript_Label)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.SetString(WeatherScript_Label)</onclick>
 						<enable>Skin.HasSetting(WeatherScript_Enable)</enable>
 					</control>
 					<control type="button" id="511">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(WeatherScript_Path)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.SetFile(WeatherScript_Path,.py)</onclick>
 						<enable>Skin.HasSetting(WeatherScript_Enable)</enable>
 					</control>
@@ -4359,16 +3388,9 @@
 					</control>
 					<control type="button" id="513">
 						<description>Apple Movie Trailers Path</description>
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
 						<label>31130</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Trailers_Path)][/COLOR]</label2>
 						<onclick>Skin.SetFile(Trailers_Path,.py)</onclick>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
 					</control>
 					<control type="image" id="514">
 						<width>880</width>
@@ -4376,15 +3398,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="515">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[31132]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(hometheater)</onclick>
 						<selected>Skin.HasSetting(hometheater)</selected>
 					</control>
@@ -4916,269 +3930,128 @@
 						<description>Disabled Views</description>
 						<width>880</width>
 						<height>25</height>
-						<font>font-20</font>
-						<label>31149</label>
+						<label>[B]$LOCALIZE[31149][/B]</label>
 						<textcolor>lightblue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="803">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[535]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-List)</selected>
 					</control>
 					<control type="radiobutton" id="804">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[21371]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Thumbnail)</selected>
 					</control>
 					<control type="radiobutton" id="805">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[544]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-MediaInfo)</selected>
 					</control>
 					<control type="radiobutton" id="806">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[33031]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-CoverFlow)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-CoverFlow)</selected>
 					</control>
 					<control type="radiobutton" id="807">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[31035]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-Slide)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Slide)</selected>
 					</control>
 					<control type="radiobutton" id="808">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[31034]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-WideIcon)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-WideIcon)</selected>
 					</control>
 					<control type="radiobutton" id="809">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
 						<label>$LOCALIZE[3] - $LOCALIZE[536]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Videos-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Icons)</selected>
 					</control>
-					<control type="radiobutton" id="810">
+					<control type="image" id="810">
 						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="811">
 						<label>$LOCALIZE[2] - $LOCALIZE[535]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Music-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-List)</selected>
 					</control>
-					<control type="radiobutton" id="811">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="812">
 						<label>$LOCALIZE[2] - $LOCALIZE[21371]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Music-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="812">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="813">
 						<label>$LOCALIZE[2] - $LOCALIZE[544]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Music-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-MediaInfo)</selected>
 					</control>
-					<control type="radiobutton" id="813">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="814">
 						<label>$LOCALIZE[2] - $LOCALIZE[33031]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Music-CoverFlow)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-CoverFlow)</selected>
 					</control>
-					<control type="radiobutton" id="814">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="815">
 						<label>$LOCALIZE[2] - $LOCALIZE[536]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Music-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Icons)</selected>
 					</control>
-					<control type="radiobutton" id="815">
+					<control type="image" id="816">
 						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="817">
 						<label>$LOCALIZE[1] - $LOCALIZE[535]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-List)</selected>
 					</control>
-					<control type="radiobutton" id="816">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="818">
 						<label>$LOCALIZE[1] - $LOCALIZE[21371]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="817">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="819">
 						<label>$LOCALIZE[1] - $LOCALIZE[31033]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-PicThumb)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-PicThumb)</selected>
 					</control>
-					<control type="radiobutton" id="818">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="820">
 						<label>$LOCALIZE[1] - $LOCALIZE[31036]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Polaroid)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Polaroid)</selected>
 					</control>
-					<control type="radiobutton" id="819">
+					<control type="image" id="821">
 						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="822">
 						<label>$LOCALIZE[0] - $LOCALIZE[535]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Programs-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-List)</selected>
 					</control>
-					<control type="radiobutton" id="820">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="823">
 						<label>$LOCALIZE[0] - $LOCALIZE[21371]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="821">
+					<control type="image" id="824">
 						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="825">
 						<label>$LOCALIZE[247] - $LOCALIZE[535]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-List)</selected>
 					</control>
-					<control type="radiobutton" id="822">
-						<width>880</width>
-						<height>35</height>
-						<font>font-20</font>
+					<control type="radiobutton" id="826">
 						<label>$LOCALIZE[247] - $LOCALIZE[21371]</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="7">list-focus.png</texturefocus>
-						<texturenofocus border="7">list-nofocus.png</texturenofocus>
-						<textureradioon>radiobutton-focus.png</textureradioon>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-Thumbnail)</selected>
 					</control>

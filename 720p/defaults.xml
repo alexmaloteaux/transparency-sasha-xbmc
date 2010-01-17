@@ -9,24 +9,25 @@
 		<posx>80</posx>
 		<posy>60</posy>
 		<label>-</label>
-		<font>font-23</font>
+		<font>font-20</font>
 		<textcolor>white</textcolor>
 	</default>
 	<default type="fadelabel">
 		<posx>80</posx>
 		<posy>60</posy>
-		<font>font-23</font>
+		<font>font-20</font>
 		<textcolor>white</textcolor>
 	</default>
 	<default type="button">
 		<posx>300</posx>
 		<posy>200</posy>
-		<width>300</width>
+		<width>880</width>
 		<height>35</height>
-		<texturefocus border="7">button-focus.png</texturefocus>
-		<texturenofocus border="7">button-nofocus.png</texturenofocus>
-		<font>font-23</font>
+		<texturefocus border="7">list-focus.png</texturefocus>
+		<texturenofocus border="7">list-nofocus.png</texturenofocus>
+		<font>font-20</font>
 		<textcolor>white</textcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>darkgrey</disabledcolor>
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
@@ -43,7 +44,7 @@
 		<alttexturenofocus>scroll-down.png</alttexturenofocus>
 		<textcolor>white</textcolor>
 		<label>-</label>
-		<font>font-23</font>
+		<font>font-20</font>
 		<disabledcolor>darkgrey</disabledcolor>
 		<pulseonselect>true</pulseonselect>
 	</default>
@@ -57,13 +58,13 @@
 		<spinposx>410</spinposx>
 		<spinposy>305</spinposy>
 		<spincolor>white</spincolor>
-		<spinfont>font-23</spinfont>
+		<spinfont>font-20</spinfont>
 		<textcolor>white</textcolor>
 		<textureup>scroll-up.png</textureup>
 		<texturedown>scroll-down.png</texturedown>
 		<textureupfocus>scroll-up-focus.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-		<font>font-23</font>
+		<font>font-20</font>
 	</default>
 	<default type="progress">
 		<posx>100</posx>
@@ -84,7 +85,7 @@
 		<align>right</align>
 		<width>33</width>
 		<height>22</height>
-		<font>font-23</font>
+		<font>font-20</font>
 		<reverse>yes</reverse>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>
@@ -107,7 +108,7 @@
 		<texturedown>scroll-down-2.png</texturedown>
 		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
-		<font>font-23</font>
+		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>
 		<textoffsetx>7</textoffsetx>
@@ -118,8 +119,8 @@
 	<default type="radiobutton">
 		<posx>300</posx>
 		<posy>200</posy>
-		<width>300</width>
-		<height>30</height>
+		<width>880</width>
+		<height>35</height>
 		<radiowidth>24</radiowidth>
 		<radioheight>24</radioheight>
 		<textureradioon>radiobutton-focus.png</textureradioon>
@@ -127,8 +128,9 @@
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		<label>215</label>
-		<font>font-23</font>
+		<font>font-20</font>
 		<textcolor>white</textcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>darkgrey</disabledcolor>
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
@@ -147,7 +149,6 @@
 		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
 		<textureright>scroll-right.png</textureright>
 		<texturerightfocus>scroll-right-focus.png</texturerightfocus>
-		<font>font-23</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>
 		<aligny>center</aligny>
@@ -190,7 +191,7 @@
 		<height>30</height>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
-		<font>font-23</font>
+		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>
 		<textoffsetx>7</textoffsetx>
