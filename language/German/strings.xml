@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!--Translator: macchina-->
+<!--Translator: macchina, davidw-->
 <!--Date of translation: 05/15/2009-->
+<!--Date of upgrade: 11/19/2009-->
+<!--Date of upgrade: 11/24/2009-->
 <!--Version 2.1-->
 <strings>
   <!-- Dialog labels -->
   <string id="31000">Ton aus</string>
-  <string id="31001">Working...</string>
-  <string id="31010">FANART[CR]BILD[CR]NICHT[CR]Vorhanden</string>
+  <string id="31001">Arbeite...</string>
+  <string id="31010">FANART[CR]BILD[CR]NICHT[CR]VORHANDEN</string>
   <string id="31011">EPISODEN[CR]BILD[CR]NICHT[CR]VORHANDEN</string>
-  <string id="31012">EPISODE[CR]IMAGE[CR]NOT[CR]AVAILABLE</string>
+  <string id="31012">EPISODEN[CR]BILD[CR]NICHT[CR]VORHANDEN</string>
   <string id="31019">Theater</string>
   <!-- Page labels -->
   <string id="31020">Kapitel Titel</string>
@@ -21,28 +23,28 @@
   <string id="31029">DVD Liste</string>
   <string id="31030">Fanart</string>
   <string id="31031">Komplette Liste</string>
-  <string id="31032">Cover flow</string>
+  <string id="31032">Cover Flow</string>
   <string id="31033">Bilder</string>
   <string id="31034">Breite Icons</string>
   <string id="31035">Slide</string>
   <string id="31036">Polaroid</string>
   <string id="31037">Carousel</string>
   <!-- Misc labels -->
-  <string id="31040">Aktueller Film[CR]Fanart Bild[CR][CR]Click zum wechseln</string>
-  <string id="31041">Aktuelle TV Serie[CR]Fanart Bild[CR][CR]Click zum wechseln</string>
+  <string id="31040">Aktueller Film[CR]Fanart Bild[CR][CR]Klick zum Wechseln</string>
+  <string id="31041">Aktuelle TV Serie[CR]Fanart Bild[CR][CR]Klick zum Wechseln</string>
   <string id="31042">PLAYING</string>
   <string id="31043">PAUSE</string>
   <string id="31044">Schnell vorspulen</string>
-  <string id="31045">Rückspulen</string>
+  <string id="31045">Zurückspulen</string>
   <string id="31046">Willkommen im XBMC - Bitte Anmelden</string>
   <string id="31047">Letztes Anmelden</string>
-  <string id="31048">Aktueller Künstler[CR]Fanart Bild[CR][CR]Click zum wechseln</string>
+  <string id="31048">Aktueller Künstler[CR]Fanart Bild[CR][CR]Klick zum Wechseln</string>
   <string id="31050">Endzeit</string>
   <string id="31051">Ausschalten in 90 Minuten</string>
   <string id="31052">IMDB</string>
   <!-- Lyrics Script Extra labels -->
   <string id="31053">XBMC Liedtexte</string>
-  <string id="31054">Wähle dein Lied von der Liste</string>
+  <string id="31054">Wähle dein Lied aus der Liste</string>
   <!-- Playlist Editor labels -->
   <string id="31055">Öffne Playlist</string>
   <string id="31056">Sichere Playlist</string>
@@ -55,14 +57,14 @@
   <string id="31101">Home Screen Optionen</string>
   <string id="31102">Hintergründe</string>
   <string id="31103">Zeige "Pause" bei der Diashow</string>
-  <string id="31105">Zeige Media Titel beim Hintergrund Scan</string>
+  <string id="31105">Zeige Medien Titel beim Hintergrund Scan</string>
   <string id="31106">Sonstige Optionen</string>
   <string id="31107">Entferne Scan Bild vom Hintergrund</string>
-  <string id="31108">Entferne Scan Bild vom Hintergrund während Video Wiedergabe</string>
+  <string id="31108">Entferne Scan Bild vom Hintergrund während Videowiedergabe</string>
   <string id="31109">Home Screen Hintergründe</string>
-  <string id="31110">button - Aktiviere eigene Hintergründe</string>
-  <string id="31111">Immer Musik Infos anzeigen während der Liedtexte</string>
-  <string id="31112">Show media titles in "Wide icons" view</string>
+  <string id="31110">Button - Aktiviere eigene Hintergründe</string>
+  <string id="31111">Musik Infos während der Liedtexte immer anzeigen</string>
+  <string id="31112">Medien Titel in "Wide icons" Ansicht anzeigen</string>
   <string id="31113">Einzelbild</string>
   <string id="31114">Multi Bild</string>
   <string id="31115">Sicherer Modus</string>
@@ -80,17 +82,17 @@
   <string id="31128">TV Serien-Ordner Pfad</string>
   <string id="31129">Filme-Ordner Pfad</string>
   <string id="31130">Apple Movie Trailers Pfad</string>
-  <string id="31131">Aktiviere Weather.com Plus plugin</string>
-  <string id="31132">Aktiviere Home Theater Experience script</string>
+  <string id="31131">Aktiviere Weather.com Plus Plugin</string>
+  <string id="31132">Aktiviere Home Theater Experience Script</string>
   <string id="31133">Benutze Interpret - Album Sortierung für Alben</string>
   <string id="31134">Animierte Hintergründe</string>
   <string id="31135">Animierte Wetter-Symbole</string>
   <string id="31136">Benutze Genre Symbole</string>
-  <string id="31137">Aktiviere media flags</string>
+  <string id="31137">Aktiviere Media Flags</string>
   <string id="31138">Individuelles Shutdown Menu</string>
   <string id="31139">TV Serien - Benutze Poster</string>
   <string id="31140">Ich hasse Transparency!</string>
-  <string id="31141">Show subtitle script button in OSD</string>
+  <string id="31141">Zeige "Subtitle Script"-Button im OSD</string>
   <string id="31142">(Nicht entfernen, bevor man sich wirklich sicher ist!!!)</string>
   <string id="31143">Fanart - kurze Liste</string>
   <string id="31144">Fanart - lange Liste</string>
@@ -102,7 +104,7 @@
   <string id="31200">Eigene Script Optionen</string>
   <string id="31203">Setze Button Beschriftung</string>
   <string id="31204">Script Pfad</string>
-  <string id="31208">Zeige Liedtexte Script Button im OSD</string>
+  <string id="31208">Zeige "Liedtexte Script"-Button im OSD</string>
   <string id="31209">Aktiviere Schnellstart Script Button für -</string>
   <!-- AMT Script Extra labels -->
   <string id="31300">Zeige Besetzung</string>
@@ -111,7 +113,7 @@
   <string id="31401">Plugins</string>
   <string id="31402">Emulatoren</string>
   <string id="31403">Trailers</string>
-  <string id="31404">Movie trailers</string>
+  <string id="31404">Movie Trailers</string>
   <string id="31405">Comics</string>
   <string id="31406">Clips</string>
 </strings>
