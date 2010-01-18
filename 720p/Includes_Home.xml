@@ -722,6 +722,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 			</control>
@@ -735,6 +736,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>VideoPlayer.Content(Episodes)</visible>
 			</control>
@@ -748,6 +750,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>VideoPlayer.Content(MusicVideos)</visible>
 			</control>
@@ -812,6 +815,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-18</font>
+				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="progress">
@@ -832,6 +836,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-18</font>
+				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
@@ -893,6 +898,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -950,6 +956,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -1029,6 +1036,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -1066,6 +1074,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-18</font>
+				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="progress">
@@ -1086,6 +1095,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-18</font>
+				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>

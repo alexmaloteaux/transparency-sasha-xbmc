@@ -205,7 +205,6 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
-					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
 					<description>System Time Label</description>
@@ -287,7 +286,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
-					<textcolor>white</textcolor>
+					<textcolor>lightblue</textcolor>
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
@@ -307,7 +306,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
-					<textcolor>white</textcolor>
+					<textcolor>lightblue</textcolor>
 				</control>
 				<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">FullScreenMusicMediaFlags</include>
 				<control type="label">
