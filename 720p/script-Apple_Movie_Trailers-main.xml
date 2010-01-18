@@ -7,22 +7,12 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Home_Custom_Back_Trailers_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-trailers.jpg">$INFO[Skin.String(Home_Custom_Back_Trailers_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Home_Enable_Custom_Back_Trailers)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-trailers.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>!Skin.HasSetting(Home_Enable_Custom_Back_Trailers)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>

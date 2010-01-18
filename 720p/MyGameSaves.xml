@@ -8,22 +8,12 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-programs.jpg">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Programs)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-programs.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Programs)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>

@@ -8,66 +8,39 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-programs.jpg">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(ContentPrograms) + Skin.HasSetting(Enable_Custom_Back_Programs)</visible>
+			<visible>Skin.HasSetting(ContentPrograms)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-programs.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(ContentPrograms) + !Skin.HasSetting(Enable_Custom_Back_Programs)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Games_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-games.jpg">$INFO[Skin.String(Custom_Back_Games_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(ContentGames) + Skin.HasSetting(Enable_Custom_Back_Games)</visible>
+			<visible>Skin.HasSetting(ContentGames)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-games.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(ContentGames) + !Skin.HasSetting(Enable_Custom_Back_Games)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Emulators_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-emulators.jpg">$INFO[Skin.String(Custom_Back_Emulators_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(ContentEmulators) + Skin.HasSetting(Enable_Custom_Back_Emulators)</visible>
+			<visible>Skin.HasSetting(ContentEmulators)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-emulators.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(ContentEmulators) + !Skin.HasSetting(Enable_Custom_Back_Emulators)</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-programspicturesscripts</include>
 		<control type="group">

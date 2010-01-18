@@ -33,11 +33,11 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-videos.jpg">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Videos) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/) + !substring(Container.FolderPath,plugin://video/)</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/) + !substring(Container.FolderPath,plugin://video/)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -47,11 +47,11 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Custom_Back_Movies_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-movies.jpg">$INFO[Skin.String(Custom_Back_Movies_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Movies) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -61,11 +61,11 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Custom_Back_TVShows_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-tvshows.jpg">$INFO[Skin.String(Custom_Back_TVShows_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(Enable_Custom_Back_TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://2/) | substring(Container.FolderPath,videodb://5/)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://2/) | substring(Container.FolderPath,videodb://5/)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -75,11 +75,11 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-musicvideos.jpg">$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(Enable_Custom_Back_MusicVideos) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://3/)</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://3/)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -89,61 +89,11 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Custom_Back_Plugins_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-plugins.jpg">$INFO[Skin.String(Custom_Back_Plugins_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Plugins) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,plugin://video/)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-videos.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Videos) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/) + !substring(Container.FolderPath,plugin://video/)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-movies.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Movies) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)]</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-tvshows.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://2/) | substring(Container.FolderPath,videodb://5/)]</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-musicvideos.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_MusicVideos) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://3/)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-plugins.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Plugins) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,plugin://video/)</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,plugin://video/)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>

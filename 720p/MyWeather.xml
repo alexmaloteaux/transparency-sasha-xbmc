@@ -7,12 +7,12 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Weather_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-weather.jpg">$INFO[Skin.String(Custom_Back_Weather_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Weather) + Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+			<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
 		<control type="multiimage">
@@ -27,15 +27,6 @@
 			<fadetime>2000</fadetime>
 			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-weather.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Weather) + Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>

@@ -8,48 +8,28 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-pictures.jpg">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ContentPictures) + Skin.HasSetting(Enable_Custom_Back_Pictures) + IsEmpty(Container(597).ListItem(0).Thumb)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-pictures.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ContentPictures) + !Skin.HasSetting(Enable_Custom_Back_Pictures) + IsEmpty(Container(597).ListItem(0).Thumb)</visible>
+			<visible>Skin.HasSetting(ContentPictures) + IsEmpty(Container(597).ListItem(0).Thumb)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Comics_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-comics.jpg">$INFO[Skin.String(Custom_Back_Comics_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ContentComics) + Skin.HasSetting(Enable_Custom_Back_Comics)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-comics.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ContentComics) + !Skin.HasSetting(Enable_Custom_Back_Comics)</visible>
+			<visible>Skin.HasSetting(ContentComics)</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-programspicturesscripts</include>
 		<control type="largeimage">

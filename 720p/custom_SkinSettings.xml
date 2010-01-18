@@ -6,22 +6,12 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-settings.jpg">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Settings)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-settings.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Settings)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
@@ -2140,7 +2130,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Videos_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Videos)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2157,7 +2146,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Videos_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Videos)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2197,7 +2185,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Movies_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Movies)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2214,7 +2201,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Movies_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Movies)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2254,7 +2240,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_TVShows_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_TVShows)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2271,7 +2256,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_TVShows_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_TVShows)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2311,7 +2295,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_MusicVideos_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_MusicVideos)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2328,7 +2311,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_MusicVideos_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_MusicVideos)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2368,7 +2350,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Plugins_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Plugins)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2385,7 +2366,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Plugins_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Plugins)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2425,7 +2405,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Trailers_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Trailers)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2442,7 +2421,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Trailers_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Trailers)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2482,7 +2460,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_TV_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_TV)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2499,7 +2476,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_TV_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_TV)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2539,7 +2515,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Music_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Music)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2556,7 +2531,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Music_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Music)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2596,7 +2570,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Pictures_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Pictures)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2613,7 +2586,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Pictures_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Pictures)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2653,7 +2625,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Comics_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Comics)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2670,7 +2641,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Comics_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Comics)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2710,7 +2680,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Programs_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Programs)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2727,7 +2696,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Programs_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Programs)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2767,7 +2735,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Games_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Games)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2784,7 +2751,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Games_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Games)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2824,7 +2790,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Emulators_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Emulators)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2841,7 +2806,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Emulators_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Emulators)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2881,7 +2845,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Weather_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Weather)</onclick>
 							<enable>Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
 							<onleft>302</onleft>
 							<onright>305</onright>
@@ -2899,7 +2862,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Weather_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Weather)</onclick>
 							<enable>Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
 							<onleft>304</onleft>
 							<onright>306</onright>
@@ -2959,7 +2921,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Scripts_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Scripts)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -2976,7 +2937,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Scripts_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Scripts)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -3016,7 +2976,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Settings_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Settings)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -3033,7 +2992,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Settings_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Settings)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -3073,7 +3031,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Login_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Login)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -3090,7 +3047,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Login_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_Login)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -3130,7 +3086,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_PlayDisc_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_PlayDisc)</onclick>
 							<onleft>302</onleft>
 							<onright>304</onright>
 							<onup>303</onup>
@@ -3147,7 +3102,6 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_PlayDisc_Folder)</onclick>
-							<onclick>Skin.SetBool(Enable_Custom_Back_PlayDisc)</onclick>
 							<onleft>303</onleft>
 							<onright>305</onright>
 							<onup>304</onup>

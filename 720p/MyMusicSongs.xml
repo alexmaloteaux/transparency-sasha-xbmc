@@ -11,21 +11,10 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
+			<imagepath fallback="special://skin/images/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Music)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>special://skin/images/backgrounds/background-music.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Music)</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-mymusicsongs</include>
 		<control type="group">
