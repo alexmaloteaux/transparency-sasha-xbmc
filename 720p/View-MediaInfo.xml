@@ -134,6 +134,15 @@
 				<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
+				<posx>154</posx>
+				<posy>250</posy>
+				<width>75</width>
+				<height>61</height>
+				<texture>movieset.png</texture>
+				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
 				<posx>28</posx>
 				<posy>318</posy>
 				<width>200</width>
@@ -149,6 +158,15 @@
 				<height>304</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
 				<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>154</posx>
+				<posy>318</posy>
+				<width>75</width>
+				<height>61</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png">movieset.png</texture>
+				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>-4</posx>

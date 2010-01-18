@@ -174,6 +174,30 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
+			<control type="image">
+				<posx>680</posx>
+				<posy>442</posy>
+				<width>50</width>
+				<height>41</height>
+				<texture>movieset.png</texture>
+				<animation reversible="false" effect="zoom" start="680,442,50,41" end="696,472,75,61" time="200" condition="Control.HasFocus(57)">Conditional</animation>
+				<animation reversible="false" effect="zoom" end="680,442,50,41" start="696,472,75,61" time="200" condition="!Control.HasFocus(57)">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="0" end="100" time="100" delay="100">Visible</animation>
+				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>680</posx>
+				<posy>492</posy>
+				<width>50</width>
+				<height>41</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png">movieset.png</texture>
+				<animation reversible="false" effect="zoom" start="680,442,50,41" end="696,472,75,61" time="200" condition="Control.HasFocus(57)">Conditional</animation>
+				<animation reversible="false" effect="zoom" end="680,442,50,41" start="696,472,75,61" time="200" condition="!Control.HasFocus(57)">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="0" end="100" time="100" delay="100">Visible</animation>
+				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
 			<control type="label">
 				<posx>200</posx>
 				<posy>125</posy>

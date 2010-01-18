@@ -549,6 +549,15 @@
 				<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
+				<posx>275</posx>
+				<posy>392</posy>
+				<width>96</width>
+				<height>78</height>
+				<texture>movieset.png</texture>
+				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
 				<posx>68</posx>
 				<posy>31</posy>
 				<width>305</width>

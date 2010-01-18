@@ -684,6 +684,15 @@
 					<texture>dvdcase.png</texture>
 					<visible>!stringcompare(ListItem(0).Label,..)</visible>
 				</control>
+				<control type="image">
+					<posx>682</posx>
+					<posy>188</posy>
+					<width>50</width>
+					<height>41</height>
+					<texture>movieset.png</texture>
+					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+					<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(1)_Animation</include>
