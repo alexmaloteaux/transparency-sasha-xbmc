@@ -124,30 +124,11 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture background="true">$INFO[Container(5044).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5044) + Container(5044).Hasfocus(1)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5044) + Container(5044).Hasfocus(2)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5044) + Container(5044).Hasfocus(3)</visible>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Control.HasFocus(5044)</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartepisodes">
@@ -156,30 +137,11 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture background="true">$INFO[Container(5045).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5045) + Container(5045).Hasfocus(1)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5045) + Container(5045).Hasfocus(2)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5045) + Container(5045).Hasfocus(3)</visible>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Control.HasFocus(5045)</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartalbums">
@@ -188,30 +150,11 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture background="true">$INFO[Container(5046).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestSong.1.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5046) + Container(5046).Hasfocus(1)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestSong.2.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5046) + Container(5046).Hasfocus(2)</visible>
-		</control>
-		<control type="largeimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window.Property(LatestSong.3.Fanart)]</texture>
-			<include>RecentFadeEffect</include>
-			<visible>Control.HasFocus(5046) + Container(5046).Hasfocus(3)</visible>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Control.HasFocus(5046)</visible>
 		</control>
 	</include>
 	<include name="WeatherInfo">
@@ -1306,22 +1249,25 @@
 					<item id="1">
 						<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
 						<label2>$INFO[Window.Property(LatestMovie.1.Year)]</label2>
-						<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
 						<label2>$INFO[Window.Property(LatestMovie.2.Year)]</label2>
-						<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
 						<label2>$INFO[Window.Property(LatestMovie.3.Year)]</label2>
-						<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestMovie.3.Title))</visible>
 					</item>
 				</content>
@@ -1501,22 +1447,25 @@
 					<item id="1">
 						<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
 						<label2>$INFO[Window.Property(LatestEpisode.1.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label2>
-						<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
 						<label2>$INFO[Window.Property(LatestEpisode.2.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label2>
-						<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
 						<label2>$INFO[Window.Property(LatestEpisode.3.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label2>
-						<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestEpisode.3.ShowTitle))</visible>
 					</item>
 				</content>
@@ -1694,22 +1643,25 @@
 					<item id="1">
 						<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
 						<label2>$INFO[Window.Property(LatestSong.1.Album)]</label2>
-						<onclick>$INFO[Window.Property(LatestSong.1.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestSong.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestSong.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestSong.1.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestSong.1.Title))</visible>
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestSong.2.Artist)]</label>
 						<label2>$INFO[Window.Property(LatestSong.2.Album)]</label2>
-						<onclick>$INFO[Window.Property(LatestSong.2.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestSong.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestSong.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestSong.2.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestSong.2.Title))</visible>
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestSong.3.Artist)]</label>
 						<label2>$INFO[Window.Property(LatestSong.3.Album)]</label2>
-						<onclick>$INFO[Window.Property(LatestSong.3.Path),PlayMedia(,)]</onclick>
 						<thumb>$INFO[Window.Property(LatestSong.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestSong.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestSong.3.Path),PlayMedia(,)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestSong.3.Title))</visible>
 					</item>
 				</content>
