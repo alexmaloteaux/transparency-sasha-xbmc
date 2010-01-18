@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Translator: Ydatografida-->
-<!--Email: ydatografida@gmail.com-->
 <!--Date of translation: 06/11/2009-->
-<!--Version 2.1-->
 <strings>
+  <!-- Dialog labels -->
   <string id="31000">Σίγαση ήχου</string> 
   <string id="31001">Απασχολημένο...</string>
-  <string id="31010">Η ΕΙΚΟΝΑ[CR]ΤΟΥ FANART[CR]ΔΕΝ ΕΙΝΑΙ[CR]ΔΙΑΘΕΣΙΜΗ</string> 
-  <string id="31011">Η ΕΙΚΟΝΑ[CR]ΤΟΥ ΕΠΕΙΣΟΔΙΟΥ[CR]ΔΕΝ ΕΙΝΑΙ[CR]ΔΙΑΘΕΣΙΜΗ</string> 
-  <string id="31012">Η ΕΙΚΟΝΑ[CR]ΤΟΥ ΕΠΕΙΣΟΔΙΟΥ[CR]ΔΕΝ ΕΙΝΑΙ[CR]ΔΙΑΘΕΣΙΜΗ</string>
-  <string id="31019">Κινηματοθέατρο</string>
+  <!-- Page labels -->
   <string id="31020">Τίτλος κεφαλαίου</string> 
   <string id="31021">Αρχεία βίντεο</string> 
   <string id="31022">Αρχεία μουσικής</string> 
   <string id="31024">Σελίδα</string> 
-  <string id="31025">Αντικείμενα</string> 
-  <string id="31028">Εικονίδια DVD</string> 
+  <string id="31025">Αντικείμενα</string>
+  <!-- Viewmode labels -->
   <string id="31029">Λίστα DVD</string> 
   <string id="31030">Fanart</string> 
   <string id="31031">Πλήρης λίστα</string> 
@@ -25,15 +21,13 @@
   <string id="31035">Διαφάνεια</string>
   <string id="31036">Polaroid</string>
   <string id="31037">Καρουζέλ</string>
-  <string id="31040">Εικόνα Fanart[CR]Τρέχουσας ταινίας[CR][CR]Επιλέξτε για Αλλαγή</string> 
-  <string id="31041">Εικόνα Fanart[CR]Τρέχουσας τηλεοπτικής σειράς[CR][CR]Επιλέξτε για αλλαγή</string> 
+  <!-- Misc labels -->
   <string id="31042">ΑΝΑΠΑΡΑΓΩΓΗ</string> 
   <string id="31043">ΠΑΥΣΗ</string> 
   <string id="31044">ΠΡΟΩΘΗΣΗ ΜΠΡΟΣΤΑ</string> 
   <string id="31045">ΠΡΟΩΘΗΣΗ ΠΙΣΩ</string> 
   <string id="31046">Καλωσορίσατε στο XBMC – Παρακαλώ, εισέλθετε</string> 
   <string id="31047">Πρόσφατη είσοδος</string> 
-  <string id="31048">Εικόνα Fanart[CR]Παρόντος καλλιτέχνη[CR][CR]Επιλέξτε για αλλαγή</string>
   <string id="31050">Χρόνος λήξης</string>
   <string id="31051">Τερματισμός σε 90 λεπτά</string>
   <string id="31052">IMDB</string>
@@ -48,19 +42,11 @@
   <string id="31059">Τρέχουσα λίστα αναπαραγωγής</string> 
   <string id="31060">Αυτό το αρχείο είναι στοιβαγμένο, επιλέξτε το κομμάτι που επιθυμείτε για αναπαραγωγή.</string> 
   <!-- Skin Settings labels -->
-  <string id="31100">Επιλογές υπόβαθρου</string> 
   <string id="31101">Επιλογές αρχικής οθόνης</string> 
   <string id="31102">Υπόβαθρα</string> 
   <string id="31103">Εμφάνιση του 'ΠΑΥΣΗ' κατά την παρουσίαση φωτογραφιών</string> 
-  <string id="31104">Επιλογές τερματισμού – Χρήση αδρανοποίησης αντί της ύπνωσης</string> 
-  <string id="31105">Εμφάνιση τίτλων πολυμέσων κατά τον έλεγχο υπόβαθρου</string> 
   <string id="31106">Σύνθετες επιλογές</string> 
-  <string id="31107">Απομάκρυνση διακριτών γραμμών από το υπόβαθρο</string> 
-  <string id="31108">Απομάκρυνση διακριτών γραμμών από το υπόβαθρο κατά την αναπαραγωγή βίντεο</string> 
-  <string id="31109">Υπόβαθρα αρχικής οθόνης</string> 
-  <string id="31110">- Ενεργοποίηση προσαρμοσμένων υπόβαθρων</string> 
   <string id="31111">Εμφάνιση πάντα των πληροφοριών τραγουδιού κατά την προβολή των στίχων</string> 
-  <string id="31112">Εμφάνιση των τίτλων πολυμέσων στη προβολή 'Ευρείες εικόνες'</string>  
   <string id="31113">Εικόνα</string>
   <string id="31114">Φάκελος</string>
   <string id="31115">Ασφαλής λειτουργία</string>
@@ -101,7 +87,7 @@
   <string id="31203">Ορισμός ετικέτας πλήκτρου</string> 
   <string id="31204">Διαδρομή Script</string> 
   <string id="31208">Εμφάνιση πλήκτρου στίχων στις απεικονίσεις οθόνης (OSD)</string> 
-  <string id="31209">Ενεργοποίηση πλήκτρου γρήγορης έναρξης -</string> 
+  <string id="31209">Ενεργοποίηση πλήκτρου γρήγορης έναρξης</string> 
   <!-- AMT Script Extra labels -->
   <string id="31300">Εμφάνιση συντελεστών ταινίας </string> 
   <!-- Home Page labels -->
