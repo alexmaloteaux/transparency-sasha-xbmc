@@ -1856,6 +1856,18 @@
 				<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
 				<visible>!Control.HasFocus(5998)</visible>
 			</control>
+			<control type="fadelabel">
+				<description>rss alerts</description>
+				<posx>0</posx>
+				<posy>695</posy>
+				<width>1280</width>
+				<pauseatend>200</pauseatend>
+				<label>$INFO[Window.Property(Alerts.RSS)]</label>
+				<font>font-20bc</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<textoffsetx>1280</textoffsetx>
+			</control>
 		</control>
 		<control type="group">
 			<description>Hourly</description>
