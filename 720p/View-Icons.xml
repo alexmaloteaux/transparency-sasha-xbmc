@@ -184,7 +184,7 @@
 				<animation reversible="false" effect="zoom" end="680,442,50,41" start="696,472,75,61" time="200" condition="!Control.HasFocus(57)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="100" delay="100">Visible</animation>
-				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>680</posx>
@@ -196,7 +196,7 @@
 				<animation reversible="false" effect="zoom" end="680,442,50,41" start="696,472,75,61" time="200" condition="!Control.HasFocus(57)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="100" delay="100">Visible</animation>
-				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>200</posx>
