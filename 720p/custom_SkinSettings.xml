@@ -97,12 +97,46 @@
 					<align>center</align>
 					<visible>Skin.String(SkinSettings,7)</visible>
 				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>70</posy>
+					<width>880</width>
+					<height>50</height>
+					<font>font-32</font>
+					<label>33061</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<visible>Skin.String(SkinSettings,8)</visible>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>125</posy>
+					<width>880</width>
+					<height>50</height>
+					<font>font-32</font>
+					<label>20183</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<visible>Skin.String(SkinSettings,9)</visible>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>125</posy>
+					<width>880</width>
+					<height>50</height>
+					<font>font-32</font>
+					<label>Transparency!</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<visible>Skin.String(SkinSettings,10)</visible>
+				</control>
 				<control type="image">
 					<posx>400</posx>
 					<posy>160</posy>
 					<width>480</width>
 					<height>1</height>
 					<texture>separator.png</texture>
+					<animation effect="slide" start="0,0" end="0,-54" time="0" condition="Skin.String(SkinSettings,8)">Conditional</animation>
 				</control>
 				<control type="grouplist" id="101">
 					<visible>Skin.String(SkinSettings,1)</visible>
@@ -3357,7 +3391,7 @@
 						<selected>Skin.HasSetting(hometheater)</selected>
 					</control>
 				</control>
-				<control type="group" id="701">
+				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>
 					<posx>177</posx>
 					<posy>185</posy>
@@ -3367,8 +3401,8 @@
 					<pagecontrol>-</pagecontrol>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<onup>701</onup>
-					<ondown>701</ondown>
+					<onup>601</onup>
+					<ondown>601</ondown>
 					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay31</include>
 					<control type="image">
 						<posx>0</posx>
@@ -3383,7 +3417,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-master-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(702)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(602)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Master)</visible>
 					</control>
 					<control type="image">
@@ -3392,10 +3426,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-master-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(702)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(602)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Master)</visible>
 					</control>
-					<control type="button" id="702">
+					<control type="button" id="602">
 						<posx>10</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3405,9 +3439,9 @@
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Master)</onclick>
 						<onleft>9000</onleft>
-						<onright>703</onright>
-						<onup>702</onup>
-						<ondown>702</ondown>
+						<onright>603</onright>
+						<onup>602</onup>
+						<ondown>602</ondown>
 					</control>
 					<control type="image">
 						<posx>80</posx>
@@ -3415,7 +3449,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-logoff-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(703)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(603)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Logoff)</visible>
 					</control>
 					<control type="image">
@@ -3424,10 +3458,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-logoff-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(703)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(603)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Logoff)</visible>
 					</control>
-					<control type="button" id="703">
+					<control type="button" id="603">
 						<posx>80</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3436,10 +3470,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Logoff)</onclick>
-						<onleft>702</onleft>
-						<onright>704</onright>
-						<onup>703</onup>
-						<ondown>703</ondown>
+						<onleft>602</onleft>
+						<onright>604</onright>
+						<onup>603</onup>
+						<ondown>603</ondown>
 					</control>
 					<control type="image">
 						<posx>150</posx>
@@ -3447,7 +3481,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-info-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(704)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(604)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Info)</visible>
 					</control>
 					<control type="image">
@@ -3456,10 +3490,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-info-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(704)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(604)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Info)</visible>
 					</control>
-					<control type="button" id="704">
+					<control type="button" id="604">
 						<posx>150</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3468,10 +3502,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Info)</onclick>
-						<onleft>703</onleft>
-						<onright>705</onright>
-						<onup>704</onup>
-						<ondown>704</ondown>
+						<onleft>603</onleft>
+						<onright>605</onright>
+						<onup>604</onup>
+						<ondown>604</ondown>
 					</control>
 					<control type="image">
 						<posx>220</posx>
@@ -3479,7 +3513,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-filemanager-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(705)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(605)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Filemanager)</visible>
 					</control>
 					<control type="image">
@@ -3488,10 +3522,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-filemanager-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(705)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(605)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager)</visible>
 					</control>
-					<control type="button" id="705">
+					<control type="button" id="605">
 						<posx>220</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3500,10 +3534,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Filemanager)</onclick>
-						<onleft>704</onleft>
-						<onright>706</onright>
-						<onup>705</onup>
-						<ondown>705</ondown>
+						<onleft>604</onleft>
+						<onright>606</onright>
+						<onup>605</onup>
+						<ondown>605</ondown>
 					</control>
 					<control type="image">
 						<posx>290</posx>
@@ -3511,7 +3545,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-exit-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(706)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(606)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Exit)</visible>
 					</control>
 					<control type="image">
@@ -3520,10 +3554,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-exit-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(706)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(606)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
 					</control>
-					<control type="button" id="706">
+					<control type="button" id="606">
 						<posx>290</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3532,10 +3566,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Exit)</onclick>
-						<onleft>705</onleft>
-						<onright>707</onright>
-						<onup>706</onup>
-						<ondown>706</ondown>
+						<onleft>605</onleft>
+						<onright>607</onright>
+						<onup>606</onup>
+						<ondown>606</ondown>
 					</control>
 					<control type="image">
 						<posx>360</posx>
@@ -3543,7 +3577,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-restart-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(707)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(607)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Restart)</visible>
 					</control>
 					<control type="image">
@@ -3552,10 +3586,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-restart-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(707)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(607)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Restart)</visible>
 					</control>
-					<control type="button" id="707">
+					<control type="button" id="607">
 						<posx>360</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3564,10 +3598,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Restart)</onclick>
-						<onleft>706</onleft>
-						<onright>708</onright>
-						<onup>707</onup>
-						<ondown>707</ondown>
+						<onleft>606</onleft>
+						<onright>608</onright>
+						<onup>607</onup>
+						<ondown>607</ondown>
 					</control>
 					<control type="image">
 						<posx>430</posx>
@@ -3575,7 +3609,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-shutdown-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(708)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(608)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 					</control>
 					<control type="image">
@@ -3584,10 +3618,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-shutdown-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(708)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(608)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 					</control>
-					<control type="button" id="708">
+					<control type="button" id="608">
 						<posx>430</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3596,10 +3630,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Shutdown)</onclick>
-						<onleft>707</onleft>
-						<onright>709</onright>
-						<onup>708</onup>
-						<ondown>708</ondown>
+						<onleft>607</onleft>
+						<onright>609</onright>
+						<onup>608</onup>
+						<ondown>608</ondown>
 					</control>
 					<control type="image">
 						<posx>500</posx>
@@ -3607,7 +3641,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-suspend-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(709)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(609)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Suspend)</visible>
 					</control>
 					<control type="image">
@@ -3616,10 +3650,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-suspend-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(709)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(609)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Suspend)</visible>
 					</control>
-					<control type="button" id="709">
+					<control type="button" id="609">
 						<posx>500</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3628,10 +3662,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Suspend)</onclick>
-						<onleft>708</onleft>
-						<onright>710</onright>
-						<onup>709</onup>
-						<ondown>709</ondown>
+						<onleft>608</onleft>
+						<onright>610</onright>
+						<onup>609</onup>
+						<ondown>609</ondown>
 					</control>
 					<control type="image">
 						<posx>570</posx>
@@ -3639,7 +3673,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-hibernate-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(710)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(610)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Hibernate)</visible>
 					</control>
 					<control type="image">
@@ -3648,10 +3682,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-hibernate-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(710)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(610)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate)</visible>
 					</control>
-					<control type="button" id="710">
+					<control type="button" id="610">
 						<posx>570</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3660,10 +3694,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Hibernate)</onclick>
-						<onleft>709</onleft>
-						<onright>711</onright>
-						<onup>710</onup>
-						<ondown>710</ondown>
+						<onleft>609</onleft>
+						<onright>611</onright>
+						<onup>610</onup>
+						<ondown>610</ondown>
 					</control>
 					<control type="image">
 						<posx>640</posx>
@@ -3671,7 +3705,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-favourites-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(711)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(611)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Favourites)</visible>
 					</control>
 					<control type="image">
@@ -3680,10 +3714,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-favourites-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(711)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(611)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Favourites)</visible>
 					</control>
-					<control type="button" id="711">
+					<control type="button" id="611">
 						<posx>640</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3692,10 +3726,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Favourites)</onclick>
-						<onleft>710</onleft>
-						<onright>712</onright>
-						<onup>711</onup>
-						<ondown>711</ondown>
+						<onleft>610</onleft>
+						<onright>612</onright>
+						<onup>611</onup>
+						<ondown>611</ondown>
 					</control>
 					<control type="image">
 						<posx>710</posx>
@@ -3703,7 +3737,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-reboot-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(712)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(612)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
 					</control>
 					<control type="image">
@@ -3712,10 +3746,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-reboot-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(712)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(612)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
 					</control>
-					<control type="button" id="712">
+					<control type="button" id="612">
 						<posx>710</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3724,10 +3758,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Reboot)</onclick>
-						<onleft>711</onleft>
-						<onright>713</onright>
-						<onup>712</onup>
-						<ondown>712</ondown>
+						<onleft>611</onleft>
+						<onright>613</onright>
+						<onup>612</onup>
+						<ondown>612</ondown>
 					</control>
 					<control type="image">
 						<posx>780</posx>
@@ -3735,7 +3769,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-settings-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(713)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(613)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Settings)</visible>
 					</control>
 					<control type="image">
@@ -3744,10 +3778,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-settings-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(713)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(613)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Settings)</visible>
 					</control>
-					<control type="button" id="713">
+					<control type="button" id="613">
 						<posx>780</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3756,10 +3790,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Settings)</onclick>
-						<onleft>712</onleft>
-						<onright>714</onright>
-						<onup>713</onup>
-						<ondown>713</ondown>
+						<onleft>612</onleft>
+						<onright>614</onright>
+						<onup>613</onup>
+						<ondown>613</ondown>
 					</control>
 					<control type="image">
 						<posx>850</posx>
@@ -3767,7 +3801,7 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-eject-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(714)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(614)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Eject)</visible>
 					</control>
 					<control type="image">
@@ -3776,10 +3810,10 @@
 						<width>70</width>
 						<height>70</height>
 						<texture>shut-eject-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(714)">Conditional</animation>
+						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(614)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Eject)</visible>
 					</control>
-					<control type="button" id="714">
+					<control type="button" id="614">
 						<posx>850</posx>
 						<posy>130</posy>
 						<width>70</width>
@@ -3788,10 +3822,10 @@
 						<texturenofocus border="7">-</texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Eject)</onclick>
-						<onleft>713</onleft>
+						<onleft>613</onleft>
 						<onright>9000</onright>
-						<onup>714</onup>
-						<ondown>714</ondown>
+						<onup>614</onup>
+						<ondown>614</ondown>
 					</control>
 					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay32</include>
 					<control type="image">
@@ -3805,82 +3839,82 @@
 					<control type="label">
 						<label>20045</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(702)</visible>
+						<visible>Control.HasFocus(602)</visible>
 					</control>
 					<control type="label">
 						<label>20126</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(703)</visible>
+						<visible>Control.HasFocus(603)</visible>
 					</control>
 					<control type="label">
 						<label>130</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(704)</visible>
+						<visible>Control.HasFocus(604)</visible>
 					</control>
 					<control type="label">
 						<label>7</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(705)</visible>
+						<visible>Control.HasFocus(605)</visible>
 					</control>
 					<control type="label">
 						<label>$LOCALIZE[13012] XBMC</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(706)</visible>
+						<visible>Control.HasFocus(606)</visible>
 					</control>
 					<control type="label">
 						<label>$LOCALIZE[13313] XBMC</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(707)</visible>
+						<visible>Control.HasFocus(607)</visible>
 					</control>
 					<control type="label">
 						<label>13005</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(708)</visible>
+						<visible>Control.HasFocus(608)</visible>
 					</control>
 					<control type="label">
 						<label>13011</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(709)</visible>
+						<visible>Control.HasFocus(609)</visible>
 					</control>
 					<control type="label">
 						<label>13010</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(710)</visible>
+						<visible>Control.HasFocus(610)</visible>
 					</control>
 					<control type="label">
 						<label>1036</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(711)</visible>
+						<visible>Control.HasFocus(611)</visible>
 					</control>
 					<control type="label">
 						<label>13013</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(712)</visible>
+						<visible>Control.HasFocus(612)</visible>
 					</control>
 					<control type="label">
 						<label>5</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(713)</visible>
+						<visible>Control.HasFocus(613)</visible>
 					</control>
 					<control type="label">
 						<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
 						<include>ShutdownLabel</include>
-						<visible>Control.HasFocus(714)</visible>
+						<visible>Control.HasFocus(614)</visible>
 					</control>
 				</control>
-				<control type="grouplist" id="801">
+				<control type="grouplist" id="701">
 					<visible>Skin.String(SkinSettings,7)</visible>
 					<posx>200</posx>
 					<posy>185</posy>
 					<width>880</width>
 					<height>400</height>
 					<itemgap>-1</itemgap>
-					<pagecontrol>899</pagecontrol>
+					<pagecontrol>799</pagecontrol>
 					<onleft>9000</onleft>
-					<onright>899</onright>
-					<onup>801</onup>
-					<ondown>801</ondown>
-					<control type="label" id="802">
+					<onright>799</onright>
+					<onup>701</onup>
+					<ondown>701</ondown>
+					<control type="label" id="702">
 						<description>Disabled Views</description>
 						<width>880</width>
 						<height>25</height>
@@ -3889,128 +3923,128 @@
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="803">
+					<control type="radiobutton" id="703">
 						<label>$LOCALIZE[3] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-List)</selected>
 					</control>
-					<control type="radiobutton" id="804">
+					<control type="radiobutton" id="704">
 						<label>$LOCALIZE[3] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="805">
+					<control type="radiobutton" id="705">
 						<label>$LOCALIZE[3] - $LOCALIZE[544]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-MediaInfo)</selected>
 					</control>
-					<control type="radiobutton" id="806">
+					<control type="radiobutton" id="706">
 						<label>$LOCALIZE[3] - $LOCALIZE[33031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-CoverFlow)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-CoverFlow)</selected>
 					</control>
-					<control type="radiobutton" id="807">
+					<control type="radiobutton" id="707">
 						<label>$LOCALIZE[3] - $LOCALIZE[31035]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-Slide)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Slide)</selected>
 					</control>
-					<control type="radiobutton" id="808">
+					<control type="radiobutton" id="708">
 						<label>$LOCALIZE[3] - $LOCALIZE[31034]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-WideIcon)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-WideIcon)</selected>
 					</control>
-					<control type="radiobutton" id="809">
+					<control type="radiobutton" id="709">
 						<label>$LOCALIZE[3] - $LOCALIZE[536]</label>
 						<onclick>Skin.ToggleSetting(Hide-Videos-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Icons)</selected>
 					</control>
-					<control type="image" id="810">
+					<control type="image" id="710">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="811">
+					<control type="radiobutton" id="711">
 						<label>$LOCALIZE[2] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-List)</selected>
 					</control>
-					<control type="radiobutton" id="812">
+					<control type="radiobutton" id="712">
 						<label>$LOCALIZE[2] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="813">
+					<control type="radiobutton" id="713">
 						<label>$LOCALIZE[2] - $LOCALIZE[544]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-MediaInfo)</selected>
 					</control>
-					<control type="radiobutton" id="814">
+					<control type="radiobutton" id="714">
 						<label>$LOCALIZE[2] - $LOCALIZE[33031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-CoverFlow)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-CoverFlow)</selected>
 					</control>
-					<control type="radiobutton" id="815">
+					<control type="radiobutton" id="715">
 						<label>$LOCALIZE[2] - $LOCALIZE[536]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Icons)</selected>
 					</control>
-					<control type="image" id="816">
+					<control type="image" id="716">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="817">
+					<control type="radiobutton" id="717">
 						<label>$LOCALIZE[1] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-List)</selected>
 					</control>
-					<control type="radiobutton" id="818">
+					<control type="radiobutton" id="718">
 						<label>$LOCALIZE[1] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="819">
+					<control type="radiobutton" id="719">
 						<label>$LOCALIZE[1] - $LOCALIZE[31033]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-PicThumb)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-PicThumb)</selected>
 					</control>
-					<control type="radiobutton" id="820">
+					<control type="radiobutton" id="720">
 						<label>$LOCALIZE[1] - $LOCALIZE[31036]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Polaroid)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Polaroid)</selected>
 					</control>
-					<control type="image" id="821">
+					<control type="image" id="721">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="822">
+					<control type="radiobutton" id="722">
 						<label>$LOCALIZE[0] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-List)</selected>
 					</control>
-					<control type="radiobutton" id="823">
+					<control type="radiobutton" id="723">
 						<label>$LOCALIZE[0] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
 					</control>
-					<control type="image" id="824">
+					<control type="image" id="724">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="825">
+					<control type="radiobutton" id="725">
 						<label>$LOCALIZE[247] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-List)</selected>
 					</control>
-					<control type="radiobutton" id="826">
+					<control type="radiobutton" id="726">
 						<label>$LOCALIZE[247] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-Thumbnail)</selected>
 					</control>
 				</control>
-				<control type="scrollbar" id="899">
+				<control type="scrollbar" id="799">
 					<posx>1083</posx>
 					<posy>182</posy>
 					<width>20</width>
@@ -4020,12 +4054,1981 @@
 					<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 					<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 					<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-					<onleft>801</onleft>
+					<onleft>701</onleft>
 					<onright>9000</onright>
 					<showonepage>true</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Skin.String(SkinSettings,7)</visible>
 				</control>
+				<control type="grouplist" id="801">
+					<visible>Skin.String(SkinSettings,8)</visible>
+					<posx>176</posx>
+					<posy>133</posy>
+					<width>250</width>
+					<height>455</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>8100</onright>
+					<onup>801</onup>
+					<ondown>801</ondown>
+					<control type="radiobutton" id="802">
+						<description>Menu Videos</description>
+						<label>[B]$LOCALIZE[10006][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos)</onclick>
+						<selected>!Skin.HasSetting(Menu_Videos)</selected>
+					</control>
+					<control type="radiobutton" id="803">
+						<description>Menu Movies</description>
+						<label>[B]$LOCALIZE[342][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies)</selected>
+					</control>
+					<control type="radiobutton" id="804">
+						<description>Menu TVShows</description>
+						<label>[B]$LOCALIZE[20343][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows)</selected>
+					</control>
+					<control type="radiobutton" id="805">
+						<description>Menu MusicVideos</description>
+						<label>[B]$LOCALIZE[20389][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos)</onclick>
+						<selected>Skin.HasSetting(Menu_MusicVideos)</selected>
+					</control>
+					<control type="radiobutton" id="806">
+						<description>Menu TV</description>
+						<label>[B]$LOCALIZE[31500][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TV)</onclick>
+						<selected>Skin.HasSetting(Menu_TV)</selected>
+					</control>
+					<control type="radiobutton" id="807">
+						<description>Menu Music</description>
+						<label>[B]$LOCALIZE[2][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,6)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music)</selected>
+					</control>
+					<control type="radiobutton" id="808">
+						<description>Menu Pictures</description>
+						<label>[B]$LOCALIZE[1][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,7)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures)</onclick>
+						<selected>!Skin.HasSetting(Menu_Pictures)</selected>
+					</control>
+					<control type="radiobutton" id="809">
+						<description>Menu Programs</description>
+						<label>[B]$LOCALIZE[0][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,8)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs)</onclick>
+						<selected>!Skin.HasSetting(Menu_Programs)</selected>
+					</control>
+					<control type="radiobutton" id="810">
+						<description>Menu Weather</description>
+						<label>[B]$LOCALIZE[8][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,9)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Weather)</onclick>
+						<selected>!Skin.HasSetting(Menu_Weather)</selected>
+					</control>
+					<control type="radiobutton" id="811">
+						<description>Menu Scripts</description>
+						<label>[B]$LOCALIZE[247][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,10)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts)</onclick>
+						<selected>!Skin.HasSetting(Menu_Scripts)</selected>
+					</control>
+					<control type="radiobutton" id="812">
+						<description>Menu Favourites</description>
+						<label>[B]$LOCALIZE[1036][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,11)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites)</selected>
+					</control>
+					<control type="radiobutton" id="813">
+						<description>Menu Settings</description>
+						<label>[B]$LOCALIZE[5][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,12)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Settings)</onclick>
+						<selected>!Skin.HasSetting(Menu_Settings)</selected>
+					</control>
+					<control type="radiobutton" id="814">
+						<description>Menu PlayDisc</description>
+						<label>[B]$LOCALIZE[341][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,13)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_PlayDisc)</onclick>
+						<selected>Skin.HasSetting(Menu_PlayDisc)</selected>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos)</visible>
+					<posx>460</posx>
+					<posy>133</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Videos Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Videos Sub VideoPlugins</description>
+						<label>[B]$LOCALIZE[1037][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_VideoPlugins)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_VideoPlugins)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Videos Sub Recordings</description>
+						<label>[B]$LOCALIZE[20007][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Recordings)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_Recordings)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Videos Sub Custom1</description>
+						<label>[B]$LOCALIZE[20334] 1$INFO[Skin.String(Menu_Videos_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Videos Sub Custom2</description>
+						<label>[B]$LOCALIZE[20334] 2$INFO[Skin.String(Menu_Videos_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Videos Sub Custom3</description>
+						<label>[B]$LOCALIZE[20334] 3$INFO[Skin.String(Menu_Videos_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
+						<description>Menu Videos Sub Custom4</description>
+						<label>[B]$LOCALIZE[20334] 4$INFO[Skin.String(Menu_Videos_Sub_Custom4_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom4)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8108">
+						<description>Menu Videos Sub Custom5</description>
+						<label>[B]$LOCALIZE[20334] 5$INFO[Skin.String(Menu_Videos_Sub_Custom5_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(VideosCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom5)</selected>
+						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies)</visible>
+					<posx>460</posx>
+					<posy>166</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Movies Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Movies Sub Files</description>
+						<label>[B]$LOCALIZE[744][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Files)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Files)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Movies Sub Genres</description>
+						<label>[B]$LOCALIZE[135][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Genres)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Genres)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Movies Sub Year</description>
+						<label>[B]$LOCALIZE[345][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Year)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Year)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Movies Sub Actors</description>
+						<label>[B]$LOCALIZE[344][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Actors)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Actors)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Movies Sub Directors</description>
+						<label>[B]$LOCALIZE[20348][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Directors)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Directors)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
+						<description>Menu Movies Sub Studio</description>
+						<label>[B]$LOCALIZE[20388][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Studio)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Studio)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8108">
+						<description>Menu Movies Sub Sets</description>
+						<label>[B]$LOCALIZE[20434][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Sets)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Sets)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8109">
+						<description>Menu Movies Sub RecentlyAdded</description>
+						<label>[B]$LOCALIZE[31410][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_RecentlyAdded)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_RecentlyAdded)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8110">
+						<description>Menu Movies Sub Playlists</description>
+						<label>[B]$LOCALIZE[136][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Playlists)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Playlists)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8111">
+						<description>Menu Movies Sub Recordings</description>
+						<label>[B]$LOCALIZE[20007][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Recordings)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Recordings)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8112">
+						<description>Menu Movies Sub VideoPlugins</description>
+						<label>[B]$LOCALIZE[1037][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_VideoPlugins)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_VideoPlugins)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8113">
+						<description>Menu Movies Sub Custom1</description>
+						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_Movies_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Custom1)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8114">
+						<description>Menu Movies Sub Custom2</description>
+						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_Movies_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Custom2)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8115">
+						<description>Menu Movies Sub Custom3</description>
+						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_Movies_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Custom3)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8116">
+						<description>Menu Movies Sub Custom4</description>
+						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_Movies_Sub_Custom4_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Custom4)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8117">
+						<description>Menu Movies Sub Custom5</description>
+						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_Movies_Sub_Custom5_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MoviesCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Movies_Sub_Custom5)</selected>
+						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows)</visible>
+					<posx>460</posx>
+					<posy>199</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu TVShows Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu TVShows Sub Genres</description>
+						<label>[B]$LOCALIZE[135][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Genres)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Genres)</selected>
+						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu TVShows Sub Year</description>
+						<label>[B]$LOCALIZE[345][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Year)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Year)</selected>
+						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu TVShows Sub Actors</description>
+						<label>[B]$LOCALIZE[344][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Actors)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Actors)</selected>
+						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu TVShows Sub Studio</description>
+						<label>[B]$LOCALIZE[20388][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Studio)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Studio)</selected>
+						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu TVShows Sub RecentlyAdded</description>
+						<label>[B]$LOCALIZE[31410][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_RecentlyAdded)</onclick>
+						<selected>!Skin.HasSetting(Menu_TVShows_Sub_RecentlyAdded)</selected>
+						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,4) + Skin.HasSetting(Menu_MusicVideos)</visible>
+					<posx>460</posx>
+					<posy>232</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu MusicVideos Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu MusicVideos Sub Genres</description>
+						<label>[B]$LOCALIZE[135][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Genres)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_Genres)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu MusicVideos Sub Year</description>
+						<label>[B]$LOCALIZE[345][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Year)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_Year)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu MusicVideos Sub Artists</description>
+						<label>[B]$LOCALIZE[133][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Artists)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_Artists)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu MusicVideos Sub Albums</description>
+						<label>[B]$LOCALIZE[132][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Albums)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_Albums)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu MusicVideos Sub Directors</description>
+						<label>[B]$LOCALIZE[20348][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Directors)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_Directors)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
+						<description>Menu MusicVideos Sub Studio</description>
+						<label>[B]$LOCALIZE[20388][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Studio)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_Studio)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8108">
+						<description>Menu MusicVideos Sub RecentlyAdded</description>
+						<label>[B]$LOCALIZE[31410][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicVideosCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_RecentlyAdded)</onclick>
+						<selected>!Skin.HasSetting(Menu_MusicVideos_Sub_RecentlyAdded)</selected>
+						<enable>!Skin.HasSetting(Menu_MusicVideos_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,6) + !Skin.HasSetting(Menu_Music)</visible>
+					<posx>460</posx>
+					<posy>298</posy>
+					<width>416</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Music Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Music Sub Files</description>
+						<label>[B]$LOCALIZE[744][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Files)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Files)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Music Sub Artists</description>
+						<label>[B]$LOCALIZE[133][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Artists)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Artists)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Music Sub Albums</description>
+						<label>[B]$LOCALIZE[132][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Albums)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Albums)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Music Sub Songs</description>
+						<label>[B]$LOCALIZE[134][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Songs)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Songs)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Music Sub Singles</description>
+						<label>[B]$LOCALIZE[1050][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Singles)</onclick>
+						<selected>Skin.HasSetting(Menu_Music_Sub_Singles)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
+						<description>Menu Music Sub Genres</description>
+						<label>[B]$LOCALIZE[135][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Genres)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Genres)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8108">
+						<description>Menu Music Sub Years</description>
+						<label>[B]$LOCALIZE[652][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Years)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Years)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8109">
+						<description>Menu Music Sub Top100</description>
+						<label>[B]$LOCALIZE[271][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Top100)</onclick>
+						<selected>Skin.HasSetting(Menu_Music_Sub_Top100)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8110">
+						<description>Menu Music Sub RecentlyAdded</description>
+						<label>[B]$LOCALIZE[31410][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_RecentlyAdded)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_RecentlyAdded)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8111">
+						<description>Menu Music Sub RecentlyPlayed</description>
+						<label>[B]$LOCALIZE[31411][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_RecentlyPlayed)</onclick>
+						<selected>Skin.HasSetting(Menu_Music_Sub_RecentlyPlayed)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8112">
+						<description>Menu Music Sub Playlists</description>
+						<label>[B]$LOCALIZE[136][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Playlists)</onclick>
+						<selected>Skin.HasSetting(Menu_Music_Sub_Playlists)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8113">
+						<description>Menu Music Sub MusicVideos</description>
+						<label>[B]$LOCALIZE[20389][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_MusicVideos)</onclick>
+						<selected>Skin.HasSetting(Menu_Music_Sub_MusicVideos)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8114">
+						<description>Menu Music Sub MusicPlugins</description>
+						<label>[B]$LOCALIZE[1038][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_MusicPlugins)</onclick>
+						<selected>Skin.HasSetting(Menu_Music_Sub_MusicPlugins)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures)</visible>
+					<posx>460</posx>
+					<posy>331</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Pictures Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Pictures Sub PicturePlugins</description>
+						<label>[B]$LOCALIZE[1039][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_PicturePlugins)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub_PicturePlugins)</selected>
+						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Pictures Sub Custom1</description>
+						<label>[B]$LOCALIZE[20334] 1$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Pictures Sub Custom2</description>
+						<label>[B]$LOCALIZE[20334] 2$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Pictures Sub Custom3</description>
+						<label>[B]$LOCALIZE[20334] 3$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Pictures Sub Custom4</description>
+						<label>[B]$LOCALIZE[20334] 4$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom4)</selected>
+						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
+						<description>Menu Pictures Sub Custom5</description>
+						<label>[B]$LOCALIZE[20334] 5$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PicturesCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom5)</selected>
+						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs)</visible>
+					<posx>460</posx>
+					<posy>364</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Programs Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Programs Sub ProgramPlugins</description>
+						<label>[B]$LOCALIZE[1039][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_ProgramPlugins)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_ProgramPlugins)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Programs Sub Custom1</description>
+						<label>[B]$LOCALIZE[20334] 1$INFO[Skin.String(Menu_Programs_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Programs Sub Custom2</description>
+						<label>[B]$LOCALIZE[20334] 2$INFO[Skin.String(Menu_Programs_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Programs Sub Custom3</description>
+						<label>[B]$LOCALIZE[20334] 3$INFO[Skin.String(Menu_Programs_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Programs Sub Custom4</description>
+						<label>[B]$LOCALIZE[20334] 4$INFO[Skin.String(Menu_Programs_Sub_Custom4_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom4)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
+						<description>Menu Programs Sub Custom5</description>
+						<label>[B]$LOCALIZE[20334] 5$INFO[Skin.String(Menu_Programs_Sub_Custom5_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom5)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Weather)</visible>
+					<posx>460</posx>
+					<posy>397</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Weather Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(WeatherCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Weather_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Weather_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Weather Sub Custom1</description>
+						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(WeatherCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Weather_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Weather_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Weather_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Weather Sub Custom2</description>
+						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(WeatherCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Weather_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Weather_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Weather_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Weather Sub Custom3</description>
+						<label>[B]$LOCALIZE[31408] 3$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(WeatherCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Weather_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Weather_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Weather_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts)</visible>
+					<posx>460</posx>
+					<posy>430</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Scripts Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ScriptsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Scripts_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Scripts Sub Custom1</description>
+						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_Scripts_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ScriptsCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Scripts Sub Custom2</description>
+						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_Scripts_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ScriptsCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Scripts Sub Custom3</description>
+						<label>[B]$LOCALIZE[31408] 3$INFO[Skin.String(Menu_Scripts_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ScriptsCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Scripts Sub Custom4</description>
+						<label>[B]$LOCALIZE[31408] 4$INFO[Skin.String(Menu_Scripts_Sub_Custom4_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ScriptsCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom4)</selected>
+						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Scripts Sub Custom5</description>
+						<label>[B]$LOCALIZE[31408] 5$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ScriptsCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Scripts_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom5)</selected>
+						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings)</visible>
+					<posx>460</posx>
+					<posy>496</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Settings Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub)</onclick>
+						<selected>!Skin.HasSetting(Menu_Settings_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Settings Sub Skin Settings</description>
+						<label>[B]$LOCALIZE[20077][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_SkinSettings)</onclick>
+						<selected>!Skin.HasSetting(Menu_Settings_Sub_SkinSettings)</selected>
+						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Settings Sub System Info</description>
+						<label>[B]$LOCALIZE[130][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_SystemInfo)</onclick>
+						<selected>!Skin.HasSetting(Menu_Settings_Sub_SystemInfo)</selected>
+						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Settings Sub File Manager</description>
+						<label>[B]$LOCALIZE[10003][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_FileManager)</onclick>
+						<selected>!Skin.HasSetting(Menu_Settings_Sub_FileManager)</selected>
+						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc)</visible>
+					<posx>460</posx>
+					<posy>529</posy>
+					<width>350</width>
+					<height>545</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu PlayDisc Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PlayDiscCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub)</onclick>
+						<selected>!Skin.HasSetting(Menu_PlayDisc_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu PlayDisc Sub Player Controls</description>
+						<label>[B]$LOCALIZE[31409][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PlayDiscCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub_PlayerControls)</onclick>
+						<selected>!Skin.HasSetting(Menu_PlayDisc_Sub_PlayerControls)</selected>
+						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu PlayDisc Sub Eject</description>
+						<label>[B]$LOCALIZE[13391][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PlayDiscCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub_Eject)</onclick>
+						<selected>!Skin.HasSetting(Menu_PlayDisc_Sub_Eject)</selected>
+						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu PlayDisc Sub Custom1</description>
+						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PlayDiscCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_PlayDisc_Sub_Custom1)</selected>
+						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu PlayDisc Sub Custom2</description>
+						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(PlayDiscCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_PlayDisc_Sub_Custom2)</selected>
+						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom1) + Skin.String(VideosCustom,1)</visible>
+					<posy>217</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Videos Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Videos Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom1_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom2) + Skin.String(VideosCustom,2)</visible>
+					<posy>245</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Videos Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Videos Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom2_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom3) + Skin.String(VideosCustom,3)</visible>
+					<posy>273</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Videos Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Videos Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom3_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom4) + Skin.String(VideosCustom,4)</visible>
+					<posy>301</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Videos Sub Custom4 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom4_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom4_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Videos Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom4_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom4_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom5) + Skin.String(VideosCustom,5)</visible>
+					<posy>329</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Videos Sub Custom5 Label</description>
+						<width>400</width>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom5_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom5_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Videos Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom5_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Videos_Sub_Custom5_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom1) + Skin.String(MoviesCustom,1)</visible>
+					<posy>502</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Movies Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Movies_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Movies Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Movies_Sub_Custom1_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom2) + Skin.String(MoviesCustom,2)</visible>
+					<posy>530</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Movies Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Movies_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Movies Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Movies_Sub_Custom2_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom3) + Skin.String(MoviesCustom,3)</visible>
+					<posy>558</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Movies Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Movies_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Movies Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Movies_Sub_Custom3_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom4) + Skin.String(MoviesCustom,4)</visible>
+					<posy>586</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Movies Sub Custom4 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom4_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Movies_Sub_Custom4_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Movies Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom4_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Movies_Sub_Custom4_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom5) + Skin.String(MoviesCustom,5)</visible>
+					<posy>614</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Movies Sub Custom5 Label</description>
+						<width>400</width>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom5_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Movies_Sub_Custom5_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Movies Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom5_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Movies_Sub_Custom5_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub) + Skin.HasSetting(Menu_Pictures_Sub_Custom1) + Skin.String(PicturesCustom,1)</visible>
+					<posy>387</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Pictures Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Pictures Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom1_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub) + Skin.HasSetting(Menu_Pictures_Sub_Custom2) + Skin.String(PicturesCustom,2)</visible>
+					<posy>415</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Pictures Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Pictures Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom2_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub) + Skin.HasSetting(Menu_Pictures_Sub_Custom3) + Skin.String(PicturesCustom,3)</visible>
+					<posy>443</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Pictures Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Pictures Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom3_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub) + Skin.HasSetting(Menu_Pictures_Sub_Custom4) + Skin.String(PicturesCustom,4)</visible>
+					<posy>471</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Pictures Sub Custom4 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom4_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Pictures Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom4_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub) + Skin.HasSetting(Menu_Pictures_Sub_Custom5) + Skin.String(PicturesCustom,5)</visible>
+					<posy>499</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Pictures Sub Custom5 Label</description>
+						<width>400</width>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom5_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Pictures Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom5_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)</visible>
+					<posy>420</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom1_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)</visible>
+					<posy>448</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom2_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)</visible>
+					<posy>476</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom3_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)</visible>
+					<posy>504</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom4 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom4_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom4_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom4_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom4_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)</visible>
+					<posy>532</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom5 Label</description>
+						<width>400</width>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom5_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom5_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[31151][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom5_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom5_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom1) + Skin.String(WeatherCustom,1)</visible>
+					<posy>425</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Weather Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Weather_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Weather Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom1_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom1_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom2) + Skin.String(WeatherCustom,2)</visible>
+					<posy>453</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Weather Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Weather_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Weather Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom2_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom2_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom3) + Skin.String(WeatherCustom,3)</visible>
+					<posy>481</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Weather Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Weather_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Weather Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom3_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom3_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts) + Skin.HasSetting(Menu_Scripts_Sub) + Skin.HasSetting(Menu_Scripts_Sub_Custom1) + Skin.String(ScriptsCustom,1)</visible>
+					<posy>458</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Scripts Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Scripts_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Scripts Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom1_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom1_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts) + Skin.HasSetting(Menu_Scripts_Sub) + Skin.HasSetting(Menu_Scripts_Sub_Custom2) + Skin.String(ScriptsCustom,2)</visible>
+					<posy>486</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Scripts Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Scripts_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Scripts Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom2_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom2_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts) + Skin.HasSetting(Menu_Scripts_Sub) + Skin.HasSetting(Menu_Scripts_Sub_Custom3) + Skin.String(ScriptsCustom,3)</visible>
+					<posy>514</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Scripts Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Scripts_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Scripts Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom3_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom3_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts) + Skin.HasSetting(Menu_Scripts_Sub) + Skin.HasSetting(Menu_Scripts_Sub_Custom4) + Skin.String(ScriptsCustom,4)</visible>
+					<posy>542</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Scripts Sub Custom4 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom4_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Scripts_Sub_Custom4_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Scripts Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom4_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom4_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts) + Skin.HasSetting(Menu_Scripts_Sub) + Skin.HasSetting(Menu_Scripts_Sub_Custom5) + Skin.String(ScriptsCustom,5)</visible>
+					<posy>570</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Scripts Sub Custom5 Label</description>
+						<width>400</width>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom5_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Scripts Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Path,.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom5_Path)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom1) + Skin.String(PlayDiscCustom,1)</visible>
+					<posy>613</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu PlayDisc Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_PlayDisc_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu PlayDisc Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom1_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom2) + Skin.String(PlayDiscCustom,2)</visible>
+					<posy>641</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu PlayDisc Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_PlayDisc_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu PlayDisc Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Path.py)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom2_Path,.py)</onclick>
+					</control>
+				</control>
+				<control type="image">
+					<posx>428</posx>
+					<posy>141</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<animation effect="fade" start="100" end="0" time="0" condition="![Skin.String(SkinSettings,8) + [[Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos)] | [Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies)] | [Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows)] | [Skin.String(SettingsMenu,4) + Skin.HasSetting(Menu_MusicVideos)] | [Skin.String(SettingsMenu,6) + !Skin.HasSetting(Menu_Music)] | [Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures)] | [Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs)] | [Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Weather)] | [Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts)] | [Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings)] | [Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc)]]]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,33" time="100" tween="linear" condition="Skin.String(SettingsMenu,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,66" time="100" tween="linear" condition="Skin.String(SettingsMenu,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,99" time="100" tween="linear" condition="Skin.String(SettingsMenu,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,132" time="100" tween="linear" condition="Skin.String(SettingsMenu,5)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,165" time="100" tween="linear" condition="Skin.String(SettingsMenu,6)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,198" time="100" tween="linear" condition="Skin.String(SettingsMenu,7)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,231" time="100" tween="linear" condition="Skin.String(SettingsMenu,8)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,264" time="100" tween="linear" condition="Skin.String(SettingsMenu,9)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,297" time="100" tween="linear" condition="Skin.String(SettingsMenu,10)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,330" time="100" tween="linear" condition="Skin.String(SettingsMenu,11)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,363" time="100" tween="linear" condition="Skin.String(SettingsMenu,12)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,396" time="100" tween="linear" condition="Skin.String(SettingsMenu,13)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>222</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + [[Skin.HasSetting(Menu_Videos_Sub_Custom1) + Skin.String(VideosCustom,1)] | [Skin.HasSetting(Menu_Videos_Sub_Custom2) + Skin.String(VideosCustom,2)] | [Skin.HasSetting(Menu_Videos_Sub_Custom3) + Skin.String(VideosCustom,3)] | [Skin.HasSetting(Menu_Videos_Sub_Custom4) + Skin.String(VideosCustom,4)] | [Skin.HasSetting(Menu_Videos_Sub_Custom5) + Skin.String(VideosCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(VideosCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(VideosCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(VideosCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(VideosCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>507</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + [[Skin.HasSetting(Menu_Movies_Sub_Custom1) + Skin.String(MoviesCustom,1)] | [Skin.HasSetting(Menu_Movies_Sub_Custom2) + Skin.String(MoviesCustom,2)] | [Skin.HasSetting(Menu_Movies_Sub_Custom3) + Skin.String(MoviesCustom,3)] | [Skin.HasSetting(Menu_Movies_Sub_Custom4) + Skin.String(MoviesCustom,4)] | [Skin.HasSetting(Menu_Movies_Sub_Custom5) + Skin.String(MoviesCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(MoviesCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(MoviesCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(MoviesCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(MoviesCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>392</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub) + [[Skin.HasSetting(Menu_Pictures_Sub_Custom1) + Skin.String(PicturesCustom,1)] | [Skin.HasSetting(Menu_Pictures_Sub_Custom2) + Skin.String(PicturesCustom,2)] | [Skin.HasSetting(Menu_Pictures_Sub_Custom3) + Skin.String(PicturesCustom,3)] | [Skin.HasSetting(Menu_Pictures_Sub_Custom4) + Skin.String(PicturesCustom,4)] | [Skin.HasSetting(Menu_Pictures_Sub_Custom5) + Skin.String(PicturesCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(PicturesCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(PicturesCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(PicturesCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(PicturesCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>425</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + [[Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)] | [Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)] | [Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)] | [Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)] | [Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(ProgramsCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(ProgramsCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(ProgramsCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(ProgramsCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>430</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + [[Skin.HasSetting(Menu_Weather_Sub_Custom1) + Skin.String(WeatherCustom,1)] | [Skin.HasSetting(Menu_Weather_Sub_Custom2) + Skin.String(WeatherCustom,2)] | [Skin.HasSetting(Menu_Weather_Sub_Custom3) + Skin.String(WeatherCustom,3)] | [Skin.HasSetting(Menu_Weather_Sub_Custom4) + Skin.String(WeatherCustom,4)] | [Skin.HasSetting(Menu_Weather_Sub_Custom5) + Skin.String(WeatherCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(WeatherCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(WeatherCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(WeatherCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(WeatherCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>463</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Scripts) + Skin.HasSetting(Menu_Scripts_Sub) + [[Skin.HasSetting(Menu_Scripts_Sub_Custom1) + Skin.String(ScriptsCustom,1)] | [Skin.HasSetting(Menu_Scripts_Sub_Custom2) + Skin.String(ScriptsCustom,2)] | [Skin.HasSetting(Menu_Scripts_Sub_Custom3) + Skin.String(ScriptsCustom,3)] | [Skin.HasSetting(Menu_Scripts_Sub_Custom4) + Skin.String(ScriptsCustom,4)] | [Skin.HasSetting(Menu_Scripts_Sub_Custom5) + Skin.String(ScriptsCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(ScriptsCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(ScriptsCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(ScriptsCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(ScriptsCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>812</posx>
+					<posy>618</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + [[Skin.HasSetting(Menu_PlayDisc_Sub_Custom1) + Skin.String(PlayDiscCustom,1)] | [Skin.HasSetting(Menu_PlayDisc_Sub_Custom2) + Skin.String(PlayDiscCustom,2)] | [Skin.HasSetting(Menu_PlayDisc_Sub_Custom3) + Skin.String(PlayDiscCustom,3)] | [Skin.HasSetting(Menu_PlayDisc_Sub_Custom4) + Skin.String(PlayDiscCustom,4)] | [Skin.HasSetting(Menu_PlayDisc_Sub_Custom5) + Skin.String(PlayDiscCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(PlayDiscCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(PlayDiscCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(PlayDiscCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(PlayDiscCustom,5)">Conditional</animation>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Skin.String(SkinSettings,9)</visible>
+			<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+			<posx>130</posx>
+			<posy>76</posy>
+			<control type="label">
+				<posx>50</posx>
+				<posy>108</posy>
+				<width>910</width>
+				<height>350</height>
+				<label>[B]T![/B]</label>
+				<textcolor>white</textcolor>
+				<font>font-480</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<animation effect="fade" start="20" end="60" time="2000" pulse="true" condition="true">Conditional</animation>
+				<animation effect="rotate" end="-360" center="auto" time="2000" delay="6000" loop="true" reversible="false" condition="true">Conditional</animation>
+				<animation effect="rotatey" end="-360" center="auto" time="2000" delay="10000" loop="true" reversible="false" condition="true">Conditional</animation>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Skin.String(SkinSettings,10)</visible>
+			<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+			<posx>130</posx>
+			<posy>76</posy>
+			<control type="label">
+				<posx>50</posx>
+				<posy>108</posy>
+				<width>910</width>
+				<height>400</height>
+				<label>[B]![/B]</label>
+				<textcolor>white</textcolor>
+				<font>font-480</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="true">Conditional</animation>
+			</control>
+			<control type="scrollbar" id="1001">
+				<posx>950</posx>
+				<posy>100</posy>
+				<width>20</width>
+				<height>420</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<ondown>61</ondown>
+				<onup>61</onup>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+			<control type="textbox" id="5">
+				<description>textarea</description>
+				<posx>50</posx>
+				<posy>115</posy>
+				<width>910</width>
+				<height>400</height>
+				<font>font-23</font>
+				<align>center</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>1001</pagecontrol>
+				<autoscroll time="1000" delay="5000" repeat="7500">true</autoscroll>
+				<label>
+
+
+
+[COLOR=darkblue][B]Transparency![/B][/COLOR]
+
+[B]Would Like To Thank:[/B]
+
+
+
+
+[COLOR=darkblue]Hosting Service:[/COLOR]
+TheQuestor [COLOR=lightblue]- xbmc nightly builds[/COLOR]
+dynamix [COLOR=lightblue]- alternate download site[/COLOR]
+Bram77 [COLOR=lightblue]- xbmc xbox skins[/COLOR]
+
+
+[COLOR=darkblue]Graphics:[/COLOR]
+Burncycle [COLOR=lightblue]- partial home menu button design[/COLOR]
+
+
+[COLOR=darkblue]Fonts:[/COLOR]
+tikkiew [COLOR=lightblue]- bigger font sizes[/COLOR]
+
+
+[COLOR=darkblue]Media Flagging:[/COLOR]
+krypt2nite
+Imaginos
+ccMatrix
+
+
+[COLOR=darkblue]Weather Fanart:[/COLOR]
+timdog82001 [COLOR=lightblue]- Weather Fanart Pack[/COLOR]
+Silverxxx [COLOR=lightblue]- Home Weather Fanart[/COLOR]
+
+
+[COLOR=darkblue]Animated Weather Icons:[/COLOR]
+Silverxxx
+
+
+[COLOR=darkblue]ClearArt:[/COLOR]
+reaven
+
+
+[COLOR=darkblue]cdArt:[/COLOR]
+reaven
+
+
+[COLOR=darkblue]Record Label Logo's:[/COLOR]
+Ninjamawwe
+
+
+[COLOR=darkblue]Studio Logo's:[/COLOR]
+Cosmor
+
+
+[COLOR=darkblue]Background Animation:[/COLOR]
+CF2009
+
+
+[COLOR=darkblue]Trailer Preview:[/COLOR]
+anoobie
+
+
+[COLOR=darkblue]Recently Added Script:[/COLOR]
+Nuka1195
+
+
+[COLOR=darkblue]OSD Subtitle Script skin code:[/COLOR]
+Amet
+
+
+[COLOR=darkblue]Home Fanart Backdrops:[/COLOR]
+francyboy [COLOR=lightblue]- for the idea & Movies backdrop[/COLOR]
+Steveb [COLOR=lightblue]- for the TV Shows & Music backdrops[/COLOR]
+
+
+[COLOR=darkblue]Translations:[/COLOR]
+queeup [COLOR=lightblue]- Turkish[/COLOR]
+macchina [COLOR=lightblue]- German[/COLOR]
+francyboy [COLOR=lightblue]- Italian[/COLOR]
+darknoir [COLOR=lightblue]- French[/COLOR]
+Shalashaska [COLOR=lightblue]- French[/COLOR]
+jpf55 [COLOR=lightblue]- French[/COLOR]
+bardenas [COLOR=lightblue]- Spanish[/COLOR]
+junk [COLOR=lightblue]- Swedish[/COLOR]
+blittan [COLOR=lightblue]- Swedish[/COLOR]
+taxigps [COLOR=lightblue]- Chinese (Simple)[/COLOR]
+xbs08 [COLOR=lightblue]- Portuguese[/COLOR]
+dynamix [COLOR=lightblue]- Dutch[/COLOR]
+LinarSavion [COLOR=lightblue]- Hebrew[/COLOR]
+gugahoi [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
+rbonon [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
+medvedic [COLOR=lightblue]- Serbian[/COLOR]
+r1ctus [COLOR=lightblue]- Hungarian[/COLOR]
+airplanez [COLOR=lightblue]- Korean[/COLOR]
+YOkerman [COLOR=lightblue]- Norwegian[/COLOR]
+Requiem [COLOR=lightblue]- Norwegian[/COLOR]
+Jokkvahl [COLOR=lightblue]- Norwegian[/COLOR]
+ydatografida [COLOR=lightblue]- Greek[/COLOR]
+Dannermax [COLOR=lightblue]- Danish[/COLOR]
+perfecblue [COLOR=lightblue]- Chinese (Traditional)[/COLOR]
+ffws [COLOR=lightblue]- Spanish (Mexico)[/COLOR]
+davidw [COLOR=lightblue]- German (Austria)[/COLOR]
+dml7 [COLOR=lightblue]- Polish[/COLOR]
+Mika Pirinen [COLOR=lightblue]- Finnish[/COLOR]
+kyouhei [COLOR=lightblue]- Japanese[/COLOR]
+
+and everyone else who helped out translating Transparency!
+
+
+[COLOR=darkblue]Credits:[/COLOR]
+djh_[COLOR=lightblue] - Aeon[/COLOR]
+digitalhigh[COLOR=lightblue] - Serenity[/COLOR]
+ekim232[COLOR=lightblue] - The Operation MOD[/COLOR]
+scarfa[COLOR=lightblue] - Rapier[/COLOR]
+djdafreund[COLOR=lightblue] - Back-Row[/COLOR]
+
+i'm sure i've borrowed a few lines of &lt;code&gt; from all of you.  ;-)
+
+
+
+
+[COLOR=darkblue]Each and Everyone of You:[/COLOR]
+For Submitting Bug Reports
+Making Feature Request
+Posting New Idea's
+
+...And All The Thanx I've Received!
+
+
+
+
+
+
+[COLOR=darkblue]LAST BUT NOT LEAST:[/COLOR]
+Jezz_X[COLOR=lightblue] - For the great PM3.HD skin![/COLOR]
+
+
+
+
+
+
+
+
+
+[COLOR=darkblue][B]Transparency![/B][/COLOR]
+A FanArt Skin by ronie
+
+
+
+
+
+
+				</label>
 			</control>
 		</control>
 		<control type="group">
@@ -4054,7 +6057,7 @@
 					<onfocus>Skin.SetString(SkinSettings,1)</onfocus>
 					<onleft>199</onleft>
 					<onright>101</onright>
-					<onup>603</onup>
+					<onup>1000</onup>
 					<ondown>200</ondown>
 				</control>
 				<control type="button" id="200">
@@ -4106,27 +6109,39 @@
 					<onleft>501</onleft>
 					<onright>501</onright>
 					<onup>400</onup>
-					<ondown>700</ondown>
+					<ondown>600</ondown>
 				</control>
-				<control type="button" id="700">
+				<control type="button" id="600">
 					<description>Shutdown Options</description>
 					<posx>0</posx>
 					<posy>225</posy>
 					<include>ButtonCommonValues</include>
 					<label>13005</label>
 					<onfocus>Skin.SetString(SkinSettings,6)</onfocus>
-					<onleft>701</onleft>
-					<onright>701</onright>
+					<onleft>601</onleft>
+					<onright>601</onright>
 					<onup>500</onup>
-					<ondown>800</ondown>
+					<ondown>700</ondown>
 				</control>
-				<control type="button" id="800">
+				<control type="button" id="700">
 					<description>Views Options</description>
 					<posx>0</posx>
 					<posy>270</posy>
 					<include>ButtonCommonValues</include>
 					<label>582</label>
 					<onfocus>Skin.SetString(SkinSettings,7)</onfocus>
+					<onleft>701</onleft>
+					<onright>701</onright>
+					<onup>600</onup>
+					<ondown>800</ondown>
+				</control>
+				<control type="button" id="800">
+					<description>Menu Options</description>
+					<posx>0</posx>
+					<posy>315</posy>
+					<include>ButtonCommonValues</include>
+					<label>33061</label>
+					<onfocus>Skin.SetString(SkinSettings,8)</onfocus>
 					<onleft>801</onleft>
 					<onright>801</onright>
 					<onup>700</onup>
@@ -4135,51 +6150,35 @@
 				<control type="button" id="900">
 					<description>Reload Skin button</description>
 					<posx>0</posx>
-					<posy>315</posy>
-					<include>ButtonCommonValues</include>
-					<label>20183</label>
-					<onclick>XBMC.ReloadSkin()</onclick>
-					<onclick>SetFocus(900)</onclick>
-					<onleft>701</onleft>
-					<onright>701</onright>
-					<onup>800</onup>
-					<ondown>901</ondown>
-				</control>
-				<control type="button" id="901">
-					<description>Transparency! Thanx button</description>
-					<posx>0</posx>
 					<posy>360</posy>
 					<include>ButtonCommonValues</include>
-					<label>Transparency!</label>
-					<onclick>ActivateWindow(1112)</onclick>
-					<onleft>701</onleft>
-					<onright>701</onright>
-					<onup>900</onup>
-					<ondown>610</ondown>
+					<label>20183</label>
+					<onfocus>Skin.SetString(SkinSettings,9)</onfocus>
+					<onclick>XBMC.ReloadSkin()</onclick>
+					<onclick>SetFocus(900)</onclick>
+					<onleft>900</onleft>
+					<onright>900</onright>
+					<onup>800</onup>
+					<ondown>1000</ondown>
 				</control>
-				<control type="button" id="610">
-					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>901</onup>
-					<ondown>603</ondown>
-					<visible>false</visible>
-				</control>
-				<control type="group">
+				<control type="button" id="1000">
+					<description>Transparency! Thanx button</description>
 					<posx>0</posx>
 					<posy>405</posy>
-					<include>CommonNowPlaying_Controls</include>
-				</control>
-				<control type="button" id="611">
-					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>607</onup>
+					<include>ButtonCommonValues</include>
+					<label>Transparency!</label>
+					<onfocus>Skin.SetString(SkinSettings,10)</onfocus>
+					<onclick>ActivateWindow(1112)</onclick>
+					<onleft>1001</onleft>
+					<onright>1001</onright>
+					<onup>900</onup>
 					<ondown>100</ondown>
-					<visible>false</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>407</posy>
+					<posy>452</posy>
 					<height>16</height>
 					<texture border="0,0,5,0">shadow-bottom2.png</texture>
-					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
 				</control>
