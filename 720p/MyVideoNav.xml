@@ -37,7 +37,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/) + !substring(Container.FolderPath,plugin://video/)</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -65,7 +65,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://2/) | substring(Container.FolderPath,videodb://5/)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://2/) | substring(Container.FolderPath,videodb://5/) | substring(Container.FolderPath,plugin://video/)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -80,20 +80,6 @@
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://3/)</visible>
-		</control>
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/images/backgrounds/background-plugins.jpg">$INFO[Skin.String(Custom_Back_Plugins_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,plugin://video/)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>

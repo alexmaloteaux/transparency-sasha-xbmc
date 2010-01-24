@@ -211,13 +211,46 @@
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>237</width>
+			<width>213</width>
 			<height>40</height>
 			<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 			<include>T-Level</include>
 		</control>
 	</include>
 	<include name="T-Button_Home_NoFocus_Hor2">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>213</width>
+			<height>40</height>
+			<texture border="15">Button_Home_NoFocus_Hor.png</texture>
+			<visible>!Control.HasFocus(5041)</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Button_Home_Focus_Hor1">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>213</width>
+			<height>40</height>
+			<texture border="15">Button_Home_Focus_Hor.png</texture>
+			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5041)">conditional</animation>
+			<visible>Control.HasFocus(5041)</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Button_Home_NoFocus_Hor_Wide1">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>237</width>
+			<height>40</height>
+			<texture border="15">Button_Home_NoFocus_Hor.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Button_Home_NoFocus_Hor_Wide2">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -228,7 +261,7 @@
 			<include>T-Level</include>
 		</control>
 	</include>
-	<include name="T-Button_Home_Focus_Hor1">
+	<include name="T-Button_Home_Focus_Hor_Wide1">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -245,12 +278,39 @@
 		<texturenofocus border="2">Button_Side_NoFocus2.png</texturenofocus>
 		<include>T-Level-SB</include>
 	</include>
+	<include name="T-Home_Ver_Sub">
+		<control type="image">
+			<posx>199</posx>
+			<posy>212</posy>
+			<width>210</width>
+			<height>280</height>
+			<texture border="0,30,30,30">submenu-ver.png</texture>
+			<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuButtonAnim</include>
+			<include condition="Skin.HasSetting(WideHomeMenu)">VerticalSubMenuButtonAnimWide</include>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
+			<visible>ControlGroup(8000).HasFocus</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Home_Hor_Sub">
+		<control type="image">
+			<posx>240</posx>
+			<posy>566</posy>
+			<width>800</width>
+			<height>35</height>
+			<texture border="30,0,30,0">submenu-hor.png</texture>
+			<animation effect="zoom" start="240,601,800,1" end="240,566,800,35" time="200">Visible</animation>
+			<animation effect="zoom" start="240,566,800,35" end="240,601,800,1" time="200">Hidden</animation>
+			<visible>ControlGroup(8000).HasFocus</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-Gradient1">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>600</width>
-			<height>130</height>
+			<height>150</height>
 			<texture border="2">gradient.png</texture>
 			<include>T-Level</include>
 		</control>
@@ -284,16 +344,6 @@
 			<width>500</width>
 			<height>80</height>
 			<texture border="2">gradient2.png</texture>
-			<include>T-Level</include>
-		</control>
-	</include>
-	<include name="T-Gradient5">
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>600</width>
-			<height>150</height>
-			<texture border="2">gradient.png</texture>
 			<include>T-Level</include>
 		</control>
 	</include>

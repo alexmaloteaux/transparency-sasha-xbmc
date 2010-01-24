@@ -38,7 +38,7 @@
 						<textcolor>white</textcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-28c</font>
-						<onclick>ActivateWindow(MyVideosSettings)</onclick>
+						<onclick>ActivateWindow(VideosSettings)</onclick>
 						<texturefocus border="5">thumb-focus2.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -74,7 +74,7 @@
 						<textcolor>white</textcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-28c</font>
-						<onclick>ActivateWindow(MyTVSettings)</onclick>
+						<onclick>ActivateWindow(TVSettings)</onclick>
 						<texturefocus border="5">thumb-focus2.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -110,7 +110,7 @@
 						<textcolor>white</textcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-28c</font>
-						<onclick>ActivateWindow(MyMusicSettings)</onclick>
+						<onclick>ActivateWindow(MusicSettings)</onclick>
 						<texturefocus border="5">thumb-focus2.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -146,7 +146,7 @@
 						<textcolor>white</textcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-28c</font>
-						<onclick>ActivateWindow(MyPicturesSettings)</onclick>
+						<onclick>ActivateWindow(PicturesSettings)</onclick>
 						<texturefocus border="5">thumb-focus2.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -182,7 +182,7 @@
 						<textcolor>white</textcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-28c</font>
-						<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+						<onclick>ActivateWindow(WeatherSettings)</onclick>
 						<texturefocus border="5">thumb-focus2.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -434,7 +434,7 @@
 						<textcolor>white</textcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-28c</font>
-						<onclick>ActivateWindow(7)</onclick>
+						<onclick>ActivateWindow(SystemInfo)</onclick>
 						<texturefocus border="5">thumb-focus2.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textoffsetx>0</textoffsetx>

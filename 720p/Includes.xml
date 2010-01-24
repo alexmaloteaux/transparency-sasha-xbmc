@@ -827,9 +827,9 @@
 			<visible>Container.Scrolling</visible>
 			<animation effect="fade" time="100">Visible</animation>
 			<animation effect="fade" time="300">Hidden</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(MyTV) + Control.IsVisible(11)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(MyTV) + Control.IsVisible(12)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(MyTV) + Control.IsVisible(13)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(TV) + Control.IsVisible(11)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(TV) + Control.IsVisible(12)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(TV) + Control.IsVisible(13)">Conditional</animation>
 			<animation effect="slide" end="-200,0" time="0" condition="Control.IsVisible(51)">Conditional</animation>
 			<animation effect="slide" end="130,-50" time="0" condition="[Window.IsVisible(MusicFiles) | Window.IsVisible(Musiclibrary) | Window.IsVisible(MusicPlaylist)] + Control.IsVisible(59)">Conditional</animation>
 			<animation effect="slide" end="230,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(59)">Conditional</animation>

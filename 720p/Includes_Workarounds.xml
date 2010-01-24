@@ -2,10 +2,10 @@
 	<include name="cdart-home">
 		<control type="largeimage">
 			<description>dirty hack for showing cdart image</description>
-			<posx>406</posx>
+			<posx>386</posx>
 			<posy>4</posy>
-			<width>122</width>
-			<height>122</height>
+			<width>142</width>
+			<height>142</height>
 			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/$INFO[musicplayer.album]/cdart.png</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspinhome</include>

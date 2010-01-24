@@ -15,21 +15,7 @@
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ContentPictures) + IsEmpty(Container(597).ListItem(0).Thumb)</visible>
-		</control>
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-comics.jpg">$INFO[Skin.String(Custom_Back_Comics_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ContentComics)</visible>
+			<visible>IsEmpty(Container(597).ListItem(0).Thumb)</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-programspicturesscripts</include>
 		<control type="largeimage">
@@ -236,12 +222,6 @@
 			<control type="label">
 				<include>WindowTitleCommons</include>
 				<label>XBMC - $LOCALIZE[1]$INFO[Container.PluginName, - ]</label>
-				<visible>Skin.HasSetting(ContentPictures)</visible>
-			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[31405]$INFO[Container.PluginName, - ]</label>
-				<visible>Skin.HasSetting(ContentComics)</visible>
 			</control>
 		</control>
 	</controls>
