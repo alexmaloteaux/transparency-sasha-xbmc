@@ -2614,7 +2614,7 @@
 						<selected>Skin.HasSetting(WeatherScript_Enable)</selected>
 					</control>
 					<control type="button" id="510">
-						<label>- $LOCALIZE[31203]</label>
+						<label>- $LOCALIZE[31150]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(WeatherScript_Label)][/COLOR]</label2>
 						<onclick>Skin.SetString(WeatherScript_Label)</onclick>
 						<enable>Skin.HasSetting(WeatherScript_Enable)</enable>
