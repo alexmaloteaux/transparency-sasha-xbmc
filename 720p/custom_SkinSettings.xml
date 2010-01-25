@@ -725,15 +725,15 @@
 								<label>$LOCALIZE[8]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/images/backgrounds/background-weather.jpg</icon>
-								<thumb>special://skin/images/backgrounds/weather-conditional/$INFO[Weather.FanartCode]</thumb>
-								<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+								<thumb>$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)]$INFO[Weather.FanartCode]</thumb>
+								<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 							</item>
 							<item id="22">
 								<label>$LOCALIZE[8]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/images/backgrounds/background-weather.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Weather_Folder)]</thumb>
-								<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+								<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 							</item>
 							<item id="23">
 								<label>$LOCALIZE[247]</label>
@@ -2243,13 +2243,44 @@
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<textureradionooff>radiobutton-nofocus.png</textureradionooff>
 							<onclick>Skin.ToggleSetting(Weather_Conditional_Backgrounds)</onclick>
-							<selected>!Skin.HasSetting(Weather_Conditional_Backgrounds)</selected>
-							<onleft>302</onleft>
+							<selected>Skin.HasSetting(Weather_Conditional_Backgrounds)</selected>
+							<onleft>307</onleft>
 							<onright>399</onright>
 							<onup>306</onup>
 							<ondown>303</ondown>
 						</control>
-						<include>ButtonScroll2</include>
+						<control type="button" id="307">
+							<description>Options Image button</description>
+							<posx>180</posx>
+							<posy>40</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>33063</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.ToggleSetting(Weather_Conditional_Options)</onclick>
+							<onleft>302</onleft>
+							<onright>303</onright>
+							<onup>307</onup>
+							<ondown>313</ondown>
+							<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+						</control>
+						<control type="button" id="313">
+							<posx>10</posx>
+							<posy>140</posy>
+							<width>505</width>
+							<height>30</height>
+							<label>- $LOCALIZE[15311]</label>
+							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)][/COLOR]</label2>
+							<onclick>Skin.SetPath(Custom_Back_Weather_Conditional_Folder)</onclick>
+							<onup>307</onup>
+							<ondown>307</ondown>
+							<onleft>302</onleft>
+							<onright>313</onright>
+							<visible>Skin.HasSetting(Weather_Conditional_Options)</visible>
+						</control>
+						<include>ButtonScroll4</include>
 					</control>
 					<control type="group">
 						<posx>555</posx>
@@ -2436,7 +2467,7 @@
 						<timeperimage>6000</timeperimage>
 						<randomize>true</randomize>
 						<fadetime>400</fadetime>
-						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)]">conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(22) + Skin.HasSetting(Weather_Conditional_Options) + Skin.HasSetting(Weather_Conditional_Backgrounds)]">conditional</animation>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">

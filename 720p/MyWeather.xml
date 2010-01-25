@@ -12,7 +12,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
 		<control type="multiimage">
@@ -20,12 +20,12 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath>special://skin/images/backgrounds/weather-conditional/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)]$INFO[Weather.FanartCode]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+			<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
 		<control type="group">
