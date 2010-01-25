@@ -2210,6 +2210,8 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group" id="8000">
+			<onup>5047</onup>
+			<onright>5047</onright>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!ControlGroup(8000).HasFocus">Conditional</animation>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Home_Hor_Sub</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Home_Ver_Sub</include>
