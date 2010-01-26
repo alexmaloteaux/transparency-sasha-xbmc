@@ -4800,7 +4800,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Weather Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom1_Path,.py)</onclick>
@@ -4819,7 +4819,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Weather Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom2_Path,.py)</onclick>
@@ -4838,7 +4838,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Weather Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom3_Path,.py)</onclick>
@@ -4857,7 +4857,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Scripts Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom1_Path,.py)</onclick>
@@ -4876,7 +4876,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Scripts Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom2_Path,.py)</onclick>
@@ -4895,7 +4895,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Scripts Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom3_Path,.py)</onclick>
@@ -4914,7 +4914,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Scripts Sub Custom4 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom4_Path,.py)</onclick>
@@ -4934,7 +4934,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Scripts Sub Custom5 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom5_Path,.py)</onclick>
@@ -4953,7 +4953,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu PlayDisc Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom1_Path,.py)</onclick>
@@ -4972,7 +4972,7 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu PlayDisc Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[15311][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom2_Path,.py)</onclick>
@@ -5082,211 +5082,208 @@
 					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(PlayDiscCustom,4)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(PlayDiscCustom,5)">Conditional</animation>
 				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.String(SkinSettings,9)</visible>
-			<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
-			<posx>130</posx>
-			<posy>76</posy>
-			<control type="label">
-				<posx>50</posx>
-				<posy>108</posy>
-				<width>910</width>
-				<height>350</height>
-				<label>[B]T![/B]</label>
-				<textcolor>white</textcolor>
-				<font>font-480</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<animation effect="fade" start="20" end="60" time="2000" pulse="true" condition="true">Conditional</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2000" delay="6000" loop="true" reversible="false" condition="true">Conditional</animation>
-				<animation effect="rotatey" end="-360" center="auto" time="2000" delay="10000" loop="true" reversible="false" condition="true">Conditional</animation>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.String(SkinSettings,10)</visible>
-			<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
-			<posx>130</posx>
-			<posy>76</posy>
-			<control type="label">
-				<posx>50</posx>
-				<posy>108</posy>
-				<width>910</width>
-				<height>400</height>
-				<label>[B]![/B]</label>
-				<textcolor>white</textcolor>
-				<font>font-480</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="true">Conditional</animation>
-			</control>
-			<control type="scrollbar" id="1001">
-				<posx>950</posx>
-				<posy>100</posy>
-				<width>20</width>
-				<height>420</height>
-				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-				<onleft>1000</onleft>
-				<onright>1000</onright>
-				<ondown>61</ondown>
-				<onup>61</onup>
-				<showonepage>true</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			<control type="textbox" id="5">
-				<description>textarea</description>
-				<posx>50</posx>
-				<posy>115</posy>
-				<width>910</width>
-				<height>400</height>
-				<font>font-23</font>
-				<align>center</align>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<pagecontrol>1001</pagecontrol>
-				<autoscroll time="1000" delay="5000" repeat="7500">true</autoscroll>
-				<label>
-
-
-
-[COLOR=darkblue][B]Transparency![/B][/COLOR]
-
-[B]Would Like To Thank:[/B]
-
-
-
-
-[COLOR=darkblue]Hosting Service:[/COLOR]
-TheQuestor [COLOR=lightblue]- xbmc nightly builds[/COLOR]
-dynamix [COLOR=lightblue]- alternate download site[/COLOR]
-Bram77 [COLOR=lightblue]- xbmc xbox skins[/COLOR]
-
-
-[COLOR=darkblue]Graphics:[/COLOR]
-Burncycle [COLOR=lightblue]- partial home menu button design[/COLOR]
-
-
-[COLOR=darkblue]Fonts:[/COLOR]
-tikkiew [COLOR=lightblue]- bigger font sizes[/COLOR]
-
-
-[COLOR=darkblue]Media Flagging:[/COLOR]
-krypt2nite
-Imaginos
-ccMatrix
-
-
-[COLOR=darkblue]Weather Fanart:[/COLOR]
-Silverxxx [COLOR=lightblue]- Home Weather Fanart[/COLOR]
+				<control type="group">
+					<visible>Skin.String(SkinSettings,9)</visible>
+					<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+					<posx>130</posx>
+					<posy>76</posy>
+					<control type="label">
+						<posx>50</posx>
+						<posy>108</posy>
+						<width>910</width>
+						<height>350</height>
+						<label>[B]T![/B]</label>
+						<textcolor>white</textcolor>
+						<font>font-480</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<animation effect="fade" start="20" end="60" time="2000" pulse="true" condition="true">Conditional</animation>
+						<animation effect="rotate" end="-360" center="auto" time="2000" delay="6000" loop="true" reversible="false" condition="true">Conditional</animation>
+						<animation effect="rotatey" end="-360" center="auto" time="2000" delay="10000" loop="true" reversible="false" condition="true">Conditional</animation>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Skin.String(SkinSettings,10)</visible>
+					<animation effect="slide" start="0,0" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+					<posx>130</posx>
+					<posy>76</posy>
+					<control type="label">
+						<posx>50</posx>
+						<posy>108</posy>
+						<width>910</width>
+						<height>400</height>
+						<label>[B]![/B]</label>
+						<textcolor>white</textcolor>
+						<font>font-480</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="true">Conditional</animation>
+					</control>
+					<control type="scrollbar" id="1001">
+						<posx>950</posx>
+						<posy>100</posy>
+						<width>20</width>
+						<height>420</height>
+						<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+						<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+						<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+						<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+						<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+						<onleft>1000</onleft>
+						<onright>1000</onright>
+						<ondown>61</ondown>
+						<onup>61</onup>
+						<showonepage>true</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+					<control type="textbox" id="5">
+						<description>textarea</description>
+						<posx>50</posx>
+						<posy>115</posy>
+						<width>910</width>
+						<height>400</height>
+						<font>font-23</font>
+						<align>center</align>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<pagecontrol>1001</pagecontrol>
+						<autoscroll time="1000" delay="5000" repeat="7500">true</autoscroll>
+						<label>
+
+
+
+		[COLOR=darkblue][B]Transparency![/B][/COLOR]
+
+		[B]Would Like To Thank:[/B]
+
+
+
+
+		[COLOR=darkblue]Hosting Service:[/COLOR]
+		TheQuestor [COLOR=lightblue]- xbmc nightly builds[/COLOR]
+		dynamix [COLOR=lightblue]- alternate download site[/COLOR]
+		Bram77 [COLOR=lightblue]- xbmc xbox skins[/COLOR]
+
+
+		[COLOR=darkblue]Graphics:[/COLOR]
+		Burncycle [COLOR=lightblue]- partial home menu button design[/COLOR]
+
+
+		[COLOR=darkblue]Fonts:[/COLOR]
+		tikkiew [COLOR=lightblue]- bigger font sizes[/COLOR]
+
+
+		[COLOR=darkblue]Media Flagging:[/COLOR]
+		krypt2nite
+		Imaginos
+		ccMatrix
+
 
+		[COLOR=darkblue]Weather Fanart:[/COLOR]
+		Silverxxx [COLOR=lightblue]- Home Weather Fanart[/COLOR]
 
-[COLOR=darkblue]Animated Weather Icons:[/COLOR]
-Silverxxx
 
+		[COLOR=darkblue]Animated Weather Icons:[/COLOR]
+		Silverxxx
 
-[COLOR=darkblue]ClearArt:[/COLOR]
-reaven
 
+		[COLOR=darkblue]ClearArt:[/COLOR]
+		reaven
 
-[COLOR=darkblue]cdArt:[/COLOR]
-reaven
 
+		[COLOR=darkblue]cdArt:[/COLOR]
+		reaven
 
-[COLOR=darkblue]Record Label Logo's:[/COLOR]
-Ninjamawwe
 
+		[COLOR=darkblue]Record Label Logo's:[/COLOR]
+		Ninjamawwe
 
-[COLOR=darkblue]Studio Logo's:[/COLOR]
-Cosmor
 
+		[COLOR=darkblue]Studio Logo's:[/COLOR]
+		Cosmor
 
-[COLOR=darkblue]Background Animation:[/COLOR]
-CF2009
 
+		[COLOR=darkblue]Background Animation:[/COLOR]
+		CF2009
 
-[COLOR=darkblue]Trailer Preview:[/COLOR]
-anoobie
 
+		[COLOR=darkblue]Trailer Preview:[/COLOR]
+		anoobie
 
-[COLOR=darkblue]Recently Added Script:[/COLOR]
-Nuka1195
 
+		[COLOR=darkblue]Recently Added Script:[/COLOR]
+		Nuka1195
 
-[COLOR=darkblue]OSD Subtitle Script skin code:[/COLOR]
-Amet
 
+		[COLOR=darkblue]OSD Subtitle Script skin code:[/COLOR]
+		Amet
 
-[COLOR=darkblue]Home Fanart Backdrops:[/COLOR]
-francyboy [COLOR=lightblue]- for the idea & Movies backdrop[/COLOR]
-Steveb [COLOR=lightblue]- for the TV Shows & Music backdrops[/COLOR]
 
+		[COLOR=darkblue]Home Fanart Backdrops:[/COLOR]
+		francyboy [COLOR=lightblue]- for the idea & Movies backdrop[/COLOR]
+		Steveb [COLOR=lightblue]- for the TV Shows & Music backdrops[/COLOR]
 
-[COLOR=darkblue]Translations:[/COLOR]
-queeup [COLOR=lightblue]- Turkish[/COLOR]
-macchina [COLOR=lightblue]- German[/COLOR]
-francyboy [COLOR=lightblue]- Italian[/COLOR]
-darknoir [COLOR=lightblue]- French[/COLOR]
-Shalashaska [COLOR=lightblue]- French[/COLOR]
-jpf55 [COLOR=lightblue]- French[/COLOR]
-bardenas [COLOR=lightblue]- Spanish[/COLOR]
-junk [COLOR=lightblue]- Swedish[/COLOR]
-blittan [COLOR=lightblue]- Swedish[/COLOR]
-taxigps [COLOR=lightblue]- Chinese (Simple)[/COLOR]
-xbs08 [COLOR=lightblue]- Portuguese[/COLOR]
-dynamix [COLOR=lightblue]- Dutch[/COLOR]
-LinarSavion [COLOR=lightblue]- Hebrew[/COLOR]
-gugahoi [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
-rbonon [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
-medvedic [COLOR=lightblue]- Serbian[/COLOR]
-r1ctus [COLOR=lightblue]- Hungarian[/COLOR]
-airplanez [COLOR=lightblue]- Korean[/COLOR]
-YOkerman [COLOR=lightblue]- Norwegian[/COLOR]
-Requiem [COLOR=lightblue]- Norwegian[/COLOR]
-Jokkvahl [COLOR=lightblue]- Norwegian[/COLOR]
-ydatografida [COLOR=lightblue]- Greek[/COLOR]
-Dannermax [COLOR=lightblue]- Danish[/COLOR]
-perfecblue [COLOR=lightblue]- Chinese (Traditional)[/COLOR]
-ffws [COLOR=lightblue]- Spanish (Mexico)[/COLOR]
-davidw [COLOR=lightblue]- German (Austria)[/COLOR]
-dml7 [COLOR=lightblue]- Polish[/COLOR]
-Mika Pirinen [COLOR=lightblue]- Finnish[/COLOR]
-kyouhei [COLOR=lightblue]- Japanese[/COLOR]
 
-and everyone else who helped out translating Transparency!
+		[COLOR=darkblue]Translations:[/COLOR]
+		queeup [COLOR=lightblue]- Turkish[/COLOR]
+		macchina [COLOR=lightblue]- German[/COLOR]
+		francyboy [COLOR=lightblue]- Italian[/COLOR]
+		darknoir [COLOR=lightblue]- French[/COLOR]
+		Shalashaska [COLOR=lightblue]- French[/COLOR]
+		jpf55 [COLOR=lightblue]- French[/COLOR]
+		bardenas [COLOR=lightblue]- Spanish[/COLOR]
+		junk [COLOR=lightblue]- Swedish[/COLOR]
+		blittan [COLOR=lightblue]- Swedish[/COLOR]
+		taxigps [COLOR=lightblue]- Chinese (Simple)[/COLOR]
+		xbs08 [COLOR=lightblue]- Portuguese[/COLOR]
+		dynamix [COLOR=lightblue]- Dutch[/COLOR]
+		LinarSavion [COLOR=lightblue]- Hebrew[/COLOR]
+		gugahoi [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
+		rbonon [COLOR=lightblue]- Portuguese (Brazil)[/COLOR]
+		medvedic [COLOR=lightblue]- Serbian[/COLOR]
+		r1ctus [COLOR=lightblue]- Hungarian[/COLOR]
+		airplanez [COLOR=lightblue]- Korean[/COLOR]
+		YOkerman [COLOR=lightblue]- Norwegian[/COLOR]
+		Requiem [COLOR=lightblue]- Norwegian[/COLOR]
+		Jokkvahl [COLOR=lightblue]- Norwegian[/COLOR]
+		ydatografida [COLOR=lightblue]- Greek[/COLOR]
+		Dannermax [COLOR=lightblue]- Danish[/COLOR]
+		perfecblue [COLOR=lightblue]- Chinese (Traditional)[/COLOR]
+		ffws [COLOR=lightblue]- Spanish (Mexico)[/COLOR]
+		davidw [COLOR=lightblue]- German (Austria)[/COLOR]
+		dml7 [COLOR=lightblue]- Polish[/COLOR]
+		Mika Pirinen [COLOR=lightblue]- Finnish[/COLOR]
+		kyouhei [COLOR=lightblue]- Japanese[/COLOR]
 
+		and everyone else who helped out translating Transparency!
 
-[COLOR=darkblue]Credits:[/COLOR]
-djh_[COLOR=lightblue] - Aeon[/COLOR]
-digitalhigh[COLOR=lightblue] - Serenity[/COLOR]
-ekim232[COLOR=lightblue] - The Operation MOD[/COLOR]
-scarfa[COLOR=lightblue] - Rapier[/COLOR]
-djdafreund[COLOR=lightblue] - Back-Row[/COLOR]
 
-i'm sure i've borrowed a few lines of &lt;code&gt; from all of you.  ;-)
+		[COLOR=darkblue]Credits:[/COLOR]
+		djh_[COLOR=lightblue] - Aeon[/COLOR]
+		digitalhigh[COLOR=lightblue] - Serenity[/COLOR]
+		ekim232[COLOR=lightblue] - The Operation MOD[/COLOR]
+		scarfa[COLOR=lightblue] - Rapier[/COLOR]
+		djdafreund[COLOR=lightblue] - Back-Row[/COLOR]
 
+		i'm sure i've borrowed a few lines of &lt;code&gt; from all of you.  ;-)
 
 
 
-[COLOR=darkblue]Each and Everyone of You:[/COLOR]
-For Submitting Bug Reports
-Making Feature Request
-Posting New Idea's
 
-...And All The Thanx I've Received!
+		[COLOR=darkblue]Each and Everyone of You:[/COLOR]
+		For Submitting Bug Reports
+		Making Feature Request
+		Posting New Idea's
 
+		...And All The Thanx I've Received!
 
 
 
 
 
-[COLOR=darkblue]LAST BUT NOT LEAST:[/COLOR]
-Jezz_X[COLOR=lightblue] - For the great PM3.HD skin![/COLOR]
 
+		[COLOR=darkblue]LAST BUT NOT LEAST:[/COLOR]
+		Jezz_X[COLOR=lightblue] - For the great PM3.HD skin![/COLOR]
 
 
 
@@ -5295,15 +5292,18 @@ Jezz_X[COLOR=lightblue] - For the great PM3.HD skin![/COLOR]
 
 
 
-[COLOR=darkblue][B]Transparency![/B][/COLOR]
-A FanArt Skin by ronie
 
+		[COLOR=darkblue][B]Transparency![/B][/COLOR]
+		A FanArt Skin by ronie
 
 
 
 
 
-				</label>
+
+						</label>
+					</control>
+				</control>
 			</control>
 		</control>
 		<control type="group">

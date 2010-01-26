@@ -30,7 +30,6 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
-			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include condition="IsEmpty(Weather.Plugin)">weather</include>
 			<include condition="!IsEmpty(Weather.Plugin)">weatherplus</include>
 		</control>
