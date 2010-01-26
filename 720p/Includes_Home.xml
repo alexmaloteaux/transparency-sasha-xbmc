@@ -117,6 +117,12 @@
 		<posx>125</posx>
 		<width>221</width>
 	</include>
+	<include name="Home_Hor_Hitrect">
+		<hitrect x="510" y="590" w="260" h="60" />
+	</include>
+	<include name="Home_Hor_Hitrect_Wide">
+		<hitrect x="595" y="590" w="260" h="60" />
+	</include>
 	<include name="Window_OpenClose_Home_Panel_Animation">
 		<animation effect="slide" start="-450,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-450,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -1947,6 +1953,8 @@
 			<onleft>5040</onleft>
 			<onright>5040</onright>
 			<focusposition>3</focusposition>
+			<include condition="!Skin.HasSetting(WideHomeMenu)">Home_Hor_Hitrect</include>
+			<include condition="Skin.HasSetting(WideHomeMenu)">Home_Hor_Hitrect_Wide</include>
 			<animation effect="slide" start="0,0" end="-85,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
 			<itemlayout height="40" width="237" condition="Skin.HasSetting(WideHomeMenu)">
 				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus_Hor_Wide1</include>
