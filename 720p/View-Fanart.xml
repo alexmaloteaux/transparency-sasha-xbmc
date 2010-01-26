@@ -1352,9 +1352,9 @@
 			</focusedlayout>
 		</control>
 	</include>
-	<include name="Fanart-ProgramsPicturesScripts-Extras">
+	<include name="Fanart-Programs-Extras">
 		<control type="group">
-			<visible>Control.IsVisible(598) + [Window.IsVisible(1) | [Window.IsVisible(2) + Skin.HasSetting(ContentComics)] | Window.IsVisible(20)]</visible>
+			<visible>Control.IsVisible(598)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
@@ -1381,13 +1381,13 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(598) + [Window.IsVisible(1) | [Window.IsVisible(2) + Skin.HasSetting(ContentComics)] | Window.IsVisible(20)]</visible>
+			<visible>Control.IsVisible(598)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>10</posx>
-				<posy>414</posy>
-				<width>214</width>
-				<height>300</height>
+				<posx>16</posx>
+				<posy>491</posy>
+				<width>218</width>
+				<height>218</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[Listitem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
@@ -1400,18 +1400,28 @@
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>![Window.IsVisible(1) + Skin.HasSetting(ContentGames)] + !stringcompare(ListItem.Label,..) + IsEmpty(Control.GetLabel(7012))</visible>
+				<visible>!substring(Container.FolderPath,Games) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="largeimage">
 				<posx>10</posx>
 				<posy>414</posy>
 				<width>214</width>
 				<height>300</height>
-				<texture diffuse="gamecase-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<texture fallback="DefaultFolder.png" diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Window.IsVisible(1) + Skin.HasSetting(ContentGames) + !stringcompare(ListItem.Label,..) + IsEmpty(Control.GetLabel(7011))</visible>
+				<visible>substring(Container.FolderName,Games) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<include condition="!Skin.HasSetting(SafeMode)">programspicturesscripts-thumb</include>
+			<control type="largeimage">
+				<posx>10</posx>
+				<posy>414</posy>
+				<width>214</width>
+				<height>300</height>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>substring(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..) + Skin.HasSetting(SafeMode)</visible>
+			</control>
+			<include condition="!Skin.HasSetting(SafeMode)">games-thumb</include>
 			<control type="image">
 				<posx>-6</posx>
 				<posy>398</posy>
@@ -1421,11 +1431,13 @@
 				<description>games fanart view</description>
 				<bordertexture border="16">gamecase-shadow.png</bordertexture>
 				<bordersize>16</bordersize>
-				<visible>Window.IsVisible(1) + Skin.HasSetting(ContentGames) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>substring(Container.FolderName,Games) + !stringcompare(ListItem.Label,..) + !IsEmpty(Listitem.Thumb)</visible>
 			</control>
 		</control>
+	</include>
+	<include name="Fanart-Pictures-Extras">
 		<control type="group">
-			<visible>Control.IsVisible(598) + Window.IsVisible(2) + Skin.HasSetting(ContentPictures)</visible>
+			<visible>Control.IsVisible(598)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
@@ -1507,7 +1519,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(598) + Window.IsVisible(2) + Skin.HasSetting(ContentPictures)</visible>
+			<visible>Control.IsVisible(598)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1566,12 +1578,54 @@
 				<visible>substring(Listitem.Filename,.wmf)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>510</posy>
-				<width>210</width>
-				<height>210</height>
+				<posx>16</posx>
+				<posy>491</posy>
+				<width>218</width>
+				<height>218</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(Listitem.Label,..) | !Control.IsVisible(7010)</visible>
+			</control>
+		</control>
+	</include>
+	<include name="Fanart-Scripts-Extras">
+		<control type="group">
+			<visible>Control.IsVisible(598)</visible>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>585</posy>
+				<width>875</width>
+				<height>115</height>
+				<texture border="10">underlay.png</texture>
+			</control>
+			<control type="label">
+				<posx>257</posx>
+				<posy>627</posy>
+				<width>550</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.label]</label>
+				<scrollspeed>0</scrollspeed>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(598)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="largeimage">
+				<posx>16</posx>
+				<posy>491</posy>
+				<width>218</width>
+				<height>218</height>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 		</control>
 	</include>

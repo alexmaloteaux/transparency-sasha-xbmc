@@ -15,6 +15,7 @@
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
+		<include condition="!Skin.HasSetting(SafeMode)">fanart-Programs_Pictures_Scripts</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
@@ -22,7 +23,7 @@
 			<include>FullList</include>
 			<include condition="!Skin.HasSetting(Hide-Programs-List)">List</include>
 			<include condition="!Skin.HasSetting(Hide-Programs-Thumbnail)">Thumbnail</include>
-			<include condition="!Skin.HasSetting(Hide-Programs-Fanart)">Fanart-ProgramsPicturesScripts</include>
+			<include>Fanart-ProgramsPicturesScripts</include>
 			<include>AllViewCommonPageControls</include>
 			<include>ScrollOffsetLabel</include>
 			<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(598) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
@@ -32,7 +33,7 @@
 		</control>
 		<control type="group">
 			<include>ContentFade2</include>
-			<include condition="!Skin.HasSetting(Hide-Programs-Fanart)">Fanart-ProgramsPicturesScripts-Extras</include>
+			<include>Fanart-Programs-Extras</include>
 		</control>
 		<control type="group">
 			<posy>23</posy>
