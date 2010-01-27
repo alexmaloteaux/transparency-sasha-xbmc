@@ -199,6 +199,48 @@
 			<visible>Control.HasFocus(5046)</visible>
 		</control>
 	</include>
+	<include name="Home_Weather_Icon">
+		<control type="group">
+			<include>Window_OpenClose_Right_Panel_Animation</include>
+			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icon_Top</include>
+			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icon_Top</include>
+			<control type="label">
+				<description>Conditions Label</description>
+				<posx>1192</posx>
+				<posy>52</posy>
+				<width>72</width>
+				<height>72</height>
+				<label>[B]$INFO[Weather.Temperature][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+	</include>
+	<include name="Home_Animated_Weather_Icon_Top">
+		<control type="multiimage">
+			<description>Top Weather image</description>
+			<posx>1192</posx>
+			<posy>50</posy>
+			<width>72</width>
+			<height>72</height>
+			<imagepath>special://skin/images/foldericons/weather/$INFO[Weather.FanartCode]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Home_Weather_Icon_Top">
+		<control type="image">
+			<description>Top Weather image</description>
+			<posx>1192</posx>
+			<posy>50</posy>
+			<width>72</width>
+			<height>72</height>
+			<texture>$INFO[Weather.Conditions]</texture>
+		</control>
+	</include>
 	<include name="WeatherInfo">
 		<control type="group">
 			<posx>600r</posx>

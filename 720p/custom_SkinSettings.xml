@@ -2498,6 +2498,11 @@
 					<onright>499</onright>
 					<onup>401</onup>
 					<ondown>401</ondown>
+					<control type="radiobutton" id="402">
+						<label>$LOCALIZE[10000] - $LOCALIZE[31153]</label>
+						<onclick>Skin.ToggleSetting(Home_Weather_Icon)</onclick>
+						<selected>!Skin.HasSetting(Home_Weather_Icon)</selected>
+					</control>
 					<control type="radiobutton" id="403">
 						<label>$LOCALIZE[10000] - $LOCALIZE[31135]</label>
 						<onclick>Skin.ToggleSetting(Animate_Home_Weather_Icon)</onclick>
