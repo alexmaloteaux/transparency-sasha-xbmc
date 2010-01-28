@@ -35,7 +35,20 @@
 			<height>720</height>
 			<visible>Player.HasAudio + !Skin.HasSetting(FanartNoVisualisation) + !Skin.HasSetting(FanartSlideshowNoVisualisation) + !Skin.HasSetting(CDWallNoVisualisation)</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanart-home</include>
+		<control type="multiimage">
+			<description>fallback texture if no fanart for musicplayer is available</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath fallback="special://skin/images/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		</control>
 		<control type="largeimage">
 			<posx>0</posx>
 			<posy>0</posy>

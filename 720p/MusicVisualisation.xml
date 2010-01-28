@@ -24,7 +24,6 @@
 			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanart-musicvisualisation</include>
 		<control type="largeimage">
 			<posx>0</posx>
 			<posy>0</posy>

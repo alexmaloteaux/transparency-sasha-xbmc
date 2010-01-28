@@ -4,6 +4,7 @@
 	<views>55,50,51,59</views>
 	<controls>
 		<control type="multiimage">
+			<description>fallback in no playing or list fanart is available</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -27,9 +28,8 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!Player.HasAudio</visible>
+			<visible>!Player.HasAudio | [Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image))]</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanart-mymusicplaylist</include>
 		<control type="largeimage">
 			<description>song playing fanart</description>
 			<posx>0</posx>

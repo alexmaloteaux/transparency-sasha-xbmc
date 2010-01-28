@@ -74,19 +74,6 @@
 			<visible>substring(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	</include>
-	<include name="fanart-home">
-		<control type="largeimage">
-			<description>dirty hack for showing fanart instead of visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/fanart.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image)) + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)]</visible>
-		</control>
-	</include>
 	<include name="fanart-musicvisualisation">
 		<control type="largeimage">
 			<description>dirty hack for showing fanart instead of visualisation</description>
@@ -99,51 +86,6 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image)) + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation)]</visible>
-		</control>
-	</include>
-	<include name="fanartslideshow-musicvisualisation">
-		<control type="multiimage">
-			<description>dirty hack for showing fanart slideshow instead of visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/extrafanart/</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>750</fadetime>
-			<include condition="!Skin.HasSetting(FanartSlideshowAnimation)">backgroundanimation2</include>
-			<include>VisibleFadeEffect</include>
-			<visible>Player.HasAudio + Skin.HasSetting(FanartSlideshowNoVisualisation)</visible>
-		</control>
-	</include>
-	<include name="fanart-mymusicplaylist">
-		<control type="largeimage">
-			<description>dirty hack for fanart in now playing view</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[listitem.path]../fanart.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>!Player.HasAudio + IsEmpty(ListItem.Property(Fanart_Image))</visible>
-		</control>
-		<control type="largeimage">
-			<description>dirty hack for changing fanart on song change</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/fanart.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 	</include>
 	<include name="fanart-mymusicplaylisteditor">
