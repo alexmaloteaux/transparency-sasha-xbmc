@@ -79,13 +79,13 @@
 			<control type="group" id="9000">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
-				<animation effect="slide" start="0,0" end="176,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="251,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>-16</posy>
 					<height>16</height>
-					<texture border="0,0,15,0">shadow-top2.png</texture>
+					<texture border="0,0,10,0">shadow-top2.png</texture>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
 				</control>
@@ -192,7 +192,7 @@
 					<posx>0</posx>
 					<posy>272</posy>
 					<height>16</height>
-					<texture border="0,0,5,0">shadow-bottom2.png</texture>
+					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
