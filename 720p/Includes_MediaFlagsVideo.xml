@@ -211,6 +211,31 @@
 			<texture>special://skin/images/flags/movies/rating/tv-ma.png</texture>
 			<visible>substring(listitem.mpaa,TV-MA)</visible>
 		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk0.png</texture>
+			<visible>substring(listitem.mpaa,FSK0)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk6.png</texture>
+			<visible>substring(listitem.mpaa,FSK6)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk12.png</texture>
+			<visible>substring(listitem.mpaa,FSK12)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk16.png</texture>
+			<visible>substring(listitem.mpaa,FSK16)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk18.png</texture>
+			<visible>substring(listitem.mpaa,FSK18)</visible>
+		</control>
 	<!-- Studio HD-->
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
