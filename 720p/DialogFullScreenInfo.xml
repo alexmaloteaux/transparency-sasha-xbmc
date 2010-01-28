@@ -481,11 +481,11 @@
 				<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
 				<control type="image">
 					<description>media info background image</description>
-					<posx>300</posx>
-					<posy>50</posy>
+					<posx>446</posx>
+					<posy>40</posy>
 					<width>600</width>
-					<height>210</height>
-					<texture diffuse="underlay-diffuse.png" border="0,11,0,11">underlay3.png</texture>
+					<height>230</height>
+					<texture border="40">playercontrol.png</texture>
 				</control>
 				<control type="label">
 					<description>Header</description>
