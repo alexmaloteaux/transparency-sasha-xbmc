@@ -21,107 +21,107 @@
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/aac.png</texture>
-				<visible>substring(listitem.filename,.aac,Right)</visible>
+				<visible>substring(ListItem.Filename,.aac,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/ac3.png</texture>
-				<visible>substring(listitem.filename,.ac3,Right)</visible>
+				<visible>substring(ListItem.Filename,.ac3,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/aif.png</texture>
-				<visible>substring(listitem.filename,.aif,Right) + ![substring(listitem.filename,.aifc,Right)  | substring(listitem.filename,.aiff,Right)]</visible>
+				<visible>substring(ListItem.Filename,.aif,Right) + ![substring(ListItem.Filename,.aifc,Right)  | substring(ListItem.Filename,.aiff,Right)]</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/aifc.png</texture>
-				<visible>substring(listitem.filename,.aifc,Right)</visible>
+				<visible>substring(ListItem.Filename,.aifc,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/aiff.png</texture>
-				<visible>substring(listitem.filename,.aiff,Right)</visible>
+				<visible>substring(ListItem.Filename,.aiff,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/avs.png</texture>
-				<visible>substring(listitem.filename,.avs,Right)</visible>
+				<visible>substring(ListItem.Filename,.avs,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/ape.png</texture>
-				<visible>substring(listitem.filename,.ape,Right)</visible>
+				<visible>substring(ListItem.Filename,.ape,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/cdda.png</texture>
-				<visible>substring(listitem.filename,.cdda,Right)</visible>
+				<visible>substring(ListItem.Filename,.cdda,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/dts.png</texture>
-				<visible>substring(listitem.filename,.dts,Right)</visible>
+				<visible>substring(ListItem.Filename,.dts,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/flac.png</texture>
-				<visible>substring(listitem.filename,.flac,Right)</visible>
+				<visible>substring(ListItem.Filename,.flac,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/m4a.png</texture>
-				<visible>substring(listitem.filename,.m4a,Right)</visible>
+				<visible>substring(ListItem.Filename,.m4a,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/mlp.png</texture>
-				<visible>substring(listitem.filename,.mlp,Right)</visible>
+				<visible>substring(ListItem.Filename,.mlp,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/mp2.png</texture>
-				<visible>substring(listitem.filename,.mp2,Right)</visible>
+				<visible>substring(ListItem.Filename,.mp2,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/mp3.png</texture>
-				<visible>substring(listitem.filename,.mp3,Right)</visible>
+				<visible>substring(ListItem.Filename,.mp3,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/mpc.png</texture>
-				<visible>substring(listitem.filename,.mpc,Right)</visible>
+				<visible>substring(ListItem.Filename,.mpc,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/ogg.png</texture>
-				<visible>substring(listitem.filename,.ogg,Right)</visible>
+				<visible>substring(ListItem.Filename,.ogg,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/ra.png</texture>
-				<visible>substring(listitem.filename,.ra,Right)</visible>
+				<visible>substring(ListItem.Filename,.ra,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/shn.png</texture>
-				<visible>substring(listitem.filename,.shn,Right)</visible>
+				<visible>substring(ListItem.Filename,.shn,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/wav.png</texture>
-				<visible>substring(listitem.filename,.wav,Right)</visible>
+				<visible>substring(ListItem.Filename,.wav,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/wma.png</texture>
-				<visible>substring(listitem.filename,.wma,Right)</visible>
+				<visible>substring(ListItem.Filename,.wma,Right)</visible>
 			</control>
 			<control type="image" id="5081">
 				<include>MusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/wv.png</texture>
-				<visible>substring(listitem.filename,.wv,Right)</visible>
+				<visible>substring(ListItem.Filename,.wv,Right)</visible>
 			</control>
 		<!-- Genre -->
 			<control type="image" id="5082">

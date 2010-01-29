@@ -127,173 +127,183 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-g.png</texture>
-			<visible>substring(VideoPlayer.mpaa,Rated G)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated G)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-pg.png</texture>
-			<visible>substring(VideoPlayer.mpaa,Rated PG) + !substring(VideoPlayer.mpaa,Rated PG-13)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated PG) + !substring(VideoPlayer.Mpaa,Rated PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-pg13.png</texture>
-			<visible>substring(VideoPlayer.mpaa,Rated PG-13)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-r.png</texture>
-			<visible>substring(VideoPlayer.mpaa,Rated R)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated R)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-nc17.png</texture>
-			<visible>substring(VideoPlayer.mpaa,Rated NC-17)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated NC-17)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-y.png</texture>
-			<visible>substring(VideoPlayer.mpaa,TV-Y) + ![substring(VideoPlayer.mpaa,TV-Y7) | substring(VideoPlayer.mpaa,TV-Y7-FV)]</visible>
+			<visible>substring(VideoPlayer.Mpaa,TV-Y) + ![substring(VideoPlayer.Mpaa,TV-Y7) | substring(VideoPlayer.Mpaa,TV-Y7-FV)]</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-y7.png</texture>
-			<visible>substring(VideoPlayer.mpaa,TV-Y7) | substring(VideoPlayer.mpaa,TV-Y7-FV)</visible>
+			<visible>substring(VideoPlayer.Mpaa,TV-Y7) | substring(VideoPlayer.Mpaa,TV-Y7-FV)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-g.png</texture>
-			<visible>substring(VideoPlayer.mpaa,TV-G)</visible>
+			<visible>substring(VideoPlayer.Mpaa,TV-G)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-pg.png</texture>
-			<visible>substring(VideoPlayer.mpaa,TV-PG)</visible>
+			<visible>substring(VideoPlayer.Mpaa,TV-PG)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-14.png</texture>
-			<visible>substring(VideoPlayer.mpaa,TV-14)</visible>
+			<visible>substring(VideoPlayer.Mpaa,TV-14)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-ma.png</texture>
-			<visible>substring(VideoPlayer.mpaa,TV-MA)</visible>
+			<visible>substring(VideoPlayer.Mpaa,TV-MA)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/fsk0.png</texture>
-			<visible>substring(VideoPlayer.mpaa,FSK0)</visible>
+			<visible>substring(VideoPlayer.Mpaa,FSK0) | substring(VideoPlayer.Mpaa,FSK 0) | substring(VideoPlayer.Mpaa,FSK o.A.)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/fsk6.png</texture>
-			<visible>substring(VideoPlayer.mpaa,FSK6)</visible>
+			<visible>substring(VideoPlayer.Mpaa,FSK6) | substring(VideoPlayer.Mpaa,FSK 6)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/fsk12.png</texture>
-			<visible>substring(VideoPlayer.mpaa,FSK12)</visible>
+			<visible>substring(VideoPlayer.Mpaa,FSK12) | substring(VideoPlayer.Mpaa,FSK 12)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/fsk16.png</texture>
-			<visible>substring(VideoPlayer.mpaa,FSK16)</visible>
+			<visible>substring(VideoPlayer.Mpaa,FSK16) | substring(VideoPlayer.Mpaa,FSK 16)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/fsk18.png</texture>
-			<visible>substring(VideoPlayer.mpaa,FSK18)</visible>
+			<visible>substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)</visible>
 		</control>
 		<!-- Studio HD-->
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/ABC_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,ABC) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,ABC) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,BBC) + !substring(VideoPlayer.studio,BBC One) + !substring(VideoPlayer.studio,BBC Two) + substring(VideoPlayer.studio,BBC Three) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,BBC) + !substring(VideoPlayer.Studio,BBC One) + !substring(VideoPlayer.Studio,BBC Two) + substring(VideoPlayer.Studio,BBC Three) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC One_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,BBC One) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,BBC One) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC Two_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,BBC Two) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,BBC Two) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC Three_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,BBC Three) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,BBC Three) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Cartoon Network_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,Cartoon Network) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,Cartoon Network) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/CBS_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,CBS) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,CBS) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Comedy Central_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,Comedy Central) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,Comedy Central) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/FOX_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,FOX) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,FOX) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/FX_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,FX) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,FX) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/HBO_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,HBO) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,HBO) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/History_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,History) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,History) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/MTV_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,MTV) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,MTV) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/NBC_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,NBC) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,NBC) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/SciFi_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,SciFi) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,SciFi) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Showtime_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,Showtime) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,Showtime) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+		</control>
+		<control type="image" id="5082">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/studio/Starz_hd.png</texture>
+			<visible>substring(VideoPlayer.Studio,Starz) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Sky One_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,Sky One) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,Sky One) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/The CW_hd.png</texture>
-			<visible>substring(VideoPlayer.studio,The CW) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>substring(VideoPlayer.Studio,The CW) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+		</control>
+		<control type="image" id="5082">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/studio/USA Network_hd.png</texture>
+			<visible>substring(VideoPlayer.Studio,USA Network) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<!-- Studio -->
 		<control type="image">
