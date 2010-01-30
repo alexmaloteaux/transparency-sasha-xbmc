@@ -791,7 +791,7 @@
 				<posx>420</posx>
 				<posy>15</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[VideoPlayer.Year]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -805,7 +805,7 @@
 				<posx>340</posx>
 				<posy>15</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[VideoPlayer.tvshowtitle]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -819,7 +819,7 @@
 				<posx>340</posx>
 				<posy>15</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[VideoPlayer.Artist]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -833,7 +833,7 @@
 				<posx>420</posx>
 				<posy>54</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -847,7 +847,7 @@
 				<posx>340</posx>
 				<posy>88</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<info>VideoPlayer.Genre</info>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -859,7 +859,7 @@
 				<posx>340</posx>
 				<posy>88</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<info>VideoPlayer.Album</info>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -872,7 +872,7 @@
 				<posx>340</posx>
 				<posy>88</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -959,7 +959,7 @@
 					<posx>445</posx>
 					<posy>15</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>[B]$LOCALIZE[18088][/B]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -971,7 +971,7 @@
 					<posx>445</posx>
 					<posy>60</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>$INFO[PVR.NextRecordingTitle]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -983,7 +983,7 @@
 					<posx>445</posx>
 					<posy>85</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>$INFO[PVR.NextRecordingChannel]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -994,7 +994,7 @@
 					<posx>445</posx>
 					<posy>110</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>$INFO[PVR.NextRecordingDateTime]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -1017,7 +1017,7 @@
 					<posx>445</posx>
 					<posy>15</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>[B]$LOCALIZE[18089][/B]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -1029,7 +1029,7 @@
 					<posx>445</posx>
 					<posy>60</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>$INFO[PVR.NowRecordingTitle]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -1041,7 +1041,7 @@
 					<posx>445</posx>
 					<posy>85</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>$INFO[PVR.NowRecordingChannel]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -1052,7 +1052,7 @@
 					<posx>445</posx>
 					<posy>110</posy>
 					<height>30</height>
-					<width>800</width>
+					<width>780</width>
 					<label>$INFO[PVR.NowRecordingDateTime]</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -1109,7 +1109,7 @@
 				<posx>360</posx>
 				<posy>15</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[MusicPlayer.Artist]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -1122,7 +1122,7 @@
 				<posx>360</posx>
 				<posy>54</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -1135,7 +1135,7 @@
 				<posx>360</posx>
 				<posy>88</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -1147,7 +1147,7 @@
 				<posx>76</posx>
 				<posy>115</posy>
 				<height>30</height>
-				<width>800</width>
+				<width>780</width>
 				<label>$INFO[MusicPlayer.Time]</label>
 				<align>left</align>
 				<aligny>center</aligny>
