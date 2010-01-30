@@ -2313,7 +2313,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8002">
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_Movies_Sub) + Container(5040).HasFocus(2)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2416,7 +2416,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8003">
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_TVShows_Sub) + Container(5040).HasFocus(3)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2453,7 +2453,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8004">
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_MusicVideos_Sub) + Container(5040).HasFocus(4)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2502,7 +2502,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8006">
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_Music_Sub) + Container(5040).HasFocus(6)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2587,7 +2587,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8007">
+			<control type="fixedlist" id="8001">
 				<visible>Skin.HasSetting(Menu_Pictures_Sub) + Container(5040).HasFocus(7)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2630,7 +2630,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8008">
+			<control type="fixedlist" id="8001">
 				<visible>Skin.HasSetting(Menu_Programs_Sub) + Container(5040).HasFocus(8)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2673,7 +2673,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8009">
+			<control type="fixedlist" id="8001">
 				<visible>Skin.HasSetting(Menu_Weather_Sub) + Container(5040).HasFocus(9)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2698,7 +2698,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8010">
+			<control type="fixedlist" id="8001">
 				<visible>Skin.HasSetting(Menu_Scripts_Sub) + Container(5040).HasFocus(10)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2735,7 +2735,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8012">
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_Settings_Sub) + Container(5040).HasFocus(12)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2760,7 +2760,7 @@
 					</item>
 				</content>
 			</control>
-			<control type="fixedlist" id="8013">
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_PlayDisc_Sub) + Container(5040).HasFocus(13)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
@@ -2888,7 +2888,7 @@
 		<orientation>horizontal</orientation>
 		<posx>144</posx>
 		<posy>578</posy>
-		<width>992</width>
+		<width>993</width>
 		<height>20</height>
 		<hitrect x="144" y="540" w="992" h="60" />
 		<itemgap>-2</itemgap>
