@@ -2709,6 +2709,36 @@
 						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom5_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom5)</visible>
 					</item>
+					<item id="8108">
+						<description>Menu Programs Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom6_Label)]</label>
+						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom6)</visible>
+					</item>
+					<item id="8109">
+						<description>Menu Programs Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom7_Label)]</label>
+						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom7)</visible>
+					</item>
+					<item id="81010">
+						<description>Menu Programs Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom8_Label)]</label>
+						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom8)</visible>
+					</item>
+					<item id="81011">
+						<description>Menu Programs Sub Custom9</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom9_Label)]</label>
+						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom9)</visible>
+					</item>
+					<item id="81012">
+						<description>Menu Programs Sub Custom10</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom10_Label)]</label>
+						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom10)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
