@@ -199,7 +199,7 @@
 			<visible>Control.HasFocus(5046)</visible>
 		</control>
 	</include>
-	<include name="Home_Weather_Icon">
+	<include name="Home_Top_Weather_Icon">
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icon_Top</include>
