@@ -1912,9 +1912,9 @@
 				<include>CommonFileCount</include>
 				<visible>!Control.IsVisible(10)</visible>
 			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $INFO[Control.GetLabel(29)]$INFO[Control.GetLabel(30),: ]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-TV</include>
 			</control>
 		</control>
 		<control type="label" id="29">

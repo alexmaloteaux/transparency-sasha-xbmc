@@ -194,9 +194,9 @@
 				<aligny>center</aligny>
 				<label>$INFO[Container(2).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages]</label>
 			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[10034]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-Settings-Profile</include>
 			</control>
 		</control>
 	</controls>

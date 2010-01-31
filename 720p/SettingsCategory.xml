@@ -163,9 +163,9 @@
 				<font>-</font>
 				<visible>false</visible>
 			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[5] - $INFO[Control.GetLabel(2)]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-Settings-Catagory</include>
 			</control>
 		</control>
 	</controls>

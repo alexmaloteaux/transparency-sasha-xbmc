@@ -5475,9 +5475,9 @@
 				<height>74</height>
 				<texture>Header.png</texture>
 			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[20077]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-Settings-SkinSettings</include>
 			</control>
 		</control>
 	</controls>

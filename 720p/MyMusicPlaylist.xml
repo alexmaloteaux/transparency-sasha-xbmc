@@ -178,9 +178,9 @@
 				<texture>Header.png</texture>
 			</control>
 			<include>CommonFileCount</include>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[10517]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-MusicPlaylist</include>
 			</control>
 		</control>
 	</controls>

@@ -144,9 +144,9 @@
 				<texture>Header.png</texture>
 			</control>
 			<include>CommonFileCount</include>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[0]$INFO[Container.PluginName, - ]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-Programs</include>
 			</control>
 		</control>
 	</controls>

@@ -174,9 +174,9 @@
 				<texture>Header.png</texture>
 			</control>
 			<include>CommonFileCount</include>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[10522]$INFO[Container.PluginName, - ]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-VideoPlaylist</include>
 			</control>
 		</control>
 	</controls>

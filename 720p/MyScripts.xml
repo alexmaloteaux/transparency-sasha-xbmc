@@ -129,9 +129,9 @@
 				<texture>Header.png</texture>
 			</control>
 			<include>CommonFileCount</include>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[10020]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-Scripts</include>
 			</control>
 		</control>
 	</controls>

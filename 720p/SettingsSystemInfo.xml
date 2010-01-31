@@ -228,9 +228,9 @@
 				<height>74</height>
 				<texture>Header.png</texture>
 			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>XBMC - $LOCALIZE[130]</label>
+			<control type="grouplist">
+				<include>Breadcrumbs</include>
+				<include>Breadcrumbs-Settings-SystemInfo</include>
 			</control>
 		</control>
 	</controls>
