@@ -124,18 +124,7 @@
 				<texture diffuse="thumb-diffuse.png">$INFO[Container(450).ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
-			<control type="label">
-				<description>Page label</description>
-				<posx>1200</posx>
-				<posy>645</posy>
-				<width>450</width>
-				<height>30</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<label>$INFO[Container(450).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages]</label>
-				<visible>!Control.IsVisible(451)</visible>
-			</control>
+			<include>CommonFileCount2</include>
 		</control>
 	</controls>
 </window>

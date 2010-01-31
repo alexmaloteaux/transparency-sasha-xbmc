@@ -181,19 +181,7 @@
 				<height>74</height>
 				<texture>Header.png</texture>
 			</control>
-			<control type="label">
-				<description>Page Count Label</description>
-				<posx>12r</posx>
-				<posy>7</posy>
-				<width>500</width>
-				<height>20</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container(2).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages]</label>
-			</control>
+			<include>CommonFileCount10</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Settings-Profile</include>

@@ -555,32 +555,8 @@
 					<include>Breadcrumbs</include>
 					<include>Breadcrumbs-MusicPlaylistEditor</include>
 				</control>
-				<control type="label">
-					<description>Page Count Label Left</description>
-					<posx>12r</posx>
-					<posy>5</posy>
-					<width>562</width>
-					<font>font-20</font>
-					<align>right</align>
-					<scroll>true</scroll>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$INFO[Container(50).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages]</label>
-					<visible>Control.HasFocus(50)</visible>
-				</control>
-				<control type="label">
-					<description>Page Count Label Right</description>
-					<posx>12r</posx>
-					<posy>5</posy>
-					<width>562</width>
-					<font>font-20</font>
-					<align>right</align>
-					<scroll>true</scroll>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$INFO[Container(100).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages]</label>
-					<visible>Control.HasFocus(100)</visible>
-				</control>
+				<include>CommonFileCount8</include>
+				<include>CommonFileCount9</include>
 			</control>
 		</control>
 	</controls>

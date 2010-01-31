@@ -205,17 +205,7 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="label">
-				<description>Page label</description>
-				<posx>1230</posx>
-				<posy>575</posy>
-				<width>560</width>
-				<height>30</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<label>($INFO[Container(450).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages])</label>
-			</control>
+			<include>CommonFileCount2</include>
 			<control type="group" id="9000">
 				<control type="button" id="413">
 					<description>OK button</description>

@@ -12,7 +12,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>800</width>
-			<height>520</height>
+			<height>550</height>
 			<texture border="30">panel.png</texture>
 			<bordertexture border="45">panel-shadow.png</bordertexture>
 			<bordersize>22</bordersize>
@@ -26,7 +26,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font-32</font>
-			<label>$LOCALIZE[298] - $INFO[Container(11).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]</label>
+			<label>$LOCALIZE[298]</label>
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
@@ -114,10 +114,11 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<include>CommonFileCount11</include>
 		<control type="button" id="2">
 			<description>Create Bookmark button</description>
 			<posx>40</posx>
-			<posy>450</posy>
+			<posy>480</posy>
 			<width>235</width>
 			<height>35</height>
 			<label>294</label>
@@ -136,7 +137,7 @@
 		<control type="button" id="3">
 			<description>Clear Bookmark button</description>
 			<posx>280</posx>
-			<posy>450</posy>
+			<posy>480</posy>
 			<width>235</width>
 			<height>35</height>
 			<label>296</label>
@@ -155,7 +156,7 @@
 		<control type="button" id="4">
 			<description>Set Episode Thumb button</description>
 			<posx>520</posx>
-			<posy>450</posy>
+			<posy>480</posy>
 			<width>235</width>
 			<height>35</height>
 			<label>20406</label>
@@ -173,7 +174,7 @@
 		</control>
 		<control type="image">
 			<posx>40</posx>
-			<posy>450</posy>
+			<posy>480</posy>
 			<width>235</width>
 			<height>35</height>
 			<texture border="7">button-focus.png</texture>

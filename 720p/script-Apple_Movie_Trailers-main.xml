@@ -29,19 +29,7 @@
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-AppleMovieTrailers</include>
 			</control>
-			<control type="label">
-				<description>Page Count Label</description>
-				<posx>12r</posx>
-				<posy>5</posy>
-				<width>800</width>
-				<height>20</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container.Property(Category)] - $INFO[Container.NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages]</label>
-			</control>
+			<include>CommonFileCount</include>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>

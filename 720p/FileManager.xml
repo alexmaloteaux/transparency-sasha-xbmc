@@ -329,32 +329,8 @@
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Filemanager</include>
 			</control>
-			<control type="label">
-				<description>number of files/pages in left list text label</description>
-				<posx>12r</posx>
-				<posy>5</posy>
-				<width>562</width>
-				<font>font-20</font>
-				<align>right</align>
-				<scroll>true</scroll>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[Container(20).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages]</label>
-				<visible>Control.HasFocus(20) | Control.HasFocus(30)</visible>
-			</control>
-			<control type="label">
-				<description>number of files/pages in right list text label</description>
-				<posx>12r</posx>
-				<posy>5</posy>
-				<width>562</width>
-				<font>font-20</font>
-				<align>right</align>
-				<scroll>true</scroll>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[Container(21).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(21).CurrentPage]/$INFO[Container(21).NumPages]</label>
-				<visible>Control.HasFocus(21) | Control.HasFocus(31)</visible>
-			</control>
+			<include>CommonFileCount6</include>
+			<include>CommonFileCount7</include>
 		</control>
 	</controls>
 </window>

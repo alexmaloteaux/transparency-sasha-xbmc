@@ -38,7 +38,7 @@
 			<posx>45</posx>
 			<posy>90</posy>
 			<width>500</width>
-			<height>470</height>
+			<height>441</height>
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<onleft>5</onleft>
@@ -99,7 +99,7 @@
 			<posx>552</posx>
 			<posy>87</posy>
 			<width>20</width>
-			<height>475</height>
+			<height>446</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
@@ -112,22 +112,10 @@
 			<showonepage>true</showonepage>
 			<orientation>vertical</orientation>
 		</control>
-		<control type="label">
-			<description>number of files/pages in list text label</description>
-			<posx>570</posx>
-			<posy>570</posy>
-			<width>300</width>
-			<height>35</height>
-			<font>font-20</font>
-			<align>right</align>
-			<aligny>center</aligny>
-			<scroll>true</scroll>
-			<textcolor>white</textcolor>
-			<label>$INFO[Container(3).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] $INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages]</label>
-		</control>
+		<include>CommonFileCount3</include>
 		<control type="button" id="5">
 			<description>OK button</description>
-			<posx>40</posx>
+			<posx>205</posx>
 			<posy>570</posy>
 			<width>200</width>
 			<height>35</height>
