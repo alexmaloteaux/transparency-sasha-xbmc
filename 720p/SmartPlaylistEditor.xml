@@ -1,5 +1,5 @@
 <window id="136">
-	<defaultcontrol always="true">12</defaultcontrol>
+	<defaultcontrol always="true">22</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include>dialogeffect</include>
 	<controls>
@@ -32,10 +32,25 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
+			<control type="spincontrolex" id="22">
+				<description>Set Playlist type</description>
+				<posx>200</posx>
+				<posy>70</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>467</label>
+				<font>font-20</font>
+				<texturefocus border="7">list-focus.png</texturefocus>
+				<texturenofocus border="7">list-nofocus.png</texturenofocus>
+				<onright>22</onright>
+				<onleft>22</onleft>
+				<onup>20</onup>
+				<ondown>12</ondown>
+			</control>
 			<control type="label" id="0">
 				<description>Name Label</description>
 				<posx>200</posx>
-				<posy>65</posy>
+				<posy>110</posy>
 				<width>880</width>
 				<height>30</height>
 				<font>font-20c</font>
@@ -45,7 +60,7 @@
 			<control type="edit" id="12">
 				<description>Name Entry</description>
 				<posx>200</posx>
-				<posy>85</posy>
+				<posy>130</posy>
 				<width>880</width>
 				<height>30</height>
 				<textwidth>880</textwidth>
@@ -54,24 +69,9 @@
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
 				<label>-</label>
-				<onup>20</onup>
+				<onup>22</onup>
 				<onleft>12</onleft>
 				<onright>12</onright>
-				<ondown>22</ondown>
-			</control>
-			<control type="spincontrolex" id="22">
-				<description>Set Playlist type</description>
-				<posx>200</posx>
-				<posy>122</posy>
-				<width>880</width>
-				<height>30</height>
-				<label>467</label>
-				<font>font-20</font>
-				<texturefocus border="7">list-focus.png</texturefocus>
-				<texturenofocus border="7">list-nofocus.png</texturenofocus>
-				<onright>22</onright>
-				<onleft>22</onleft>
-				<onup>12</onup>
 				<ondown>10</ondown>
 			</control>
 			<control type="label">
@@ -91,10 +91,10 @@
 				<posy>185</posy>
 				<width>880</width>
 				<height>146</height>
-				<onup>22</onup>
+				<onup>12</onup>
+				<ondown>13</ondown>
 				<onleft>14</onleft>
 				<onright>60</onright>
-				<ondown>13</ondown>
 				<pagecontrol>60</pagecontrol>
 				<itemlayout width="880" height="29">
 					<control type="image">
