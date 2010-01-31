@@ -644,7 +644,7 @@
 	</include>
 	<include name="MediaInfo-Music">
 		<control type="list" id="59">
-			<visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) | Container.Content(Songs) | Container.Content(Albums) | Container.Content(Artists)</visible>
+			<visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)</visible>
 			<posx>450</posx>
 			<posy>142</posy>
 			<width>665</width>
@@ -846,7 +846,7 @@
 				<height>186</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(500)] + stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>47</posx>
@@ -854,7 +854,7 @@
 				<width>191</width>
 				<height>186</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
-				<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(500)] + stringcompare(ListItem.Label,..)</visible>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="image">
@@ -863,7 +863,7 @@
 				<width>235</width>
 				<height>235</height>
 				<texture>thumb-shadow.png</texture>
-				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
+				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -871,7 +871,7 @@
 				<width>235</width>
 				<height>235</height>
 				<texture flipy="true" diffuse="thumb-diffuse-mirror.png">thumb-shadow.png</texture>
-				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
+				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -882,7 +882,7 @@
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>6</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
+				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -893,7 +893,7 @@
 				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>6</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
+				<visible>!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(500)</visible>
 			</control>
 			<control type="image">
 				<posx>47</posx>
@@ -931,6 +931,30 @@
 				<description>music media info mirror</description>
 				<visible>[Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + !stringcompare(ListItem.Label,..)</visible>
 				<fadetime>IconCrossfadeTime</fadetime>
+			</control>
+			<control type="image">
+				<posx>25</posx>
+				<posy>102</posy>
+				<width>232</width>
+				<height>135</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="video-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<bordertexture border="9">video-shadow.png</bordertexture>
+				<bordersize>8</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>25</posx>
+				<posy>221</posy>
+				<width>232</width>
+				<height>135</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture flipy="true" diffuse="video-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
+				<bordertexture flipy="true" diffuse="video-diffuse-mirror.png" border="9">video-shadow.png</bordertexture>
+				<bordersize>8</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -1141,7 +1165,6 @@
 				<font>font-20</font>
 				<scroll>false</scroll>
 			</control>
-
 			<control type="label">
 				<description>Year txt</description>
 				<posx>785</posx>
@@ -1238,7 +1261,7 @@
 		<control type="group">
 			<posx>125</posx>
 			<posy>490</posy>
-			<visible>Control.IsVisible(59) + !Container.Content(Albums) +  !Container.Content(Artists)</visible>
+			<visible>Control.IsVisible(59) + Container.Content(Songs)</visible>
 			<control type="label">
 				<description>Artist txt</description>
 				<posx>190</posx>
@@ -1384,7 +1407,7 @@
 				<scroll>false</scroll>
 			</control>
 			<control type="label">
-				<description>Year txt</description>
+				<description>Duration txt</description>
 				<posx>785</posx>
 				<posy>50</posy>
 				<width>140</width>
@@ -1396,7 +1419,7 @@
 				<textcolor>lightblue</textcolor>
 			</control>
 			<control type="label">
-				<description>Year Value</description>
+				<description>Duration Value</description>
 				<posx>795</posx>
 				<posy>50</posy>
 				<width>405</width>
@@ -1426,6 +1449,107 @@
 				<width>125</width>
 				<height>25</height>
 				<texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
+			</control>
+		</control>
+		<control type="group">
+			<posx>125</posx>
+			<posy>490</posy>
+			<visible>Control.IsVisible(59) + Container.Content(MusicVideos)</visible>
+			<control type="label">
+				<description>Artist txt</description>
+				<posx>190</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[557]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Artist Value</description>
+				<posx>200</posx>
+				<posy>0</posy>
+				<width>770</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Artist]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<description>Album txt</description>
+				<posx>190</posx>
+				<posy>25</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[558]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Album Value</description>
+				<posx>200</posx>
+				<posy>25</posy>
+				<width>770</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Album]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<description>Year txt</description>
+				<posx>190</posx>
+				<posy>50</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[562]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Year Value</description>
+				<posx>200</posx>
+				<posy>50</posy>
+				<width>770</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Year]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<description>Genre txt</description>
+				<posx>190</posx>
+				<posy>75</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Genre Value</description>
+				<posx>200</posx>
+				<posy>75</posy>
+				<width>770</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Genre]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<scroll>false</scroll>
 			</control>
 		</control>
 	</include>
