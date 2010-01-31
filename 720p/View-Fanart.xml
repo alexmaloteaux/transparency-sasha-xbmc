@@ -887,7 +887,7 @@
 				<width>214</width>
 				<height>214</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png">$INFO[Listitem.Icon]</texture>
 			</control>
 		</control>
 	</include>
