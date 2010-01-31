@@ -1261,7 +1261,7 @@
 		<control type="group">
 			<posx>125</posx>
 			<posy>490</posy>
-			<visible>Control.IsVisible(59) + Container.Content(Songs)</visible>
+			<visible>Control.IsVisible(59) + !Container.Content(Artists) + !Container.Content(Albums) + !Container.Content(MusicVideos)</visible>
 			<control type="label">
 				<description>Artist txt</description>
 				<posx>190</posx>
