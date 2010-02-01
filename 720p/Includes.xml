@@ -10,6 +10,7 @@
 	<include file="View-Polaroid.xml" />
 	<include file="View-Slide.xml" />
 	<include file="View-Thumbnail.xml" />
+	<include file="View-Wall.xml" />
 	<include file="View-WideIcon.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_CDWall.xml" />
@@ -40,6 +41,7 @@
 			<orientation>vertical</orientation>
 			<visible>!Control.IsVisible(57)</visible>
 			<visible>!Control.IsVisible(500)</visible>
+			<visible>!Control.IsVisible(592)</visible>
 			<visible>!Control.IsVisible(594)</visible>
 			<visible>!Control.IsVisible(596)</visible>
 			<visible>!Control.IsVisible(597)</visible>
@@ -195,7 +197,7 @@
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
 			<animation effect="slide" start="0,0" end="0,-18" time="0" condition="Control.HasFocus(60)">Conditional</animation>
-			<visible>Control.IsVisible(500) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
+			<visible>Control.IsVisible(500) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>303</posx>
