@@ -102,7 +102,7 @@
 			<visible>Control.IsVisible(51)</visible>
 		</control>
 	</include>
-	<include name="List-Movies">
+	<include name="List-Videos">
 		<control type="list" id="51">
 			<visible>![Container.Content(TVShows) + !Window.IsVisible(VideoFiles)]</visible>
 			<posx>200</posx>

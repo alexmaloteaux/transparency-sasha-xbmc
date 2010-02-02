@@ -14,7 +14,7 @@
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
 			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
-			<itemlayout height="29" width="390">
+			<itemlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -45,7 +45,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(28)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29" width="390">
+			<focusedlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -748,7 +748,7 @@
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="29" width="390">
+			<itemlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -793,7 +793,7 @@
 					<visible>Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29" width="390">
+			<focusedlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -1280,7 +1280,7 @@
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="29" width="390">
+			<itemlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -1310,7 +1310,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29" width="390">
+			<focusedlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
