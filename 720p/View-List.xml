@@ -104,7 +104,7 @@
 	</include>
 	<include name="List-Videos">
 		<control type="list" id="51">
-			<visible>![Container.Content(TVShows) + !Window.IsVisible(VideoFiles)]</visible>
+			<visible>![Container.Content(TVShows) + Window.IsVisible(VideoLibrary)]</visible>
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>470</width>
@@ -250,7 +250,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | [Container.Content(TVShows) + Window.IsVisible(VideoLibrary)] | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(28)]</visible>
 			<control type="image">
 				<posx>20</posx>
 				<posy>25</posy>
