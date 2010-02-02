@@ -7,7 +7,7 @@
 		<visible>Control.IsVisible(592)</visible>
 			<control type="group" id="7013">
 				<animation reversible="false" effect="slide" start="0,0" end="-164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
-				<visible>Control.IsVisible(592) + Container.OnNext</visible>
+				<visible>Container.OnNext</visible>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -203,7 +203,7 @@
 			</control>
 			<control type="group" id="7014">
 				<animation reversible="false" effect="slide" start="0,0" end="164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
-				<visible>Control.IsVisible(592) + Container.OnPrevious</visible>
+				<visible>Container.OnPrevious</visible>
 				<control type="image">
 					<posx>-164</posx>
 					<posy>0</posy>
@@ -398,7 +398,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(592) + !Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
+				<visible>!Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -585,6 +585,7 @@
 			<scrolltime>250</scrolltime>
 			<preloaditems>2</preloaditems>
 			<focusposition>0</focusposition>
+			<visible>Container.Content(Movies)</visible>
 			<itemlayout width="1" height="1" />
 			<focusedlayout width="226" height="330">
 				<control type="image">
@@ -596,99 +597,100 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>wall-mask.png</texture>
-			<visible>Control.IsVisible(592)</visible>
-		</control>
-		<control type="group">
-			<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7013) | Control.IsVisible(7014)">Conditional</animation>			
-			<visible>Control.IsVisible(592) + !stringcompare(ListItem.Label,..)</visible>
-			<control type="image">
-				<posx>370</posx>
-				<posy>136</posy>
-				<width>328</width>
-				<height>442</height>
-				<texture background="true" diffuse="cover-diffuse2.png">cover-glow.png</texture>
-			</control>
-			<control type="image">
-				<posx>410</posx>
-				<posy>176</posy>
-				<width>248</width>
-				<height>362</height>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem.Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>410</posx>
-				<posy>176</posy>
-				<width>248</width>
-				<height>362</height>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(-1).Icon]</texture>
-				<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
-				<visible>Control.IsVisible(7013) + !stringcompare(ListItem(-1).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>410</posx>
-				<posy>176</posy>
-				<width>248</width>
-				<height>362</height>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(1).Icon]</texture>
-				<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
-				<visible>Control.IsVisible(7014) + !stringcompare(ListItem(1).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>410</posx>
-				<posy>176</posy>
-				<width>248</width>
-				<height>362</height>
-				<texture>cover-highlight.png</texture>
-			</control>
-		</control>
 		<control type="group">
 			<visible>Control.IsVisible(592)</visible>
-			<control type="label">
-				<posx>40</posx>
-				<posy>75</posy>
-				<width>1200</width>
-				<height>30</height>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<font>font-30</font>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="label">
-				<posx>40</posx>
-				<posy>115</posy>
-				<width>1200</width>
-				<height>60</height>
-				<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - ][/B]</label>
-				<textcolor>lightblue</textcolor>
-				<font>font-21</font>
-			</control>
-			<control type="textbox">
-				<description>Plot Value for Movies</description>
-				<posx>40</posx>
-				<posy>182</posy>
-				<width>335</width>
-				<height>344</height>
-				<font>font-19</font>
-				<align>justify</align>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<pagecontrol>9999999999</pagecontrol>
-				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>wall-mask.png</texture>
 			</control>
 			<control type="group">
-				<posx>410</posx>
-				<posy>20</posy>
-				<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
-				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
+				<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7013) | Control.IsVisible(7014)">Conditional</animation>			
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<control type="image">
+					<posx>370</posx>
+					<posy>136</posy>
+					<width>328</width>
+					<height>442</height>
+					<texture background="true" diffuse="cover-diffuse2.png">cover-glow.png</texture>
+				</control>
+				<control type="image">
+					<posx>410</posx>
+					<posy>176</posy>
+					<width>248</width>
+					<height>362</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>410</posx>
+					<posy>176</posy>
+					<width>248</width>
+					<height>362</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(-1).Icon]</texture>
+					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
+					<visible>Control.IsVisible(7013) + !stringcompare(ListItem(-1).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>410</posx>
+					<posy>176</posy>
+					<width>248</width>
+					<height>362</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(1).Icon]</texture>
+					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
+					<visible>Control.IsVisible(7014) + !stringcompare(ListItem(1).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>410</posx>
+					<posy>176</posy>
+					<width>248</width>
+					<height>362</height>
+					<texture>cover-highlight.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<control type="label">
+					<posx>40</posx>
+					<posy>75</posy>
+					<width>1200</width>
+					<height>30</height>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<font>font-30</font>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="label">
+					<posx>40</posx>
+					<posy>115</posy>
+					<width>1200</width>
+					<height>60</height>
+					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - ][/B]</label>
+					<textcolor>lightblue</textcolor>
+					<font>font-21</font>
+				</control>
+				<control type="textbox">
+					<description>Plot Value for Movies</description>
+					<posx>40</posx>
+					<posy>182</posy>
+					<width>335</width>
+					<height>344</height>
+					<font>font-19</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<pagecontrol>9999999999</pagecontrol>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="group">
+					<posx>410</posx>
+					<posy>20</posy>
+					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
+					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
+				</control>
 			</control>
 		</control>
 	</include>
