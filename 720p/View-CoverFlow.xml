@@ -911,7 +911,7 @@
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
 				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
-				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="label">
 				<posx>140</posx>
@@ -945,7 +945,7 @@
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>Control.IsVisible(500) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 		</control>
 	</include>
@@ -955,9 +955,9 @@
 			<posy>520</posy>
 			<width>1280</width>
 			<height>300</height>
-			<visible>Control.IsVisible(500)</visible>
 			<texture>white-reflect.png</texture>
 			<include>VisibleFadeEffect3</include>
+			<visible>Control.IsVisible(500)</visible>
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
@@ -2616,7 +2616,7 @@
 		<control type="wraplist" id="500">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles) | [Container.Content(Albums) | Container.Content(Songs)] | Container.Content(Songs) | Window.IsVisible(Musicfiles)</visible>
+			<visible>Window.IsVisible(MusicFiles) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
 			<posx>460</posx>
 			<posy>345</posy>
 			<width>324</width>
@@ -2680,7 +2680,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>Container.Content(Albums)</visible>
+				<visible>Container.Content(Albums) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -2693,9 +2693,9 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>Container.Content(Albums)</visible>
+				<visible>Container.Content(Albums) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -2710,7 +2710,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>Container.Content(Songs)</visible>
+				<visible>Container.Content(Songs) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -2723,9 +2723,9 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
+				<label>[B]$INFO[ListItem.Label2][/B]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>Container.Content(Songs)</visible>
+				<visible>Container.Content(Songs) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 		</control>
 	</include>
