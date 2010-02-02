@@ -229,6 +229,7 @@
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
+			<colordiffuse>BFFFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_Weather_Icon_Top">
@@ -239,6 +240,7 @@
 			<width>72</width>
 			<height>72</height>
 			<texture>$INFO[Weather.Conditions]</texture>
+			<colordiffuse>BFFFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="WeatherInfo">
