@@ -3,7 +3,7 @@
 		<control type="list" id="51">
 			<posx>200</posx>
 			<posy>142</posy>
-			<width>500</width>
+			<width>470</width>
 			<height>436</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -12,7 +12,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="29" width="500">
+			<itemlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -46,7 +46,7 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29" width="500">
+			<focusedlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -107,7 +107,7 @@
 			<visible>![Container.Content(TVShows) + !Window.IsVisible(VideoFiles)]</visible>
 			<posx>200</posx>
 			<posy>142</posy>
-			<width>500</width>
+			<width>470</width>
 			<height>436</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -116,7 +116,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="29" width="500">
+			<itemlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -176,7 +176,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(28)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29" width="500">
+			<focusedlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -645,7 +645,7 @@
 		<control type="list" id="51">
 			<posx>200</posx>
 			<posy>142</posy>
-			<width>500</width>
+			<width>470</width>
 			<height>436</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
@@ -654,7 +654,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="29" width="500">
+			<itemlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -716,7 +716,7 @@
 					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29" width="500">
+			<focusedlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
