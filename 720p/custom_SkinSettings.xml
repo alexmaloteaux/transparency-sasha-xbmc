@@ -2190,7 +2190,7 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetImage(Custom_Back_Weather_Folder)</onclick>
-							<enable>Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
+							<enable>!Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
 							<onleft>302</onleft>
 							<onright>305</onright>
 							<onup>304</onup>
@@ -2207,7 +2207,7 @@
 							<texturenofocus border="7">button-nofocus.png</texturenofocus>
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.SetPath(Custom_Back_Weather_Folder)</onclick>
-							<enable>Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
+							<enable>!Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
 							<onleft>304</onleft>
 							<onright>306</onright>
 							<onup>305</onup>
@@ -2225,7 +2225,7 @@
 							<texturefocus border="7">button-nofocus.png</texturefocus>
 							<onclick>Skin.Reset(Custom_Back_Weather_Folder)</onclick>
 							<onclick>Skin.Reset(Enable_Custom_Back_Weather)</onclick>
-							<enable>Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
+							<enable>!Skin.HasSetting(Weather_Conditional_Backgrounds)</enable>
 							<onleft>305</onleft>
 							<onright>399</onright>
 							<onup>306</onup>
@@ -2467,7 +2467,7 @@
 						<timeperimage>6000</timeperimage>
 						<randomize>true</randomize>
 						<fadetime>400</fadetime>
-						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(22) + Skin.HasSetting(Weather_Conditional_Options) + Skin.HasSetting(Weather_Conditional_Backgrounds)]">conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(22) + Skin.HasSetting(Weather_Conditional_Backgrounds) + Skin.HasSetting(Weather_Conditional_Options)]">conditional</animation>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">
@@ -3239,87 +3239,92 @@
 						<onclick>Skin.ToggleSetting(Hide-Videos-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Videos-Icons)</selected>
 					</control>
-					<control type="image" id="710">
+					<control type="radiobutton" id="710">
+						<label>$LOCALIZE[3] - $LOCALIZE[31038]</label>
+						<onclick>Skin.ToggleSetting(Hide-Videos-Wall)</onclick>
+						<selected>Skin.HasSetting(Hide-Videos-Wall)</selected>
+					</control>
+					<control type="image" id="711">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="711">
+					<control type="radiobutton" id="712">
 						<label>$LOCALIZE[2] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-List)</selected>
 					</control>
-					<control type="radiobutton" id="712">
+					<control type="radiobutton" id="713">
 						<label>$LOCALIZE[2] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="713">
+					<control type="radiobutton" id="714">
 						<label>$LOCALIZE[2] - $LOCALIZE[544]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-MediaInfo)</selected>
 					</control>
-					<control type="radiobutton" id="714">
+					<control type="radiobutton" id="715">
 						<label>$LOCALIZE[2] - $LOCALIZE[33031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-CoverFlow)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-CoverFlow)</selected>
 					</control>
-					<control type="radiobutton" id="715">
+					<control type="radiobutton" id="716">
 						<label>$LOCALIZE[2] - $LOCALIZE[536]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Icons)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Icons)</selected>
 					</control>
-					<control type="image" id="716">
+					<control type="image" id="717">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="717">
+					<control type="radiobutton" id="718">
 						<label>$LOCALIZE[1] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-List)</selected>
 					</control>
-					<control type="radiobutton" id="718">
+					<control type="radiobutton" id="719">
 						<label>$LOCALIZE[1] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="719">
+					<control type="radiobutton" id="720">
 						<label>$LOCALIZE[1] - $LOCALIZE[31033]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-PicThumb)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-PicThumb)</selected>
 					</control>
-					<control type="radiobutton" id="720">
+					<control type="radiobutton" id="721">
 						<label>$LOCALIZE[1] - $LOCALIZE[31036]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Polaroid)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Polaroid)</selected>
 					</control>
-					<control type="image" id="721">
+					<control type="image" id="722">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="722">
+					<control type="radiobutton" id="723">
 						<label>$LOCALIZE[0] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-List)</selected>
 					</control>
-					<control type="radiobutton" id="723">
+					<control type="radiobutton" id="724">
 						<label>$LOCALIZE[0] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
 					</control>
-					<control type="image" id="724">
+					<control type="image" id="725">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="725">
+					<control type="radiobutton" id="726">
 						<label>$LOCALIZE[247] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-List)</selected>
 					</control>
-					<control type="radiobutton" id="726">
+					<control type="radiobutton" id="727">
 						<label>$LOCALIZE[247] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-Thumbnail)</selected>
