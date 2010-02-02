@@ -1379,6 +1379,12 @@
 				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
+			<control type="button" id="7009">
+				<description>fake button to pass focus</description>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onfocus>SetFocus(9000)</onfocus>
+			</control>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(598)</visible>
@@ -1613,6 +1619,12 @@
 				<label>$INFO[ListItem.label]</label>
 				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="button" id="7009">
+				<description>fake button to pass focus</description>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onfocus>SetFocus(9000)</onfocus>
 			</control>
 		</control>
 		<control type="group">

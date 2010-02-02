@@ -1,6 +1,109 @@
 <includes>
 	<include name="List">
 		<control type="list" id="51">
+			<posx>200</posx>
+			<posy>142</posy>
+			<width>500</width>
+			<height>436</height>
+			<onleft>9000</onleft>
+			<onright>60</onright>
+			<onup>51</onup>
+			<ondown>51</ondown>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="29" width="500">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>30</height>
+					<texture border="7">list-nofocus.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>420</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>430</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="29" width="500">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>30</height>
+					<texture border="7">list-nofocus.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>30</height>
+					<texture border="7">list-focus2.png</texture>
+					<visible>Control.HasFocus(51)</visible>
+					<include>VisibleFadeEffect</include>
+					<include>ListFocusScroll</include>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>420</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>430</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="image">
+			<posx>704</posx>
+			<posy>167</posy>
+			<width>386</width>
+			<height>386</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<visible>Control.IsVisible(51)</visible>
+		</control>
+	</include>
+	<include name="List-Movies">
+		<control type="list" id="51">
 			<visible>![Container.Content(TVShows) + !Window.IsVisible(VideoFiles)]</visible>
 			<posx>200</posx>
 			<posy>142</posy>
@@ -33,7 +136,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
 				</control>
 				<control type="label">
 					<posx>430</posx>
@@ -46,8 +148,9 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Window.IsVisible(VideoFiles) + Container.Content(TVShows) + Skin.HasSetting(Enable_TVShows_Watched_Flags)]">Conditional</animation>
 					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
-					<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+					<visible>!Container.Content(Seasons)</visible>
 				</control>
 				<control type="label">
 					<posx>430</posx>
@@ -62,46 +165,6 @@
 					<label>$INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]]$INFO[ListItem.Property(UnWatchedEpisodes), - , $LOCALIZE[16101]]</label>
 					<animation effect="slide" start="0,0" end="30,0" time="0" condition="Container.Content(Seasons) + Skin.HasSetting(Enable_TVShows_Watched_Flags)">Conditional</animation>
 					<visible>Container.Content(Seasons)</visible>
-				</control>
-				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
-					<width>450</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>blue</selectedcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>460</posx>
-					<posy>0</posy>
-					<width>450</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>lightblue</textcolor>
-					<selectedcolor>blue</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>430</posx>
-					<posy>0</posy>
-					<width>450</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>lightblue</textcolor>
-					<selectedcolor>blue</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Window.IsVisible(VideoFiles) + Container.Content(TVShows) + Skin.HasSetting(Enable_TVShows_Watched_Flags)]">Conditional</animation>
-					<visible>!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + ![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
 				</control>
 				<control type="image">
 					<posx>435</posx>
@@ -143,7 +206,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
 				</control>
 				<control type="label">
 					<posx>430</posx>
@@ -156,8 +218,9 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Window.IsVisible(VideoFiles) + Container.Content(TVShows) + Skin.HasSetting(Enable_TVShows_Watched_Flags)]">Conditional</animation>
 					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
-					<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+					<visible>!Container.Content(Seasons)</visible>
 				</control>
 				<control type="label">
 					<posx>430</posx>
@@ -173,46 +236,6 @@
 					<animation effect="slide" start="0,0" end="30,0" time="0" condition="Container.Content(Seasons) + Skin.HasSetting(Enable_TVShows_Watched_Flags)">Conditional</animation>
 					<visible>Container.Content(Seasons)</visible>
 				</control>
-				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
-					<width>450</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>blue</selectedcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>460</posx>
-					<posy>0</posy>
-					<width>450</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>lightblue</textcolor>
-					<selectedcolor>blue</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>430</posx>
-					<posy>0</posy>
-					<width>450</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>lightblue</textcolor>
-					<selectedcolor>blue</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Window.IsVisible(VideoFiles) + Container.Content(TVShows) + Skin.HasSetting(Enable_TVShows_Watched_Flags)]">Conditional</animation>
-					<visible>!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + ![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
-				</control>
 				<control type="image">
 					<posx>435</posx>
 					<posy>0</posy>
@@ -227,7 +250,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + !Container.Content(Episodes)</visible>
+			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(28)]</visible>
 			<control type="image">
 				<posx>20</posx>
 				<posy>25</posy>
@@ -236,7 +259,7 @@
 				<aspectratio scalediffuse="true">keep</aspectratio>
 				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!Container.Content(Artists) + ![[Container.Content(Years) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Studios) | Container.Content(Genres)] + !stringcompare(ListItem.Label,..)] + !Container.Content(Songs) + !Container.Content(Albums) + !Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(MusicVideos) + !Window.IsVisible(500) + !Window.IsVisible(28)</visible>
+				<visible>![!stringcompare(ListItem.Label,..) + [Container.Content(Years) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Studios) | Container.Content(Genres)]]</visible>
 			</control>
 			<control type="image">
 				<posx>12</posx>
@@ -314,46 +337,10 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture>genre-music-icon.jpg</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
-			</control>
-			<control type="image">
-				<posx>87</posx>
-				<posy>120</posy>
-				<width>231</width>
-				<height>286</height>
-				<texture>special://skin/images/foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
-			</control>
-			<control type="image">
-				<posx>87</posx>
-				<posy>120</posy>
-				<width>231</width>
-				<height>286</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>405</width>
-				<height>500</height>
-				<texture>genre_icon_overlay.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
-			</control>
-			<control type="label">
-				<posx>99</posx>
-				<posy>79</posy>
-				<width>170</width>
-				<height>25</height>
-				<font>font-19</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)</visible>
 			</control>
 			<control type="image">
 				<posx>87</posx>
@@ -372,16 +359,6 @@
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)</visible>
 			</control>
 			<control type="image">
-				<posx>87</posx>
-				<posy>120</posy>
-				<width>231</width>
-				<height>286</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)</visible>
-			</control>
-			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>405</width>
@@ -400,6 +377,16 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)</visible>
+			</control>
+			<control type="image">
+				<posx>87</posx>
+				<posy>120</posy>
+				<width>231</width>
+				<height>286</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
 			</control>
 			<control type="image">
 				<posx>87</posx>
@@ -418,16 +405,6 @@
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
 			</control>
 			<control type="image">
-				<posx>87</posx>
-				<posy>120</posy>
-				<width>231</width>
-				<height>286</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
-			</control>
-			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>405</width>
@@ -447,6 +424,11 @@
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + Container.Content(Movies)</visible>
 			<control type="image">
 				<posx>68</posx>
 				<posy>31</posy>
@@ -454,7 +436,6 @@
 				<height>438</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(Movies)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -462,7 +443,7 @@
 				<width>354</width>
 				<height>450</height>
 				<texture>dvdcase.png</texture>
-				<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>275</posx>
@@ -471,18 +452,13 @@
 				<height>78</height>
 				<texture>movieset.png</texture>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-				<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="image">
-				<posx>68</posx>
-				<posy>31</posy>
-				<width>305</width>
-				<height>438</height>
-				<aspectratio scalediffuse="true">keep</aspectratio>
-				<texture diffuse="gamecase-diffuse.png">$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Window.IsVisible(28)</visible>
-			</control>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + Container.Content(Seasons)</visible>
 			<control type="image">
 				<posx>68</posx>
 				<posy>31</posy>
@@ -490,7 +466,7 @@
 				<height>438</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(Seasons) + stringcompare(ListItem.Label,..)</visible>
+				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>68</posx>
@@ -499,7 +475,7 @@
 				<height>438</height>
 				<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -507,8 +483,13 @@
 				<width>354</width>
 				<height>450</height>
 				<texture>dvdcase.png</texture>
-				<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + Container.Content(MusicVideos)</visible>
 			<control type="image">
 				<posx>15</posx>
 				<posy>68</posy>
@@ -517,7 +498,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<bordersize>11</bordersize>
-				<visible>Container.Content(MusicVideos) + stringcompare(ListItem.Label,..)</visible>
+				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>15</posx>
@@ -529,56 +510,7 @@
 				<bordertexture>thumb-shadow.png</bordertexture>
 				<bordersize>11</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>15</posx>
-				<posy>68</posy>
-				<width>364</width>
-				<height>364</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
-				<bordertexture>thumb-shadow.png</bordertexture>
-				<bordersize>11</bordersize>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(Artists) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>59</posx>
-				<posy>97</posy>
-				<width>312</width>
-				<height>306</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>59</posx>
-				<posy>97</posy>
-				<width>312</width>
-				<height>306</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>59</posx>
-				<posy>97</posy>
-				<width>312</width>
-				<height>306</height>
-				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>25</posx>
-				<posy>92</posy>
-				<width>355</width>
-				<height>316</height>
-				<texture>cdcase.png</texture>
-				<description>music library albums list view</description>
-				<description>music library songs list view</description>
-				<visible>[Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -614,20 +546,33 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
+			<control type="textbox">
+				<description>Description for Episodes</description>
+				<posx>5</posx>
+				<posy>270</posy>
+				<width>375</width>
+				<height>202</height>
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<pagecontrol>9999999999</pagecontrol>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+			</control>	
 		</control>
-		<control type="textbox">
-			<description>Description for Episodes</description>
-			<posx>705</posx>
-			<posy>380</posy>
-			<width>375</width>
-			<height>202</height>
-			<font>font-19</font>
-			<align>justify</align>
-			<textcolor>white</textcolor>
-			<pagecontrol>9999999999</pagecontrol>
-			<label>$INFO[ListItem.Plot]</label>
-			<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<visible>Control.IsVisible(51) + Container.Content(Episodes)</visible>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + Window.IsVisible(28)</visible>
+			<control type="image">
+				<posx>68</posx>
+				<posy>31</posy>
+				<width>305</width>
+				<height>438</height>
+				<aspectratio scalediffuse="true">keep</aspectratio>
+				<texture diffuse="gamecase-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+			</control>
 		</control>
 	</include>
 	<include name="List_Extras">
@@ -693,6 +638,320 @@
 				<orientation>horizontal</orientation>
 				<include condition="!Skin.HasSetting(Enable_MusicVideos_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(MusicVideos)</visible>
+			</control>
+		</control>
+	</include>
+	<include name="List-Music">
+		<control type="list" id="51">
+			<posx>200</posx>
+			<posy>142</posy>
+			<width>500</width>
+			<height>436</height>
+			<onleft>9000</onleft>
+			<onright>60</onright>
+			<onup>51</onup>
+			<ondown>51</ondown>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="29" width="500">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>30</height>
+					<texture border="7">list-nofocus.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>420</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
+				</control>
+				<control type="label">
+					<posx>430</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
+				</control>
+				<control type="label">
+					<posx>460</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="29" width="500">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>30</height>
+					<texture border="7">list-nofocus.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>30</height>
+					<texture border="7">list-focus2.png</texture>
+					<visible>Control.HasFocus(51)</visible>
+					<include>VisibleFadeEffect</include>
+					<include>ListFocusScroll</include>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>420</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
+				</control>
+				<control type="label">
+					<posx>430</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>![Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)]</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
+				</control>
+				<control type="label">
+					<posx>460</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Skin.HasSetting(Artist_Album_Order) + Container.Content(Albums)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(500)]</visible>
+			<control type="image">
+				<posx>20</posx>
+				<posy>25</posy>
+				<width>355</width>
+				<height>450</height>
+				<aspectratio scalediffuse="true">keep</aspectratio>
+				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>![!stringcompare(ListItem.Label,..) + [Container.Content(Years) | Container.Content(Genres)]]</visible>
+			</control>
+			<control type="image">
+				<posx>12</posx>
+				<posy>30</posy>
+				<width>355</width>
+				<height>450</height>
+				<aspectratio>keep</aspectratio>
+				<texture>foldericon-year.png</texture>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Years)</visible>
+			</control>
+			<control type="label">
+				<posx>72</posx>
+				<posy>114</posy>
+				<width>240</width>
+				<height>30</height>
+				<font>font-80</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Years)</visible>
+			</control>
+			<control type="image">
+				<posx>87</posx>
+				<posy>120</posy>
+				<width>231</width>
+				<height>286</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
+			</control>
+			<control type="image">
+				<posx>87</posx>
+				<posy>120</posy>
+				<width>231</width>
+				<height>286</height>
+				<texture>genre-music-icon.jpg</texture>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
+			</control>
+			<control type="image">
+				<posx>87</posx>
+				<posy>120</posy>
+				<width>231</width>
+				<height>286</height>
+				<texture>special://skin/images/foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>405</width>
+				<height>500</height>
+				<texture>genre_icon_overlay.png</texture>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
+			</control>
+			<control type="label">
+				<posx>99</posx>
+				<posy>79</posy>
+				<width>170</width>
+				<height>25</height>
+				<font>font-19</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + Container.Content(Artists)</visible>
+			<control type="image">
+				<posx>59</posx>
+				<posy>97</posy>
+				<width>312</width>
+				<height>306</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>15</posx>
+				<posy>68</posy>
+				<width>364</width>
+				<height>364</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<bordertexture>thumb-shadow.png</bordertexture>
+				<bordersize>11</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)]</visible>
+			<control type="image">
+				<posx>59</posx>
+				<posy>97</posy>
+				<width>312</width>
+				<height>306</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>59</posx>
+				<posy>97</posy>
+				<width>312</width>
+				<height>306</height>
+				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>25</posx>
+				<posy>92</posy>
+				<width>355</width>
+				<height>316</height>
+				<texture>cdcase.png</texture>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<posx>700</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(51) + [Container.Content(MusicVideos)]</visible>
+			<control type="image">
+				<posx>59</posx>
+				<posy>97</posy>
+				<width>312</width>
+				<height>306</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>15</posx>
+				<posy>68</posy>
+				<width>364</width>
+				<height>364</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<bordertexture>thumb-shadow.png</bordertexture>
+				<bordersize>11</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 	</include>
