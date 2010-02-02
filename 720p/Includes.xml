@@ -1338,7 +1338,7 @@
 				<width>600</width>
 				<height>90</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient7</include>
 			<control type="image">
@@ -1347,7 +1347,7 @@
 				<width>600</width>
 				<height>50</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)</visible>
+				<visible>[[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="videowindow">
 				<posx>5</posx>
@@ -1366,7 +1366,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1379,7 +1379,7 @@
 				<font>font-19</font>
 				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1392,7 +1392,7 @@
 				<font>font-19</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1405,7 +1405,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)</visible>
+				<visible>[[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1466,7 +1466,7 @@
 				<width>600</width>
 				<height>90</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient3</include>
 			<control type="image">
@@ -1475,7 +1475,7 @@
 				<width>600</width>
 				<height>50</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)</visible>
+				<visible>[[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="image">
 				<posx>15</posx>
@@ -1503,7 +1503,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1516,7 +1516,7 @@
 				<font>font-19</font>
 				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1529,7 +1529,7 @@
 				<font>font-19</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)]</visible>
+				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Control.IsVisible(14)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1542,7 +1542,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)</visible>
+				<visible>[[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | Control.IsVisible(14)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1871,6 +1871,7 @@
 			<animation effect="slide" end="-1105,160" time="0" condition="Window.IsVisible(Musiclibrary) + Control.IsVisible(500)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(VideoFiles) + Control.IsVisible(500)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(500)">Conditional</animation>
+			<animation effect="slide" end="-1215,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(592)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(VideoFiles) + Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" end="-1160,60" time="0" condition="Control.IsVisible(597)">Conditional</animation>

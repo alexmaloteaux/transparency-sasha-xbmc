@@ -12,7 +12,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(Fanart.Image)</visible>
+			<visible>!IsEmpty(Fanart.Image) + !Control.IsVisible(592)</visible>
 		</control>
 		<control type="largeimage">
 			<posx>0</posx>
@@ -23,7 +23,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(592)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -101,7 +101,7 @@
 				<include condition="!Skin.HasSetting(Hide-Videos-List)">List</include> 			 <!-- view id = 51 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-Thumbnail)">Thumbnail-Videos</include>  <!-- view id = 53 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-WideIcon)">WideIcon</include> 		 <!-- view id = 54 -->
-				<include>Fanart-Videos</include> 	<!-- view id = 56 -->
+				<include>Fanart-Videos</include> 							 <!-- view id = 56 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies</include>		 <!-- view id = 57 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include>  <!-- view id = 58 --> 
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-TVShows</include> <!-- view id = 59 -->
@@ -289,7 +289,7 @@
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
-			<animation effect="slide" start="0,0" end="0,-75" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(500) | Control.IsVisible(592) | Control.IsVisible(596)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-75" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(500) | Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-75" time="300" tween="quadratic" easing="out" condition="[Control.IsVisible(55) | Control.IsVisible(56)]">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
 			<control type="image">
