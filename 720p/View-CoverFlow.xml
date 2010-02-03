@@ -5,14 +5,14 @@
 			<posy>580</posy>
 			<width>1280</width>
 			<height>240</height>
-			<visible>Control.IsVisible(500)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<texture>white-reflect.png</texture>
 			<include>VisibleFadeEffect3</include>
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
 			<posy>260</posy>
-			<visible>Control.IsVisible(500) + Container.OnNext</visible>
+			<visible>Control.IsVisible(55) + Container.OnNext</visible>
 			<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
 			<control type="group">
 				<posx>80</posx>
@@ -24,7 +24,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-4).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -39,7 +39,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-4).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -58,7 +58,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -73,7 +73,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -92,7 +92,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -107,7 +107,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -128,7 +128,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -143,7 +143,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -162,7 +162,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -177,7 +177,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -196,7 +196,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -211,7 +211,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -235,7 +235,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -250,7 +250,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -270,7 +270,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -285,7 +285,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -301,7 +301,7 @@
 		<control type="group" id="7002">
 			<include>Window_OpenClose_Animation</include>
 			<posy>260</posy>
-			<visible>Control.IsVisible(500) + Container.OnPrevious</visible>
+			<visible>Control.IsVisible(55) + Container.OnPrevious</visible>
 			<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
 			<control type="group">
 				<posx>900</posx>
@@ -313,7 +313,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(4).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -328,7 +328,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(4).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -347,7 +347,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -362,7 +362,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -381,7 +381,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -396,7 +396,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -417,7 +417,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -432,7 +432,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -451,7 +451,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -466,7 +466,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -485,7 +485,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -500,7 +500,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -524,7 +524,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -539,7 +539,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -559,7 +559,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -574,7 +574,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -589,7 +589,7 @@
 		</control>
 		<control type="group" id="7000">
 			<posy>260</posy>
-			<visible>Control.IsVisible(500) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
+			<visible>Control.IsVisible(55) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
 			<control type="group">
 				<posx>80</posx>
 				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
@@ -599,7 +599,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -614,7 +614,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -634,7 +634,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -649,7 +649,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -669,7 +669,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -684,7 +684,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -704,7 +704,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -719,7 +719,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -739,7 +739,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -754,7 +754,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -774,7 +774,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -789,7 +789,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -808,7 +808,7 @@
 					<posy>5</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -832,7 +832,7 @@
 					<posy>445</posy>
 					<width>259</width>
 					<height>429</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -853,7 +853,7 @@
 				</control>
 			</control>
 		</control>
-		<control type="wraplist" id="500">
+		<control type="wraplist" id="55">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Container.Content(Movies)</visible>
@@ -861,8 +861,8 @@
 			<posy>260</posy>
 			<width>306</width>
 			<height>440</height>
-			<onleft>500</onleft>
-			<onright>500</onright>
+			<onleft>55</onleft>
+			<onright>55</onright>
 			<onup>9000</onup>
 			<ondown>60</ondown>
 			<viewtype label="31032">icon</viewtype>
@@ -885,7 +885,7 @@
 			<posx>0</posx>
 			<posy>15</posy>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
-			<visible>Control.IsVisible(500)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay11</include>
 			<control type="image">
 				<posx>0</posx>
@@ -957,13 +957,13 @@
 			<height>300</height>
 			<texture>white-reflect.png</texture>
 			<include>VisibleFadeEffect3</include>
-			<visible>Control.IsVisible(500)</visible>
+			<visible>Control.IsVisible(55)</visible>
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
 			<posx>2</posx>
 			<posy>345</posy>
-			<visible>Control.IsVisible(500) + Container.OnNext</visible>
+			<visible>Control.IsVisible(55) + Container.OnNext</visible>
                         <animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
 			<control type="group">
@@ -977,7 +977,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-4).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-4).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -985,7 +985,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-4).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -993,7 +993,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-4).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-4).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1010,7 +1010,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-4).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-4).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1018,7 +1018,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-4).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1026,7 +1026,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-4).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-4).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1047,7 +1047,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1055,7 +1055,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1063,7 +1063,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1080,7 +1080,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1088,7 +1088,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1096,7 +1096,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1117,7 +1117,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1125,7 +1125,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1133,7 +1133,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1150,7 +1150,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1158,7 +1158,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1166,7 +1166,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1189,7 +1189,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1197,7 +1197,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1205,7 +1205,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1222,7 +1222,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1230,7 +1230,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1238,7 +1238,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1259,7 +1259,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1267,7 +1267,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1275,7 +1275,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1292,7 +1292,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1300,7 +1300,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1308,7 +1308,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1329,7 +1329,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1337,7 +1337,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1345,7 +1345,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1362,7 +1362,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1370,7 +1370,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1378,7 +1378,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1404,7 +1404,7 @@
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+						<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 					</control>
 					<control type="image">
@@ -1412,7 +1412,7 @@
 						<posy>28</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(0).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1420,7 +1420,7 @@
 						<posy>28</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(0).Thumb]</texture>
+						<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(0).Thumb]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(0).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1437,7 +1437,7 @@
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+						<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 					</control>
 					<control type="image">
@@ -1445,7 +1445,7 @@
 						<posy>355</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(0).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1453,7 +1453,7 @@
 						<posy>355</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Thumb]</texture>
+						<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Thumb]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(0).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1475,7 +1475,7 @@
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+						<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 					</control>
 					<control type="image">
@@ -1483,7 +1483,7 @@
 						<posy>28</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-1).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1491,7 +1491,7 @@
 						<posy>28</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-1).Thumb]</texture>
+						<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-1).Thumb]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-1).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1508,7 +1508,7 @@
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+						<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 					</control>
 					<control type="image">
@@ -1516,7 +1516,7 @@
 						<posy>355</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-1).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1524,7 +1524,7 @@
 						<posy>355</posy>
 						<width>318</width>
 						<height>318</height>
-						<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Thumb]</texture>
+						<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Thumb]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-1).Label,..)</visible>
 					</control>
 					<control type="image">
@@ -1542,7 +1542,7 @@
 			<include>Window_OpenClose_Animation</include>
 			<posx>2</posx>
 			<posy>345</posy>
-			<visible>Control.IsVisible(500) + Container.OnPrevious</visible>
+			<visible>Control.IsVisible(55) + Container.OnPrevious</visible>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
 			<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
 			<control type="group">
@@ -1556,7 +1556,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(4).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(4).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1564,7 +1564,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(4).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1572,7 +1572,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(4).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(4).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1589,7 +1589,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(4).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(4).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1597,7 +1597,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(4).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1605,7 +1605,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(4).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(4).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(4).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1626,7 +1626,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1634,7 +1634,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1642,7 +1642,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1659,7 +1659,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1667,7 +1667,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1675,7 +1675,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1696,7 +1696,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1704,7 +1704,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1712,7 +1712,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1729,7 +1729,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1737,7 +1737,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1745,7 +1745,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1768,7 +1768,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1776,7 +1776,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1784,7 +1784,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1801,7 +1801,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1809,7 +1809,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1817,7 +1817,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1838,7 +1838,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1846,7 +1846,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1854,7 +1854,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1871,7 +1871,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1879,7 +1879,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1887,7 +1887,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1908,7 +1908,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1916,7 +1916,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1924,7 +1924,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1941,7 +1941,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1949,7 +1949,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1957,7 +1957,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1983,7 +1983,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -1991,7 +1991,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -1999,7 +1999,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(0).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(0).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2016,7 +2016,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2024,7 +2024,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2032,7 +2032,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2054,7 +2054,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2062,7 +2062,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2070,7 +2070,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2087,7 +2087,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2095,7 +2095,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2103,7 +2103,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2121,7 +2121,7 @@
 			<posx>2</posx>
 			<posy>345</posy>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
-			<visible>Control.IsVisible(500) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
+			<visible>Control.IsVisible(55) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
 			<control type="group">
 				<posx>20</posx>
 				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
@@ -2132,7 +2132,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2140,7 +2140,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2148,7 +2148,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2165,7 +2165,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2173,7 +2173,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2181,7 +2181,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2203,7 +2203,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2211,7 +2211,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2219,7 +2219,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2236,7 +2236,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2244,7 +2244,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2252,7 +2252,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2274,7 +2274,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2282,7 +2282,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2290,7 +2290,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(-1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(-1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2307,7 +2307,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2315,7 +2315,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2323,7 +2323,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(-1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(-1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2345,7 +2345,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2353,7 +2353,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2361,7 +2361,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2378,7 +2378,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2386,7 +2386,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2394,7 +2394,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(3).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(3).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2416,7 +2416,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2424,7 +2424,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2432,7 +2432,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2449,7 +2449,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2457,7 +2457,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2465,7 +2465,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(2).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(2).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2487,7 +2487,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2495,7 +2495,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2503,7 +2503,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2520,7 +2520,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2528,7 +2528,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2536,7 +2536,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(1).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(1).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2557,7 +2557,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2565,7 +2565,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture diffuse="poster-diffuse.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture diffuse="poster-diffuse.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2573,7 +2573,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png">$INFO[Container(500).ListItem(0).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png">$INFO[Container(55).ListItem(0).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2590,7 +2590,7 @@
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
 				</control>
 				<control type="image">
@@ -2598,7 +2598,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2606,7 +2606,7 @@
 					<posy>355</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(500).ListItem(0).Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png">$INFO[Container(55).ListItem(0).Thumb]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
@@ -2619,7 +2619,7 @@
 				</control>
 			</control>
 		</control>
-		<control type="wraplist" id="500">
+		<control type="wraplist" id="55">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Window.IsVisible(MusicFiles) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
@@ -2627,8 +2627,8 @@
 			<posy>345</posy>
 			<width>324</width>
 			<height>318</height>
-			<onleft>500</onleft>
-			<onright>500</onright>
+			<onleft>55</onleft>
+			<onright>55</onright>
 			<onup>9000</onup>
 			<ondown>60</ondown>
 			<viewtype label="31032">icon</viewtype>
@@ -2651,7 +2651,7 @@
 			<posx>0</posx>
 			<posy>15</posy>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
-			<visible>Control.IsVisible(500)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>13</posy>
