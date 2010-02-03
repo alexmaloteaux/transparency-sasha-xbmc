@@ -274,7 +274,7 @@
 	</include>
 	<include name="Icons-Albums">
 		<control type="grouplist">
-			<visible>Control.IsVisible(599)</visible>
+			<visible>Control.IsVisible(56)</visible>
 			<posx>177</posx>
 			<posy>135</posy>
 			<width>930</width>
@@ -282,14 +282,14 @@
 			<onup>9000</onup>
 			<ondown>60</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
-			<control type="wraplist" id="599">
+			<control type="wraplist" id="56">
 				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
 				<posx>0</posx>
 				<posy>100</posy>
 				<width>930</width>
 				<height>450</height>
-				<onleft>599</onleft>
-				<onright>599</onright>
+				<onleft>56</onleft>
+				<onright>56</onright>
 				<onup>9000</onup>
 				<ondown>60</ondown>
 				<viewtype label="536">icon</viewtype>
@@ -426,7 +426,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(599)</visible>
+			<visible>Control.IsVisible(56)</visible>
 			<control type="label">
 				<posx>200</posx>
 				<posy>125</posy>
