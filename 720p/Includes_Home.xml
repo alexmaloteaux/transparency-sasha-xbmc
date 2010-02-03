@@ -224,9 +224,9 @@
 			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icon_Top</include>
 			<control type="label">
 				<description>Conditions Label</description>
-				<posx>1192</posx>
+				<posx>1142</posx>
 				<posy>52</posy>
-				<width>72</width>
+				<width>172</width>
 				<height>72</height>
 				<label>[B]$INFO[Weather.Temperature][/B]</label>
 				<align>center</align>
