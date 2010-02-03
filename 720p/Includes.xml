@@ -45,31 +45,15 @@
 			<visible>!Control.IsVisible(594)</visible>
 			<visible>!Control.IsVisible(596)</visible>
 			<visible>!Control.IsVisible(597)</visible>
-			<visible>!Control.IsVisible(598)</visible>
 			<visible>!Control.IsVisible(599)</visible>
 			<visible>![Control.IsVisible(59) + Window.IsVisible(MusicFiles)]</visible>
 			<visible>![Control.IsVisible(59) + Window.IsVisible(MusicLibrary)]</visible>
 			<visible>![Control.IsVisible(59) + Window.IsVisible(MusicPlaylist)]</visible>
 			<visible>![Control.IsVisible(58) + Window.IsVisible(VideoLibrary)]</visible>
-			<visible>![Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13) | Control.IsVisible(55) | Control.IsVisible(56)]</visible>
+			<visible>![Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13) | Control.IsVisible(50)]</visible>
 			<visible>!Control.IsVisible(51)</visible>
 		</control>
-		<control type="scrollbar" id="60">
-			<posx>1083</posx>
-			<posy>138</posy>
-			<width>20</width>
-			<height>328</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>50</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>[Control.IsVisible(59) + Window.IsVisible(MusicFiles)] | [Control.IsVisible(59) + Window.IsVisible(MusicLibrary)] | [Control.IsVisible(59) + Window.IsVisible(MusicPlaylist)] | [Control.IsVisible(58) + Window.IsVisible(VideoLibrary)]</visible>
-		</control>
+
 		<control type="scrollbar" id="60">
 			<posx>675</posx>
 			<posy>138</posy>
@@ -148,7 +132,7 @@
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
-			<visible>[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + !Skin.HasSetting(FanartShort)  + !Skin.HasSetting(FanartLong)</visible>
+			<visible>Control.IsVisible(50) + !Skin.HasSetting(FanartShort)  + !Skin.HasSetting(FanartLong)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>557</posx>
@@ -164,7 +148,7 @@
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
-			<visible>[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + Skin.HasSetting(FanartShort)</visible>
+			<visible>Control.IsVisible(50) + Skin.HasSetting(FanartShort)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>557</posx>
@@ -180,7 +164,7 @@
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
-			<visible>[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + Skin.HasSetting(FanartLong)</visible>
+			<visible>Control.IsVisible(50) + Skin.HasSetting(FanartLong)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>-805</posx>
@@ -1322,13 +1306,11 @@
 			<visible>!Control.IsVisible(11)</visible>
 			<visible>!Control.IsVisible(12)</visible>
 			<visible>!Control.IsVisible(13)</visible>
-			<visible>!Control.IsVisible(55)</visible>
-			<visible>!Control.IsVisible(56)</visible>
+			<visible>!Control.IsVisible(50)</visible>
 			<visible>!Control.IsVisible(500)</visible>
 			<visible>!Control.IsVisible(594)</visible>
 			<visible>!Control.IsVisible(596)</visible>
 			<visible>!Control.IsVisible(597)</visible>
-			<visible>!Control.IsVisible(598)</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1450,13 +1432,11 @@
 			<visible>!Control.IsVisible(11)</visible>
 			<visible>!Control.IsVisible(12)</visible>
 			<visible>!Control.IsVisible(13)</visible>
-			<visible>!Control.IsVisible(55)</visible>
-			<visible>!Control.IsVisible(56)</visible>
+			<visible>!Control.IsVisible(50)</visible>
 			<visible>!Control.IsVisible(500)</visible>
 			<visible>!Control.IsVisible(594)</visible>
 			<visible>!Control.IsVisible(596)</visible>
 			<visible>!Control.IsVisible(597)</visible>
-			<visible>!Control.IsVisible(598)</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>
@@ -1804,8 +1784,8 @@
 			<texture border="30">panel.png</texture>
 			<bordertexture border="45">panel-shadow.png</bordertexture>
 			<bordersize>22</bordersize>
-			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,391" time="300" condition="[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + Skin.HasSetting(FanartShort)">Conditional</animation>
-			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,820" time="300" condition="[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + Skin.HasSetting(FanartLong)">Conditional</animation>
+			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,391" time="300" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
+			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,820" time="300" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="zoom" start="153,88,976,545" end="0,20,1280,645" time="300" condition="Control.IsVisible(10) + !Window.IsVisible(7)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(custom_SkinSettings.xml) + Skin.String(SkinSettings,8)">Conditional</animation>
 		</control>
@@ -1860,13 +1840,11 @@
 			<animation effect="slide" end="-200,0" time="0" condition="Control.IsVisible(51)">Conditional</animation>
 			<animation effect="slide" end="130,-50" time="0" condition="[Window.IsVisible(MusicFiles) | Window.IsVisible(Musiclibrary) | Window.IsVisible(MusicPlaylist)] + Control.IsVisible(59)">Conditional</animation>
 			<animation effect="slide" end="230,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(59)">Conditional</animation>
-			<animation effect="slide" end="-270,-80" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(55)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(56)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(VideoFiles) + Control.IsVisible(56)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(50)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(VideoFiles) + Control.IsVisible(50)">Conditional</animation>
 			<animation effect="slide" end="130,-50" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(58)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(Musiclibrary) + Control.IsVisible(55)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(Musiclibrary) + Control.IsVisible(56)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(MusicFiles) + Control.IsVisible(56)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(Musiclibrary) + Control.IsVisible(50)">Conditional</animation>
+			<animation effect="slide" end="-270,0" time="0" condition="Window.IsVisible(MusicFiles) + Control.IsVisible(50)">Conditional</animation>
 			<animation effect="slide" end="-1105,160" time="0" condition="Window.IsVisible(MusicFiles) + Control.IsVisible(500)">Conditional</animation>
 			<animation effect="slide" end="-1105,160" time="0" condition="Window.IsVisible(Musiclibrary) + Control.IsVisible(500)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(VideoFiles) + Control.IsVisible(500)">Conditional</animation>
@@ -1875,7 +1853,6 @@
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(VideoFiles) + Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" end="-1160,60" time="0" condition="Control.IsVisible(597)">Conditional</animation>
-			<animation effect="slide" end="-270,0" time="0" condition="Control.IsVisible(598)">Conditional</animation>
 			<posx>610</posx>
 			<posy>315</posy>
 			<width>330</width>

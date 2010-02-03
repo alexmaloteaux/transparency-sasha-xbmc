@@ -1,13 +1,13 @@
 <includes>
 	<include name="Fanart-Videos">
-		<control type="list" id="56">
+		<control type="list" id="50">
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>355</width>
 			<onleft>7005</onleft>
 			<onright>60</onright>
-			<onup>56</onup>
-			<ondown>56</ondown>
+			<onup>50</onup>
+			<ondown>50</ondown>
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -60,7 +60,7 @@
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(56)</visible>
+					<visible>Control.HasFocus(50)</visible>
 					<include>VisibleFadeEffect</include>
 					<include>ListFocusScroll</include>
 				</control>
@@ -90,7 +90,7 @@
 	</include>
 	<include name="Fanart-Videos_Root_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(56) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
 			<control type="image">
@@ -117,7 +117,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>10</posx>
@@ -131,7 +131,7 @@
 	</include>
 	<include name="Fanart-Videos_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(56) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
@@ -267,7 +267,7 @@
 				<texturefocus>trailer-small-focus.png</texturefocus>
 				<texturenofocus>trailer-small-nofocus.png</texturenofocus>
 				<onleft>9000</onleft>
-				<onright>56</onright>
+				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
 				<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
@@ -284,7 +284,7 @@
 				<texturefocus>trailer-small-focus.png</texturefocus>
 				<texturenofocus>trailer-small-nofocus.png</texturenofocus>
 				<onleft>9000</onleft>
-				<onright>56</onright>
+				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
 				<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
@@ -292,7 +292,7 @@
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(56) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(28)] + !Window.IsVisible(VideoFiles)</visible>
+				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(28)] + !Window.IsVisible(VideoFiles)</visible>
 				<control type="grouplist">
 					<posx>257</posx>
 					<posy>659</posy>
@@ -316,10 +316,10 @@
 			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<visible>Control.IsVisible(56) + Player.HasVideo + !Skin.HasSetting(Fullscreen_Trailer) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+			<visible>Control.IsVisible(50) + Player.HasVideo + !Skin.HasSetting(Fullscreen_Trailer) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
@@ -374,7 +374,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay16</include>
 			<control type="image">
@@ -445,7 +445,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>25</posx>
@@ -468,7 +468,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + Container.Content(Seasons)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(Seasons)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay16</include>
 			<control type="image">
@@ -527,7 +527,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + Container.Content(Seasons)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(Seasons)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>38</posx>
@@ -558,7 +558,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay18</include>
@@ -723,7 +723,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(56) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>38</posx>
@@ -748,7 +748,7 @@
 		</control>
 	</include>
 	<include name="Fanart-Music">
-		<control type="list" id="55">
+		<control type="list" id="50">
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>355</width>
@@ -757,8 +757,8 @@
 			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
 			<onleft>9000</onleft>
 			<onright>60</onright>
-			<onup>55</onup>
-			<ondown>55</ondown>
+			<onup>50</onup>
+			<ondown>50</ondown>
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -799,7 +799,7 @@
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(55)</visible>
+					<visible>Control.HasFocus(50)</visible>
 					<include>VisibleFadeEffect</include>
 					<include>ListFocusScroll</include>
 				</control>
@@ -820,7 +820,7 @@
 	</include>
 	<include name="Fanart-Music_Root_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(55) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
 			<control type="image">
@@ -847,7 +847,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>10</posx>
@@ -861,7 +861,7 @@
 	</include>
 	<include name="Fanart-Artists_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay110</include>
 			<control type="image">
@@ -899,11 +899,11 @@
 				<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
+				<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55) + Container.Content(Artists)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>8</posx>
@@ -938,7 +938,7 @@
 	</include>
 	<include name="Fanart-AlbumsSongs_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(55) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(500)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(500)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay111</include>
 			<control type="image">
@@ -1081,7 +1081,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55) + Container.Content(MusicVideos)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(MusicVideos)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay116</include>
 			<control type="image">
@@ -1169,7 +1169,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>34</posx>
@@ -1232,7 +1232,7 @@
 		</control>
 	</include>
 	<include name="Fanart-ProgramsPicturesScripts">
-		<control type="list" id="598">
+		<control type="list" id="50">
 			<visible>Window.IsVisible(Programs) | Window.IsVisible(Pictures) | Window.IsVisible(Scripts)</visible>
 			<posx>200</posx>
 			<posy>142</posy>
@@ -1242,8 +1242,8 @@
 			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
 			<onleft>7009</onleft>
 			<onright>60</onright>
-			<onup>598</onup>
-			<ondown>598</ondown>
+			<onup>50</onup>
+			<ondown>50</ondown>
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -1292,7 +1292,7 @@
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(598)</visible>
+					<visible>Control.HasFocus(50)</visible>
 					<include>VisibleFadeEffect</include>
 					<include>ListFocusScroll</include>
 				</control>
@@ -1321,7 +1321,7 @@
 	</include>
 	<include name="Fanart-Programs-Extras">
 		<control type="group">
-			<visible>Control.IsVisible(598)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
@@ -1354,7 +1354,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(598)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>16</posx>
@@ -1410,7 +1410,7 @@
 	</include>
 	<include name="Fanart-Pictures-Extras">
 		<control type="group">
-			<visible>Control.IsVisible(598)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
@@ -1488,11 +1488,11 @@
 				<onup>7009</onup>
 				<ondown>7009</ondown>
 				<onleft>9000</onleft>
-				<onright>598</onright>
+				<onright>50</onright>
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(598)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1563,7 +1563,7 @@
 	</include>
 	<include name="Fanart-Scripts-Extras">
 		<control type="group">
-			<visible>Control.IsVisible(598)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
@@ -1596,7 +1596,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(598)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="largeimage">
 				<posx>16</posx>

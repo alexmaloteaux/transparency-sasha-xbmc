@@ -80,10 +80,12 @@
 			<width>976</width>
 			<height>545</height>
 			<texture border="30">panel.png</texture>
+			<bordertexture border="45">panel-shadow.png</bordertexture>
 			<bordersize>22</bordersize>
-			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,391" time="300" condition="[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + Skin.HasSetting(FanartShort)">Conditional</animation>
-			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,820" time="300" condition="[Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(598)] + Skin.HasSetting(FanartLong)">Conditional</animation>
+			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,391" time="300" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
+			<animation effect="zoom" start="153,88,976,545" end ="153,88,976,820" time="300" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="zoom" start="153,88,976,545" end="0,20,1280,645" time="300" condition="Control.IsVisible(10) + !Window.IsVisible(7)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(custom_SkinSettings.xml) + Skin.String(SkinSettings,8)">Conditional</animation>
 			<include>T-Level</include>
 		</control>
 	</include>

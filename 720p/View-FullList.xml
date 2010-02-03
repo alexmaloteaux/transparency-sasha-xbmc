@@ -1,14 +1,14 @@
 <includes>
 	<include name="FullList">
-		<control type="list" id="50">
+		<control type="list" id="52">
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>880</width>
 			<height>436</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
-			<onup>50</onup>
-			<ondown>50</ondown>
+			<onup>52</onup>
+			<ondown>52</ondown>
 			<viewtype label="31031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -68,7 +68,7 @@
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(50)</visible>
+					<visible>Control.HasFocus(52)</visible>
 					<include>VisibleFadeEffect</include>
 					<include>ListFocusScroll</include>
 				</control>
@@ -107,15 +107,15 @@
 		</control>
 	</include>
 	<include name="FullList-Videos">
-		<control type="list" id="50">
+		<control type="list" id="52">
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>880</width>
 			<height>436</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
-			<onup>50</onup>
-			<ondown>50</ondown>
+			<onup>52</onup>
+			<ondown>52</ondown>
 			<viewtype label="31031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -186,7 +186,7 @@
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(50)</visible>
+					<visible>Control.HasFocus(52)</visible>
 					<include>VisibleFadeEffect</include>
 					<include>ListFocusScroll</include>
 				</control>
@@ -237,7 +237,7 @@
 	</include>
 	<include name="FullList_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
+			<visible>Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
 			<control type="image">
 				<posx>330</posx>
@@ -301,15 +301,15 @@
 		</control>
 	</include>
 	<include name="FullList-Music">
-		<control type="list" id="50">
+		<control type="list" id="52">
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>880</width>
 			<height>436</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
-			<onup>50</onup>
-			<ondown>50</ondown>
+			<onup>52</onup>
+			<ondown>52</ondown>
 			<viewtype label="31031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -406,7 +406,7 @@
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(50)</visible>
+					<visible>Control.HasFocus(52)</visible>
 					<include>VisibleFadeEffect</include>
 					<include>ListFocusScroll</include>
 				</control>

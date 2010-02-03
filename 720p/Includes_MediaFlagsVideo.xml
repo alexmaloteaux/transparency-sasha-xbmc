@@ -240,114 +240,114 @@
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/ABC_hd.png</texture>
-			<visible>substring(ListItem.Studio,ABC) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,ABC) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC_hd.png</texture>
-			<visible>substring(ListItem.Studio,BBC) + !substring(ListItem.Studio,BBC One) + !substring(ListItem.Studio,BBC Two) + substring(ListItem.Studio,BBC Three) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,BBC) + !substring(ListItem.Studio,BBC One) + !substring(ListItem.Studio,BBC Two) + substring(ListItem.Studio,BBC Three) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC One_hd.png</texture>
-			<visible>substring(ListItem.Studio,BBC One) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,BBC One) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC Two_hd.png</texture>
-			<visible>substring(ListItem.Studio,BBC Two) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,BBC Two) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC Three_hd.png</texture>
-			<visible>substring(ListItem.Studio,BBC Three) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,BBC Three) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Cartoon Network_hd.png</texture>
-			<visible>substring(ListItem.Studio,Cartoon Network) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,Cartoon Network) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/CBS_hd.png</texture>
-			<visible>substring(ListItem.Studio,CBS) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,CBS) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Comedy Central_hd.png</texture>
-			<visible>substring(ListItem.Studio,Comedy Central) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,Comedy Central) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/FOX_hd.png</texture>
-			<visible>substring(ListItem.Studio,FOX) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,FOX) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/FX_hd.png</texture>
-			<visible>substring(ListItem.Studio,FX) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,FX) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/HBO_hd.png</texture>
-			<visible>substring(ListItem.Studio,HBO) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,HBO) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/History_hd.png</texture>
-			<visible>substring(ListItem.Studio,History) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,History) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/MTV_hd.png</texture>
-			<visible>substring(ListItem.Studio,MTV) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,MTV) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/NBC_hd.png</texture>
-			<visible>substring(ListItem.Studio,NBC) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,NBC) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/SciFi_hd.png</texture>
-			<visible>substring(ListItem.Studio,SciFi) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,SciFi) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Showtime_hd.png</texture>
-			<visible>substring(ListItem.Studio,Showtime) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,Showtime) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Sky One_hd.png</texture>
-			<visible>substring(ListItem.Studio,Sky One) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,Sky One) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Starz_hd.png</texture>
-			<visible>substring(ListItem.Studio,Starz) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,Starz) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/The CW_hd.png</texture>
-			<visible>substring(ListItem.Studio,The CW) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,The CW) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/USA Network_hd.png</texture>
-			<visible>substring(ListItem.Studio,USA Network) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>substring(ListItem.Studio,USA Network) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 	<!-- Studio -->
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture fallback="special://skin/images/flags/movies/studio/default-studio.png">special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>!stringcompare(ListItem.Label,..) + !Control.IsVisible(5082) + ![Control.IsVisible(56) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>!stringcompare(ListItem.Label,..) + !Control.IsVisible(5082) + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
 	<!-- Studio MusicVideos-->
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture fallback="special://skin/images/flags/movies/studio/default-studio.png">special://skin/images/flags/music/recordlabel/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..) + !Control.IsVisible(5082) + !Control.IsVisible(56)</visible>
+			<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..) + !Control.IsVisible(5082) + !Control.IsVisible(50)</visible>
 		</control>
 	</include>
 	<include name="MovieStudioFlag">
