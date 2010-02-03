@@ -41,7 +41,7 @@
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
@@ -107,7 +107,7 @@
 						<effect type="slide" start="18,-1" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false" />
 					</animation>
-					<visible>Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
