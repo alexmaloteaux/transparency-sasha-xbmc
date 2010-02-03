@@ -3,7 +3,7 @@
 		<control type="group">
 		<posx>130</posx>
 		<posy>-1</posy>
-		<animation effect="rotatey" center="1280" start="-15" end="-15" time="0" condition="true">Conditional</animation>
+		<animation effect="rotatey" center="1280" start="0" end="-15" time="5000" condition="true">Conditional</animation>
 		<visible>Control.IsVisible(592)</visible>
 			<control type="group" id="7013">
 				<animation reversible="false" effect="slide" start="0,0" end="-164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
