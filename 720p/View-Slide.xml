@@ -861,7 +861,7 @@
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Overlay]</texture>
-				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="label">
 				<posx>140</posx>
@@ -918,7 +918,7 @@
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>Control.IsVisible(596) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -949,7 +949,6 @@
 					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay5.png</texture>
 				</control>
 				<control type="group">
-					<visible>!Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
 					<control type="label">
 						<posx>257</posx>
 						<posy>145</posy>
