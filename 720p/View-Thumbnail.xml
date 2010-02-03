@@ -298,7 +298,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
+					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout condition="Container.Content(MusicVideos)" height="156" width="176">
@@ -354,7 +354,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
+					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="14,5" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="123" center="auto" time="200" reversible="false" />
@@ -369,7 +369,7 @@
 	</include>
 	<include name="Thumbnail-Videos">
 		<control type="panel" id="53">
-			<visible>![Container.Content(TVShows) + !Window.IsVisible(VideoFiles)]</visible>
+			<visible>![Container.Content(TVShows) + Window.IsVisible(VideoLibrary)]</visible>
 			<posx>200</posx>
 			<posy>135</posy>
 			<width>880</width>
@@ -418,7 +418,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
+					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)" height="235" width="176">
@@ -473,7 +473,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
+					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
 			<itemlayout condition="Container.Content(Episodes) | Container.Content(MusicVideos)" height="156" width="176">
@@ -630,7 +630,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="235" width="176">
@@ -722,7 +722,7 @@
 						<effect type="slide" start="8,3" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false" />
 					</animation>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
 		</control>
