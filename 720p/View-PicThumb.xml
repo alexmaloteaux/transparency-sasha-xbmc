@@ -75,7 +75,6 @@
 					<height>151</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="picture-diffuse.png" background="true">black.png</texture>
-					<bordertexture border="13">picture-shadow.png</bordertexture>
 					<bordersize>12</bordersize>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
@@ -88,7 +87,7 @@
 					<texture diffuse="picture-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="13">picture-shadow.png</bordertexture>
 					<bordersize>12</bordersize>
-					<colordiffuse>88FFFFFF</colordiffuse>
+					<colordiffuse>44FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>177</posx>
