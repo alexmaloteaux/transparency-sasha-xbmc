@@ -325,9 +325,9 @@
 								<label>20%</label>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<onclick>Skin.ToggleSetting(Trans_20)</onclick>
+								<onclick>Skin.SetBool(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
-								<onclick>Skin.Reset(Trans_60)</onclick>
+								<onclick>Skin.SetBool(Trans_60)</onclick>
 								<onclick>Skin.Reset(Trans_80)</onclick>
 								<onclick>Skin.Reset(Trans_100)</onclick>
 								<selected>Skin.HasSetting(Trans_20)</selected>
@@ -340,9 +340,9 @@
 								<label>40%</label>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<onclick>Skin.ToggleSetting(Trans_40)</onclick>
+								<onclick>Skin.SetBool(Trans_40)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
-								<onclick>Skin.Reset(Trans_60)</onclick>
+								<onclick>Skin.SetBool(Trans_60)</onclick>
 								<onclick>Skin.Reset(Trans_80)</onclick>
 								<onclick>Skin.Reset(Trans_100)</onclick>
 								<selected>Skin.HasSetting(Trans_40)</selected>
@@ -355,12 +355,12 @@
 								<label>60%</label>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<onclick>Skin.ToggleSetting(Trans_60)</onclick>
+								<onclick>Skin.Reset(Trans_60)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
 								<onclick>Skin.Reset(Trans_80)</onclick>
 								<onclick>Skin.Reset(Trans_100)</onclick>
-								<selected>Skin.HasSetting(Trans_60)</selected>
+								<selected>!Skin.HasSetting(Trans_60)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
 							<control type="radiobutton" id="134">
@@ -370,10 +370,10 @@
 								<label>80%</label>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<onclick>Skin.ToggleSetting(Trans_80)</onclick>
+								<onclick>Skin.SetBool(Trans_80)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
-								<onclick>Skin.Reset(Trans_60)</onclick>
+								<onclick>Skin.SetBool(Trans_60)</onclick>
 								<onclick>Skin.Reset(Trans_100)</onclick>
 								<selected>Skin.HasSetting(Trans_80)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
@@ -385,10 +385,10 @@
 								<label>100%</label>
 								<textoffsetx>70</textoffsetx>
 								<texturefocus border="7">list-nofocus.png</texturefocus>
-								<onclick>Skin.ToggleSetting(Trans_100)</onclick>
+								<onclick>Skin.SetBool(Trans_100)</onclick>
 								<onclick>Skin.Reset(Trans_20)</onclick>
 								<onclick>Skin.Reset(Trans_40)</onclick>
-								<onclick>Skin.Reset(Trans_60)</onclick>
+								<onclick>Skin.SetBool(Trans_60)</onclick>
 								<onclick>Skin.Reset(Trans_80)</onclick>
 								<selected>Skin.HasSetting(Trans_100)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
