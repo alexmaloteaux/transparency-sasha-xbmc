@@ -127,10 +127,11 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 			<control type="group">
 				<posx>0</posx>
 				<posy>520</posy>
-				<include>VisibleFadeEffect</include>
 				<visible>Player.ShowInfo | Window.IsVisible(120)</visible>
 				<include condition="Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]">cdart-disabled-musicvisualisation</include>
 				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
+				<animation effect="slide" start="-320,0" end="0,0" time="300">Visible</animation>
+				<animation effect="slide" start="0,0" end="-320,0" time="300">Hidden</animation>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1700">WindowClose</animation>
 				<control type="image">
@@ -140,6 +141,8 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<width>200</width>
 					<height>200</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
+				<animation effect="fade" start="100" end="0" time="8000">Hidden</animation>
+				<visible>Player.HasAudio</visible>
 				</control>
 				<control type="image">
 					<posx>10</posx>
@@ -152,7 +155,8 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 			<control type="group" id="1">
 				<posx>0</posx>
 				<posy>520</posy>
-				<include>VisibleFadeEffect</include>
+				<animation effect="slide" start="0,180" end="0,0" time="300">Visible</animation>
+				<animation effect="slide" start="0,0" end="0,180" time="300">Hidden</animation>
 				<animation effect="slide" start="0,180" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,180" time="300" delay="1700">WindowClose</animation>
 				<visible>Player.ShowInfo | Window.IsVisible(120)</visible>
