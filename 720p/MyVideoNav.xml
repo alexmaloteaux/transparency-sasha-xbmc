@@ -51,7 +51,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)] + ![Control.IsVisible(592) + !Window.IsVisible(2003)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -85,7 +85,7 @@
 			<include>ContentFade</include>
 			<include condition="!Skin.HasSetting(Hide-Videos-CoverFlow)">CoverFlow-Movies</include>			<!-- view id = 55 -->
 			<include condition="!Skin.HasSetting(Hide-Videos-Slide)">Slide</include>				<!-- view id = 596 -->
-			<include condition="!Skin.HasSetting(Hide-Videos-Wall)">Wall</include>					<!-- view id = 592 -->
+			<include condition="!Skin.HasSetting(Hide-Videos-Wall)">Wall-Movies</include>				<!-- view id = 592 -->
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
