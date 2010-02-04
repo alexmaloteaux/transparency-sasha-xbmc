@@ -4383,6 +4383,76 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites)</visible>
+					<posx>460</posx>
+					<posy>463</posy>
+					<width>350</width>
+					<height>198</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>61</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Favourites Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(FavouritesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Favourites Sub Custom1</description>
+						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(FavouritesCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Favourites_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Favourites Sub Custom2</description>
+						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(FavouritesCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Favourites_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Favourites Sub Custom3</description>
+						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(FavouritesCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Favourites_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Favourites Sub Custom4</description>
+						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(FavouritesCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites_Sub_Custom4)</selected>
+						<enable>Skin.HasSetting(Menu_Favourites_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Favourites Sub Custom5</description>
+						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(FavouritesCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Favourites_Sub_Custom5)</selected>
+						<enable>Skin.HasSetting(Menu_Favourites_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings)</visible>
 					<posx>460</posx>
 					<posy>496</posy>
@@ -5209,6 +5279,101 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom1) + Skin.String(FavouritesCustom,1)</visible>
+					<posy>491</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Favourites Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Favourites_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Favourites Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom2) + Skin.String(FavouritesCustom,2)</visible>
+					<posy>519</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Favourites Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Favourites_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Favourites Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom3) + Skin.String(FavouritesCustom,3)</visible>
+					<posy>547</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Favourites Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Favourites_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Favourites Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom4) + Skin.String(FavouritesCustom,4)</visible>
+					<posy>575</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Favourites Sub Custom4 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Favourites_Sub_Custom4_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Favourites Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom5) + Skin.String(FavouritesCustom,5)</visible>
+					<posy>603</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Favourites Sub Custom5 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Favourites_Sub_Custom5_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Favourites Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom1) + Skin.String(PlayDiscCustom,1)</visible>
 					<posy>613</posy>
 					<include>SettingsMenuList3</include>
@@ -5252,7 +5417,7 @@
 					<width>25</width>
 					<height>19</height>
 					<texture>nav-right.png</texture>
-					<animation effect="fade" start="100" end="0" time="0" condition="![Skin.String(SkinSettings,8) + [[Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos)] | [Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies)] | [Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows)] | [Skin.String(SettingsMenu,4) + Skin.HasSetting(Menu_MusicVideos)] | [Skin.String(SettingsMenu,6) + !Skin.HasSetting(Menu_Music)] | [Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures)] | [Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs)] | [Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Scripts)] | [Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather)] | [Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings)] | [Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc)]]]">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="![Skin.String(SkinSettings,8) + [[Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos)] | [Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies)] | [Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows)] | [Skin.String(SettingsMenu,4) + Skin.HasSetting(Menu_MusicVideos)] | [Skin.String(SettingsMenu,6) + !Skin.HasSetting(Menu_Music)] | [Skin.String(SettingsMenu,7) + !Skin.HasSetting(Menu_Pictures)] | [Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs)] | [Skin.String(SettingsMenu,9) + !Skin.HasSetting(Menu_Scripts)] | [Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather)] | [Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites)] | [Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings)] | [Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc)]]]">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,33" time="100" tween="linear" condition="Skin.String(SettingsMenu,2)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,66" time="100" tween="linear" condition="Skin.String(SettingsMenu,3)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,99" time="100" tween="linear" condition="Skin.String(SettingsMenu,4)">Conditional</animation>
@@ -5342,6 +5507,18 @@
 					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(WeatherCustom,3)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(WeatherCustom,4)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(WeatherCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>810</posx>
+					<posy>496</posy>
+					<width>25</width>
+					<height>19</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + [[Skin.HasSetting(Menu_Favourites_Sub_Custom1) + Skin.String(FavouritesCustom,1)] | [Skin.HasSetting(Menu_Favourites_Sub_Custom2) + Skin.String(FavouritesCustom,2)] | [Skin.HasSetting(Menu_Favourites_Sub_Custom3) + Skin.String(FavouritesCustom,3)] | [Skin.HasSetting(Menu_Favourites_Sub_Custom4) + Skin.String(FavouritesCustom,4)] | [Skin.HasSetting(Menu_Favourites_Sub_Custom5) + Skin.String(FavouritesCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(FavouritesCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(FavouritesCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(FavouritesCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(FavouritesCustom,5)">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>810</posx>
@@ -5500,6 +5677,10 @@
 
 		[COLOR=darkblue]Recently Added Script:[/COLOR]
 		Nuka1195
+
+
+		[COLOR=darkblue]Favourites Script:[/COLOR]
+		CF2009
 
 
 		[COLOR=darkblue]OSD Subtitle Script skin code:[/COLOR]

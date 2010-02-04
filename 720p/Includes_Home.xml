@@ -2825,6 +2825,43 @@
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
+				<visible>Skin.HasSetting(Menu_Favourites_Sub) + Container(5040).HasFocus(11)</visible>
+				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
+				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+				<content>
+					<item id="8102">
+						<description>Menu Favourites Sub Custom1</description>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom1)</visible>
+					</item>
+					<item id="8103">
+						<description>Menu Favourites Sub Custom2</description>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom2)</visible>
+					</item>
+					<item id="8104">
+						<description>Menu Favourites Sub Custom3</description>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom3)</visible>
+					</item>
+					<item id="8105">
+						<description>Menu Favourites Sub Custom4</description>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom4)</visible>
+					</item>
+					<item id="8106">
+						<description>Menu Favourites Sub Custom5</description>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom5)</visible>
+					</item>
+				</content>
+			</control>
+			<control type="fixedlist" id="8001">
 				<visible>!Skin.HasSetting(Menu_Settings_Sub) + Container(5040).HasFocus(12)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
