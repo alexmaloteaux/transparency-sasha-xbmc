@@ -2836,12 +2836,66 @@
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_SkinSettings)</visible>
 					</item>
 					<item id="8103">
+						<description>Menu Settings Sub Videos</description>
+						<label>$LOCALIZE[3]</label>
+						<onclick>ActivateWindow(VideoSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Videos)</visible>
+					</item>
+					<item id="8104">
+						<description>Menu Settings Sub TV</description>
+						<label>$LOCALIZE[31500]</label>
+						<onclick>ActivateWindow(TVSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_TV)</visible>
+					</item>
+					<item id="8105">
+						<description>Menu Settings Sub Music</description>
+						<label>$LOCALIZE[2]</label>
+						<onclick>ActivateWindow(MusicSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Music)</visible>
+					</item>
+					<item id="8106">
+						<description>Menu Settings Sub Pictures</description>
+						<label>$LOCALIZE[1]</label>
+						<onclick>ActivateWindow(PicturesSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Pictures)</visible>
+					</item>
+					<item id="8107">
+						<description>Menu Settings Sub Weather</description>
+						<label>$LOCALIZE[8]</label>
+						<onclick>ActivateWindow(WeatherSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Weather)</visible>
+					</item>
+					<item id="8108">
+						<description>Menu Settings Sub System</description>
+						<label>$LOCALIZE[13000]</label>
+						<onclick>ActivateWindow(SystemSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_System)</visible>
+					</item>
+					<item id="8109">
+						<description>Menu Settings Sub Network</description>
+						<label>$LOCALIZE[705]</label>
+						<onclick>ActivateWindow(NetworkSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Network)</visible>
+					</item>
+					<item id="8110">
+						<description>Menu Settings Sub Profiles</description>
+						<label>$LOCALIZE[13200]</label>
+						<onclick>ActivateWindow(Profiles)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Profiles)</visible>
+					</item>
+					<item id="8111">
+						<description>Menu Settings Sub Appearance</description>
+						<label>$LOCALIZE[480]</label>
+						<onclick>ActivateWindow(AppearanceSettings)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Appearance)</visible>
+					</item>
+					<item id="8112">
 						<description>Menu Settings Sub System Info</description>
 						<label>$LOCALIZE[130]</label>
 						<onclick>ActivateWindow(SystemInfo)</onclick>
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_SystemInfo)</visible>
 					</item>
-					<item id="8104">
+					<item id="8113">
 						<description>Menu Settings Sub File Manager</description>
 						<label>$LOCALIZE[10003]</label>
 						<onclick>ActivateWindow(FileManager)</onclick>
