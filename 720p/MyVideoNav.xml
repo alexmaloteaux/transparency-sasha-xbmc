@@ -12,7 +12,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(Fanart.Image) + !Control.IsVisible(592)</visible>
+			<visible>!IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + !Window.IsVisible(2003)]</visible>
 		</control>
 		<control type="largeimage">
 			<posx>0</posx>
@@ -23,7 +23,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(592)</visible>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Control.IsVisible(592) + !Window.IsVisible(2003)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>

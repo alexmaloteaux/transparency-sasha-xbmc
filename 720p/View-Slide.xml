@@ -11,7 +11,7 @@
 				<posy>129</posy>
 				<width>72</width>
 				<height>101</height>
-				<texture>$INFO[Container(596).ListItem(-8).Icon]</texture>
+				<texture>$INFO[ListItem(-8).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="-159,129,72,101" end="-243,130,71,100" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -29,7 +29,7 @@
 				<posy>128</posy>
 				<width>73</width>
 				<height>102</height>
-				<texture>$INFO[Container(596).ListItem(-7).Icon]</texture>
+				<texture>$INFO[ListItem(-7).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="-48,128,73,102" end="-159,129,72,101" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -47,7 +47,7 @@
 				<posy>126</posy>
 				<width>74</width>
 				<height>104</height>
-				<texture>$INFO[Container(596).ListItem(-6).Icon]</texture>
+				<texture>$INFO[ListItem(-6).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="37,126,74,104" end="-48,128,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -65,7 +65,7 @@
 				<posy>122</posy>
 				<width>77</width>
 				<height>108</height>
-				<texture>$INFO[Container(596).ListItem(-5).Icon]</texture>
+				<texture>$INFO[ListItem(-5).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="124,122,77,108" end="37,126,74,104" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -83,7 +83,7 @@
 				<posy>114</posy>
 				<width>83</width>
 				<height>116</height>
-				<texture>$INFO[Container(596).ListItem(-4).Icon]</texture>
+				<texture>$INFO[ListItem(-4).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="214,114,83,116" end="124,122,77,108" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -101,7 +101,7 @@
 				<posy>97</posy>
 				<width>94</width>
 				<height>132</height>
-				<texture>$INFO[Container(596).ListItem(-3).Icon]</texture>
+				<texture>$INFO[ListItem(-3).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="312,97,94,132" end="214,114,83,116" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -119,7 +119,7 @@
 				<posy>65</posy>
 				<width>117</width>
 				<height>164</height>
-				<texture>$INFO[Container(596).ListItem(-2).Icon]</texture>
+				<texture>$INFO[ListItem(-2).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="425,65,117,164" end="312,97,94,132" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -137,7 +137,7 @@
 				<posy>0</posy>
 				<width>164</width>
 				<height>228</height>
-				<texture>$INFO[Container(596).ListItem(-1).Icon]</texture>
+				<texture>$INFO[ListItem(-1).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="567,0,164,228" end="425,65,117,164" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -155,7 +155,7 @@
 				<posy>65</posy>
 				<width>117</width>
 				<height>164</height>
-				<texture>$INFO[Container(596).ListItem(0).Icon]</texture>
+				<texture>$INFO[ListItem(0).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="751,65,117,164" end="567,0,164,228" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -173,7 +173,7 @@
 				<posy>97</posy>
 				<width>94</width>
 				<height>132</height>
-				<texture>$INFO[Container(596).ListItem(1).Icon]</texture>
+				<texture>$INFO[ListItem(1).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="884,97,94,132" end="751,65,117,164" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -191,7 +191,7 @@
 				<posy>114</posy>
 				<width>83</width>
 				<height>116</height>
-				<texture>$INFO[Container(596).ListItem(2).Icon]</texture>
+				<texture>$INFO[ListItem(2).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="993,114,83,116" end="884,97,94,132" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -209,7 +209,7 @@
 				<posy>122</posy>
 				<width>77</width>
 				<height>108</height>
-				<texture>$INFO[Container(596).ListItem(3).Icon]</texture>
+				<texture>$INFO[ListItem(3).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1089,122,77,108" end="993,114,83,116" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -227,7 +227,7 @@
 				<posy>126</posy>
 				<width>74</width>
 				<height>104</height>
-				<texture>$INFO[Container(596).ListItem(4).Icon]</texture>
+				<texture>$INFO[ListItem(4).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1177,126,74,104" end="1089,122,77,108" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -245,7 +245,7 @@
 				<posy>128</posy>
 				<width>73</width>
 				<height>102</height>
-				<texture>$INFO[Container(596).ListItem(5).Icon]</texture>
+				<texture>$INFO[ListItem(5).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1263,128,73,102" end="1177,126,74,104" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -263,7 +263,7 @@
 				<posy>129</posy>
 				<width>72</width>
 				<height>101</height>
-				<texture>$INFO[Container(596).ListItem(6).Icon]</texture>
+				<texture>$INFO[ListItem(6).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1348,129,72,101" end="1263,128,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
@@ -288,7 +288,7 @@
 				<posy>129</posy>
 				<width>72</width>
 				<height>101</height>
-				<texture>$INFO[Container(596).ListItem(-6).Icon]</texture>
+				<texture>$INFO[ListItem(-6).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="-169,129,72,101" end="-48,128,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -306,7 +306,7 @@
 				<posy>128</posy>
 				<width>73</width>
 				<height>102</height>
-				<texture>$INFO[Container(596).ListItem(-5).Icon]</texture>
+				<texture>$INFO[ListItem(-5).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="-48,128,73,102" end="37,126,74,104" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -324,7 +324,7 @@
 				<posy>126</posy>
 				<width>74</width>
 				<height>104</height>
-				<texture>$INFO[Container(596).ListItem(-4).Icon]</texture>
+				<texture>$INFO[ListItem(-4).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="37,126,74,104" end="124,122,77,108" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -342,7 +342,7 @@
 				<posy>122</posy>
 				<width>77</width>
 				<height>108</height>
-				<texture>$INFO[Container(596).ListItem(-3).Icon]</texture>
+				<texture>$INFO[ListItem(-3).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="124,122,77,108" end="214,114,83,116" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -360,7 +360,7 @@
 				<posy>114</posy>
 				<width>83</width>
 				<height>116</height>
-				<texture>$INFO[Container(596).ListItem(-2).Icon]</texture>
+				<texture>$INFO[ListItem(-2).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="214,114,83,116" end="312,97,94,132" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -378,7 +378,7 @@
 				<posy>97</posy>
 				<width>94</width>
 				<height>132</height>
-				<texture>$INFO[Container(596).ListItem(-1).Icon]</texture>
+				<texture>$INFO[ListItem(-1).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="312,97,94,132" end="425,65,117,164" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -396,7 +396,7 @@
 				<posy>65</posy>
 				<width>117</width>
 				<height>164</height>
-				<texture>$INFO[Container(596).ListItem(0).Icon]</texture>
+				<texture>$INFO[ListItem(0).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="425,65,117,164" end="567,0,164,228" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -414,7 +414,7 @@
 				<posy>0</posy>
 				<width>164</width>
 				<height>228</height>
-				<texture>$INFO[Container(596).ListItem(1).Icon]</texture>
+				<texture>$INFO[ListItem(1).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="567,0,164,228" end="751,65,117,164" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -432,7 +432,7 @@
 				<posy>65</posy>
 				<width>117</width>
 				<height>164</height>
-				<texture>$INFO[Container(596).ListItem(2).Icon]</texture>
+				<texture>$INFO[ListItem(2).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="751,65,117,164" end="884,97,94,132" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 
@@ -451,7 +451,7 @@
 				<posy>97</posy>
 				<width>94</width>
 				<height>132</height>
-				<texture>$INFO[Container(596).ListItem(3).Icon]</texture>
+				<texture>$INFO[ListItem(3).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="884,97,94,132" end="993,114,83,116" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -469,7 +469,7 @@
 				<posy>114</posy>
 				<width>83</width>
 				<height>116</height>
-				<texture>$INFO[Container(596).ListItem(4).Icon]</texture>
+				<texture>$INFO[ListItem(4).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="993,114,83,116" end="1089,122,77,108" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -487,7 +487,7 @@
 				<posy>122</posy>
 				<width>77</width>
 				<height>108</height>
-				<texture>$INFO[Container(596).ListItem(5).Icon]</texture>
+				<texture>$INFO[ListItem(5).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1089,122,77,108" end="1177,126,74,104" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -505,7 +505,7 @@
 				<posy>126</posy>
 				<width>74</width>
 				<height>104</height>
-				<texture>$INFO[Container(596).ListItem(6).Icon]</texture>
+				<texture>$INFO[ListItem(6).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1177,126,74,104" end="1263,128,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -523,7 +523,7 @@
 				<posy>128</posy>
 				<width>73</width>
 				<height>102</height>
-				<texture>$INFO[Container(596).ListItem(7).Icon]</texture>
+				<texture>$INFO[ListItem(7).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1263,128,73,102" end="1348,129,72,101" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -541,7 +541,7 @@
 				<posy>129</posy>
 				<width>72</width>
 				<height>101</height>
-				<texture>$INFO[Container(596).ListItem(8).Icon]</texture>
+				<texture>$INFO[ListItem(8).Icon]</texture>
 				<animation reversible="false" effect="zoom" start="1348,129,72,101" end="1432,130,71,100" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
@@ -566,7 +566,7 @@
 					<posy>128</posy>
 					<width>73</width>
 					<height>102</height>
-					<texture>$INFO[Container(596).ListItem(-6).Icon]</texture>
+					<texture>$INFO[ListItem(-6).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>-58</posx>
@@ -584,7 +584,7 @@
 					<posy>126</posy>
 					<width>74</width>
 					<height>104</height>
-					<texture>$INFO[Container(596).ListItem(-5).Icon]</texture>
+					<texture>$INFO[ListItem(-5).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>27</posx>
@@ -602,7 +602,7 @@
 					<posy>122</posy>
 					<width>77</width>
 					<height>108</height>
-					<texture>$INFO[Container(596).ListItem(-4).Icon]</texture>
+					<texture>$INFO[ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>113</posx>
@@ -620,7 +620,7 @@
 					<posy>114</posy>
 					<width>83</width>
 					<height>116</height>
-					<texture>$INFO[Container(596).ListItem(-3).Icon]</texture>
+					<texture>$INFO[ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>202</posx>
@@ -638,7 +638,7 @@
 					<posy>97</posy>
 					<width>94</width>
 					<height>132</height>
-					<texture>$INFO[Container(596).ListItem(-2).Icon]</texture>
+					<texture>$INFO[ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>299</posx>
@@ -656,7 +656,7 @@
 					<posy>65</posy>
 					<width>117</width>
 					<height>164</height>
-					<texture>$INFO[Container(596).ListItem(-1).Icon]</texture>
+					<texture>$INFO[ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>409</posx>
@@ -674,7 +674,7 @@
 					<posy>0</posy>
 					<width>164</width>
 					<height>228</height>
-					<texture>$INFO[Container(596).ListItem(0).Icon]</texture>
+					<texture>$INFO[ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>545</posx>
@@ -701,7 +701,7 @@
 					<posy>65</posy>
 					<width>117</width>
 					<height>164</height>
-					<texture>$INFO[Container(596).ListItem(1).Icon]</texture>
+					<texture>$INFO[ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>735</posx>
@@ -719,7 +719,7 @@
 					<posy>97</posy>
 					<width>94</width>
 					<height>132</height>
-					<texture>$INFO[Container(596).ListItem(2).Icon]</texture>
+					<texture>$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>871</posx>
@@ -737,7 +737,7 @@
 					<posy>114</posy>
 					<width>83</width>
 					<height>116</height>
-					<texture>$INFO[Container(596).ListItem(3).Icon]</texture>
+					<texture>$INFO[ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>981</posx>
@@ -755,7 +755,7 @@
 					<posy>122</posy>
 					<width>77</width>
 					<height>108</height>
-					<texture>$INFO[Container(596).ListItem(4).Icon]</texture>
+					<texture>$INFO[ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>1078</posx>
@@ -773,7 +773,7 @@
 					<posy>126</posy>
 					<width>74</width>
 					<height>104</height>
-					<texture>$INFO[Container(596).ListItem(5).Icon]</texture>
+					<texture>$INFO[ListItem(5).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>1167</posx>
@@ -791,7 +791,7 @@
 					<posy>128</posy>
 					<width>73</width>
 					<height>102</height>
-					<texture>$INFO[Container(596).ListItem(6).Icon]</texture>
+					<texture>$INFO[ListItem(6).Icon]</texture>
 				</control>
 				<control type="image">
 					<posx>1253</posx>
