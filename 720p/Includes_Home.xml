@@ -265,7 +265,7 @@
 		<control type="group">
 			<posx>600r</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(9) + Weather.IsFetched + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + !Player.HasMedia</visible>
 			<include>homestatsinfo</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -365,7 +365,7 @@
 		<control type="group">
 			<posx>680</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(9) + Weather.IsFetched + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + !Player.HasMedia</visible>
 			<include>homestatsinfo</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -1933,18 +1933,18 @@
 					<visible>!Skin.HasSetting(Menu_Programs)</visible>
 				</item>
 				<item id="9">
-					<label>8</label>
-					<onclick>ActivateWindow(Weather)</onclick>
-					<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
-					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background-conditional</include>
-					<visible>!Skin.HasSetting(Menu_Weather)</visible>
-				</item>
-				<item id="10">
 					<label>247</label>
 					<onclick>ActivateWindow(Scripts)</onclick>
 					<icon>special://skin/images/backgrounds/scripts.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Scripts)</visible>
+				</item>
+				<item id="10">
+					<label>8</label>
+					<onclick>ActivateWindow(Weather)</onclick>
+					<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
+					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background-conditional</include>
+					<visible>!Skin.HasSetting(Menu_Weather)</visible>
 				</item>
 				<item id="11">
 					<label>1036</label>
@@ -2242,18 +2242,18 @@
 					<visible>!Skin.HasSetting(Menu_Programs)</visible>
 				</item>
 				<item id="9">
-					<label>8</label>
-					<onclick>ActivateWindow(Weather)</onclick>
-					<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
-					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background-conditional</include>
-					<visible>!Skin.HasSetting(Menu_Weather)</visible>
-				</item>
-				<item id="10">
 					<label>247</label>
 					<onclick>ActivateWindow(Scripts)</onclick>
 					<icon>special://skin/images/backgrounds/scripts.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Scripts)</visible>
+				</item>
+				<item id="10">
+					<label>8</label>
+					<onclick>ActivateWindow(Weather)</onclick>
+					<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
+					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background-conditional</include>
+					<visible>!Skin.HasSetting(Menu_Weather)</visible>
 				</item>
 				<item id="11">
 					<label>1036</label>
@@ -2763,32 +2763,7 @@
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
-				<visible>Skin.HasSetting(Menu_Weather_Sub) + Container(5040).HasFocus(9)</visible>
-				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
-				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
-				<content>
-					<item id="8102">
-						<description>Menu Weather Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom1)</visible>
-					</item>
-					<item id="8103">
-						<description>Menu Weather Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom2)</visible>
-					</item>
-					<item id="8104">
-						<description>Menu Weather Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom3)</visible>
-					</item>
-				</content>
-			</control>
-			<control type="fixedlist" id="8001">
-				<visible>Skin.HasSetting(Menu_Scripts_Sub) + Container(5040).HasFocus(10)</visible>
+				<visible>Skin.HasSetting(Menu_Scripts_Sub) + Container(5040).HasFocus(9)</visible>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 				<content>
@@ -2821,6 +2796,31 @@
 						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Label)]</label>
 						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom5_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom5)</visible>
+					</item>
+				</content>
+			</control>
+			<control type="fixedlist" id="8001">
+				<visible>Skin.HasSetting(Menu_Weather_Sub) + Container(5040).HasFocus(10)</visible>
+				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
+				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+				<content>
+					<item id="8102">
+						<description>Menu Weather Sub Custom1</description>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label)]</label>
+						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom1)</visible>
+					</item>
+					<item id="8103">
+						<description>Menu Weather Sub Custom2</description>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label)]</label>
+						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom2)</visible>
+					</item>
+					<item id="8104">
+						<description>Menu Weather Sub Custom3</description>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label)]</label>
+						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom3)</visible>
 					</item>
 				</content>
 			</control>
