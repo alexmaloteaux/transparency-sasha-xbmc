@@ -1820,8 +1820,8 @@
 	<include name="ScrollOffsetLabel">
 		<control type="group">
 			<visible>Container.Scrolling</visible>
-			<animation effect="fade" time="100">Visible</animation>
-			<animation effect="fade" time="300" delay="250">Hidden</animation>
+			<animation effect="fade" time="300">Visible</animation>
+			<animation effect="fade" time="300" delay="500">Hidden</animation>
 			<animation effect="slide" end="-270,0" time="0" condition="[Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50)">Conditional</animation>
 			<animation effect="slide" end="-200,0" time="0" condition="Control.IsVisible(51)">Conditional</animation>
 			<animation effect="slide" end="-1105,120" time="0" condition="Control.IsVisible(55) | Control.IsVisible(596)">Conditional</animation>
@@ -1834,22 +1834,22 @@
 			<width>330</width>
 			<height>232</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>70</width>
-				<height>70</height>
-				<texture border="6">sort.png</texture>
+				<posx>-3</posx>
+				<posy>-3</posy>
+				<width>76</width>
+				<height>76</height>
+				<texture border="8">sort.png</texture>
 			</control>
 			<control type="label">
-				<posx>-1</posx>
-				<posy>-1</posy>
+				<posx>-3</posx>
+				<posy>-2</posy>
 				<width>70</width>
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.SortLetter]</label>
+				<label>[I][B]$INFO[ListItem.SortLetter][/B][/I]</label>
 				<textcolor>white</textcolor>
-				<font>font-28</font>
+				<font>font-30</font>
 			</control>
 		</control>
 	</include>
