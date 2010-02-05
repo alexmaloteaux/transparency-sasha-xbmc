@@ -5565,6 +5565,29 @@
 						<ondown>73</ondown>
 					</control>
 					<control type="label">
+						<posx>205</posx>
+						<posy>90</posy>
+						<width>200</width>
+						<height>35</height>
+						<label>[B]Score: [COLOR=lightblue]0[/COLOR][/B]</label>
+						<font>font-23</font>
+						<align>left</align>
+						<include>RecentFadeEffect</include>
+						<visible>IsEmpty(Skin.String(player1score)) + ![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))]</visible>
+					</control>
+					<control type="label">
+						<posx>205</posx>
+						<posy>90</posy>
+						<width>200</width>
+						<height>35</height>
+						<label>[B]Score: [COLOR=lightblue]$INFO[Skin.String(player1score)][/COLOR][/B]</label>
+						<font>font-23</font>
+						<align>left</align>
+						<include>RecentFadeEffect</include>
+						<animation effect="fade" start="100" end="30" time="700" loop="true" condition="Skin.String(player1score,5)">Conditional</animation>
+						<visible>!IsEmpty(Skin.String(player1score)) + ![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))]</visible>
+					</control>
+					<control type="label">
 						<posx>830</posx>
 						<posy>20</posy>
 						<width>400</width>
@@ -5588,6 +5611,29 @@
 						<onright>900</onright>
 						<onup>72</onup>
 						<ondown>73</ondown>
+					</control>
+					<control type="label">
+						<posx>985</posx>
+						<posy>90</posy>
+						<width>200</width>
+						<height>35</height>
+						<label>[B]Score: [COLOR=lightblue]0[/COLOR][/B]</label>
+						<font>font-23</font>
+						<align>left</align>
+						<include>RecentFadeEffect</include>
+						<visible>IsEmpty(Skin.String(player2score)) + ![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))]</visible>
+					</control>
+					<control type="label">
+						<posx>985</posx>
+						<posy>90</posy>
+						<width>200</width>
+						<height>35</height>
+						<label>[B]Score: [COLOR=lightblue]$INFO[Skin.String(player2score)][/COLOR][/B]</label>
+						<font>font-23</font>
+						<align>left</align>
+						<include>RecentFadeEffect</include>
+						<animation effect="fade" start="100" end="30" time="700" loop="true" condition="Skin.String(player2score,5)">Conditional</animation>
+						<visible>!IsEmpty(Skin.String(player2score)) + ![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))]</visible>
 					</control>
 					<control type="button" id="73">
 						<posx>440</posx>
@@ -5664,7 +5710,7 @@
 						<visible>![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))] + Skin.HasSetting(switchplayer) + !Control.IsVisible(75)</visible>
 					</control>
 					<control type="button" id="74">
-						<posx>660</posx>
+						<posx>680</posx>
 						<posy>100</posy>
 						<width>160</width>
 						<height>30</height>
@@ -5674,8 +5720,11 @@
 						<texturenofocus border="7">game-nofocus.png</texturenofocus>
 						<texturefocus border="7">game-focus.png</texturefocus>
 						<onclick>Skin.Reset(playerturn)</onclick>
+						<onclick>Skin.Reset(switchplayer)</onclick>
 						<onclick>Skin.Reset(player1name)</onclick>
 						<onclick>Skin.Reset(player2name)</onclick>
+						<onclick>Skin.Reset(player1score)</onclick>
+						<onclick>Skin.Reset(player2score)</onclick>
 						<onclick>Skin.Reset(cross1)</onclick>
 						<onclick>Skin.Reset(cross2)</onclick>
 						<onclick>Skin.Reset(cross3)</onclick>
@@ -5710,6 +5759,19 @@
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 						<onfocus>SetFocus(80)</onfocus>
+						<visible>![Skin.String(player1score,5) | Skin.String(player2score,5)]</visible>
+					</control>
+					<control type="button" id="77">
+						<posx>-10</posx>
+						<posy>-10</posy>
+						<width>1</width>
+						<height>1</height>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<onfocus>Skin.Reset(player1score)</onfocus>
+						<onfocus>Skin.Reset(player2score)</onfocus>
+						<onfocus>SetFocus(80)</onfocus>
+						<visible>Skin.String(player1score,5) | Skin.String(player2score,5)</visible>
 					</control>
 					<control type="label">
 						<posx>400</posx>
@@ -5782,9 +5844,9 @@
 						<textcolor>red</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
-						<animation effect="fade" start="0" end="100" time="500" delay="1000">Visible</animation>
+						<animation effect="fade" start="0" end="100" time="500" delay="600">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-						<visible>Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]</visible>
+						<visible>[Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]] + ControlGroup(80).HasFocus</visible>
 					</control>
 					<control type="group">
 						<posx>384</posx>
@@ -6231,292 +6293,64 @@
 							<posy>154</posy>
 							<visible>Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]</visible>
 							<control type="button" id="1">
-								<posx>20</posx>
-								<posy>20</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player1score,1)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>9</onleft>
-								<onright>2</onright>
-								<onup>9</onup>
-								<ondown>4</ondown>
+								<visible>IsEmpty(Skin.String(player1score)) + Skin.String(playerturn,2)</visible>
 							</control>
-							<control type="button" id="2">
-								<posx>200</posx>
-								<posy>20</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player2score,1)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>1</onleft>
-								<onright>3</onright>
-								<onup>7</onup>
-								<ondown>5</ondown>
+								<visible>IsEmpty(Skin.String(player2score)) + Skin.String(playerturn,1)</visible>
 							</control>
-							<control type="button" id="3">
-								<posx>380</posx>
-								<posy>20</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player1score,2)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>2</onleft>
-								<onright>4</onright>
-								<onup>8</onup>
-								<ondown>6</ondown>
+								<visible>Skin.String(player1score,1) + Skin.String(playerturn,2)</visible>
 							</control>
-							<control type="button" id="4">
-								<posx>20</posx>
-								<posy>185</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player2score,2)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>3</onleft>
-								<onright>5</onright>
-								<onup>1</onup>
-								<ondown>7</ondown>
+								<visible>Skin.String(player2score,1) + Skin.String(playerturn,1)</visible>
 							</control>
-							<control type="button" id="5">
-								<posx>200</posx>
-								<posy>185</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player1score,3)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>4</onleft>
-								<onright>6</onright>
-								<onup>2</onup>
-								<ondown>8</ondown>
+								<visible>Skin.String(player1score,2) + Skin.String(playerturn,2)</visible>
 							</control>
-							<control type="button" id="6">
-								<posx>380</posx>
-								<posy>185</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player2score,3)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>5</onleft>
-								<onright>7</onright>
-								<onup>3</onup>
-								<ondown>9</ondown>
+								<visible>Skin.String(player2score,2) + Skin.String(playerturn,1)</visible>
 							</control>
-							<control type="button" id="7">
-								<posx>20</posx>
-								<posy>360</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player1score,4)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>6</onleft>
-								<onright>8</onright>
-								<onup>4</onup>
-								<ondown>2</ondown>
+								<visible>Skin.String(player1score,3) + Skin.String(playerturn,2)</visible>
 							</control>
-							<control type="button" id="8">
-								<posx>200</posx>
-								<posy>360</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player2score,4)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>7</onleft>
-								<onright>9</onright>
-								<onup>5</onup>
-								<ondown>3</ondown>
+								<visible>Skin.String(player2score,3) + Skin.String(playerturn,1)</visible>
 							</control>
-							<control type="button" id="9">
-								<posx>380</posx>
-								<posy>360</posy>
-								<width>110</width>
-								<height>110</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player1score,5)</onfocus>
 								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
-								<onfocus>Skin.Reset(cross1)</onfocus>
-								<onfocus>Skin.Reset(cross2)</onfocus>
-								<onfocus>Skin.Reset(cross3)</onfocus>
-								<onfocus>Skin.Reset(cross4)</onfocus>
-								<onfocus>Skin.Reset(cross5)</onfocus>
-								<onfocus>Skin.Reset(cross6)</onfocus>
-								<onfocus>Skin.Reset(cross7)</onfocus>
-								<onfocus>Skin.Reset(cross8)</onfocus>
-								<onfocus>Skin.Reset(cross9)</onfocus>
-								<onfocus>Skin.Reset(circle1)</onfocus>
-								<onfocus>Skin.Reset(circle2)</onfocus>
-								<onfocus>Skin.Reset(circle3)</onfocus>
-								<onfocus>Skin.Reset(circle4)</onfocus>
-								<onfocus>Skin.Reset(circle5)</onfocus>
-								<onfocus>Skin.Reset(circle6)</onfocus>
-								<onfocus>Skin.Reset(circle7)</onfocus>
-								<onfocus>Skin.Reset(circle8)</onfocus>
-								<onfocus>Skin.Reset(circle9)</onfocus>
-								<onfocus>SetFocus(74)</onfocus>
-								<onleft>8</onleft>
-								<onright>1</onright>
-								<onup>6</onup>
-								<ondown>1</ondown>
+								<visible>Skin.String(player1score,4) + Skin.String(playerturn,2)</visible>
+							</control>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+								<onfocus>Skin.SetString(player2score,5)</onfocus>
+								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
+								<visible>Skin.String(player2score,4) + Skin.String(playerturn,1)</visible>
 							</control>
 						</control>
 					</control>
@@ -6658,10 +6492,11 @@
 					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>350</posy>
+						<posy>340</posy>
 						<width>1280</width>
+						<height>160</height>
 						<align>center</align>
-						<label>[B]$INFO[Skin.String(player1name)] Won !!![/B]</label>
+						<label>[B]$INFO[Skin.String(player1name)] Wins !!![/B]</label>
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -6671,16 +6506,73 @@
 					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>350</posy>
+						<posy>340</posy>
 						<width>1280</width>
+						<height>160</height>
 						<align>center</align>
-						<label>[B]$INFO[Skin.String(player2name)] Won !!![/B]</label>
+						<label>[B]$INFO[Skin.String(player2name)] Wins ![/B]</label>
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
 						<include>RecentFadeEffect</include>
 						<visible>Control.IsVisible(79)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>303</posy>
+						<width>1280</width>
+						<height>160</height>
+						<align>center</align>
+						<label>[B]GAME OVER:[CR]$INFO[Skin.String(player1name)] HAS WON !!![/B]</label>
+						<font>font-80</font>
+						<textcolor>yellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
+						<visible>Skin.String(player1score,5)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>303</posy>
+						<width>1280</width>
+						<height>160</height>
+						<align>center</align>
+						<label>[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] HAS WON !!![/B]</label>
+						<font>font-80</font>
+						<textcolor>yellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
+						<visible>Skin.String(player2score,5)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>303</posy>
+						<width>1280</width>
+						<height>160</height>
+						<align>center</align>
+						<label>[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] HAS WON![/B]</label>
+						<font>font-80</font>
+						<textcolor>yellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="100" end="60" time="800" loop="true" condition="true">Conditional</animation>
+						<visible>Skin.String(player2score,5)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>303</posy>
+						<width>1280</width>
+						<height>160</height>
+						<align>center</align>
+						<label>[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] HAS WON![/B]</label>
+						<font>font-80</font>
+						<textcolor>red</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="100" end="0" time="800" loop="true" condition="true">Conditional</animation>
+						<visible>Skin.String(player2score,5)</visible>
 					</control>
 				</control>
 				<control type="group">
