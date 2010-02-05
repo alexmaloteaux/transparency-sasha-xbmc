@@ -6291,65 +6291,63 @@
 						<control type="group" id="81">
 							<posx>384</posx>
 							<posy>154</posy>
-							<visible>Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]</visible>
+							<visible>!Control.IsVisible(78) + !Control.IsVisible(79) + [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]</visible>
+							<control type="button" id="1">
+								<include>game-scorebutton</include>
+							</control>
+						</control>
+						<control type="group" id="81">
+							<posx>384</posx>
+							<posy>154</posy>
+							<visible>Control.IsVisible(78) | Control.IsVisible(79)</visible>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player1score,1)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>IsEmpty(Skin.String(player1score)) + Skin.String(playerturn,2)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player2score,1)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>IsEmpty(Skin.String(player2score)) + Skin.String(playerturn,1)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player1score,2)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player1score,1) + Skin.String(playerturn,2)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player2score,2)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player2score,1) + Skin.String(playerturn,1)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player1score,3)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player1score,2) + Skin.String(playerturn,2)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player2score,3)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player2score,2) + Skin.String(playerturn,1)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player1score,4)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player1score,3) + Skin.String(playerturn,2)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player2score,4)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player2score,3) + Skin.String(playerturn,1)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player1score,5)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player1score,4) + Skin.String(playerturn,2)</visible>
 							</control>
 							<control type="button" id="1">
 								<include>game-scorebutton</include>
 								<onfocus>Skin.SetString(player2score,5)</onfocus>
-								<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 								<visible>Skin.String(player2score,4) + Skin.String(playerturn,1)</visible>
 							</control>
 						</control>

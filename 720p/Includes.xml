@@ -1818,6 +1818,7 @@
 		<height>512</height>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>-</texturefocus>
+		<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 		<onfocus>Skin.Reset(cross1)</onfocus>
 		<onfocus>Skin.Reset(cross2)</onfocus>
 		<onfocus>Skin.Reset(cross3)</onfocus>
