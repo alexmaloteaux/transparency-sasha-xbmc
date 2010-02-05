@@ -1811,6 +1811,30 @@
 	<include name="FanartLong">
 		<height>668</height>
 	</include>
+	<include name="game-button">
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
+		<onfocus>Skin.Reset(cross1)</onfocus>
+		<onfocus>Skin.Reset(cross2)</onfocus>
+		<onfocus>Skin.Reset(cross3)</onfocus>
+		<onfocus>Skin.Reset(cross4)</onfocus>
+		<onfocus>Skin.Reset(cross5)</onfocus>
+		<onfocus>Skin.Reset(cross6)</onfocus>
+		<onfocus>Skin.Reset(cross7)</onfocus>
+		<onfocus>Skin.Reset(cross8)</onfocus>
+		<onfocus>Skin.Reset(cross9)</onfocus>
+		<onfocus>Skin.Reset(circle1)</onfocus>
+		<onfocus>Skin.Reset(circle2)</onfocus>
+		<onfocus>Skin.Reset(circle3)</onfocus>
+		<onfocus>Skin.Reset(circle4)</onfocus>
+		<onfocus>Skin.Reset(circle5)</onfocus>
+		<onfocus>Skin.Reset(circle6)</onfocus>
+		<onfocus>Skin.Reset(circle7)</onfocus>
+		<onfocus>Skin.Reset(circle8)</onfocus>
+		<onfocus>Skin.Reset(circle9)</onfocus>
+		<onfocus>SetFocus(74)</onfocus>
+	</include>
 	<include name="game-scorebutton">
 		<posx>0</posx>
 		<posy>0</posy>
