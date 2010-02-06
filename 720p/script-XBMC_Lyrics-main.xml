@@ -3,8 +3,8 @@
 	<defaultcontrol always="false">101</defaultcontrol>
 	<coordinates>
 		<system>0</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<posx>240</posx>
+		<posy>20</posy>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,19 +12,19 @@
 			<include>DialogFade4</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Panel7</include>
 			<control type="image">
-				<posx>270</posx>
-				<posy>18</posy>
-				<width>740</width>
-				<height>504</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>800</width>
+				<height>525</height>
 				<texture border="30">panel.png</texture>
 				<bordertexture border="45">panel-shadow.png</bordertexture>
 				<bordersize>22</bordersize>
 			</control>
 			<control type="label" id="2">
 				<description>heading label</description>
-				<posx>300</posx>
-				<posy>55</posy>
-				<width>680</width>
+				<posx>40</posx>
+				<posy>40</posy>
+				<width>720</width>
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -37,19 +37,19 @@
 				<visible>false</visible>
 			</control>
 			<control type="image">
-				<posx>300</posx>
-				<posy>88</posy>
-				<width>680</width>
+				<posx>40</posx>
+				<posy>78</posy>
+				<width>720</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> -->
 			<control type="textbox" id="100">
 				<description>textarea</description>
-				<posx>320</posx>
-				<posy>110</posy>
-				<width>640</width>
-				<height>350</height>
+				<posx>45</posx>
+				<posy>90</posy>
+				<width>710</width>
+				<height>380</height>
 				<align>center</align>
 				<font>font-20</font>
 				<onup>100</onup>
@@ -60,8 +60,8 @@
 			</control>
 			<control type="spincontrol" id="101">
 				<description>Next page button</description>
-				<posx>885</posx>
-				<posy>468</posy>
+				<posx>690</posx>
+				<posy>475</posy>
 				<subtype>page</subtype>
 				<font>font-20</font>
 				<onleft>101</onleft>
@@ -74,10 +74,10 @@
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> -->
 			<control type="list" id="110">
-				<posx>320</posx>
-				<posy>110</posy>
-				<width>640</width>
-				<height>350</height>
+				<posx>45</posx>
+				<posy>90</posy>
+				<width>710</width>
+				<height>380</height>
 				<onleft>111</onleft>
 				<onright>111</onright>
 				<onup>110</onup>
@@ -88,14 +88,14 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>640</width>
+						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>315</posx>
+						<posx>345</posx>
 						<posy>0</posy>
-						<width>620</width>
+						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
 						<aligny>center</aligny>
@@ -108,23 +108,23 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>640</width>
+						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>640</width>
+						<width>710</width>
 						<height>30</height>
 						<visible>Control.HasFocus(110)</visible>
 						<texture border="7">list-focus2.png</texture>
 						<include>ListFocusScroll15</include>
 					</control>
 					<control type="label">
-						<posx>315</posx>
+						<posx>345</posx>
 						<posy>0</posy>
-						<width>620</width>
+						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
 						<aligny>center</aligny>
@@ -138,8 +138,8 @@
 			</control>
 			<control type="spincontrol" id="111">
 				<description>Next page button</description>
-				<posx>885</posx>
-				<posy>468</posy>
+				<posx>690</posx>
+				<posy>475</posy>
 				<subtype>page</subtype>
 				<font>font-20</font>
 				<onleft>110</onleft>
@@ -153,9 +153,9 @@
 			<!-- ** Required ** Do not change <id> or <type> -->
 			<control type="label" id="2">
 				<description>Pick label</description>
-				<posx>320</posx>
-				<posy>110</posy>
-				<width>640</width>
+				<posx>45</posx>
+				<posy>90</posy>
+				<width>710</width>
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -165,10 +165,10 @@
 				<visible>Control.IsVisible(120)</visible>
 			</control>
 			<control type="list" id="120">
-				<posx>320</posx>
-				<posy>140</posy>
-				<width>640</width>
-				<height>320</height>
+				<posx>45</posx>
+				<posy>120</posy>
+				<width>710</width>
+				<height>350</height>
 				<onleft>121</onleft>
 				<onright>121</onright>
 				<onup>120</onup>
@@ -180,14 +180,14 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>640</width>
+						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<posx>10</posx>
 						<posy>0</posy>
-						<width>620</width>
+						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
 						<align>left</align>
@@ -200,14 +200,14 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>640</width>
+						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>640</width>
+						<width>710</width>
 						<height>30</height>
 						<visible>Control.HasFocus(120)</visible>
 						<texture border="7">list-focus2.png</texture>
@@ -216,7 +216,7 @@
 					<control type="label">
 						<posx>10</posx>
 						<posy>0</posy>
-						<width>620</width>
+						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
 						<align>left</align>
@@ -228,8 +228,8 @@
 			</control>
 			<control type="spincontrol" id="121">
 				<description>Next page button</description>
-				<posx>885</posx>
-				<posy>468</posy>
+				<posx>690</posx>
+				<posy>475</posy>
 				<subtype>page</subtype>
 				<font>font-20</font>
 				<onleft>120</onleft>

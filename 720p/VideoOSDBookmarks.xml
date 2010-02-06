@@ -3,7 +3,7 @@
 	<coordinates>
 		<system>1</system>
 		<posx>240</posx>
-		<posy>0</posy>
+		<posy>20</posy>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,7 +12,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>800</width>
-			<height>550</height>
+			<height>525</height>
 			<texture border="30">panel.png</texture>
 			<bordertexture border="45">panel-shadow.png</bordertexture>
 			<bordersize>22</bordersize>
@@ -37,7 +37,7 @@
 			<texture>separator.png</texture>
 		</control>
 		<control type="panel" id="11">
-			<posx>42</posx>
+			<posx>38</posx>
 			<posy>88</posy>
 			<width>720</width>
 			<height>360</height>
@@ -47,7 +47,7 @@
 			<onup>11</onup>
 			<scrolltime>200</scrolltime>
 			<viewtype label="536">icon</viewtype>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol>61</pagecontrol>
 			<orientation>vertical</orientation>
 			<itemlayout height="180" width="180">
 				<control type="image">
@@ -114,11 +114,25 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<control type="scrollbar" id="61">
+			<posx>755</posx>
+			<posy>88</posy>
+			<width>20</width>
+			<height>355</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<orientation>vertical</orientation>
+			<showonepage>false</showonepage>
+			<visible>Control.IsVisible(11)</visible>
+		</control>
 		<include>CommonFileCount11</include>
 		<control type="button" id="2">
 			<description>Create Bookmark button</description>
 			<posx>40</posx>
-			<posy>480</posy>
+			<posy>455</posy>
 			<width>235</width>
 			<height>35</height>
 			<label>294</label>
@@ -137,7 +151,7 @@
 		<control type="button" id="3">
 			<description>Clear Bookmark button</description>
 			<posx>280</posx>
-			<posy>480</posy>
+			<posy>455</posy>
 			<width>235</width>
 			<height>35</height>
 			<label>296</label>
@@ -156,7 +170,7 @@
 		<control type="button" id="4">
 			<description>Set Episode Thumb button</description>
 			<posx>520</posx>
-			<posy>480</posy>
+			<posy>455</posy>
 			<width>235</width>
 			<height>35</height>
 			<label>20406</label>
@@ -174,7 +188,7 @@
 		</control>
 		<control type="image">
 			<posx>40</posx>
-			<posy>480</posy>
+			<posy>455</posy>
 			<width>235</width>
 			<height>35</height>
 			<texture border="7">button-focus.png</texture>

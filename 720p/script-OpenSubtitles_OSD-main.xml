@@ -1,27 +1,29 @@
 <window>
 	<defaultcontrol>101</defaultcontrol>
 	<coordinates>
-		<system>1</system>
+		<system>0</system>
+		<posx>240</posx>
+		<posy>20</posy>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<include condition="Skin.HasSetting(HateTransparency)">T-Panel7</include>
 		<control type="image">
-			<posx>270</posx>
-			<posy>18</posy>
-			<width>740</width>
-			<height>504</height>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>800</width>
+			<height>525</height>
 			<texture border="30">panel.png</texture>
 			<bordertexture border="45">panel-shadow.png</bordertexture>
 			<bordersize>22</bordersize>
 		</control>
 		<control type="group">
-			<posx>315</posx>
-			<posy>50</posy>
+			<posx>0</posx>
+			<posy>35</posy>
 	<!-- ** Required ** Do not change <id> or <type> -->
 			<control type="image" id="110">
-				<description>page header tab icon</description>
-				<posx>5</posx>
+				<description>logo icon</description>
+				<posx>45</posx>
 				<posy>5</posy>
 				<width>250</width>
 				<height>40</height>
@@ -31,8 +33,8 @@
 				<texture>OpenSubtitles/logo_opensubtitles.png</texture>
 			</control>
 			<control type="image" id="111">
-				<description>page header tab icon</description>
-				<posx>5</posx>
+				<description>logo icon</description>
+				<posx>45</posx>
 				<posy>5</posy>
 				<width>250</width>
 				<height>40</height>
@@ -42,8 +44,8 @@
 				<texture>OpenSubtitles/logo_sublight.png</texture>
 			</control>
 			<control type="image" id="112">
-				<description>page header tab icon</description>
-				<posx>5</posx>
+				<description>logo icon</description>
+				<posx>45</posx>
 				<posy>5</posy>
 				<width>250</width>
 				<height>40</height>
@@ -53,45 +55,44 @@
 				<aligny>center</aligny>
 				<visible>!Control.IsVisible(111) + !Control.IsVisible(110)</visible>
 			</control>
-			<control type="label" id="300">
-				<description>textarea</description>
-				<posx>435</posx>
+			<control type="grouplist">
+				<posx>300</posx>
 				<posy>10</posy>
-				<width>180</width>
-				<height>22</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
+				<width>450</width>
+				<height>20</height>
 				<align>right</align>
-			</control>
+				<orientation>horizontal</orientation>
+				<itemgap>10</itemgap>
+				<control type="label" id="300">
+					<width min="10" max="200">auto</width>
+					<height>20</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="image">
+					<width>54</width>
+					<height>20</height>
+					<texture>OpenSubtitles/icon_sync.png</texture>
+				</control>
+				<control type="label" id="301">
+					<width min="10" max="200">auto</width>
+					<height>20</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>	  
 			<control type="image">
-				<posx>446</posx>
-				<posy>15</posy>
-				<width>54</width>
-				<height>14</height>
-				<texture>OpenSubtitles/icon_sync.png</texture>
-				<visible>True</visible>
-			</control>
-			<control type="label" id="301">
-				<description>textarea</description>
-				<posx>510</posx>
-				<posy>10</posy>
-				<width>150</width>
-				<height>22</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-			</control>			  
-			<control type="image">
-				<posx>0</posx>
-				<posy>50</posy>
-				<width>655</width>
+				<posx>40</posx>
+				<posy>55</posy>
+				<width>720</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label" id="100">
 				<description>textarea</description>
-				<posx>0</posx>
-				<posy>50</posy>
-				<width>655</width>
+				<posx>40</posx>
+				<posy>63</posy>
+				<width>710</width>
 				<height>40</height>
 				<font>font-25</font>
 				<textcolor>white</textcolor>
@@ -100,18 +101,18 @@
 				<wrapmultiline>false</wrapmultiline>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>90</posy>
-				<width>655</width>
+				<posx>40</posx>
+				<posy>110</posy>
+				<width>720</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 		</control>
 	<!-- ** Required ** Do not change <id> or <type> -->
 		<control type="list" id="120">
-			<posx>315</posx>
+			<posx>45</posx>
 			<posy>160</posy>
-			<width>655</width>
+			<width>710</width>
 			<height>323</height>
 			<onleft>120</onleft>
 			<onright>120</onright>
@@ -124,7 +125,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>640</width>
+					<width>710</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
@@ -158,7 +159,7 @@
 				<control type="label">
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>375</width>
+					<width>435</width>
 					<height>30</height>
 					<font>font-18</font>
 					<aligny>center</aligny>
@@ -168,7 +169,7 @@
 					<info>ListItem.Label2</info>
 				</control>          
 				<control type="image">
-					<posx>555</posx>
+					<posx>625</posx>
 					<posy>11</posy>
 					<width>90</width>
 					<height>9</height>
@@ -179,14 +180,14 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>640</width>
+					<width>710</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>640</width>
+					<width>710</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
 					<include>ListFocusScroll10</include>
@@ -222,7 +223,7 @@
 				<control type="label">
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>375</width>
+					<width>435</width>
 					<height>30</height>
 					<font>font-18</font>
 					<aligny>center</aligny>
@@ -232,7 +233,7 @@
 					<info>ListItem.Label2</info>
 				</control>
 				<control type="image">
-					<posx>555</posx>
+					<posx>625</posx>
 					<posy>11</posy>
 					<width>90</width>
 					<height>9</height>
@@ -240,24 +241,19 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="group">
-			<posx>965</posx>
-			<posy>158</posy>
-			<control type="scrollbar" id="121">
-				<description>scroll bar indicator for lists</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>20</width>
-				<height>325</height>
-				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-				<orientation>vertical</orientation>
-				<showonepage>false</showonepage>
-				<visible>Control.IsVisible(120)</visible>
-			</control>
+		<control type="scrollbar" id="121">
+			<posx>755</posx>
+			<posy>160</posy>
+			<width>20</width>
+			<height>325</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<orientation>vertical</orientation>
+			<showonepage>false</showonepage>
+			<visible>Control.IsVisible(120)</visible>
 		</control>
 	</controls>
 </window>
