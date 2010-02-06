@@ -155,7 +155,7 @@
 			<animation effect="slide" start="0,0" end="0,-18" time="0" condition="Control.HasFocus(60)">Conditional</animation>
 			<visible>Control.IsVisible(55) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
 		</control>
-		<control type="scrollbar" id="60">
+		<control type="scrollbar" id="61">
 			<posx>1083</posx>
 			<posy>138</posy>
 			<width>20</width>
