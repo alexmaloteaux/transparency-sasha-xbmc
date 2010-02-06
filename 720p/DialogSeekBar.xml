@@ -3,7 +3,7 @@
 	<controls>
 		<control type="group">
 			<include>dialogeffect</include>
-			<visible>![Window.IsVisible(143) | Window.IsVisible(144) | Window.IsVisible(107) | Window.IsVisible(136) | Window.IsVisible(145) | Window.IsVisible(104)]</visible>
+			<visible>![Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
 			<posx>440</posx>
 			<posy>0</posy>
 			<control type="image">
@@ -299,7 +299,7 @@
 				<height>157</height>
 				<aspectratio align="right" aligny="bottom" scalediffuse="true">keep</aspectratio>
 				<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.cover]</texture>
-				<visible>Player.Paused + [!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(2005) + !Window.IsVisible(142) + !Window.IsVisible(2901)</visible>
+				<visible>Player.Paused + [!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 			</control>
 			<control type="image">
 				<posx>142</posx>
@@ -307,7 +307,7 @@
 				<width>135</width>
 				<height>200</height>
 				<texture>$INFO[VideoPlayer.cover]</texture>
-				<visible>Player.Paused + VideoPlayer.Content(Movies) + Window.IsVisible(2005) + !Window.IsVisible(142) + !Window.IsVisible(2901)</visible>
+				<visible>Player.Paused + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 			</control>
 			<control type="image">
 				<posx>123</posx>
@@ -315,7 +315,7 @@
 				<width>157</width>
 				<height>206</height>
 				<texture>dvdcase.png</texture>
-				<visible>Player.Paused + VideoPlayer.Content(Movies) + Window.IsVisible(2005) + !Window.IsVisible(142) + !Window.IsVisible(2901)</visible>
+				<visible>Player.Paused + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 			</control>
 			<control type="image">
 				<posx>76</posx>
@@ -323,7 +323,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
-				<visible>Player.Paused + Player.HasAudio + Window.IsVisible(2006) + !Window.IsVisible(120) + !Player.ShowInfo</visible>
+				<visible>Player.Paused + Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
 			</control>
 			<control type="image">
 				<posx>54</posx>
@@ -331,7 +331,7 @@
 				<width>228</width>
 				<height>208</height>
 				<texture>cdcase.png</texture>
-				<visible>Player.Paused + Player.HasAudio + Window.IsVisible(2006) + !Window.IsVisible(120) + !Player.ShowInfo + !IsEmpty(MusicPlayer.cover)</visible>
+				<visible>Player.Paused + Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo + !IsEmpty(MusicPlayer.cover)</visible>
 			</control>
 		</control>
 	</controls>

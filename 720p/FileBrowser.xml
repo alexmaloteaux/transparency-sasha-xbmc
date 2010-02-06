@@ -15,7 +15,7 @@
 			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(128) + Window.IsVisible(3)</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(FileManager)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -30,7 +30,7 @@
 			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(128) + Window.IsVisible(24)</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(VideoFiles)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -45,7 +45,7 @@
 			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(128) + Window.IsVisible(501)</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(MusicFiles)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -60,7 +60,7 @@
 			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(128) + Window.IsVisible(2)</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Pictures)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -69,7 +69,7 @@
 			<height>720</height>
 			<texture>black.png</texture>
 			<colordiffuse>B0000000</colordiffuse>
-			<visible>Window.IsVisible(128)</visible>
+			<visible>Window.IsVisible(NetworkSetup)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -79,7 +79,7 @@
 			<texture>black.png</texture>
 			<animation effect="fade" start="0" end ="70" time="300">WindowOpen</animation>
 			<animation effect="fade" start="70" end ="0" time="300">WindowClose</animation>
-			<visible>![Window.IsVisible(127) | Window.IsVisible(129) | Window.IsVisible(130) | Window.IsVisible(135) | Window.IsVisible(139) | Window.IsVisible(2001) | Window.IsVisible(2003) | Window.IsVisible(2004) | Window.IsVisible(PluginSettings) | Window.IsVisible(script-XBMC_Lyrics-settings.xml) | Window.IsVisible(script-Apple_Movie_Trailers-settings.xml)]</visible>
+			<visible>![Window.IsVisible(TrainerSettings) | Window.IsVisible(MediaSource) | Window.IsVisible(ProfileSettings) | Window.IsVisible(SongInformation) | Window.IsVisible(PictureInfo) | Window.IsVisible(MusicInformation) | Window.IsVisible(MovieInformation) | Window.IsVisible(ScriptsDebugInfo) | Window.IsVisible(PluginSettings) | Window.IsVisible(script-XBMC_Lyrics-settings.xml) | Window.IsVisible(script-Apple_Movie_Trailers-settings.xml)]</visible>
 		</control>
 		<control type="group">
 			<include>dialogeffect</include>
@@ -142,7 +142,7 @@
 			<include>CommonFileCount4</include>
 			<include>CommonFileCount5</include>
 			<control type="group" id="9000">
-				<visible>!Window.IsVisible(128)</visible>
+				<visible>!Window.IsVisible(NetworkSetup)</visible>
 				<animation effect="slide" start="0,0" end="100,0" time="0" condition="!Control.IsVisible(451)">Conditional</animation>
 				<control type="button" id="413">
 					<description>OK button</description>
@@ -240,7 +240,7 @@
 			</control>
 			<control type="group" id="9000">
 				<animation effect="slide" start="0,0" end="100,0" time="0" condition="!Control.IsVisible(451)">Conditional</animation>
-				<visible>Window.IsVisible(128)</visible>
+				<visible>Window.IsVisible(NetworkSetup)</visible>
 				<control type="button" id="413">
 					<description>OK button</description>
 					<posx>240</posx>

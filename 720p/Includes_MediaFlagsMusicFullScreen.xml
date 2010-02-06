@@ -15,13 +15,13 @@
 			<control type="image">
 				<include>FullScreenMusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
-				<visible>!Window.IsVisible(120)</visible>
+				<visible>!Window.IsVisible(MusicOSD)</visible>
 			</control>
 		<!-- Record Label -->
 			<control type="image">
 				<include>FullScreenMusicMediaCodecVars</include>
 				<texture>special://skin/images/flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
-				<visible>!Window.IsVisible(120)</visible>
+				<visible>!Window.IsVisible(MusicOSD)</visible>
 			</control>
 		</control>
 	</include>

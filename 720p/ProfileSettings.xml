@@ -107,7 +107,7 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="group">
-				<visible>!Window.IsVisible(131)</visible>
+				<visible>!Window.IsVisible(LockSettings)</visible>
 				<control type="button" id="28">
 					<description>Ok Button</description>
 					<posx>440</posx>

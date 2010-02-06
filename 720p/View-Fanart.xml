@@ -42,7 +42,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(28)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="29" width="355">
@@ -83,7 +83,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(28)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 			</focusedlayout>
 		</control>
@@ -131,7 +131,7 @@
 	</include>
 	<include name="Fanart-Videos_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
@@ -271,7 +271,7 @@
 				<onup>7005</onup>
 				<ondown>7005</ondown>
 				<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(28) + !Skin.HasSetting(Fullscreen_Trailer) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(Fullscreen_Trailer) + !Window.IsVisible(VideoFiles)</visible>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			</control>
 			<control type="button" id="7005">
@@ -288,11 +288,11 @@
 				<onup>7005</onup>
 				<ondown>7005</ondown>
 				<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
-				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(28) + Skin.HasSetting(Fullscreen_Trailer) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(VideoPlaylist) + Skin.HasSetting(Fullscreen_Trailer) + !Window.IsVisible(VideoFiles)</visible>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(28)] + !Window.IsVisible(VideoFiles)</visible>
+				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !Window.IsVisible(VideoFiles)</visible>
 				<control type="grouplist">
 					<posx>257</posx>
 					<posy>659</posy>
@@ -319,7 +319,7 @@
 			<visible>Control.IsVisible(50) + Player.HasVideo + !Skin.HasSetting(Fullscreen_Trailer) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
@@ -329,7 +329,7 @@
 				<height>288</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>stringcompare(ListItem.Label,..) + !Window.IsVisible(28)</visible>
+				<visible>stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
 				<posx>38</posx>
@@ -339,7 +339,7 @@
 				<texture>$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(28)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
 				<posx>-6</posx>
@@ -350,7 +350,7 @@
 				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
 				<bordersize>16</bordersize>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(28)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
 				<posx>164</posx>
@@ -359,7 +359,7 @@
 				<height>61</height>
 				<texture>movieset.png</texture>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !Window.IsVisible(28) + </visible>
+				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoPlaylist) + </visible>
 			</control>
 			<control type="image">
 				<posx>30</posx>
@@ -370,7 +370,7 @@
 				<texture diffuse="gamecase-diffuse.png">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>Window.IsVisible(28)</visible>
+				<visible>Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -938,7 +938,7 @@
 	</include>
 	<include name="Fanart-AlbumsSongs_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(500)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay111</include>
 			<control type="image">
@@ -993,7 +993,7 @@
 				<label>$INFO[ListItem.Label]</label>
 				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>865</posx>
@@ -1009,7 +1009,7 @@
 				<label>$INFO[ListItem.Label2]</label>
 				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>!ListItem.IsPlaying + [Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)]</visible>
+				<visible>!ListItem.IsPlaying + [Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)]</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1025,7 +1025,7 @@
 				<label>$INFO[ListItem.Artist]</label>
 				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)</visible>
+				<visible>Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1169,7 +1169,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(Musicfiles) | Window.IsVisible(500)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>34</posx>

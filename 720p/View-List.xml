@@ -173,7 +173,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(28)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="29" width="470">
@@ -243,14 +243,14 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(28)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | [Container.Content(TVShows) + Window.IsVisible(VideoLibrary)] | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(28)]</visible>
+			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | [Container.Content(TVShows) + Window.IsVisible(VideoLibrary)] | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
 			<control type="image">
 				<posx>20</posx>
 				<posy>25</posy>
@@ -452,7 +452,7 @@
 				<height>78</height>
 				<texture>movieset.png</texture>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-				<visible>ListItem.IsFolder + !Window.IsVisible(24) + !Window.IsVisible(28) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -563,7 +563,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + Window.IsVisible(28)</visible>
+			<visible>Control.IsVisible(51) + Window.IsVisible(VideoPlaylist)</visible>
 			<control type="image">
 				<posx>68</posx>
 				<posy>31</posy>
@@ -792,7 +792,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(500)]</visible>
+			<visible>Control.IsVisible(51) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(MusicPlaylist)]</visible>
 			<control type="image">
 				<posx>20</posx>
 				<posy>25</posy>
@@ -900,7 +900,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(500)]</visible>
+			<visible>Control.IsVisible(51) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicPlaylist)]</visible>
 			<control type="image">
 				<posx>59</posx>
 				<posy>97</posy>

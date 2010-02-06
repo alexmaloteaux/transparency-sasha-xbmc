@@ -127,7 +127,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 			<control type="group">
 				<posx>0</posx>
 				<posy>520</posy>
-				<visible>Player.ShowInfo | Window.IsVisible(120)</visible>
+				<visible>Player.ShowInfo | Window.IsVisible(MusicOSD)</visible>
 				<include condition="Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]">cdart-disabled-musicvisualisation</include>
 				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">Visible</animation>
@@ -159,7 +159,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<animation effect="slide" start="0,0" end="0,180" time="300">Hidden</animation>
 				<animation effect="slide" start="0,180" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,180" time="300" delay="1700">WindowClose</animation>
-				<visible>Player.ShowInfo | Window.IsVisible(120)</visible>
+				<visible>Player.ShowInfo | Window.IsVisible(MusicOSD)</visible>
 				<control type="image">
 					<description>media info background image</description>
 					<posx>320</posx>
@@ -240,7 +240,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<aligny>center</aligny>
 					<font>font-15</font>
 					<textcolor>white</textcolor>
-					<visible>![Window.IsVisible(120) + LastFM.RadioPlaying]</visible>
+					<visible>![Window.IsVisible(MusicOSD) + LastFM.RadioPlaying]</visible>
 				</control>
 				<control type="label">
 					<posx>1255</posx>
@@ -252,7 +252,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<aligny>center</aligny>
 					<font>font-15</font>
 					<textcolor>lightblue</textcolor>
-					<visible>![Window.IsVisible(120) + LastFM.RadioPlaying]</visible>
+					<visible>![Window.IsVisible(MusicOSD) + LastFM.RadioPlaying]</visible>
 				</control>
 				<control type="label">
 					<description>Playlist Pos No</description>
@@ -322,7 +322,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<aligny>center</aligny>
 					<font>font-20</font>
 					<textcolor>lightgrey</textcolor>
-					<visible>MusicPlayer.HasNext + !Window.IsVisible(120)</visible>
+					<visible>MusicPlayer.HasNext + !Window.IsVisible(MusicOSD)</visible>
 				</control>
 			</control>
 		</control>

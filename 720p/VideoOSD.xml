@@ -9,8 +9,8 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>380</posy>
-				<animation effect="slide" start="-280,0" end="0,0" time="300" condition="!Window.IsVisible(142)">WindowOpen</animation>
-				<animation effect="slide" start="0,0" end="-280,0" time="300" condition="!Window.IsVisible(142)">WindowClose</animation>
+				<animation effect="slide" start="-280,0" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
+				<animation effect="slide" start="0,0" end="-280,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 				<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(SafeMode)">clearart-dialogfullscreeninfo</include>
 				<control type="image">
 					<description>cover image</description>
@@ -42,8 +42,8 @@
 			</control>
 			<control type="group">
 				<posy>520</posy>
-				<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(142)">WindowOpen</animation>
-				<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(142)">WindowClose</animation>
+				<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
+				<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 				<control type="image">
 					<description>media info background image</description>
 					<posx>280</posx>
@@ -328,8 +328,8 @@
 				<control type="group">
 					<posx>322</posx>
 					<posy>678</posy>
-					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(142)">WindowOpen</animation>
-					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(142)">WindowClose</animation>
+					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
+					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 					<control type="image">
 						<posx>10</posx>
@@ -511,8 +511,8 @@
 				<control type="group">
 					<posx>1024</posx>
 					<posy>683</posy>
-					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(142)">WindowOpen</animation>
-					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(142)">WindowClose</animation>
+					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
+					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>

@@ -59,7 +59,7 @@
 			<texture>$INFO[Skin.String(TVShows_Folder_Path)]$INFO[VideoPlayer.TVShowTitle]/clearart.png</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(2005) + !Window.IsVisible(142) + !Window.IsVisible(2901)</visible>
+			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 		</control>
 	</include>
 	<include name="games-thumb">

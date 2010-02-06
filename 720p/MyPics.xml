@@ -37,7 +37,7 @@
 			<texture>black.png</texture>
 			<include>VisibleFadeEffect</include>
 			<colordiffuse>A2000000</colordiffuse>
-			<animation effect="fade" start="100" end ="0" time="300" condition="Window.IsActive(139)" reversible="true">conditional</animation>
+			<animation effect="fade" start="100" end ="0" time="300" condition="Window.IsActive(PictureInfo)" reversible="true">conditional</animation>
 			<visible>Control.IsVisible(597)</visible>
 		</control>
 		<control type="largeimage">

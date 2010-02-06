@@ -3,7 +3,7 @@
 	<controls>
 		<control type="group">
 			<include>ContentFade</include>
-			<visible>!Window.IsVisible(2901)</visible>
+			<visible>!Window.IsVisible(VideoOSD)</visible>
 			<control type="group">
 				<posx>0</posx>
 				<posy>380</posy>

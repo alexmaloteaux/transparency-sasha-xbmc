@@ -12,7 +12,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + !Window.IsVisible(2003)]</visible>
+			<visible>!IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
 		</control>
 		<control type="largeimage">
 			<posx>0</posx>
@@ -23,7 +23,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Control.IsVisible(592) + !Window.IsVisible(2003)]</visible>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -51,7 +51,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)] + ![Control.IsVisible(592) + !Window.IsVisible(2003)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)] + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>

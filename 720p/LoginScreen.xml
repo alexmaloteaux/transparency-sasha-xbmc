@@ -174,7 +174,7 @@
 						<aspectratio>keep</aspectratio>
 						<texture>home-power.png</texture>
 						<include>Window_OpenClose_Animation</include>
-						<visible>!Control.HasFocus(20) + !Window.IsVisible(111)</visible>
+						<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
 					</control>
 					<control type="image">
 						<posx>51r</posx>
@@ -185,7 +185,7 @@
 						<texture>home-power-focus.png</texture>
 						<include>Window_OpenClose_Animation</include>
 						<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(20)">Conditional</animation>
-						<visible>Control.HasFocus(20) | Window.IsVisible(111)</visible>
+						<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
 					</control>
 				</control>
 			</control>

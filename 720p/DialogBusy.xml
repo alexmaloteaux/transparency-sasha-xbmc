@@ -7,7 +7,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(145) | Window.IsVisible(104)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>

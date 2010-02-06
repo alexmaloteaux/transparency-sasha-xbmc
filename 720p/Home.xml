@@ -99,7 +99,7 @@
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
 				<onfocus>SetFocus(9000)</onfocus>
-				<visible>!Skin.HasSetting(Startup) + [!Skin.HasSetting(LibraryUpdated) | [Skin.HasSetting(LibraryUpdated) + [Window.IsVisible(112) | Window.IsVisible(133)]]]</visible>
+				<visible>!Skin.HasSetting(Startup) + [!Skin.HasSetting(LibraryUpdated) | [Skin.HasSetting(LibraryUpdated) + [Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(DialogVideoScan.xml)]]]</visible>
 			</control>
 			<control type="button" id="5043">
 				<description>conditionally run RecentlyAdded script after library update</description>
@@ -114,7 +114,7 @@
 				<include condition="!Skin.HasSetting(HomepageRecentMovies) | !Skin.HasSetting(HomepageRecentTVShows) | !Skin.HasSetting(HomepageRecentAlbums)">recentlyaddedscript</include>
 				<onfocus>Skin.Reset(LibraryUpdated)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
-				<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(112) + !Window.IsVisible(133)</visible>
+				<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(DialogMusicScan.xml) + !Window.IsVisible(DialogVideoScan.xml)</visible>
 			</control>
 			<include condition="IsEmpty(Weather.Plugin) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
 			<include condition="!IsEmpty(Weather.Plugin) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
@@ -225,7 +225,7 @@
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
 					<texture>home-power.png</texture>
-					<visible>!Control.HasFocus(20) + !Window.IsVisible(111)</visible>
+					<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 				<control type="image">
 					<posx>51r</posx>
@@ -235,7 +235,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture>home-power-focus.png</texture>
 					<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(20)">Conditional</animation>
-					<visible>Control.HasFocus(20) | Window.IsVisible(111)</visible>
+					<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 				<control type="rss">
 					<description>rss feed</description>

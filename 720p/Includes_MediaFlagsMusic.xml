@@ -2,7 +2,7 @@
 	<include name="MusicMediaCodecVars">
 		<width>80</width>
 		<height>55</height>
-		<visible>Container.Content(Songs) | Window.IsVisible(musicfiles) | Window.IsVisible(500)</visible>
+		<visible>Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)</visible>
 	</include>
 	<include name="MusicMediaLabelVars">
 		<width>80</width>
