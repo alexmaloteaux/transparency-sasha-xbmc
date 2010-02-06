@@ -39,55 +39,7 @@
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
-			<visible>[[Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)]] | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(593)</visible>
-		</control>
-		<control type="scrollbar" id="60">
-			<posx>557</posx>
-			<posy>138</posy>
-			<width>20</width>
-			<height>444</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>15</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + !Skin.HasSetting(FanartShort)  + !Skin.HasSetting(FanartLong)</visible>
-		</control>
-		<control type="scrollbar" id="60">
-			<posx>557</posx>
-			<posy>138</posy>
-			<width>20</width>
-			<height>298</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>15</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartShort)</visible>
-		</control>
-		<control type="scrollbar" id="60">
-			<posx>557</posx>
-			<posy>138</posy>
-			<width>20</width>
-			<height>675</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>15</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartLong)</visible>
+			<visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(593)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>557</posx>
@@ -202,6 +154,70 @@
 			<orientation>horizontal</orientation>
 			<animation effect="slide" start="0,0" end="0,-18" time="0" condition="Control.HasFocus(60)">Conditional</animation>
 			<visible>Control.IsVisible(55) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>1083</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>444</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Window.IsVisible(TV) + [Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)]</visible>
+		</control>
+		<control type="scrollbar" id="61">
+			<posx>557</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>444</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>15</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + !Skin.HasSetting(FanartShort)  + !Skin.HasSetting(FanartLong)</visible>
+		</control>
+		<control type="scrollbar" id="61">
+			<posx>557</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>298</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>15</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartShort)</visible>
+		</control>
+		<control type="scrollbar" id="61">
+			<posx>557</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>675</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>15</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartLong)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs">
