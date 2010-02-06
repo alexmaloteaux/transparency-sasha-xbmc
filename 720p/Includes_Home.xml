@@ -3049,6 +3049,14 @@
 				<height>32</height>
 				<texture border="3">submenu-ver-button.png</texture>
 			</control>
+			<control type="image">
+				<posx>15</posx>
+				<posy>0</posy>
+				<width>170</width>
+				<height>32</height>
+				<texture border="7">list-focus2.png</texture>
+				<animation effect="fade" start="30" end="60" time="750" pulse="true" condition="true">Conditional</animation>
+			</control>
 			<control type="label">
 				<posx>100</posx>
 				<posy>0</posy>
@@ -3109,6 +3117,14 @@
 				<width>200</width>
 				<height>20</height>
 				<texture border="3">submenu-hor-button.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>20</height>
+				<texture border="7">list-focus2.png</texture>
+				<animation effect="fade" start="40" end="70" time="750" pulse="true" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>100</posx>
