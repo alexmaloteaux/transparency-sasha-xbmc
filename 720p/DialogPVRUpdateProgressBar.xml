@@ -9,7 +9,7 @@
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(FullscreenVideo)</visible>
-			<visible>![Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | Window.IsVisible(Seekbar)]</visible>
+			<visible>![Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | Window.IsVisible(Seekbar) | Window.IsVisible(BusyDialog)]</visible>
 			<animation effect="slide" start="0,0" end="0,35" time="200" condition="Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(DialogVideoScan.xml)">conditional</animation>
 			<control type="image">
 				<posx>0</posx>

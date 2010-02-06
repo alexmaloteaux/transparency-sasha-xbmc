@@ -7,7 +7,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(Seekbar) | Window.IsVisible(DialogVideoScan.xml) | Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(608)]</visible>
+			<visible>![Window.IsVisible(Seekbar) | Window.IsVisible(DialogVideoScan.xml) | Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(608)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
