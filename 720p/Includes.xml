@@ -120,6 +120,7 @@
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
 			<animation effect="slide" start="0,0" end="0,-18" time="0" condition="Control.HasFocus(60)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
 			<visible>Control.IsVisible(56) | Control.IsVisible(57)</visible>
 		</control>
 		<control type="scrollbar" id="60">
@@ -152,7 +153,8 @@
 			<ondown>9000</ondown>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="slide" start="0,0" end="0,-18" time="0" condition="Control.HasFocus(60)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-18" time="200" condition="Control.HasFocus(60)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
 			<visible>Control.IsVisible(55) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
 		</control>
 		<control type="scrollbar" id="61">
@@ -1941,6 +1943,23 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font-25</font>
+	</include>
+	<include name="SideMenuAnim">
+		<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="!Skin.HasSetting(WideSideMenuButtons)">VisibleChange</animation>
+		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons)">VisibleChange</animation>
+		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
+	</include>
+	<include name="SideMenuAnim2">
+		<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="400" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
+		<animation effect="fade" start="100" end="100" time="0" condition="ControlGroup(9000).HasFocus">Conditional</animation>
+	</include>
+	<include name="SideMenuAnim3">
+		<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90) + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90) + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="400" condition="ControlGroup(5).HasFocus | Control.HasFocus(90)">Conditional</animation>
+		<animation effect="fade" start="100" end="100" time="0" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
 	</include>
 	<include name="ToggleButtonNormal">
 		<posx>151</posx>

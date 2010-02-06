@@ -65,8 +65,7 @@
 			<control type="group">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
-				<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90) + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90) + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+				<include>SideMenuAnim3</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>-16</posy>
@@ -83,8 +82,7 @@
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 			<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
-			<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90) + !Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90) + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+			<include>SideMenuAnim3</include>
 			<control type="grouplist" id="3">
 				<description>button area</description>
 				<posx>0</posx>
