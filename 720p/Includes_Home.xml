@@ -678,24 +678,24 @@
 				<description>back image</description>
 				<posx>455</posx>
 				<posy>7</posy>
-				<width>136</width>
 				<height>136</height>
+				<width>136</width>
 				<texture border="7">thumb-nofocus.png</texture>
 			</control>
 			<control type="image">
 				<description>settings image</description>
 				<posx>455</posx>
 				<posy>7</posy>
-				<width>136</width>
 				<height>136</height>
+				<width>136</width>
 				<texture>homeinfo-system.png</texture>
 			</control>
 			<control type="label">
 				<description>Settings label</description>
 				<posx>156r</posx>
 				<posy>15</posy>
-				<height>30</height>
 				<width>500</width>
+				<height>30</height>
 				<label>[B]$LOCALIZE[13000]:[/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -707,8 +707,8 @@
 				<description>CPU Speed Label</description>
 				<posx>156r</posx>
 				<posy>50</posy>
-				<height>30</height>
 				<width>500</width>
+				<height>30</height>
 				<label>$LOCALIZE[13284] $INFO[System.cpufrequency]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -719,8 +719,8 @@
 				<description>Free Memory Label</description>
 				<posx>156r</posx>
 				<posy>70</posy>
-				<height>30</height>
 				<width>500</width>
+				<height>30</height>
 				<label>$LOCALIZE[158]: $INFO[System.FreeMemory] / $INFO[System.Memory(Total)]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -731,8 +731,8 @@
 				<description>GPU Make Label</description>
 				<posx>156r</posx>
 				<posy>90</posy>
-				<height>30</height>
 				<width>500</width>
+				<height>30</height>
 				<label>$INFO[System.videoencoderinfo]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -743,8 +743,8 @@
 				<description>IP Address label</description>
 				<posx>156r</posx>
 				<posy>110</posy>
-				<height>30</height>
 				<width>500</width>
+				<height>30</height>
 				<label>$LOCALIZE[150]: $INFO[Network.IPAddress]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -810,8 +810,8 @@
 				<description>Year label</description>
 				<posx>420</posx>
 				<posy>15</posy>
-				<height>30</height>
 				<width>780</width>
+				<height>30</height>
 				<label>$INFO[VideoPlayer.Year]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -824,8 +824,8 @@
 				<description>TV Show Title label</description>
 				<posx>340</posx>
 				<posy>15</posy>
-				<height>30</height>
 				<width>780</width>
+				<height>30</height>
 				<label>$INFO[VideoPlayer.tvshowtitle]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -838,8 +838,8 @@
 				<description>Music Video Artist label</description>
 				<posx>340</posx>
 				<posy>15</posy>
-				<height>30</height>
 				<width>780</width>
+				<height>30</height>
 				<label>$INFO[VideoPlayer.Artist]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -852,8 +852,8 @@
 				<description>Title label</description>
 				<posx>420</posx>
 				<posy>54</posy>
-				<height>30</height>
 				<width>780</width>
+				<height>30</height>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -864,10 +864,10 @@
 			</control>
 			<control type="label">
 				<description>Genre label</description>
-				<posx>340</posx>
+				<posx>420</posx>
 				<posy>88</posy>
-				<height>30</height>
 				<width>780</width>
+				<height>30</height>
 				<info>VideoPlayer.Genre</info>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -878,8 +878,8 @@
 			<control type="label">
 				<posx>340</posx>
 				<posy>88</posy>
-				<height>30</height>
 				<width>780</width>
+				<height>30</height>
 				<info>VideoPlayer.Album</info>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -891,8 +891,9 @@
 				<description>Season and Episode label</description>
 				<posx>340</posx>
 				<posy>88</posy>
+				<align>right</align>
 				<height>30</height>
-				<width>780</width>
+				<align>right</align>
 				<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -900,42 +901,40 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>VideoPlayer.Content(Episodes)</visible>
 			</control>
-			<control type="label">
-				<description>Time Label</description>
-				<posx>70</posx>
-				<posy>115</posy>
+			<control type="grouplist">
+				<posx>-360</posx>
+				<posy>125</posy>
 				<height>30</height>
-				<width>500</width>
-				<label>$INFO[VideoPlayer.Time]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-18</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<animation effect="slide" start="0,0" end="-80,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos)">Conditional</animation>
-			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>157</posx>
-				<posy>124</posy>
-				<width>175</width>
-				<height>15</height>
-				<info>Player.Progress</info>
-				<animation effect="slide" start="0,0" end="-80,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos)">Conditional</animation>
-			</control>
-			<control type="label">
-				<description>Time Label</description>
-				<posx>420</posx>
-				<posy>115</posy>
-				<height>30</height>
-				<width>500</width>
-				<label>$INFO[VideoPlayer.Duration]</label>
 				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-18</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<width>780</width>
+				<orientation>horizontal</orientation>
 				<animation effect="slide" start="0,0" end="-80,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos)">Conditional</animation>
+				<control type="label">
+					<description>Time Label</description>
+					<height>12</height>
+					<width min="10" max="300">auto</width>
+					<label>$INFO[VideoPlayer.Time]</label>
+					<aligny>center</aligny>
+					<font>font-18</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<width>175</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+				</control>
+				<control type="label">
+					<description>Duration Label</description>
+					<height>12</height>
+					<width min="10" max="300">auto</width>
+					<label>$INFO[VideoPlayer.Duration]</label>
+					<aligny>center</aligny>
+					<font>font-18</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -1163,39 +1162,39 @@
 				<font>font-20</font>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="label">
-				<description>Time Label</description>
-				<posx>76</posx>
-				<posy>115</posy>
+			<control type="grouplist">
+				<posx>-420</posx>
+				<posy>125</posy>
 				<height>30</height>
 				<width>780</width>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-18</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>130</posx>
-				<posy>124</posy>
-				<width>175</width>
-				<height>15</height>
-				<info>Player.Progress</info>
-			</control>
-			<control type="label">
-				<description>Duration Label</description>
-				<posx>360</posx>
-				<posy>115</posy>
-				<height>30</height>
-				<width>500</width>
-				<label>$INFO[MusicPlayer.Duration]</label>
 				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-18</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<description>Time Label</description>
+					<height>12</height>
+					<width min="10" max="300">auto</width>
+					<label>$INFO[MusicPlayer.Time]</label>
+					<aligny>center</aligny>
+					<font>font-18</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<width>175</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+				</control>
+				<control type="label">
+					<description>Duration Label</description>
+					<height>12</height>
+					<width min="10" max="300">auto</width>
+					<label>$INFO[MusicPlayer.Duration]</label>
+					<aligny>center</aligny>
+					<font>font-18</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 		</control>
 	</include>

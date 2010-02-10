@@ -1403,39 +1403,36 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>[[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | [Control.IsVisible(14)]] + !Control.IsVisible(592)</visible>
 			</control>
-			<control type="label">
+			<control type="grouplist">
 				<posx>175</posx>
-				<posy>115</posy>
-				<width>930</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Time]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-17</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>250</posx>
 				<posy>120</posy>
-				<width>250</width>
-				<height>15</height>
-				<info>Player.Progress</info>
-			</control>
-			<control type="label">
-				<posx>576</posx>
-				<posy>115</posy>
-				<width>930</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Duration]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-17</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
+				<width>600</width>
+				<height>30</height>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<width min="10" max="200">auto</width>
+					<height>12</height>
+					<label>$INFO[VideoPlayer.Time]</label>
+					<aligny>center</aligny>
+					<font>font-17</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<width>200</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+				</control>
+				<control type="label">
+					<width min="10" max="200">auto</width>
+					<height>12</height>
+					<label>$INFO[VideoPlayer.Duration]</label>
+					<aligny>center</aligny>
+					<font>font-17</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -1530,39 +1527,36 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>[[Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes)]] | [Control.IsVisible(14)]] + !Control.IsVisible(592)</visible>
 			</control>
-			<control type="label">
+			<control type="grouplist">
 				<posx>175</posx>
-				<posy>115</posy>
-				<width>930</width>
-				<height>20</height>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-17</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>232</posx>
 				<posy>120</posy>
-				<width>250</width>
-				<height>15</height>
-				<info>Player.Progress</info>
-			</control>
-			<control type="label">
-				<posx>540</posx>
-				<posy>115</posy>
-				<width>930</width>
-				<height>20</height>
-				<label>$INFO[MusicPlayer.Duration]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-17</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
+				<width>600</width>
+				<height>30</height>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<width min="10" max="200">auto</width>
+					<height>12</height>
+					<label>$INFO[MusicPlayer.Time]</label>
+					<aligny>center</aligny>
+					<font>font-17</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<width>200</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+				</control>
+				<control type="label">
+					<width min="10" max="200">auto</width>
+					<height>12</height>
+					<label>$INFO[MusicPlayer.Duration]</label>
+					<aligny>center</aligny>
+					<font>font-17</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -1962,10 +1956,10 @@
 		<animation effect="fade" start="100" end="100" time="0" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
 	</include>
 	<include name="ToggleButtonNormal">
-		<posx>151</posx>
+		<posx>157</posx>
 	</include>
 	<include name="ToggleButtonWide">
-		<posx>225</posx>
+		<posx>231</posx>
 	</include>
 	<include name="Window_OpenClose_Left_Panel_Position_Normal">
 		<posx>-178</posx>
