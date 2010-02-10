@@ -43,12 +43,10 @@
 					<usealttexture>!System.IsMaster</usealttexture>
 					<alttexturefocus>shut-nomaster-focus.png</alttexturefocus>
 					<alttexturenofocus>shut-nomaster-nofocus.png</alttexturenofocus>
-					<onclick>xbmc.mastermode</onclick>
+					<onclick>mastermode</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<visible>System.HasLocks</visible>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Master)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Master) + System.HasLocks</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(21)">conditional</animation>
 				</control>
 				<control type="button" id="22">
@@ -57,14 +55,11 @@
 					<height>81</height>
 					<texturefocus>shut-logoff-focus.png</texturefocus>
 					<texturenofocus>shut-logoff-nofocus.png</texturenofocus>
-					<onclick>dialog.close(all,true)</onclick>
 					<onclick>system.logoff</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-					<visible>System.HasLoginScreen</visible>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + System.HasLoginScreen + System.Loggedon</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(22)">conditional</animation>
 				</control>
 				<control type="button" id="23">
@@ -73,12 +68,11 @@
 					<height>81</height>
 					<texturefocus>shut-info-focus.png</texturefocus>
 					<texturenofocus>shut-info-nofocus.png</texturenofocus>
-					<onclick>XBMC.ActivateWindow(7)</onclick>
+					<onclick>ActivateWindow(7)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
 					<label>130</label>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Info)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.Loggedon</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(23)">conditional</animation>
 				</control>
 				<control type="button" id="10">
@@ -89,12 +83,11 @@
 					<height>81</height>
 					<texturefocus>shut-filemanager-focus.png</texturefocus>
 					<texturenofocus>shut-filemanager-nofocus.png</texturenofocus>
-					<onclick>XBMC.ActivateWindow(MyFiles,autodetect)</onclick>
+					<onclick>ActivateWindow(MyFiles,autodetect)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>7</label>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.Loggedon</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(10)">conditional</animation>
 				</control>
 				<control type="button" id="11">
@@ -103,13 +96,11 @@
 					<height>81</height>
 					<texturefocus>shut-exit-focus.png</texturefocus>
 					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
-					<onclick>dialog.close(all,true)</onclick>
-					<onclick>XBMC.Quit()</onclick>
+					<onclick>Quit()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13012] XBMC</label>
-					<visible>!System.Platform.Xbox</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + !System.Platform.Xbox</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(11)">conditional</animation>
 				</control>
 				<control type="button" id="12">
@@ -118,13 +109,11 @@
 					<height>81</height>
 					<texturefocus>shut-exit-focus.png</texturefocus>
 					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
-					<onclick>dialog.close(all,true)</onclick>
-					<onclick>XBMC.Dashboard()</onclick>
+					<onclick>Dashboard()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13012] XBMC</label>
-					<visible>System.Platform.Xbox</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + System.Platform.Xbox</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(12)">conditional</animation>
 				</control>
 				<control type="button" id="13">
@@ -133,8 +122,7 @@
 					<height>81</height>
 					<texturefocus>shut-restart-focus.png</texturefocus>
 					<texturenofocus>shut-restart-nofocus.png</texturenofocus>
-					<onclick>dialog.close(all,true)</onclick>
-					<onclick>XBMC.Restartapp()</onclick>
+					<onclick>Restartapp()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13313] XBMC</label>
@@ -151,7 +139,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),30)</onclick>
+						<onclick>AlarmClock(shutdowntimer,Shutdown(),30)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -168,7 +156,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),60)</onclick>
+						<onclick>AlarmClock(shutdowntimer,Shutdown(),60)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -185,7 +173,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),90)</onclick>
+						<onclick>AlarmClock(shutdowntimer,Shutdown(),90)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -202,7 +190,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),120)</onclick>
+						<onclick>AlarmClock(shutdowntimer,Shutdown(),120)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -219,7 +207,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+						<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -237,7 +225,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+						<onclick>CancelAlarm(shutdowntimer)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -254,7 +242,7 @@
 						<height>81</height>
 						<texturefocus>shut-shutdown-focus.png</texturefocus>
 						<texturenofocus>shut-shutdown-nofocus.png</texturenofocus>
-						<onclick>XBMC.Shutdown()</onclick>
+						<onclick>Shutdown()</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -285,13 +273,12 @@
 					<height>81</height>
 					<texturefocus>shut-suspend-focus.png</texturefocus>
 					<texturenofocus>shut-suspend-nofocus.png</texturenofocus>
-					<onclick>XBMC.Suspend()</onclick>
-					<onclick>dialog.close(all,true)</onclick>
+					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
+					<onclick>Suspend()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>13011</label>
-					<visible>System.CanSuspend</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend) + System.CanSuspend</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(15)">conditional</animation>
 				</control>
 				<control type="button" id="16">
@@ -302,13 +289,12 @@
 					<height>81</height>
 					<texturefocus>shut-hibernate-focus.png</texturefocus>
 					<texturenofocus>shut-hibernate-nofocus.png</texturenofocus>
-					<onclick>XBMC.Hibernate()</onclick>
-					<onclick>dialog.close(all,true)</onclick>
+					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
+					<onclick>Hibernate()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>13010</label>
-					<visible>System.CanHibernate</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate) + System.CanHibernate</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(16)">conditional</animation>
 				</control>
 				<control type="button" id="17">
@@ -319,12 +305,11 @@
 					<height>81</height>
 					<texturefocus>shut-favourites-focus.png</texturefocus>
 					<texturenofocus>shut-favourites-nofocus.png</texturenofocus>
-					<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+					<onclick>ActivateWindow(Favourites)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>1036</label>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.Loggedon</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(17)">conditional</animation>
 				</control>
 				<control type="button" id="18">
@@ -335,7 +320,7 @@
 					<height>81</height>
 					<texturefocus>shut-reboot-focus.png</texturefocus>
 					<texturenofocus>shut-reboot-nofocus.png</texturenofocus>
-					<onclick>XBMC.Reset()</onclick>
+					<onclick>Reset()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>13013</label>
@@ -350,12 +335,11 @@
 					<height>81</height>
 					<texturenofocus>shut-settings-nofocus.png</texturenofocus>
 					<texturefocus>shut-settings-focus.png</texturefocus>
-					<onclick>XBMC.ActivateWindow(Settings)</onclick>
+					<onclick>ActivateWindow(Settings)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[5]</label>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Settings)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.Loggedon</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(19)">conditional</animation>
 				</control>
 				<control type="button" id="20">
@@ -366,12 +350,11 @@
 					<height>81</height>
 					<texturenofocus>shut-eject-nofocus.png</texturenofocus>
 					<texturefocus>shut-eject-focus.png</texturefocus>
-					<onclick>XBMC.EjectTray()</onclick>
+					<onclick>EjectTray()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-					<visible>System.Loggedon</visible>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Eject)</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.Loggedon</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(20)">conditional</animation>
 				</control>
 			</control>
@@ -383,7 +366,7 @@
 				<height>60</height>
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
-				<visible>system.hasloginscreen + System.Loggedon</visible>
+				<visible>System.HasLoginscreen + System.Loggedon</visible>
 			</control>
 			<control type="label">
 				<description>Label control</description>
@@ -396,7 +379,7 @@
 				<aligny>center</aligny>
 				<textcolor>lightgrey</textcolor>
 				<font>font-25</font>
-				<visible>system.hasloginscreen + System.Loggedon</visible>
+				<visible>System.HasLoginscreen + System.Loggedon</visible>
 			</control>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay35</include>
 			<control type="image" id="0">

@@ -73,7 +73,7 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include>ContentPanel</include>
-			<include>FullList</include>
+			<include condition="!Skin.HasSetting(Hide-Pictures-FullList)">FullList</include>
 			<include condition="!Skin.HasSetting(Hide-Pictures-List)">List</include>
 			<include condition="!Skin.HasSetting(Hide-Pictures-Thumbnail)">Thumbnail</include>
 			<include>Fanart-ProgramsPicturesScripts</include>

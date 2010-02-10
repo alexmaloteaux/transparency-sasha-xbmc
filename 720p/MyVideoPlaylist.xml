@@ -49,7 +49,7 @@
 				<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + !Control.IsVisible(50)">Conditional</animation>
 				<include>ContentPanel</include>
-				<include>FullList-Videos</include>
+				<include condition="!Skin.HasSetting(Hide-Videos-FullList)">FullList-Videos</include>
 				<include condition="!Skin.HasSetting(Hide-Videos-List)">List-Videos</include>
 				<include>Fanart-Videos</include>
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include>

@@ -31,7 +31,7 @@
 				<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + ![Control.IsVisible(50) | Control.IsVisible(55)]">Conditional</animation>
 				<include>ContentPanel</include>
-				<include>FullList-Music</include>							<!-- view id = 52 -->
+				<include condition="!Skin.HasSetting(Hide-Music-FullList)">FullList-Music</include>	<!-- view id = 52 -->
 				<include condition="!Skin.HasSetting(Hide-Music-List)">List-Music</include>		<!-- view id = 51 -->
 				<include condition="!Skin.HasSetting(Hide-Music-Thumbnail)">Thumbnail</include>		<!-- view id = 53 -->
 				<include>Fanart-Music</include>								<!-- view id = 50 -->

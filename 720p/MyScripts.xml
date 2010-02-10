@@ -20,7 +20,7 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include>ContentPanel</include>
-			<include>FullList</include>
+			<include condition="!Skin.HasSetting(Hide-Scripts-FullList)">FullList</include>
 			<include condition="!Skin.HasSetting(Hide-Scripts-List)">List</include>
 			<include condition="!Skin.HasSetting(Hide-Scripts-Thumbnail)">Thumbnail</include>
 			<include>Fanart-ProgramsPicturesScripts</include>

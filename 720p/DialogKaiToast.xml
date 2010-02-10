@@ -7,7 +7,6 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | Window.IsVisible(BusyDialog)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>

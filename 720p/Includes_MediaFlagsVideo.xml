@@ -341,7 +341,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture fallback="special://skin/images/flags/movies/studio/default-studio.png">special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>!stringcompare(ListItem.Label,..) + !Control.IsVisible(5082) + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+			<visible>!stringcompare(ListItem.Label,..) + !Control.IsVisible(5082) + ![[Control.IsVisible(50) + Container.Content(Movies)] | Control.IsVisible(57)] + !Container.Content(MusicVideos)</visible>
 		</control>
 	<!-- Studio MusicVideos-->
 		<control type="image">

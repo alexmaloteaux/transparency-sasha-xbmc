@@ -8,8 +8,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsVisible(FullscreenVideo)</visible>
-			<visible>![Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(SmartPlaylistEditor) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | Window.IsVisible(Seekbar) | Window.IsVisible(BusyDialog)]</visible>
+			<visible>![Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | Window.IsVisible(Seekbar) | Window.IsVisible(FullscreenVideo]</visible>
 			<animation effect="slide" start="0,0" end="-200,0" time="200" condition="Window.IsVisible(DialogMusicScan.xml)">conditional</animation>
 			<control type="image">
 				<posx>0</posx>

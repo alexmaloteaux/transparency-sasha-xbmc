@@ -47,7 +47,7 @@
 			<control type="group">
 				<include>Window_OpenClose_Right_Panel_Animation</include>
 				<include>ContentPanel</include>
-				<include>FullList-Music</include>
+				<include condition="!Skin.HasSetting(Hide-Music-FullList)">FullList-Music</include>
 				<include condition="!Skin.HasSetting(Hide-Music-List)">List-Music</include>
 				<include condition="!Skin.HasSetting(Hide-Music-MediaInfo)">MediaInfo-Music</include>
 				<include>Fanart-Music</include>
