@@ -142,7 +142,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<animation effect="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250">Focus</animation>
-						<animation effect="zoom" start="-10,-3,228,324" end="0,24,188,267" time="250">UnFocus</animation>
+						<animation effect="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250">UnFocus</animation>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
