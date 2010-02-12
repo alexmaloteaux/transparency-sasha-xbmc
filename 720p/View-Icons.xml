@@ -170,7 +170,8 @@
 						<posy>63</posy>
 						<width>169</width>
 						<height>169</height>
-						<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]disc.png</texture>
+						<include condition="!Skin.HasSetting(SafeMode)">moviedisc-View_Icons</include>
+						<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Icons</include>
 						<animation effect="zoom" start="11,63,169,169" end="-7,45,205,205" time="250">Focus</animation>
 						<animation effect="zoom" start="-7,45,205,205" end="11,63,169,169" time="250">UnFocus</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>

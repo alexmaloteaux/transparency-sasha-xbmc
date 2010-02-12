@@ -261,4 +261,10 @@
 			<visible>!substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 	</include>
+	<include name="movienodisc-View_Icons">
+		<texture>disc.png</texture>
+	</include>
+	<include name="moviedisc-View_Icons">
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]disc.png</texture>
+	</include>
 </includes>
