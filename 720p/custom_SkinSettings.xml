@@ -104,6 +104,7 @@
 					<font>font-32</font>
 					<label>33061</label>
 					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<visible>Skin.String(SkinSettings,8)</visible>
 				</control>
@@ -7080,7 +7081,6 @@
 					<include>ButtonCommonValues</include>
 					<label>31102</label>
 					<onfocus>Skin.SetString(SkinSettings,3)</onfocus>
-					<onclick>SetFocus(8000)</onclick>
 					<onleft>399</onleft>
 					<onright>301</onright>
 					<onup>200</onup>

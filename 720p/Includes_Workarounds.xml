@@ -265,6 +265,6 @@
 		<texture>disc.png</texture>
 	</include>
 	<include name="moviedisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]disc.png</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]extras/cd1.jpg</texture>
 	</include>
 </includes>

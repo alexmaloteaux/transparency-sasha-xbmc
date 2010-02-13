@@ -675,19 +675,11 @@
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
-				<description>back image</description>
-				<posx>455</posx>
-				<posy>7</posy>
-				<height>136</height>
-				<width>136</width>
-				<texture border="7">thumb-nofocus.png</texture>
-			</control>
-			<control type="image">
 				<description>settings image</description>
 				<posx>455</posx>
-				<posy>7</posy>
-				<height>136</height>
+				<posy>3</posy>
 				<width>136</width>
+				<height>148</height>
 				<texture>homeinfo-system.png</texture>
 			</control>
 			<control type="label">
