@@ -1,5 +1,5 @@
-<window id="126">
-	<defaultcontrol always="true">450</defaultcontrol>
+<window id="40">
+	<defaultcontrol always="true">2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="multiimage">
@@ -38,7 +38,7 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<font>font-32</font>
-				<label>1023</label>
+				<label>24001</label>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -47,15 +47,15 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="list" id="450">
-				<posx>300</posx>
+			<control type="list" id="2">
+				<posx>100</posx>
 				<posy>100</posy>
 				<width>680</width>
 				<height>350</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<onup>450</onup>
-				<ondown>450</ondown>
+				<onup>2</onup>
+				<ondown>2</ondown>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="50">
@@ -74,19 +74,31 @@
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>80</posx>
+						<posx>70</posx>
 						<posy>0</posy>
-						<width>500</width>
+						<width>450</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>lightblue</textcolor>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Property(Addon.Name)</info>
+						<label>$INFO[ListItem.Property(Addon.Name)]</label>
 					</control>
 					<control type="label">
-						<posx>80</posx>
+						<posx>670</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>25</height>
+						<font>font-20</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>lightblue</textcolor>
+						<selectedcolor>blue</selectedcolor>
+						<label>$INFO[ListItem.Property(Addon.Version)]</label>
+					</control>
+					<control type="label">
+						<posx>70</posx>
 						<posy>25</posy>
 						<width>500</width>
 						<height>25</height>
@@ -94,12 +106,12 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Property(Addon.Summary)</info>
+						<label>$INFO[ListItem.Property(Addon.Summary)]</label>
 					</control>
 					<control type="image">
 						<description>Addon rating</description>
-						<posx>590</posx>
-						<posy>5</posy>
+						<posx>580</posx>
+						<posy>25</posy>
 						<width>90</width>
 						<height>18</height>
 						<aligny>center</aligny>
@@ -119,31 +131,43 @@
 						<posy>0</posy>
 						<width>680</width>
 						<height>50</height>
-						<visible>Control.HasFocus(450)</visible>
+						<visible>Control.HasFocus(2)</visible>
 						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll6</include>
+						<include>ListFocusScroll29</include>
 					</control>
 					<control type="image">
 						<posx>10</posx>
 						<posy>2</posy>
-						<width>60</width>
+						<width>50</width>
 						<height>50</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>80</posx>
+						<posx>70</posx>
 						<posy>0</posy>
-						<width>500</width>
+						<width>450</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>lightblue</textcolor>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Property(Addon.Name)</info>
+						<label>$INFO[ListItem.Property(Addon.Name)]</label>
 					</control>
 					<control type="label">
-						<posx>80</posx>
+						<posx>670</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>25</height>
+						<font>font-20</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>lightblue</textcolor>
+						<selectedcolor>blue</selectedcolor>
+						<label>$INFO[ListItem.Property(Addon.Version)]</label>
+					</control>
+					<control type="label">
+						<posx>70</posx>
 						<posy>25</posy>
 						<width>500</width>
 						<height>25</height>
@@ -151,12 +175,12 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Property(Addon.Summary)</info>
+						<label>$INFO[ListItem.Property(Addon.Summary)]</label>
 					</control>
 					<control type="image">
 						<description>Addon rating</description>
-						<posx>590</posx>
-						<posy>5</posy>
+						<posx>580</posx>
+						<posy>25</posy>
 						<width>90</width>
 						<height>18</height>
 						<aligny>center</aligny>
@@ -165,7 +189,7 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>990</posx>
+				<posx>785</posx>
 				<posy>100</posy>
 				<width>20</width>
 				<height>350</height>
@@ -174,10 +198,18 @@
 				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-				<onleft>450</onleft>
+				<onleft>2</onleft>
 				<onright>9000</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
+			</control>
+			<control type="image">
+				<posx>830</posx>
+				<posy>100</posy>
+				<width>350</width>
+				<height>350</height>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="thumb-diffuse.png">$INFO[Container(2).ListItem.Icon]</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -194,8 +226,8 @@
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
-				<label>$INFO[Container(450).ListItem.Property(Addon.Description)]</label>
+				<font>font-21</font>
+				<label>[B]$INFO[Container(2).ListItem.Property(Addon.Description)][/B]</label>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="image">
@@ -205,7 +237,7 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
-			<include>CommonFileCount2</include>
+			<include>CommonFileCount10</include>
 			<control type="group" id="9000">
 				<control type="button" id="413">
 					<description>OK button</description>
@@ -224,7 +256,7 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>415</onleft>
 					<onright>414</onright>
-					<onup>450</onup>
+					<onup>2</onup>
 					<ondown>60</ondown>
 				</control>
 				<control type="button" id="414">
@@ -244,7 +276,7 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>413</onleft>
 					<onright>415</onright>
-					<onup>450</onup>
+					<onup>2</onup>
 					<ondown>60</ondown>
 				</control>
 				<control type="button" id="415">
@@ -264,7 +296,7 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>414</onleft>
 					<onright>413</onright>
-					<onup>450</onup>
+					<onup>2</onup>
 					<ondown>60</ondown>
 				</control>
 			</control>
