@@ -279,9 +279,9 @@
 			<control type="group">
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="49">
-					<posx>80</posx>
+					<posx>100</posx>
 					<posy>140</posy>
-					<width>1200</width>
+					<width>1080</width>
 					<height>265</height>
 					<onleft>49</onleft>
 					<onright>49</onright>
@@ -293,7 +293,7 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>1166</width>
+							<width>1080</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 							<include>VisibleFadeEffect</include>
@@ -301,7 +301,7 @@
 						<control type="label">
 							<posx>160</posx>
 							<posy>0</posy>
-							<width>160</width>
+							<width>150</width>
 							<height>30</height>
 							<font>font-20</font>
 							<align>right</align>
@@ -313,7 +313,7 @@
 						<control type="label">
 							<posx>175</posx>
 							<posy>0</posy>
-							<width>980</width>
+							<width>895</width>
 							<height>30</height>
 							<font>font-20</font>
 							<align>left</align>
@@ -327,7 +327,7 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>1166</width>
+							<width>1080</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 							<include>VisibleFadeEffect</include>
@@ -335,7 +335,7 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>1166</width>
+							<width>1080</width>
 							<height>30</height>
 							<texture border="7">list-focus2.png</texture>
 							<include>VisibleFadeEffect</include>
@@ -345,7 +345,7 @@
 						<control type="label">
 							<posx>160</posx>
 							<posy>0</posy>
-							<width>160</width>
+							<width>150</width>
 							<height>30</height>
 							<font>font-20</font>
 							<align>right</align>
@@ -357,7 +357,7 @@
 						<control type="label">
 							<posx>175</posx>
 							<posy>0</posy>
-							<width>980</width>
+							<width>895</width>
 							<height>30</height>
 							<font>font-20</font>
 							<align>left</align>
