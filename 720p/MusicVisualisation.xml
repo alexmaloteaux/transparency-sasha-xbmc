@@ -128,12 +128,21 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<posx>0</posx>
 				<posy>520</posy>
 				<visible>Player.ShowInfo | Window.IsVisible(MusicOSD)</visible>
-				<include condition="Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]">cdart-disabled-musicvisualisation</include>
-				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">Visible</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300">Hidden</animation>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1700">WindowClose</animation>
+				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
+				<control type="image">
+					<description>default cd image</description>
+					<width>200</width>
+					<height>200</height>
+					<posx>130</posx>
+					<posy>-4</posy>
+					<texture diffuse="disc_mask.png">disc.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]</visible>
+				</control>
 				<control type="image">
 					<description>cover image</description>
 					<posx>32</posx>

@@ -6,7 +6,7 @@
 			<posy>4</posy>
 			<width>142</width>
 			<height>142</height>
-			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/$INFO[musicplayer.album]/cdart.png</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath]cdart.png</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspinhome</include>
 		</control>
@@ -18,20 +18,9 @@
 			<height>200</height>
 			<posx>35</posx>
 			<posy>-4</posy>
-			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/$INFO[musicplayer.album]/cdart.png</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath]cdart.png</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspin</include>
-		</control>
-	</include>
-	<include name="cdart-disabled-musicvisualisation">
-		<control type="image">
-			<description>default cd image</description>
-			<width>200</width>
-			<height>200</height>
-			<posx>130</posx>
-			<posy>-4</posy>
-			<texture diffuse="disc_mask.png">disc.png</texture>
-			<aspectratio align="bottom">keep</aspectratio>
 		</control>
 	</include>
 	<include name="clearart-dialogfullscreeninfo">
@@ -41,7 +30,7 @@
 			<posy>183</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Skin.String(TVShows_Folder_Path)]$INFO[VideoPlayer.TVShowTitle]/clearart.png</texture>
+			<texture>$INFO[Player.FolderPath]../clearart.png</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
@@ -56,7 +45,7 @@
 			<posy>63</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Skin.String(TVShows_Folder_Path)]$INFO[VideoPlayer.TVShowTitle]/clearart.png</texture>
+			<texture>$INFO[Player.FolderPath]../clearart.png</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
@@ -81,7 +70,7 @@
                         <posy>0</posy>
                         <width>1280</width>
                         <height>720</height>
-                        <imagepath background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[musicplayer.artist]/extrafanart/</imagepath>
+                        <imagepath background="true">$INFO[Player.FolderPath]../extrafanart/</imagepath>
                         <aspectratio>scale</aspectratio>
                         <timeperimage>5000</timeperimage>
                         <randomize>true</randomize>
