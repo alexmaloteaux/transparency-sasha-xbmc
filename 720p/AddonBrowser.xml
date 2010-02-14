@@ -12,47 +12,30 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<animation effect="fade" start="0" end ="100" time="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end ="0" time="300">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>black.png</texture>
-			<animation effect="fade" start="0" end ="70" time="300">WindowOpen</animation>
-			<animation effect="fade" start="70" end ="0" time="300">WindowClose</animation>
+			<posx>175</posx>
+			<posy>110</posy>
+			<width>932</width>
+			<height>501</height>
+			<texture diffuse="settings-button-diffuse.png">special://skin/images/backgrounds/addons.jpg</texture>
+			<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
+			<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
+			<include>ContentFade</include>
 		</control>
 		<control type="group">
-			<include>dialogeffect</include>
+			<include>ContentPanel</include>
+			<include>ContentFade</include>
+			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
 			<animation effect="fade" start="100" end ="0" time="300" condition="Window.IsVisible(DialogAddonSettings.xml)">Conditional</animation>
-			<control type="label" id="411">
-				<description>Heading label</description>
-				<posx>40</posx>
-				<posy>15</posy>
-				<width>1200</width>
-				<height>30</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<font>font-32</font>
-				<label>24001</label>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
-				<width>1280</width>
-				<height>2</height>
-				<texture>separator.png</texture>
-			</control>
 			<control type="list" id="2">
-				<posx>100</posx>
-				<posy>100</posy>
-				<width>680</width>
-				<height>350</height>
-				<onleft>9000</onleft>
+				<posx>200</posx>
+				<posy>135</posy>
+				<width>880</width>
+				<height>400</height>
+				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>2</onup>
 				<ondown>2</ondown>
@@ -62,7 +45,7 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>680</width>
+						<width>880</width>
 						<height>50</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
@@ -76,7 +59,7 @@
 					<control type="label">
 						<posx>70</posx>
 						<posy>0</posy>
-						<width>450</width>
+						<width>650</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>left</align>
@@ -86,9 +69,9 @@
 						<label>$INFO[ListItem.Property(Addon.Name)]</label>
 					</control>
 					<control type="label">
-						<posx>670</posx>
+						<posx>815</posx>
 						<posy>0</posy>
-						<width>150</width>
+						<width>250</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>right</align>
@@ -100,7 +83,7 @@
 					<control type="label">
 						<posx>70</posx>
 						<posy>25</posy>
-						<width>500</width>
+						<width>800</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>left</align>
@@ -110,26 +93,44 @@
 					</control>
 					<control type="image">
 						<description>Addon rating</description>
-						<posx>580</posx>
+						<posx>725</posx>
 						<posy>25</posy>
 						<width>90</width>
 						<height>18</height>
 						<aligny>center</aligny>
 						<info>Addon.Rating</info>
 					</control>
+					<control type="image">
+						<description>Installed icon</description>
+						<posx>825</posx>
+						<posy>0</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture>OverlayUnwatched.png</texture>
+						<visible>[$INFO[ListItem.Property(Addon.Disabled)]]</visible>
+					</control>
+					<control type="image">
+						<description>Installed icon</description>
+						<posx>825</posx>
+						<posy>0</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture>OverlayWatched.png</texture>
+						<visible>![$INFO[ListItem.Property(Addon.Disabled)]]</visible>
+					</control>
 				</itemlayout>
 				<focusedlayout height="50">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>680</width>
+						<width>880</width>
 						<height>50</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>680</width>
+						<width>880</width>
 						<height>50</height>
 						<visible>Control.HasFocus(2)</visible>
 						<texture border="7">list-focus2.png</texture>
@@ -145,7 +146,7 @@
 					<control type="label">
 						<posx>70</posx>
 						<posy>0</posy>
-						<width>450</width>
+						<width>650</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>left</align>
@@ -155,9 +156,9 @@
 						<label>$INFO[ListItem.Property(Addon.Name)]</label>
 					</control>
 					<control type="label">
-						<posx>670</posx>
+						<posx>815</posx>
 						<posy>0</posy>
-						<width>150</width>
+						<width>250</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>right</align>
@@ -169,7 +170,7 @@
 					<control type="label">
 						<posx>70</posx>
 						<posy>25</posy>
-						<width>500</width>
+						<width>800</width>
 						<height>25</height>
 						<font>font-20</font>
 						<align>left</align>
@@ -179,20 +180,38 @@
 					</control>
 					<control type="image">
 						<description>Addon rating</description>
-						<posx>580</posx>
+						<posx>725</posx>
 						<posy>25</posy>
 						<width>90</width>
 						<height>18</height>
 						<aligny>center</aligny>
 						<info>Addon.Rating</info>
 					</control>
+					<control type="image">
+						<description>Installed icon</description>
+						<posx>825</posx>
+						<posy>0</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture>OverlayUnwatched.png</texture>
+						<visible>[$INFO[ListItem.Property(Addon.Disabled)]]</visible>
+					</control>
+					<control type="image">
+						<description>Installed icon</description>
+						<posx>825</posx>
+						<posy>0</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture>OverlayWatched.png</texture>
+						<visible>![$INFO[ListItem.Property(Addon.Disabled)]]</visible>
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>785</posx>
-				<posy>100</posy>
+				<posx>1083</posx>
+				<posy>135</posy>
 				<width>20</width>
-				<height>350</height>
+				<height>400</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
@@ -204,24 +223,16 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
-				<posx>830</posx>
-				<posy>100</posy>
-				<width>350</width>
-				<height>350</height>
-				<aspectratio>keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[Container(2).ListItem.Icon]</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>490</posy>
-				<width>1280</width>
+				<posx>200</posx>
+				<posy>550</posy>
+				<width>880</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label">
 				<description>Page label</description>
 				<posx>200</posx>
-				<posy>515</posy>
+				<posy>565</posy>
 				<width>880</width>
 				<height>30</height>
 				<align>center</align>
@@ -229,76 +240,6 @@
 				<font>font-21</font>
 				<label>[B]$INFO[Container(2).ListItem.Property(Addon.Description)][/B]</label>
 				<wrapmultiline>true</wrapmultiline>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>565</posy>
-				<width>1280</width>
-				<height>2</height>
-				<texture>separator.png</texture>
-			</control>
-			<include>CommonFileCount10</include>
-			<control type="group" id="9000">
-				<control type="button" id="413">
-					<description>OK button</description>
-					<posx>340</posx>
-					<posy>647</posy>
-					<width>200</width>
-					<height>35</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>186</label>
-					<texturefocus border="7">button-focus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<onleft>415</onleft>
-					<onright>414</onright>
-					<onup>2</onup>
-					<ondown>60</ondown>
-				</control>
-				<control type="button" id="414">
-					<description>Cancel button</description>
-					<posx>540</posx>
-					<posy>647</posy>
-					<width>200</width>
-					<height>35</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>222</label>
-					<texturefocus border="7">button-focus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<onleft>413</onleft>
-					<onright>415</onright>
-					<onup>2</onup>
-					<ondown>60</ondown>
-				</control>
-				<control type="button" id="415">
-					<description>Add-ons button</description>
-					<posx>740</posx>
-					<posy>647</posy>
-					<width>200</width>
-					<height>35</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>23000</label>
-					<texturefocus border="7">button-focus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<onleft>414</onleft>
-					<onright>413</onright>
-					<onup>2</onup>
-					<ondown>60</ondown>
-				</control>
 			</control>
 		</control>
 	</controls>

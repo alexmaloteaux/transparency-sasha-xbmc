@@ -243,6 +243,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -274,6 +276,8 @@
 						<onright>3</onright>
 						<onup>10</onup>
 						<ondown>6</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -293,6 +297,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -324,6 +330,8 @@
 						<onright>4</onright>
 						<onup>11</onup>
 						<ondown>7</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -343,6 +351,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -374,6 +384,8 @@
 						<onright>5</onright>
 						<onup>12</onup>
 						<ondown>8</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -393,6 +405,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -424,6 +438,8 @@
 						<onright>6</onright>
 						<onup>13</onup>
 						<ondown>9</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -443,6 +459,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -474,6 +492,8 @@
 						<onright>7</onright>
 						<onup>2</onup>
 						<ondown>10</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -493,6 +513,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -524,6 +546,8 @@
 						<onright>8</onright>
 						<onup>3</onup>
 						<ondown>11</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -543,6 +567,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -574,6 +600,8 @@
 						<onright>9</onright>
 						<onup>4</onup>
 						<ondown>12</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -593,6 +621,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -624,6 +654,8 @@
 						<onright>10</onright>
 						<onup>5</onup>
 						<ondown>13</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -643,6 +675,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -674,6 +708,8 @@
 						<onright>11</onright>
 						<onup>6</onup>
 						<ondown>2</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -693,6 +729,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -724,6 +762,8 @@
 						<onright>12</onright>
 						<onup>7</onup>
 						<ondown>3</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -743,6 +783,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -774,6 +816,8 @@
 						<onright>13</onright>
 						<onup>8</onup>
 						<ondown>4</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -793,6 +837,8 @@
 						<width>250</width>
 						<height>159</height>
 						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -824,6 +870,8 @@
 						<onright>2</onright>
 						<onup>9</onup>
 						<ondown>5</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
 				</control>
 			</control>
