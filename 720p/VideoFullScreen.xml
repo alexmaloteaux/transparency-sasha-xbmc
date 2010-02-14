@@ -38,5 +38,19 @@
 			<font>font-19</font>
 			<include>VisibleFadeEffect</include>
 		</control>
+		<control type="selectbutton" id="503">
+			<description>TV Channel Group Select Button</description>
+			<posx>490</posx>
+			<posy>335</posy>
+			<align>center</align>
+			<font>font-18</font>
+			<texturefocus border="7">button-focus.png</texturefocus>
+			<texturenofocus border="7">button-nofocus.png</texturenofocus>
+			<onup>500</onup>
+			<ondown>500</ondown>
+			<onleft>503</onleft>
+			<onright>503</onright>
+			<include>VisibleFadeEffect</include>
+		</control>
 	</controls>
 </window>
