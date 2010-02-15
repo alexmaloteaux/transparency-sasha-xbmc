@@ -390,7 +390,7 @@
 			<width>1280</width>
 			<height>81</height>
 			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-			<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
+			<visible>[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons)] + Skin.HasSetting(Enable_TVShows_Media_Flags)]</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -401,7 +401,7 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-			<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
+			<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Media_Flags)]</visible>
 			<include>T-Level</include>
 		</control>
 	</include>

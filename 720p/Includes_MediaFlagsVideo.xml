@@ -358,7 +358,7 @@
 			<width>93</width>
 			<height>63</height>
 			<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>!IsEmpty(ListItem.Studio) + Container.Content(Movies)</visible>
+			<visible>!IsEmpty(ListItem.Studio) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 		</control>
 	<!-- Studio MusicVideos -->
 		<control type="image">

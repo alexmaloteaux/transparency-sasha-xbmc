@@ -538,7 +538,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(59) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(59) + [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)]</visible>
 			<posx>200</posx>
 			<posy>110</posy>
 			<control type="image">
@@ -592,7 +592,7 @@
 			<visible>Control.IsVisible(59) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			<posx>200</posx>
 			<posy>110</posy>
-			<animation effect="slide" start="0,0" end="0,-105" time="0" condition="Container.Content(Seasons)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,252" time="0" condition="[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			<control type="label">
 				<description>Episodes txt</description>
 				<posx>215</posx>
@@ -680,35 +680,61 @@
 				<width>440</width>
 				<height>4</height>
 				<texture>separator.png</texture>
+				<animation effect="slide" start="0,0" end="0,-124" time="0" condition="[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(59) + Container.Content(Seasons)</visible>
-			<posx>200</posx>
-			<posy>244</posy>
+			<visible>Control.IsVisible(59) + [[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]</visible>
+			<posx>302</posx>
+			<posy>140</posy>
 			<control type="image">
-				<posx>108</posx>
-				<posy>31</posy>
-				<width>224</width>
-				<height>320</height>
+				<posx>28</posx>
+				<posy>14</posy>
+				<width>200</width>
+				<height>295</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>120</posx>
-				<posy>31</posy>
-				<width>224</width>
-				<height>320</height>
+				<posx>28</posx>
+				<posy>14</posy>
+				<width>200</width>
+				<height>295</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>89</posx>
-				<posy>27</posy>
-				<width>262</width>
-				<height>328</height>
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>233</width>
+				<height>304</height>
 				<texture>dvdcase.png</texture>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>28</posx>
+				<posy>318</posy>
+				<width>200</width>
+				<height>295</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>28</posx>
+				<posy>318</posy>
+				<width>200</width>
+				<height>295</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>314</posy>
+				<width>233</width>
+				<height>304</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
@@ -724,7 +750,7 @@
 			<pagecontrol>9999999999</pagecontrol>
 			<label>$INFO[ListItem.Plot]</label>
 			<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<visible>Control.IsVisible(59) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(59) + Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)</visible>
 		</control>
 	</include>
 	<include name="MediaInfo-Music">

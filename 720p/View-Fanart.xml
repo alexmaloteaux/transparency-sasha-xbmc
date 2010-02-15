@@ -411,7 +411,22 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>!Window.IsVisible(VideoFiles)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
+			</control>
+			<control type="label">
+				<posx>257</posx>
+				<posy>535</posy>
+				<width>600</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Title]</label>
+				<scrollspeed>0</scrollspeed>
+				<visible>Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -426,7 +441,22 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Episode,$LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
 				<scrollspeed>0</scrollspeed>
-				<visible>!Window.IsVisible(VideoFiles)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
+			</control>
+			<control type="label">
+				<posx>257</posx>
+				<posy>565</posy>
+				<width>600</width>
+				<height>30</height>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Episode,$LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
+				<scrollspeed>0</scrollspeed>
+				<visible>Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
@@ -441,12 +471,34 @@
 				<pagecontrol>9999999999</pagecontrol>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Window.IsVisible(VideoFiles)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
+			</control>			<control type="textbox">
+				<description>Plot Value for TVShow</description>
+				<posx>257</posx>
+				<posy>600</posy>
+				<width>600</width>
+				<height>85</height>
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>9999999999</pagecontrol>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>38</posx>
+				<posy>418</posy>
+				<width>198</width>
+				<height>288</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
 			<control type="image">
 				<posx>25</posx>
 				<posy>532</posy>
@@ -464,7 +516,18 @@
 				<width>198</width>
 				<height>288</height>
 				<texture>$INFO[ListItem.Icon]</texture>
-				<visible>stringcompare(ListItem.Label,..)</visible>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>-6</posx>
+				<posy>398</posy>
+				<width>263</width>
+				<height>328</height>
+				<texture>dvdcase.png</texture>
+				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
+				<bordersize>16</bordersize>
+				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -484,7 +547,7 @@
 				<width>567</width>
 				<height>126</height>
 				<texture border="14">banner-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="image">
 				<posx>286</posx>
@@ -493,7 +556,7 @@
 				<height>100</height>
 				<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
 				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png">$INFO[Container.TVshowThumb]</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
 				<posx>240</posx>
@@ -508,6 +571,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<scrollspeed>0</scrollspeed>
+				<animation effect="slide" start="0,0" end="0,35" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -523,6 +587,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Episode,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[20360]: [/UPPERCASE][/B][/COLOR]]</label>
 				<scrollspeed>0</scrollspeed>
+				<animation effect="slide" start="0,0" end="0,-35" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>

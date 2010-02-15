@@ -856,7 +856,7 @@
 		<control type="wraplist" id="55">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Container.Content(Movies)</visible>
+			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<posx>490</posx>
 			<posy>260</posy>
 			<width>306</width>
@@ -893,7 +893,7 @@
 				<width>1280</width>
 				<height>81</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
+				<visible>[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons)] + Skin.HasSetting(Enable_TVShows_Media_Flags)]</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay12</include>
 			<control type="image">
@@ -902,7 +902,7 @@
 				<width>1280</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
+				<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Media_Flags)]</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>
@@ -911,7 +911,16 @@
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
 				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+			</control>
+			<control type="image">
+				<posx>110</posx>
+				<posy>27</posy>
+				<width>30</width>
+				<height>30</height>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 			</control>
 			<control type="label">
 				<posx>140</posx>
@@ -945,7 +954,30 @@
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>!Window.IsVisible(VideoFiles)</visible>
+				<visible>Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+			</control>
+			<control type="grouplist">
+				<posx>355</posx>
+				<posy>60</posy>
+				<width>577</width>
+				<height>40</height>
+				<itemgap>13</itemgap>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
+				<visible>Container.Content(TVShows) + !Window.IsVisible(VideoFiles)</visible>
+			</control>
+			<control type="label">
+				<posx>355</posx>
+				<posy>60</posy>
+				<width>577</width>
+				<height>40</height>
+				<label>[B]$INFO[ListItem.Episode,$LOCALIZE[20360] : ][/B]</label>
+				<textcolor>lightblue</textcolor>
+				<font>font-21</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<visible>Container.Content(Seasons)</visible>
 			</control>
 		</control>
 	</include>

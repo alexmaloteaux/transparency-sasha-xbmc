@@ -891,7 +891,7 @@
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-				<visible>!IsEmpty(Listitem.trailer) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
+				<visible>!IsEmpty(Listitem.Trailer) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 			</control>
 			<control type="button" id="7008">
 				<posx>1142</posx>
@@ -907,7 +907,7 @@
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
-				<visible>!IsEmpty(Listitem.trailer) + Skin.HasSetting(Fullscreen_Trailer)</visible>
+				<visible>!IsEmpty(Listitem.Trailer) + Skin.HasSetting(Fullscreen_Trailer)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>355</posx>
