@@ -1977,6 +1977,7 @@
 	</include>
 	<include name="Trailer-YouTrailer">
 		<onclick>RunScript(special://home/scripts/YouTrailer/default.py,1)</onclick>
+		<visible>!Window.IsVisible(VideoFiles)</visible>
 	</include>
 	<include name="Window_OpenClose_Left_Panel_Position_Normal">
 		<posx>-178</posx>

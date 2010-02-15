@@ -43,13 +43,14 @@
 		<control type="group">
 			<include>ContentFade</include>
 			<include condition="!Skin.HasSetting(Hide-Videos-CoverFlow)">CoverFlow-Movies</include>			<!-- view id = 55 -->
+			<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies</include>				<!-- view id = 57 -->
 			<include condition="!Skin.HasSetting(Hide-Videos-Slide)">Slide</include>				<!-- view id = 596 -->
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include>ContentFade</include>
 			<control type="group">
-				<animation effect="slide" start="0,0" end="1105,0" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(55) | Control.IsVisible(596)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="1105,0" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(596)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="700,257" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
@@ -59,7 +60,6 @@
 				<include condition="!Skin.HasSetting(Hide-Videos-List)">List-Videos</include>			<!-- view id = 51 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-Thumbnail)">Thumbnail-Videos</include>		<!-- view id = 53 -->
 				<include>Fanart-Videos</include>								<!-- view id = 50 -->
-				<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies</include>			<!-- view id = 57 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-WideIcon)">WideIcon-VideoFiles</include>	<!-- view id = 593 -->
 				<include>AllViewCommonPageControls</include>
 				<include>ScrollOffsetLabel</include>
