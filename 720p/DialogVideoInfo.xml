@@ -228,8 +228,8 @@
 				<include condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				<animation effect="slide" start="0,0" end="-110,8" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Control.IsVisible(11)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Control.IsVisible(1111)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Control.IsVisible(11) | Control.IsVisible(1111)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Control.IsVisible(1112)">Conditional</animation>
 			</control>
 			<control type="group" id="1110">
 				<control type="button" id="11">
@@ -241,14 +241,31 @@
 					<font>-</font>
 					<texturefocus>trailer-small-focus.png</texturefocus>
 					<texturenofocus>trailer-small-nofocus.png</texturenofocus>
-					<onleft>1111</onleft>
+					<onleft>1112</onleft>
 					<onright>1111</onright>
 					<onup>5</onup>
 					<ondown>50</ondown>
-					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1111)">Conditional</animation>
-					<visible>!IsEmpty(Listitem.trailer)</visible>
+					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1112)">Conditional</animation>
+					<visible>!Skin.HasSetting(YouTrailer) + !IsEmpty(Listitem.trailer)</visible>
 				</control>
 				<control type="button" id="1111">
+					<posx>1095</posx>
+					<posy>475</posy>
+					<width>59</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>trailer-small-focus.png</texturefocus>
+					<texturenofocus>trailer-small-nofocus.png</texturenofocus>
+					<onleft>11</onleft>
+					<onright>1112</onright>
+					<onup>5</onup>
+					<ondown>50</ondown>
+					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1112)">Conditional</animation>
+					<onclick>RunScript(special://home/scripts/YouTrailer/default.py,1)</onclick>
+					<visible>Skin.HasSetting(YouTrailer)</visible>
+				</control>
+				<control type="button" id="1112">
 					<posx>1194</posx>
 					<posy>475</posy>
 					<width>59</width>
@@ -257,7 +274,7 @@
 					<font>-</font>
 					<texturefocus>theater-small-focus.png</texturefocus>
 					<texturenofocus>theater-small-nofocus.png</texturenofocus>
-					<onleft>11</onleft>
+					<onleft>1111</onleft>
 					<onright>11</onright>
 					<onup>5</onup>
 					<ondown>50</ondown>

@@ -2664,6 +2664,11 @@
 						<onclick>Skin.ToggleSetting(hometheater)</onclick>
 						<selected>Skin.HasSetting(hometheater)</selected>
 					</control>
+					<control type="radiobutton" id="514">
+						<label>$LOCALIZE[31131]</label>
+						<onclick>Skin.ToggleSetting(YouTrailer)</onclick>
+						<selected>Skin.HasSetting(YouTrailer)</selected>
+					</control>
 				</control>
 				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>

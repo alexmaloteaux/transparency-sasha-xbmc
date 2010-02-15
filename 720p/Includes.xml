@@ -1967,6 +1967,17 @@
 	<include name="ToggleButtonWide">
 		<posx>231</posx>
 	</include>
+	<include name="Trailer-BuiltIn-FullScreen">
+		<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+		<visible>!IsEmpty(Listitem.Trailer)</visible>
+	</include>
+	<include name="Trailer-BuiltIn-Preview">
+		<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+		<visible>!IsEmpty(Listitem.Trailer)</visible>
+	</include>
+	<include name="Trailer-YouTrailer">
+		<onclick>RunScript(special://home/scripts/YouTrailer/default.py,1)</onclick>
+	</include>
 	<include name="Window_OpenClose_Left_Panel_Position_Normal">
 		<posx>-178</posx>
 		<posy>110</posy>

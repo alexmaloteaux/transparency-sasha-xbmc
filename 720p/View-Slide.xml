@@ -890,24 +890,9 @@
 				<ondown>596</ondown>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-				<visible>!IsEmpty(Listitem.Trailer) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
-			</control>
-			<control type="button" id="7008">
-				<posx>1142</posx>
-				<posy>34</posy>
-				<width>45</width>
-				<height>30</height>
-				<label>-</label>
-				<font>-</font>
-				<texturefocus>trailer-small-focus.png</texturefocus>
-				<texturenofocus>trailer-small-nofocus.png</texturenofocus>
-				<onup>9000</onup>
-				<ondown>596</ondown>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
-				<visible>!IsEmpty(Listitem.Trailer) + Skin.HasSetting(Fullscreen_Trailer)</visible>
+				<include condition="!Skin.HasSetting(YouTrailer) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
+				<include condition="!Skin.HasSetting(YouTrailer) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
+				<include condition="Skin.HasSetting(YouTrailer)">Trailer-YouTrailer</include>
 			</control>
 			<control type="grouplist">
 				<posx>355</posx>
