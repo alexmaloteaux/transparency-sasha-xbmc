@@ -1659,6 +1659,22 @@
 				<width>23</width>
 				<height>25</height>
 				<label>-</label>
+				<texturefocus>smallplayer-love-focus.png</texturefocus>
+				<texturenofocus>smallplayer-love-nofocus.png</texturenofocus>
+				<onclick>XBMC.LastFM.Love</onclick>
+				<onleft>602</onleft>
+				<onright>605</onright>
+				<onup>610</onup>
+				<ondown>611</ondown>
+				<hitrect x="92" y="-10" w="23" h="45" />
+				<visible>LastFM.RadioPlaying</visible>
+			</control>
+			<control type="button" id="608">
+				<posx>92</posx>
+				<posy>0</posy>
+				<width>23</width>
+				<height>25</height>
+				<label>-</label>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>XBMC.PlayerControl(Repeat)</onclick>
@@ -1667,6 +1683,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<hitrect x="92" y="-10" w="23" h="45" />
+				<visible>!LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -1674,8 +1691,7 @@
 				<width>23</width>
 				<height>25</height>
 				<texture>smallplayer-repeat-nofocus.png</texture>
-				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
-				<visible>!Control.HasFocus(608)</visible>
+				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + !Control.HasFocus(608) + !LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -1683,8 +1699,7 @@
 				<width>23</width>
 				<height>25</height>
 				<texture>smallplayer-repeat-focus.png</texture>
-				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
-				<visible>Control.HasFocus(608)</visible>
+				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + Control.HasFocus(608) + !LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -1692,8 +1707,7 @@
 				<width>23</width>
 				<height>25</height>
 				<texture>smallplayer-repeatone-nofocus.png</texture>
-				<visible>Playlist.IsRepeatOne</visible>
-				<visible>!Control.HasFocus(608)</visible>
+				<visible>Playlist.IsRepeatOne + !Control.HasFocus(608) + !LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -1701,8 +1715,7 @@
 				<width>23</width>
 				<height>25</height>
 				<texture>smallplayer-repeatone-focus.png</texture>
-				<visible>Playlist.IsRepeatOne</visible>
-				<visible>Control.HasFocus(608)</visible>
+				<visible>Playlist.IsRepeatOne + Control.HasFocus(608) + !LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -1710,8 +1723,7 @@
 				<width>23</width>
 				<height>25</height>
 				<texture>smallplayer-repeatall-nofocus.png</texture>
-				<visible>Playlist.IsRepeat</visible>
-				<visible>!Control.HasFocus(608)</visible>
+				<visible>Playlist.IsRepeat + !Control.HasFocus(608) + !LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
 				<posx>92</posx>
@@ -1719,8 +1731,23 @@
 				<width>23</width>
 				<height>25</height>
 				<texture>smallplayer-repeatall-focus.png</texture>
-				<visible>Playlist.IsRepeat</visible>
-				<visible>Control.HasFocus(608)</visible>
+				<visible>Playlist.IsRepeat + Control.HasFocus(608) + !LastFM.RadioPlaying</visible>
+			</control>
+			<control type="button" id="605">
+				<posx>115</posx>
+				<posy>0</posy>
+				<width>23</width>
+				<height>25</height>
+				<label>-</label>
+				<texturefocus>smallplayer-hate-focus.png</texturefocus>
+				<texturenofocus>smallplayer-hate-nofocus.png</texturenofocus>
+				<onclick>XBMC.LastFM.Ban</onclick>
+				<onleft>608</onleft>
+				<onright>606</onright>
+				<onup>610</onup>
+				<ondown>611</ondown>
+				<hitrect x="115" y="-10" w="23" h="45" />
+				<visible>LastFM.RadioPlaying</visible>
 			</control>
 			<control type="togglebutton" id="605">
 				<posx>115</posx>
@@ -1739,6 +1766,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<hitrect x="115" y="-10" w="23" h="45" />
+				<visible>!LastFM.RadioPlaying</visible>
 			</control>
 			<control type="button" id="606">
 				<posx>138</posx>
