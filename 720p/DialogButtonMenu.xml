@@ -371,13 +371,13 @@
 			<control type="label">
 				<description>Label control</description>
 				<posx>240</posx>
-				<posy>-72</posy>
+				<posy>-73</posy>
 				<width>800</width>
 				<height>45</height>
 				<label>$LOCALIZE[20125] $INFO[system.profilename]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>lightgrey</textcolor>
+				<textcolor>lightblue</textcolor>
 				<font>font-25</font>
 				<visible>System.HasLoginscreen + System.Loggedon</visible>
 			</control>
