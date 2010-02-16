@@ -63,6 +63,7 @@
 			</control>
 			<control type="button" id="3">
 				<description>Default Button</description>
+				<width>880</width>
 				<height>30</height>
 				<font>font-20</font>
 				<texturefocus border="7">list-focus.png</texturefocus>
@@ -70,6 +71,7 @@
 			</control>
 			<control type="radiobutton" id="4">
 				<description>Default RadioButton</description>
+				<width>880</width>
 				<height>30</height>
 				<font>font-20</font>
 				<texturefocus border="7">list-focus.png</texturefocus>
@@ -77,6 +79,7 @@
 			</control>
 			<control type="spincontrolex" id="5">
 				<description>Default spincontrolex</description>
+				<width>880</width>
 				<height>30</height>
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
@@ -92,6 +95,7 @@
 			<control type="label" id="7">
 				<description>separator label</description>
 				<label></label>
+				<width>880</width>
 				<height>25</height>
 				<font>font-20</font>
 				<align>center</align>

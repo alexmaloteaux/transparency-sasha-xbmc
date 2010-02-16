@@ -84,6 +84,7 @@
 				<description>current feels like label</description>
 				<posx>140</posx>
 				<posy>340</posy>
+				<width>135</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>right</align>
@@ -95,6 +96,7 @@
 				<description>current dew label</description>
 				<posx>140</posx>
 				<posy>370</posy>
+				<width>135</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>right</align>
@@ -106,6 +108,7 @@
 				<description>current humidity label</description>
 				<posx>140</posx>
 				<posy>400</posy>
+				<width>135</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>right</align>
@@ -117,6 +120,7 @@
 				<description>current UV Index label</description>
 				<posx>140</posx>
 				<posy>430</posy>
+				<width>135</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>right</align>
@@ -128,6 +132,7 @@
 				<description>current Wind label</description>
 				<posx>140</posx>
 				<posy>460</posy>
+				<width>135</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>right</align>
@@ -139,6 +144,7 @@
 				<description>current feels like Value</description>
 				<posx>160</posx>
 				<posy>340</posy>
+				<width>300</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>left</align>
@@ -150,6 +156,7 @@
 				<description>current dew Value</description>
 				<posx>160</posx>
 				<posy>370</posy>
+				<width>300</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>left</align>
@@ -161,6 +168,7 @@
 				<description>current humidity Value</description>
 				<posx>160</posx>
 				<posy>400</posy>
+				<width>300</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>left</align>
@@ -172,6 +180,7 @@
 				<description>current UV Index Value</description>
 				<posx>160</posx>
 				<posy>430</posy>
+				<width>300</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>left</align>
@@ -183,6 +192,7 @@
 				<description>current Wind Value</description>
 				<posx>160</posx>
 				<posy>460</posy>
+				<width>300</width>
 				<height>35</height>
 				<font>font-20</font>
 				<align>left</align>
@@ -220,47 +230,27 @@
 				<description>high label</description>
 				<posx>40</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[419] :</label>
+				<label>$LOCALIZE[419] :   [COLOR=white]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>high value</description>
-				<posx>110</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>low label</description>
 				<posx>220</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[418] :</label>
+				<label>$LOCALIZE[418] :   [COLOR=white]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>low value</description>
-				<posx>290</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -304,47 +294,27 @@
 				<description>high label</description>
 				<posx>40</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[419] :</label>
+				<label>$LOCALIZE[419] :   [COLOR=white]$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>high value</description>
-				<posx>110</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>low label</description>
 				<posx>220</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[418] :</label>
+				<label>$LOCALIZE[418] :   [COLOR=white]$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>low value</description>
-				<posx>290</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -388,47 +358,27 @@
 				<description>high label</description>
 				<posx>40</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[419] :</label>
+				<label>$LOCALIZE[419] :   [COLOR=white]$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>high value</description>
-				<posx>110</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>low label</description>
 				<posx>220</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[418] :</label>
+				<label>$LOCALIZE[418] :   [COLOR=white]$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>low value</description>
-				<posx>290</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -472,47 +422,27 @@
 				<description>high label</description>
 				<posx>40</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[419] :</label>
+				<label>$LOCALIZE[419] :   [COLOR=white]$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>high value</description>
-				<posx>110</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>low label</description>
 				<posx>220</posx>
 				<posy>50</posy>
+				<width>170</width>
 				<height>20</height>
 				<font>font-20</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[418] :</label>
+				<label>$LOCALIZE[418] :   [COLOR=white]$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
 				<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-				<description>low value</description>
-				<posx>290</posx>
-				<posy>50</posy>
-				<height>20</height>
-				<label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
-				<font>font-20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -530,8 +460,8 @@
 		<control type="image">
 			<posx>639</posx>
 			<posy>112</posy>
-			<height>497</height>
 			<width>2</width>
+			<height>497</height>
 			<texture>black.png</texture>
 		</control>
 	</include>
@@ -564,8 +494,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Day0.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -577,8 +507,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<info>Window.Property(Day0.OutlookIcon)</info>
 			<aspectratio align="right">keep</aspectratio>
 		</control>
@@ -588,8 +518,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -601,8 +531,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<info>Window.Property(Day1.OutlookIcon)</info>
 			<aspectratio align="right">keep</aspectratio>
 		</control>
@@ -612,8 +542,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -625,8 +555,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<info>Window.Property(Day2.OutlookIcon)</info>
 			<aspectratio align="right">keep</aspectratio>
 		</control>
@@ -636,8 +566,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<imagepath>special://skin/images/foldericons/weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -649,8 +579,8 @@
 			<description>day icon</description>
 			<posx>370</posx>
 			<posy>40</posy>
-			<height>80</height>
 			<width>80</width>
+			<height>80</height>
 			<info>Window.Property(Day3.OutlookIcon)</info>
 			<aspectratio align="right">keep</aspectratio>
 		</control>
