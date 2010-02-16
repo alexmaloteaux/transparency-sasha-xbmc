@@ -292,14 +292,29 @@
 			<animation effect="slide" start="280,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="280,0" time="300">WindowClose</animation> 
 			<include condition="!Skin.HasSetting(SafeMode)">clearart-dialogseekbar</include>
-			<control type="image">
-				<posx>1</posx>
-				<posy>63</posy>
-				<width>279</width>
-				<height>157</height>
-				<aspectratio align="right" aligny="bottom" scalediffuse="true">keep</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.cover]</texture>
-				<visible>Player.Paused + [!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+			<control type="group">
+				<posx>30</posx>
+				<posy>-25</posy>
+				<width>370</width>
+				<height>190</height>
+				<camera x="150" y="80" />
+				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
+				<control type="image">
+					<posx>-52</posx>
+					<posy>44</posy>
+					<width>279</width>
+					<height>157</height>
+					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<visible>Player.Paused + [!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+				</control>
+				<control type="image">
+					<posx>-100</posx>
+					<posy>30</posy>
+					<width>370</width>
+					<height>190</height>
+					<texture>movie-frame.png</texture>
+					<visible>Player.Paused + [!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+				</control>
 			</control>
 			<control type="image">
 				<posx>142</posx>

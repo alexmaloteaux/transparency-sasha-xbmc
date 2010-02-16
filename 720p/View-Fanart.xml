@@ -270,11 +270,26 @@
 				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
-				<include condition="!Skin.HasSetting(YouTrailer) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
-				<include condition="!Skin.HasSetting(YouTrailer) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
-				<include condition="Skin.HasSetting(YouTrailer)">Trailer-YouTrailer</include>
+				<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(Fullscreen_Trailer) + !Window.IsVisible(VideoFiles)</visible>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
+			</control>
+			<control type="button" id="7005">
+				<posx>776</posx>
+				<posy>596</posy>
+				<width>60</width>
+				<height>41</height>
+				<label>-</label>
+				<font>-</font>
+				<texturefocus>trailer-small-focus.png</texturefocus>
+				<texturenofocus>trailer-small-nofocus.png</texturenofocus>
+				<onleft>9000</onleft>
+				<onright>50</onright>
+				<onup>7005</onup>
+				<ondown>7005</ondown>
+				<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(VideoPlaylist) + Skin.HasSetting(Fullscreen_Trailer) + !Window.IsVisible(VideoFiles)</visible>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !Window.IsVisible(VideoFiles)</visible>
