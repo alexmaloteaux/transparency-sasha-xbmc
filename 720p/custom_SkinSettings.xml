@@ -3253,7 +3253,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="713">
-						<label>$LOCALIZE[3] - $LOCALIZE[31031]</label>
+						<label>$LOCALIZE[2] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-FullList)</selected>
 					</control>
@@ -3283,7 +3283,7 @@
 						<selected>Skin.HasSetting(Hide-Music-Icons)</selected>
 					</control>
 					<control type="radiobutton" id="719">
-						<label>$LOCALIZE[3] - $LOCALIZE[31038]</label>
+						<label>$LOCALIZE[2] - $LOCALIZE[31038]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Wall)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Wall)</selected>
 					</control>
@@ -3293,7 +3293,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="721">
-						<label>$LOCALIZE[3] - $LOCALIZE[31031]</label>
+						<label>$LOCALIZE[1] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-FullList)</selected>
 					</control>
@@ -3323,7 +3323,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="727">
-						<label>$LOCALIZE[3] - $LOCALIZE[31031]</label>
+						<label>$LOCALIZE[0] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-FullList)</selected>
 					</control>
@@ -3343,7 +3343,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="731">
-						<label>$LOCALIZE[3] - $LOCALIZE[31031]</label>
+						<label>$LOCALIZE[247] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Scripts-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-FullList)</selected>
 					</control>
