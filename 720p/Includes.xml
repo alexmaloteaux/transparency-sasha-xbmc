@@ -1909,25 +1909,25 @@
 			<animation effect="slide" end="235,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(59)">Conditional</animation>
 			<animation effect="slide" end="-1215,0" time="0" condition="Control.IsVisible(592)">Conditional</animation>
 			<animation effect="slide" end="-1160,60" time="0" condition="Control.IsVisible(597)">Conditional</animation>
-			<posx>610</posx>
-			<posy>315</posy>
-			<width>330</width>
-			<height>232</height>
+			<posx>602</posx>
+			<posy>322</posy>
+			<width>76</width>
+			<height>76</height>
 			<control type="image">
-				<posx>-3</posx>
-				<posy>-3</posy>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>76</width>
 				<height>76</height>
 				<texture border="8">sort.png</texture>
 			</control>
 			<control type="label">
-				<posx>-3</posx>
-				<posy>-2</posy>
-				<width>70</width>
-				<height>70</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>76</width>
+				<height>76</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>[I][B]$INFO[ListItem.SortLetter][/B][/I]</label>
+				<label>[I][B]$INFO[ListItem.SortLetter][/B][/I] </label>
 				<textcolor>white</textcolor>
 				<font>font-30</font>
 			</control>
