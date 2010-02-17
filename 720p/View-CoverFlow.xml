@@ -936,15 +936,6 @@
 				<label>[B]$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)][/B]</label>
 				<scrollspeed>0</scrollspeed>
 			</control>
-			<control type="image">
-				<posx>1142</posx>
-				<posy>34</posy>
-				<width>45</width>
-				<height>30</height>
-				<aspectratio>keep</aspectratio>
-				<texture>trailer-small-nofocus.png</texture>
-				<visible>!IsEmpty(ListItem.Trailer)</visible>
-			</control>
 			<control type="grouplist">
 				<posx>355</posx>
 				<posy>60</posy>
