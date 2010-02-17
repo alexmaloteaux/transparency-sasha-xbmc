@@ -156,7 +156,7 @@
 					<onleft>50</onleft>
 					<onright>4</onright>
 					<onup>2</onup>
-					<ondown>99</ondown>
+					<ondown>5</ondown>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
@@ -167,24 +167,23 @@
 					<onleft>3</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
-					<ondown>99</ondown>
+					<ondown>5</ondown>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ToggleButtonNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ToggleButtonWide</include>
 				</control>
-				<control type="radiobutton" id="99">
+				<control type="radiobutton" id="5">
 					<description>Library button</description>
 					<posx>0</posx>
 					<posy>90</posy>
 					<label>$LOCALIZE[29800]</label>
-					<onclick>ReplaceWindow(MyVideoFiles)</onclick>
-					<selected>Window.IsVisible(MyVideoLibrary)</selected>
 					<include>ButtonCommonValues</include>
+					<selected>Window.IsVisible(MyVideoLibrary)</selected>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>3</onup>
-					<ondown>14</ondown>
+					<ondown>10</ondown>
 				</control>
-				<control type="radiobutton" id="14">
+				<control type="button" id="10">
 					<description>Watched Toggle</description>
 					<posx>0</posx>
 					<posy>135</posy>
@@ -192,7 +191,7 @@
 					<label>20367</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>99</onup>
+					<onup>5</onup>
 					<ondown>8</ondown>
 				</control>
 				<control type="button" id="8">
@@ -203,7 +202,7 @@
 					<label>137</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>14</onup>
+					<onup>10</onup>
 					<ondown>19</ondown>
 				</control>
 				<control type="radiobutton" id="19">
@@ -263,7 +262,7 @@
 				<control type="group">
 					<posx>0</posx>
 					<posy>405</posy>
-					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(99)">conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(11)">conditional</animation>
 					<include>CommonNowPlaying_Controls</include>
 				</control>
@@ -278,7 +277,7 @@
 					<posy>405</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
-					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(99)">conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(5)">conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(11)">conditional</animation>
 					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
