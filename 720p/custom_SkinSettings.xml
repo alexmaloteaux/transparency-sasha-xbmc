@@ -4595,6 +4595,15 @@
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8112">
+						<description>Menu Settings Sub Addons</description>
+						<label>[B]$LOCALIZE[31550][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Addons)</onclick>
+						<selected>Skin.HasSetting(Menu_Settings_Sub_Addons)</selected>
+						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8113">
 						<description>Menu Settings Sub System Info</description>
 						<label>[B]$LOCALIZE[130][/B]</label>
 						<include>ButtonMenuSettings2</include>

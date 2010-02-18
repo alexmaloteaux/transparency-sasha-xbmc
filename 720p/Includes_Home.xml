@@ -2382,7 +2382,7 @@
 					<item id="8108">
 						<description>Menu Movies Sub Sets</description>
 						<label>$LOCALIZE[20434]</label>
-						<onclick>ActivateWindow(VideoLibrary,moviesets,return)</onclick>
+						<onclick>ActivateWindow(VideoLibrary,videodb://1/7/,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Sets)</visible>
 					</item>
 					<item id="8109">
@@ -2865,7 +2865,7 @@
 					<item id="8103">
 						<description>Menu Settings Sub Videos</description>
 						<label>$LOCALIZE[3]</label>
-						<onclick>ActivateWindow(VideoSettings)</onclick>
+						<onclick>ActivateWindow(VideosSettings)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Videos)</visible>
 					</item>
 					<item id="8104">
@@ -2917,12 +2917,18 @@
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Appearance)</visible>
 					</item>
 					<item id="8112">
+						<description>Menu Settings Sub Addons</description>
+						<label>$LOCALIZE[31550]</label>
+						<onclick>ActivateWindow(AddonBrowser)</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Addons)</visible>
+					</item>
+					<item id="8113">
 						<description>Menu Settings Sub System Info</description>
 						<label>$LOCALIZE[130]</label>
 						<onclick>ActivateWindow(SystemInfo)</onclick>
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_SystemInfo)</visible>
 					</item>
-					<item id="8113">
+					<item id="8114">
 						<description>Menu Settings Sub File Manager</description>
 						<label>$LOCALIZE[10003]</label>
 						<onclick>ActivateWindow(FileManager)</onclick>
