@@ -193,7 +193,6 @@
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/COLOR][/UPPERCASE][/B]]</label>
 				<align>center</align>
 				<font>font-23</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -274,7 +273,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -300,7 +298,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -326,7 +323,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
@@ -359,7 +355,6 @@
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/COLOR][/UPPERCASE][/B]]</label>
 				<align>center</align>
 				<font>font-23</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -671,8 +666,7 @@
 				<label fallback="416">[COLOR=lightgrey]($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])[/COLOR]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
-				<scroll>true</scroll>
+				<font>font-20</font>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1110,8 +1104,7 @@
 				<label fallback="416">$INFO[ListItem.Property(Artist_Genre)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
-				<scroll>true</scroll>
+				<font>font-20</font>
 			</control>
 			<control type="label">
 				<description>Moods txt</description>
@@ -1135,7 +1128,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Styles txt</description>
@@ -1159,7 +1151,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Born txt</description>
@@ -1182,8 +1173,7 @@
 				<label fallback="416">$INFO[ListItem.Property(Artist_Born)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
-				<scroll>true</scroll>
+				<font>font-20</font>
 			</control>
 		</control>
 		<control type="group">
@@ -1212,7 +1202,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Moods txt</description>
@@ -1236,7 +1225,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Styles txt</description>
@@ -1260,7 +1248,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Themes txt</description>
@@ -1284,7 +1271,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Year txt</description>
@@ -1308,7 +1294,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>label txt</description>
@@ -1332,7 +1317,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Type txt</description>
@@ -1356,7 +1340,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Rating txt</description>
@@ -1405,7 +1388,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Album txt</description>
@@ -1429,7 +1411,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Title txt</description>
@@ -1453,7 +1434,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Genre txt</description>
@@ -1477,7 +1457,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>TrackNo txt</description>
@@ -1501,7 +1480,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Year txt</description>
@@ -1525,7 +1503,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Duration txt</description>
@@ -1549,7 +1526,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Rating txt</description>
@@ -1598,7 +1574,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Album txt</description>
@@ -1622,7 +1597,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Year txt</description>
@@ -1646,7 +1620,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 			<control type="label">
 				<description>Genre txt</description>
@@ -1670,7 +1643,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<scroll>false</scroll>
 			</control>
 		</control>
 	</include>

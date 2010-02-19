@@ -108,11 +108,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
@@ -160,11 +158,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Window.IsVisible(VideoFiles)  + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -175,11 +171,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -190,11 +184,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -205,11 +197,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -220,11 +210,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -235,11 +223,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/COLOR][/B][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -250,11 +236,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="button" id="7005">
@@ -377,10 +361,8 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -391,11 +373,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -406,11 +386,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -421,11 +399,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Episode,$LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="label">
@@ -436,11 +412,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Episode,$LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="textbox">
@@ -551,11 +525,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,35" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -567,11 +539,9 @@
 				<font>font-23</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Episode,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[20360]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,-35" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -637,11 +607,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Window.IsVisible(Videofiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -652,11 +620,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Episodes)</visible>
 			</control>
 			<control type="label">
@@ -667,11 +633,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos) + !Window.IsVisible(Videofiles)</visible>
 			</control>
 			<control type="label">
@@ -682,11 +646,9 @@
 				<font>font-30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos) + !Window.IsVisible(Videofiles)</visible>
 			</control>
 			<control type="textbox">
@@ -712,11 +674,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.album,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[558]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos) + !Window.IsVisible(Videofiles)</visible>
 			</control>
 			<control type="label">
@@ -727,11 +687,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.studio,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[572]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos) + !Window.IsVisible(Videofiles)</visible>
 			</control>
 			<control type="label">
@@ -742,11 +700,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos) + !Window.IsVisible(Videofiles)</visible>
 			</control>
 			<control type="grouplist">
@@ -888,11 +844,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
@@ -929,7 +883,6 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -1007,11 +960,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Listitem.Artist]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Albums) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
@@ -1022,11 +973,9 @@
 				<font>font-30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Albums) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
@@ -1037,11 +986,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
 				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -1053,11 +1000,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
-				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
 				<visible>!ListItem.IsPlaying + [Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)]</visible>
 			</control>
@@ -1069,11 +1014,9 @@
 				<font>font-30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
-				<scrollspeed>0</scrollspeed>
 				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
 				<visible>Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
@@ -1085,10 +1028,8 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<scrollspeed>0</scrollspeed>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
 			</control>
 			<control type="label">
@@ -1099,10 +1040,8 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<scrollspeed>0</scrollspeed>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
 			</control>
 			<control type="progress">
@@ -1123,7 +1062,6 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[MusicPlayer.Time]</label>
@@ -1150,11 +1088,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
@@ -1165,11 +1101,9 @@
 				<font>font-30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
@@ -1180,11 +1114,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.album,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[558]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
@@ -1195,11 +1127,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.studio,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[572]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
@@ -1210,11 +1140,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 		</control>
@@ -1389,11 +1317,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="button" id="7009">
@@ -1478,11 +1404,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.label][/B]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -1493,11 +1417,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.PictureResolution,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21805]: [/COLOR][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>247</posx>
@@ -1507,11 +1429,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.PictureDateTime,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21820]: [/COLOR][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>247</posx>
@@ -1521,11 +1441,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21802]: [/COLOR][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="button" id="7009">
 				<posx>830</posx>
@@ -1631,11 +1549,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="button" id="7009">

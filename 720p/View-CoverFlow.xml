@@ -930,11 +930,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)][/B]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="grouplist">
 				<posx>355</posx>
@@ -2690,11 +2688,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>![Container.Content(Albums) | Container.Content(Songs)]</visible>
 			</control>
 			<control type="label">
@@ -2705,11 +2701,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Albums) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
@@ -2720,11 +2714,9 @@
 				<font>font-23</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Albums) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
@@ -2735,11 +2727,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Songs) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="label">
@@ -2750,11 +2740,9 @@
 				<font>font-23</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Label2][/B]</label>
-				<scrollspeed>0</scrollspeed>
 				<visible>Container.Content(Songs) + !Window.IsVisible(MusicFiles)</visible>
 			</control>
 		</control>

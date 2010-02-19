@@ -103,11 +103,9 @@
 					<font>font-30</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Title]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -117,11 +115,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -131,11 +127,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -145,11 +139,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -159,11 +151,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -173,11 +163,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Studio,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[572]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 			</control>
 			<control type="group">
@@ -190,11 +178,9 @@
 					<font>font-30</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Artist]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -204,11 +190,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Property(Artist_Genre),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -218,11 +202,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Property(Artist_Mood),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[175]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -232,11 +214,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Property(Artist_Style),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[176]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 			</control>
 			<control type="group">
@@ -249,11 +229,9 @@
 					<font>font-30</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Artist]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -263,11 +241,9 @@
 					<font>font-30</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Album]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -277,11 +253,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -291,11 +265,9 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/COLOR][/B][/UPPERCASE]]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 			</control>
 			<control type="spincontrol" id="61">

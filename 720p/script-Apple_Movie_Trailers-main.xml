@@ -250,7 +250,6 @@
 						<height>35</height>
 						<font>font-20</font>
 						<textcolor>lightblue</textcolor>
-						<scroll>true</scroll>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>[B]$INFO[ListItem.Studio] - $INFO[ListItem.Property(ReleaseDate)][/B]</label>
@@ -420,8 +419,7 @@
 						<width>880</width>
 						<height>35</height>
 						<font>font-32</font>
-						<textcolor>white</textcolor>
-						<scroll>true</scroll>
+						<textcolor>white</textcolor>						
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -432,8 +430,7 @@
 						<width>880</width>
 						<height>35</height>
 						<font>font-19</font>
-						<textcolor>lightblue</textcolor>
-						<scroll>true</scroll>
+						<textcolor>lightblue</textcolor>						
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>[B]$INFO[ListItem.Studio] - $INFO[ListItem.Property(ReleaseDate)][/B]</label>

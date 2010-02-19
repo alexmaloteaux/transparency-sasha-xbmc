@@ -50,11 +50,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -64,11 +62,9 @@
 				<font>font-30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -78,10 +74,8 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<scrollspeed>0</scrollspeed>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
 			</control>
 			<control type="label">
@@ -92,10 +86,8 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<scrollspeed>0</scrollspeed>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
 			</control>
 		</control>
@@ -233,11 +225,9 @@
 				<font>font-30</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="image">
 				<description>Rating value</description>

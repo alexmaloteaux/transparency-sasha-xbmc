@@ -410,6 +410,7 @@
 									<selectedcolor>blue</selectedcolor>
 									<align>right</align>
 									<info>ListItem.Label2</info>
+									<scroll>false</scroll>
 								</control>
 							</channellayout>
 							<focusedchannellayout height="60" width="210">
@@ -453,7 +454,7 @@
 									<selectedcolor>blue</selectedcolor>
 									<align>right</align>
 									<info>ListItem.Label2</info>
-									<scrollspeed>0</scrollspeed>
+									<scroll>false</scroll>
 								</control>
 							</focusedchannellayout>
 							<itemlayout height="60" width="40">
@@ -563,6 +564,7 @@
 									<selectedcolor>blue</selectedcolor>
 									<align>left</align>
 									<info>ListItem.Label</info>
+									<scroll>false</scroll>
 								</control>
 								<control type="image">
 									<posx>5</posx>
@@ -696,7 +698,7 @@
 									<selectedcolor>blue</selectedcolor>
 									<align>left</align>
 									<info>ListItem.Label</info>
-									<scrollspeed>0</scrollspeed>
+									<scroll>false</scroll>
 								</control>
 								<control type="image">
 									<posx>5</posx>
@@ -717,27 +719,25 @@
 							</focusedlayout>
 						</control>
 						<control type="label" id="1">
-							<posx>0</posx>
+							<posx>40</posx>
 							<posy>577</posy>
-							<width>1280</width>
+							<width>1200</width>
 							<height>30</height>
 							<font>font-23</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<textcolor>lightblue</textcolor>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
-							<scrollspeed>0</scrollspeed>
 						</control>
 						<control type="label" id="1">
-							<posx>0</posx>
+							<posx>40</posx>
 							<posy>599</posy>
-							<width>1280</width>
+							<width>1200</width>
 							<height>30</height>
 							<font>font-23</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>[B]$INFO[ListItem.Date]  -  $INFO[ListItem.ChannelName][/B]</label>
-							<scrollspeed>0</scrollspeed>
 						</control>
 					</control>
 				</control>
@@ -1554,11 +1554,9 @@
 					<font>font-30</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Container(11).ListItem.Title]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="textbox">
 					<description>Description Value</description>
@@ -1607,11 +1605,9 @@
 					<font>font-30</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Container(12).ListItem.Title]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="textbox">
 					<description>Description Value</description>
@@ -1660,11 +1656,9 @@
 					<font>font-30</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>[UPPERCASE]$INFO[Container(13).ListItem.Title][/UPPERCASE]</label>
-					<scrollspeed>0</scrollspeed>
 				</control>
 				<control type="label">
 					<posx>225</posx>
@@ -1674,7 +1668,6 @@
 					<font>font-23</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>[B]$INFO[Container(13).ListItem.Date][/B]</label>
@@ -1728,7 +1721,6 @@
 					<font>font-20</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<scroll>false</scroll>
 					<textcolor>white</textcolor>
 					<label>$INFO[PVR.NextTimer]</label>
 					<visible>PVR.HasTimer</visible>

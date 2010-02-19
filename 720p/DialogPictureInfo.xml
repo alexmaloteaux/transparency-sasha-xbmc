@@ -82,11 +82,9 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.label][/B]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>247</posx>
@@ -96,11 +94,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.PictureResolution,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21805]: [/COLOR][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>247</posx>
@@ -110,11 +106,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.PictureDateTime,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21820]: [/COLOR][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="label">
 				<posx>247</posx>
@@ -124,11 +118,9 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21802]: [/COLOR][/UPPERCASE]]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 		</control>
 		<control type="group">

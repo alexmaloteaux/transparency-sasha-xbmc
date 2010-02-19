@@ -114,7 +114,6 @@
 				<height>35</height>
 				<font>font-23</font>
 				<textcolor>black</textcolor>
-				<scroll>false</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -128,7 +127,6 @@
 				<height>35</height>
 				<font>font-23</font>
 				<textcolor>black</textcolor>
-				<scroll>false</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[I]$INFO[ListItem.Date][/I]</label>
@@ -176,7 +174,6 @@
 					<height>35</height>
 					<font>font-23</font>
 					<textcolor>black</textcolor>
-					<scroll>false</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem(-1).Label]</label>
@@ -189,7 +186,6 @@
 					<height>35</height>
 					<font>font-23</font>
 					<textcolor>black</textcolor>
-					<scroll>false</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>[I]$INFO[ListItem(-1).Date][/I]</label>
@@ -272,7 +268,6 @@
 				<height>35</height>
 				<font>font-23</font>
 				<textcolor>black</textcolor>
-				<scroll>false</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem(1).Label]</label>
@@ -285,7 +280,6 @@
 				<height>35</height>
 				<font>font-23</font>
 				<textcolor>black</textcolor>
-				<scroll>false</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[I]$INFO[ListItem(1).Date][/I]</label>
@@ -333,7 +327,6 @@
 					<height>35</height>
 					<font>font-23</font>
 					<textcolor>black</textcolor>
-					<scroll>false</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem(0).Label]</label>
@@ -346,7 +339,6 @@
 					<height>35</height>
 					<font>font-23</font>
 					<textcolor>black</textcolor>
-					<scroll>false</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>[I]$INFO[ListItem(0).Date][/I]</label>

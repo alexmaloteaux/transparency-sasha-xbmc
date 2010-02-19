@@ -170,6 +170,7 @@
 						<posy>63</posy>
 						<width>169</width>
 						<height>169</height>
+						<aspectratio>stretch</aspectratio>
 						<include condition="!Skin.HasSetting(SafeMode)">moviedisc-View_Icons</include>
 						<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Icons</include>
 						<animation effect="zoom" start="11,63,169,169" end="-7,45,205,205" time="250">Focus</animation>
@@ -404,11 +405,9 @@
 				<font>font-35</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<scrollspeed>0</scrollspeed>
 			</control>
 			<control type="image">
 				<posx>240</posx>
@@ -608,7 +607,6 @@
 				<height>35</height>
 				<font>font-32</font>
 				<textcolor>blue</textcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
@@ -621,7 +619,6 @@
 				<height>35</height>
 				<font>font-28</font>
 				<textcolor>white</textcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -634,7 +631,6 @@
 				<height>35</height>
 				<font>font-32</font>
 				<textcolor>blue</textcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -647,7 +643,6 @@
 				<height>35</height>
 				<font>font-28</font>
 				<textcolor>white</textcolor>
-				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
@@ -659,8 +654,7 @@
 				<width>880</width>
 				<height>35</height>
 				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
+				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(Album_Label),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[572]: [/UPPERCASE][/B][/COLOR]]</label>
@@ -672,8 +666,7 @@
 				<width>880</width>
 				<height>35</height>
 				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
+				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/UPPERCASE][/B][/COLOR]]</label>
@@ -685,8 +678,7 @@
 				<width>880</width>
 				<height>35</height>
 				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
+				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
@@ -697,8 +689,7 @@
 				<width>880</width>
 				<height>35</height>
 				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
+				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>

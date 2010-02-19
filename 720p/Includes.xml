@@ -2022,7 +2022,6 @@
 		<textcolor>white</textcolor>
 		<align>left</align>
 		<aligny>center</aligny>
-		<scroll>false</scroll>
 		<animation effect="zoom" start="1" end="100" center="0,15" time="400" tween="back" easing="out">Visible</animation>
 		<animation effect="zoom" start="100" end="1" center="0,15" time="400" tween="back" easing="in">Hidden</animation>
 	</include>
