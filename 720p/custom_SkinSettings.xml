@@ -2638,33 +2638,11 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="509">
-						<label>$LOCALIZE[31209] $LOCALIZE[8]</label>
-						<onclick>Skin.ToggleSetting(WeatherScript_Enable)</onclick>
-						<selected>Skin.HasSetting(WeatherScript_Enable)</selected>
-					</control>
-					<control type="button" id="510">
-						<label>- $LOCALIZE[31150]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(WeatherScript_Label)][/COLOR]</label2>
-						<onclick>Skin.SetString(WeatherScript_Label)</onclick>
-						<enable>Skin.HasSetting(WeatherScript_Enable)</enable>
-					</control>
-					<control type="button" id="511">
-						<label>- $LOCALIZE[31204]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(WeatherScript_Path)][/COLOR]</label2>
-						<onclick>Skin.SetFile(WeatherScript_Path,.py)</onclick>
-						<enable>Skin.HasSetting(WeatherScript_Enable)</enable>
-					</control>
-					<control type="image" id="512">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="radiobutton" id="513">
 						<label>$LOCALIZE[31132]</label>
 						<onclick>Skin.ToggleSetting(hometheater)</onclick>
 						<selected>Skin.HasSetting(hometheater)</selected>
 					</control>
-					<control type="radiobutton" id="514">
+					<control type="radiobutton" id="510">
 						<label>$LOCALIZE[31131]</label>
 						<onclick>Skin.ToggleSetting(YouTrailer)</onclick>
 						<selected>Skin.HasSetting(YouTrailer)</selected>
