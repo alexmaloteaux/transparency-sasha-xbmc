@@ -277,14 +277,6 @@
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
-			<control type="image">
-				<description>back image</description>
-				<posx>455</posx>
-				<posy>7</posy>
-				<width>136</width>
-				<height>136</height>
-				<texture border="7">thumb-nofocus.png</texture>
-			</control>
 			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icon</include>
 			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icon</include>
 			<control type="label">
@@ -945,14 +937,6 @@
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
-			</control>
-			<control type="image">
-				<description>back image</description>
-				<posx>455</posx>
-				<posy>7</posy>
-				<width>136</width>
-				<height>136</height>
-				<texture border="7">thumb-nofocus.png</texture>
 			</control>
 			<control type="group">
 				<visible>!PVR.IsRecording + PVR.HasTimer</visible>
