@@ -123,7 +123,7 @@
 					<onleft>6000</onleft>
 					<onright>6000</onright>
 					<onup>103</onup>
-					<ondown>5</ondown>
+					<ondown>4</ondown>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 				</control>
 				<control type="button" id="4">
@@ -135,7 +135,7 @@
 					<include>ButtonCommonValues</include>
 					<onleft>6000</onleft>
 					<onright>6000</onright>
-					<onup>5</onup>
+					<onup>4</onup>
 					<ondown>610</ondown>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 				</control>
