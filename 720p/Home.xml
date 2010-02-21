@@ -122,9 +122,9 @@
 			<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
 			<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>
 			<include condition="!Skin.HasSetting(homepageMusicinfo)">MusicInfo</include>
-			<control type="grouplist" id="5047">
-				<posx>680</posx>
-				<posy>490</posy>
+			<control type="group" id="5047">
+				<posx>0</posx>
+				<posy>0</posy>
 				<onright>20</onright>
 				<include condition="!Skin.HasSetting(HomepageRecentMovies)">RecentlyAddedMovies</include>
 				<include condition="!Skin.HasSetting(HomepageRecentTVShows)">RecentlyAddedTVShows</include>
@@ -203,7 +203,7 @@
 				</control>
 				<control type="button" id="20">
 					<description>Power push button</description>
-					<posx>51r</posx>
+					<posx>1229</posx>
 					<posy>44r</posy>
 					<width>35</width>
 					<height>35</height>
@@ -219,7 +219,7 @@
 					<ondown>9000</ondown>
 				</control>
 				<control type="image">
-					<posx>51r</posx>
+					<posx>1229</posx>
 					<posy>44r</posy>
 					<width>35</width>
 					<height>35</height>
@@ -228,7 +228,7 @@
 					<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 				<control type="image">
-					<posx>51r</posx>
+					<posx>1229</posx>
 					<posy>44r</posy>
 					<width>35</width>
 					<height>35</height>

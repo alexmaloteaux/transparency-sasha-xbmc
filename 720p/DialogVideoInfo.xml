@@ -366,7 +366,7 @@
 				<focusposition>4</focusposition>
 				<orientation>horizontal</orientation>
 				<hitrect x="670" y="565" w="140" h="135" />
-				<animation effect="slide" start="0,0" end="-119,0" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | Window.IsVisible(Videofiles)]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-119,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="29,0" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
 				<itemlayout height="110" width="110">
 					<control type="image">

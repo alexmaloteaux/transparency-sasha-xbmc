@@ -116,8 +116,9 @@
 					</focusedlayout>
 				</control>
 				<control type="label">
-					<posx>640</posx>
+					<posx>40</posx>
 					<posy>545</posy>
+					<width>1200</width>
 					<height>30</height>
 					<font>font-32</font>
 					<textcolor>lightblue</textcolor>
@@ -126,9 +127,10 @@
 					<label>[B]$INFO[ListItem.label][/B]</label>
 				</control>
 				<control type="label">
-					<posx>640</posx>
+					<posx>40</posx>
 					<posy>575</posy>
 					<height>30</height>
+					<width>1200</width>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -147,7 +149,7 @@
 					</control>
 					<control type="button" id="20">
 						<description>Power push button</description>
-						<posx>51r</posx>
+						<posx>1229</posx>
 						<posy>44r</posy>
 						<width>35</width>
 						<height>35</height>
@@ -164,7 +166,7 @@
 						<include>Window_OpenClose_Animation</include>
 					</control>
 					<control type="image">
-						<posx>51r</posx>
+						<posx>1229</posx>
 						<posy>44r</posy>
 						<width>35</width>
 						<height>35</height>
@@ -174,7 +176,7 @@
 						<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
 					</control>
 					<control type="image">
-						<posx>51r</posx>
+						<posx>1229</posx>
 						<posy>44r</posy>
 						<width>35</width>
 						<height>35</height>
