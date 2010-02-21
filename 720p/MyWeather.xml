@@ -129,7 +129,7 @@
 				<control type="button" id="4">
 					<description>Settings button</description>
 					<posx>0</posx>
-					<posy>270</posy>
+					<posy>225</posy>
 					<label>5</label>
 					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 					<include>ButtonCommonValues</include>
@@ -147,7 +147,7 @@
 				</control>
 				<control type="group">
 					<posx>0</posx>
-					<posy>315</posy>
+					<posy>270</posy>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 					<include>CommonNowPlaying_Controls</include>
 				</control>
@@ -159,7 +159,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>317</posy>
+					<posy>272</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
