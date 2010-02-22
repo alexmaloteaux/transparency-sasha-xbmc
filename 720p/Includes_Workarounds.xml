@@ -262,6 +262,12 @@
 	<include name="musicalbumsdisc-View_Icons">
 		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
 	</include>
+	<include name="musicalbumsdisc0-View_Icons">
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]/$INFO[ListItem(-1).Album]/cdart.png</texture>
+	</include>
+	<include name="musicalbumsdisc1-View_Icons">
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]/$INFO[ListItem(1).Album]/cdart.png</texture>
+	</include>
 	<include name="musicsongsnodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>

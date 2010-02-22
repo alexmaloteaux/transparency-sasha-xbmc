@@ -1,13 +1,15 @@
 <includes>
-	<include name="MusicMediaCodecVars">
-		<width>80</width>
-		<height>55</height>
-		<visible>Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)</visible>
-	</include>
 	<include name="MusicMediaLabelVars">
 		<width>80</width>
 		<height>55</height>
+		<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(56)">Conditional</animation>
 		<visible>Container.Content(Albums)</visible>
+	</include>
+	<include name="MusicMediaCodecVars">
+		<width>80</width>
+		<height>55</height>
+		<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(56)">Conditional</animation>
+		<visible>Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)</visible>
 	</include>
 	<include name="MusicMediaFlags">
 		<control type="grouplist">
@@ -123,7 +125,7 @@
 				<texture>special://skin/images/flags/music/audiocodec/wv.png</texture>
 				<visible>substring(ListItem.Filename,.wv,Right)</visible>
 			</control>
-		<!-- Genre -->
+		<!-- Record Label -->
 			<control type="image" id="5082">
 				<include>MusicMediaLabelVars</include>
 				<texture>special://skin/images/flags/music/recordlabel/$INFO[ListItem.Property(Label),,.png]</texture>
