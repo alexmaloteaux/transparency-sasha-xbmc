@@ -761,298 +761,958 @@
 				<animation effect="rotatey" center="1280" start="-15" end="-15" time="0" condition="true">Conditional</animation>
 				<animation reversible="false" effect="slide" start="0,0" end="-242,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnNext</visible>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+				<control type="group">
+					<visible>Container.Content(Artists)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+					</control>
 				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>1210</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>1210</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>1210</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+				<control type="group">
+					<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+						<visible>stringcompare(ListItem(-7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+						<visible>stringcompare(ListItem(-6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+						<visible>stringcompare(ListItem(-5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+						<visible>stringcompare(ListItem(-4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+						<visible>stringcompare(ListItem(-3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+						<visible>stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+						<visible>stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						<visible>stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<visible>stringcompare(ListItem(0).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						<visible>stringcompare(ListItem(1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+						<visible>stringcompare(ListItem(2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+						<visible>stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+						<visible>stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+						<visible>stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+						<visible>stringcompare(ListItem(5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+						<visible>stringcompare(ListItem(6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+						<visible>stringcompare(ListItem(7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+						<visible>stringcompare(ListItem(8).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-7).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Thumb]</texture>
+						<visible>!stringcompare(ListItem(0).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Thumb]</texture>
+						<visible>!stringcompare(ListItem(5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Thumb]</texture>
+						<visible>!stringcompare(ListItem(6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Thumb]</texture>
+						<visible>!stringcompare(ListItem(7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Thumb]</texture>
+						<visible>!stringcompare(ListItem(8).Label,..)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group" id="7014">
 				<animation effect="rotatey" center="1280" start="-15" end="-15" time="0" condition="true">Conditional</animation>
 				<animation reversible="false" effect="slide" start="0,0" end="242,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
-				<control type="image">
-					<posx>-242</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+				<control type="group">
+					<visible>Container.Content(Artists)</visible>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+					</control>
 				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>-242</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>-242</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+				<control type="group">
+				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+						<visible>stringcompare(ListItem(-6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+						<visible>stringcompare(ListItem(-5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+						<visible>stringcompare(ListItem(-4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+						<visible>stringcompare(ListItem(-3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+						<visible>stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						<visible>stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						<visible>stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<visible>stringcompare(ListItem(0).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						<visible>stringcompare(ListItem(1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+						<visible>stringcompare(ListItem(2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+						<visible>stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+						<visible>stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+						<visible>stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+						<visible>stringcompare(ListItem(5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+						<visible>stringcompare(ListItem(6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+						<visible>stringcompare(ListItem(7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+						<visible>stringcompare(ListItem(8).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+						<visible>stringcompare(ListItem(9).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Thumb]</texture>
+						<visible>!stringcompare(ListItem(0).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>-242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Thumb]</texture>
+						<visible>!stringcompare(ListItem(5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Thumb]</texture>
+						<visible>!stringcompare(ListItem(6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Thumb]</texture>
+						<visible>!stringcompare(ListItem(7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Thumb]</texture>
+						<visible>!stringcompare(ListItem(8).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Thumb]</texture>
+						<visible>!stringcompare(ListItem(9).Label,..)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -1065,125 +1725,401 @@
 					<effect type="fade" start="100" end="0" time="1000" delay="2250" />
 				</animation>
 				<visible>!Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+				<control type="group">
+					<visible>Container.Content(Artists)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+					</control>
 				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>0</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>240</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>242</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>484</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>726</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
-				</control>
-				<control type="image">
-					<posx>968</posx>
-					<posy>480</posy>
-					<width>242</width>
-					<height>242</height>
-					<aspectratio stretchdiffuse="false">stretch</aspectratio>
-					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+				<control type="group">
+					<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+						<visible>stringcompare(ListItem(-6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+						<visible>stringcompare(ListItem(-5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+						<visible>stringcompare(ListItem(-4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+						<visible>stringcompare(ListItem(-3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+						<visible>stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						<visible>stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<visible>stringcompare(ListItem(0).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						<visible>stringcompare(ListItem(1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+						<visible>stringcompare(ListItem(2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+						<visible>stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+						<visible>stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+						<visible>stringcompare(ListItem(5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+						<visible>stringcompare(ListItem(6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+						<visible>stringcompare(ListItem(7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+						<visible>stringcompare(ListItem(8).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>0</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(-1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Thumb]</texture>
+						<visible>!stringcompare(ListItem(0).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Thumb]</texture>
+						<visible>!stringcompare(ListItem(1).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Thumb]</texture>
+						<visible>!stringcompare(ListItem(2).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>240</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Thumb]</texture>
+						<visible>!stringcompare(ListItem(3).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Thumb]</texture>
+						<visible>!stringcompare(ListItem(4).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>242</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Thumb]</texture>
+						<visible>!stringcompare(ListItem(5).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>484</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Thumb]</texture>
+						<visible>!stringcompare(ListItem(6).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>726</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Thumb]</texture>
+						<visible>!stringcompare(ListItem(7).Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>968</posx>
+						<posy>480</posy>
+						<width>242</width>
+						<height>242</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Thumb]</texture>
+						<visible>!stringcompare(ListItem(8).Label,..)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
@@ -1256,7 +2192,25 @@
 						<effect type="fade" start="100" end="0" time="500" delay="3250" />
 						<effect type="rotatey" center="auto" start="0" end="-60" time="500" delay="3250" />
 					</animation>
-					<visible>!stringcompare(ListItem.Label,..)</visible>
+					<visible>Container.Content(Artists) + !stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>409</posx>
+					<posy>166</posy>
+					<width>385</width>
+					<height>385</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<texture fallback="DefaultAlbum.png" background="true" diffuse="cover-diffuse3.png">$INFO[ListItem.Thumb]</texture>
+					<animation type="WindowOpen">
+						<effect type="fade" start="0" end="100" time="500" delay="500" />
+						<effect type="zoom" start="460,239,242,242" end="409,166,385,385" time="1000" delay="1000" />
+					</animation>
+					<animation type="WindowClose">
+						<effect type="zoom" start="409,166,385,385" end="460,239,242,242" time="1000" delay="1000" />
+						<effect type="fade" start="100" end="0" time="500" delay="3250" />
+						<effect type="rotatey" center="auto" start="0" end="-60" time="500" delay="3250" />
+					</animation>
+					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
 					<posx>409</posx>
@@ -1266,7 +2220,17 @@
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse3.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
-					<visible>Control.IsVisible(7013) + !stringcompare(ListItem(-1).Label,..)</visible>
+					<visible>Container.Content(Artists) + Control.IsVisible(7013) + !stringcompare(ListItem(-1).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>409</posx>
+					<posy>166</posy>
+					<width>385</width>
+					<height>385</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<texture fallback="DefaultAlbum.png" background="true" diffuse="cover-diffuse3.png">$INFO[ListItem(-1).Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
+					<visible>[Container.Content(Albums) | Container.Content(Songs)] + Control.IsVisible(7013) + !stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 				<control type="image">
 					<posx>409</posx>
@@ -1276,7 +2240,17 @@
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse3.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
-					<visible>Control.IsVisible(7014) + !stringcompare(ListItem(1).Label,..)</visible>
+					<visible>Container.Content(Artists) + Control.IsVisible(7014) + !stringcompare(ListItem(1).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>409</posx>
+					<posy>166</posy>
+					<width>385</width>
+					<height>385</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<texture fallback="DefaultAlbum.png" background="true" diffuse="cover-diffuse3.png">$INFO[ListItem(1).Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
+					<visible>[Container.Content(Albums) | Container.Content(Songs)] + Control.IsVisible(7014) + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 				<control type="image">
 					<posx>409</posx>

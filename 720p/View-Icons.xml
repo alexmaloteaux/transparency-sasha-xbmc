@@ -15,7 +15,7 @@
 				<visible>Container.Content(Movies) | Container.Content(Seasons)</visible>
 				<posx>-206</posx>
 				<posy>370</posy>
-				<width>1486</width>
+				<width>1686</width>
 				<height>450</height>
 				<onleft>57</onleft>
 				<onright>57</onright>
@@ -447,45 +447,56 @@
 	</include>
 	<include name="Icons-Albums">
 		<control type="group">
+			<animation effect="rotatex" center="720,0" start="-70" end="0" time="500" reversible="true">WindowOpen</animation>
+			<animation effect="rotatex" center="720,0" start="0" end="-70" time="500" reversible="true">WindowClose</animation>
 			<visible>Control.IsVisible(56)</visible>
-			<posx>177</posx>
-			<posy>135</posy>
-			<width>930</width>
-			<height>450</height>
-			<onup>9000</onup>
-			<ondown>60</ondown>
-			<usecontrolcoords>true</usecontrolcoords>
+			<control type="image">
+				<posx>0</posx>
+				<posy>660</posy>
+				<width>1280</width>
+				<height>80</height>
+				<texture>floor.png</texture>
+			</control>
 			<control type="wraplist" id="56">
 				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
-				<posx>0</posx>
-				<posy>100</posy>
-				<width>930</width>
+				<posx>-205</posx>
+				<posy>460</posy>
+				<width>1686</width>
 				<height>450</height>
-				<onleft>56</onleft>
-				<onright>56</onright>
+				<onleft>57</onleft>
+				<onright>57</onright>
 				<onup>9000</onup>
 				<ondown>60</ondown>
 				<viewtype label="536">icon</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<focusposition>2</focusposition>
+				<scrolltime>250</scrolltime>
+				<focusposition>3</focusposition>
 				<orientation>horizontal</orientation>
-				<hitrect x="370" y="50" w="186" h="252" />
+				<hitrect x="518" y="440" w="244" h="244" />
 				<preloaditems>4</preloaditems>
-				<itemlayout height="310" width="186">
+				<itemlayout height="310" width="250">
 					<control type="image">
 						<posx>18</posx>
 						<posy>43</posy>
-						<width>162</width>
+						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
+						<posx>0</posx>
+						<posy>40</posy>
+						<width>192</width>
+						<height>168</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>case-cd-inside.png</texture>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
 						<posx>18</posx>
 						<posy>43</posy>
-						<width>162</width>
+						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
@@ -494,25 +505,34 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>40</posy>
-						<width>186</width>
+						<width>192</width>
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>cdcase.png</texture>
+						<texture>case-cd.png</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<posx>18</posx>
 						<posy>211</posy>
-						<width>162</width>
+						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
+						<posx>0</posx>
+						<posy>208</posy>
+						<width>192</width>
+						<height>168</height>
+						<aspectratio>stretch</aspectratio>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd-inside.png</texture>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
 						<posx>18</posx>
 						<posy>211</posy>
-						<width>162</width>
+						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultAlbum.png" background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Thumb]</texture>
@@ -521,178 +541,214 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>208</posy>
-						<width>186</width>
+						<width>192</width>
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd.png</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="310" width="186">
+				<focusedlayout height="310" width="250">
 					<control type="image">
 						<posx>18</posx>
 						<posy>43</posy>
-						<width>162</width>
+						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="18,43,162,162" end="-46,-23,300,300" time="200">Focus</animation>
-						<animation reversible="false" effect="zoom" end="18,43,162,162" start="-46,-23,300,300" time="200">UnFocus</animation>
+						<animation reversible="false" effect="zoom" start="18,43,168,162" end="-14,11,235,226" time="250">Focus</animation>
+						<animation reversible="false" effect="zoom" end="18,43,168,162" start="-14,27,235,226" time="250">UnFocus</animation>
 						<visible>stringcompare(ListItem.Label,..)</visible>
-					</control>
-					<control type="image">
-						<posx>18</posx>
-						<posy>43</posy>
-						<width>162</width>
-						<height>162</height>
-						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
-						<animation reversible="false" effect="zoom" start="18,43,162,162" end="-46,-23,300,300" time="200">Focus</animation>
-						<animation reversible="false" effect="zoom" end="18,43,162,162" start="-46,-23,300,300" time="200">UnFocus</animation>
-						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>40</posy>
-						<width>186</width>
+						<width>192</width>
 						<height>168</height>
-						<texture>cdcase.png</texture>
 						<aspectratio>stretch</aspectratio>
-						<animation reversible="false" effect="zoom" start="0,40,186,168" end="-79,-28,343,310" time="200">Focus</animation>
-						<animation reversible="false" effect="zoom" end="0,40,186,168" start="-79,-28,343,310" time="200">UnFocus</animation>
+						<texture>case-cd-inside.png</texture>
+						<animation reversible="false" effect="zoom" start="0,40,192,168" end="-39,7,268,234" time="250">Focus</animation>
+						<animation reversible="false" effect="zoom" end="0,40,192,168" start="-39,7,268,234" time="250">UnFocus</animation>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>30</posx>
+						<posy>49</posy>
+						<width>152</width>
+						<height>152</height>
+						<aspectratio>stretch</aspectratio>
+						<include condition="!Skin.HasSetting(SafeMode)">musicalbumsdisc-View_Icons</include>
+						<include condition="Skin.HasSetting(SafeMode)">musicalbumsnodisc-View_Icons</include>
+						<animation effect="zoom" start="30,49,152,152" end="2,19,213,213" time="250">Focus</animation>
+						<animation effect="zoom" start="2,19,213,213" end="30,49,152,152" time="250">UnFocus</animation>
+						<visible>Container.Content(Albums) + !stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>30</posx>
+						<posy>49</posy>
+						<width>152</width>
+						<height>152</height>
+						<aspectratio>stretch</aspectratio>
+						<include condition="!Skin.HasSetting(SafeMode)">musicsongsdisc-View_Icons</include>
+						<include condition="Skin.HasSetting(SafeMode)">musicsongsnodisc-View_Icons</include>
+						<animation effect="zoom" start="30,49,152,152" end="2,19,213,213" time="250">Focus</animation>
+						<animation effect="zoom" start="2,19,213,213" end="30,49,152,152" time="250">UnFocus</animation>
+						<visible>Container.Content(Songs) + !stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>18</posx>
+						<posy>211</posy>
+						<width>168</width>
+						<height>162</height>
+						<aspectratio>stretch</aspectratio>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+						<animation reversible="false" effect="zoom" start="18,211,168,162" end="-14,244,235,226" time="250">Focus</animation>
+						<animation reversible="false" effect="zoom" end="18,211,168,162" start="-14,244,235,226" time="250">UnFocus</animation>
+						<visible>stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>208</posy>
+						<width>192</width>
+						<height>168</height>
+						<aspectratio>stretch</aspectratio>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd-inside.png</texture>
+						<animation reversible="false" effect="zoom" start="0,208,192,168" end="-39,242,268,234" time="250">Focus</animation>
+						<animation reversible="false" effect="zoom" end="0,208,192,168" start="-39,242,268,234" time="250">UnFocus</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<posx>18</posx>
 						<posy>211</posy>
-						<width>162</width>
-						<height>162</height>
-						<aspectratio>stretch</aspectratio>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="18,211,162,162" end="-46,286,300,300" time="200">Focus</animation>
-						<animation reversible="false" effect="zoom" end="18,211,162,162" start="-46,286,300,300" time="200">UnFocus</animation>
-						<visible>stringcompare(ListItem.Label,..)</visible>
-					</control>
-					<control type="image">
-						<posx>18</posx>
-						<posy>211</posy>
-						<width>162</width>
+						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultAlbum.png" background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Thumb]</texture>
-						<animation reversible="false" effect="zoom" start="18,211,162,162" end="-46,286,300,300" time="200">Focus</animation>
-						<animation reversible="false" effect="zoom" end="18,211,162,162" start="-46,286,300,300" time="200">UnFocus</animation>
+						<animation type="focus" reversible="false">
+							<effect type="zoom" start="18,211,168,162" end="-14,244,235,226" time="250" />
+							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+						</animation>
+						<animation type="UnFocus" reversible="true">
+							<effect type="zoom" end="18,211,168,162" start="-14,244,235,226" time="250" reversible="true" />
+							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+						</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>208</posy>
-						<width>186</width>
+						<width>192</width>
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
-						<animation reversible="false" effect="zoom" start="0,208,186,168" end="-79,281,343,310" time="200">Focus</animation>
-						<animation reversible="false" effect="zoom" end="0,208,186,168" start="-79,281,343,310" time="200">UnFocus</animation>
+						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd.png</texture>
+						<animation type="focus" reversible="false">
+							<effect type="zoom" start="0,208,192,168" end="-39,242,268,234" time="250" />
+							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+						</animation>
+						<animation type="UnFocus" reversible="true">
+							<effect type="zoom" end="0,208,192,168" start="-39,242,268,234" time="250" reversible="true" />
+							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+						</animation>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>18</posx>
+						<posy>43</posy>
+						<width>168</width>
+						<height>162</height>
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<animation type="focus" reversible="false">
+							<effect type="zoom" start="18,43,168,162" end="-14,11,235,226" time="250" />
+							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+						</animation>
+						<animation type="UnFocus" reversible="true">
+							<effect type="zoom" end="18,43,168,162" start="-14,11,235,226" time="250" reversible="true" />
+							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+						</animation>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>40</posy>
+						<width>192</width>
+						<height>168</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>case-cd.png</texture>
+						<animation type="focus" reversible="false">
+							<effect type="zoom" start="0,40,192,168" end="-39,7,268,234" time="250" />
+							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+						</animation>
+						<animation type="UnFocus" reversible="true">
+							<effect type="zoom" start="-39,7,268,234" end="0,40,192,168" time="250" reversible="true" />
+							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+						</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 				</focusedlayout>
 			</control>
 		</control>
 		<control type="group">
+			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(56)</visible>
 			<control type="label">
-				<posx>200</posx>
-				<posy>125</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-32</font>
+				<posx>20</posx>
+				<posy>50</posy>
+				<width>1240</width>
+				<height>20</height>
+				<font>font-30</font>
+				<textcolor>lightblue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[B]$INFO[ListItem.Label2][/B]</label>
+				<visible>Container.Content(Albums)</visible>
+			</control>
+			<control type="label">
+				<posx>20</posx>
+				<posy>80</posy>
+				<width>1240</width>
+				<height>20</height>
+				<font>font-35</font>
 				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>Container.Content(Albums)</visible>
 			</control>
 			<control type="label">
-				<posx>200</posx>
-				<posy>160</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-28</font>
-				<textcolor>white</textcolor>
+				<posx>20</posx>
+				<posy>50</posy>
+				<width>1240</width>
+				<height>20</height>
+				<font>font-30</font>
+				<textcolor>lightblue</textcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>Container.Content(Albums)</visible>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<visible>Container.Content(Songs)</visible>
 			</control>
 			<control type="label">
-				<posx>200</posx>
-				<posy>125</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-32</font>
+				<posx>20</posx>
+				<posy>80</posy>
+				<width>1240</width>
+				<height>20</height>
+				<font>font-35</font>
 				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>[B]$INFO[ListItem.Label2][/B]</label>
 				<visible>Container.Content(Songs)</visible>
 			</control>
-			<control type="label">
-				<posx>200</posx>
-				<posy>160</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-28</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
-				<visible>Container.Content(Songs)</visible>
-			</control>
-			<control type="label">
-				<posx>200</posx>
-				<posy>530</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Property(Album_Label),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[572]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>Container.Content(Albums)</visible>
-			</control>
-			<control type="label">
-				<posx>200</posx>
-				<posy>530</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>Container.Content(Songs)</visible>
-			</control>
-			<control type="label">
-				<posx>200</posx>
-				<posy>550</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
-			</control>
-			<control type="label">
-				<posx>200</posx>
-				<posy>570</posy>
-				<width>880</width>
-				<height>35</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
+			<control type="image">
+				<posx>240</posx>
+				<posy>110</posy>
+				<width>800</width>
+				<height>1</height>
+				<texture>separator.png</texture>
 			</control>
 		</control>
 	</include>

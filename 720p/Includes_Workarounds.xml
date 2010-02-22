@@ -256,4 +256,16 @@
 	<include name="moviedisc-View_Icons">
 		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]disc.png</texture>
 	</include>
+	<include name="musicalbumsnodisc-View_Icons">
+		<texture>disc.png</texture>
+	</include>
+	<include name="musicalbumsdisc-View_Icons">
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
+	</include>
+	<include name="musicsongsnodisc-View_Icons">
+		<texture>disc.png</texture>
+	</include>
+	<include name="musicsongsdisc-View_Icons">
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]cdart.png</texture>
+	</include>
 </includes>

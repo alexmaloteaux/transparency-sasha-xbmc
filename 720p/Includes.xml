@@ -1324,7 +1324,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasVideo</visible>
-			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1439,7 +1439,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasAudio</visible>
-			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>
@@ -1904,7 +1904,8 @@
 			<animation effect="fade" time="300" delay="500">Hidden</animation>
 			<animation effect="slide" end="-270,0" time="0" condition="[[Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50)">Conditional</animation>
 			<animation effect="slide" end="-200,0" time="0" condition="Control.IsVisible(51)">Conditional</animation>
-			<animation effect="slide" end="-1105,120" time="0" condition="Control.IsVisible(55) | Control.IsVisible(596)">Conditional</animation>
+			<animation effect="slide" end="-1105,120" time="0" condition="Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(596)">Conditional</animation>
+			<animation effect="slide" end="-1105,215" time="0" condition="Control.IsVisible(56)">Conditional</animation>
 			<animation effect="slide" end="130,-50" time="0" condition="Control.IsVisible(58) | [!Window.IsVisible(Videolibrary) + Control.IsVisible(59)]">Conditional</animation>
 			<animation effect="slide" end="235,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(59)">Conditional</animation>
 			<animation effect="slide" end="-1215,0" time="0" condition="Control.IsVisible(592)">Conditional</animation>
