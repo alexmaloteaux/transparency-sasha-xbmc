@@ -106,24 +106,6 @@
 			<visible>Control.IsVisible(51)</visible>
 		</control>
 		<control type="scrollbar" id="60">
-			<posx>303</posx>
-			<posy>719</posy>
-			<width>674</width>
-			<height>20</height>
-			<texturesliderbackground border="10,0,10,0">scrollbar-hor-back.png</texturesliderbackground>
-			<texturesliderbar border="10,0,10,0">scrollbar-hor-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="10,0,10,0">scrollbar-hor-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-hor-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-hor-nib.png</textureslidernibfocus>
-			<onup>50</onup>
-			<ondown>9000</ondown>
-			<showonepage>false</showonepage>
-			<orientation>horizontal</orientation>
-			<animation effect="slide" start="0,0" end="0,-18" time="0" condition="Control.HasFocus(60)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
-			<visible>Control.IsVisible(56)</visible>
-		</control>
-		<control type="scrollbar" id="60">
 			<posx>1083</posx>
 			<posy>138</posy>
 			<width>20</width>
@@ -155,7 +137,7 @@
 			<orientation>horizontal</orientation>
 			<animation effect="slide" start="0,0" end="0,-18" time="200" condition="Control.HasFocus(60)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
-			<visible>Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
+			<visible>Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
 		</control>
 		<control type="scrollbar" id="61">
 			<posx>1083</posx>
