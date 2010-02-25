@@ -6,7 +6,7 @@
 			<posy>4</posy>
 			<width>142</width>
 			<height>142</height>
-			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath]cdart.png</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath,,cdart.png]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspinhome</include>
 		</control>
@@ -18,7 +18,7 @@
 			<height>200</height>
 			<posx>35</posx>
 			<posy>-4</posy>
-			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath]cdart.png</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath,,cdart.png]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspin</include>
 		</control>
@@ -30,7 +30,7 @@
 			<posy>183</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Player.FolderPath]../clearart.png</texture>
+			<texture>$INFO[Player.FolderPath,,../clearart.png]</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
@@ -45,7 +45,7 @@
 			<posy>63</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Player.FolderPath]../clearart.png</texture>
+			<texture>$INFO[Player.FolderPath,,../clearart.png]</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
@@ -58,7 +58,7 @@
 			<width>214</width>
 			<height>300</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<texture fallback="DefaultProgram.png" diffuse="thumb-diffuse.png" background="true">$INFO[Container.FolderPath]folder.jpg</texture>
+			<texture fallback="DefaultProgram.png" diffuse="thumb-diffuse.png" background="true">$INFO[Container.FolderPath,,folder.jpg]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<visible>substring(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 		</control>
@@ -70,7 +70,7 @@
                         <posy>0</posy>
                         <width>1280</width>
                         <height>720</height>
-                        <imagepath background="true">$INFO[Player.FolderPath]../extrafanart/</imagepath>
+                        <imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
                         <aspectratio>scale</aspectratio>
                         <timeperimage>5000</timeperimage>
                         <randomize>true</randomize>
@@ -87,7 +87,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.path]../fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -99,7 +99,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Container.FolderPath]fanart.jpg</texture>
+			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -111,7 +111,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.path]fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.path,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -125,7 +125,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.path]../fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -137,7 +137,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Container.FolderPath]fanart.jpg</texture>
+			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -149,7 +149,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.filenameandpath]fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.filenameandpath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -164,7 +164,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[Container.FolderPath]fanart.jpg</texture>
+			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -177,7 +177,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[listitem.path]../fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -192,7 +192,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[listitem.path]fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.path,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -205,7 +205,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[listitem.path]../fanart.jpg</texture>
+			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -219,7 +219,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Container.FolderPath]fanart.jpg</texture>
+			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -231,7 +231,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[ListItem.Path]fanart.jpg</texture>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -243,7 +243,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[ListItem.FilenameAndPath]fanart.jpg</texture>
+			<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -254,24 +254,24 @@
 		<texture>disc.png</texture>
 	</include>
 	<include name="moviedisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]disc.png</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path,,disc.png]</texture>
 	</include>
 	<include name="musicalbumsnodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>
 	<include name="musicalbumsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]$INFO[ListItem.Album,/,/cdart.png]</texture>
 	</include>
 	<include name="musicalbumsdisc0-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]/$INFO[ListItem(-1).Album]/cdart.png</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]$INFO[ListItem(-1).Album,/,/cdart.png]</texture>
 	</include>
 	<include name="musicalbumsdisc1-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]/$INFO[ListItem(1).Album]/cdart.png</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]$INFO[ListItem(1).Album,/,/cdart.png]</texture>
 	</include>
 	<include name="musicsongsnodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>
 	<include name="musicsongsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path]cdart.png</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path,,cdart.png]</texture>
 	</include>
 </includes>
