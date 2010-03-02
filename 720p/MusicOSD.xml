@@ -408,7 +408,7 @@
 					<font>-</font>
 					<texturenofocus>osd-preset-nofocus.png</texturenofocus>
 					<texturefocus>osd-preset-focus.png</texturefocus>
-					<onclick>XBMC.ActivateWindow(121)</onclick>
+					<onclick>XBMC.ActivateWindow(VisualisationSettings)</onclick>
 					<onleft>500</onleft>
 					<onright>913</onright>
 					<onup>916</onup>
@@ -424,7 +424,7 @@
 					<font>-</font>
 					<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 					<texturefocus>osd-bookmark-focus.png</texturefocus>
-					<onclick>XBMC.ActivateWindow(122)</onclick>
+					<onclick>XBMC.ActivateWindow(VisualisationPresetList)</onclick>
 					<onleft>912</onleft>
 					<onright>914</onright>
 					<onup>916</onup>

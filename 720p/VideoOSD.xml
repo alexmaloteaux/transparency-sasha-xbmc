@@ -577,7 +577,7 @@
 						<font>-</font>
 						<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 						<texturefocus>osd-audio-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(124)</onclick>
+						<onclick>XBMC.ActivateWindow(OSDAudioSettings)</onclick>
 						<onleft>916</onleft>
 						<onright>912</onright>
 						<onup>911</onup>
@@ -593,7 +593,7 @@
 						<font>-</font>
 						<texturenofocus>osd-video-nofocus.png</texturenofocus>
 						<texturefocus>osd-video-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(123)</onclick>
+						<onclick>XBMC.ActivateWindow(OSDVideoSettings)</onclick>
 						<onleft>911</onleft>
 						<onright>913</onright>
 						<onup>912</onup>
@@ -609,7 +609,7 @@
 						<font>-</font>
 						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 						<texturefocus>osd-bookmark-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(125)</onclick>
+						<onclick>XBMC.ActivateWindow(VideoBookmarks)</onclick>
 						<onleft>912</onleft>
 						<onright>9040</onright>
 						<onup>913</onup>
