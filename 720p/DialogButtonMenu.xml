@@ -58,8 +58,8 @@
 					<onclick>system.logoff</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + System.HasLoginScreen + System.Loggedon</visible>
+					<label>$LOCALIZE[20126] $INFO[System.ProfileName]</label>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + System.HasLoginScreen + System.LoggedOn</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(22)">conditional</animation>
 				</control>
 				<control type="button" id="23">
@@ -72,7 +72,7 @@
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
 					<label>130</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.Loggedon</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.LoggedOn</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(23)">conditional</animation>
 				</control>
 				<control type="button" id="10">
@@ -87,7 +87,7 @@
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>7</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.Loggedon</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.LoggedOn</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(10)">conditional</animation>
 				</control>
 				<control type="button" id="11">
@@ -122,7 +122,7 @@
 					<height>81</height>
 					<texturefocus>shut-restart-focus.png</texturefocus>
 					<texturenofocus>shut-restart-nofocus.png</texturenofocus>
-					<onclick>Restartapp()</onclick>
+					<onclick>RestartApp()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13313] XBMC</label>
@@ -139,7 +139,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(shutdowntimer,Shutdown(),30)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown(),30)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -156,7 +156,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(shutdowntimer,Shutdown(),60)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown(),60)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -173,7 +173,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(shutdowntimer,Shutdown(),90)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown(),90)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -190,7 +190,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(shutdowntimer,Shutdown(),120)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown(),120)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -218,14 +218,14 @@
 					</control>
 					<control type="button" id="35">
 						<description>Cancel ShutdownTimer button</description>
-						<visible>System.HasAlarm(shutdowntimer)</visible>
+						<visible>System.HasAlarm(ShutdownTimer)</visible>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>80</width>
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>CancelAlarm(shutdowntimer)</onclick>
+						<onclick>CancelAlarm(ShutdownTimer)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -309,7 +309,7 @@
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>1036</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.Loggedon</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.LoggedOn</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(17)">conditional</animation>
 				</control>
 				<control type="button" id="18">
@@ -339,7 +339,7 @@
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[5]</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.Loggedon</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.LoggedOn</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(19)">conditional</animation>
 				</control>
 				<control type="button" id="20">
@@ -354,7 +354,7 @@
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.Loggedon</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.LoggedOn</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(20)">conditional</animation>
 				</control>
 			</control>
@@ -366,7 +366,7 @@
 				<height>60</height>
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
-				<visible>System.HasLoginscreen + System.Loggedon</visible>
+				<visible>System.HasLoginScreen + System.LoggedOn</visible>
 			</control>
 			<control type="label">
 				<description>Label control</description>
@@ -374,12 +374,12 @@
 				<posy>-73</posy>
 				<width>800</width>
 				<height>45</height>
-				<label>$LOCALIZE[20125] $INFO[system.profilename]</label>
+				<label>$LOCALIZE[20125] $INFO[System.ProfileName]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
 				<font>font-25</font>
-				<visible>System.HasLoginscreen + System.Loggedon</visible>
+				<visible>System.HasLoginScreen + System.LoggedOn</visible>
 			</control>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay35</include>
 			<control type="image" id="0">

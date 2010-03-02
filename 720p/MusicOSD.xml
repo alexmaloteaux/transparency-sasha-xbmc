@@ -408,7 +408,7 @@
 					<font>-</font>
 					<texturenofocus>osd-preset-nofocus.png</texturenofocus>
 					<texturefocus>osd-preset-focus.png</texturefocus>
-					<onclick>XBMC.ActivateWindow(VisualisationSettings)</onclick>
+					<onclick>Addon.Default.OpenSettings(Visualization)</onclick>
 					<onleft>500</onleft>
 					<onright>913</onright>
 					<onup>916</onup>
