@@ -2624,7 +2624,7 @@
 					<control type="button" id="504">
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(SubsScript_Path)][/COLOR]</label2>
-						<onclick>Skin.SetFile(SubsScript_Path,.py)</onclick>
+						<onclick>Skin.SetFile(SubsScript_Path,Script)</onclick>
 						<enable>Skin.HasSetting(SubsScript_Enable)</enable>
 					</control>
 					<control type="image" id="505">
@@ -2640,7 +2640,7 @@
 					<control type="button" id="507">
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
-						<onclick>Skin.SetFile(LyricScript_Path,.py)</onclick>
+						<onclick>Skin.SetFile(LyricScript_Path,Script)</onclick>
 						<enable>Skin.HasSetting(LyricScript_Enable)</enable>
 					</control>
 					<control type="image" id="508">
@@ -5889,7 +5889,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom1_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom1_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5908,7 +5908,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom2_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom2_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5927,7 +5927,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom3_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom3_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5946,7 +5946,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom4_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom4_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5959,14 +5959,14 @@
 						<label>[B]- $LOCALIZE[31150][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom5_Label)</onclick>
+						<onclick>Skin.SetString(Menu_Scripts_Sub_Custom5_Label)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Scripts Sub Custom5 Path</description>
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom5_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Scripts_Sub_Custom5_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5985,7 +5985,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom1_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom1_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6004,7 +6004,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom2_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom2_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6023,7 +6023,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom3_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom3_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6142,7 +6142,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom1_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom1_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6161,7 +6161,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom2_Path,.py)</onclick>
+						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom2_Path,Script)</onclick>
 					</control>
 				</control>
 				<control type="image">
