@@ -597,12 +597,12 @@
 		</control>
 		<control type="group">
 			<description>Today</description>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Panel3</include>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<visible>!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3)</visible>
 			<control type="group">
 				<include>Window_OpenClose_Right_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Panel3</include>
 				<control type="image">
 					<posx>83</posx>
 					<posy>38</posy>
@@ -2697,23 +2697,27 @@
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<visible>Skin.String(WeatherPlus,3)</visible>
 			<control type="group">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay27</include>
-				<control type="image">
-					<posx>0</posx>
-					<posy>33</posy>
-					<width>1280</width>
-					<height>344</height>
+				<control type="group">
 					<include>Window_OpenClose_Right_Animation</include>
-					<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay27</include>
+					<control type="image">
+						<posx>0</posx>
+						<posy>33</posy>
+						<width>1280</width>
+						<height>344</height>
+						<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+					</control>
 				</control>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay28</include>
-				<control type="image">
-					<posx>0</posx>
-					<posy>377</posy>
-					<width>1280</width>
-					<height>344</height>
+				<control type="group">
 					<include>Window_OpenClose_Left_Animation</include>
-					<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay28</include>
+					<control type="image">
+						<posx>0</posx>
+						<posy>377</posy>
+						<width>1280</width>
+						<height>344</height>
+						<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+					</control>
 				</control>
 				<control type="group">
 					<include>Window_OpenClose_Left_Animation</include>
