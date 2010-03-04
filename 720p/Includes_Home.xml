@@ -760,7 +760,7 @@
 				<width>136</width>
 				<height>136</height>
 				<texture diffuse="thumb-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + ! VideoPlayer.Content(MusicVideos)</visible>
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="image">
 				<description>Cover image</description>
@@ -788,7 +788,7 @@
 				<height>141</height>
 				<aspectratio align="center" scalediffuse="true">keep</aspectratio>
 				<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-				<visible>VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos)</visible>
+				<visible>VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
 				<description>Year label</description>
@@ -810,7 +810,7 @@
 				<posy>15</posy>
 				<width>770</width>
 				<height>30</height>
-				<label>$INFO[VideoPlayer.tvshowtitle]</label>
+				<label>$INFO[VideoPlayer.TvshowTitle]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-30</font>
@@ -833,6 +833,20 @@
 				<visible>VideoPlayer.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
+				<description>Channel label</description>
+				<posx>770</posx>
+				<posy>15</posy>
+				<width>770</width>
+				<height>30</height>
+				<label>$INFO[VideoPlayer.ChannelName]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="label">
 				<description>Title label</description>
 				<posx>870</posx>
 				<posy>54</posy>
@@ -844,7 +858,7 @@
 				<font>font-30</font>
 				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Genre label</description>
@@ -877,7 +891,7 @@
 				<posy>88</posy>
 				<width>770</width>
 				<height>30</height>
-				<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
+				<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -891,7 +905,7 @@
 				<align>right</align>
 				<width>770</width>
 				<orientation>horizontal</orientation>
-				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)">Conditional</animation>
 				<control type="label">
 					<description>Time Label</description>
 					<height>12</height>
