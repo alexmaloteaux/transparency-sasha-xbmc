@@ -23,7 +23,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>$INFO[Container(597).Listitem(0).Icon]</texture>
+			<texture background="true">$INFO[Container(597).Listitem(0).Icon]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
