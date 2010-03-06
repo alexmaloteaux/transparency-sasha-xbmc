@@ -57,6 +57,7 @@
 					<viewtype label="536">list</viewtype>
 					<pagecontrol>61</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
 					<focusposition>2</focusposition>
 					<orientation>horizontal</orientation>
 					<hitrect x="512" y="260" w="256" h="256" />
@@ -66,7 +67,7 @@
 							<posy>0</posy>
 							<width>256</width>
 							<height>256</height>
-							<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<bordertexture border="7">thumb-shadow.png</bordertexture>
 							<bordersize>10</bordersize>
@@ -76,7 +77,7 @@
 							<posy>236</posy>
 							<width>256</width>
 							<height>256</height>
-							<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[ListItem.Icon]</texture>
+							<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<bordertexture border="7" flipy="true" diffuse="diffuse_mirror2.png">thumb-shadow.png</bordertexture>
 							<bordersize>10</bordersize>
@@ -88,7 +89,7 @@
 							<posy>0</posy>
 							<width>256</width>
 							<height>256</height>
-							<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<bordertexture border="7">thumb-shadow.png</bordertexture>
 							<bordersize>10</bordersize>
@@ -100,7 +101,7 @@
 							<posy>236</posy>
 							<width>256</width>
 							<height>256</height>
-							<texture flipy="true" diffuse="thumb-diffuse-mirror.png">$INFO[ListItem.Icon]</texture>
+							<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<bordertexture border="7" flipy="true" diffuse="diffuse_mirror2.png">thumb-shadow.png</bordertexture>
 							<bordersize>10</bordersize>

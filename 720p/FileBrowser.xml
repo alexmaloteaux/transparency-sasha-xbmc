@@ -118,7 +118,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="image">
@@ -334,6 +334,7 @@
 				<ondown>450</ondown>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="35">
 					<control type="image">
 						<posx>0</posx>
@@ -347,7 +348,7 @@
 						<posy>2</posy>
 						<width>31</width>
 						<height>31</height>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -383,7 +384,7 @@
 						<posy>2</posy>
 						<width>31</width>
 						<height>31</height>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -425,6 +426,7 @@
 				<ondown>451</ondown>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="35" width="560">
 					<control type="image">
 						<posx>0</posx>
@@ -438,7 +440,7 @@
 						<posy>2</posy>
 						<width>31</width>
 						<height>31</height>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -474,7 +476,7 @@
 						<posy>2</posy>
 						<width>31</width>
 						<height>31</height>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>45</posx>

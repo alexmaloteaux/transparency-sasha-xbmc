@@ -115,7 +115,7 @@
 								<selectedcolor>blue</selectedcolor>
 								<align>left</align>
 								<aligny>center</aligny>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>625</posx>
@@ -127,7 +127,7 @@
 								<selectedcolor>blue</selectedcolor>
 								<align>right</align>
 								<aligny>center</aligny>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
 						<focusedlayout height="29" width="665">
@@ -159,7 +159,7 @@
 								<selectedcolor>blue</selectedcolor>
 								<align>left</align>
 								<aligny>center</aligny>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>625</posx>
@@ -171,7 +171,7 @@
 								<selectedcolor>blue</selectedcolor>
 								<align>right</align>
 								<aligny>center</aligny>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
 					</control>
@@ -307,6 +307,7 @@
 						<viewtype label="536">list</viewtype>
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
+						<preloaditems>2</preloaditems>
 						<focusposition>2</focusposition>
 						<orientation>horizontal</orientation>
 						<hitrect x="370" y="50" w="186" h="252" />
@@ -317,7 +318,7 @@
 								<width>161</width>
 								<height>245</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -334,7 +335,7 @@
 								<width>161</width>
 								<height>245</height>
 								<aspectratio>stretch</aspectratio>
-								<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -361,7 +362,7 @@
 								<width>161</width>
 								<height>245</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 								<animation reversible="false" effect="zoom" start="21,3,161,245" end="-8,-57,240,368" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" end="21,3,161,245" start="-8,-57,240,368" time="200">unfocus</animation>
 							</control>
@@ -382,7 +383,7 @@
 								<width>161</width>
 								<height>245</height>
 								<aspectratio>stretch</aspectratio>
-								<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.ActualIcon]</texture>
 								<animation reversible="false" effect="zoom" start="21,255,161,245" end="-8,317,240,368" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" end="21,255,161,245" start="-8,317,240,368" time="200">unfocus</animation>
 							</control>
@@ -484,7 +485,7 @@
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="29" width="270">
@@ -513,7 +514,7 @@
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
 				</control>
@@ -534,6 +535,7 @@
 					<viewtype label="31031">list</viewtype>
 					<pagecontrol>2060</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
 					<itemlayout height="29" width="880">
 						<control type="image">
 							<posx>0</posx>
@@ -548,7 +550,7 @@
 							<posy>4</posy>
 							<width>40</width>
 							<height>22</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>60</posx>
@@ -599,7 +601,7 @@
 							<posy>4</posy>
 							<width>40</width>
 							<height>22</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>60</posx>

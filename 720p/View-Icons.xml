@@ -27,7 +27,7 @@
 				<focusposition>3</focusposition>
 				<orientation>horizontal</orientation>
 				<hitrect x="518" y="350" w="244" h="334" />
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="310" width="250">
 					<control type="image">
 						<posx>0</posx>
@@ -519,7 +519,7 @@
 				<focusposition>3</focusposition>
 				<orientation>horizontal</orientation>
 				<hitrect x="518" y="440" w="244" h="244" />
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="310" width="250">
 					<control type="image">
 						<posx>18</posx>
@@ -527,7 +527,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -563,7 +563,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -601,7 +601,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<animation reversible="false" effect="zoom" start="18,43,168,162" end="-14,11,235,226" time="250">Focus</animation>
 						<animation reversible="false" effect="zoom" end="18,43,168,162" start="-14,27,235,226" time="250">UnFocus</animation>
 						<visible>stringcompare(ListItem.Label,..)</visible>
@@ -635,7 +635,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
 						<animation reversible="false" effect="zoom" start="18,211,168,162" end="-14,244,235,226" time="250">Focus</animation>
 						<animation reversible="false" effect="zoom" end="18,211,168,162" start="-14,244,235,226" time="250">UnFocus</animation>
 						<visible>stringcompare(ListItem.Label,..)</visible>

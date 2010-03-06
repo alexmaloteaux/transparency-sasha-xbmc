@@ -20,7 +20,7 @@
 					<posy>-5</posy>
 					<width>446</width>
 					<height>102</height>
-					<texture>$INFO[Listitem.Icon]</texture>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
@@ -62,7 +62,7 @@
 					<posy>-5</posy>
 					<width>446</width>
 					<height>102</height>
-					<texture>$INFO[Listitem.Icon]</texture>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,-2" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false" />

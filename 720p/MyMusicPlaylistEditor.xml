@@ -80,7 +80,7 @@
 						<posy>45</posy>
 						<width>170</width>
 						<height>170</height>
-						<texture>$INFO[Container(50).ListItem.Icon]</texture>
+						<texture background="true">$INFO[Container(50).ListItem.Icon]</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -89,7 +89,7 @@
 						<width>170</width>
 						<height>170</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="thumb-diffuse.png">$INFO[Container(50).ListItem.Icon]</texture>
+						<texture diffuse="thumb-diffuse.png" background="true">$INFO[Container(50).ListItem.Icon]</texture>
 						<visible>![substring(Container.FolderPath,musicdb://3/) | substring(Container.FolderPath,musicdb://4/) | substring(Container.FolderPath,musicdb://6/) | substring(Container.FolderPath,musicdb://7/) | substring(Container.FolderPath,musicdb://8/)] + !stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -220,6 +220,7 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>30</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
 					<itemlayout height="29" width="430">
 						<control type="image">
 							<posx>0</posx>
@@ -373,6 +374,7 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>31</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
 					<itemlayout height="29" width="430">
 						<control type="image">
 							<posx>0</posx>

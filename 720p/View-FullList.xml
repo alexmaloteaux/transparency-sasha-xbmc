@@ -12,6 +12,7 @@
 			<viewtype label="31031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="880">
 				<control type="image">
 					<posx>0</posx>
@@ -26,7 +27,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>60</posx>
@@ -77,7 +78,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>60</posx>
@@ -119,6 +120,7 @@
 			<viewtype label="31031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="880">
 				<control type="image">
 					<posx>0</posx>
@@ -133,7 +135,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>60</posx>
@@ -195,7 +197,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>60</posx>
@@ -314,6 +316,7 @@
 			<viewtype label="31031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="880">
 				<control type="image">
 					<posx>0</posx>
@@ -328,7 +331,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>stringcompare(ListItem.Label,..) | !Container.Content(Albums)</visible>
 				</control>
 				<control type="image">
@@ -336,7 +339,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
 					<visible>!stringcompare(ListItem.Label,..) + Container.Content(Albums)</visible>
 				</control>
 				<control type="label">
@@ -416,7 +419,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>stringcompare(ListItem.Label,..) | !Container.Content(Albums)</visible>
 				</control>
 				<control type="image">
@@ -424,7 +427,7 @@
 					<posy>4</posy>
 					<width>40</width>
 					<height>22</height>
-					<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
 					<visible>!stringcompare(ListItem.Label,..) + Container.Content(Albums)</visible>
 				</control>
 				<control type="label">

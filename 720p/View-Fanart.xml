@@ -11,6 +11,7 @@
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
 			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
@@ -123,7 +124,7 @@
 				<width>214</width>
 				<height>214</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 			</control>
 		</control>
 	</include>
@@ -296,7 +297,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
@@ -305,7 +306,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
@@ -336,7 +337,7 @@
 				<width>198</width>
 				<height>288</height>
 				<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
-				<texture diffuse="gamecase-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="gamecase-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>Window.IsVisible(VideoPlaylist)</visible>
@@ -455,7 +456,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
@@ -465,7 +466,7 @@
 				<height>166</height>
 				<aspectratio align="left" aligny="center">keep</aspectratio>
 				<align>left</align>
-				<texture diffuse="banner-diffuse.png">$INFO[Listitem.icon]</texture>
+				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>Window.IsVisible(Videofiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -474,7 +475,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -514,7 +515,7 @@
 				<width>541</width>
 				<height>100</height>
 				<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png">$INFO[Container.TVshowThumb]</texture>
+				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[Container.TVshowThumb]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
@@ -554,7 +555,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
@@ -562,7 +563,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -736,7 +737,7 @@
 				<posy>418</posy>
 				<width>198</width>
 				<height>288</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
@@ -745,7 +746,7 @@
 				<width>298</width>
 				<height>168</height>
 				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="video-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<bordertexture border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -768,6 +769,7 @@
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
@@ -859,7 +861,7 @@
 				<width>214</width>
 				<height>214</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 			</control>
 		</control>
 	</include>
@@ -914,7 +916,7 @@
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="keep">scale</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
+				<texture background="true">$INFO[Listitem.Icon]</texture>
 				<bordersize>6</bordersize>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -1155,7 +1157,7 @@
 				<width>208</width>
 				<height>208</height>
 				<aspectratio scalediffuse="keep">scale</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
+				<texture background="true">$INFO[Listitem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
@@ -1164,7 +1166,7 @@
 				<width>208</width>
 				<height>208</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Window.IsVisible(Musicfiles)</visible>
 			</control>
@@ -1173,7 +1175,7 @@
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos)</visible>
 			</control>
@@ -1201,7 +1203,7 @@
 				<width>298</width>
 				<height>168</height>
 				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="video-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<bordertexture border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -1225,6 +1227,7 @@
 			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="355">
 				<control type="image">
 					<posx>0</posx>
@@ -1338,7 +1341,7 @@
 				<width>218</width>
 				<height>218</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Listitem.Icon]</texture>
+				<texture background="true">$INFO[Listitem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="largeimage">
@@ -1523,7 +1526,7 @@
 				<posy>491</posy>
 				<width>218</width>
 				<height>218</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(Listitem.Label,..) | !Control.IsVisible(7010)</visible>
 			</control>

@@ -12,6 +12,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
@@ -97,7 +98,7 @@
 			<width>386</width>
 			<height>386</height>
 			<aspectratio scalediffuse="false">scale</aspectratio>
-			<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+			<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<visible>Control.IsVisible(51)</visible>
 		</control>
@@ -116,6 +117,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
@@ -257,7 +259,7 @@
 				<width>355</width>
 				<height>450</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>![!stringcompare(ListItem.Label,..) + [Container.Content(Years) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Studios) | Container.Content(Genres)]]</visible>
 			</control>
@@ -288,7 +290,7 @@
 				<width>355</width>
 				<height>355</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Actors)</visible>
 			</control>
@@ -338,7 +340,7 @@
 				<width>231</width>
 				<height>286</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)</visible>
 			</control>
@@ -384,7 +386,7 @@
 				<width>231</width>
 				<height>286</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
 			</control>
@@ -434,7 +436,7 @@
 				<posy>31</posy>
 				<width>305</width>
 				<height>438</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="image">
@@ -464,7 +466,7 @@
 				<posy>31</posy>
 				<width>305</width>
 				<height>438</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -473,7 +475,7 @@
 				<posy>31</posy>
 				<width>305</width>
 				<height>438</height>
-				<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -496,7 +498,7 @@
 				<width>364</width>
 				<height>364</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>11</bordersize>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -523,7 +525,7 @@
 				<width>382</width>
 				<height>221</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>7</bordersize>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -533,7 +535,7 @@
 				<width>382</width>
 				<height>221</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="video-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordertexture border="10">video-shadow.png</bordertexture>
 				<bordersize>7</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -570,7 +572,7 @@
 				<width>305</width>
 				<height>438</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
-				<texture diffuse="gamecase-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="gamecase-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 		</control>
@@ -654,6 +656,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="29" width="470">
 				<control type="image">
 					<posx>0</posx>
@@ -799,7 +802,7 @@
 				<width>355</width>
 				<height>450</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>![!stringcompare(ListItem.Label,..) + [Container.Content(Years) | Container.Content(Genres)]]</visible>
 			</control>
@@ -830,7 +833,7 @@
 				<width>231</width>
 				<height>286</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
 			</control>
@@ -880,7 +883,7 @@
 				<posy>97</posy>
 				<width>312</width>
 				<height>306</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -890,7 +893,7 @@
 				<width>364</width>
 				<height>364</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordertexture>thumb-shadow.png</bordertexture>
 				<bordersize>11</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -906,7 +909,7 @@
 				<posy>97</posy>
 				<width>312</width>
 				<height>306</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -915,7 +918,7 @@
 				<posy>97</posy>
 				<width>312</width>
 				<height>306</height>
-				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -937,7 +940,7 @@
 				<posy>97</posy>
 				<width>312</width>
 				<height>306</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>

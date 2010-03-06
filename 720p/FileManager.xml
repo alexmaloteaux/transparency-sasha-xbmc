@@ -73,6 +73,7 @@
 					<ondown>20</ondown>
 					<pagecontrol>30</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
 					<itemlayout height="29">
 						<control type="image">
 							<posx>0</posx>
@@ -86,7 +87,7 @@
 							<posy>6</posy>
 							<width>20</width>
 							<height>20</height>
-							<info>ListItem.Icon</info>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>30</posx>
@@ -98,7 +99,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>480</posx>
@@ -110,7 +111,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>right</align>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="29">
@@ -135,7 +136,7 @@
 							<posy>6</posy>
 							<width>20</width>
 							<height>20</height>
-							<info>ListItem.Icon</info>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>30</posx>
@@ -147,7 +148,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>480</posx>
@@ -159,7 +160,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>right</align>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
 				</control>
@@ -205,6 +206,7 @@
 					<ondown>21</ondown>
 					<pagecontrol>31</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
 					<itemlayout height="29">
 						<control type="image">
 							<posx>0</posx>
@@ -218,7 +220,7 @@
 							<posy>6</posy>
 							<width>20</width>
 							<height>20</height>
-							<info>ListItem.Icon</info>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>30</posx>
@@ -230,7 +232,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>480</posx>
@@ -242,7 +244,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>right</align>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="29">
@@ -267,7 +269,7 @@
 							<posy>6</posy>
 							<width>20</width>
 							<height>20</height>
-							<info>ListItem.Icon</info>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>30</posx>
@@ -279,7 +281,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>480</posx>
@@ -291,7 +293,7 @@
 							<selectedcolor>blue</selectedcolor>
 							<textcolor>white</textcolor>
 							<align>right</align>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
 				</control>
