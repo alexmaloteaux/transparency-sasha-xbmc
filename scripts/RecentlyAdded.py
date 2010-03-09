@@ -160,13 +160,13 @@ class Main:
             fields = re.findall( "<field>(.*?)</field>", movie, re.DOTALL )
             # set properties
             self.WINDOW.setProperty( "LatestMovie.%d.Title" % ( count + 1, ), fields[ 1 ] )
-            #self.WINDOW.setProperty( "LatestMovie.%d.Rating" % ( count + 1, ), fields[ 6 ] )
+            self.WINDOW.setProperty( "LatestMovie.%d.Rating" % ( count + 1, ), fields[ 6 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.Year" % ( count + 1, ), fields[ 8 ] )
-            #self.WINDOW.setProperty( "LatestMovie.%d.RunningTime" % ( count + 1, ), fields[ 12 ] )
+            self.WINDOW.setProperty( "LatestMovie.%d.RunningTime" % ( count + 1, ), fields[ 12 ] )
             # get cache names of path to use for thumbnail/fanart and play path
             thumb_cache, fanart_cache, play_path = self._get_media( fields[ 24 ], fields[ 23 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.Path" % ( count + 1, ), ( play_path, fields[ 20 ], )[ fields[ 20 ] != "" and self.PLAY_TRAILER ] )
-            #self.WINDOW.setProperty( "LatestMovie.%d.Trailer" % ( count + 1, ), fields[ 20 ] )
+            self.WINDOW.setProperty( "LatestMovie.%d.Trailer" % ( count + 1, ), fields[ 20 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.Fanart" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( "Fanart", fanart_cache, ) )
             # initial thumb path
             thumb = "special://profile/Thumbnails/Video/%s/%s" % ( thumb_cache[ 0 ], thumb_cache, )
@@ -197,7 +197,7 @@ class Main:
             self.WINDOW.setProperty( "LatestEpisode.%d.ShowTitle" % ( count + 1, ), fields[ 27 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.EpisodeTitle" % ( count + 1, ), fields[ 1 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.EpisodeNo" % ( count + 1, ), "s%02de%02d" % ( int( fields[ 13 ] ), int( fields[ 14 ] ), ) )
-            #self.WINDOW.setProperty( "LatestEpisode.%d.Rating" % ( count + 1, ), fields[ 4 ] )
+            self.WINDOW.setProperty( "LatestEpisode.%d.Rating" % ( count + 1, ), fields[ 4 ] )
             # get cache names of path to use for thumbnail/fanart and play path
             thumb_cache, fanart_cache, play_path = self._get_media( fields[ 24 ], fields[ 23 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.Path" % ( count + 1, ), play_path )
@@ -242,7 +242,7 @@ class Main:
             fields = re.findall( "<field>(.*?)</field>", item, re.DOTALL )
             # set properties
             self.WINDOW.setProperty( "LatestSong.%d.Title" % ( count + 1, ), fields[ 3 ] )
-            #self.WINDOW.setProperty( "LatestSong.%d.Year" % ( count + 1, ), fields[ 6 ] )
+            self.WINDOW.setProperty( "LatestSong.%d.Year" % ( count + 1, ), fields[ 6 ] )
             self.WINDOW.setProperty( "LatestSong.%d.Artist" % ( count + 1, ), fields[ 24 ] )
             self.WINDOW.setProperty( "LatestSong.%d.Album" % ( count + 1, ), fields[ 21 ] )
             path = fields[ 22 ]
@@ -258,3 +258,4 @@ class Main:
 
 if ( __name__ == "__main__" ):
     Main()
+
