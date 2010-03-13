@@ -4815,7 +4815,7 @@
 					</control>
 					<control type="radiobutton" id="8112">
 						<description>Menu Settings Sub Addons</description>
-						<label>[B]$LOCALIZE[31550][/B]</label>
+						<label>[B]$LOCALIZE[24001][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Addons)</onclick>
