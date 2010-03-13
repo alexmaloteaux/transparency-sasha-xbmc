@@ -30,22 +30,36 @@
 				<visible>!Container.Content(Movies)</visible>
 			</control>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
+				<posx>18</posx>
+				<posy>396</posy>
+				<width>218</width>
+				<height>310</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<visible>Container.Content(Movies) | [Container.Content(TVShows) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] + !Window.IsVisible(VideoFiles)]</visible>
 			</control>
 			<control type="image">
-				<posx>-6</posx>
-				<posy>398</posy>
-				<width>263</width>
-				<height>328</height>
-				<texture>dvdcase.png</texture>
-				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
-				<bordersize>16</bordersize>
-				<visible>Container.Content(Movies) | [Container.Content(TVShows) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] + !Window.IsVisible(VideoFiles)]</visible>
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-dvd.png</texture>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + Container.Content(Movies) + !Window.IsVisible(VideoFiles)]</visible>
+			</control>
+			<control type="image">
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-bluray.png</texture>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + Container.Content(Movies) + !Window.IsVisible(VideoFiles)]</visible>
+			</control>
+			<control type="image">
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-tv.png</texture>
+				<visible>[Container.Content(TVShows) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] + !Window.IsVisible(VideoFiles)]</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -84,12 +98,12 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>400</posy>
+				<posy>360</posy>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
-				<animation effect="slide" start="0,0" end="0,42" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | [Container.Content(TvShows) + Window.IsVisible(Videofiles)]]">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,30" time="0" condition="Container.Content(Episodes)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,82" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | [Container.Content(TvShows) + Window.IsVisible(Videofiles)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,70" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="group" id="9001">
 				<control type="group" id="9000">
@@ -437,19 +451,19 @@
 						<posx>57</posx>
 						<posy>68</posy>
 						<width>1200</width>
-						<height>350</height>
+						<height>275</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="29">
+						<itemlayout height="25">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
 								<width>1166</width>
-								<height>30</height>
+								<height>25</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
@@ -457,33 +471,33 @@
 								<posx>160</posx>
 								<posy>0</posy>
 								<width>160</width>
-								<height>30</height>
+								<height>25</height>
 								<font>font-20c</font>
 								<align>right</align>
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
 								<posy>0</posy>
 								<width>980</width>
-								<height>30</height>
+								<height>25</height>
 								<font>font-20</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29">
+						<focusedlayout height="25">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
 								<width>1166</width>
-								<height>30</height>
+								<height>25</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
@@ -491,7 +505,7 @@
 								<posx>0</posx>
 								<posy>0</posy>
 								<width>1166</width>
-								<height>30</height>
+								<height>25</height>
 								<texture border="7">list-focus2.png</texture>
 								<include>VisibleFadeEffect</include>
 								<visible>Control.HasFocus(49)</visible>
@@ -501,25 +515,25 @@
 								<posx>160</posx>
 								<posy>0</posy>
 								<width>160</width>
-								<height>30</height>
+								<height>25</height>
 								<font>font-20c</font>
 								<align>right</align>
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
 								<posy>0</posy>
 								<width>980</width>
-								<height>30</height>
+								<height>25</height>
 								<font>font-20</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
 						<content>
@@ -608,7 +622,7 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>57</posx>
-						<posy>230</posy>
+						<posy>212</posy>
 						<width>1200</width>
 						<height>210</height>
 						<onleft>49</onleft>
@@ -637,7 +651,7 @@
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
@@ -649,7 +663,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
 						<focusedlayout height="29">
@@ -681,7 +695,7 @@
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
@@ -693,7 +707,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
 						<content>
@@ -770,7 +784,7 @@
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
@@ -782,7 +796,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
 						<focusedlayout height="29">
@@ -814,7 +828,7 @@
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
@@ -826,7 +840,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
 						<content>
@@ -928,7 +942,7 @@
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
@@ -940,7 +954,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
 						<focusedlayout height="29">
@@ -972,7 +986,7 @@
 								<aligny>center</aligny>
 								<textcolor>lightblue</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>175</posx>
@@ -984,7 +998,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
 						<content>

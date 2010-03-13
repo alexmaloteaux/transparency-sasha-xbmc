@@ -118,32 +118,73 @@
 			<posy>135</posy>
 			<visible>Control.IsVisible(58) + Container.Content(Movies)</visible>
 			<control type="image">
-				<posx>28</posx>
-				<posy>14</posy>
-				<width>200</width>
-				<height>295</height>
+				<posx>20</posx>
+				<posy>320</posy>
+				<width>196</width>
+				<height>278</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>320</posy>
+				<width>196</width>
+				<height>278</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>300</posy>
+				<width>210</width>
+				<height>324</height>
+				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>300</posy>
+				<width>210</width>
+				<height>324</height>
+				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>30</posy>
+				<width>196</width>
+				<height>278</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>28</posx>
-				<posy>14</posy>
-				<width>200</width>
-				<height>295</height>
+				<posx>20</posx>
+				<posy>30</posy>
+				<width>196</width>
+				<height>278</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>10</posy>
-				<width>233</width>
-				<height>304</height>
-				<texture>dvdcase.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<posx>20</posx>
+				<posy>4</posy>
+				<width>210</width>
+				<height>324</height>
+				<texture>case-dvd.png</texture>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>154</posx>
+				<posx>20</posx>
+				<posy>4</posy>
+				<width>210</width>
+				<height>324</height>
+				<texture>case-bluray.png</texture>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>146</posx>
 				<posy>250</posy>
 				<width>75</width>
 				<height>61</height>
@@ -152,33 +193,8 @@
 				<visible>ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>28</posx>
-				<posy>318</posy>
-				<width>200</width>
-				<height>295</height>
-				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>28</posx>
-				<posy>318</posy>
-				<width>200</width>
-				<height>295</height>
-				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>314</posy>
-				<width>233</width>
-				<height>304</height>
-				<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>154</posx>
-				<posy>318</posy>
+				<posx>146</posx>
+				<posy>316</posy>
 				<width>75</width>
 				<height>61</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png">movieset.png</texture>
@@ -188,7 +204,7 @@
 			<control type="label">
 				<description>Year Value</description>
 				<posx>0</posx>
-				<posy>316</posy>
+				<posy>318</posy>
 				<width>233</width>
 				<height>25</height>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/COLOR][/UPPERCASE][/B]]</label>
@@ -592,7 +608,7 @@
 			<animation effect="slide" start="0,0" end="0,252" time="0" condition="[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			<control type="label">
 				<description>Episodes txt</description>
-				<posx>215</posx>
+				<posx>225</posx>
 				<posy>135</posy>
 				<width>240</width>
 				<height>25</height>
@@ -604,9 +620,9 @@
 			</control>
 			<control type="label">
 				<description>Episodes Value</description>
-				<posx>222</posx>
+				<posx>232</posx>
 				<posy>135</posy>
-				<width>240</width>
+				<width>220</width>
 				<height>25</height>
 				<label fallback="416">$INFO[ListItem.episode]</label>
 				<align>left</align>
@@ -615,7 +631,7 @@
 			</control>
 			<control type="label">
 				<description>First Aired txt</description>
-				<posx>215</posx>
+				<posx>225</posx>
 				<posy>160</posy>
 				<width>240</width>
 				<height>25</height>
@@ -627,9 +643,9 @@
 			</control>
 			<control type="label">
 				<description>First Aired Value</description>
-				<posx>222</posx>
+				<posx>232</posx>
 				<posy>160</posy>
-				<width>240</width>
+				<width>220</width>
 				<height>25</height>
 				<label fallback="416">$INFO[ListItem.premiered]</label>
 				<align>left</align>
@@ -638,7 +654,7 @@
 			</control>
 			<control type="label">
 				<description>Genre txt</description>
-				<posx>215</posx>
+				<posx>225</posx>
 				<posy>185</posy>
 				<width>240</width>
 				<height>25</height>
@@ -650,9 +666,9 @@
 			</control>
 			<control type="label">
 				<description>Genre Value</description>
-				<posx>222</posx>
+				<posx>232</posx>
 				<posy>185</posy>
-				<width>240</width>
+				<width>220</width>
 				<height>25</height>
 				<label fallback="416">$INFO[ListItem.Genre]</label>
 				<align>left</align>
@@ -684,53 +700,53 @@
 			<posx>302</posx>
 			<posy>140</posy>
 			<control type="image">
-				<posx>28</posx>
-				<posy>14</posy>
-				<width>200</width>
-				<height>295</height>
+				<posx>20</posx>
+				<posy>30</posy>
+				<width>196</width>
+				<height>278</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>28</posx>
-				<posy>14</posy>
-				<width>200</width>
-				<height>295</height>
+				<posx>20</posx>
+				<posy>30</posy>
+				<width>196</width>
+				<height>278</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>10</posy>
-				<width>233</width>
-				<height>304</height>
-				<texture>dvdcase.png</texture>
+				<posx>20</posx>
+				<posy>4</posy>
+				<width>210</width>
+				<height>324</height>
+				<texture>case-tv.png</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>28</posx>
-				<posy>318</posy>
-				<width>200</width>
-				<height>295</height>
+				<posx>20</posx>
+				<posy>320</posy>
+				<width>196</width>
+				<height>278</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>28</posx>
-				<posy>318</posy>
-				<width>200</width>
-				<height>295</height>
+				<posx>20</posx>
+				<posy>320</posy>
+				<width>196</width>
+				<height>278</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>314</posy>
-				<width>233</width>
-				<height>304</height>
-				<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
+				<posx>20</posx>
+				<posy>300</posy>
+				<width>210</width>
+				<height>324</height>
+				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>

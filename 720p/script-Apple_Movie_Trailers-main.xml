@@ -180,40 +180,56 @@
 						<posy>135</posy>
 						<visible>Control.IsVisible(50)</visible>
 						<control type="image">
-							<posx>28</posx>
-							<posy>4</posy>
-							<width>200</width>
-							<height>290</height>
-							<texture>$INFO[ListItem.ActualIcon]</texture>
-							<fadetime>IconCrossfadeTime</fadetime>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>233</width>
-							<height>299</height>
-							<texture>dvdcase.png</texture>
-							<description>media info view</description>
-						</control>
-						<control type="image">
-							<posx>28</posx>
-							<posy>303</posy>
-							<width>200</width>
-							<height>290</height>
+							<posx>22</posx>
+							<posy>298</posy>
+							<width>182</width>
+							<height>260</height>
 							<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.ActualIcon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>299</posy>
-							<width>233</width>
-							<height>299</height>
-							<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
-							<description>media info view mirror</description>
+							<posx>22</posx>
+							<posy>276</posy>
+							<width>196</width>
+							<height>304</height>
+							<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+							<visible>IsEmpty(ListItem.Overlay)</visible>
 						</control>
 						<control type="image">
-							<posx>192</posx>
-							<posy>260</posy>
+							<posx>22</posx>
+							<posy>276</posy>
+							<width>196</width>
+							<height>304</height>
+							<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+							<visible>!IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
+							<posx>22</posx>
+							<posy>24</posy>
+							<width>182</width>
+							<height>260</height>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<fadetime>IconCrossfadeTime</fadetime>
+						</control>
+						<control type="image">
+							<posx>22</posx>
+							<posy>0</posy>
+							<width>196</width>
+							<height>304</height>
+							<texture>case-dvd.png</texture>
+							<visible>IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
+							<posx>22</posx>
+							<posy>0</posy>
+							<width>196</width>
+							<height>304</height>
+							<texture>case-bluray.png</texture>
+							<visible>!IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
+							<posx>166</posx>
+							<posy>254</posy>
 							<width>35</width>
 							<height>35</height>
 							<aspectratio>keep</aspectratio>
@@ -296,10 +312,10 @@
 					<ondown>61</ondown>
 					<usecontrolcoords>true</usecontrolcoords>
 					<control type="wraplist" id="51">
-						<posx>0</posx>
-						<posy>50</posy>
+						<posx>1</posx>
+						<posy>38</posy>
 						<width>930</width>
-						<height>450</height>
+						<height>310</height>
 						<onleft>57</onleft>
 						<onright>57</onright>
 						<onup>9000</onup>
@@ -313,42 +329,56 @@
 						<hitrect x="370" y="50" w="186" h="252" />
 						<itemlayout height="310" width="186">
 							<control type="image">
-								<posx>21</posx>
-								<posy>3</posy>
-								<width>161</width>
-								<height>245</height>
+								<posx>0</posx>
+								<posy>290</posy>
+								<width>182</width>
+								<height>258</height>
+								<aspectratio>stretch</aspectratio>
+								<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>272</posy>
+								<width>196</width>
+								<height>298</height>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+								<visible>IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>272</posy>
+								<width>196</width>
+								<height>298</height>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+								<visible>!IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>22</posy>
+								<width>182</width>
+								<height>258</height>
 								<aspectratio>stretch</aspectratio>
 								<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>186</width>
-								<height>252</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>dvdcase.png</texture>
-								<description>dvdthumb view</description>
-							</control>
-							<control type="image">
-								<posx>21</posx>
-								<posy>255</posy>
-								<width>161</width>
-								<height>245</height>
-								<aspectratio>stretch</aspectratio>
-								<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+								<width>196</width>
+								<height>298</height>
+								<texture>case-dvd.png</texture>
+								<visible>IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
-								<posy>252</posy>
-								<width>186</width>
-								<height>252</height>
-								<aspectratio>stretch</aspectratio>
-								<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
-								<description>dvdthumb view mirror</description>
+								<posy>0</posy>
+								<width>196</width>
+								<height>298</height>
+								<texture>case-bluray.png</texture>
+								<visible>!IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>145</posx>
-								<posy>215</posy>
+								<posy>248</posy>
 								<width>35</width>
 								<height>35</height>
 								<aspectratio>keep</aspectratio>
@@ -357,56 +387,74 @@
 						</itemlayout>
 						<focusedlayout height="310" width="186">
 							<control type="image">
-								<posx>21</posx>
-								<posy>3</posy>
-								<width>161</width>
-								<height>245</height>
+								<posx>0</posx>
+								<posy>290</posy>
+								<width>182</width>
+								<height>258</height>
+								<aspectratio>stretch</aspectratio>
+								<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+								<animation reversible="false" effect="zoom" start="0,290,182,258" end="-18,319,218,310" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="-18,319,218,310" end="0,290,182,258" time="200">unfocus</animation>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>272</posy>
+								<width>196</width>
+								<height>298</height>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+								<animation reversible="false" effect="zoom" start="0,272,196,298" end="-19,296,235,358" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="-19,296,235,358" end="0,272,196,298" time="200">unfocus</animation>
+								<visible>IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>272</posy>
+								<width>196</width>
+								<height>298</height>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+								<animation reversible="false" effect="zoom" start="0,272,196,298" end="-19,296,235,358" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="-19,296,235,358" end="0,272,196,298" time="200">unfocus</animation>
+								<visible>!IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>22</posy>
+								<width>182</width>
+								<height>258</height>
 								<aspectratio>stretch</aspectratio>
 								<texture background="true">$INFO[ListItem.ActualIcon]</texture>
-								<animation reversible="false" effect="zoom" start="21,3,161,245" end="-8,-57,240,368" time="200">focus</animation>
-								<animation reversible="false" effect="zoom" end="21,3,161,245" start="-8,-57,240,368" time="200">unfocus</animation>
+								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
 							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>186</width>
-								<height>252</height>
-								<texture>dvdcase.png</texture>
-								<description>dvdthumb view selected</description>
-								<aspectratio>stretch</aspectratio>
-								<animation reversible="false" effect="zoom" start="0,0,186,252" end="-41,-62,279,378" time="200">focus</animation>
-								<animation reversible="false" effect="zoom" end="0,0,186,252" start="-41,-62,279,378" time="200">unfocus</animation>
-							</control>
-							<control type="image">
-								<posx>21</posx>
-								<posy>255</posy>
-								<width>161</width>
-								<height>245</height>
-								<aspectratio>stretch</aspectratio>
-								<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-								<animation reversible="false" effect="zoom" start="21,255,161,245" end="-8,317,240,368" time="200">focus</animation>
-								<animation reversible="false" effect="zoom" end="21,255,161,245" start="-8,317,240,368" time="200">unfocus</animation>
+								<width>196</width>
+								<height>298</height>
+								<texture>case-dvd.png</texture>
+								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
+								<visible>IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
-								<posy>252</posy>
-								<width>186</width>
-								<height>252</height>
-								<aspectratio>stretch</aspectratio>
-								<texture flipy="true" diffuse="diffuse_mirror2.png">dvdcase.png</texture>
-								<description>dvdthumb view mirror selected</description>
-								<animation reversible="false" effect="zoom" start="0,252,186,252" end="-41,314,279,378" time="200">focus</animation>
-								<animation reversible="false" effect="zoom" end="0,252,186,252" start="-41,314,279,378" time="200">unfocus</animation>
+								<posy>0</posy>
+								<width>196</width>
+								<height>298</height>
+								<texture>case-bluray.png</texture>
+								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
+								<visible>!IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>145</posx>
-								<posy>215</posy>
+								<posy>248</posy>
 								<width>35</width>
 								<height>35</height>
 								<aspectratio>keep</aspectratio>
 								<texture>$INFO[ListItem.Overlay]</texture>
-								<animation reversible="false" effect="zoom" start="145,215,35,35" end="176,260,53,53" time="200">focus</animation>
-								<animation reversible="false" effect="zoom" end="145,215,35,35" start="176,260,53,53" time="200">unfocus</animation>
+								<animation reversible="false" effect="zoom" start="145,248,35,35" end="154,267,42,42" time="200">focus</animation>
+								<animation reversible="false" effect="zoom" start="154,267,42,42" end="145,248,35,35" time="200">unfocus</animation>
 							</control>
 						</focusedlayout>
 					</control>

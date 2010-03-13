@@ -277,6 +277,11 @@
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/studio/Polsat_hd.png</texture>
+			<visible>substring(VideoPlayer.Studio,Polsat) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+		</control>
+		<control type="image" id="5082">
+			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/SciFi_hd.png</texture>
 			<visible>substring(VideoPlayer.Studio,SciFi) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>

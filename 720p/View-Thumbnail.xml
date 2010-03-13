@@ -586,35 +586,51 @@
 			</focusedlayout>
 			<itemlayout condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)" height="235" width="176">
 				<control type="image">
-					<posx>31</posx>
-					<posy>7</posy>
+					<posx>18</posx>
+					<posy>17</posy>
 					<width>130</width>
-					<height>194</height>
+					<height>184</height>
 					<aspectratio>stretch</aspectratio>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>31</posx>
-					<posy>7</posy>
+					<posx>18</posx>
+					<posy>17</posy>
 					<width>130</width>
-					<height>194</height>
+					<height>184</height>
 					<aspectratio>stretch</aspectratio>
 					<texture fallback="DefaultVideo.png" background="true">$INFO[Listitem.Thumb]</texture>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>12</posx>
+					<posx>18</posx>
 					<posy>4</posy>
-					<width>152</width>
-					<height>200</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem.Label,..)</visible>
+					<width>140</width>
+					<height>210</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>18</posx>
+					<posy>4</posy>
+					<width>140</width>
+					<height>210</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>18</posx>
+					<posy>4</posy>
+					<width>140</width>
+					<height>210</height>
+					<texture>case-tv.png</texture>
+					<visible>[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>87</posx>
+					<posx>85</posx>
 					<posy>206</posy>
-					<width>166</width>
+					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
@@ -624,8 +640,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>128</posx>
-					<posy>167</posy>
+					<posx>120</posx>
+					<posy>169</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -635,57 +651,89 @@
 			</itemlayout>
 			<focusedlayout condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)" height="235" width="176">
 				<control type="image">
-					<posx>31</posx>
-					<posy>7</posy>
+					<posx>18</posx>
+					<posy>17</posy>
 					<width>130</width>
-					<height>194</height>
+					<height>184</height>
 					<aspectratio>stretch</aspectratio>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="0,-10" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="117" center="auto" time="200" reversible="false" />
+						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false" />
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="0,-10" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false" />
+						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
 					</animation>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>31</posx>
-					<posy>7</posy>
+					<posx>18</posx>
+					<posy>17</posy>
 					<width>130</width>
-					<height>194</height>
+					<height>184</height>
 					<aspectratio>stretch</aspectratio>
 					<texture fallback="DefaultVideo.png" background="true">$INFO[Listitem.Thumb]</texture>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="0,-10" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="117" center="auto" time="200" reversible="false" />
+						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false" />
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="0,-10" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false" />
+						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
 					</animation>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>12</posx>
+					<posx>18</posx>
 					<posy>4</posy>
-					<width>152</width>
-					<height>200</height>
-					<texture>dvdcase.png</texture>
+					<width>140</width>
+					<height>210</height>
+					<texture>case-dvd.png</texture>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="0,-10" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="117" center="auto" time="200" reversible="false" />
+						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false" />
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="0,-10" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false" />
+						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
 					</animation>
-					<visible>!stringcompare(ListItem.Label,..)</visible>
+					<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>124</posx>
+					<posx>18</posx>
+					<posy>4</posy>
+					<width>140</width>
+					<height>210</height>
+					<texture>case-bluray.png</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false" />
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
+					</animation>
+					<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>18</posx>
+					<posy>4</posy>
+					<width>140</width>
+					<height>210</height>
+					<texture>case-tv.png</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false" />
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
+					</animation>
+					<visible>[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>112</posx>
 					<posy>168</posy>
 					<width>50</width>
 					<height>41</height>
@@ -696,9 +744,9 @@
 					<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>87</posx>
+					<posx>85</posx>
 					<posy>206</posy>
-					<width>166</width>
+					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
 					<textcolor>blue</textcolor>
@@ -708,8 +756,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>128</posx>
-					<posy>167</posy>
+					<posx>120</posx>
+					<posy>169</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>

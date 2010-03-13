@@ -24,20 +24,28 @@
 				</control>
 				<control type="image">
 					<description>cover image</description>
-					<posx>67</posx>
-					<posy>44</posy>
-					<width>190</width>
+					<posx>44</posx>
+					<posy>40</posy>
+					<width>206</width>
 					<height>292</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
 				<control type="image">
-					<posx>40</posx>
-					<posy>40</posy>
-					<width>220</width>
-					<height>300</height>
-					<texture>dvdcase.png</texture>
-					<visible>VideoPlayer.Content(Movies)</visible>
+					<posx>44</posx>
+					<posy>16</posy>
+					<width>222</width>
+					<height>338</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies)</visible>
+				</control>
+				<control type="image">
+					<posx>44</posx>
+					<posy>16</posy>
+					<width>222</width>
+					<height>338</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies)</visible>
 				</control>
 			</control>
 			<control type="group">

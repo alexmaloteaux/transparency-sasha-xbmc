@@ -765,20 +765,27 @@
 			<control type="image">
 				<description>Cover image</description>
 				<posx>900</posx>
-				<posy>6</posy>
-				<width>94</width>
-				<height>138</height>
+				<posy>16</posy>
+				<width>86</width>
+				<height>122</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="image">
-				<posx>889</posx>
+				<posx>900</posx>
 				<posy>5</posy>
-				<width>108</width>
-				<height>140</height>
-				<texture>dvdcase.png</texture>
-				<description>home movie view</description>
-				<visible>VideoPlayer.Content(Movies)</visible>
+				<width>92</width>
+				<height>142</height>
+				<texture>case-dvd.png</texture>
+				<visible>VideoPlayer.Content(Movies) + ![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)]</visible>
+			</control>
+			<control type="image">
+				<posx>900</posx>
+				<posy>5</posy>
+				<width>92</width>
+				<height>142</height>
+				<texture>case-bluray.png</texture>
+				<visible>VideoPlayer.Content(Movies) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)]</visible>
 			</control>
 			<control type="image">
 				<description>Cover image</description>
@@ -1204,22 +1211,18 @@
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="largeimage">
-				<posx>925</posx>
-				<posy>31</posy>
-				<width>85</width>
-				<height>112</height>
-				<texture fallback="DefaultVideo.png" backgound="true">$INFO[Container(5044).ListItem.Thumb]</texture>
+				<posx>927</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>124</height>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<texture diffuse="gamecase-diffuse.png" fallback="DefaultVideo.png" backgound="true">$INFO[Container(5044).ListItem.Thumb]</texture>
+				<bordersize>6</bordersize>
+				<bordertexture>gamecase-shadow.png</bordertexture>
 				<fadetime>400</fadetime>
 			</control>
-			<control type="image">
-				<posx>913</posx>
-				<posy>29</posy>
-				<width>99</width>
-				<height>116</height>
-				<texture>dvdcase.png</texture>
-			</control>
 			<control type="label">
-				<posx>913</posx>
+				<posx>923</posx>
 				<posy>5</posy>
 				<height>20</height>
 				<width>99</width>
@@ -1232,7 +1235,7 @@
 			</control>
 			<control type="list" id="5044">
 				<orientation>vertical</orientation>
-				<posx>124</posx>
+				<posx>144</posx>
 				<posy>10</posy>
 				<height>120</height>
 				<width>770</width>
@@ -1356,7 +1359,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>891</posx>
+				<posx>914</posx>
 				<posy>127</posy>
 				<height>20</height>
 				<width>500</width>

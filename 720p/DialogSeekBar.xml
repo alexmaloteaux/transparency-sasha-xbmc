@@ -325,22 +325,28 @@
 				<camera x="150" y="80" />
 				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
 				<control type="image">
-					<posx>142</posx>
-					<posy>17</posy>
-					<width>135</width>
+					<posx>138</posx>
+					<posy>18</posy>
+					<width>140</width>
 					<height>200</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
 					<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 				</control>
 				<control type="image">
-					<posx>113</posx>
-					<posy>4</posy>
-					<width>177</width>
-					<height>226</height>
-					<texture diffuse="dvdcase-diffuse.png">dvdcase.png</texture>
-					<bordersize>10</bordersize>
-					<bordertexture border="5">dvdcase-shadow.png</bordertexture>
-					<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+					<posx>138</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>232</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+				</control>
+				<control type="image">
+					<posx>138</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>232</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 				</control>
 			</control>
 			<control type="group">

@@ -293,34 +293,41 @@
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
+				<posx>18</posx>
+				<posy>396</posy>
+				<width>218</width>
+				<height>310</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
+				<posx>18</posx>
+				<posy>396</posy>
+				<width>218</width>
+				<height>310</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
-				<posx>-6</posx>
-				<posy>398</posy>
-				<width>263</width>
-				<height>328</height>
-				<texture>dvdcase.png</texture>
-				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
-				<bordersize>16</bordersize>
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-dvd.png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
+			</control>
+			<control type="image">
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-bluray.png</texture>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
 				<posx>164</posx>
@@ -329,7 +336,7 @@
 				<height>61</height>
 				<texture>movieset.png</texture>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoPlaylist) + </visible>
+				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
 				<posx>30</posx>
@@ -432,7 +439,8 @@
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!Skin.HasSetting(TVShowsPosters) + !Window.IsVisible(VideoFiles)</visible>
-			</control>			<control type="textbox">
+			</control>
+			<control type="textbox">
 				<description>Plot Value for TVShow</description>
 				<posx>257</posx>
 				<posy>600</posy>
@@ -468,25 +476,23 @@
 				<align>left</align>
 				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Window.IsVisible(Videofiles) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Window.IsVisible(Videofiles) + !Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
+				<posx>18</posx>
+				<posy>396</posy>
+				<width>218</width>
+				<height>310</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>-6</posx>
-				<posy>398</posy>
-				<width>263</width>
-				<height>328</height>
-				<texture>dvdcase.png</texture>
-				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
-				<bordersize>16</bordersize>
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-tv.png</texture>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
@@ -551,30 +557,28 @@
 			<visible>Control.IsVisible(50) + Container.Content(Seasons)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
+				<posx>18</posx>
+				<posy>396</posy>
+				<width>218</width>
+				<height>310</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
-				<width>198</width>
-				<height>288</height>
+				<posx>18</posx>
+				<posy>396</posy>
+				<width>218</width>
+				<height>310</height>
 				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>-6</posx>
-				<posy>398</posy>
-				<width>263</width>
-				<height>328</height>
-				<texture>dvdcase.png</texture>
-				<bordertexture border="16">dvdcase-shadow.png</bordertexture>
-				<bordersize>16</bordersize>
+				<posx>18</posx>
+				<posy>368</posy>
+				<width>234</width>
+				<height>360</height>
+				<texture>case-tv.png</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>

@@ -7,274 +7,436 @@
 			<visible>Control.IsVisible(596) + Container.OnNext</visible>
 			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
 			<control type="image">
-				<posx>-159</posx>
+				<posx>-35</posx>
 				<posy>129</posy>
-				<width>72</width>
-				<height>101</height>
+				<width>71</width>
+				<height>100</height>
 				<texture background="true">$INFO[ListItem(-8).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="-159,129,72,101" end="-243,130,71,100" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="-35,129,71,100" end="-106,129,70,99" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>-169</posx>
-				<posy>127</posy>
-				<width>84</width>
-				<height>104</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="-169,127,84,100" end="-253,128,83,99" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-8).Label,..)</visible>
+				<posx>-35</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="-35,120,76,116" end="-111,120,75,115" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-8).VideoResolution,720) | substring(ListItem(-8).VideoResolution,1080)] + !stringcompare(ListItem(-8).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>-48</posx>
-				<posy>128</posy>
-				<width>73</width>
-				<height>102</height>
-				<texture background="true">$INFO[ListItem(-7).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="-48,128,73,102" end="-159,129,72,101" time="250">Hidden</animation>
-				<visible>Container(596).OnNext</visible>
-			</control>
-			<control type="image">
-				<posx>-58</posx>
-				<posy>126</posy>
-				<width>85</width>
-				<height>105</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="-58,126,85,105" end="-169,127,84,100" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-7).Label,..)</visible>
+				<posx>-35</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="-35,120,76,116" end="-111,120,75,115" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-8).VideoResolution,720) | substring(ListItem(-8).VideoResolution,1080)] + !stringcompare(ListItem(-8).Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>37</posx>
-				<posy>126</posy>
+				<posy>127</posy>
+				<width>73</width>
+				<height>102</height>
+				<texture background="true">$INFO[ListItem(-7).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="37,127,73,102" end="-35,129,71,100" time="250">Hidden</animation>
+				<visible>Container(596).OnNext</visible>
+			</control>
+			<control type="image">
+				<posx>37</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="37,118,78,118" end="-35,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-7).VideoResolution,720) | substring(ListItem(-7).VideoResolution,1080)] + !stringcompare(ListItem(-7).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>37</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="37,118,78,118" end="-35,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-7).VideoResolution,720) | substring(ListItem(-7).VideoResolution,1080)] + !stringcompare(ListItem(-7).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>111</posx>
+				<posy>124</posy>
 				<width>74</width>
-				<height>104</height>
+				<height>105</height>
 				<texture background="true">$INFO[ListItem(-6).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="37,126,74,104" end="-48,128,73,102" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="111,124,74,105" end="37,127,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>27</posx>
-				<posy>125</posy>
-				<width>86</width>
-				<height>106</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="27,125,86,106" end="-58,126,85,105" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-6).Label,..)</visible>
+				<posx>111</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="111,115,80,122" end="37,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-6).VideoResolution,720) | substring(ListItem(-6).VideoResolution,1080)] + !stringcompare(ListItem(-6).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>124</posx>
-				<posy>122</posy>
-				<width>77</width>
-				<height>108</height>
-				<texture background="true">$INFO[ListItem(-5).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="124,122,77,108" end="37,126,74,104" time="250">Hidden</animation>
-				<visible>Container(596).OnNext</visible>
+				<posx>111</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="111,115,80,122" end="37,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-6).VideoResolution,720) | substring(ListItem(-6).VideoResolution,1080)] + !stringcompare(ListItem(-6).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>113</posx>
+				<posx>187</posx>
 				<posy>120</posy>
-				<width>89</width>
-				<height>111</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="113,120,89,111" end="27,125,86,106" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-5).Label,..)</visible>
+				<width>76</width>
+				<height>109</height>
+				<texture background="true">$INFO[ListItem(-5).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="187,120,76,109" end="111,124,74,105" time="250">Hidden</animation>
+				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>214</posx>
-				<posy>114</posy>
-				<width>83</width>
+				<posx>187</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="187,110,82,127" end="111,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-5).VideoResolution,720) | substring(ListItem(-5).VideoResolution,1080)] + !stringcompare(ListItem(-5).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>187</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="187,110,82,127" end="111,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-5).VideoResolution,720) | substring(ListItem(-5).VideoResolution,1080)] + !stringcompare(ListItem(-5).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>265</posx>
+				<posy>112</posy>
+				<width>82</width>
 				<height>116</height>
 				<texture background="true">$INFO[ListItem(-4).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="214,114,83,116" end="124,122,77,108" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="265,112,82,116" end="187,120,76,109" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>202</posx>
-				<posy>112</posy>
-				<width>97</width>
-				<height>119</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="202,112,97,119" end="113,120,89,111" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-4).Label,..)</visible>
+				<posx>265</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="265,102,88,135" end="187,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-4).VideoResolution,720) | substring(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>312</posx>
-				<posy>97</posy>
-				<width>94</width>
+				<posx>265</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="265,102,88,135" end="187,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-4).VideoResolution,720) | substring(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>349</posx>
+				<posy>96</posy>
+				<width>93</width>
 				<height>132</height>
 				<texture background="true">$INFO[ListItem(-3).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="312,97,94,132" end="214,114,83,116" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="349,96,93,132" end="265,112,82,116" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>299</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>136</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="299,95,110,136" end="202,112,97,119" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-3).Label,..)</visible>
+				<posx>349</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="349,84,100,154" end="265,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-3).VideoResolution,720) | substring(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>425</posx>
+				<posx>349</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="349,84,100,154" end="265,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-3).VideoResolution,720) | substring(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>444</posx>
 				<posy>65</posy>
-				<width>117</width>
-				<height>164</height>
+				<width>114</width>
+				<height>162</height>
 				<texture background="true">$INFO[ListItem(-2).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="425,65,117,164" end="312,97,94,132" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="444,65,114,162" end="349,96,93,132" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>409</posx>
-				<posy>64</posy>
-				<width>136</width>
-				<height>167</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="409,64,136,167" end="299,95,110,136" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-2).Label,..)</visible>
+				<posx>444</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="444,50,122,189" end="349,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-2).VideoResolution,720) | substring(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>567</posx>
-				<posy>0</posy>
-				<width>164</width>
-				<height>228</height>
+				<posx>444</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="444,50,122,189" end="349,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-2).VideoResolution,720) | substring(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>12</posy>
+				<width>150</width>
+				<height>214</height>
 				<texture background="true">$INFO[ListItem(-1).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="567,0,164,228" end="425,65,117,164" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="560,12,150,214" end="444,65,114,162" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>545</posx>
-				<posy>-2</posy>
-				<width>190</width>
-				<height>233</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="545,-2,190,233" end="409,64,136,167" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(-1).Label,..)</visible>
+				<posx>560</posx>
+				<posy>-6</posy>
+				<width>160</width>
+				<height>248</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="560,-6,160,248" end="444,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(-1).VideoResolution,720) | substring(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>751</posx>
+				<posx>560</posx>
+				<posy>-6</posy>
+				<width>160</width>
+				<height>248</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="560,-6,160,248" end="444,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(-1).VideoResolution,720) | substring(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>712</posx>
 				<posy>65</posy>
-				<width>117</width>
-				<height>164</height>
+				<width>114</width>
+				<height>162</height>
 				<texture background="true">$INFO[ListItem(0).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="751,65,117,164" end="567,0,164,228" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="712,65,114,162" end="560,12,150,214" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>735</posx>
-				<posy>64</posy>
-				<width>136</width>
-				<height>167</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="735,64,136,167" end="545,-2,190,233" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(0).Label,..)</visible>
+				<posx>712</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="712,50,122,189" end="560,-6,160,248" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(0).VideoResolution,720) | substring(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>884</posx>
-				<posy>97</posy>
-				<width>94</width>
+				<posx>712</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="712,50,122,189" end="560,-6,160,248" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(0).VideoResolution,720) | substring(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>828</posx>
+				<posy>96</posy>
+				<width>93</width>
 				<height>132</height>
 				<texture background="true">$INFO[ListItem(1).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="884,97,94,132" end="751,65,117,164" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="828,96,93,132" end="712,65,114,162" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>871</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>136</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="871,95,110,136" end="735,64,136,167" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(1).Label,..)</visible>
+				<posx>828</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="828,84,100,154" end="712,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(1).VideoResolution,720) | substring(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>993</posx>
-				<posy>114</posy>
-				<width>83</width>
+				<posx>828</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="828,84,100,154" end="712,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(1).VideoResolution,720) | substring(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>924</posx>
+				<posy>112</posy>
+				<width>82</width>
 				<height>116</height>
 				<texture background="true">$INFO[ListItem(2).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="993,114,83,116" end="884,97,94,132" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="924,112,82,116" end="828,96,93,132" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>981</posx>
-				<posy>112</posy>
-				<width>97</width>
-				<height>119</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="981,112,97,119" end="871,95,110,136" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(2).Label,..)</visible>
+				<posx>924</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="924,102,88,135" end="828,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(2).VideoResolution,720) | substring(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1089</posx>
-				<posy>122</posy>
-				<width>77</width>
-				<height>108</height>
-				<texture background="true">$INFO[ListItem(3).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1089,122,77,108" end="993,114,83,116" time="250">Hidden</animation>
-				<visible>Container(596).OnNext</visible>
+				<posx>924</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="924,102,88,135" end="828,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(2).VideoResolution,720) | substring(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1078</posx>
+				<posx>1008</posx>
 				<posy>120</posy>
-				<width>89</width>
-				<height>111</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1078,120,89,111" end="981,112,97,119" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(3).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>1177</posx>
-				<posy>126</posy>
-				<width>74</width>
-				<height>104</height>
-				<texture background="true">$INFO[ListItem(4).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1177,126,74,104" end="1089,122,77,108" time="250">Hidden</animation>
+				<width>76</width>
+				<height>109</height>
+				<texture background="true">$INFO[ListItem(3).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="1008,120,76,109" end="924,112,82,116" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1167</posx>
-				<posy>125</posy>
-				<width>86</width>
-				<height>106</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1167,125,86,106" end="1078,120,89,111" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(4).Label,..)</visible>
+				<posx>1008</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1008,110,82,127" end="924,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(3).VideoResolution,720) | substring(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1263</posx>
-				<posy>128</posy>
+				<posx>1008</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1008,110,82,127" end="924,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(3).VideoResolution,720) | substring(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1087</posx>
+				<posy>124</posy>
+				<width>74</width>
+				<height>105</height>
+				<texture background="true">$INFO[ListItem(4).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="1087,124,74,105" end="1008,120,76,109" time="250">Hidden</animation>
+				<visible>Container(596).OnNext</visible>
+			</control>
+			<control type="image">
+				<posx>1087</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1087,115,80,122" end="1008,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(4).VideoResolution,720) | substring(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1087</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1087,115,80,122" end="1008,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(4).VideoResolution,720) | substring(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1164</posx>
+				<posy>127</posy>
 				<width>73</width>
 				<height>102</height>
 				<texture background="true">$INFO[ListItem(5).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1263,128,73,102" end="1177,126,74,104" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="1164,127,73,102" end="1087,124,74,105" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1253</posx>
-				<posy>126</posy>
-				<width>85</width>
-				<height>105</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1253,126,85,105" end="1167,125,86,106" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(5).Label,..)</visible>
+				<posx>1164</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1164,118,78,118" end="1087,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(5).VideoResolution,720) | substring(ListItem(5).VideoResolution,1080)] + !stringcompare(ListItem(5).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1348</posx>
+				<posx>1164</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1164,118,78,118" end="1087,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(5).VideoResolution,720) | substring(ListItem(5).VideoResolution,1080)] + !stringcompare(ListItem(5).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1239</posx>
 				<posy>129</posy>
-				<width>72</width>
-				<height>101</height>
+				<width>71</width>
+				<height>100</height>
 				<texture background="true">$INFO[ListItem(6).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1348,129,72,101" end="1263,128,73,102" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="1239,129,71,100" end="1164,127,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1338</posx>
-				<posy>127</posy>
-				<width>84</width>
-				<height>104</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1338,127,84,104" end="1253,126,85,105" time="250">Hidden</animation>
-				<visible>Container(596).OnNext + !stringcompare(ListItem(6).Label,..)</visible>
+				<posx>1239</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1239,120,76,116" end="1164,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(6).VideoResolution,720) | substring(ListItem(6).VideoResolution,1080)] + !stringcompare(ListItem(6).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1239</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1239,120,76,116" end="1164,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(6).VideoResolution,720) | substring(ListItem(6).VideoResolution,1080)] + !stringcompare(ListItem(6).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1312</posx>
+				<posy>129</posy>
+				<width>70</width>
+				<height>99</height>
+				<texture background="true">$INFO[ListItem(7).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="1312,129,70,99" end="1239,129,71,100" time="250">Hidden</animation>
+				<visible>Container(596).OnNext</visible>
+			</control>
+			<control type="image">
+				<posx>1312</posx>
+				<posy>120</posy>
+				<width>75</width>
+				<height>115</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1312,120,75,115" end="1239,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + ![substring(ListItem(7).VideoResolution,720) | substring(ListItem(7).VideoResolution,1080)] + !stringcompare(ListItem(7).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1312</posx>
+				<posy>120</posy>
+				<width>75</width>
+				<height>115</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1312,120,75,115" end="1239,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnNext + [substring(ListItem(7).VideoResolution,720) | substring(ListItem(7).VideoResolution,1080)] + !stringcompare(ListItem(7).Label,..)</visible>
 			</control>
 		</control>
 		<control type="group" id="7004">
@@ -284,275 +446,436 @@
 			<visible>Control.IsVisible(596) + Container.OnPrevious</visible>
 			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
 			<control type="image">
-				<posx>-169</posx>
+				<posx>-107</posx>
 				<posy>129</posy>
-				<width>72</width>
-				<height>101</height>
+				<width>70</width>
+				<height>99</height>
+				<texture background="true">$INFO[ListItem(-7).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="-107,129,70,99" end="-35,129,71,100" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>-107</posx>
+				<posy>120</posy>
+				<width>75</width>
+				<height>115</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="-107,120,75,115" end="-35,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-7).VideoResolution,720) | substring(ListItem(-7).VideoResolution,1080)] + !stringcompare(ListItem(-7).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>-107</posx>
+				<posy>120</posy>
+				<width>75</width>
+				<height>115</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="-107,120,75,115" end="-35,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-7).VideoResolution,720) | substring(ListItem(-7).VideoResolution,1080)] + !stringcompare(ListItem(-7).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>-35</posx>
+				<posy>129</posy>
+				<width>71</width>
+				<height>100</height>
 				<texture background="true">$INFO[ListItem(-6).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="-169,129,72,101" end="-48,128,73,102" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="-35,129,71,100" end="37,127,73,102" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>-159</posx>
-				<posy>127</posy>
-				<width>84</width>
-				<height>104</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="-159,127,84,104" end="-58,126,85,105" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(-6).Label,..)</visible>
+				<posx>-35</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="-35,120,76,116" end="37,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-6).VideoResolution,720) | substring(ListItem(-6).VideoResolution,1080)] + !stringcompare(ListItem(-6).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>-48</posx>
-				<posy>128</posy>
-				<width>73</width>
-				<height>102</height>
-				<texture background="true">$INFO[ListItem(-5).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="-48,128,73,102" end="37,126,74,104" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious</visible>
-			</control>
-			<control type="image">
-				<posx>-58</posx>
-				<posy>126</posy>
-				<width>85</width>
-				<height>105</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="-58,126,85,105" end="27,125,86,106" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(-5).Label,..)</visible>
+				<posx>-35</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="-35,120,76,116" end="37,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-6).VideoResolution,720) | substring(ListItem(-6).VideoResolution,1080)] + !stringcompare(ListItem(-6).Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>37</posx>
-				<posy>126</posy>
+				<posy>127</posy>
+				<width>73</width>
+				<height>102</height>
+				<texture background="true">$INFO[ListItem(-5).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="37,127,73,102" end="111,124,74,105" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>37</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="37,118,78,118" end="111,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-5).VideoResolution,720) | substring(ListItem(-5).VideoResolution,1080)] + !stringcompare(ListItem(-5).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>37</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="37,118,78,118" end="111,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-5).VideoResolution,720) | substring(ListItem(-5).VideoResolution,1080)] + !stringcompare(ListItem(-5).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>111</posx>
+				<posy>124</posy>
 				<width>74</width>
-				<height>104</height>
+				<height>105</height>
 				<texture background="true">$INFO[ListItem(-4).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="37,126,74,104" end="124,122,77,108" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="111,124,74,105" end="187,120,76,109" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>27</posx>
-				<posy>125</posy>
-				<width>86</width>
-				<height>106</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="27,125,86,106" end="113,120,89,111" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(-4).Label,..)</visible>
+				<posx>111</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="111,115,80,122" end="187,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-4).VideoResolution,720) | substring(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>124</posx>
-				<posy>122</posy>
-				<width>77</width>
-				<height>108</height>
-				<texture background="true">$INFO[ListItem(-3).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="124,122,77,108" end="214,114,83,116" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious</visible>
+				<posx>111</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="111,115,80,122" end="187,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-4).VideoResolution,720) | substring(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>113</posx>
+				<posx>187</posx>
 				<posy>120</posy>
-				<width>89</width>
-				<height>111</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="113,120,89,111" end="202,112,97,119" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(-3).Label,..)</visible>
+				<width>76</width>
+				<height>109</height>
+				<texture background="true">$INFO[ListItem(-3).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="187,120,76,109" end="265,112,82,116" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>214</posx>
-				<posy>114</posy>
-				<width>83</width>
+				<posx>187</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="187,110,82,127" end="265,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-3).VideoResolution,720) | substring(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>187</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="187,110,82,127" end="265,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-3).VideoResolution,720) | substring(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>265</posx>
+				<posy>112</posy>
+				<width>82</width>
 				<height>116</height>
 				<texture background="true">$INFO[ListItem(-2).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="214,114,83,116" end="312,97,94,132" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="265,112,82,116" end="349,96,93,132" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>202</posx>
-				<posy>112</posy>
-				<width>97</width>
-				<height>119</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="202,112,97,119" end="299,95,110,136" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(-2).Label,..)</visible>
+				<posx>265</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="265,102,88,135" end="349,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-2).VideoResolution,720) | substring(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>312</posx>
-				<posy>97</posy>
-				<width>94</width>
+				<posx>265</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="265,102,88,135" end="349,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-2).VideoResolution,720) | substring(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>349</posx>
+				<posy>96</posy>
+				<width>93</width>
 				<height>132</height>
 				<texture background="true">$INFO[ListItem(-1).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="312,97,94,132" end="425,65,117,164" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="349,96,93,132" end="444,65,114,162" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>299</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>136</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="299,95,110,136" end="409,64,136,167" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(-1).Label,..)</visible>
+				<posx>349</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="349,84,100,154" end="444,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(-1).VideoResolution,720) | substring(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>425</posx>
+				<posx>349</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="349,84,100,154" end="444,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(-1).VideoResolution,720) | substring(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>444</posx>
 				<posy>65</posy>
-				<width>117</width>
-				<height>164</height>
+				<width>114</width>
+				<height>162</height>
 				<texture background="true">$INFO[ListItem(0).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="425,65,117,164" end="567,0,164,228" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="444,65,114,162" end="560,12,150,214" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>409</posx>
-				<posy>64</posy>
-				<width>136</width>
-				<height>167</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="409,64,136,167" end="545,-2,190,233" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(0).Label,..)</visible>
+				<posx>444</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="444,50,122,189" end="560,-6,160,248" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(0).VideoResolution,720) | substring(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>567</posx>
-				<posy>0</posy>
-				<width>164</width>
-				<height>228</height>
+				<posx>444</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="444,50,122,189" end="560,-6,160,248" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(0).VideoResolution,720) | substring(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>12</posy>
+				<width>150</width>
+				<height>214</height>
 				<texture background="true">$INFO[ListItem(1).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="567,0,164,228" end="751,65,117,164" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="560,12,150,214" end="712,65,114,162" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>545</posx>
-				<posy>-2</posy>
-				<width>190</width>
-				<height>233</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="545,-2,190,233" end="735,64,136,167" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(1).Label,..)</visible>
+				<posx>560</posx>
+				<posy>-6</posy>
+				<width>160</width>
+				<height>248</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="560,-6,160,248" end="712,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(1).VideoResolution,720) | substring(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>751</posx>
+				<posx>560</posx>
+				<posy>-6</posy>
+				<width>160</width>
+				<height>248</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="560,-6,160,248" end="712,50,122,189" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(1).VideoResolution,720) | substring(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>712</posx>
 				<posy>65</posy>
-				<width>117</width>
-				<height>164</height>
+				<width>114</width>
+				<height>162</height>
 				<texture background="true">$INFO[ListItem(2).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="751,65,117,164" end="884,97,94,132" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="712,65,114,162" end="828,96,93,132" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
-
 			</control>
 			<control type="image">
-				<posx>735</posx>
-				<posy>64</posy>
-				<width>136</width>
-				<height>167</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="735,64,136,167" end="871,95,110,136" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(2).Label,..)</visible>
+				<posx>712</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="712,50,122,189" end="828,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(2).VideoResolution,720) | substring(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>884</posx>
-				<posy>97</posy>
-				<width>94</width>
+				<posx>712</posx>
+				<posy>50</posy>
+				<width>122</width>
+				<height>189</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="712,50,122,189" end="828,84,100,154" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(2).VideoResolution,720) | substring(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>828</posx>
+				<posy>96</posy>
+				<width>93</width>
 				<height>132</height>
 				<texture background="true">$INFO[ListItem(3).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="884,97,94,132" end="993,114,83,116" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="828,96,93,132" end="924,112,82,116" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>871</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>136</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="871,95,110,136" end="981,112,97,119" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(3).Label,..)</visible>
+				<posx>828</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="828,84,100,154" end="924,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(3).VideoResolution,720) | substring(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>993</posx>
-				<posy>114</posy>
-				<width>83</width>
+				<posx>828</posx>
+				<posy>84</posy>
+				<width>100</width>
+				<height>154</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="828,84,100,154" end="924,102,88,135" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(3).VideoResolution,720) | substring(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>924</posx>
+				<posy>112</posy>
+				<width>82</width>
 				<height>116</height>
 				<texture background="true">$INFO[ListItem(4).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="993,114,83,116" end="1089,122,77,108" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="924,112,82,116" end="1008,120,76,109" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>981</posx>
-				<posy>112</posy>
-				<width>97</width>
-				<height>119</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="981,112,97,119" end="1078,120,89,111" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(4).Label,..)</visible>
+				<posx>924</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="924,102,88,135" end="1008,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(4).VideoResolution,720) | substring(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1089</posx>
-				<posy>122</posy>
-				<width>77</width>
-				<height>108</height>
-				<texture background="true">$INFO[ListItem(5).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1089,122,77,108" end="1177,126,74,104" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious</visible>
+				<posx>924</posx>
+				<posy>102</posy>
+				<width>88</width>
+				<height>135</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="924,102,88,135" end="1008,110,82,127" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(4).VideoResolution,720) | substring(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1078</posx>
+				<posx>1008</posx>
 				<posy>120</posy>
-				<width>89</width>
-				<height>111</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1078,120,89,111" end="1167,125,86,106" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(5).Label,..)</visible>
-			</control>
-			<control type="image">
-				<posx>1177</posx>
-				<posy>126</posy>
-				<width>74</width>
-				<height>104</height>
-				<texture background="true">$INFO[ListItem(6).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1177,126,74,104" end="1263,128,73,102" time="250">Hidden</animation>
+				<width>76</width>
+				<height>109</height>
+				<texture background="true">$INFO[ListItem(5).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="1008,120,76,109" end="1087,124,74,105" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1167</posx>
-				<posy>125</posy>
-				<width>86</width>
-				<height>106</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1167,125,86,106" end="1253,126,85,105" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(6).Label,..)</visible>
+				<posx>1008</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1008,110,82,127" end="1087,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(5).VideoResolution,720) | substring(ListItem(5).VideoResolution,1080)] + !stringcompare(ListItem(5).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1263</posx>
-				<posy>128</posy>
+				<posx>1008</posx>
+				<posy>110</posy>
+				<width>82</width>
+				<height>127</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1008,110,82,127" end="1087,115,80,122" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(5).VideoResolution,720) | substring(ListItem(5).VideoResolution,1080)] + !stringcompare(ListItem(5).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1087</posx>
+				<posy>124</posy>
+				<width>74</width>
+				<height>105</height>
+				<texture background="true">$INFO[ListItem(6).Icon]</texture>
+				<animation reversible="false" effect="zoom" start="1087,124,74,105" end="1164,127,73,102" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>1087</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1087,115,80,122" end="1164,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(6).VideoResolution,720) | substring(ListItem(6).VideoResolution,1080)] + !stringcompare(ListItem(6).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1087</posx>
+				<posy>115</posy>
+				<width>80</width>
+				<height>122</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1087,115,80,122" end="1164,118,78,118" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(6).VideoResolution,720) | substring(ListItem(6).VideoResolution,1080)] + !stringcompare(ListItem(6).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1164</posx>
+				<posy>127</posy>
 				<width>73</width>
 				<height>102</height>
 				<texture background="true">$INFO[ListItem(7).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1263,128,73,102" end="1348,129,72,101" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="1164,127,73,102" end="1239,129,71,100" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1253</posx>
-				<posy>126</posy>
-				<width>85</width>
-				<height>105</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1253,126,85,105" end="1338,127,84,104" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(7).Label,..)</visible>
+				<posx>1164</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1164,118,78,118" end="1239,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(7).VideoResolution,720) | substring(ListItem(7).VideoResolution,1080)] + !stringcompare(ListItem(7).Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>1348</posx>
+				<posx>1164</posx>
+				<posy>118</posy>
+				<width>78</width>
+				<height>118</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1164,118,78,118" end="1239,120,76,116" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(7).VideoResolution,720) | substring(ListItem(7).VideoResolution,1080)] + !stringcompare(ListItem(7).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1239</posx>
 				<posy>129</posy>
-				<width>72</width>
-				<height>101</height>
+				<width>71</width>
+				<height>100</height>
 				<texture background="true">$INFO[ListItem(8).Icon]</texture>
-				<animation reversible="false" effect="zoom" start="1348,129,72,101" end="1432,130,71,100" time="250">Hidden</animation>
+				<animation reversible="false" effect="zoom" start="1239,129,71,100" end="1310,129,70,99" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1338</posx>
-				<posy>127</posy>
-				<width>84</width>
-				<height>104</height>
-				<texture>dvdcase.png</texture>
-				<animation reversible="false" effect="zoom" start="1338,127,84,104" end="1422,128,83,103" time="250">Hidden</animation>
-				<visible>Container(596).OnPrevious + !stringcompare(ListItem(8).Label,..)</visible>
+				<posx>1239</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-dvd.png</texture>
+				<animation reversible="false" effect="zoom" start="1239,120,76,116" end="1315,120,75,115" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + ![substring(ListItem(8).VideoResolution,720) | substring(ListItem(8).VideoResolution,1080)] + !stringcompare(ListItem(8).Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>1239</posx>
+				<posy>120</posy>
+				<width>76</width>
+				<height>116</height>
+				<texture>case-bluray.png</texture>
+				<animation reversible="false" effect="zoom" start="1239,120,76,116" end="1315,120,75,115" time="250">Hidden</animation>
+				<visible>Container(596).OnPrevious + [substring(ListItem(8).VideoResolution,720) | substring(ListItem(8).VideoResolution,1080)] + !stringcompare(ListItem(8).Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -560,133 +883,215 @@
 			<posy>489</posy>
 			<visible>Control.IsVisible(596) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
 			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(-7)_Animation</include>
+				<control type="image">
+					<posx>-35</posx>
+					<posy>129</posy>
+					<width>71</width>
+					<height>100</height>
+					<texture background="true">$INFO[ListItem(-7).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>-35</posx>
+					<posy>120</posy>
+					<width>76</width>
+					<height>116</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-7).VideoResolution,720) | substring(ListItem(-7).VideoResolution,1080)] + !stringcompare(ListItem(-7).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>-35</posx>
+					<posy>120</posy>
+					<width>76</width>
+					<height>116</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-7).VideoResolution,720) | substring(ListItem(-7).VideoResolution,1080)] + !stringcompare(ListItem(-7).Label,..)</visible>
+				</control>
+			</control>
+			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-6)_Animation</include>
 				<control type="image">
-					<posx>-48</posx>
-					<posy>128</posy>
+					<posx>37</posx>
+					<posy>127</posy>
 					<width>73</width>
 					<height>102</height>
 					<texture background="true">$INFO[ListItem(-6).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>-58</posx>
-					<posy>126</posy>
-					<width>85</width>
-					<height>105</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(-6).Label,..)</visible>
+					<posx>37</posx>
+					<posy>118</posy>
+					<width>78</width>
+					<height>118</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-6).VideoResolution,720) | substring(ListItem(-6).VideoResolution,1080)] + !stringcompare(ListItem(-6).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>37</posx>
+					<posy>118</posy>
+					<width>78</width>
+					<height>118</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-6).VideoResolution,720) | substring(ListItem(-6).VideoResolution,1080)] + !stringcompare(ListItem(-6).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-5)_Animation</include>
 				<control type="image">
-					<posx>37</posx>
-					<posy>126</posy>
+					<posx>111</posx>
+					<posy>124</posy>
 					<width>74</width>
-					<height>104</height>
+					<height>105</height>
 					<texture background="true">$INFO[ListItem(-5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>27</posx>
-					<posy>125</posy>
-					<width>86</width>
-					<height>106</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(-5).Label,..)</visible>
+					<posx>111</posx>
+					<posy>115</posy>
+					<width>80</width>
+					<height>122</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-5).VideoResolution,720) | substring(ListItem(-5).VideoResolution,1080)] + !stringcompare(ListItem(-5).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>111</posx>
+					<posy>115</posy>
+					<width>80</width>
+					<height>122</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-5).VideoResolution,720) | substring(ListItem(-5).VideoResolution,1080)] + !stringcompare(ListItem(-5).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-4)_Animation</include>
 				<control type="image">
-					<posx>124</posx>
-					<posy>122</posy>
-					<width>77</width>
-					<height>108</height>
+					<posx>187</posx>
+					<posy>120</posy>
+					<width>76</width>
+					<height>109</height>
 					<texture background="true">$INFO[ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>113</posx>
-					<posy>120</posy>
-					<width>89</width>
-					<height>111</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(-4).Label,..)</visible>
+					<posx>187</posx>
+					<posy>110</posy>
+					<width>82</width>
+					<height>127</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-4).VideoResolution,720) | substring(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>187</posx>
+					<posy>110</posy>
+					<width>82</width>
+					<height>127</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-4).VideoResolution,720) | substring(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-3)_Animation</include>
 				<control type="image">
-					<posx>214</posx>
-					<posy>114</posy>
-					<width>83</width>
+					<posx>265</posx>
+					<posy>112</posy>
+					<width>82</width>
 					<height>116</height>
 					<texture background="true">$INFO[ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>202</posx>
-					<posy>112</posy>
-					<width>97</width>
-					<height>119</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(-3).Label,..)</visible>
+					<posx>265</posx>
+					<posy>102</posy>
+					<width>88</width>
+					<height>135</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-3).VideoResolution,720) | substring(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>265</posx>
+					<posy>102</posy>
+					<width>88</width>
+					<height>135</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-3).VideoResolution,720) | substring(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-2)_Animation</include>
 				<control type="image">
-					<posx>312</posx>
-					<posy>97</posy>
-					<width>94</width>
+					<posx>349</posx>
+					<posy>96</posy>
+					<width>93</width>
 					<height>132</height>
 					<texture background="true">$INFO[ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>299</posx>
-					<posy>95</posy>
-					<width>110</width>
-					<height>136</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(-2).Label,..)</visible>
+					<posx>349</posx>
+					<posy>84</posy>
+					<width>100</width>
+					<height>154</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-2).VideoResolution,720) | substring(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>349</posx>
+					<posy>84</posy>
+					<width>100</width>
+					<height>154</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-2).VideoResolution,720) | substring(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-1)_Animation</include>
 				<control type="image">
-					<posx>425</posx>
+					<posx>444</posx>
 					<posy>65</posy>
-					<width>117</width>
-					<height>164</height>
+					<width>114</width>
+					<height>162</height>
 					<texture background="true">$INFO[ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>409</posx>
-					<posy>64</posy>
-					<width>136</width>
-					<height>167</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(-1).Label,..)</visible>
+					<posx>444</posx>
+					<posy>50</posy>
+					<width>122</width>
+					<height>189</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(-1).VideoResolution,720) | substring(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>444</posx>
+					<posy>50</posy>
+					<width>122</width>
+					<height>189</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(-1).VideoResolution,720) | substring(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(0)_Animation</include>
 				<control type="image">
-					<posx>567</posx>
-					<posy>0</posy>
-					<width>164</width>
-					<height>228</height>
+					<posx>560</posx>
+					<posy>12</posy>
+					<width>150</width>
+					<height>214</height>
 					<texture background="true">$INFO[ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>545</posx>
-					<posy>-2</posy>
-					<width>190</width>
-					<height>233</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(0).Label,..)</visible>
+					<posx>560</posx>
+					<posy>-6</posy>
+					<width>160</width>
+					<height>248</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(0).VideoResolution,720) | substring(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>682</posx>
-					<posy>188</posy>
+					<posx>560</posx>
+					<posy>-6</posy>
+					<width>160</width>
+					<height>248</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(0).VideoResolution,720) | substring(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>660</posx>
+					<posy>186</posy>
 					<width>50</width>
 					<height>41</height>
 					<texture>movieset.png</texture>
@@ -697,109 +1102,183 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(1)_Animation</include>
 				<control type="image">
-					<posx>751</posx>
+					<posx>712</posx>
 					<posy>65</posy>
-					<width>117</width>
-					<height>164</height>
+					<width>114</width>
+					<height>162</height>
 					<texture background="true">$INFO[ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>735</posx>
-					<posy>64</posy>
-					<width>136</width>
-					<height>167</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(1).Label,..)</visible>
+					<posx>712</posx>
+					<posy>50</posy>
+					<width>122</width>
+					<height>189</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(1).VideoResolution,720) | substring(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>712</posx>
+					<posy>50</posy>
+					<width>122</width>
+					<height>189</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(1).VideoResolution,720) | substring(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(2)_Animation</include>
 				<control type="image">
-					<posx>884</posx>
-					<posy>97</posy>
-					<width>94</width>
+					<posx>828</posx>
+					<posy>96</posy>
+					<width>93</width>
 					<height>132</height>
 					<texture background="true">$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>871</posx>
-					<posy>95</posy>
-					<width>110</width>
-					<height>136</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(2).Label,..)</visible>
+					<posx>828</posx>
+					<posy>84</posy>
+					<width>100</width>
+					<height>154</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(2).VideoResolution,720) | substring(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>828</posx>
+					<posy>84</posy>
+					<width>100</width>
+					<height>154</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(2).VideoResolution,720) | substring(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(3)_Animation</include>
 				<control type="image">
-					<posx>993</posx>
-					<posy>114</posy>
-					<width>83</width>
+					<posx>924</posx>
+					<posy>112</posy>
+					<width>82</width>
 					<height>116</height>
 					<texture background="true">$INFO[ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>981</posx>
-					<posy>112</posy>
-					<width>97</width>
-					<height>119</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(3).Label,..)</visible>
+					<posx>924</posx>
+					<posy>102</posy>
+					<width>88</width>
+					<height>135</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(3).VideoResolution,720) | substring(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>924</posx>
+					<posy>102</posy>
+					<width>88</width>
+					<height>135</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(3).VideoResolution,720) | substring(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(4)_Animation</include>
 				<control type="image">
-					<posx>1089</posx>
-					<posy>122</posy>
-					<width>77</width>
-					<height>108</height>
+					<posx>1008</posx>
+					<posy>120</posy>
+					<width>76</width>
+					<height>109</height>
 					<texture background="true">$INFO[ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1078</posx>
-					<posy>120</posy>
-					<width>89</width>
-					<height>111</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(4).Label,..)</visible>
+					<posx>1008</posx>
+					<posy>110</posy>
+					<width>82</width>
+					<height>127</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(4).VideoResolution,720) | substring(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>1008</posx>
+					<posy>110</posy>
+					<width>82</width>
+					<height>127</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(4).VideoResolution,720) | substring(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(5)_Animation</include>
 				<control type="image">
-					<posx>1177</posx>
-					<posy>126</posy>
+					<posx>1087</posx>
+					<posy>124</posy>
 					<width>74</width>
-					<height>104</height>
+					<height>105</height>
 					<texture background="true">$INFO[ListItem(5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1167</posx>
-					<posy>125</posy>
-					<width>86</width>
-					<height>106</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(5).Label,..)</visible>
+					<posx>1087</posx>
+					<posy>115</posy>
+					<width>80</width>
+					<height>122</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(5).VideoResolution,720) | substring(ListItem(5).VideoResolution,1080)] + !stringcompare(ListItem(5).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>1087</posx>
+					<posy>115</posy>
+					<width>80</width>
+					<height>122</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(5).VideoResolution,720) | substring(ListItem(5).VideoResolution,1080)] + !stringcompare(ListItem(5).Label,..)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(6)_Animation</include>
 				<control type="image">
-					<posx>1263</posx>
-					<posy>128</posy>
+					<posx>1164</posx>
+					<posy>127</posy>
 					<width>73</width>
 					<height>102</height>
 					<texture background="true">$INFO[ListItem(6).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1253</posx>
-					<posy>126</posy>
-					<width>85</width>
-					<height>105</height>
-					<texture>dvdcase.png</texture>
-					<visible>!stringcompare(ListItem(6).Label,..)</visible>
+					<posx>1164</posx>
+					<posy>118</posy>
+					<width>78</width>
+					<height>118</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(6).VideoResolution,720) | substring(ListItem(6).VideoResolution,1080)] + !stringcompare(ListItem(6).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>1164</posx>
+					<posy>118</posy>
+					<width>78</width>
+					<height>118</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(6).VideoResolution,720) | substring(ListItem(6).VideoResolution,1080)] + !stringcompare(ListItem(6).Label,..)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<include>Window_OpenClose_Visible_Slide(7)_Animation</include>
+				<control type="image">
+					<posx>1239</posx>
+					<posy>129</posy>
+					<width>71</width>
+					<height>100</height>
+					<texture background="true">$INFO[ListItem(7).Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>1239</posx>
+					<posy>120</posy>
+					<width>76</width>
+					<height>116</height>
+					<texture>case-dvd.png</texture>
+					<visible>![substring(ListItem(7).VideoResolution,720) | substring(ListItem(7).VideoResolution,1080)] + !stringcompare(ListItem(7).Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>1239</posx>
+					<posy>120</posy>
+					<width>76</width>
+					<height>116</height>
+					<texture>case-bluray.png</texture>
+					<visible>[substring(ListItem(7).VideoResolution,720) | substring(ListItem(7).VideoResolution,1080)] + !stringcompare(ListItem(7).Label,..)</visible>
 				</control>
 			</control>
 		</control>

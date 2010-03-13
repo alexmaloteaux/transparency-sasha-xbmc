@@ -309,6 +309,11 @@
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/studio/Polsat_hd.png</texture>
+			<visible>substring(ListItem.Studio,Polsat) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+		</control>
+		<control type="image" id="5082">
+			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/SciFi_hd.png</texture>
 			<visible>substring(ListItem.Studio,SciFi) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
