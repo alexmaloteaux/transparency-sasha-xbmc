@@ -7533,13 +7533,13 @@
 						<width>1280</width>
 						<height>160</height>
 						<align>center</align>
-						<label>[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] HAS WON !!![/B]</label>
+						<label>[B]GAME OVER:[CR]$INFO[Skin.String(player1name)] HAS WON![/B]</label>
 						<font>font-80</font>
-						<textcolor>yellow</textcolor>
+						<textcolor>red</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
-						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
-						<visible>Skin.String(player2score,5)</visible>
+						<animation effect="fade" start="100" end="0" time="800" loop="true" condition="true">Conditional</animation>
+						<visible>Skin.String(player1score,5)</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
