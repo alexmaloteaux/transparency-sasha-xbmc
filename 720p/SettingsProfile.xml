@@ -75,7 +75,7 @@
 						<height>145</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture diffuse="thumb-diffuse.png" fallback="unknown-user.png" background="true">$INFO[Listitem.Icon]</texture>
-						<bordertexture border="7">thumb-focus2.png</bordertexture>
+						<bordertexture border="7">thumb-focus.png</bordertexture>
 						<bordersize>7</bordersize>
 						<animation type="focus">
 							<effect type="slide" start="0,0" end="0,-10" time="200" reversible="false"/>
