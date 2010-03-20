@@ -16,7 +16,7 @@
 		</control>
 		<control type="videowindow">
 			<posx>25</posx>
-			<posy>58</posy>
+			<posy>49</posy>
 			<width>825</width>
 			<height>505</height>
 			<visible>Player.HasVideo + ![Control.HasFocus(31) | Control.HasFocus(35) | Control.HasFocus(36)] + ![Control.IsVisible(14) | Control.IsVisible(17) | Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(16)]</visible>

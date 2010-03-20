@@ -30,30 +30,6 @@
 				<aspectratio>keep</aspectratio>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texture>OpenSubtitles/logo_opensubtitles.png</texture>
-			</control>
-			<control type="image" id="111">
-				<description>logo icon</description>
-				<posx>45</posx>
-				<posy>5</posy>
-				<width>250</width>
-				<height>40</height>
-				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>OpenSubtitles/logo_sublight.png</texture>
-			</control>
-			<control type="image" id="112">
-				<description>logo icon</description>
-				<posx>45</posx>
-				<posy>5</posy>
-				<width>250</width>
-				<height>40</height>
-				<aspectratio>keep</aspectratio>
-				<texture>OpenSubtitles/logo_podnapisi.png</texture>
-				<align>center</align>
-				<aligny>center</aligny>
-				<visible>!Control.IsVisible(111) + !Control.IsVisible(110)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>300</posx>
