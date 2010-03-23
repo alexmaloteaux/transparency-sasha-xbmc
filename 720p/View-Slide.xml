@@ -1389,13 +1389,13 @@
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596)</visible>
 			<control type="group">
-				<animation type="Conditional" condition="substring(VideoPlayer.Title,-trailer)" reversible="false">
+				<animation type="Conditional" condition="Player.HasVideo" reversible="false">
 					<effect type="rotatey" center="640" start="0" end="-90" time="450" tween="cubic" easing="in"/>
 					<effect type="rotatey" center="640" start="-90" end="90" time="0" delay="450"/>
 					<effect type="fade" start="0" end="100" time="0" delay="450"/>
 					<effect type="rotatey" center="640" start="90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
-				<animation type="Conditional" condition="!substring(VideoPlayer.Title,-trailer)" reversible="false">
+				<animation type="Conditional" condition="!Player.HasVideo" reversible="false">
 					<effect type="rotatey" center="640" start="0" end="90" time="450" tween="cubic" easing="in"/>
 					<effect type="rotatey" center="640" start="90" end="-90" time="0" delay="450"/>
 					<effect type="fade" start="100" end="0" time="0" delay="450"/>
@@ -1416,19 +1416,19 @@
 					<width>960</width>
 					<height>321</height>
 					<animation effect="fade" start="0" end="100" time="250" delay="900">Visible</animation>
-					<visible>substring(VideoPlayer.Title,-trailer) + !Window.IsVisible(VideoFiles) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
+					<visible>!Window.IsVisible(VideoFiles) + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<animation effect="zoom" start="640,0,1,720" end="0,0,1280,720" time="200" delay="2000">Visible</animation>
 				<animation effect="zoom" start="0,0,1280,720" end="0,360,1280,1" time="200">Hidden</animation>
-				<animation type="Conditional" condition="substring(VideoPlayer.Title,-trailer)" reversible="false">
+				<animation type="Conditional" condition="Player.HasVideo" reversible="false">
 					<effect type="rotatey" center="640" start="0" end="-90" time="450" tween="cubic" easing="in"/>
 					<effect type="rotatey" center="640" start="-90" end="90" time="0" delay="450"/>
 					<effect type="fade" start="100" end="0" time="0" delay="450"/>
 					<effect type="rotatey" center="640" start="90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
-				<animation type="Conditional" condition="!substring(VideoPlayer.Title,-trailer)" reversible="false">
+				<animation type="Conditional" condition="!Player.HasVideo" reversible="false">
 					<effect type="rotatey" center="640" start="0" end="90" time="450" tween="cubic" easing="in"/>
 					<effect type="rotatey" center="640" start="90" end="-90" time="0" delay="450"/>
 					<effect type="fade" start="0" end="100" time="0" delay="450"/>
