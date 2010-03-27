@@ -70,7 +70,7 @@
 						<label>$INFO[ListItem.Property(Addon.Name)]</label>
 					</control>
 					<control type="label">
-						<posx>815</posx>
+						<posx>865</posx>
 						<posy>0</posy>
 						<width>250</width>
 						<height>25</height>
@@ -94,30 +94,12 @@
 					</control>
 					<control type="image">
 						<description>Addon rating</description>
-						<posx>725</posx>
+						<posx>775</posx>
 						<posy>25</posy>
 						<width>90</width>
 						<height>18</height>
 						<aligny>center</aligny>
 						<info>Addon.Rating</info>
-					</control>
-					<control type="image">
-						<description>Installed icon</description>
-						<posx>825</posx>
-						<posy>0</posy>
-						<width>50</width>
-						<height>50</height>
-						<texture>OverlayUnwatched.png</texture>
-						<visible>[$INFO[ListItem.Property(Addon.Disabled)]]</visible>
-					</control>
-					<control type="image">
-						<description>Installed icon</description>
-						<posx>825</posx>
-						<posy>0</posy>
-						<width>50</width>
-						<height>50</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>![$INFO[ListItem.Property(Addon.Disabled)]]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="50">
@@ -157,7 +139,7 @@
 						<label>$INFO[ListItem.Property(Addon.Name)]</label>
 					</control>
 					<control type="label">
-						<posx>815</posx>
+						<posx>865</posx>
 						<posy>0</posy>
 						<width>250</width>
 						<height>25</height>
@@ -181,30 +163,12 @@
 					</control>
 					<control type="image">
 						<description>Addon rating</description>
-						<posx>725</posx>
+						<posx>775</posx>
 						<posy>25</posy>
 						<width>90</width>
 						<height>18</height>
 						<aligny>center</aligny>
 						<info>Addon.Rating</info>
-					</control>
-					<control type="image">
-						<description>Installed icon</description>
-						<posx>825</posx>
-						<posy>0</posy>
-						<width>50</width>
-						<height>50</height>
-						<texture>OverlayUnwatched.png</texture>
-						<visible>[$INFO[ListItem.Property(Addon.Disabled)]]</visible>
-					</control>
-					<control type="image">
-						<description>Installed icon</description>
-						<posx>825</posx>
-						<posy>0</posy>
-						<width>50</width>
-						<height>50</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>![$INFO[ListItem.Property(Addon.Disabled)]]</visible>
 					</control>
 				</focusedlayout>
 			</control>
