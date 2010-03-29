@@ -2391,7 +2391,7 @@
 					<item id="8108">
 						<description>Menu Movies Sub Sets</description>
 						<label>$LOCALIZE[20434]</label>
-						<onclick>ActivateWindow(VideoLibrary,videodb://1/7/,return)</onclick>
+						<onclick>ActivateWindow(VideoLibrary,MovieSets,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Sets)</visible>
 					</item>
 					<item id="8109">
