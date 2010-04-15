@@ -1994,18 +1994,6 @@
 	<include name="SideMenuAnim3Wide">
 		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
 	</include>
-	<include name="SideMenuAnim4">
-		<include condition="!Skin.HasSetting(WideSideMenuButtons)">SideMenuAnim4Normal</include>
-		<include condition="Skin.HasSetting(WideSideMenuButtons)">SideMenuAnim4Wide</include>
-		<animation effect="fade" start="100" end="0" time="100" delay="400" condition="Control.HasFocus(2) | Control.HasFocus(60)">Conditional</animation>
-		<animation effect="fade" start="100" end="100" time="0" condition="!Control.HasFocus(2) + !Control.HasFocus(60)">Conditional</animation>
-	</include>
-	<include name="SideMenuAnim4Normal">
-		<animation effect="slide" start="0,0" end="177,0" time="400" tween="quadratic" easing="out" condition="!Control.HasFocus(2) + !Control.HasFocus(60)">Conditional</animation>
-	</include>
-	<include name="SideMenuAnim4Wide">
-		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!Control.HasFocus(2) + !Control.HasFocus(60)">Conditional</animation>
-	</include>
 	<include name="ToggleButtonNormal">
 		<posx>157</posx>
 	</include>
