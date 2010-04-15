@@ -684,7 +684,8 @@
 				<label fallback="416">[COLOR=lightgrey]($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])[/COLOR]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
+				<font>font-20</font>
+
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1123,7 +1124,8 @@
 				<label fallback="416">$INFO[ListItem.Property(Artist_Genre)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
+				<font>font-20</font>
+
 			</control>
 			<control type="label">
 				<description>Moods txt</description>
@@ -1192,7 +1194,8 @@
 				<label fallback="416">$INFO[ListItem.Property(Artist_Born)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
+				<font>font-20</font>
+
 			</control>
 		</control>
 		<control type="group">
@@ -1662,6 +1665,258 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+			</control>
+		</control>
+	</include>
+	<include name="MediaInfo-AddOns">
+		<control type="list" id="599">
+			<visible>Window.IsVisible(AddonBrowser)</visible>
+			<posx>448</posx>
+			<posy>135</posy>
+			<width>630</width>
+			<height>320</height>
+			<onleft>9000</onleft>
+			<onright>60</onright>
+			<onup>58</onup>
+			<ondown>58</ondown>
+			<viewtype label="544">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
+			<itemlayout height="29" width="630">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>630</width>
+					<height>30</height>
+					<texture border="7">list-nofocus.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>570</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>620</posx>
+					<posy>0</posy>
+					<width>570</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="29" width="630">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>630</width>
+					<height>30</height>
+					<texture border="7">list-nofocus.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>630</width>
+					<height>30</height>
+					<texture border="7">list-focus2.png</texture>
+					<visible>Control.HasFocus(599)</visible>
+					<include>VisibleFadeEffect</include>
+					<include>ListFocusScroll</include>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>570</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>620</posx>
+					<posy>0</posy>
+					<width>570</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>lightblue</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<posx>175</posx>
+			<posy>110</posy>
+			<visible>Control.IsVisible(599) + Window.IsVisible(AddonBrowser)</visible>
+			<control type="image">
+				<posx>47</posx>
+				<posy>87</posy>
+				<width>191</width>
+				<height>186</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>47</posx>
+				<posy>281</posy>
+				<width>191</width>
+				<height>186</height>
+				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>25</posx>
+				<posy>70</posy>
+				<width>235</width>
+				<height>235</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<bordersize>6</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>25</posx>
+				<posy>293</posy>
+				<width>235</width>
+				<height>235</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
+				<bordersize>6</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>25</posx>
+				<posy>372</posy>
+				<width>880</width>
+				<height>2</height>
+				<texture>separator.png</texture>
+			</control>
+		</control>
+		<control type="group">
+			<posx>125</posx>
+			<posy>490</posy>
+			<visible>Control.IsVisible(599) + Window.IsVisible(AddonBrowser)</visible>
+			<control type="label">
+				<description>Author txt</description>
+				<posx>190</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[21863]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Author Value</description>
+				<posx>200</posx>
+				<posy>0</posy>
+				<width>480</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+			</control>
+			<control type="label">
+				<description>Type txt</description>
+				<posx>190</posx>
+				<posy>25</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[146][/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Type Value</description>
+				<posx>200</posx>
+				<posy>25</posy>
+				<width>480</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+			</control>
+			<control type="label">
+				<description>Version txt</description>
+				<posx>785</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[24051][/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="label">
+				<description>Version Value</description>
+				<posx>795</posx>
+				<posy>0</posy>
+				<width>405</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+			</control>
+			<control type="label">
+				<description>Rating txt</description>
+				<posx>785</posx>
+				<posy>25</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[563]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+			</control>
+			<control type="image">
+				<description>Rating value</description>
+				<posx>795</posx>
+				<posy>25</posy>
+				<width>125</width>
+				<height>25</height>
+				<texture fallback="rating0.png">$INFO[ListItem.Property(Addon.Rating)]</texture>
+			</control>
+			<control type="label">
+				<description>Description Value</description>
+				<posx>75</posx>
+				<posy>58</posy>
+				<width>880</width>
+				<height>46</height>
+				<label fallback="416">[B]$INFO[ListItem.Property(Addon.Description)][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<wrapmultiline>true</wrapmultiline>
+				<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 			</control>
 		</control>
 	</include>
