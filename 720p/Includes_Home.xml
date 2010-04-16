@@ -176,7 +176,7 @@
 		<animation effect="slide" time="400" start="0,0" end="1000,0" acceleration="-1.3" delay="0">WindowClose</animation>
 	</include>
 	<include name="recentlyaddedscript">
-		<onfocus>XBMC.RunScript(com.recentlyadded.script,limit=3&amp;albums=True&amp;totals=True)</onfocus>
+		<onfocus>XBMC.RunScript(org.xbmc.recentlyadded.script,limit=3&amp;albums=True&amp;totals=True)</onfocus>
 	</include>
 	<include name="recentlyfanartmovies">
 		<control type="largeimage">

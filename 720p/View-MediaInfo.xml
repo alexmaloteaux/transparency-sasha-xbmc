@@ -1677,8 +1677,8 @@
 			<height>320</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
-			<onup>58</onup>
-			<ondown>58</ondown>
+			<onup>599</onup>
+			<ondown>599</ondown>
 			<viewtype label="544">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -1787,7 +1787,7 @@
 				<posy>70</posy>
 				<width>235</width>
 				<height>235</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
+				<aspectratio scalediffuse="false">keep</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>6</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -1798,7 +1798,7 @@
 				<posy>293</posy>
 				<width>235</width>
 				<height>235</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
+				<aspectratio scalediffuse="false">keep</aspectratio>
 				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>6</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -1832,7 +1832,7 @@
 				<description>Author Value</description>
 				<posx>200</posx>
 				<posy>0</posy>
-				<width>480</width>
+				<width>250</width>
 				<height>25</height>
 				<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
 				<align>left</align>
@@ -1855,7 +1855,7 @@
 				<description>Type Value</description>
 				<posx>200</posx>
 				<posy>25</posy>
-				<width>480</width>
+				<width>250</width>
 				<height>25</height>
 				<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
 				<align>left</align>
@@ -1864,8 +1864,8 @@
 			</control>
 			<control type="label">
 				<description>Version txt</description>
-				<posx>785</posx>
-				<posy>0</posy>
+				<posx>190</posx>
+				<posy>50</posy>
 				<width>140</width>
 				<height>25</height>
 				<label>[UPPERCASE][B]$LOCALIZE[24051][/UPPERCASE][/B]</label>
@@ -1876,9 +1876,9 @@
 			</control>
 			<control type="label">
 				<description>Version Value</description>
-				<posx>795</posx>
-				<posy>0</posy>
-				<width>405</width>
+				<posx>200</posx>
+				<posy>50</posy>
+				<width>250</width>
 				<height>25</height>
 				<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
 				<align>left</align>
@@ -1887,8 +1887,8 @@
 			</control>
 			<control type="label">
 				<description>Rating txt</description>
-				<posx>785</posx>
-				<posy>25</posy>
+				<posx>190</posx>
+				<posy>75</posy>
 				<width>140</width>
 				<height>25</height>
 				<label>[UPPERCASE][B]$LOCALIZE[563]:[/UPPERCASE][/B]</label>
@@ -1899,23 +1899,23 @@
 			</control>
 			<control type="image">
 				<description>Rating value</description>
-				<posx>795</posx>
-				<posy>25</posy>
+				<posx>200</posx>
+				<posy>75</posy>
 				<width>125</width>
 				<height>25</height>
 				<texture fallback="rating0.png">$INFO[ListItem.Property(Addon.Rating)]</texture>
 			</control>
-			<control type="label">
+			<control type="textbox">
 				<description>Description Value</description>
-				<posx>75</posx>
-				<posy>58</posy>
-				<width>880</width>
-				<height>46</height>
-				<label fallback="416">[B]$INFO[ListItem.Property(Addon.Description)][/B]</label>
+				<posx>450</posx>
+				<posy>0</posy>
+				<width>505</width>
+				<height>105</height>
+				<label fallback="416">$INFO[ListItem.Property(Addon.Description)]</label>
+				<font>font-19</font>
 				<align>center</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<wrapmultiline>true</wrapmultiline>
+				<textcolor>white</textcolor>
+				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 			</control>
 		</control>
