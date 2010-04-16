@@ -777,7 +777,7 @@
 				<width>92</width>
 				<height>142</height>
 				<texture>case-dvd.png</texture>
-				<visible>VideoPlayer.Content(Movies) + ![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)]</visible>
+				<visible>VideoPlayer.Content(Movies) + ![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>900</posx>
@@ -785,7 +785,7 @@
 				<width>92</width>
 				<height>142</height>
 				<texture>case-bluray.png</texture>
-				<visible>VideoPlayer.Content(Movies) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)]</visible>
+				<visible>VideoPlayer.Content(Movies) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<description>Cover image</description>
@@ -1119,6 +1119,7 @@
 				<width>160</width>
 				<height>146</height>
 				<texture>cdcase.png</texture>
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="label">
 				<description>Artist label</description>
@@ -1586,6 +1587,7 @@
 				<width>128</width>
 				<height>116</height>
 				<texture>cdcase.png</texture>
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="label">
 				<posx>884</posx>

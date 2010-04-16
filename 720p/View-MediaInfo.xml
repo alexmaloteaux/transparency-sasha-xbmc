@@ -140,7 +140,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -148,7 +148,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -173,7 +173,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture>case-dvd.png</texture>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -181,7 +181,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture>case-bluray.png</texture>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>146</posx>
@@ -723,7 +723,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture>case-tv.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -748,7 +748,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 		</control>
 		<control type="textbox">
@@ -1017,8 +1017,7 @@
 				<width>220</width>
 				<height>194</height>
 				<texture>cdcase.png</texture>
-				<description>music media info</description>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>47</posx>
@@ -1035,9 +1034,8 @@
 				<width>220</width>
 				<height>194</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
-				<description>music media info mirror</description>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
 				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>

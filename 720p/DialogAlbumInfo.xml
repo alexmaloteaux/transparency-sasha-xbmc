@@ -46,7 +46,7 @@
 				<width>236</width>
 				<height>214</height>
 				<texture>cdcase.png</texture>
-				<visible>Container.Content(Albums)</visible>
+				<visible>Container.Content(Albums) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>8</posx>
@@ -54,8 +54,7 @@
 				<width>245</width>
 				<height>225</height>
 				<texture>cdcase-shadow.png</texture>
-				<description>music fanart view</description>
-				<visible>Container.Content(Albums)</visible>
+				<visible>Container.Content(Albums) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -304,6 +303,7 @@
 						<width>109</width>
 						<height>99</height>
 						<texture>cdcase.png</texture>
+						<visible>!Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="110" width="115">
@@ -323,6 +323,7 @@
 						<height>99</height>
 						<texture>cdcase.png</texture>
 						<animation effect="zoom" start="5,5,109,99" end="-11,-10,142,128" time="100">focus</animation>
+						<visible>!Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 				</focusedlayout>
 			</control>

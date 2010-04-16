@@ -106,7 +106,7 @@
 						<width>186</width>
 						<height>170</height>
 						<texture>cdcase.png</texture>
-						<visible>[substring(Container.FolderPath,musicdb://3/) | substring(Container.FolderPath,musicdb://4/) | substring(Container.FolderPath,musicdb://6/) | substring(Container.FolderPath,musicdb://7/) | substring(Container.FolderPath,musicdb://8/)] + !stringcompare(ListItem.Label,..)</visible>
+						<visible>[substring(Container.FolderPath,musicdb://3/) | substring(Container.FolderPath,musicdb://4/) | substring(Container.FolderPath,musicdb://6/) | substring(Container.FolderPath,musicdb://7/) | substring(Container.FolderPath,musicdb://8/)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="textbox">
 						<posx>488</posx>
@@ -136,6 +136,7 @@
 						<width>186</width>
 						<height>170</height>
 						<texture>cdcase.png</texture>
+						<visible>!Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="textbox">
 						<posx>488</posx>

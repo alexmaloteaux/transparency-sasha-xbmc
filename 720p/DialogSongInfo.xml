@@ -32,7 +32,7 @@
 				<width>236</width>
 				<height>214</height>
 				<texture>cdcase.png</texture>
-				<description>music fanart view</description>
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>8</posx>
@@ -40,7 +40,7 @@
 				<width>245</width>
 				<height>225</height>
 				<texture>cdcase-shadow.png</texture>
-				<description>music fanart view</description>
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>

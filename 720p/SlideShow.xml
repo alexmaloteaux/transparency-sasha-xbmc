@@ -45,6 +45,7 @@
 				<width>71</width>
 				<height>65</height>
 				<texture>cdcase.png</texture>
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="label">
 				<posx>90</posx>

@@ -1477,7 +1477,7 @@
 				<width>165</width>
 				<height>150</height>
 				<texture>cdcase.png</texture>
-				<description>menu album view</description>
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>

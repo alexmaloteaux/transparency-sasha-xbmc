@@ -338,7 +338,7 @@
 					<width>150</width>
 					<height>232</height>
 					<texture>case-dvd.png</texture>
-					<visible>![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+					<visible>![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 				<control type="image">
 					<posx>138</posx>
@@ -346,7 +346,7 @@
 					<width>150</width>
 					<height>232</height>
 					<texture>case-bluray.png</texture>
-					<visible>[substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+					<visible>[substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -372,7 +372,7 @@
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<bordersize>10</bordersize>
 					<bordertexture border="10">cdcase-shadow.png</bordertexture>
-					<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo + !IsEmpty(MusicPlayer.cover)</visible>
+					<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo + !IsEmpty(MusicPlayer.cover) + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 			</control>
 		</control>

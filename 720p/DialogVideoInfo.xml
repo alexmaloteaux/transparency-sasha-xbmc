@@ -43,7 +43,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-dvd.png</texture>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + Container.Content(Movies) + !Window.IsVisible(VideoFiles)]</visible>
+				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + Container.Content(Movies) + !Window.IsVisible(VideoFiles)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -51,7 +51,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-bluray.png</texture>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + Container.Content(Movies) + !Window.IsVisible(VideoFiles)]</visible>
+				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + Container.Content(Movies) + !Window.IsVisible(VideoFiles)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -59,7 +59,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
-				<visible>[Container.Content(TVShows) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] + !Window.IsVisible(VideoFiles)]</visible>
+				<visible>[Container.Content(TVShows) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] + !Window.IsVisible(VideoFiles)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>

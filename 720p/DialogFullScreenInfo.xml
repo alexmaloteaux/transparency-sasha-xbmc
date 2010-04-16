@@ -35,7 +35,7 @@
 					<width>222</width>
 					<height>338</height>
 					<texture>case-dvd.png</texture>
-					<visible>![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies)</visible>
+					<visible>![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 				<control type="image">
 					<posx>44</posx>
@@ -43,7 +43,7 @@
 					<width>222</width>
 					<height>338</height>
 					<texture>case-bluray.png</texture>
-					<visible>[substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies)</visible>
+					<visible>[substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + VideoPlayer.Content(Movies) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 			</control>
 			<control type="group">

@@ -159,6 +159,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<width>229</width>
 					<height>207</height>
 					<texture>cdcase.png</texture>
+					<visible>!Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 			</control>
 			<control type="group" id="1">
