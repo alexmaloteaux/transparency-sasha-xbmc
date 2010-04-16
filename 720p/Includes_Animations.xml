@@ -1,7 +1,7 @@
 <includes>
 	<include name="backgroundanimation">
-		<animation effect="zoom" start="110" end="130" center="auto" time="18000" pulse="true" condition="true">Conditional</animation>
-		<animation effect="slide" start="-20,-20" end="40,40" time="14000" tween="cubic" easing="inout" pulse="true" condition="true">Conditional</animation>
+		<animation effect="zoom" start="110" end="130" center="auto" time="18000" pulse="true" condition="![Skin.HasSetting(Home_Movies_Fanart_Background) + Container(5040).HasFocus(2)] + ![Skin.HasSetting(Home_TVShows_Fanart_Background) + Container(5040).HasFocus(3)] + ![Skin.HasSetting(Home_Music_Fanart_Background) + Container(5040).HasFocus(6)]" reversible="false">Conditional</animation>
+		<animation effect="slide" start="-20,-20" end="40,40" time="14000" tween="cubic" easing="inout" pulse="true" condition="![Skin.HasSetting(Home_Movies_Fanart_Background) + Container(5040).HasFocus(2)] + ![Skin.HasSetting(Home_TVShows_Fanart_Background) + Container(5040).HasFocus(3)] + ![Skin.HasSetting(Home_Music_Fanart_Background) + Container(5040).HasFocus(6)]" reversible="false">Conditional</animation>
 	</include>
 	<include name="backgroundanimation2">
 		<animation effect="zoom" start="110" end="130" center="auto" time="7000" pulse="true" condition="true">Conditional</animation>
