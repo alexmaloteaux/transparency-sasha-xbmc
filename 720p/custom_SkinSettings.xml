@@ -2639,13 +2639,30 @@
 					</control>
 					<control type="radiobutton" id="509">
 						<label>$LOCALIZE[31132]</label>
-						<onclick>Skin.ToggleSetting(hometheater)</onclick>
-						<selected>Skin.HasSetting(hometheater)</selected>
+						<onclick>Skin.ToggleSetting(TheaterScript_Enable)</onclick>
+						<selected>Skin.HasSetting(TheaterScript_Enable)</selected>
 					</control>
-					<control type="radiobutton" id="510">
+					<control type="button" id="510">
+						<label>- $LOCALIZE[31204]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(TheaterScript_Path)][/COLOR]</label2>
+						<onclick>Skin.SetFile(TheaterScript_Path,Script)</onclick>
+						<enable>Skin.HasSetting(TheaterScript_Enable)</enable>
+					</control>
+					<control type="image" id="511">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="512">
 						<label>$LOCALIZE[31131]</label>
-						<onclick>Skin.ToggleSetting(YouTrailer)</onclick>
-						<selected>Skin.HasSetting(YouTrailer)</selected>
+						<onclick>Skin.ToggleSetting(TrailerScript_Enable)</onclick>
+						<selected>Skin.HasSetting(TrailerScript_Enable)</selected>
+					</control>
+					<control type="button" id="513">
+						<label>- $LOCALIZE[31204]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(TrailerScript_Path)][/COLOR]</label2>
+						<onclick>Skin.SetFile(TrailerScript_Path,Script)</onclick>
+						<enable>Skin.HasSetting(TrailerScript_Enable)</enable>
 					</control>
 				</control>
 				<control type="group" id="601">

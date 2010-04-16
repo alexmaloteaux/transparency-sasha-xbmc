@@ -255,9 +255,9 @@
 				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
-				<include condition="!Skin.HasSetting(YouTrailer) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
-				<include condition="!Skin.HasSetting(YouTrailer) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
-				<include condition="Skin.HasSetting(YouTrailer)">Trailer-YouTrailer</include>
+				<include condition="!Skin.HasSetting(TrailerScript_Enable) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
+				<include condition="!Skin.HasSetting(TrailerScript_Enable) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
+				<include condition="Skin.HasSetting(TrailerScript_Enable)">Trailer-Script</include>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
 			</control>

@@ -260,7 +260,7 @@
 					<onup>5</onup>
 					<ondown>50</ondown>
 					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1112)">Conditional</animation>
-					<visible>!Skin.HasSetting(YouTrailer) + !IsEmpty(Listitem.trailer)</visible>
+					<visible>!Skin.HasSetting(TrailerScript_Enable) + !IsEmpty(Listitem.trailer)</visible>
 				</control>
 				<control type="button" id="1111">
 					<posx>1095</posx>
@@ -276,8 +276,8 @@
 					<onup>5</onup>
 					<ondown>50</ondown>
 					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1112)">Conditional</animation>
-					<onclick>RunScript(special://home/scripts/YouTrailer/default.py,1)</onclick>
-					<visible>Skin.HasSetting(YouTrailer)</visible>
+					<onclick>RunScript($INFO[Skin.String(TrailerScript_Path)],1)</onclick>
+					<visible>Skin.HasSetting(TrailerScript_Enable)</visible>
 				</control>
 				<control type="button" id="1112">
 					<posx>1194</posx>
@@ -294,7 +294,7 @@
 					<ondown>50</ondown>
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
-					<onclick>RunScript(special://home/scripts/Home Theater Experience/default.py)</onclick>
+					<onclick>RunScript($INFO[Skin.String(TheaterScript_Path)])</onclick>
 					<visible>Skin.HasSetting(hometheater) + Container.Content(Movies)</visible>
 				</control>
 			</control>

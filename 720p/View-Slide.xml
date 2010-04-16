@@ -1367,9 +1367,9 @@
 				<ondown>596</ondown>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<include condition="!Skin.HasSetting(YouTrailer) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
-				<include condition="!Skin.HasSetting(YouTrailer) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
-				<include condition="Skin.HasSetting(YouTrailer)">Trailer-YouTrailer</include>
+				<include condition="!Skin.HasSetting(TrailerScript_Enable) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
+				<include condition="!Skin.HasSetting(TrailerScript_Enable) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
+				<include condition="Skin.HasSetting(TrailerScript_Enable)">Trailer-Script</include>
 			</control>
 			<control type="grouplist">
 				<posx>355</posx>

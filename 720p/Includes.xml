@@ -2008,8 +2008,8 @@
 		<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 		<visible>!IsEmpty(Listitem.Trailer)</visible>
 	</include>
-	<include name="Trailer-YouTrailer">
-		<onclick>RunScript(special://home/scripts/YouTrailer/default.py,1)</onclick>
+	<include name="Trailer-Script">
+		<onclick>RunScript($INFO[Skin.String(TrailerScript_Path)],1)</onclick>
 		<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoFiles)</visible>
 	</include>
 	<include name="Window_OpenClose_Left_Panel_Position_Normal">
