@@ -13,7 +13,7 @@
 				<font>-</font>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onfocus>XBMC.RunScript(special://skin/scripts/favourites.py,playlists=play)</onfocus>
+				<onfocus>XBMC.RunScript(org.xbmc.favourites.script,playlists=play)</onfocus>
 				<onup>450</onup>
 				<onleft>450</onleft>
 				<onright>450</onright>
