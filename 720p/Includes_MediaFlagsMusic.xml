@@ -128,7 +128,7 @@
 		<!-- Record Label -->
 			<control type="image" id="5082">
 				<include>MusicMediaLabelVars</include>
-				<texture>special://skin/images/flags/music/recordlabel/$INFO[ListItem.Property(Label),,.png]</texture>
+				<texture>special://skin/images/flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</texture>
 			</control>
 		</control>
 	</include>
