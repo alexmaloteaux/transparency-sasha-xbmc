@@ -294,18 +294,18 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="127">
-						<description>Startup Playlist</description>
-						<label>21398</label>
-						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
-						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
+						<description>Hide Video Case</description>
+						<label>$LOCALIZE[3] - $LOCALIZE[31105]</label>
+						<onclick>Skin.ToggleSetting(Hide-Video-Icons-CaseAnimation)</onclick>
+						<selected>Skin.HasSetting(Hide-Video-Icons-CaseAnimation)</selected>
+						<enable>!Skin.HasSetting(HideVideoCase)</enable>
 					</control>
-					<control type="button" id="128">
-						<description>Startup Playlist Path</description>
-						<textcolor>lightgrey</textcolor>
-						<label>- $LOCALIZE[15311]</label>
-						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
-						<onclick>Skin.SetFile(Startup_Playlist_Path)</onclick>
-						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
+					<control type="radiobutton" id="128">
+						<description>Hide Music Case</description>
+						<label>$LOCALIZE[2] - $LOCALIZE[31105]</label>
+						<onclick>Skin.ToggleSetting(Hide-Music-Icons-CaseAnimation)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-Icons-CaseAnimation)</selected>
+						<enable>!Skin.HasSetting(HideMusicCase)</enable>
 					</control>
 					<control type="image" id="129">
 						<width>880</width>
@@ -313,28 +313,47 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="130">
+						<description>Startup Playlist</description>
+						<label>21398</label>
+						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
+						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
+					</control>
+					<control type="button" id="131">
+						<description>Startup Playlist Path</description>
+						<textcolor>lightgrey</textcolor>
+						<label>- $LOCALIZE[15311]</label>
+						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
+						<onclick>Skin.SetFile(Startup_Playlist_Path)</onclick>
+						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
+					</control>
+					<control type="image" id="132">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="133">
 						<description>SafeMode</description>
 						<label>31115</label>
 						<onclick>Skin.ToggleSetting(SafeMode)</onclick>
 						<selected>Skin.HasSetting(SafeMode)</selected>
 					</control>
-					<control type="radiobutton" id="131">
+					<control type="radiobutton" id="134">
 						<description>Hate Transparency</description>
 						<label>31140</label>
 						<onclick>Skin.ToggleSetting(HateTransparency)</onclick>
 						<selected>Skin.HasSetting(HateTransparency)</selected>
 					</control>
-					<control type="group" id="132">
+					<control type="group" id="135">
 						<width>880</width>
 						<height>35</height>
-						<control type="grouplist" id="133">
+						<control type="grouplist" id="136">
 							<orientation>horizontal</orientation>
 							<width>880</width>
 							<height>35</height>
 							<itemgap>0</itemgap>
-							<onup>131</onup>
+							<onup>134</onup>
 							<ondown>102</ondown>
-							<control type="radiobutton" id="134">
+							<control type="radiobutton" id="137">
 								<description>Transparency Level 20</description>
 								<width>176</width>
 								<height>35</height>
@@ -350,7 +369,7 @@
 								<selected>Skin.HasSetting(Trans_20)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="135">
+							<control type="radiobutton" id="138">
 								<description>Transparency Level 40</description>
 								<width>176</width>
 								<height>35</height>
@@ -366,7 +385,7 @@
 								<selected>Skin.HasSetting(Trans_40)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 								</control>
-							<control type="radiobutton" id="136">
+							<control type="radiobutton" id="139">
 								<description>Transparency Level 60</description>
 								<width>176</width>
 								<height>35</height>
@@ -382,7 +401,7 @@
 								<selected>!Skin.HasSetting(Trans_60)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="137">
+							<control type="radiobutton" id="140">
 								<description>Transparency Level 80</description>
 								<width>176</width>
 								<height>35</height>
@@ -398,7 +417,7 @@
 								<selected>Skin.HasSetting(Trans_80)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="138">
+							<control type="radiobutton" id="141">
 								<description>Transparency Level 100</description>
 								<width>176</width>
 								<height>35</height>
@@ -3333,6 +3352,7 @@
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
+
 					</control>
 					<control type="radiobutton" id="727">
 						<label>$LOCALIZE[0] - $LOCALIZE[31031]</label>

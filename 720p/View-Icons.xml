@@ -176,14 +176,8 @@
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror.png">$INFO[ListItem.Thumb]</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,302,188,267" end="-21,332,228,324" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,332,228,324" end="0,302,188,267" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation1</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation1</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -192,14 +186,8 @@
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation2</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation2</include>
 						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
@@ -208,14 +196,8 @@
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation2</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation2</include>
 						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
@@ -224,14 +206,8 @@
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation2</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation2</include>
 						<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
@@ -296,7 +272,7 @@
 						<animation effect="zoom" start="57,-15,80,54" end="64,10,66,45" time="250">UnFocus</animation>
 						<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 						<colordiffuse>FF7C7063</colordiffuse>
-						<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)]</visible>
+						<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>64</posx>
@@ -307,7 +283,7 @@
 						<animation effect="zoom" start="57,-15,80,54" end="64,10,66,45" time="250">UnFocus</animation>
 						<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 						<colordiffuse>FF4EA3F8</colordiffuse>
-						<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)]</visible>
+						<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="label">
 						<posx>106</posx>
@@ -374,14 +350,8 @@
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250" reversible="true" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation3</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation3</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -390,14 +360,8 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-dvd.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" reversible="true" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation4</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation4</include>
 						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
@@ -406,14 +370,8 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-bluray.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation4</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation4</include>
 						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
@@ -422,14 +380,8 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-tv.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250" />
-							<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation4</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation4</include>
 						<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
@@ -439,14 +391,8 @@
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="155,254,35,35" end="167,276,41,41" time="250" />
-							<effect type="rotatey" delay="500" center="-10" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="167,276,41,41" end="155,254,35,35" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation5</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation5</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
@@ -456,14 +402,8 @@
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
 						<texture flipy="true">$INFO[ListItem.Overlay]</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="155,304,35,35" end="167,334,41,41" time="250" />
-							<effect type="rotatey" delay="500" center="-10" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="167,334,41,41" end="155,304,35,35" time="250" />
-							<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation6</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation6</include>
 						<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
@@ -734,14 +674,8 @@
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultAlbum.png" background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Thumb]</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="18,211,168,162" end="-14,244,235,226" time="250" />
-							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" end="18,211,168,162" start="-14,244,235,226" time="250" reversible="true" />
-							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Music-Icons-CaseAnimation) + !Skin.HasSetting(HideMusicCase)">Music-Icons-CaseAnimation1</include>
+						<include condition="Skin.HasSetting(Hide-Music-Icons-CaseAnimation) | Skin.HasSetting(HideMusicCase)">Music-Icons-CaseNoAnimation1</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -751,14 +685,8 @@
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,208,192,168" end="-39,242,268,234" time="250" />
-							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" end="0,208,192,168" start="-39,242,268,234" time="250" reversible="true" />
-							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Music-Icons-CaseAnimation) + !Skin.HasSetting(HideMusicCase)">Music-Icons-CaseAnimation2</include>
+						<include condition="Skin.HasSetting(Hide-Music-Icons-CaseAnimation) | Skin.HasSetting(HideMusicCase)">Music-Icons-CaseNoAnimation2</include>
 						<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
@@ -768,14 +696,8 @@
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="18,43,168,162" end="-14,11,235,226" time="250" />
-							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" end="18,43,168,162" start="-14,11,235,226" time="250" reversible="true" />
-							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Music-Icons-CaseAnimation) + !Skin.HasSetting(HideMusicCase)">Music-Icons-CaseAnimation3</include>
+						<include condition="Skin.HasSetting(Hide-Music-Icons-CaseAnimation) | Skin.HasSetting(HideMusicCase)">Music-Icons-CaseNoAnimation3</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -785,14 +707,8 @@
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>case-cd.png</texture>
-						<animation type="focus" reversible="false">
-							<effect type="zoom" start="0,40,192,168" end="-39,7,268,234" time="250" />
-							<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
-						</animation>
-						<animation type="UnFocus" reversible="true">
-							<effect type="zoom" start="-39,7,268,234" end="0,40,192,168" time="250" reversible="true" />
-							<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
-						</animation>
+						<include condition="!Skin.HasSetting(Hide-Music-Icons-CaseAnimation) + !Skin.HasSetting(HideMusicCase)">Music-Icons-CaseAnimation4</include>
+						<include condition="Skin.HasSetting(Hide-Music-Icons-CaseAnimation) | Skin.HasSetting(HideMusicCase)">Music-Icons-CaseNoAnimation4</include>
 						<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 				</focusedlayout>
