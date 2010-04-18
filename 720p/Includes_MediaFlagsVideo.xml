@@ -31,32 +31,37 @@
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/mono.png</texture>
-			<visible>[substring(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,1)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,1)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dolby20.png</texture>
-			<visible>[substring(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,2)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,2)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd40.png</texture>
-			<visible>[substring(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,4)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,4)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd41.png</texture>
-			<visible>[substring(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,5)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,5)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd51.png</texture>
-			<visible>[substring(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,6)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,6)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd71.png</texture>
-			<visible>[substring(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,8)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | substring(ListItem.AudioCodec,ac-3)] + substring(ListItem.AudioChannels,8)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/audiocodec/eac3.png</texture>
+			<visible>stringcompare(ListItem.AudioCodec,eac3)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
