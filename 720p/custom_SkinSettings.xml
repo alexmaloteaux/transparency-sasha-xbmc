@@ -3695,7 +3695,6 @@
 						<selected>!Skin.HasSetting(Menu_Movies_Sub_Directors)</selected>
 						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
 					</control>
-
 					<control type="radiobutton" id="8107">
 						<description>Menu Movies Sub Studio</description>
 						<label>[B]$LOCALIZE[20388][/B]</label>
@@ -4764,7 +4763,7 @@
 						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom15)</selected>
 						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8120">
+					<control type="radiobutton" id="8118">
 						<description>Menu Programs Sub Custom16</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4773,7 +4772,7 @@
 						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom16)</selected>
 						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8121">
+					<control type="radiobutton" id="8119">
 						<description>Menu Programs Sub Custom17</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4782,7 +4781,7 @@
 						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom17)</selected>
 						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8122">
+					<control type="radiobutton" id="8120">
 						<description>Menu Programs Sub Custom18</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4861,7 +4860,7 @@
 						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom5)</selected>
 						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8120">
+					<control type="radiobutton" id="8107">
 						<description>Menu Scripts Sub Custom6</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4870,7 +4869,7 @@
 						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom6)</selected>
 						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8121">
+					<control type="radiobutton" id="8108">
 						<description>Menu Scripts Sub Custom7</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Scripts_Sub_Custom7_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4879,7 +4878,7 @@
 						<selected>Skin.HasSetting(Menu_Scripts_Sub_Custom7)</selected>
 						<enable>Skin.HasSetting(Menu_Scripts_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8122">
+					<control type="radiobutton" id="8109">
 						<description>Menu Scripts Sub Custom8</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Scripts_Sub_Custom8_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4940,7 +4939,7 @@
 						<selected>Skin.HasSetting(Menu_Weather_Sub_Custom3)</selected>
 						<enable>Skin.HasSetting(Menu_Weather_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8120">
+					<control type="radiobutton" id="8105">
 						<description>Menu Weather Sub Custom4</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Weather_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4949,7 +4948,7 @@
 						<selected>Skin.HasSetting(Menu_Weather_Sub_Custom4)</selected>
 						<enable>Skin.HasSetting(Menu_Weather_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8121">
+					<control type="radiobutton" id="8106">
 						<description>Menu Weather Sub Custom5</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Weather_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4958,7 +4957,7 @@
 						<selected>Skin.HasSetting(Menu_Weather_Sub_Custom5)</selected>
 						<enable>Skin.HasSetting(Menu_Weather_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8122">
+					<control type="radiobutton" id="8107">
 						<description>Menu Weather Sub Custom6</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Weather_Sub_Custom6_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -5179,7 +5178,7 @@
 						<selected>!Skin.HasSetting(Menu_Settings_Sub_FileManager)</selected>
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8120">
+					<control type="radiobutton" id="8115">
 						<description>Menu Settings Sub Custom1</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Settings_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -5188,7 +5187,7 @@
 						<selected>Skin.HasSetting(Menu_Settings_Sub_Custom1)</selected>
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8121">
+					<control type="radiobutton" id="8116">
 						<description>Menu Settings Sub Custom2</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Settings_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -5197,7 +5196,7 @@
 						<selected>Skin.HasSetting(Menu_Settings_Sub_Custom2)</selected>
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8122">
+					<control type="radiobutton" id="8117">
 						<description>Menu Settings Sub Custom3</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Settings_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -5267,7 +5266,7 @@
 						<selected>Skin.HasSetting(Menu_PlayDisc_Sub_Custom2)</selected>
 						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8120">
+					<control type="radiobutton" id="8106">
 						<description>Menu PlayDisc Sub Custom3</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -5276,7 +5275,7 @@
 						<selected>Skin.HasSetting(Menu_PlayDisc_Sub_Custom3)</selected>
 						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8121">
+					<control type="radiobutton" id="8107">
 						<description>Menu PlayDisc Sub Custom4</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -5285,7 +5284,7 @@
 						<selected>Skin.HasSetting(Menu_PlayDisc_Sub_Custom4)</selected>
 						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8122">
+					<control type="radiobutton" id="8108">
 						<description>Menu PlayDisc Sub Custom5</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -7607,7 +7606,6 @@
 						<onclick>Skin.Reset(circle5)</onclick>
 						<onclick>Skin.Reset(circle6)</onclick>
 						<onclick>Skin.Reset(circle7)</onclick>
-
 						<onclick>Skin.Reset(circle8)</onclick>
 						<onclick>Skin.Reset(circle9)</onclick>
 						<onclick>SetFocus(77)</onclick>
@@ -8014,7 +8012,6 @@
 								<onclick>Skin.SetString(playerturn,2)</onclick>
 								<onleft>3</onleft>
 								<onright>5</onright>
-
 								<onup>1</onup>
 								<ondown>7</ondown>
 								<visible>![Skin.HasSetting(circle4) | Skin.HasSetting(cross4)] + ![Control.IsVisible(78) | Control.IsVisible(79)]</visible>
