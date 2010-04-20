@@ -2347,6 +2347,24 @@
 						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom5_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom5)</visible>
 					</item>
+					<item id="8109">
+						<description>Menu Videos Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom6)</visible>
+					</item>
+					<item id="8110">
+						<description>Menu Videos Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom7_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom7_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom7)</visible>
+					</item>
+					<item id="8111">
+						<description>Menu Videos Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom8_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom8)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
@@ -2462,6 +2480,24 @@
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_Movies_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom5)</visible>
 					</item>
+					<item id="8120">
+						<description>Menu Movies Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom6)</visible>
+					</item>
+					<item id="8121">
+						<description>Menu Movies Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom7_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom7_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom7)</visible>
+					</item>
+					<item id="8122">
+						<description>Menu Movies Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom8_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom8)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
@@ -2534,6 +2570,24 @@
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom5)</visible>
+					</item>
+					<item id="8113">
+						<description>Menu TVShows Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom6)</visible>
+					</item>
+					<item id="8114">
+						<description>Menu TVShows Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom7)</visible>
+					</item>
+					<item id="8115">
+						<description>Menu TVShows Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom8)</visible>
 					</item>
 				</content>
 			</control>
@@ -2619,6 +2673,49 @@
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom5)</visible>
+					</item>
+					<item id="8115">
+						<description>Menu MusicVideos Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom6)</visible>
+					</item>
+					<item id="8116">
+						<description>Menu MusicVideos Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom7)</visible>
+					</item>
+					<item id="8117">
+						<description>Menu MusicVideos Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom8)</visible>
+					</item>
+				</content>
+			</control>
+			<control type="fixedlist" id="8001">
+				<visible>Skin.HasSetting(Menu_TV_Sub) + Container(5040).HasFocus(5)</visible>
+				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
+				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+				<content>
+					<item id="8102">
+						<description>Menu TV Sub Custom1</description>
+						<label>$INFO[Skin.String(Menu_TV_Sub_Custom1_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom1_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_TV_Sub_Custom1)</visible>
+					</item>
+					<item id="8103">
+						<description>Menu TV Sub Custom2</description>
+						<label>$INFO[Skin.String(Menu_TV_Sub_Custom2_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom2_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_TV_Sub_Custom2)</visible>
+					</item>
+					<item id="8104">
+						<description>Menu TV Sub Custom3</description>
+						<label>$INFO[Skin.String(Menu_TV_Sub_Custom3_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom3_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_TV_Sub_Custom3)</visible>
 					</item>
 				</content>
 			</control>
@@ -2747,6 +2844,24 @@
 						<onclick>ActivateWindow(MusicLibrary,plugin://music/$INFO[Skin.String(Menu_Music_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Music_Sub_Custom5)</visible>
 					</item>
+					<item id="8120">
+						<description>Menu Music Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_Music_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Music_Sub_Custom6)</visible>
+					</item>
+					<item id="8121">
+						<description>Menu Music Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_Music_Sub_Custom7_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom7_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Music_Sub_Custom7)</visible>
+					</item>
+					<item id="8122">
+						<description>Menu Music Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_Music_Sub_Custom8_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Music_Sub_Custom8)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
@@ -2819,6 +2934,24 @@
 						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom10_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://programs/$INFO[Skin.String(Menu_Pictures_Sub_Custom10_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom10)</visible>
+					</item>
+					<item id="8113">
+						<description>Menu Pictures Sub Custom11</description>
+						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom11_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom11_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom11)</visible>
+					</item>
+					<item id="8114">
+						<description>Menu Pictures Sub Custom12</description>
+						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom12_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom12_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom12)</visible>
+					</item>
+					<item id="8115">
+						<description>Menu Pictures Sub Custom13</description>
+						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom13_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom13_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom13)</visible>
 					</item>
 				</content>
 			</control>
@@ -2923,6 +3056,24 @@
 						<onclick>ActivateWindow(VideoLibrary,plugin://pictures/$INFO[Skin.String(Menu_Programs_Sub_Custom15_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom15)</visible>
 					</item>
+					<item id="8118">
+						<description>Menu Programs Sub Custom16</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom16_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom16)</visible>
+					</item>
+					<item id="8119">
+						<description>Menu Programs Sub Custom17</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom17_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom17)</visible>
+					</item>
+					<item id="8120">
+						<description>Menu Programs Sub Custom18</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom18_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom18)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
@@ -2960,6 +3111,24 @@
 						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom5_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom5)</visible>
 					</item>
+					<item id="8107">
+						<description>Menu Scripts Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom6)</visible>
+					</item>
+					<item id="8108">
+						<description>Menu Scripts Sub Custom7</description>
+						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom7_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Scripts_Sub_Custom7_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom7)</visible>
+					</item>
+					<item id="8109">
+						<description>Menu Scripts Sub Custom8</description>
+						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom8_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Scripts_Sub_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom8)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
@@ -2984,6 +3153,24 @@
 						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label)]</label>
 						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom3)</visible>
+					</item>
+					<item id="8105">
+						<description>Menu Weather Sub Custom4</description>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom4_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom4_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom4)</visible>
+					</item>
+					<item id="8106">
+						<description>Menu Weather Sub Custom5</description>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom5_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom5_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom5)</visible>
+					</item>
+					<item id="8107">
+						<description>Menu Weather Sub Custom6</description>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom6_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom6_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom6)</visible>
 					</item>
 				</content>
 			</control>
@@ -3107,6 +3294,24 @@
 						<onclick>ActivateWindow(FileManager)</onclick>
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_FileManager)</visible>
 					</item>
+					<item id="8115">
+						<description>Menu Settings Sub Custom1</description>
+						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom1_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom1_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Custom1)</visible>
+					</item>
+					<item id="8116">
+						<description>Menu Settings Sub Custom2</description>
+						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom2_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom2_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Custom2)</visible>
+					</item>
+					<item id="8117">
+						<description>Menu Settings Sub Custom3</description>
+						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom3_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom3_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Settings_Sub_Custom3)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="fixedlist" id="8001">
@@ -3137,6 +3342,24 @@
 						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Label)]</label>
 						<onclick>RunScript($INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom2)</visible>
+					</item>
+					<item id="8106">
+						<description>Menu PlayDisc Sub Custom3</description>
+						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom3)</visible>
+					</item>
+					<item id="8107">
+						<description>Menu PlayDisc Sub Custom4</description>
+						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom4)</visible>
+					</item>
+					<item id="8108">
+						<description>Menu PlayDisc Sub Custom5</description>
+						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5_Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom5)</visible>
 					</item>
 				</content>
 			</control>
