@@ -318,7 +318,7 @@
 				<height>360</height>
 				<texture>case-dvd.png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -327,7 +327,7 @@
 				<height>360</height>
 				<texture>case-bluray.png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>164</posx>
@@ -1356,7 +1356,7 @@
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!substring(Container.FolderPath,Games) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(Container.FolderPath,Games) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="largeimage">
 				<posx>10</posx>
@@ -1365,7 +1365,7 @@
 				<height>300</height>
 				<texture fallback="DefaultFolder.png" diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>substring(Container.FolderName,Games) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
+				<visible>stringcompare(Container.FolderName,Games) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="largeimage">
 				<posx>10</posx>
@@ -1375,7 +1375,7 @@
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>substring(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..) + Skin.HasSetting(SafeMode)</visible>
+				<visible>stringcompare(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..) + Skin.HasSetting(SafeMode)</visible>
 			</control>
 			<include condition="!Skin.HasSetting(SafeMode)">games-thumb</include>
 			<control type="image">
@@ -1387,7 +1387,7 @@
 				<description>games fanart view</description>
 				<bordertexture border="16">gamecase-shadow.png</bordertexture>
 				<bordersize>16</bordersize>
-				<visible>substring(Container.FolderName,Games) + !stringcompare(ListItem.Label,..) + !IsEmpty(Listitem.Thumb)</visible>
+				<visible>stringcompare(Container.FolderName,Games) + !stringcompare(ListItem.Label,..) + !IsEmpty(Listitem.Thumb)</visible>
 			</control>
 		</control>
 	</include>
@@ -1475,7 +1475,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/bmp.png</texture>
-				<visible>substring(Listitem.Filename,.bmp)</visible>
+				<visible>stringcompare(ListItem.Filename,.bmp)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1483,7 +1483,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/gif.png</texture>
-				<visible>substring(Listitem.Filename,.gif)</visible>
+				<visible>stringcompare(ListItem.Filename,.gif)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1491,7 +1491,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/jpg.png</texture>
-				<visible>substring(Listitem.Filename,.jpg) | substring(Listitem.Filename,.jpeg,right)</visible>
+				<visible>stringcompare(ListItem.Filename,.jpg) | stringcompare(ListItem.Filename,.jpeg,right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1499,7 +1499,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/png.png</texture>
-				<visible>substring(Listitem.Filename,.png)</visible>
+				<visible>stringcompare(ListItem.Filename,.png)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1507,7 +1507,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/tga.png</texture>
-				<visible>substring(Listitem.Filename,.tga)</visible>
+				<visible>stringcompare(ListItem.Filename,.tga)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1515,7 +1515,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/tiff.png</texture>
-				<visible>substring(Listitem.Filename,.tiff)</visible>
+				<visible>stringcompare(ListItem.Filename,.tiff)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1523,7 +1523,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/wmf.png</texture>
-				<visible>substring(Listitem.Filename,.wmf)</visible>
+				<visible>stringcompare(ListItem.Filename,.wmf)</visible>
 			</control>
 			<control type="image">
 				<posx>16</posx>

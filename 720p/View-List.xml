@@ -430,7 +430,7 @@
 				<width>304</width>
 				<height>465</height>
 				<texture>case-dvd.png</texture>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>55</posx>
@@ -438,7 +438,7 @@
 				<width>304</width>
 				<height>465</height>
 				<texture>case-bluray.png</texture>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>248</posx>

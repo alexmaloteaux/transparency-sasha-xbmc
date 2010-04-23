@@ -60,7 +60,7 @@
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 			<texture fallback="DefaultProgram.png" diffuse="thumb-diffuse.png" background="true">$INFO[Container.FolderPath,,folder.jpg]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>substring(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
+			<visible>stringcompare(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	</include>
         <include name="fanartslideshow-musicvisualisation">

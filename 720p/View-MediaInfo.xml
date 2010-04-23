@@ -140,7 +140,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -148,7 +148,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -173,7 +173,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture>case-dvd.png</texture>
-				<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -181,7 +181,7 @@
 				<width>210</width>
 				<height>324</height>
 				<texture>case-bluray.png</texture>
-				<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>146</posx>

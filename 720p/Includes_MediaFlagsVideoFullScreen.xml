@@ -26,37 +26,37 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/aac.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,aac)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,aac)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/mono.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | substring(VideoPlayer.AudioCodec,ac-3)] + substring(VideoPlayer.AudioChannels,1)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dolby20.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | substring(VideoPlayer.AudioCodec,ac-3)] + substring(VideoPlayer.AudioChannels,2)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,2)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd40.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | substring(VideoPlayer.AudioCodec,ac-3)] + substring(VideoPlayer.AudioChannels,4)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,4)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd41.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | substring(VideoPlayer.AudioCodec,ac-3)] + substring(VideoPlayer.AudioChannels,5)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,5)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd51.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | substring(VideoPlayer.AudioCodec,ac-3)] + substring(VideoPlayer.AudioChannels,6)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,6)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dd71.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | substring(VideoPlayer.AudioCodec,ac-3)] + substring(VideoPlayer.AudioChannels,8)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,8)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
@@ -66,67 +66,67 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dolbytruehd.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,truehd)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,truehd)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dts.png</texture>
-			<visible>[substring(VideoPlayer.AudioCodec,dca) | substring(VideoPlayer.AudioCodec,dts)] + substring(VideoPlayer.AudioChannels,2)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,2)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dts51.png</texture>
-			<visible>[substring(VideoPlayer.AudioCodec,dca) | substring(VideoPlayer.AudioCodec,dts)] + substring(VideoPlayer.AudioChannels,6)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,6)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/dts71.png</texture>
-			<visible>[substring(VideoPlayer.AudioCodec,dca) | substring(VideoPlayer.AudioCodec,dts)] + substring(VideoPlayer.AudioChannels,8)</visible>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,8)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/flac.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,flac)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,flac)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/mpeg audio.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,mp1)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,mp1)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/mp2.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,mp2) | substring(VideoPlayer.AudioCodec,mpeg audio)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,mp2) | stringcompare(VideoPlayer.AudioCodec,mpeg audio)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/mp3.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,mp3)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,mp3)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/ogg.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,vorbis)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,vorbis)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/wav.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,pcm) + !substring(VideoPlayer.AudioCodec,bluray)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,pcm)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/lpcm.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,pcm_bluray)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,pcm_bluray)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/wma.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,wmav2) | substring(VideoPlayer.AudioCodec,wma2)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,wmav2) | stringcompare(VideoPlayer.AudioCodec,wma2)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/wmahd.png</texture>
-			<visible>substring(VideoPlayer.AudioCodec,wmapro) | substring(VideoPlayer.AudioCodec,wma3)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,wmapro) | stringcompare(VideoPlayer.AudioCodec,wma3)</visible>
 		</control>
 		<!-- Rating -->
 		<control type="image">
@@ -213,107 +213,107 @@
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/ABC_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,ABC) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,ABC) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,BBC) + !substring(VideoPlayer.Studio,BBC One) + !substring(VideoPlayer.Studio,BBC Two) + substring(VideoPlayer.Studio,BBC Three) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,BBC) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC One_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,BBC One) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,BBC One) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC Two_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,BBC Two) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,BBC Two) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/BBC Three_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,BBC Three) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,BBC Three) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Cartoon Network_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,Cartoon Network) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,Cartoon Network) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/CBS_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,CBS) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,CBS) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Comedy Central_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,Comedy Central) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,Comedy Central) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/FOX_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,FOX) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,FOX) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/FX_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,FX) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,FX) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/HBO_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,HBO) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,HBO) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/History_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,History) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,History) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/MTV_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,MTV) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,MTV) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/NBC_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,NBC) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,NBC) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Polsat_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,Polsat) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,Polsat) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/SciFi_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,SciFi) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,SciFi) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Showtime_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,Showtime) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,Showtime) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Starz_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,Starz) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,Starz) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/Sky One_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,Sky One) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,Sky One) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/The CW_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,The CW) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,The CW) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/USA Network_hd.png</texture>
-			<visible>substring(VideoPlayer.Studio,USA Network) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+			<visible>stringcompare(VideoPlayer.Studio,USA Network) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<!-- Studio -->
 		<control type="image">

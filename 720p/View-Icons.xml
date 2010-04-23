@@ -53,7 +53,7 @@
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -61,7 +61,7 @@
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -86,7 +86,7 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-dvd-inside.png</texture>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -94,7 +94,7 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-bluray-inside.png</texture>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -119,7 +119,7 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-dvd.png</texture>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -127,7 +127,7 @@
 						<width>202</width>
 						<height>310</height>
 						<texture>case-bluray.png</texture>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -188,7 +188,7 @@
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation2</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation2</include>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -198,7 +198,7 @@
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation2</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation2</include>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -229,7 +229,7 @@
 						<texture>case-dvd-inside.png</texture>
 						<animation effect="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250">Focus</animation>
 						<animation effect="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250">UnFocus</animation>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -239,7 +239,7 @@
 						<texture>case-bluray-inside.png</texture>
 						<animation effect="zoom" start="0,0,202,310" end="-20,-30,244,374" time="250">Focus</animation>
 						<animation effect="zoom" start="-20,-30,244,374" end="0,0,202,310" time="250">UnFocus</animation>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -272,7 +272,7 @@
 						<animation effect="zoom" start="57,-15,80,54" end="64,10,66,45" time="250">UnFocus</animation>
 						<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 						<colordiffuse>FF7C7063</colordiffuse>
-						<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>64</posx>
@@ -283,7 +283,7 @@
 						<animation effect="zoom" start="57,-15,80,54" end="64,10,66,45" time="250">UnFocus</animation>
 						<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 						<colordiffuse>FF4EA3F8</colordiffuse>
-						<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="label">
 						<posx>106</posx>
@@ -297,7 +297,7 @@
 						<shadowcolor>FF000000</shadowcolor>
 						<animation effect="zoom" start="106,255,83,17" end="96,272,100,20" time="250">Focus</animation>
 						<animation effect="zoom" start="96,272,100,20" end="106,255,83,17" time="250">UnFocus</animation>
-						<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)]</visible>
+						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]</visible>
 					</control>
 					<control type="label">
 						<posx>106</posx>
@@ -311,7 +311,7 @@
 						<shadowcolor>DD000000</shadowcolor>
 						<animation effect="zoom" start="106,255,83,17" end="96,272,100,20" time="250">Focus</animation>
 						<animation effect="zoom" start="96,272,100,20" end="106,255,83,17" time="250">UnFocus</animation>
-						<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)]</visible>
+						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -321,7 +321,7 @@
 						<texture flipy="true" diffuse="diffuse_mirror.png">case-dvd-inside.png</texture>
 						<animation effect="zoom" start="0,283,202,310" end="-21,309,244,374" time="250">Focus</animation>
 						<animation effect="zoom" start="-21,309,244,374" end="0,283,202,310" time="250">UnFocus</animation>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -331,7 +331,7 @@
 						<texture flipy="true" diffuse="diffuse_mirror.png">case-bluray-inside.png</texture>
 						<animation effect="zoom" start="0,283,202,310" end="-21,309,244,374" time="250">Focus</animation>
 						<animation effect="zoom" start="-21,309,244,374" end="0,283,202,310" time="250">UnFocus</animation>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -362,7 +362,7 @@
 						<texture>case-dvd.png</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation4</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation4</include>
-						<visible>!Container.Content(Seasons) + ![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + ![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -372,7 +372,7 @@
 						<texture>case-bluray.png</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideVideoCase)">Video-Icons-CaseAnimation4</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideVideoCase)">Video-Icons-CaseNoAnimation4</include>
-						<visible>!Container.Content(Seasons) + [substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+						<visible>!Container.Content(Seasons) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>

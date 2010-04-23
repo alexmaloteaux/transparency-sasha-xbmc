@@ -607,7 +607,7 @@
 					<width>140</width>
 					<height>210</height>
 					<texture>case-dvd.png</texture>
-					<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+					<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 				<control type="image">
 					<posx>18</posx>
@@ -615,7 +615,7 @@
 					<width>140</width>
 					<height>210</height>
 					<texture>case-bluray.png</texture>
-					<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+					<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 				<control type="image">
 					<posx>18</posx>
@@ -696,7 +696,7 @@
 						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
 					</animation>
-					<visible>![substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+					<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 				<control type="image">
 					<posx>18</posx>
@@ -712,7 +712,7 @@
 						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false" />
 					</animation>
-					<visible>[substring(ListItem.VideoResolution,720) | substring(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+					<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 				</control>
 				<control type="image">
 					<posx>18</posx>

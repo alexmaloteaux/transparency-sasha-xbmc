@@ -377,6 +377,7 @@
 			<include>WindowTitleCommons</include>
 			<visible>Substring(Container.FolderPath,shout://,Left)</visible>
 		</control>
+
 		<control type="label" id="1101">
 			<description>Shoutcast</description>
 			<label>$LOCALIZE[15200]</label>
@@ -1328,7 +1329,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasVideo</visible>
-			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1443,7 +1444,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasAudio</visible>
-			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>

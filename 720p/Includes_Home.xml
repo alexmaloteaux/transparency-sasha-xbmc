@@ -777,7 +777,7 @@
 				<width>92</width>
 				<height>142</height>
 				<texture>case-dvd.png</texture>
-				<visible>VideoPlayer.Content(Movies) + ![substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>VideoPlayer.Content(Movies) + ![stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>900</posx>
@@ -785,7 +785,7 @@
 				<width>92</width>
 				<height>142</height>
 				<texture>case-bluray.png</texture>
-				<visible>VideoPlayer.Content(Movies) + [substring(VideoPlayer.VideoResolution,720) | substring(VideoPlayer.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>VideoPlayer.Content(Movies) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<description>Cover image</description>
@@ -1395,7 +1395,7 @@
 				<width>213</width>
 				<height>127</height>
 				<texture border="10">video-shadow.png</texture>
-				<visible>![IsEmpty(Container(5045).ListItem.Thumb) | substring(Container(5045).ListItem.Thumb,NONE)]</visible>
+				<visible>![IsEmpty(Container(5045).ListItem.Thumb) | stringcompare(Container(5045).ListItem.Thumb,NONE)]</visible>
 			</control>
 			<control type="largeimage">
 				<posx>820</posx>
