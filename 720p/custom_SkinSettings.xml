@@ -9063,7 +9063,7 @@
 					<include>ButtonCommonValues</include>
 					<label>20183</label>
 					<onfocus>Skin.SetString(SkinSettings,9)</onfocus>
-					<onclick>XBMC.ReloadSkin()</onclick>
+					<onclick>ReloadSkin()</onclick>
 					<onclick>SetFocus(900)</onclick>
 					<onleft>900</onleft>
 					<onright>71</onright>

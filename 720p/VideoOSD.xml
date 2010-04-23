@@ -365,7 +365,7 @@
 						<onright>902</onright>
 						<onup>901</onup>
 						<ondown>901</ondown>
-						<onclick>XBMC.PlayerControl(Previous)</onclick>
+						<onclick>PlayerControl(Previous)</onclick>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
@@ -384,7 +384,7 @@
 						<onright>903</onright>
 						<onup>902</onup>
 						<ondown>902</ondown>
-						<onclick>XBMC.PlayerControl(Rewind)</onclick>
+						<onclick>PlayerControl(Rewind)</onclick>
 						<animation effect="slide" start="0,0" end="-8,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -407,7 +407,7 @@
 						<onright>904</onright>
 						<onup>903</onup>
 						<ondown>903</ondown>
-						<onclick>XBMC.PlayerControl(Play)</onclick>
+						<onclick>PlayerControl(Play)</onclick>
 						<animation effect="slide" start="0,0" end="-16,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -427,7 +427,7 @@
 						<onright>905</onright>
 						<onup>904</onup>
 						<ondown>904</ondown>
-						<onclick>XBMC.PlayerControl(Forward)</onclick>
+						<onclick>PlayerControl(Forward)</onclick>
 						<animation effect="slide" start="0,0" end="-24,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -447,7 +447,7 @@
 						<onright>906</onright>
 						<onup>905</onup>
 						<ondown>905</ondown>
-						<onclick>XBMC.PlayerControl(Next)</onclick>
+						<onclick>PlayerControl(Next)</onclick>
 						<animation effect="slide" start="0,0" end="-32,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -467,7 +467,7 @@
 						<onright>907</onright>
 						<onup>906</onup>
 						<ondown>906</ondown>
-						<onclick>XBMC.PlayerControl(Stop)</onclick>
+						<onclick>PlayerControl(Stop)</onclick>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -487,7 +487,7 @@
 						<onright>908</onright>
 						<onup>907</onup>
 						<ondown>907</ondown>
-						<onclick>XBMC.PlayerControl(record)</onclick>
+						<onclick>PlayerControl(record)</onclick>
 						<visible>!VideoPlayer.HasMenu + Player.CanRecord + !Player.Recording</visible>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -507,7 +507,7 @@
 						<onright>909</onright>
 						<onup>908</onup>
 						<ondown>908</ondown>
-						<onclick>XBMC.PlayerControl(record)</onclick>
+						<onclick>PlayerControl(record)</onclick>
 						<visible>!VideoPlayer.HasMenu + Player.CanRecord + Player.Recording</visible>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
@@ -534,7 +534,7 @@
 						<font>-</font>
 						<texturenofocus>osd-channels-nofocus.png</texturenofocus>
 						<texturefocus>osd-channels-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(PVROSDChannels)</onclick>
+						<onclick>ActivateWindow(PVROSDChannels)</onclick>
 						<onleft>908</onleft>
 						<onright>910</onright>
 						<onup>909</onup>
@@ -551,7 +551,7 @@
 						<font>-</font>
 						<texturenofocus>osd-epg-nofocus.png</texturenofocus>
 						<texturefocus>osd-epg-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(PVROSDGuide)</onclick>
+						<onclick>ActivateWindow(PVROSDGuide)</onclick>
 						<onleft>909</onleft>
 						<onright>916</onright>
 						<onup>910</onup>
@@ -568,7 +568,7 @@
 						<font>-</font>
 						<texturenofocus>osd-portal-nofocus.png</texturenofocus>
 						<texturefocus>osd-portal-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(PVROSDDirector)</onclick>
+						<onclick>ActivateWindow(PVROSDDirector)</onclick>
 						<onleft>910</onleft>
 						<onright>911</onright>
 						<onup>916</onup>
@@ -585,7 +585,7 @@
 						<font>-</font>
 						<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 						<texturefocus>osd-audio-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(OSDAudioSettings)</onclick>
+						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
 						<onleft>916</onleft>
 						<onright>912</onright>
 						<onup>911</onup>
@@ -601,7 +601,7 @@
 						<font>-</font>
 						<texturenofocus>osd-video-nofocus.png</texturenofocus>
 						<texturefocus>osd-video-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(OSDVideoSettings)</onclick>
+						<onclick>ActivateWindow(OSDVideoSettings)</onclick>
 						<onleft>911</onleft>
 						<onright>913</onright>
 						<onup>912</onup>
@@ -617,7 +617,7 @@
 						<font>-</font>
 						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 						<texturefocus>osd-bookmark-focus.png</texturefocus>
-						<onclick>XBMC.ActivateWindow(VideoBookmarks)</onclick>
+						<onclick>ActivateWindow(VideoBookmarks)</onclick>
 						<onleft>912</onleft>
 						<onright>9040</onright>
 						<onup>913</onup>
@@ -633,7 +633,7 @@
 						<font>-</font>
 						<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 						<texturefocus>osd-subs-focus.png</texturefocus>
-						<onclick>XBMC.RunScript($INFO[Skin.String(SubsScript_Path)])</onclick>
+						<onclick>RunScript($INFO[Skin.String(SubsScript_Path)])</onclick>
 						<onleft>913</onleft>
 						<onright>915</onright>
 						<onup>9040</onup>
@@ -654,7 +654,7 @@
 						<onright>918</onright>
 						<onup>915</onup>
 						<ondown>915</ondown>
-						<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+						<onclick>PlayerControl(ShowVideoMenu)</onclick>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 						<visible>VideoPlayer.HasMenu</visible>
 					</control>
@@ -672,7 +672,7 @@
 						<onright>901</onright>
 						<onup>918</onup>
 						<ondown>918</ondown>
-						<onclick>XBMC.ActivateWindow(Teletext)</onclick>
+						<onclick>ActivateWindow(Teletext)</onclick>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
 						<visible>VideoPlayer.HasTeletext  + !System.Platform.Xbox</visible>

@@ -176,7 +176,7 @@
 		<animation effect="slide" time="400" start="0,0" end="1000,0" acceleration="-1.3" delay="0">WindowClose</animation>
 	</include>
 	<include name="recentlyaddedscript">
-		<onfocus>XBMC.RunScript(org.xbmc.recentlyadded.script,limit=3&amp;albums=True&amp;totals=True)</onfocus>
+		<onfocus>RunScript(org.xbmc.recentlyadded.script,limit=3&amp;albums=True&amp;totals=True)</onfocus>
 	</include>
 	<include name="recentlyfanartmovies">
 		<control type="largeimage">
@@ -1878,28 +1878,28 @@
 				</item>
 				<item id="2">
 					<label>342</label>
-					<onclick>XBMC.ActivateWindow(VideoLibrary,movietitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
 					<include condition="!Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background</include>
 					<include condition="Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background-fanart</include>
 					<visible>!Skin.HasSetting(Menu_Movies)</visible>
 				</item>
 				<item id="3">
 					<label>20343</label>
-					<onclick>XBMC.ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
 					<include condition="!Skin.HasSetting(Home_TVShows_Fanart_Background)">home-tvshows-background</include>
 					<include condition="Skin.HasSetting(Home_TVShows_Fanart_Background)">home-tvshows-background-fanart</include>
 					<visible>!Skin.HasSetting(Menu_TVShows)</visible>
 				</item>
 				<item id="4">
 					<label>20389</label>
-					<onclick>XBMC.ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
 					<icon>special://skin/images/backgrounds/musicvideos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_MusicVideos)</visible>
 				</item>
 				<item id="5">
 					<label>31500</label>
-					<onclick>XBMC.ActivateWindow(TV)</onclick>
+					<onclick>ActivateWindow(TV)</onclick>
 					<icon>special://skin/images/backgrounds/tv.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_TV)</visible>
@@ -1962,7 +1962,7 @@
 				</item>
 				<item id="13">
 					<label>341</label>
-					<onclick>XBMC.PlayDVD()</onclick>
+					<onclick>PlayDVD()</onclick>
 					<icon>special://skin/images/backgrounds/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
@@ -2209,28 +2209,28 @@
 				</item>
 				<item id="2">
 					<label>342</label>
-					<onclick>XBMC.ActivateWindow(VideoLibrary,movietitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
 					<include condition="!Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background</include>
 					<include condition="Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background-fanart</include>
 					<visible>!Skin.HasSetting(Menu_Movies)</visible>
 				</item>
 				<item id="3">
 					<label>20343</label>
-					<onclick>XBMC.ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
 					<include condition="!Skin.HasSetting(Home_TVShows_Fanart_Background)">home-tvshows-background</include>
 					<include condition="Skin.HasSetting(Home_TVShows_Fanart_Background)">home-tvshows-background-fanart</include>
 					<visible>!Skin.HasSetting(Menu_TVShows)</visible>
 				</item>
 				<item id="4">
 					<label>20389</label>
-					<onclick>XBMC.ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
 					<icon>special://skin/images/backgrounds/musicvideos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_MusicVideos)</visible>
 				</item>
 				<item id="5">
 					<label>31500</label>
-					<onclick>XBMC.ActivateWindow(TV)</onclick>
+					<onclick>ActivateWindow(TV)</onclick>
 					<icon>special://skin/images/backgrounds/tv.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_TV)</visible>
@@ -2265,7 +2265,7 @@
 				</item>
 				<item id="13">
 					<label>341</label>
-					<onclick>XBMC.PlayDVD()</onclick>
+					<onclick>PlayDVD()</onclick>
 					<icon>special://skin/images/backgrounds/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
@@ -2999,31 +2999,31 @@
 					<item id="8108">
 						<description>Menu Programs Sub Custom6</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom6_Label)]</label>
-						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom6)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Programs Sub Custom7</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom7_Label)]</label>
-						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom7)</visible>
 					</item>
 					<item id="81010">
 						<description>Menu Programs Sub Custom8</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom8_Label)]</label>
-						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom8)</visible>
 					</item>
 					<item id="81011">
 						<description>Menu Programs Sub Custom9</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom9_Label)]</label>
-						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom9)</visible>
 					</item>
 					<item id="81012">
 						<description>Menu Programs Sub Custom10</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom10_Label)]</label>
-						<onclick>XBMC.System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom10)</visible>
 					</item>
 					<item id="8113">

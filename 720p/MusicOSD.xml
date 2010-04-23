@@ -25,7 +25,7 @@
 					<font>-</font>
 					<texturenofocus>lastfm-love-nofocus.png</texturenofocus>
 					<texturefocus>lastfm-love-focus.png</texturefocus>
-					<onclick>XBMC.LastFM.Love</onclick>
+					<onclick>LastFM.Love</onclick>
 					<onleft>917</onleft>
 					<onright>917</onright>
 					<onup>916</onup>
@@ -42,7 +42,7 @@
 					<font>-</font>
 					<texturenofocus>lastfm-hate-nofocus.png</texturenofocus>
 					<texturefocus>lastfm-hate-focus.png</texturefocus>
-					<onclick>XBMC.LastFM.Ban</onclick>
+					<onclick>LastFM.Ban</onclick>
 					<onleft>916</onleft>
 					<onright>916</onright>
 					<onup>917</onup>
@@ -82,7 +82,7 @@
 					<onright>902</onright>
 					<onup>901</onup>
 					<ondown>901</ondown>
-					<onclick>XBMC.PlayerControl(Previous)</onclick>
+					<onclick>PlayerControl(Previous)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -101,7 +101,7 @@
 					<onright>903</onright>
 					<onup>902</onup>
 					<ondown>902</ondown>
-					<onclick>XBMC.PlayerControl(Rewind)</onclick>
+					<onclick>PlayerControl(Rewind)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -123,7 +123,7 @@
 					<onright>904</onright>
 					<onup>916</onup>
 					<ondown>903</ondown>
-					<onclick>XBMC.PlayerControl(Play)</onclick>
+					<onclick>PlayerControl(Play)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -142,7 +142,7 @@
 					<onright>905</onright>
 					<onup>916</onup>
 					<ondown>904</ondown>
-					<onclick>XBMC.PlayerControl(Forward)</onclick>
+					<onclick>PlayerControl(Forward)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -161,7 +161,7 @@
 					<onright>906</onright>
 					<onup>916</onup>
 					<ondown>905</ondown>
-					<onclick>XBMC.PlayerControl(Next)</onclick>
+					<onclick>PlayerControl(Next)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -180,7 +180,7 @@
 					<onright>907</onright>
 					<onup>916</onup>
 					<ondown>906</ondown>
-					<onclick>XBMC.PlayerControl(Stop)</onclick>
+					<onclick>PlayerControl(Stop)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -199,7 +199,7 @@
 					<onright>908</onright>
 					<onup>916</onup>
 					<ondown>907</ondown>
-					<onclick>XBMC.PlayerControl(Repeat)</onclick>
+					<onclick>PlayerControl(Repeat)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -295,7 +295,7 @@
 					<usealttexture>Playlist.IsRandom</usealttexture>
 					<alttexturefocus>player-randomselected-focus.png</alttexturefocus>
 					<alttexturenofocus>player-randomselected-nofocus.png</alttexturenofocus>
-					<onclick>XBMC.PlayerControl(Random)</onclick>
+					<onclick>PlayerControl(Random)</onclick>
 					<onleft>907</onleft>
 					<onright>909</onright>
 					<onup>916</onup>
@@ -318,7 +318,7 @@
 					<onright>910</onright>
 					<onup>916</onup>
 					<ondown>909</ondown>
-					<onclick>XBMC.PlayerControl(record)</onclick>
+					<onclick>PlayerControl(record)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -338,7 +338,7 @@
 					<onright>990</onright>
 					<onup>916</onup>
 					<ondown>910</ondown>
-					<onclick>XBMC.PlayerControl(record)</onclick>
+					<onclick>PlayerControl(record)</onclick>
 					<animation type="focus">
 						<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true" />
 						<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70" />
@@ -424,7 +424,7 @@
 					<font>-</font>
 					<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 					<texturefocus>osd-bookmark-focus.png</texturefocus>
-					<onclick>XBMC.ActivateWindow(VisualisationPresetList)</onclick>
+					<onclick>ActivateWindow(VisualisationPresetList)</onclick>
 					<onleft>912</onleft>
 					<onright>914</onright>
 					<onup>916</onup>

@@ -378,6 +378,7 @@
 			<visible>Substring(Container.FolderPath,shout://,Left)</visible>
 		</control>
 
+
 		<control type="label" id="1101">
 			<description>Shoutcast</description>
 			<label>$LOCALIZE[15200]</label>
@@ -1606,7 +1607,7 @@
 				<onright>601</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<onclick>XBMC.PlayerControl(Previous)</onclick>
+				<onclick>PlayerControl(Previous)</onclick>
 				<hitrect x="-45" y="-10" w="68" h="45" />
 			</control>
 			<control type="button" id="601">
@@ -1622,7 +1623,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>Up</onclick>
-				<onclick>XBMC.PlayerControl(Stop)</onclick>
+				<onclick>PlayerControl(Stop)</onclick>
 				<hitrect x="23" y="-10" w="23" h="45" />
 			</control>
 			<control type="togglebutton" id="603">
@@ -1640,7 +1641,7 @@
 				<onright>602</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<onclick>XBMC.PlayerControl(Play)</onclick>
+				<onclick>PlayerControl(Play)</onclick>
 				<hitrect x="46" y="-10" w="23" h="45" />
 			</control>
 			<control type="button" id="602">
@@ -1655,7 +1656,7 @@
 				<onright>608</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<onclick>XBMC.PlayerControl(Next)</onclick>
+				<onclick>PlayerControl(Next)</onclick>
 				<hitrect x="69" y="-10" w="23" h="45" />
 			</control>
 			<control type="button" id="608">
@@ -1666,7 +1667,7 @@
 				<label>-</label>
 				<texturefocus>smallplayer-love-focus.png</texturefocus>
 				<texturenofocus>smallplayer-love-nofocus.png</texturenofocus>
-				<onclick>XBMC.LastFM.Love</onclick>
+				<onclick>LastFM.Love</onclick>
 				<onleft>602</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
@@ -1682,7 +1683,7 @@
 				<label>-</label>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<onclick>XBMC.PlayerControl(Repeat)</onclick>
+				<onclick>PlayerControl(Repeat)</onclick>
 				<onleft>602</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
@@ -1746,7 +1747,7 @@
 				<label>-</label>
 				<texturefocus>smallplayer-hate-focus.png</texturefocus>
 				<texturenofocus>smallplayer-hate-nofocus.png</texturenofocus>
-				<onclick>XBMC.LastFM.Ban</onclick>
+				<onclick>LastFM.Ban</onclick>
 				<onleft>608</onleft>
 				<onright>606</onright>
 				<onup>610</onup>
@@ -1765,7 +1766,7 @@
 				<usealttexture>Playlist.IsRandom</usealttexture>
 				<alttexturefocus>smallplayer-randomselected-focus.png</alttexturefocus>
 				<alttexturenofocus>smallplayer-randomselected-nofocus.png</alttexturenofocus>
-				<onclick>XBMC.PlayerControl(Random)</onclick>
+				<onclick>PlayerControl(Random)</onclick>
 				<onleft>608</onleft>
 				<onright>606</onright>
 				<onup>610</onup>

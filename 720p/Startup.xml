@@ -13,7 +13,7 @@
 		<control type="button" id="10">
 			<description>trigger with startup Playlist</description>
 			<onfocus>Skin.SetBool(Startup)</onfocus>
-			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+			<onfocus>PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
