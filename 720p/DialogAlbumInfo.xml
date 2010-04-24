@@ -222,14 +222,9 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<onleft>5</onleft>
-				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>50</ondown>
-				<visible>!Control.IsVisible(50)</visible>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Container.Content(Artists)</visible>
+				<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="label">
 				<posx>325</posx>
@@ -252,14 +247,9 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<onleft>5</onleft>
-				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>50</ondown>
-				<visible>!Control.IsVisible(50)</visible>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Container.Content(Albums)</visible>
+				<visible>Container.Content(Albums) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="label">
 				<posx>345</posx>

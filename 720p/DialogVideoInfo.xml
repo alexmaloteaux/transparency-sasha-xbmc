@@ -322,10 +322,6 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<onleft>5</onleft>
-				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>50</ondown>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | [Container.Content(TvShows) + Window.IsVisible(Videofiles)]]">Conditional</animation>
@@ -342,10 +338,6 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<onleft>5</onleft>
-				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>50</ondown>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | [Container.Content(TvShows) + Window.IsVisible(Videofiles)]]">Conditional</animation>
