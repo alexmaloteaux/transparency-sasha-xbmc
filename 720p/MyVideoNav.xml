@@ -85,7 +85,7 @@
 			<include>ContentFade</include>
 			<include condition="!Skin.HasSetting(Hide-Videos-CoverFlow)">CoverFlow-Movies</include>			<!-- view id = 55 -->
 			<include condition="!Skin.HasSetting(Hide-Videos-Icons)">Icons-Movies</include>				<!-- view id = 57 -->
-			<include>FullInfo</include> 										<!-- view id = 590 -->
+			<include condition="!Skin.HasSetting(Hide-Videos-Item)">Item</include> 					<!-- view id = 590 -->
 			<include condition="!Skin.HasSetting(Hide-Videos-Slide)">Slide</include>				<!-- view id = 596 -->
 			<include condition="!Skin.HasSetting(Hide-Videos-Wall)">Wall-Movies</include>				<!-- view id = 592 -->
 		</control>

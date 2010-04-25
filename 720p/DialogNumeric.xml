@@ -1,52 +1,57 @@
 <window id="109">
 	<defaultcontrol always="true">21</defaultcontrol>
-	<include>dialogeffect</include>
+	<include>dialogeffect7</include>
 	<coordinates>
 		<system>2</system>
 		<posx>0</posx>
 		<posy>165</posy>
 	</coordinates>
 	<controls>
-		<include condition="Skin.HasSetting(HateTransparency)">T-Underlay310</include>
+		<include condition="Skin.HasSetting(HateTransparency)">T-KeyboardInput2</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>-4</posy>
-			<width>1280</width>
-			<height>84</height>
-			<texture diffuse="underlay-diffuse.png" border="0,11,0,11">underlay3.png</texture>
+			<posx>543</posx>
+			<posy>30</posy>
+			<width>208</width>
+			<height>60</height>
+			<texture border="45,45,45,0">keyboard-input.png</texture>
+			<animation effect="zoom" start="543,90,208,1" end="543,30,208,60" time="300" delay="300">WindowOpen</animation>
+			<animation effect="zoom" start="543,30,208,60" end="543,90,208,1" time="200" delay="150">WindowClose</animation>
 		</control>
 		<control type="label" id="1">
 			<description>dialog Heading</description>
-			<posx>60</posx>
-			<posy>4</posy>
-			<width>1160</width>
+			<posx>340</posx>
+			<posy>34</posy>
+			<width>600</width>
 			<height>30</height>
-			<font>font-20</font>
+			<font>font-17</font>
 			<textcolor>blue</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
+			<animation effect="fade" start="0" end="100" time="200" delay="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 		</control>
 		<control type="label" id="4">
-			<posx>15</posx>
-			<posy>25</posy>
-			<width>1240</width>
+			<posx>340</posx>
+			<posy>58</posy>
+			<width>600</width>
 			<height>30</height>
 			<font>font-20</font>
 			<align>center</align>
 			<aligny>center</aligny>
-			<textcolor>white</textcolor>
 			<disabledcolor>grey</disabledcolor>
+			<animation effect="fade" start="0" end="100" time="200" delay="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<posx>506</posx>
+			<posy>70</posy>
+			<width>268</width>
+			<height>268</height>
+			<texture border="50">keyboard.png</texture>
 		</control>
 		<control type="group">
 			<posx>540</posx>
 			<posy>105</posy>
-			<control type="image">
-				<posx>-45</posx>
-				<posy>-45</posy>
-				<width>290</width>
-				<height>290</height>
-				<texture border="50">dialog.png</texture>
-			</control>
 			<control type="button" id="11">
 				<description>1 button</description>
 				<posx>0</posx>
@@ -56,8 +61,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12311</label>
 				<onleft>23</onleft>
 				<onright>12</onright>
@@ -73,8 +78,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12312</label>
 				<onleft>11</onleft>
 				<onright>13</onright>
@@ -90,8 +95,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12313</label>
 				<onleft>12</onleft>
 				<onright>23</onright>
@@ -107,8 +112,8 @@
 				<font>font-15</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-special-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>20181</label>
 				<onleft>13</onleft>
 				<onright>11</onright>
@@ -125,8 +130,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12314</label>
 				<onleft>23</onleft>
 				<onright>15</onright>
@@ -142,8 +147,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12315</label>
 				<onleft>14</onleft>
 				<onright>16</onright>
@@ -159,8 +164,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12316</label>
 				<onleft>15</onleft>
 				<onright>23</onright>
@@ -176,8 +181,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12317</label>
 				<onleft>21</onleft>
 				<onright>18</onright>
@@ -193,8 +198,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12318</label>
 				<onleft>17</onleft>
 				<onright>19</onright>
@@ -210,8 +215,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12319</label>
 				<onleft>18</onleft>
 				<onright>21</onright>
@@ -227,8 +232,8 @@
 				<font>font-15</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-special-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>20177</label>
 				<onleft>19</onleft>
 				<onright>17</onright>
@@ -246,8 +251,8 @@
 				<label>&lt;&lt;</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<onleft>21</onleft>
 				<onright>10</onright>
 				<onup>17</onup>
@@ -262,8 +267,8 @@
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<label>12310</label>
 				<onleft>20</onleft>
 				<onright>22</onright>
@@ -280,8 +285,8 @@
 				<label>&gt;&gt;</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="7">thumb-nofocus.png</texturenofocus>
-				<texturefocus border="7">thumb-focus.png</texturefocus>
+				<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+				<texturefocus border="10">key-focus.png</texturefocus>
 				<onleft>10</onleft>
 				<onright>21</onright>
 				<onup>19</onup>

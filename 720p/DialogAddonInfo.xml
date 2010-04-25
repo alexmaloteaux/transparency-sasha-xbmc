@@ -25,6 +25,7 @@
 				<width>208</width>
 				<height>208</height>
 				<texture>$INFO[ListItem.Icon]</texture>
+				<aspectratio aligny="center">keep</aspectratio>
 			</control>
 		</control>
 		<control type="group">
@@ -304,7 +305,7 @@
 							<onclick>-</onclick>
 						</item>
 						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[24052][/B][/UPPERCASE]</label>
+							<label>[UPPERCASE][B]$LOCALIZE[24052]:[/B][/UPPERCASE]</label>
 							<label2>$INFO[ListItem.Property(Addon.Disclaimer)]</label2>
 							<onclick>-</onclick>
 						</item>
