@@ -31,7 +31,6 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<include>DialogFade5</include>
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
 			<control type="label">
 				<description>Item Title value</description>
 				<posx>40</posx>
@@ -79,7 +78,7 @@
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onup>49</onup>
-					<ondown>61</ondown>
+					<ondown>60</ondown>
 					<onleft>7017</onleft>
 					<onright>7</onright>
 				</control>
@@ -100,7 +99,7 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<description>Album Info button</description>
 					<onup>49</onup>
-					<ondown>61</ondown>
+					<ondown>60</ondown>
 					<onleft>6</onleft>
 					<onright>8</onright>
 				</control>
@@ -120,7 +119,7 @@
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onup>49</onup>
-					<ondown>61</ondown>
+					<ondown>60</ondown>
 					<onleft>7</onleft>
 					<onright>9</onright>
 				</control>
@@ -140,7 +139,7 @@
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onup>49</onup>
-					<ondown>61</ondown>
+					<ondown>60</ondown>
 					<onleft>8</onleft>
 					<onright>7017</onright>
 				</control>
@@ -159,9 +158,9 @@
 					<aligny>center</aligny>
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<onclick>ActivateWindow(1113)</onclick>
+					<onclick>Skin.ToggleSetting(ViewAddonChangelog)</onclick>
 					<onup>49</onup>
-					<ondown>61</ondown>
+					<ondown>60</ondown>
 					<onleft>9</onleft>
 					<onright>6</onright>
 					<visible>!IsEmpty(ListItem.Property(Addon.Changelog))</visible>
@@ -191,8 +190,37 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<pagecontrol>61</pagecontrol>
+				<pagecontrol>60</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+			</control>
+			<control type="textbox">
+				<posx>335</posx>
+				<posy>95</posy>
+				<width>845</width>
+				<height>320</height>
+				<label>$INFO[ListItem.Property(Addon.Changelog)]</label>
+				<font>font-20</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>61</pagecontrol>
+				<autoscroll time="3000" delay="30000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<include>VisibleFadeEffect</include>
+				<visible>Skin.HasSetting(ViewAddonChangelog)</visible>
+			</control>
+			<control type="spincontrol" id="60">
+				<description>Next page button</description>
+				<posx>1180</posx>
+				<posy>699</posy>
+				<subtype>page</subtype>
+				<font>font-19</font>
+				<onup>9000</onup>
+				<ondown>61</ondown>
+				<onleft>60</onleft>
+				<onright>60</onright>
+				<textcolor>white</textcolor>
+				<showonepage>true</showonepage>
+				<visible>!Skin.HasSetting(ViewAddonChangelog)</visible>
 			</control>
 			<control type="spincontrol" id="61">
 				<description>Next page button</description>
@@ -200,15 +228,17 @@
 				<posy>699</posy>
 				<subtype>page</subtype>
 				<font>font-19</font>
-				<onleft>61</onleft>
-				<onright>61</onright>
+				<onup>60</onup>
 				<ondown>49</ondown>
-				<onup>9000</onup>
+				<onleft>60</onleft>
+				<onright>60</onright>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
+				<visible>Skin.HasSetting(ViewAddonChangelog)</visible>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
+				<visible>!Skin.HasSetting(ViewAddonChangelog)</visible>
 				<control type="list" id="49">
 					<posx>100</posx>
 					<posy>120</posy>
@@ -301,7 +331,7 @@
 					<content>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[21863]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Creator)]</label2>
+							<label2>$INFO[ListItem.Property(Fanart_Image)]</label2>
 							<onclick>-</onclick>
 						</item>
 						<item>
