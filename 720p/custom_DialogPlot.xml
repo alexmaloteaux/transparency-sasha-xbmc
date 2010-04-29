@@ -43,18 +43,6 @@
 				<font>font-32</font>
 				<visible>Container.Content(Albums)</visible>
 			</control>
-			<control type="label">
-				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
-				<width>1200</width>
-				<height>30</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<label>[UPPERCASE][B]$LOCALIZE[31700]:[/B][/UPPERCASE]</label>
-				<font>font-32</font>
-			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>54</posy>

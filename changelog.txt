@@ -1,15 +1,19 @@
 Transparency! v3.00
+- added pvr channelmanager
 - added Transparency! icon and fanart
 - updated description
+
 Transparency! v2.16
 - changed keyboard design
 - removed scripts from skin
 - option to hide cases
+
 Transparency! v2.15
 - changed use dvd and bluray cases
 - fixed custom background for play disc
 - changed use background loading in all views
 - added addon support
+
 Transparency! v2.14
 - modified icons view music
 - changed use colored default icons
@@ -17,6 +21,7 @@ Transparency! v2.14
 - added support for the youtrailer script
 - added option to use posters for tv shows
 - modified settings
+
 Transparency! v2.13
 - modified hiding of sidemenu and horizontal scrollbars
 - modified icons view movies
@@ -36,6 +41,7 @@ Transparency! v2.13
 - added more animations to fanart view
 - added option to disable views
 - modified fanart-view is now the default view
+
 Transparency! v2.12
 - fixed position of context menu for 'play using..' options
 - fixed background was invisible for picture info in polaroid view
@@ -47,12 +53,14 @@ Transparency! v2.12
 - modified dialogfullscreeninfo and musicvisualisation
 - modified dialogseekbar
 - fixed jaggies in coverflow
+
 Transparency! v2.11
 - fixed some missing weather.com labels
 - added recordlabel logo to visualization info dialog
 - skinned the rss editor script
 - removed brand logo's from several images
 - skinned the svn repo installer info dialog
+
 Transparency! v2.10
 - added open/close animation to music and video osd
 - added artist & album info to musicvisualisation window
@@ -137,6 +145,7 @@ Transparency! v2.10
 - added korean translation
 - added norwegian translation
 - added fanart - short list and long list to language file
+
 Transparency! v2.01
 - added scrollbar to settings category 
 - added show fanart when browsing library by album (thanx snowdrift)
@@ -166,14 +175,17 @@ Transparency! v2.01
 - fixed encoding in several language files
 - modified increased width for recently added labels
 - modified increased slide animation on home
+
 Transparency! v2.00
 - initial release
+
 Transparency! v1.11
 - modified width of time label in dialogseekbar
 - modified width of date label on home screen 
 - modified library check for home menu buttons
 - removed close button from music and video osd
 - modified thumbnail view for musicvideos now has 15 16:9 thumbs
+
 Transparency! v1.10
 - modified only update recently added at startup and after library update
 - added cdart to home
@@ -183,12 +195,15 @@ Transparency! v1.10
 - added clicking new label in recently added takes you to recently added in library
 - fixed beta bugs
 - modified thumbs in favourites and removed cases
+
 Transparency! v1.99 (beta)
 - beta release
+
 Transparency! v1.09
 - added custom skin transparency level
 - added warning to disabling settings menu item
 - modified method for delayed showing of info in slideview
+
 Transparency! v1.08
 - added mediaflags for musicvideos
 - modified alignment of plot in fullscreen info
@@ -197,6 +212,7 @@ Transparency! v1.08
 - added artist thumb to fanart view
 - added flac flag
 - modified merged tvshow and movie flags code
+
 Transparency! v1.07
 - added fanart view for now playing videos
 - fixed show common now playing in icons view
@@ -218,6 +234,7 @@ Transparency! v1.07
 - added fallback studio icon
 - added watched and trailer flag to coverflow and slide view
 - modified bigger fonts (thanxs tikkiew)
+
 Transparency! v1.06
 - added several translations (thanx to all translators!)
 - added wideicon view for videos root in filemode
@@ -236,12 +253,14 @@ Transparency! v1.06
 - fixed scrolloffset label in slide view
 - added play disc button to player controls
 - fixed custom background favourites didn't work
+
 Transparency! v1.05
 - added skin support for home theater experience script
 - added new weather layout for weather.com plus plugin
 - modified skin settings strings
 - modified skin settings control id's
 - added 200 studio icons
+
 Transparency! v1.04
 - modified moved different views to separate xml files
 - modified move media flags to individual views
@@ -253,6 +272,7 @@ Transparency! v1.04
 - added close shutdown menu animation
 - modified dvd source flag detection 
 - fixed header height
+
 Transparency! v1.03
 - modified progressbar width in fullscreen info
 - added finish time for all videos
@@ -260,8 +280,10 @@ Transparency! v1.03
 - fixed focussed/unfocussed layout recently added labels
 - removed studio icons from skin based media flagging
 - added separator label to dialogpluginsettings
+
 Transparency! v1.02
 - modified studio flag control
+
 Transparency! v1.01
 - modified use 16x9 thumbs for musicvideos in media info view
 - fixed scrolloffsetlabels are now showing for games fanart and pictures polaroid view
@@ -273,8 +295,10 @@ Transparency! v1.01
 - modified fontsize scrolloffset label
 - fixed failed loading of clearart from smb drives in dialogseekbar
 - fixed recently added window would still show even though it was disabled
+
 Transparency! v1.00
 - release
+
 Transparency! v0.38
 - added 125 record label logo's (thanx Ninjamawwe)
 - changed some alignments of info labels in media info view
@@ -282,35 +306,44 @@ Transparency! v0.38
 - added 'native' studio flag for movies and tv shows
 - changed merged some code of the two horizontal menus
 - changed moved backgrounds/icons/flags out of the media folder
+
 Transparency! v0.37
 - added passthrough notification to volumebar
+
 Transparency! v0.36
 - added slideview for movies
+
 Transparency! v0.35
 - changed redid dialogfullinfo
 - changed dialog backgrounds
+
 Transparency! v0.34
 - changed picture thumb view to wraplist
 - removed wide icon view for programs
 - added polaroid picture view
 - changed redid all thumbnail views
 - changed redid all item/focused layouts
+
 Transparency! v0.33
 - changed image loading for cdart and clearart, hopefully it'll work better with smb drives now.
 - added fanart view for games
 - added horizontal home menu fade to black
+
 Transparency! v0.32
 - added 100 film studio icons
 - changed replaced icons
 - changed home menu buttons
 - removed last.fm love-hate button
+
 Transparency! v0.31
 - added aspectratio to fullscreen media flags
 - changed textures
+
 Transparency! v0.30
 - changed fonts
 - changed colortheme to blue
 - changed skinsounds
+
 Transparency! v0.29
 - added fanartview for now playing
 - added progressbar to fanartview for music, now playing and CommonNowPlaying 
@@ -318,6 +351,7 @@ Transparency! v0.29
 - changed label color to white in skin settings backgrounds
 - removed bottom button shadow in settings catagory
 - fixed only load music flags when needed
+
 Transparency! v0.28
 - added 650 film studio icons
 - changed renamed all font entries
@@ -336,6 +370,7 @@ Transparency! v0.28
 - added license file
 - added Transparency! credits to custom_cedits
 - fixed scale background in filemanager
+
 Transparancy! v0.27:
 - added cdart with animations
 - added flags for 3iv2,div2,flv,mpg4,mp42,mp43,pcm,vorbis,mp1
@@ -372,6 +407,7 @@ Transparancy! v0.27:
 - added studio to episode dialog info
 - added fanart for games and programs
 - added finish time to fullscreen info for videos
+
 Transparancy! v0.26:
 - added seperator between listitems
 - added mediaflags for dd4.0 and dd4.1
@@ -387,10 +423,13 @@ Transparancy! v0.26:
 - added option to use videos in file mode on the home menu
 - added option to show fanart instead of visualisation on home screen and visualisation window
 - fixed false possitives with codec matching for music files
+
 Transparancy! v0.25:
 - added support for native media metadata detection
+
 Transparancy! v0.24:
 - fixed animated gifs deleted from weather icon directories
+
 Transparancy! v0.23:
 - fixed window title width
 - fixed custom backgrounds for videos section
@@ -398,10 +437,12 @@ Transparancy! v0.23:
 - added dvd case to fullscreen video info
 - added pulse on select for settings icons
 - changed made focused sidebutton more transparent
+
 Transparancy! v0.22:
 - added custom shutdown menu
 - added wide home menu buttons
 - added bigger fonts (thanx tikkiew)
+
 Transparancy! v0.21:
 - fixed custom backgrounds for movies in home
 - fixed custom backgrounds for tvshows in home
@@ -419,6 +460,7 @@ Transparancy! v0.21:
 - changed exit function for xbox on shutdown menu
 - changed animated weather icons are optional now
 - changed made background for fanart info slightly darker
+
 Transparancy! v0.20:
 - changed name to Transparency!
 - removed some redundant code
@@ -426,6 +468,7 @@ Transparancy! v0.20:
 - changed Icon view for albums / movies, so thumbs are more in the center of the screen
 - fixed bug in MyWeather.xml which caused the xbox to crash
 - fixed corrupted textures on xbox
+
 PM3.HD-Transparancy v0.19:
 - initial release
 
