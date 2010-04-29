@@ -705,7 +705,7 @@
 						<content>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[listitem.Episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label2>
+								<label2>$INFO[ListItem.Property(TotalEpisodes)] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label2>
 								<onclick>-</onclick>
 							</item>
 							<item>
@@ -848,7 +848,7 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20359]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Episode]</label2>
+								<label2>$INFO[ListItem.Property(TotalEpisodes)]</label2>
 								<onclick>-</onclick>
 							</item>
 							<item>

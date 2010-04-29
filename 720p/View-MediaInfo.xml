@@ -624,7 +624,7 @@
 				<posy>135</posy>
 				<width>220</width>
 				<height>25</height>
-				<label fallback="416">$INFO[ListItem.episode]</label>
+				<label fallback="416">$INFO[ListItem.Property(TotalEpisodes)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
