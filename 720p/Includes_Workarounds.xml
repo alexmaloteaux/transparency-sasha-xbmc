@@ -250,11 +250,23 @@
 			<visible>!substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 	</include>
+	<include name="moviedisc-dvd-View_Icons">
+		<texture fallback="disc-dvd.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+	</include>
+	<include name="moviedisc-bluray-View_Icons">
+		<texture fallback="disc-bluray.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+	</include>
 	<include name="movienodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>
-	<include name="moviedisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path,,disc.png]</texture>
+	<include name="moviedisc-dvd-View_Item">
+		<texture fallback="disc-dvd.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+	</include>
+	<include name="moviedisc-bluray-View_Item">
+		<texture fallback="disc-bluray.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+	</include>
+	<include name="movienodisc-View_Item">
+		<texture diffuse="disc_mask.png">disc-dvd.png</texture>
 	</include>
 	<include name="musicalbumsnodisc-View_Icons">
 		<texture>disc.png</texture>

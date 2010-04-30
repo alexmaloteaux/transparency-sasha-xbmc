@@ -138,7 +138,7 @@
 			<orientation>horizontal</orientation>
 			<animation effect="slide" start="0,0" end="0,-18" time="200" condition="Control.HasFocus(60)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
-			<visible>Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
+			<visible>Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
 		</control>
 		<control type="scrollbar" id="61">
 			<posx>1083</posx>
@@ -378,6 +378,7 @@
 			<include>WindowTitleCommons</include>
 			<visible>Substring(Container.FolderPath,shout://,Left)</visible>
 		</control>
+
 
 
 		<control type="label" id="1101">
@@ -1915,6 +1916,7 @@
 			<animation effect="slide" end="-1105,215" time="0" condition="Control.IsVisible(56)">Conditional</animation>
 			<animation effect="slide" end="130,-50" time="0" condition="Control.IsVisible(58) | [!Window.IsVisible(Videolibrary) + Control.IsVisible(59)]">Conditional</animation>
 			<animation effect="slide" end="235,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(59)">Conditional</animation>
+			<animation effect="slide" end="-1105,0" time="0" condition="Control.IsVisible(590)">Conditional</animation>
 			<animation effect="slide" end="-1215,0" time="0" condition="Control.IsVisible(592)">Conditional</animation>
 			<animation effect="slide" end="-1160,60" time="0" condition="Control.IsVisible(597)">Conditional</animation>
 			<posx>602</posx>

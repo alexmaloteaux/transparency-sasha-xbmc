@@ -252,16 +252,39 @@
 						<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="largeimage">
-						<posx>11</posx>
+						<posx>9</posx>
 						<posy>63</posy>
-						<width>169</width>
-						<height>169</height>
+						<width>173</width>
+						<height>173</height>
 						<aspectratio>stretch</aspectratio>
-						<include condition="!Skin.HasSetting(SafeMode)">moviedisc-View_Icons</include>
+						<include condition="!Skin.HasSetting(SafeMode)">moviedisc-dvd-View_Icons</include>
 						<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Icons</include>
-						<animation effect="zoom" start="11,63,169,169" end="-7,45,205,205" time="250">Focus</animation>
-						<animation effect="zoom" start="-7,45,205,205" end="11,63,169,169" time="250">UnFocus</animation>
-						<visible>!stringcompare(ListItem.Label,..)</visible>
+						<animation effect="zoom" start="9,63,173,173" end="-9,45,209,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-9,45,209,209" end="9,63,173,173" time="250">UnFocus</animation>
+						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>9</posx>
+						<posy>63</posy>
+						<width>173</width>
+						<height>173</height>
+						<aspectratio>stretch</aspectratio>
+						<include condition="!Skin.HasSetting(SafeMode)">moviedisc-bluray-View_Icons</include>
+						<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Icons</include>
+						<animation effect="zoom" start="9,63,173,173" end="-9,45,209,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-9,45,209,209" end="9,63,173,173" time="250">UnFocus</animation>
+						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>9</posx>
+						<posy>63</posy>
+						<width>173</width>
+						<height>173</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>disc.png</texture>
+						<animation effect="zoom" start="9,63,173,173" end="-9,45,209,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-9,45,209,209" end="9,63,173,173" time="250">UnFocus</animation>
+						<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<posx>64</posx>

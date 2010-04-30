@@ -1,29 +1,32 @@
 <includes>
 	<include name="Item">
+		<include condition="Skin.HasSetting(HateTransparency)">T-Underlay53</include>
 		<control type="image">
 			<posx>0</posx>
-			<posy>560</posy>
+			<posy>554</posy>
 			<width>1280</width>
-			<height>240</height>
-			<texture>floor.png</texture>
+			<height>178</height>
+			<texture border="10">underlay5.png</texture>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(590)</visible>
 		</control>
 		<control type="group">
-			<control type="image">
+			<control type="largeimage">
 				<posx>-40</posx>
 				<posy>610</posy>
 				<width>220</width>
 				<height>220</height>
-				<texture>disc-dvd.png</texture>
+				<include condition="!Skin.HasSetting(SafeMode)">moviedisc-dvd-View_Item</include>
+				<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Item</include>
 				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="image">
+			<control type="largeimage">
 				<posx>-40</posx>
 				<posy>610</posy>
 				<width>220</width>
 				<height>220</height>
-				<texture>disc-bluray.png</texture>
+				<include condition="!Skin.HasSetting(SafeMode)">moviedisc-bluray-View_Item</include>
+				<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Item</include>
 				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
@@ -34,11 +37,11 @@
 			<control type="label">
 				<posx>40</posx>
 				<posy>570</posy>
-				<width>1280</width>
+				<width>950</width>
 				<height>35</height>
 				<font>font-35</font>
 				<textcolor>blue</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -46,11 +49,11 @@
 			<control type="label">
 				<posx>160</posx>
 				<posy>615</posy>
-				<width>1000</width>
+				<width>830</width>
 				<height>20</height>
 				<font>font-21</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - ][/B]</label>
@@ -58,11 +61,11 @@
 			<control type="label">
 				<posx>175</posx>
 				<posy>640</posy>
-				<width>1000</width>
+				<width>860</width>
 				<height>20</height>
 				<font>font-21</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Studio][/B]</label>
@@ -70,11 +73,11 @@
 			<control type="label">
 				<posx>188</posx>
 				<posy>665</posy>
-				<width>1000</width>
+				<width>920</width>
 				<height>20</height>
 				<font>font-21</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Genre][/B]</label>
@@ -86,22 +89,14 @@
 				<height>20</height>
 				<font>font-21</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.TagLine][/B]</label>
 			</control>
 		</control>
-		<control type="image">
-			<posx>715</posx>
-			<posy>626</posy>
-			<width>93</width>
-			<height>63</height>
-			<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>!IsEmpty(ListItem.Studio) + Control.IsVisible(590)</visible>
-		</control>
 		<control type="group">
-			<posx>700</posx>
+			<posx>712</posx>
 			<posy>260</posy>
 			<include>Window_OpenClose_Animation</include>
 			<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
@@ -176,11 +171,11 @@
 		<control type="wraplist" id="590">
 			<include>Window_OpenClose_Animation</include>
 			<posx>0</posx>
-			<posy>260</posy>
+			<posy>300</posy>
 			<width>1280</width>
-			<height>440</height>
+			<height>430</height>
 			<onup>9000</onup>
-			<ondown>9000</ondown>
+			<ondown>60</ondown>
 			<onleft>590</onleft>
 			<onright>590</onright>
 			<viewtype label="Item">list</viewtype>
@@ -189,13 +184,13 @@
 			<scrolltime>250</scrolltime>
 			<focusedposition>3</focusedposition>
 			<visible>Container.Content(Movies)</visible>
-			<itemlayout height="429" width="257" />
-			<focusedlayout height="429" width="257">
+			<itemlayout height="430" width="256" />
+			<focusedlayout height="430" width="256">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
+					<width>256</width>
+					<height>430</height>
 					<texture></texture>
 				</control>
 			</focusedlayout>

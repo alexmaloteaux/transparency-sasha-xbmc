@@ -788,4 +788,15 @@
 			<include>T-Level</include>
 		</control>
 	</include>
+	<include name="T-Underlay53">
+		<control type="image">
+			<posx>0</posx>
+			<posy>554</posy>
+			<width>1280</width>
+			<height>178</height>
+			<texture border="10">underlay5.png</texture>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Control.IsVisible(590)</visible>
+		</control>
+	</include>
 </includes>
