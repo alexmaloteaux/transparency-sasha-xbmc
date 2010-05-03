@@ -9,13 +9,13 @@
 	<controls>
 		<include condition="Skin.HasSetting(HateTransparency)">T-KeyboardInput2</include>
 		<control type="image">
-			<posx>543</posx>
+			<posx>523</posx>
 			<posy>30</posy>
-			<width>208</width>
-			<height>60</height>
+			<width>248</width>
+			<height>80</height>
 			<texture border="45,45,45,0">keyboard-input.png</texture>
-			<animation effect="zoom" start="543,90,208,1" end="543,30,208,60" time="300" delay="300">WindowOpen</animation>
-			<animation effect="zoom" start="543,30,208,60" end="543,90,208,1" time="200" delay="150">WindowClose</animation>
+			<animation effect="zoom" start="523,90,248,1" end="523,30,248,80" time="300" delay="300">WindowOpen</animation>
+			<animation effect="zoom" start="523,30,248,80" end="523,90,248,1" time="200" delay="150">WindowClose</animation>
 		</control>
 		<control type="label" id="1">
 			<description>dialog Heading</description>

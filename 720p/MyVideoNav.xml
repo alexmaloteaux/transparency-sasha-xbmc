@@ -250,9 +250,9 @@
 					<onup>17</onup>
 					<ondown>610</ondown>
 					<pulseonselect>no</pulseonselect>
-					<onclick>xbmc.mastermode</onclick>
-					<selected>system.ismaster</selected>
-					<visible>system.haslocks</visible>
+					<onclick>Xbmc.MasterMode</onclick>
+					<selected>System.IsMaster</selected>
+					<visible>System.HasLocks</visible>
 				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>

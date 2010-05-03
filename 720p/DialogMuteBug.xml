@@ -35,7 +35,7 @@
 				<height>30</height>
 				<texture>VolumeIcon-Mute.png</texture>
 			</control>
-			<control type="progress" id="1">
+			<control type="progress">
 				<description>Progressbar</description>
 				<posx>131</posx>
 				<posy>9</posy>
@@ -44,7 +44,7 @@
 				<info>Player.Volume</info>
 				<visible>true</visible>
 			</control>
-			<control type="label" id="0">
+			<control type="label">
 				<description>Label</description>
 				<posx>131</posx>
 				<posy>3</posy>

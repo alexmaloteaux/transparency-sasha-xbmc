@@ -12,8 +12,8 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -25,8 +25,8 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
@@ -126,19 +126,6 @@
 					<ondown>4</ondown>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 				</control>
-				<control type="button" id="4">
-					<description>Settings button</description>
-					<posx>0</posx>
-					<posy>225</posy>
-					<label>5</label>
-					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-					<include>ButtonCommonValues</include>
-					<onleft>6000</onleft>
-					<onright>6000</onright>
-					<onup>2</onup>
-					<ondown>610</ondown>
-					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
-				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>
 					<onup>4</onup>
@@ -147,7 +134,7 @@
 				</control>
 				<control type="group">
 					<posx>0</posx>
-					<posy>270</posy>
+					<posy>225</posy>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
 					<include>CommonNowPlaying_Controls</include>
 				</control>
@@ -159,7 +146,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>272</posy>
+					<posy>227</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="IsEmpty(Weather.Plugin)">Conditional</animation>
@@ -184,7 +171,7 @@
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Weather</include>
 			</control>
-			<control type="label" id="1">
+			<control type="label">
 				<description>weather location label</description>
 				<posx>1268</posx>
 				<posy>5</posy>
@@ -194,7 +181,7 @@
 				<textcolor>white</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<info>Weather.Location</info>
+				<label>$INFO[Weather.Location]</label>
 			</control>
 		</control>
 	</controls>

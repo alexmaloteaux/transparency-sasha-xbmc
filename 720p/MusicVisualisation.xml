@@ -39,7 +39,7 @@
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
 		<control type="group">
 			<include>ContentFade</include>
-			<control type="group" id="0">
+			<control type="group">
 				<visible>Player.ShowCodec + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
 				<include>VisibleFadeEffect</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay42</include>
@@ -162,7 +162,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<visible>!Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 			</control>
-			<control type="group" id="1">
+			<control type="group">
 				<posx>0</posx>
 				<posy>520</posy>
 				<animation effect="slide" start="0,180" end="0,0" time="300">Visible</animation>

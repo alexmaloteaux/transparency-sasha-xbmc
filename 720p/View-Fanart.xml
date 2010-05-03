@@ -1475,7 +1475,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/bmp.png</texture>
-				<visible>stringcompare(ListItem.Filename,.bmp)</visible>
+				<visible>substring(ListItem.Filename,.bmp,Right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1483,7 +1483,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/gif.png</texture>
-				<visible>stringcompare(ListItem.Filename,.gif)</visible>
+				<visible>substring(ListItem.Filename,.gif,Right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1491,7 +1491,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/jpg.png</texture>
-				<visible>stringcompare(ListItem.Filename,.jpg) | stringcompare(ListItem.Filename,.jpeg,right)</visible>
+				<visible>substring(ListItem.Filename,.jpg,Right) | stringcompare(ListItem.Filename,.jpeg,right,Right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1499,7 +1499,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/png.png</texture>
-				<visible>stringcompare(ListItem.Filename,.png)</visible>
+				<visible>substring(ListItem.Filename,.png,Right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1507,7 +1507,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/tga.png</texture>
-				<visible>stringcompare(ListItem.Filename,.tga)</visible>
+				<visible>substring(ListItem.Filename,.tga,Right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1515,7 +1515,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/tiff.png</texture>
-				<visible>stringcompare(ListItem.Filename,.tiff)</visible>
+				<visible>substring(ListItem.Filename,.tiff,Right)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1523,7 +1523,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>special://skin/images/foldericons/pictures/wmf.png</texture>
-				<visible>stringcompare(ListItem.Filename,.wmf)</visible>
+				<visible>substring(ListItem.Filename,.wmf,Right)</visible>
 			</control>
 			<control type="image">
 				<posx>16</posx>

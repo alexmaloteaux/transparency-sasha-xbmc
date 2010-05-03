@@ -41,30 +41,12 @@
 		<control type="group">
 			<posx>240</posx>
 			<posy>60</posy>
-			<control type="image" id="1">
-				<description>rectangle image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>800</width>
-				<height>80</height>
-				<colordiffuse>AAFFFFFF</colordiffuse>
-				<texture border="6">dialog_background.png</texture>
-			</control>
-			<control type="image" id="1">
-				<description>rectangle image</description>
-				<posx>5</posx>
-				<posy>5</posy>
-				<width>790</width>
-				<height>70</height>
-				<colordiffuse>BBFFFFFF</colordiffuse>
-				<texture>menu_back.png</texture>
-				<aspectratio>scale</aspectratio>
-			</control>
 			<control type="label" id="2">
 				<description>coordinates label</description>
 				<posx>20</posx>
 				<posy>10</posy>
 				<width>750</width>
+				<height>25</height>
 				<label>-</label>
 				<align>center</align>
 				<font>font-23</font>
@@ -74,6 +56,7 @@
 				<posx>20</posx>
 				<posy>40</posy>
 				<width>750</width>
+				<height>25</height>
 				<label>-</label>
 				<align>center</align>
 				<font>font-23</font>

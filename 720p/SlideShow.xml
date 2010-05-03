@@ -1,22 +1,18 @@
 <window id="2007">
 	<defaultcontrol>2</defaultcontrol>
 	<controls>
-		<control type="group" id="13">
+		<control type="label" id="13">
+			<description>paused label</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<control type="label">
-				<description>paused label</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font-80</font>
-				<textcolor>white</textcolor>
-				<label>[B]$LOCALIZE[31043][/B]</label>
-				<animation effect="fade" start="20" end="70" time="1500" pulse="true" condition="true">Conditional</animation>
-			</control>
+			<width>1280</width>
+			<height>720</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font-80</font>
+			<textcolor>white</textcolor>
+			<label>[B]$LOCALIZE[31043][/B]</label>
+			<animation effect="fade" start="20" end="70" time="1500" pulse="true" condition="true">Conditional</animation>
 		</control>
 		<!-- media infos -->
 		<control type="group">
@@ -83,7 +79,7 @@
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="progress" id="403">
+			<control type="progress">
 				<description>progress control</description>
 				<posx>152</posx>
 				<posy>55</posy>

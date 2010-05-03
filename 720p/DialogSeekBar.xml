@@ -13,7 +13,7 @@
 				<height>35</height>
 				<texture border="16,0,16,0">popup-small.png</texture>
 			</control>
-			<control type="label" id="22">
+			<control type="label">
 				<description>Elapsed Time Label</description>
 				<posx>93</posx>
 				<posy>4</posy>
@@ -27,7 +27,7 @@
 				<label>$INFO[Player.Time]</label>
 				<visible>!Player.Seeking</visible>
 			</control>
-			<control type="label" id="22">
+			<control type="label">
 				<description>Seek Time Label</description>
 				<posx>93</posx>
 				<posy>4</posy>
@@ -41,7 +41,7 @@
 				<label>$INFO[Player.SeekTime]</label>
 				<visible>Player.Seeking</visible>
 			</control>
-			<control type="progress" id="23">
+			<control type="progress">
 				<description>Progressbar</description>
 				<posx>100</posx>
 				<posy>9</posy>
@@ -271,7 +271,7 @@
 				<label>[B]$LOCALIZE[31044] x32[/B]</label>
 				<visible>Player.Forwarding32x + !Player.Seeking</visible>
 			</control>
-			<control type="label" id="0">
+			<control type="label">
 				<description>Duration Label</description>
 				<posx>312</posx>
 				<posy>4</posy>
