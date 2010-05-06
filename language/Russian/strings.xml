@@ -9,11 +9,11 @@
   <string id="31020">Заголовок эпизода</string>
   <string id="31021">Видео Файлы</string>
   <string id="31022">Музыка Файлы</string>
-  <string id="31024">страница</string>
-  <string id="31025">объект(-а,-ов)</string>
-  <string id="31026">Video Library</string>
-  <string id="31027">Music Library</string>
-  <string id="31028">Apple Movie Trailers</string>
+  <string id="31024">Страница</string>
+  <string id="31025">Объект(-а,-ов)</string>
+  <string id="31026">Библиотека видео</string>
+  <string id="31027">Библиотека музыки</string>
+  <string id="31028">Трейлеры Apple</string>
   <!-- Viewmode labels -->
   <string id="31030">FanArt</string>
   <string id="31031">Полный список</string>
@@ -23,8 +23,8 @@
   <string id="31035">Слайды</string>
   <string id="31036">Полароид</string>
   <string id="31037">Карусель</string>
-  <string id="31038">Wall</string>
-  <string id="31039">Item</string>
+  <string id="31038">Стена</string>
+  <string id="31039">Предмет</string>
   <!-- Misc labels -->
   <string id="31042">Проигрывается</string>
   <string id="31043">Приостановлено</string>
@@ -36,7 +36,7 @@
   <string id="31051">Выключение через 90 мин.</string>
   <string id="31052">IMDB</string>
   <!-- Lyrics Script Extra labels -->
-  <string id="31053">*XBMC Lyrics</string>
+  <string id="31053">*XBMC слова</string>
   <string id="31054">Выберите песни из списка</string>
   <!-- Playlist Editor labels -->
   <string id="31055">Открыть плейлист</string>
@@ -49,8 +49,8 @@
   <string id="31101">Настройки главного меню</string>
   <string id="31102">Фон</string>
   <string id="31103">Показывать 'Приостановлено' в слайдшоу</string>
-  <string id="31104">Hide cases</string>
-  <string id="31105">Disable case animation in Icons view</string>
+  <string id="31104">Спрятать варианты</string>
+  <string id="31105">Выключить анимацию выбора в режиме иконок</string>
   <string id="31106">Основные настройки</string>
   <string id="31111">Всегда  показывать музыкальные данные с текстом песни</string>
   <string id="31113">Единичное изображение</string>
@@ -60,15 +60,15 @@
   <string id="31117">Широкие кнопки на домашнем экране</string>
   <string id="31118">Горизонтальное меню на домашнем экране</string>
   <string id="31120">Отключённый элементы меню</string>
-  <string id="31121">Custom</string>
-  <string id="31122">Conditional</string>
+  <string id="31121">Настроить</string>
+  <string id="31122">Условно</string>
   <string id="31124">Показывать FanArt вместо визуализации</string>
   <string id="31125">Включить cdArt</string>
   <string id="31126">Включить clearArt</string>
   <string id="31127">Папка с музыке</string>
   <string id="31128">Путь к сериалам</string>
   <string id="31129">Путь к фильмам</string>
-  <string id="31131">Enable YouTrailer script</string>
+  <string id="31131">Включить YouTrailer script</string>
   <string id="31132">Включить скрипт Home Theater Experience</string>
   <string id="31133">Использовать Исполнитель - Альбом для сортировки альбомов</string>
   <string id="31134">Анимированный фон</string>
@@ -86,44 +86,44 @@
   <string id="31146">Всегда проигрывать трейлеры в полноэкранном режиме</string>
   <string id="31147">Показывать слайдшоу из FanArt вместо визуализации</string>
   <string id="31148">Показывать стену CD вместо визуализации</string>
-  <string id="31149">Disabled views</string>
-  <string id="31150">Button label:</string>
-  <string id="31151">Source name:</string>
-  <string id="31152">Plugin name:</string>
-  <string id="31153">Weather icon</string>
-  <string id="31154">Application</string>
-  <string id="31155">Command:</string>
-  <string id="31156">Favourite</string>
-  <string id="31157">Select favourite:</string>
-  <string id="31158">Change Your Settings...</string>
-  <string id="31159">[B]CONFIGURE VIDEO SETTINGS[/B][CR]Manage your video library - Set video playback options - Change video listing options[CR]Set subtitle fonts</string>
-  <string id="31160">[B]CONFIGURE TV SETTINGS[/B][CR]Change fullscreen info - Manage EPG data settings[CR]Configure recording options</string>
-  <string id="31161">[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options</string>
-  <string id="31162">[B]CONFIGURE PICTURE SETTINGS[/B][CR]Set picture listing options[CR]Configure slideshows</string>
-  <string id="31163">[B]CONFIGURE WEATHER SETTINGS[/B][CR]Set three cities to collect weather information[CR]Select a weather plugin</string>
-  <string id="31164">[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock</string>
-  <string id="31165">[B]CONFIGURE NETWORK SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Set internet access options</string>
-  <string id="31166">[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue</string>
-  <string id="31167">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR]Select a skin - Set language and region - Change file listing options[CR]Set up a screensaver</string>
-  <string id="31168">[B]CONFIGURE SKIN SETTINGS[/B][CR]Setup the Transparency! skin - Add and remove home menu items[CR]Change skin backgrounds</string>
-  <string id="31169">[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons - Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
-  <string id="31170">[B]CHECK SYTEM INFORMATION[/B][CR]Display your hardware - Check current network settings[CR]Monitor free discspace</string>
+  <string id="31149">Выключить виды</string>
+  <string id="31150">Надпись кнопки:</string>
+  <string id="31151">Имя источника:</string>
+  <string id="31152">Имя плагина:</string>
+  <string id="31153">Ярлык погоды</string>
+  <string id="31154">Приложение</string>
+  <string id="31155">Команда:</string>
+  <string id="31156">Избранное</string>
+  <string id="31157">Выбрать избранное:</string>
+  <string id="31158">Измените свои настройки...</string>
+  <string id="31159">[B]КОНФИГУРАЦИЯ ВИДЕО[/B][CR]Управление библиотекой видео - Настройка видео вывода - Изменение настроек листания[CR]Установка шрифта субтитров</string>
+  <string id="31160">[B]КОНФИГУРАЦИЯ ТВ[/B][CR]Изменить информацию экрана - Управление настройками EPG Data[CR]Настройка опций записи</string>
+  <string id="31161">[B]КОНФИГУРАЦИЯ МУЗЫКИ[/B][CR]Управление библиотекой музыки - Настройка аудио вывода - Изменение настроек листания[CR]Установка представления музыки - Установка параметров караоке</string>
+  <string id="31162">[B]КОНФИГУРЦИЯ ИЗОБРАЖЕНИЙ[/B][CR]Настройка листинга изображений[CR]Настройка слайдшоу</string>
+  <string id="31163">[B]КОНФИГУРАЦИЯ ПРОГНОЗА ПОГОДЫ[/B][CR]Установка трёх городов для получения прогноза[CR]Выбор плагина погоды</string>
+  <string id="31164">[B]КОНФИГУРАЦИЯ СИСТЕМЫ[/B][CR]Установка и калибровка дисплея - Аудио выходы - Установка ДУ[CR]Настройка схемы питания - Включение дебаггера - Установка пароля</string>
+  <string id="31165">[B]КОНФИГУРАЦИЯ СЕТИ[/B][CR]Управление XBMC через UPnP и HTTP - Настройка файлового шаринга[CR]Настройка доступа к Интернет</string>
+  <string id="31166">[B]КОНФИГУРАЦИЯ ПРОФИЛЯ[/B][CR]Выбор профиля пользователя[CR]для входа</string>
+  <string id="31167">[B]КОНФИГУРАЦИЯ ВНЕШНЕГО ВИДА[/B][CR]Выбор скина - Установка языка и региона - Установка листинга файлов[CR]Настройка скринсейвера</string>
+  <string id="31168">[B]КОНФИГУРАЦИЯ СКИНА[/B][CR]Настройка скина Transparency! - Добавление и удаление элементов меню[CR]Изменение бэкграундов</string>
+  <string id="31169">[B]КОНФИГУРАЦИЯ ДОПОЛНЕНИЙ[/B][CR]Управление дополнениями - Поиск и установка дополнений из XBMC.ORG[CR]Настройки дополнений</string>
+  <string id="31170">[B]ИНФОРМАЦИЯ О СИСТЕМЕ[/B][CR]Показывает оборудование - Проверка сети[CR]Свободное место на диске</string>
   <!-- Script Settings labels -->
   <string id="31200">Дополнительные настройки скриптов</string>
-  <string id="31204">путь к скрипту:</string>
+  <string id="31204">Путь к скрипту:</string>
   <string id="31208">Показывать кнопку скрипта 'Lyrics' в экранном меню</string>
   <!-- AMT Script Extra labels -->
   <string id="31300">*Показывать роль</string>
   <!-- Home Page labels -->
   <string id="31400">Новые:</string>
-  <string id="31407">Plugin</string>
-  <string id="31408">Script</string>
-  <string id="31409">Player Controls</string>
-  <string id="31410">Recently Added</string>
-  <string id="31411">Recently Played</string>
+  <string id="31407">Плагин</string>
+  <string id="31408">Скрипт</string>
+  <string id="31409">Управление плеером</string>
+  <string id="31410">Недавно добавленно</string>
+  <string id="31411">Недавно проиграно</string>
   <!-- Temp PVR labels -->
-  <string id="31500">TV</string>
+  <string id="31500">ТВ</string>
   <!-- Weather labels -->
-  <string id="31600">10 Day</string>
+  <string id="31600">10 дней</string>
 </strings>
 
