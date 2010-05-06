@@ -1211,15 +1211,20 @@
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>927</posx>
 				<posy>25</posy>
 				<width>90</width>
 				<height>124</height>
+				<texture>gamecase-shadow.png</texture>
+			</control>
+			<control type="largeimage">
+				<posx>933</posx>
+				<posy>31</posy>
+				<width>78</width>
+				<height>112</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<texture diffuse="gamecase-diffuse.png" fallback="DefaultVideo.png" backgound="true">$INFO[Container(5044).ListItem.Thumb]</texture>
-				<bordersize>6</bordersize>
-				<bordertexture>gamecase-shadow.png</bordertexture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1395,7 +1400,6 @@
 				<width>213</width>
 				<height>127</height>
 				<texture border="10">video-shadow.png</texture>
-				<visible>![IsEmpty(Container(5045).ListItem.Thumb) | stringcompare(Container(5045).ListItem.Thumb,NONE)]</visible>
 			</control>
 			<control type="largeimage">
 				<posx>820</posx>
@@ -1403,7 +1407,7 @@
 				<width>195</width>
 				<height>110</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="video-diffuse.png" backgound="true">$INFO[Container(5045).ListItem.Thumb]</texture>
+				<texture diffuse="video-diffuse.png" backgound="true" fallback="DefaultVideo.png">$INFO[Container(5045).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
