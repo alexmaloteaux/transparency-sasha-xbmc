@@ -179,40 +179,40 @@
 		<onfocus>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onfocus>
 	</include>
 	<include name="recentlyfanartmovies">
-		<control type="largeimage">
+		<control type="largeimage" id="7021">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5044).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
+			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Control.HasFocus(5044)</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartepisodes">
-		<control type="largeimage">
+		<control type="largeimage" id="7022">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5045).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
+			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Control.HasFocus(5045)</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartalbums">
-		<control type="largeimage">
+		<control type="largeimage" id="7023">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5046).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
+			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Control.HasFocus(5046)</visible>
 		</control>
