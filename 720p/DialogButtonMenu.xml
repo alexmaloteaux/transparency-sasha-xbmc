@@ -36,8 +36,8 @@
 					<description>Master mode button</description>
 					<width>80</width>
 					<height>81</height>
-					<label>20046</label>
-					<altlabel>20045</altlabel>
+					<label>-</label>
+					<altlabel>-</altlabel>
 					<texturefocus>shut-master-focus.png</texturefocus>
 					<texturenofocus>shut-master-nofocus.png</texturenofocus>
 					<usealttexture>!System.IsMaster</usealttexture>
@@ -46,8 +46,8 @@
 					<onclick>mastermode</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Master) + System.HasLocks</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(21)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Master) + System.HasLocks</visible>
 				</control>
 				<control type="button" id="22">
 					<description>Profile LogOff</description>
@@ -58,9 +58,9 @@
 					<onclick>system.logoff</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[20126] $INFO[System.ProfileName]</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + System.HasLoginScreen + System.LoggedOn</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(22)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + System.HasLoginScreen + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="23">
 					<description>System Info button</description>
@@ -71,9 +71,9 @@
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
-					<label>130</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.LoggedOn</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(23)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="10">
 					<description>Filemanager button</description>
@@ -84,9 +84,9 @@
 					<onclick>ActivateWindow(MyFiles,autodetect)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>7</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.LoggedOn</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(10)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="11">
 					<description>Exit xbmc</description>
@@ -97,7 +97,7 @@
 					<onclick>Quit()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[13012] XBMC</label>
+					<label>-</label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + !System.Platform.Xbox</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(11)">conditional</animation>
 				</control>
@@ -110,9 +110,9 @@
 					<onclick>Dashboard()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[13012] XBMC</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + System.Platform.Xbox</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(12)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + System.Platform.Xbox</visible>
 				</control>
 				<control type="button" id="13">
 					<description>Restart xbmc</description>
@@ -123,12 +123,13 @@
 					<onclick>RestartApp()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[13313] XBMC</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Restart)</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(13)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Restart)</visible>
 				</control>
 				<control type="group" id="14">
 					<width>80</width>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 					<control type="button" id="30">
 						<description>30min ShutdownTimer button</description>
 						<posx>0</posx>
@@ -144,7 +145,7 @@
 						<onup>31</onup>
 						<ondown>36</ondown>
 						<font>-</font>
-						<label>20147</label>
+						<label>-</label>
 					</control>
 					<control type="button" id="31">
 						<description>60min ShutdownTimer button</description>
@@ -161,7 +162,7 @@
 						<onup>32</onup>
 						<ondown>30</ondown>
 						<font>-</font>
-						<label>20148</label>
+						<label>-</label>
 					</control>
 					<control type="button" id="32">
 						<description>90min ShutdownTimer button</description>
@@ -178,7 +179,7 @@
 						<onup>33</onup>
 						<ondown>31</ondown>
 						<font>-</font>
-						<label>31051</label>
+						<label>-</label>
 					</control>
 					<control type="button" id="33">
 						<description>120min ShutdownTimer button</description>
@@ -195,7 +196,7 @@
 						<onup>34</onup>
 						<ondown>32</ondown>
 						<font>-</font>
-						<label>20149</label>
+						<label>-</label>
 					</control>
 					<control type="button" id="34">
 						<description>Custom ShutdownTimer button</description>
@@ -212,11 +213,10 @@
 						<onup>35</onup>
 						<ondown>33</ondown>
 						<font>-</font>
-						<label>20150</label>
+						<label>-</label>
 					</control>
 					<control type="button" id="35">
 						<description>Cancel ShutdownTimer button</description>
-						<visible>System.HasAlarm(ShutdownTimer)</visible>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>80</width>
@@ -230,7 +230,8 @@
 						<onup>36</onup>
 						<ondown>34</ondown>
 						<font>-</font>
-						<label>20151</label>
+						<label>-</label>
+						<visible>System.HasAlarm(ShutdownTimer)</visible>
 					</control>
 					<control type="button" id="36">
 						<description>Shutdown button</description>
@@ -240,15 +241,15 @@
 						<height>81</height>
 						<texturefocus>shut-shutdown-focus.png</texturefocus>
 						<texturenofocus>shut-shutdown-nofocus.png</texturenofocus>
-						<onclick>Shutdown()</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
 						<onup>30</onup>
 						<ondown>35</ondown>
 						<font>-</font>
-						<label>13005</label>
+						<label>-</label>
 						<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(36)">conditional</animation>
+						<include condition="!Skin.HasSetting(Hide_Shutdown_Shutdown)">Shutdown-Action</include>
 					</control>
 					<control type="image">
 						<description>Shutdown focus image</description>
@@ -258,10 +259,9 @@
 						<height>81</height>
 						<texture>shut-shutdown-focus.png</texture>
 						<pulseonselect>yes</pulseonselect>
-						<visible>[Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32) | Control.HasFocus(33) | Control.HasFocus(34) | Control.HasFocus(35)]</visible>
 						<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32) | Control.HasFocus(33) | Control.HasFocus(34) | Control.HasFocus(35)">conditional</animation>
+						<visible>[Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32) | Control.HasFocus(33) | Control.HasFocus(34) | Control.HasFocus(35)]</visible>
 					</control>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 				</control>
 				<control type="button" id="15">
 					<description>Suspend button</description>
@@ -273,9 +273,9 @@
 					<onclick>Suspend()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>13011</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend) + System.CanSuspend</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(15)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend) + System.CanSuspend</visible>
 				</control>
 				<control type="button" id="16">
 					<description>Hibernate button</description>
@@ -287,9 +287,9 @@
 					<onclick>Hibernate()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>13010</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate) + System.CanHibernate</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(16)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate) + System.CanHibernate</visible>
 				</control>
 				<control type="button" id="17">
 					<description>Favourites button</description>
@@ -300,9 +300,9 @@
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>1036</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.LoggedOn</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(17)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="18">
 					<description>Reboot button</description>
@@ -313,9 +313,9 @@
 					<onclick>Reset()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>13013</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(18)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
 				</control>
 				<control type="button" id="19">
 					<description>Settings button</description>
@@ -326,9 +326,9 @@
 					<onclick>ActivateWindow(Settings)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[5]</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.LoggedOn</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(19)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="20">
 					<description>Eject Drive button</description>
@@ -339,13 +339,13 @@
 					<onclick>EjectTray()</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
-					<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.LoggedOn</visible>
+					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(20)">conditional</animation>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.LoggedOn</visible>
 				</control>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay34</include>
-			<control type="image" id="0">
+			<control type="image">
 				<posx>0</posx>
 				<posy>-80</posy>
 				<width>1280</width>
@@ -368,7 +368,7 @@
 				<visible>System.HasLoginScreen + System.LoggedOn</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay35</include>
-			<control type="image" id="0">
+			<control type="image">
 				<posx>0</posx>
 				<posy>110</posy>
 				<width>1280</width>
@@ -380,97 +380,102 @@
 				<animation effect="slide" start="0,0" end="199,-143" time="0" condition="true">Conditional</animation>
 				<control type="label">
 					<label>20045</label>
-					<include>ShutdownLabel</include>
-					<visible>Control.HasFocus(21)</visible>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(21) + System.IsMaster</visible>
 				</control>
 				<control type="label">
-					<label>20126</label>
-					<include>ShutdownLabel</include>
+					<label>20046</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(21) + !System.IsMaster</visible>
+				</control>
+				<control type="label">
+					<label>$LOCALIZE[20126] $INFO[System.ProfileName]</label>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(22)</visible>
 				</control>
 				<control type="label">
 					<label>130</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(23)</visible>
 				</control>
 				<control type="label">
 					<label>7</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(10)</visible>
 				</control>
 				<control type="label">
 					<label>$LOCALIZE[13012] XBMC</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(11) | Control.HasFocus(12)</visible>
 				</control>
 				<control type="label">
 					<label>$LOCALIZE[13313] XBMC</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(13)</visible>
 				</control>
 				<control type="label">
 					<label>20147</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(30)</visible>
 				</control>
 				<control type="label">
 					<label>20148</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(31)</visible>
 				</control>
 				<control type="label">
 					<label>31051</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(32)</visible>
 				</control>
 				<control type="label">
 					<label>20149</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(33)</visible>
 				</control>
 				<control type="label">
 					<label>20150</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(34)</visible>
 				</control>
 				<control type="label">
 					<label>20151</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(35)</visible>
 				</control>
 				<control type="label">
 					<label>13005</label>
-					<include>ShutdownLabel</include>
-					<visible>Control.HasFocus(36)</visible>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(36) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 				</control>
 				<control type="label">
 					<label>13011</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(15)</visible>
 				</control>
 				<control type="label">
 					<label>13010</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(16)</visible>
 				</control>
 				<control type="label">
 					<label>1036</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(17)</visible>
 				</control>
 				<control type="label">
 					<label>13013</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(18)</visible>
 				</control>
 				<control type="label">
 					<label>5</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(19)</visible>
 				</control>
 				<control type="label">
 					<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-					<include>ShutdownLabel</include>
+					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(20)</visible>
 				</control>
 			</control>

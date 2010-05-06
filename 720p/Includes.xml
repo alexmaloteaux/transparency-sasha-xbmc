@@ -1955,7 +1955,10 @@
 		<ondown>8200</ondown>
 		<include>VisibleFadeEffect</include>
 	</include>
-	<include name="ShutdownLabel">
+	<include name="Shutdown-Action">
+		<onclick>Shutdown()</onclick>
+	</include>
+	<include name="ShutdownMenuLabel">
 		<posx>-23</posx>
 		<posy>257</posy>
 		<width>928</width>
