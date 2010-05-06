@@ -74,7 +74,7 @@
 					<pagecontrol>30</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<preloaditems>2</preloaditems>
-					<itemlayout height="29">
+					<itemlayout width="490" height="29">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -114,7 +114,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="29">
+					<focusedlayout width="490" height="29">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -207,7 +207,7 @@
 					<pagecontrol>31</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<preloaditems>2</preloaditems>
-					<itemlayout height="29">
+					<itemlayout width="490" height="29">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -247,7 +247,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="29">
+					<focusedlayout width="490" height="29">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>

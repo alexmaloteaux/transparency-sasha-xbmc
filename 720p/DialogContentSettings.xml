@@ -61,7 +61,7 @@
 				<ondown>5</ondown>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="30">
+				<itemlayout width="450" height="30">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -89,7 +89,7 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="30">
+				<focusedlayout width="450" height="30">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>

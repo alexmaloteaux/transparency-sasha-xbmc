@@ -374,7 +374,7 @@
 				<hitrect x="670" y="565" w="140" h="135" />
 				<animation effect="slide" start="0,0" end="-119,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="29,0" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
-				<itemlayout height="110" width="110">
+				<itemlayout width="110" height="110">
 					<control type="image">
 						<posx>5</posx>
 						<posy>5</posy>
@@ -384,7 +384,7 @@
 						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout height="110" width="110">
+				<focusedlayout width="110" height="110">
 					<control type="image">
 						<posx>2</posx>
 						<posy>2</posy>
@@ -450,7 +450,7 @@
 						<ondown>5</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="25">
+						<itemlayout width="1200" height="25">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -484,7 +484,7 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="25">
+						<focusedlayout width="1200" height="25">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -624,7 +624,7 @@
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<animation effect="slide" start="0,0" end="0,-110" time="0" condition="[Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] + !Window.IsVisible(VideoFiles)">Conditional</animation>
-						<itemlayout height="29">
+						<itemlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -658,7 +658,7 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29">
+						<focusedlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -757,7 +757,7 @@
 						<ondown>5</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="29">
+						<itemlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -791,7 +791,7 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29">
+						<focusedlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -915,7 +915,7 @@
 						<ondown>5</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="29">
+						<itemlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -949,7 +949,7 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29">
+						<focusedlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>

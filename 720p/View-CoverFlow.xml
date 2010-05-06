@@ -1240,9 +1240,8 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="1" width="1">
-			</itemlayout>
-			<focusedlayout height="440" width="300">
+			<itemlayout width="300" height="440" />
+			<focusedlayout width="300" height="440">
 				<control type="image">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -3030,9 +3029,8 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="1" width="1" />
-			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
-			<focusedlayout height="318" width="318">
+			<itemlayout width="318" height="318" />
+			<focusedlayout width="318" height="318">
 				<control type="image">
 					<posx>34</posx>
 					<posy>28</posy>

@@ -253,6 +253,7 @@
 				<onup>13</onup>
 			</control>
 			<control type="button" id="15">
+
 				<description>Increase Rating</description>
 				<posx>1208</posx>
 				<posy>699</posy>
@@ -279,7 +280,7 @@
 					<ondown>13</ondown>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="29">
+					<itemlayout width="1080" height="29">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -313,7 +314,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 					</itemlayout>
-					<focusedlayout height="29">
+					<focusedlayout width="1080" height="29">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>

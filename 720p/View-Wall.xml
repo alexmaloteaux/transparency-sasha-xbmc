@@ -595,7 +595,7 @@
 			<preloaditems>2</preloaditems>
 			<focusposition>0</focusposition>
 			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
-			<itemlayout width="1" height="1" />
+			<itemlayout width="248" height="362" />
 			<focusedlayout width="248" height="362">
 				<control type="image">
 					<posx>0</posx>
@@ -2140,7 +2140,7 @@
 			<preloaditems>2</preloaditems>
 			<focusposition>0</focusposition>
 			<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
-			<itemlayout width="1" height="1" />
+			<itemlayout width="385" height="385" />
 			<focusedlayout width="385" height="385">
 				<control type="image">
 					<posx>0</posx>

@@ -28,7 +28,7 @@
 				<orientation>horizontal</orientation>
 				<hitrect x="518" y="350" w="244" h="334" />
 				<preloaditems>2</preloaditems>
-				<itemlayout height="310" width="250">
+				<itemlayout width="250" height="310">
 					<control type="image">
 						<posx>0</posx>
 						<posy>302</posy>
@@ -157,7 +157,7 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="310" width="250">
+				<focusedlayout width="250" height="310">
 					<control type="image">
 						<posx>0</posx>
 						<posy>302</posy>
@@ -559,7 +559,7 @@
 				<orientation>horizontal</orientation>
 				<hitrect x="518" y="440" w="244" h="244" />
 				<preloaditems>2</preloaditems>
-				<itemlayout height="310" width="250">
+				<itemlayout width="250" height="310">
 					<control type="image">
 						<posx>18</posx>
 						<posy>43</posy>
@@ -633,7 +633,7 @@
 						<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="310" width="250">
+				<focusedlayout width="250" height="310">
 					<control type="image">
 						<posx>18</posx>
 						<posy>43</posy>

@@ -65,7 +65,7 @@
 			<preloaditems>2</preloaditems>
 			<focusposition>2</focusposition>
 			<hitrect x="500" y="568" w="250" h="280" />
-			<itemlayout height="130" width="256">
+			<itemlayout width="256" height="130">
 				<control type="image">
 					<posx>30</posx>
 					<posy>-2</posy>
@@ -96,7 +96,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="130" width="256">
+			<focusedlayout width="256" height="130">
 				<control type="image">
 					<posx>30</posx>
 					<posy>-2</posy>

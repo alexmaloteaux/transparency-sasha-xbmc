@@ -13,7 +13,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout height="165" width="181" condition="!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos)">
+			<itemlayout width="181" height="165" condition="!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>30</posx>
 					<posy>11</posy>
@@ -65,7 +65,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="165" width="181" condition="!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos)">
+			<focusedlayout width="181" height="165" condition="!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>30</posx>
 					<posy>11</posy>
@@ -151,7 +151,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			<itemlayout height="165" width="181" condition="Container.Content(Albums) | Container.Content(Songs)">
+			<itemlayout width="181" height="165" condition="Container.Content(Albums) | Container.Content(Songs)">
 				<control type="image">
 					<posx>40</posx>
 					<posy>17</posy>
@@ -191,7 +191,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="165" width="181" condition="Container.Content(Albums) | Container.Content(Songs)">
+			<focusedlayout width="181" height="165" condition="Container.Content(Albums) | Container.Content(Songs)">
 				<control type="image">
 					<posx>40</posx>
 					<posy>17</posy>
@@ -255,7 +255,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			<itemlayout condition="Container.Content(MusicVideos)" height="156" width="176">
+			<itemlayout width="176" height="156" condition="Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>28</posx>
 					<posy>5</posy>
@@ -299,7 +299,7 @@
 					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="Container.Content(MusicVideos)" height="156" width="176">
+			<focusedlayout width="176" height="156" condition="Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>28</posx>
 					<posy>5</posy>
@@ -380,7 +380,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)" height="235" width="176">
+			<itemlayout width="176" height="235" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>14</posx>
 					<posy>11</posy>
@@ -419,7 +419,7 @@
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)" height="235" width="176">
+			<focusedlayout width="176" height="235" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>14</posx>
 					<posy>11</posy>
@@ -474,7 +474,7 @@
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
-			<itemlayout condition="Container.Content(Episodes) | Container.Content(MusicVideos)" height="156" width="176">
+			<itemlayout width="176" height="156" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>3</posx>
 					<posy>5</posy>
@@ -518,7 +518,7 @@
 					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="Container.Content(Episodes) | Container.Content(MusicVideos)" height="156" width="176">
+			<focusedlayout width="176" height="156" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>3</posx>
 					<posy>5</posy>
@@ -582,7 +582,7 @@
 					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
-			<itemlayout condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)" height="235" width="176">
+			<itemlayout width="176" height="235" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
 				<control type="image">
 					<posx>18</posx>
 					<posy>17</posy>
@@ -647,7 +647,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)" height="235" width="176">
+			<focusedlayout width="176" height="235" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
 				<control type="image">
 					<posx>18</posx>
 					<posy>17</posy>

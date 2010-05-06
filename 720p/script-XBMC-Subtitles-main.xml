@@ -99,7 +99,7 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>121</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="29">
+			<itemlayout width="710" height="29">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -154,7 +154,7 @@
 					<texture>OpenSubtitles/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="29">
+			<focusedlayout width="710" height="29">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>

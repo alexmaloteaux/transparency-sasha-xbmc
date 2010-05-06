@@ -47,7 +47,7 @@
 							<onright>61</onright>
 							<pagecontrol>61</pagecontrol>
 							<scrolltime>200</scrolltime>
-							<itemlayout height="29" width="880">
+							<itemlayout width="880" height="29">
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
@@ -97,7 +97,7 @@
 									<visible>ListItem.HasTimer</visible>
 								</control>
 							</itemlayout>
-							<focusedlayout height="29" width="880">
+							<focusedlayout width="880" height="29">
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
@@ -174,7 +174,7 @@
 							<pagecontrol>61</pagecontrol>
 							<scrolltime>200</scrolltime>
 							<preloaditems>2</preloaditems>
-							<itemlayout height="29" width="880">
+							<itemlayout width="880" height="29">
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
@@ -243,7 +243,7 @@
 									<visible>ListItem.HasTimer</visible>
 								</control>
 							</itemlayout>
-							<focusedlayout height="29" width="880">
+							<focusedlayout width="880" height="29">
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
@@ -458,7 +458,7 @@
 									<scroll>false</scroll>
 								</control>
 							</focusedchannellayout>
-							<itemlayout height="60" width="40">
+							<itemlayout width="40" height="60">
 								<control type="image" id="2">
 									<width>40</width>
 									<height>60</height>
@@ -584,7 +584,7 @@
 									<visible>ListItem.HasTimer</visible>
 								</control>
 							</itemlayout>
-							<focusedlayout height="60" width="40">
+							<focusedlayout width="40" height="60">
 								<control type="image" id="2">
 									<width>40</width>
 									<height>60</height>
@@ -760,7 +760,7 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout height="29" width="390">
+						<itemlayout width="390" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -794,7 +794,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29" width="390">
+						<focusedlayout width="390" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -858,7 +858,7 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout height="29" width="390">
+						<itemlayout width="390" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -892,7 +892,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29" width="390">
+						<focusedlayout width="390" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -956,7 +956,7 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout height="29" width="390">
+						<itemlayout width="390" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -978,7 +978,7 @@
 								<label>$INFO[ListItem.Label][COLOR=blue]$INFO[ListItem.Date, (,)][/COLOR]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29" width="390">
+						<focusedlayout width="390" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -1026,7 +1026,7 @@
 						<onright>61</onright>
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="29" width="880">
+						<itemlayout width="880" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -1072,7 +1072,7 @@
 								<info>ListItem.Comment</info>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29" width="880">
+						<focusedlayout width="880" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -1145,7 +1145,7 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout height="29" width="880">
+						<itemlayout width="880" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -1214,7 +1214,7 @@
 								<visible>ListItem.HasTimer</visible>
 							</control>
 						</itemlayout>
-						<focusedlayout height="29" width="880">
+						<focusedlayout width="880" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
