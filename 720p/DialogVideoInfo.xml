@@ -441,9 +441,9 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>57</posx>
-						<posy>68</posy>
+						<posy>61</posy>
 						<width>1200</width>
-						<height>275</height>
+						<height>300</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>5</onup>
@@ -552,6 +552,11 @@
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Year]</label2>
+								<onclick>-</onclick>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[574]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.Country]</label2>
 								<onclick>-</onclick>
 							</item>
 							<item>
