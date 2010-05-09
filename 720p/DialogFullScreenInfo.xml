@@ -290,7 +290,7 @@
 						<aligny>center</aligny>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
-						<visible>!System.GetBool(pvrplayback.timeshift)]</visible>
+						<visible>!System.GetBool(PvrPlayback.Timeshift)</visible>
 					</control>
 					<control type="label">
 						<description>time label</description>
@@ -304,7 +304,7 @@
 						<aligny>center</aligny>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
-						<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+						<visible>System.GetBool(PvrPlayback.Timeshift)</visible>
 					</control>
 				</control>
 				<control type="progress">
@@ -329,7 +329,7 @@
 						<aligny>center</aligny>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
-						<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+						<visible>System.GetBool(PvrPlayback.Timeshift)</visible>
 					</control>
 				</control>
 				<control type="label">
@@ -360,7 +360,7 @@
 						<aligny>center</aligny>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
-						<visible>!System.GetBool(pvrplayback.timeshift)]</visible>
+						<visible>!System.GetBool(PvrPlayback.Timeshift)</visible>
 					</control>
 					<control type="label">
 						<description>time label</description>
@@ -374,7 +374,7 @@
 						<aligny>center</aligny>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
-						<visible>System.GetBool(pvrplayback.timeshift)]</visible>
+						<visible>System.GetBool(PvrPlayback.Timeshift)</visible>
 					</control>
 				</control>
 				<control type="label">

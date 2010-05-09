@@ -27,41 +27,21 @@
 				<posy>5</posy>
 				<width>250</width>
 				<height>40</height>
-				<aspectratio>keep</aspectratio>
-				<align>center</align>
-				<aligny>center</aligny>
+				<aspectratio align="left">keep</aspectratio>
 			</control>
-			<control type="grouplist">
-				<posx>300</posx>
-				<posy>10</posy>
-				<width>450</width>
+			<control type="label">
+				<posx>250</posx>
+				<posy>6</posy>
+				<width>300</width>
 				<height>20</height>
-				<align>right</align>
-				<orientation>horizontal</orientation>
-				<itemgap>10</itemgap>
-				<control type="label" id="300">
-					<width min="10" max="200">auto</width>
-					<height>20</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<label>$LOCALIZE[SCRIPT601]</label>
-				</control>
-				<control type="image">
-					<width>54</width>
-					<height>20</height>
-					<texture>OpenSubtitles/icon_sync.png</texture>
-				</control>
-				<control type="label" id="301">
-					<width min="10" max="200">auto</width>
-					<height>20</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<label>$LOCALIZE[SCRIPT602]</label>
-				</control>
-			</control>	  
+				<font>font-32</font>
+				<textcolor>blue</textcolor>
+				<label>XBMC Subtitles</label>
+				<align>center</align>
+			</control>  
 			<control type="image">
 				<posx>40</posx>
-				<posy>55</posy>
+				<posy>46</posy>
 				<width>720</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -69,10 +49,10 @@
 			<control type="label" id="100">
 				<description>textarea</description>
 				<posx>40</posx>
-				<posy>63</posy>
+				<posy>47</posy>
 				<width>710</width>
 				<height>40</height>
-				<font>font-25</font>
+				<font>font-23</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -80,7 +60,7 @@
 			</control>
 			<control type="image">
 				<posx>40</posx>
-				<posy>110</posy>
+				<posy>86</posy>
 				<width>720</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -89,9 +69,9 @@
 	<!-- ** Required ** Do not change <id> or <type> -->
 		<control type="list" id="120">
 			<posx>45</posx>
-			<posy>160</posy>
+			<posy>130</posy>
 			<width>710</width>
-			<height>323</height>
+			<height>352</height>
 			<onleft>120</onleft>
 			<onright>120</onright>
 			<onup>120</onup>
@@ -221,9 +201,9 @@
 		</control>
 		<control type="scrollbar" id="121">
 			<posx>755</posx>
-			<posy>160</posy>
+			<posy>130</posy>
 			<width>20</width>
-			<height>325</height>
+			<height>355</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>

@@ -24,7 +24,7 @@
 			<fadetime>600</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))]]</visible>
+			<visible>!Player.HasVideo + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))]]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(HomepageRecentMovies)">recentlyfanartmovies</include>
 		<include condition="!Skin.HasSetting(HomepageRecentTVShows)">recentlyfanartepisodes</include>
