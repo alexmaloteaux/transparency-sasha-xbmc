@@ -350,6 +350,23 @@
 				<posx>1062</posx>
 				<posy>683</posy>
 				<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
+				<control type="button" id="911">
+					<description>Channels Menu</description>
+					<posx>-40</posx>
+					<posy>0</posy>
+					<width>32</width>
+					<height>32</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-channels-nofocus.png</texturenofocus>
+					<texturefocus>osd-channels-focus.png</texturefocus>
+					<onclick>ActivateWindow(PVROSDChannels)</onclick>
+					<onleft>990</onleft>
+					<onright>991</onright>
+					<onup>911</onup>
+					<ondown>911</ondown>
+					<visible>PVR.IsPlayingRadio + System.GetBool(PVRManager.Enabled)</visible>
+				</control>
 				<control type="button" id="991">
 					<description>Background Settings</description>
 					<posx>0</posx>
@@ -361,7 +378,7 @@
 					<texturenofocus>osd-background-nofocus.png</texturenofocus>
 					<texturefocus>osd-background-focus.png</texturefocus>
 					<onclick>Skin.ToggleSetting(Music_OSD_Background)</onclick>
-					<onleft>990</onleft>
+					<onleft>911</onleft>
 					<onright>915</onright>
 					<onup>916</onup>
 					<ondown>991</ondown>
@@ -448,113 +465,113 @@
 					<visible>Skin.HasSetting(LyricScript_Enable)</visible>
 				</control>
 			</control>
-			<control type="button" id="990">
-				<description>visualisation Select Button</description>
-				<posx>755</posx>
-				<posy>685</posy>
-				<width>230</width>
-				<height>29</height>
-				<align>center</align>
-				<label>541</label>
-				<font>font-18</font>
-				<texturefocus border="7">button-focus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<onleft>910</onleft>
-				<onright>991</onright>
-				<onup>990</onup>
-				<ondown>990</ondown>
-				<include>VisibleFadeEffect</include>
-				<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
-				<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
-				<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
-				<onclick>SetFocus(990)</onclick>
+			<control type="group">
+				<animation effect="slide" start="0,0" end="20,0" time="0" condition="Player.CanRecord">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-20,0" time="0" condition="PVR.IsPlayingRadio">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
-				<visible>Skin.HasSetting(Music_OSD_Background) + Skin.HasSetting(CDWallNoVisualisation)</visible>
-			</control>
-			<control type="button" id="990">
-				<description>fanart Select Button</description>
-				<posx>755</posx>
-				<posy>685</posy>
-				<width>230</width>
-				<height>29</height>
-				<align>center</align>
-				<label>250</label>
-				<font>font-18</font>
-				<texturefocus border="7">button-focus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<onleft>910</onleft>
-				<onright>991</onright>
-				<onup>990</onup>
-				<ondown>990</ondown>
-				<include>VisibleFadeEffect</include>
-				<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
-				<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
-				<onclick>Skin.SetBool(FanartNoVisualisation)</onclick>
-				<onclick>SetFocus(990)</onclick>
-				<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
-				<visible>Skin.HasSetting(Music_OSD_Background) + !Skin.HasSetting(FanartNoVisualisation) + !Skin.HasSetting(FanartSlideshowNoVisualisation) + !Skin.HasSetting(CDWallNoVisualisation)</visible>
-			</control>
-			<control type="button" id="990">
-				<description>fanart slideshow Select Button</description>
-				<posx>755</posx>
-				<posy>685</posy>
-				<width>230</width>
-				<height>29</height>
-				<align>center</align>
-				<label>31030</label>
-				<font>font-18</font>
-				<texturefocus border="7">button-focus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<onleft>910</onleft>
-				<onright>991</onright>
-				<onup>990</onup>
-				<ondown>990</ondown>
-				<include>VisibleFadeEffect</include>
-				<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
-				<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
-				<onclick>Skin.SetBool(FanartSlideshowNoVisualisation)</onclick>
-				<onclick>SetFocus(990)</onclick>
-				<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
-				<visible>Skin.HasSetting(Music_OSD_Background) + Skin.HasSetting(FanartNoVisualisation)</visible>
-			</control>
-			<control type="button" id="990">
-				<description>cd wall Select Button</description>
-				<posx>755</posx>
-				<posy>685</posy>
-				<width>230</width>
-				<height>29</height>
-				<align>center</align>
-				<label>20425</label>
-				<font>font-18</font>
-				<texturefocus border="7">button-focus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<onleft>910</onleft>
-				<onright>991</onright>
-				<onup>990</onup>
-				<ondown>990</ondown>
-				<include>VisibleFadeEffect</include>
-				<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
-				<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
-				<onclick>Skin.SetBool(CDWallNoVisualisation)</onclick>
-				<onclick>SetFocus(990)</onclick>
-				<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
-				<visible>Skin.HasSetting(Music_OSD_Background) + Skin.HasSetting(FanartSlideshowNoVisualisation)</visible>
-			</control>
-			<control type="selectbutton" id="503">
-				<description>Visualisation Select Button</description>
-				<posx>755</posx>
-				<posy>685</posy>
-				<width>230</width>
-				<height>29</height>
-				<label>-</label>
-				<font>font-18</font>
-				<texturebg border="7">button-focus.png</texturebg>
-				<onleft>503</onleft>
-				<onright>503</onright>
-				<onup>990</onup>
-				<ondown>500</ondown>
-				<include>VisibleFadeEffect</include>
-				<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
+				<control type="button" id="990">
+					<description>visualisation Select Button</description>
+					<posx>750</posx>
+					<posy>685</posy>
+					<width>230</width>
+					<height>29</height>
+					<align>center</align>
+					<label>541</label>
+					<font>font-18</font>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<onleft>910</onleft>
+					<onright>911</onright>
+					<onup>990</onup>
+					<ondown>990</ondown>
+					<include>VisibleFadeEffect</include>
+					<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
+					<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
+					<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
+					<onclick>SetFocus(990)</onclick>
+					<visible>Skin.HasSetting(Music_OSD_Background) + Skin.HasSetting(CDWallNoVisualisation)</visible>
+				</control>
+				<control type="button" id="990">
+					<description>fanart Select Button</description>
+					<posx>750</posx>
+					<posy>685</posy>
+					<width>230</width>
+					<height>29</height>
+					<align>center</align>
+					<label>250</label>
+					<font>font-18</font>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<onleft>910</onleft>
+					<onright>911</onright>
+					<onup>990</onup>
+					<ondown>990</ondown>
+					<include>VisibleFadeEffect</include>
+					<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
+					<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
+					<onclick>Skin.SetBool(FanartNoVisualisation)</onclick>
+					<onclick>SetFocus(990)</onclick>
+					<visible>Skin.HasSetting(Music_OSD_Background) + !Skin.HasSetting(FanartNoVisualisation) + !Skin.HasSetting(FanartSlideshowNoVisualisation) + !Skin.HasSetting(CDWallNoVisualisation)</visible>
+				</control>
+				<control type="button" id="990">
+					<description>fanart slideshow Select Button</description>
+					<posx>750</posx>
+					<posy>685</posy>
+					<width>230</width>
+					<height>29</height>
+					<align>center</align>
+					<label>31030</label>
+					<font>font-18</font>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<onleft>910</onleft>
+					<onright>911</onright>
+					<onup>990</onup>
+					<ondown>990</ondown>
+					<include>VisibleFadeEffect</include>
+					<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
+					<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
+					<onclick>Skin.SetBool(FanartSlideshowNoVisualisation)</onclick>
+					<onclick>SetFocus(990)</onclick>
+					<visible>Skin.HasSetting(Music_OSD_Background) + Skin.HasSetting(FanartNoVisualisation)</visible>
+				</control>
+				<control type="button" id="990">
+					<description>cd wall Select Button</description>
+					<posx>750</posx>
+					<posy>685</posy>
+					<width>230</width>
+					<height>29</height>
+					<align>center</align>
+					<label>20425</label>
+					<font>font-18</font>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<onleft>910</onleft>
+					<onright>911</onright>
+					<onup>990</onup>
+					<ondown>990</ondown>
+					<include>VisibleFadeEffect</include>
+					<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
+					<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
+					<onclick>Skin.SetBool(CDWallNoVisualisation)</onclick>
+					<onclick>SetFocus(990)</onclick>
+					<visible>Skin.HasSetting(Music_OSD_Background) + Skin.HasSetting(FanartSlideshowNoVisualisation)</visible>
+				</control>
+				<control type="selectbutton" id="503">
+					<description>Visualisation Select Button</description>
+					<posx>750</posx>
+					<posy>685</posy>
+					<width>230</width>
+					<height>29</height>
+					<label>-</label>
+					<font>font-18</font>
+					<texturebg border="7">button-focus.png</texturebg>
+					<onleft>503</onleft>
+					<onright>503</onright>
+					<onup>990</onup>
+					<ondown>500</ondown>
+					<include>VisibleFadeEffect</include>
+				</control>
 			</control>
 		</control>
 	</controls>
