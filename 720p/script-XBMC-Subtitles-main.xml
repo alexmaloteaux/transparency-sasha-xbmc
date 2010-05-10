@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol>101</defaultcontrol>
+	<defaultcontrol>120</defaultcontrol>
 	<coordinates>
 		<system>0</system>
 		<posx>240</posx>
@@ -20,25 +20,49 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>35</posy>
-	<!-- ** Required ** Do not change <id> or <type> -->
+	<!-- ** Required ** Do not change <id> or <type>-->
 			<control type="image" id="110">
 				<description>logo icon</description>
 				<posx>45</posx>
-				<posy>5</posy>
+				<posy>2</posy>
 				<width>250</width>
 				<height>40</height>
 				<aspectratio align="left">keep</aspectratio>
 			</control>
 			<control type="label">
 				<posx>250</posx>
-				<posy>6</posy>
+				<posy>3</posy>
 				<width>300</width>
 				<height>20</height>
 				<font>font-32</font>
 				<textcolor>blue</textcolor>
 				<label>XBMC Subtitles</label>
 				<align>center</align>
-			</control>  
+			</control>
+			<control type="grouplist" id="111">
+				<posx>515</posx>
+				<posy>2</posy>
+				<width>245</width>
+				<height>40</height>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<itemgap>5</itemgap>
+				<control type="image">
+					<width>40</width>
+					<height>40</height>
+					<texture>kai-information.png</texture>
+				</control>
+				<control type="label">
+					<description>notification</description>
+					<width min="10" max="200">auto</width>
+					<height>40</height>
+					<font>font-21</font>
+					<textcolor>white</textcolor>
+					<label>$LOCALIZE[SCRIPT655]</label>
+					<aligny>center</aligny>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+			</control>
 			<control type="image">
 				<posx>40</posx>
 				<posy>46</posy>
@@ -66,7 +90,7 @@
 				<texture>separator.png</texture>
 			</control>
 		</control>
-	<!-- ** Required ** Do not change <id> or <type> -->
+	<!-- ** Required ** Do not change <id> or <type>-->
 		<control type="list" id="120">
 			<posx>45</posx>
 			<posy>130</posy>
@@ -105,15 +129,15 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
-				</control>          
+				</control>
 				<control type="image">
 					<posx>135</posx>
 					<posy>10</posy>
 					<width>40</width>
 					<height>12</height>
-					<texture>OpenSubtitles/icon_sync.png</texture>
-					<visible>ListItem.property(sync)</visible>
-				</control>   
+					<texture>XbmcSubtitles/icon_sync.png</texture>
+					<visible>ListItem.Property(Sync)</visible>
+				</control>
 				<control type="label">
 					<posx>180</posx>
 					<posy>0</posy>
@@ -125,13 +149,13 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>left</align>
 					<info>ListItem.Label2</info>
-				</control>          
+				</control>
 				<control type="image">
 					<posx>625</posx>
 					<posy>11</posy>
 					<width>90</width>
 					<height>9</height>
-					<texture>OpenSubtitles/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+					<texture>XbmcSubtitles/icon_rating_$INFO[ListItem.ActualIcon].png</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout width="710" height="29">
@@ -175,9 +199,9 @@
 					<posy>10</posy>
 					<width>40</width>
 					<height>12</height>
-					<texture>OpenSubtitles/icon_sync.png</texture>
-					<visible>ListItem.property(sync)</visible>
-				</control>   
+					<texture>XbmcSubtitles/icon_sync.png</texture>
+					<visible>ListItem.Property(Sync)</visible>
+				</control>
 				<control type="label">
 					<posx>180</posx>
 					<posy>0</posy>
@@ -195,7 +219,7 @@
 					<posy>11</posy>
 					<width>90</width>
 					<height>9</height>
-					<texture>OpenSubtitles/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+					<texture>XbmcSubtitles/icon_rating_$INFO[ListItem.ActualIcon].png</texture>
 				</control>
 			</focusedlayout>
 		</control>
