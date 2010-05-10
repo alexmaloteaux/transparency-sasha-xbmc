@@ -87,7 +87,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -111,7 +111,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.path,,fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -125,11 +125,11 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!substring(listitem.path,lastfm://) + !substring(listitem.path,shout://) + !substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 		<control type="largeimage">
 			<description>dirty hack for fanart for album up icon</description>
@@ -141,7 +141,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!substring(listitem.path,lastfm://) + !substring(listitem.path,shout://) + !substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 		<control type="largeimage">
 			<description>dirty hack for fanart in artist view and song up icon</description>
@@ -153,7 +153,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>!substring(listitem.path,lastfm://) + !substring(listitem.path,shout://) + !substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 	</include>
 	<include name="fanart-myvideo">
@@ -177,7 +177,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -192,7 +192,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[listitem.path,,fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -205,7 +205,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[listitem.path,,../fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -223,7 +223,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+			<visible>!substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 		<control type="largeimage">
 			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
@@ -235,7 +235,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+			<visible>!substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 		<control type="largeimage">
 			<description>dirty hack for (folder) fanart in programs pictures scripts</description>
@@ -247,7 +247,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!substring(listitem.path,plugin://) + !substring(listitem.path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+			<visible>!substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 	</include>
 	<include name="moviedisc-dvd-View_Icons">

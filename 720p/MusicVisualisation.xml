@@ -35,7 +35,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation)]</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
+		<include condition="!Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">fanartslideshow-musicvisualisation</include>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
 		<control type="group">
 			<include>ContentFade</include>
@@ -132,7 +132,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<animation effect="slide" start="0,0" end="-320,0" time="300">Hidden</animation>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1700">WindowClose</animation>
-				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
+				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">cdart-musicvisualisation</include>
 				<control type="image">
 					<description>default cd image</description>
 					<width>200</width>
@@ -141,7 +141,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<posy>-4</posy>
 					<texture diffuse="disc_mask.png">disc.png</texture>
 					<aspectratio align="bottom">keep</aspectratio>
-					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]</visible>
+					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)] | substring(Player.FolderPath,pvr://)</visible>
 				</control>
 				<control type="image">
 					<description>cover image</description>
