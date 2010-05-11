@@ -21,8 +21,8 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/images/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="largeimage">
 			<posx>0</posx>
@@ -33,6 +33,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation)]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">fanartslideshow-musicvisualisation</include>

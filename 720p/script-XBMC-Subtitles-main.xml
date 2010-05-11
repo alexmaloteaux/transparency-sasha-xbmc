@@ -39,28 +39,30 @@
 				<label>XBMC Subtitles</label>
 				<align>center</align>
 			</control>
-			<control type="grouplist" id="111">
-				<posx>515</posx>
-				<posy>2</posy>
-				<width>245</width>
-				<height>40</height>
-				<align>right</align>
-				<orientation>horizontal</orientation>
-				<itemgap>5</itemgap>
-				<control type="image">
-					<width>40</width>
+			<control type="group" id="111">
+				<control type="grouplist">
+					<posx>515</posx>
+					<posy>2</posy>
+					<width>245</width>
 					<height>40</height>
-					<texture>kai-information.png</texture>
-				</control>
-				<control type="label">
-					<description>notification</description>
-					<width min="10" max="200">auto</width>
-					<height>40</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<label>$LOCALIZE[SCRIPT655]</label>
-					<aligny>center</aligny>
-					<wrapmultiline>true</wrapmultiline>
+					<align>right</align>
+					<orientation>horizontal</orientation>
+					<itemgap>5</itemgap>
+					<control type="image">
+						<width>40</width>
+						<height>40</height>
+						<texture>kai-information.png</texture>
+					</control>
+					<control type="label">
+						<description>notification</description>
+						<width min="10" max="200">auto</width>
+						<height>40</height>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<label>$LOCALIZE[SCRIPT655]</label>
+						<aligny>center</aligny>
+						<wrapmultiline>true</wrapmultiline>
+					</control>
 				</control>
 			</control>
 			<control type="image">
