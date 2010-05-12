@@ -1543,14 +1543,14 @@
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>585</posy>
-				<width>875</width>
-				<height>115</height>
+				<posy>560</posy>
+				<width>1280</width>
+				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
 				<posx>257</posx>
-				<posy>627</posy>
+				<posy>614</posy>
 				<width>550</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1572,13 +1572,12 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="largeimage">
-				<posx>16</posx>
-				<posy>491</posy>
-				<width>218</width>
-				<height>218</height>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
+				<posx>34</posx>
+				<posy>499</posy>
+				<width>208</width>
+				<height>208</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<aspectratio aligny="center">keep</aspectratio>
 			</control>
 		</control>
 	</include>

@@ -16,7 +16,7 @@
 				<posx>0</posx>
 				<posy>560</posy>
 				<width>1280</width>
-				<height>148</height>
+				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="image">
@@ -59,7 +59,7 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="group" id="9000">
-				<posx>240</posx>
+				<posx>140</posx>
 				<posy>420</posy>
 				<control type="button" id="6">
 					<description>Enable</description>
@@ -148,7 +148,7 @@
 					<posy>33</posy>
 					<width>200</width>
 					<height>35</height>
-					<label>33073</label>
+					<label>24070</label>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<focusedcolor>white</focusedcolor>
@@ -179,7 +179,7 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>265</posx>
-				<posy>582</posy>
+				<posy>577</posy>
 				<width>975</width>
 				<height>105</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
