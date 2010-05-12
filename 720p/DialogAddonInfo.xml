@@ -61,7 +61,6 @@
 			<control type="group" id="9000">
 				<posx>240</posx>
 				<posy>420</posy>
-				<animation effect="slide" start="0,0" end="-100,0" condition="!IsEmpty(ListItem.Property(Addon.ChangeLog))">conditional</animation>
 				<control type="button" id="6">
 					<description>Enable</description>
 					<posx>0</posx>
@@ -172,7 +171,7 @@
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(7)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(8)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(9)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="800,0" time="200" condition="Control.HasFocus(1)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="800,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
 					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 					<visible>Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(9) | Control.HasFocus(10)</visible>
 				</control>
@@ -191,21 +190,6 @@
 				<pagecontrol>60</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
-			<control type="textbox">
-				<posx>335</posx>
-				<posy>95</posy>
-				<width>845</width>
-				<height>320</height>
-				<label>$INFO[ListItem.Property(Addon.Changelog)]</label>
-				<font>font-20</font>
-				<align>justify</align>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<pagecontrol>61</pagecontrol>
-				<autoscroll time="3000" delay="30000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<include>VisibleFadeEffect</include>
-				<visible>Skin.HasSetting(ViewAddonChangelog)</visible>
-			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
 				<posx>1180</posx>
@@ -218,25 +202,9 @@
 				<onright>60</onright>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
-				<visible>!Skin.HasSetting(ViewAddonChangelog)</visible>
-			</control>
-			<control type="spincontrol" id="61">
-				<description>Next page button</description>
-				<posx>1180</posx>
-				<posy>699</posy>
-				<subtype>page</subtype>
-				<font>font-19</font>
-				<onup>60</onup>
-				<ondown>49</ondown>
-				<onleft>60</onleft>
-				<onright>60</onright>
-				<textcolor>white</textcolor>
-				<showonepage>true</showonepage>
-				<visible>Skin.HasSetting(ViewAddonChangelog)</visible>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
-				<visible>!Skin.HasSetting(ViewAddonChangelog)</visible>
 				<control type="list" id="49">
 					<posx>100</posx>
 					<posy>120</posy>
