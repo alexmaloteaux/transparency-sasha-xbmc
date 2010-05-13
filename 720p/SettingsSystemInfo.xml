@@ -223,12 +223,6 @@
 					<include>ButtonCommonValues</include>
 					<label>13281</label>
 				</control>
-				<control type="button" id="99">
-					<description>Button PVR</description>
-					<include>ButtonCommonValues</include>
-					<label>19191</label>
-					<visible>System.GetBool(PVRManager.Enabled)</visible>
-				</control>
 				<control type="image">
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>

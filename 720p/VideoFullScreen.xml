@@ -38,15 +38,5 @@
 			<font>font-19</font>
 			<include>VisibleFadeEffect</include>
 		</control>
-		<control type="selectbutton" id="503">
-			<description>TV Channel Group Select Button</description>
-			<posx>490</posx>
-			<posy>335</posy>
-			<align>center</align>
-			<font>font-18</font>
-			<texturebg border="7">button-focus.png</texturebg>
-			<include>VisibleFadeEffect</include>
-			<visible>System.GetBool(PVRManager.Enabled)</visible>
-		</control>
 	</controls>
 </window>
