@@ -86,19 +86,19 @@
 		</control>
 	</include>
 	<include name="Home_Movies_Fanart_Path">
-		<imagepath background="true">special://masterprofile/Thumbnails/Video/Fanart</imagepath>
+		<imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
 	</include>
 	<include name="Home_Movies_Fanart_Custom_Path">
 		<imagepath background="true">$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)]</imagepath>
 	</include>
 	<include name="Home_TVShows_Fanart_Path">
-		<imagepath background="true">special://masterprofile/Thumbnails/Video/Fanart</imagepath>
+		<imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
 	</include>
 	<include name="Home_TVShows_Fanart_Custom_Path">
 		<imagepath background="true">$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)]</imagepath>
 	</include>
 	<include name="Home_Music_Fanart_Path">
-		<imagepath background="true">special://masterprofile/Thumbnails/Music/Fanart</imagepath>
+		<imagepath background="true">special://profile/Thumbnails/Music/Fanart</imagepath>
 	</include>
 	<include name="Home_Music_Fanart_Custom_Path">
 		<imagepath background="true">$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)]</imagepath>
