@@ -535,8 +535,20 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<animation effect="slide" start="0,0" end="0,35" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<posx>240</posx>
+				<posy>580</posy>
+				<width>633</width>
+				<height>30</height>
+				<font>font-23</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
 				<posx>240</posx>
@@ -549,8 +561,21 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalEpisodes),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[20360]: [/UPPERCASE][/B][/COLOR]]</label>
-				<animation effect="slide" start="0,0" end="0,-35" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-47" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<posx>240</posx>
+				<posy>660</posy>
+				<width>633</width>
+				<height>30</height>
+				<font>font-23</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[COLOR=blue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1544,7 +1569,7 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>560</posy>
-				<width>1280</width>
+				<width>875</width>
 				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
