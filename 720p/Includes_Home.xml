@@ -2619,78 +2619,72 @@
 						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_Artists)</visible>
 					</item>
 					<item id="8105">
-						<description>Menu MusicVideos Sub Albums</description>
-						<label>$LOCALIZE[132]</label>
-						<onclick>ActivateWindow(VideoLibrary,musicvideoalbums,return)</onclick>
-						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_Albums)</visible>
-					</item>
-					<item id="8106">
 						<description>Menu MusicVideos Sub Directors</description>
 						<label>$LOCALIZE[20348]</label>
 						<onclick>ActivateWindow(VideoLibrary,musicvideodirectors,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_Directors)</visible>
 					</item>
-					<item id="8107">
+					<item id="8106">
 						<description>Menu MusicVideos Sub Studio</description>
 						<label>$LOCALIZE[20388]</label>
 						<onclick>ActivateWindow(VideoLibrary,musicvideostudio,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_Studio)</visible>
 					</item>
-					<item id="8108">
+					<item id="8107">
 						<description>Menu MusicVideos Sub RecentlyAdded</description>
 						<label>$LOCALIZE[31410]</label>
 						<onclick>ActivateWindow(VideoLibrary,recentlyaddedmusicvideos,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_RecentlyAdded)</visible>
 					</item>
-					<item id="8109">
+					<item id="8108">
 						<description>Menu MusicVideos Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_VideoPlugins)</visible>
 					</item>
-					<item id="8110">
+					<item id="8109">
 						<description>Menu MusicVideos Sub Custom1</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom1_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_MusicVideos_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom1)</visible>
 					</item>
-					<item id="8111">
+					<item id="8110">
 						<description>Menu MusicVideos Sub Custom2</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom2_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_MusicVideos_Sub_Custom2_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom2)</visible>
 					</item>
-					<item id="8112">
+					<item id="8111">
 						<description>Menu MusicVideos Sub Custom3</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom3_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_MusicVideos_Sub_Custom3_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom3)</visible>
 					</item>
-					<item id="8113">
+					<item id="8112">
 						<description>Menu MusicVideos Sub Custom4</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom4_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_MusicVideos_Sub_Custom4_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom4)</visible>
 					</item>
-					<item id="8114">
+					<item id="8113">
 						<description>Menu MusicVideos Sub Custom5</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Label)]</label>
 						<onclick>ActivateWindow(VideoLibrary,plugin://video/$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom5)</visible>
 					</item>
-					<item id="8115">
+					<item id="8114">
 						<description>Menu MusicVideos Sub Custom6</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6_Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom6)</visible>
 					</item>
-					<item id="8116">
+					<item id="8115">
 						<description>Menu MusicVideos Sub Custom7</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7_Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom7)</visible>
 					</item>
-					<item id="8117">
+					<item id="8116">
 						<description>Menu MusicVideos Sub Custom8</description>
 						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8_Path)]</onclick>
