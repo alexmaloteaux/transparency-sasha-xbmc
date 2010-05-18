@@ -579,9 +579,9 @@
 			</control>
 		</control>
 		<control type="wraplist" id="592">
-			<posx>416</posx>
+			<posx>-335</posx>
 			<posy>195</posy>
-			<width>254</width>
+			<width>1736</width>
 			<height>362</height>
 			<onleft>592</onleft>
 			<onright>592</onright>
@@ -593,7 +593,8 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<preloaditems>2</preloaditems>
-			<focusposition>0</focusposition>
+			<focusposition>3</focusposition>
+			<hitrect x="410" y="176" w="248" h="362" />
 			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<itemlayout width="248" height="362" />
 			<focusedlayout width="248" height="362">
@@ -2124,9 +2125,9 @@
 			</control>
 		</control>
 		<control type="wraplist" id="592">
-			<posx>409</posx>
+			<posx>-360</posx>
 			<posy>166</posy>
-			<width>389</width>
+			<width>1925</width>
 			<height>385</height>
 			<onleft>592</onleft>
 			<onright>592</onright>
@@ -2138,7 +2139,8 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<preloaditems>2</preloaditems>
-			<focusposition>0</focusposition>
+			<focusposition>2</focusposition>
+			<hitrect x="409" y="166" w="385" h="385" />
 			<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
 			<itemlayout width="385" height="385" />
 			<focusedlayout width="385" height="385">

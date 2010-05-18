@@ -182,8 +182,9 @@
 			<pagecontrol>60</pagecontrol>
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
-			<focusedposition>3</focusedposition>
 			<visible>Container.Content(Movies)</visible>
+			<focusposition>4</focusposition>
+			<hitrect x="1022" y="320" w="220" h="400" />
 			<itemlayout width="256" height="430" />
 			<focusedlayout width="256" height="430">
 				<control type="image">

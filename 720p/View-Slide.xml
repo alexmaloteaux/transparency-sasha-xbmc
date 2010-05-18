@@ -1287,9 +1287,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list</description>
 			<visible>Container.Content(Movies)</visible>
-			<posx>545</posx>
+			<posx>-785</posx>
 			<posy>487</posy>
-			<width>195</width>
+			<width>2850</width>
 			<height>233</height>
 			<onleft>596</onleft>
 			<onright>596</onright>
@@ -1299,7 +1299,9 @@
 			<pagecontrol>60</pagecontrol>
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
+			<focusposition>7</focusposition>
 			<preloaditems>2</preloaditems>
+			<hitrect x="560" y="500" w="150" h="233" />
 			<itemlayout width="190" height="233" />
 			<focusedlayout width="190" height="233">
 				<control type="image">

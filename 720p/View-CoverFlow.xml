@@ -1227,9 +1227,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
-			<posx>490</posx>
+			<posx>-410</posx>
 			<posy>260</posy>
-			<width>306</width>
+			<width>2100</width>
 			<height>428</height>
 			<onleft>55</onleft>
 			<onright>55</onright>
@@ -1239,14 +1239,16 @@
 			<pagecontrol>60</pagecontrol>
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
+			<focusposition>3</focusposition>
 			<preloaditems>2</preloaditems>
+			<hitrect x="510" y="300" w="260" h="380" />
 			<itemlayout width="300" height="440" />
 			<focusedlayout width="300" height="440">
 				<control type="image">
 					<posx>0</posx>
 					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
+					<width>300</width>
+					<height>440</height>
 					<texture></texture>
 				</control>
 			</focusedlayout>
@@ -1440,6 +1442,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -3016,9 +3019,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Window.IsVisible(MusicFiles) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
-			<posx>462</posx>
+			<posx>-473</posx>
 			<posy>345</posy>
-			<width>324</width>
+			<width>2226</width>
 			<height>318</height>
 			<onleft>55</onleft>
 			<onright>55</onright>
@@ -3028,7 +3031,9 @@
 			<pagecontrol>60</pagecontrol>
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
+			<focusposition>3</focusposition>
 			<preloaditems>2</preloaditems>
+			<hitrect x="490" y="370" w="318" h="318" />
 			<itemlayout width="318" height="318" />
 			<focusedlayout width="318" height="318">
 				<control type="image">
