@@ -314,6 +314,10 @@
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/The CW_hd.png</texture>
 			<visible>stringcompare(VideoPlayer.Studio,The CW) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
+		<control type="image" id="5082">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/studio/TNT_hd.png</texture>
+			<visible>stringcompare(VideoPlayer.Studio,TNT) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>

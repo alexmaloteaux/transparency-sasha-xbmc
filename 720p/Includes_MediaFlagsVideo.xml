@@ -344,6 +344,11 @@
 		</control>
 		<control type="image" id="5082">
 			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/studio/TNT_hd.png</texture>
+			<visible>stringcompare(ListItem.Studio,TNT) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
+		</control>
+		<control type="image" id="5082">
+			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/The CW_hd.png</texture>
 			<visible>stringcompare(ListItem.Studio,The CW) + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![Control.IsVisible(50) + Container.Content(Movies)] + !Container.Content(MusicVideos)</visible>
 		</control>
