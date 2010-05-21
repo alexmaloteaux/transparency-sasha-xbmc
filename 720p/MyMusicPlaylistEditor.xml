@@ -117,7 +117,6 @@
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<pagecontrol>9999999999</pagecontrol>
 						<label>$INFO[Container(50).ListItem.Artist,[COLOR=lightblue][B]$LOCALIZE[557]:[/B][/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=lightblue][B]$LOCALIZE[558]:[/B][/COLOR] ,[CR]]$INFO[Container(50).ListItem.Title,[COLOR=lightblue][B]$LOCALIZE[556]:[/B][/COLOR] ,[CR]]$INFO[Container(50).ListItem.TrackNumber,[COLOR=lightblue][B]$LOCALIZE[554]:[/B][/COLOR] ,    ]$INFO[Container(50).ListItem.Duration,[COLOR=lightblue][B]$LOCALIZE[555]:[/B][/COLOR]][CR]$INFO[Container(50).ListItem.Genre,[COLOR=lightblue][B]$LOCALIZE[515]:[/B][/COLOR] ,[CR]]</label>
 					</control>
 				</control>
@@ -147,7 +146,6 @@
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<pagecontrol>9999999999</pagecontrol>
 						<label>$INFO[Container(100).ListItem.Artist,[COLOR=lightblue][B]$LOCALIZE[557]:[/B][/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=lightblue][B]$LOCALIZE[558]:[/B][/COLOR] ,[CR]]$INFO[Container(100).ListItem.Title,[COLOR=lightblue][B]$LOCALIZE[556]:[/B][/COLOR] ,[CR]]$INFO[Container(100).ListItem.TrackNumber,[COLOR=lightblue][B]$LOCALIZE[554]:[/B][/COLOR] ,    ]$INFO[Container(100).ListItem.Duration,[COLOR=lightblue][B]$LOCALIZE[555]:[/B][/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=lightblue][B]$LOCALIZE[515]:[/B][/COLOR] ,[CR]]</label>
 					</control>
 				</control>
