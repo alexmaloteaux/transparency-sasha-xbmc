@@ -94,7 +94,7 @@
 					<height>81</height>
 					<texturefocus>shut-exit-focus.png</texturefocus>
 					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
-					<onclick>Quit()</onclick>
+					<onclick>Quit</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
@@ -107,7 +107,7 @@
 					<height>81</height>
 					<texturefocus>shut-exit-focus.png</texturefocus>
 					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
-					<onclick>Dashboard()</onclick>
+					<onclick>Dashboard</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
@@ -120,7 +120,7 @@
 					<height>81</height>
 					<texturefocus>shut-restart-focus.png</texturefocus>
 					<texturenofocus>shut-restart-nofocus.png</texturenofocus>
-					<onclick>RestartApp()</onclick>
+					<onclick>RestartApp</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
@@ -138,7 +138,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(ShutdownTimer,Shutdown(),30)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown,30)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -155,7 +155,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(ShutdownTimer,Shutdown(),60)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown,60)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -172,7 +172,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(ShutdownTimer,Shutdown(),90)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown,90)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -189,7 +189,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(ShutdownTimer,Shutdown(),120)</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown,120)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -206,7 +206,7 @@
 						<height>81</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+						<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>
 						<pulseonselect>yes</pulseonselect>
 						<onleft>13</onleft>
 						<onright>15</onright>
@@ -269,8 +269,8 @@
 					<height>81</height>
 					<texturefocus>shut-suspend-focus.png</texturefocus>
 					<texturenofocus>shut-suspend-nofocus.png</texturenofocus>
-					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
-					<onclick>Suspend()</onclick>
+					<onclick>Dialog.Close(ShutdownMenu)</onclick>
+					<onclick>Suspend</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
@@ -283,8 +283,8 @@
 					<height>81</height>
 					<texturefocus>shut-hibernate-focus.png</texturefocus>
 					<texturenofocus>shut-hibernate-nofocus.png</texturenofocus>
-					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
-					<onclick>Hibernate()</onclick>
+					<onclick>Dialog.Close(ShutdownMenu)</onclick>
+					<onclick>Hibernate</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
@@ -310,7 +310,7 @@
 					<height>81</height>
 					<texturefocus>shut-reboot-focus.png</texturefocus>
 					<texturenofocus>shut-reboot-nofocus.png</texturenofocus>
-					<onclick>Reset()</onclick>
+					<onclick>Reset</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
@@ -336,7 +336,7 @@
 					<height>81</height>
 					<texturenofocus>shut-eject-nofocus.png</texturenofocus>
 					<texturefocus>shut-eject-focus.png</texturefocus>
-					<onclick>EjectTray()</onclick>
+					<onclick>EjectTray</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
