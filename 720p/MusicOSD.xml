@@ -440,7 +440,7 @@
 					<font>-</font>
 					<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 					<texturefocus>osd-subs-focus.png</texturefocus>
-					<onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+					<onclick>RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
 					<onleft>913</onleft>
 					<onright>901</onright>
 					<onup>916</onup>
