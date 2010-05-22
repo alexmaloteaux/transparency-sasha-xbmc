@@ -309,13 +309,13 @@
 						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
 					<control type="label">
-						<posx>106</posx>
+						<posx>105</posx>
 						<posy>255</posy>
 						<width>83</width>
 						<height>17</height>
 						<align>center</align>
 						<label>$INFO[ListItem.Year]</label>
-						<font>font-25</font>
+						<font>font-28</font>
 						<textcolor>FF574F46</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<animation effect="zoom" start="106,255,83,17" end="96,272,100,20" time="250">Focus</animation>
@@ -323,13 +323,13 @@
 						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]</visible>
 					</control>
 					<control type="label">
-						<posx>106</posx>
+						<posx>105</posx>
 						<posy>255</posy>
 						<width>83</width>
 						<height>17</height>
 						<align>center</align>
 						<label>$INFO[ListItem.Year]</label>
-						<font>font-25</font>
+						<font>font-28</font>
 						<textcolor>FF3B8FE5</textcolor>
 						<shadowcolor>DD000000</shadowcolor>
 						<animation effect="zoom" start="106,255,83,17" end="96,272,100,20" time="250">Focus</animation>
