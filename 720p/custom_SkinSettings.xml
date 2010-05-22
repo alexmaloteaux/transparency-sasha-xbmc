@@ -3474,7 +3474,7 @@
 						<include>ButtonMenuSettings1</include>
 						<onfocus>Skin.SetString(SettingsMenu,8)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs)</onclick>
-						<selected>!Skin.HasSetting(Menu_Programs)</selected>
+						<selected>Skin.HasSetting(Menu_Programs)</selected>
 					</control>
 					<control type="radiobutton" id="810">
 						<description>Menu Scripts</description>
@@ -4602,7 +4602,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8100">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs)</visible>
 					<posx>460</posx>
 					<posy>130</posy>
 					<width>350</width>
@@ -6393,7 +6393,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)</visible>
 					<posy>186</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6412,7 +6412,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)</visible>
 					<posy>214</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6431,7 +6431,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)</visible>
 					<posy>242</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6450,7 +6450,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)</visible>
 					<posy>270</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6469,7 +6469,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)</visible>
 					<posy>298</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6489,7 +6489,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)</visible>
 					<posy>326</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6508,7 +6508,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)</visible>
 					<posy>354</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6527,7 +6527,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)</visible>
 					<posy>382</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6546,7 +6546,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)</visible>
 					<posy>410</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6565,7 +6565,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)</visible>
 					<posy>438</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6584,7 +6584,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)</visible>
 					<posy>466</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6603,7 +6603,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)</visible>
 					<posy>494</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6622,7 +6622,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)</visible>
 					<posy>522</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6641,7 +6641,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)</visible>
 					<posy>550</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6660,7 +6660,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)</visible>
 					<posy>578</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6680,7 +6680,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)</visible>
 					<posy>606</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6700,7 +6700,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)</visible>
 					<posy>634</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6720,7 +6720,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)</visible>
 					<posy>662</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -7403,7 +7403,7 @@
 					<width>25</width>
 					<height>19</height>
 					<texture>nav-right.png</texture>
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + !Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + [[Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)] | [Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)] | [Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)] | [Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)] | [Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)] | [Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)] | [Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)] | [Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)] | [Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)] | [Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)] | [Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)] | [Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)] | [Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)] | [Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)] | [Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)] | [Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)] | [Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)] | [Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)]]</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + [[Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)] | [Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)] | [Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)] | [Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)] | [Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)] | [Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)] | [Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)] | [Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)] | [Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)] | [Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)] | [Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)] | [Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)] | [Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)] | [Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)] | [Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)] | [Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)] | [Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)] | [Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)]]</visible>
 					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(ProgramsCustom,2)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(ProgramsCustom,3)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(ProgramsCustom,4)">Conditional</animation>

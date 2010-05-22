@@ -1758,7 +1758,7 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_TV)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Music)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
-			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Programs)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Scripts)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
@@ -1790,7 +1790,7 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_TV)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Music)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
-			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Programs)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Scripts)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
@@ -1934,7 +1934,7 @@
 					<onclick>ActivateWindow(Programs)</onclick>
 					<icon>special://skin/images/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-					<visible>!Skin.HasSetting(Menu_Programs)</visible>
+					<visible>Skin.HasSetting(Menu_Programs)</visible>
 				</item>
 				<item id="9">
 					<label>247</label>
@@ -1985,7 +1985,7 @@
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_TV)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Music)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
-			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Programs)">Conditional</animation>
+			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Scripts)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
@@ -2244,7 +2244,7 @@
 					<onclick>ActivateWindow(Programs)</onclick>
 					<icon>special://skin/images/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-					<visible>!Skin.HasSetting(Menu_Programs)</visible>
+					<visible>Skin.HasSetting(Menu_Programs)</visible>
 				</item>
 				<item id="9">
 					<label>247</label>
