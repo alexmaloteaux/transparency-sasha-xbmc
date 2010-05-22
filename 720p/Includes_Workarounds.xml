@@ -24,8 +24,21 @@
 		</control>
 	</include>
 	<include name="clearart-dialogfullscreeninfo">
-		<control type="largeimage" id="7013">
-			<description>dirty hack for showing clearart image</description>
+		<control type="largeimage" id="7017">
+			<description>dirty hack for showing clearart image  (episodes in tv show folder)</description>
+			<posx>10</posx>
+			<posy>183</posy>
+			<width>279</width>
+			<height>157</height>
+			<texture>$INFO[Player.FolderPath,,clearart.png]</texture>
+			<aspectratio align="center" aligny="bottom">keep</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-230,0" time="300">WindowClose</animation>
+			<visible>Skin.HasSetting(ClearArt)</visible>
+		</control>
+		<control type="largeimage" id="7018">
+			<description>dirty hack for showing clearart image (episodes in season folders)</description>
 			<posx>10</posx>
 			<posy>183</posy>
 			<width>279</width>
@@ -39,8 +52,19 @@
 		</control>
 	</include>
 	<include name="clearart-dialogseekbar">
-		<control type="largeimage" id="7014">
-			<description>dirty hack for showing clearart image</description>
+		<control type="largeimage" id="7019">
+			<description>dirty hack for showing clearart image (episodes in tv show folder)</description>
+			<posx>1</posx>
+			<posy>63</posy>
+			<width>279</width>
+			<height>157</height>
+			<texture>$INFO[Player.FolderPath,,clearart.png]</texture>
+			<aspectratio align="right" aligny="bottom">keep</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+		</control>
+		<control type="largeimage" id="7020">
+			<description>dirty hack for showing clearart image (episodes in season folders)</description>
 			<posx>1</posx>
 			<posy>63</posy>
 			<width>279</width>

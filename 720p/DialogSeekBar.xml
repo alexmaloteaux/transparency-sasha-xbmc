@@ -306,7 +306,7 @@
 					<width>279</width>
 					<height>157</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
-					<visible>[!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+					<visible>[!Skin.HasSetting(ClearArt) | [IsEmpty(Control.GetLabel(7019)) + IsEmpty(Control.GetLabel(7020))]] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 				</control>
 				<control type="image">
 					<posx>-100</posx>
@@ -314,7 +314,7 @@
 					<width>370</width>
 					<height>190</height>
 					<texture>movie-frame.png</texture>
-					<visible>[!Skin.HasSetting(ClearArt) | IsEmpty(Control.GetLabel(7014))] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+					<visible>[!Skin.HasSetting(ClearArt) | [IsEmpty(Control.GetLabel(7019)) + IsEmpty(Control.GetLabel(7020))]] + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 				</control>
 			</control>
 			<control type="group">
