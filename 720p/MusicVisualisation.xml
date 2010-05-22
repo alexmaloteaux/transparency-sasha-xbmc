@@ -136,12 +136,13 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">cdart-musicvisualisation</include>
 				<control type="image">
 					<description>default cd image</description>
+					<posx>35</posx>
+					<posy>-4</posy>
 					<width>200</width>
 					<height>200</height>
-					<posx>130</posx>
-					<posy>-4</posy>
 					<texture diffuse="disc_mask.png">disc.png</texture>
 					<aspectratio align="bottom">keep</aspectratio>
+					<include>cdartspin</include>
 					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)] | substring(Player.FolderPath,pvr://)</visible>
 				</control>
 				<control type="image">

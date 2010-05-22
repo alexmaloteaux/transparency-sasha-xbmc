@@ -1095,11 +1095,12 @@
 			</control>
 			<control type="image">
 				<description>cd image</description>
-				<posx>880</posx>
+				<posx>816</posx>
 				<posy>4</posy>
 				<width>142</width>
 				<height>142</height>
 				<texture diffuse="disc_mask.png">disc.png</texture>
+				<include>cdartspinhome</include>
 				<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)] | substring(Player.FolderPath,pvr://)</visible>
 			</control>
 			<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">cdart-home</include>
