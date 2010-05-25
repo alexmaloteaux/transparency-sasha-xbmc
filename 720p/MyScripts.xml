@@ -1,7 +1,7 @@
 <window id="20">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,52,53</views>
+	<views>50,51,52,53,599</views>
 	<controls>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -23,6 +23,7 @@
 			<include condition="!Skin.HasSetting(Hide-Scripts-FullList)">FullList</include>
 			<include condition="!Skin.HasSetting(Hide-Scripts-List)">List</include>
 			<include condition="!Skin.HasSetting(Hide-Scripts-Thumbnail)">Thumbnail</include>
+			<include condition="!Skin.HasSetting(Hide-Scripts-MediaInfo)">MediaInfo-AddOns</include>
 			<include>Fanart-ProgramsPicturesScripts</include>
 			<include>AllViewCommonPageControls</include>
 			<include>ScrollOffsetLabel</include>

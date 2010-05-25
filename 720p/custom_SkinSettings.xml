@@ -3383,6 +3383,11 @@
 						<onclick>Skin.ToggleSetting(Hide-Scripts-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Scripts-Thumbnail)</selected>
 					</control>
+					<control type="radiobutton" id="735">
+						<label>$LOCALIZE[247] - $LOCALIZE[544]</label>
+						<onclick>Skin.ToggleSetting(Hide-Scripts-MediaInfo)</onclick>
+						<selected>Skin.HasSetting(Hide-Scripts-MediaInfo)</selected>
+					</control>
 				</control>
 				<control type="scrollbar" id="799">
 					<posx>1083</posx>
@@ -7762,6 +7767,7 @@
 						<animation effect="fade" start="100" end="0" time="500" pulse="true" condition="true">Conditional</animation>
 						<visible>Skin.String(playerturn,1) + ![Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]] + !Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(900)</visible>
 					</control>
+
 					<control type="label" id="75">
 						<posx>950</posx>
 						<posy>330</posy>

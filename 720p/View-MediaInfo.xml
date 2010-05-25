@@ -1666,7 +1666,7 @@
 	</include>
 	<include name="MediaInfo-AddOns">
 		<control type="list" id="599">
-			<visible>Window.IsVisible(AddonBrowser)</visible>
+			<visible>Window.IsVisible(Scripts) | Window.IsVisible(AddonBrowser)</visible>
 			<posx>448</posx>
 			<posy>135</posy>
 			<width>630</width>
@@ -1761,7 +1761,7 @@
 		<control type="group">
 			<posx>175</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(599) + Window.IsVisible(AddonBrowser)</visible>
+			<visible>Control.IsVisible(599) + [Window.IsVisible(Scripts) | Window.IsVisible(AddonBrowser)]</visible>
 			<control type="image">
 				<posx>47</posx>
 				<posy>87</posy>
@@ -1811,7 +1811,7 @@
 		<control type="group">
 			<posx>125</posx>
 			<posy>490</posy>
-			<visible>Control.IsVisible(599) + Window.IsVisible(AddonBrowser)</visible>
+			<visible>Control.IsVisible(599) + [Window.IsVisible(Scripts) | Window.IsVisible(AddonBrowser)]</visible>
 			<control type="label">
 				<description>Author txt</description>
 				<posx>190</posx>
