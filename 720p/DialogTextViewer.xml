@@ -20,16 +20,31 @@
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>614</posy>
-				<width>550</width>
+				<posx>225</posx>
+				<posy>572</posy>
+				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<align>left</align>
+				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.label]</label>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="textbox">
+				<description>textarea</description>
+				<posx>265</posx>
+				<posy>600</posy>
+				<width>600</width>
+				<height>85</height>
+				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>60</pagecontrol>
+				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="image">
 				<posx>34</posx>
