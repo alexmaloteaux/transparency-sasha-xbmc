@@ -7768,12 +7768,10 @@
 						<width>300</width>
 						<height>40</height>
 						<label>[B]It's your turn[CR]$INFO[Skin.String(player2name)][/B]</label>
-
 						<font>font-28</font>
 						<textcolor>lightgreen</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
-
 						<animation effect="fade" start="0" end="100" time="500">Visible</animation>
 						<visible>Skin.String(playerturn,2) + ![Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]] + !Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(900)</visible>
 					</control>
