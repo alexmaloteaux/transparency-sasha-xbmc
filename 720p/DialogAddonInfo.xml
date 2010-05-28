@@ -11,7 +11,8 @@
 			<animation effect="fade" start="70" end ="0" time="300">WindowClose</animation>
 		</control>
 		<control type="group">
-			<include>DialogFade5</include>
+			<include>DialogFade6</include>
+			<visible>!Window.IsVisible(TextViewer)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>560</posy>
