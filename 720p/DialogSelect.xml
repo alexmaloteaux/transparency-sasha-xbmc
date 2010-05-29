@@ -99,12 +99,12 @@
 			<posx>45</posx>
 			<posy>90</posy>
 			<width>500</width>
-			<height>441</height>
+			<height>414</height>
 			<onup>5</onup>
 			<ondown>5</ondown>
 			<onleft>5</onleft>
-			<onright>61</onright>
-			<pagecontrol>61</pagecontrol>
+			<onright>62</onright>
+			<pagecontrol>62</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout width="500" height="59">
 				<control type="image">
@@ -206,10 +206,30 @@
 			<onright>5</onright>
 			<ondown>61</ondown>
 			<onup>61</onup>
-			<showonepage>true</showonepage>
+			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
+			<visible>Control.IsVisible(3)</visible>
+		</control>
+		<control type="scrollbar" id="62">
+			<posx>552</posx>
+			<posy>87</posy>
+			<width>20</width>
+			<height>419</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>6</onleft>
+			<onright>5</onright>
+			<ondown>62</ondown>
+			<onup>62</onup>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Control.IsVisible(6)</visible>
 		</control>
 		<include>CommonFileCount3</include>
+		<include>CommonFileCount13</include>
 		<control type="button" id="5">
 			<description>OK button</description>
 			<posx>205</posx>
@@ -218,7 +238,7 @@
 			<height>35</height>
 			<label>186</label>
 			<font>font-23</font>
-			<textcolor>white</textcolor>
+			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
 			<texturefocus border="7">button-focus.png</texturefocus>

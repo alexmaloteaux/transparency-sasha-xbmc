@@ -3401,7 +3401,7 @@
 					<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
 					<onleft>701</onleft>
 					<onright>9000</onright>
-					<showonepage>true</showonepage>
+					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Skin.String(SkinSettings,7)</visible>
 				</control>
@@ -8351,6 +8351,7 @@
 								<ondown>1</ondown>
 							</control>
 						</control>
+
 						<control type="group" id="81">
 							<posx>384</posx>
 							<posy>154</posy>
@@ -8775,7 +8776,7 @@
 						<onright>1000</onright>
 						<ondown>61</ondown>
 						<onup>61</onup>
-						<showonepage>true</showonepage>
+						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 					<control type="textbox" id="5">
