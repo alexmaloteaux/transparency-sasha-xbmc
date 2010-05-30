@@ -116,7 +116,16 @@
 				<align>center</align>
 				<aligny>bottom</aligny>
 				<textcolor>blue</textcolor>
-			</control> 
+			</control>
+			<control type="sliderex" id="8">
+				<description>Default Slider</description>
+				<height>30</height>
+				<texturefocus border="7">list-focus.png</texturefocus>
+				<texturenofocus border="7">list-nofocus.png</texturenofocus>
+				<font>font-20</font>
+				<textcolor>lightgrey</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>645</posy>
