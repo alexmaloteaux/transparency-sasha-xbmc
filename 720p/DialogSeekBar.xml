@@ -62,17 +62,13 @@
 			</control>
 			<control type="slider" id="401">
 				<description>Seek Slider</description>
-				<posx>97</posx>
-				<posy>13</posy>
-				<width>199</width>
+				<posx>104</posx>
+				<posy>12</posy>
+				<width>198</width>
 				<height>9</height>
 				<texturesliderbar>seekslider.png</texturesliderbar>
 				<textureslidernib>slider_nibFO.png</textureslidernib>
 				<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
-				<onup>1</onup>
-				<ondown>1</ondown>
-				<onleft>1</onleft>
-				<onright>1</onright>
 				<visible>Player.Seeking</visible>
 			</control>
 			<control type="label">
@@ -185,7 +181,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$LOCALIZE[31045] x16[/B]</label>
-				<visible>Player.Rewinding16x</visible>
+				<visible>Player.Rewinding16x + !Player.Seeking</visible>
 			</control>
 			<control type="label">
 				<description>RW x32 Label</description>
@@ -241,7 +237,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$LOCALIZE[31044] x8[/B]</label>
-				<visible>Player.Forwarding8x</visible>
+				<visible>Player.Forwarding8x + !Player.Seeking</visible>
 			</control>
 			<control type="label">
 				<description>FF x16 Label</description>
@@ -290,7 +286,7 @@
 			<posy>500</posy>
 			<animation effect="slide" start="280,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">Hidden</animation> 
+			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">Hidden</animation>
 			<include condition="!Skin.HasSetting(SafeMode)">clearart-dialogseekbar</include>
 			<visible>Player.Paused</visible>
 			<control type="group">
