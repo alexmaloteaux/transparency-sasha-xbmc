@@ -33,7 +33,20 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="grouplist" id="2">
-				<description>control area</description>
+				<description>control settings area</description>
+				<posx>200</posx>
+				<posy>80</posy>
+				<width>880</width>
+				<height>535</height>
+				<itemgap>-1</itemgap>
+				<pagecontrol>61</pagecontrol>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>10</onleft>
+				<onright>61</onright>
+			</control>
+			<control type="grouplist" id="9">
+				<description>control section area</description>
 				<posx>200</posx>
 				<posy>80</posy>
 				<width>880</width>
@@ -61,7 +74,14 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="button" id="3">
-				<description>Default Button</description>
+				<description>Default Settings Button</description>
+				<height>30</height>
+				<font>font-20</font>
+				<texturefocus border="7">list-focus.png</texturefocus>
+				<texturenofocus border="7">list-nofocus.png</texturenofocus>
+			</control>
+			<control type="button" id="13">
+				<description>Default Section Button</description>
 				<height>30</height>
 				<font>font-20</font>
 				<texturefocus border="7">list-focus.png</texturefocus>
