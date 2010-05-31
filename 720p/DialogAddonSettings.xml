@@ -40,23 +40,23 @@
 				<height>535</height>
 				<itemgap>-1</itemgap>
 				<pagecontrol>61</pagecontrol>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<onleft>10</onleft>
+				<onup>10</onup>
+				<ondown>10</ondown>
+				<onleft>9</onleft>
 				<onright>61</onright>
 			</control>
 			<control type="grouplist" id="9">
 				<description>control section area</description>
-				<posx>200</posx>
+				<posx>0</posx>
 				<posy>80</posy>
-				<width>880</width>
+				<width>200</width>
 				<height>535</height>
 				<itemgap>-1</itemgap>
 				<pagecontrol>61</pagecontrol>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<onleft>10</onleft>
-				<onright>61</onright>
+				<onup>9</onup>
+				<ondown>9</ondown>
+				<onleft>2</onleft>
+				<onright>2</onright>
 			</control>
 			<control type="scrollbar" id="61">
 				<posx>1090</posx>
@@ -82,10 +82,8 @@
 			</control>
 			<control type="button" id="13">
 				<description>Default Section Button</description>
-				<height>30</height>
-				<font>font-20</font>
-				<texturefocus border="7">list-focus.png</texturefocus>
-				<texturenofocus border="7">list-nofocus.png</texturenofocus>
+				<width>200</width>
+				<include>ButtonCommonValues</include>
 			</control>
 			<control type="radiobutton" id="4">
 				<description>Default RadioButton</description>
