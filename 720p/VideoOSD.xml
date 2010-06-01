@@ -247,7 +247,7 @@
 					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasTeletext  + !System.Platform.Xbox">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
 				</control>
 			</control>
 			<control type="group" id="920">
@@ -442,7 +442,7 @@
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasTeletext  + !System.Platform.Xbox">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
 					<control type="button" id="909">
 						<description>Channels Menu</description>
 						<posx>0</posx>
@@ -594,7 +594,7 @@
 						<onclick>ActivateWindow(Teletext)</onclick>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
-						<visible>VideoPlayer.HasTeletext  + !System.Platform.Xbox</visible>
+						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
 				</control>
 			</control>

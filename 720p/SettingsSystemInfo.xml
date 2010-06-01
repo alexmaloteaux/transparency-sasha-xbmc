@@ -156,7 +156,7 @@
 					<posx>0</posx>
 					<posy>370</posy>
 					<width>880</width>
-					<label>Transparency! v3.03 (SVN)</label>
+					<label>Transparency! v3.04 (SVN)</label>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font-20</font>
@@ -195,18 +195,6 @@
 					<description>Button Storage</description>
 					<include>ButtonCommonValues</include>
 					<label>13277</label>
-				</control>
-				<control type="button" id="92">
-					<description>Button HDD</description>
-					<include>ButtonCommonValues</include>
-					<label>13275</label>
-					<visible>System.Platform.Xbox</visible>
-				</control>
-				<control type="button" id="93">
-					<description>Button DVD</description>
-					<include>ButtonCommonValues</include>
-					<label>13276</label>
-					<visible>System.Platform.Xbox</visible>
 				</control>
 				<control type="button" id="96">
 					<description>Button Network</description>

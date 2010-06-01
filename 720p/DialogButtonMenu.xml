@@ -98,21 +98,8 @@
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + !System.Platform.Xbox</visible>
+					<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(11)">conditional</animation>
-				</control>
-				<control type="button" id="12">
-					<description>Exit xbmc</description>
-					<width>80</width>
-					<height>81</height>
-					<texturefocus>shut-exit-focus.png</texturefocus>
-					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
-					<onclick>Dashboard</onclick>
-					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
-					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(12)">conditional</animation>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Exit) + System.Platform.Xbox</visible>
 				</control>
 				<control type="button" id="13">
 					<description>Restart xbmc</description>
@@ -406,7 +393,7 @@
 				<control type="label">
 					<label>$LOCALIZE[13012] XBMC</label>
 					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(11) | Control.HasFocus(12)</visible>
+					<visible>Control.HasFocus(11)</visible>
 				</control>
 				<control type="label">
 					<label>$LOCALIZE[13313] XBMC</label>
