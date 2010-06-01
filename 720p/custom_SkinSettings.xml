@@ -3669,6 +3669,7 @@
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Files)</onclick>
 						<selected>!Skin.HasSetting(Menu_Movies_Sub_Files)</selected>
 						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
+
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Movies Sub Genres</description>
@@ -6308,6 +6309,7 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom9_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom9_Label)</onclick>
+
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom9 Path</description>
@@ -6855,6 +6857,7 @@
 						<description>Menu Scripts Sub Custom6 Path</description>
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Path)][/COLOR]</label2>
+
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Scripts_Sub_Custom6_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
@@ -7018,66 +7021,6 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom1) + Skin.String(SettingsCustom,1)</visible>
-					<posy>599</posy>
-					<include>SettingsMenuList3</include>
-					<control type="button" id="8201">
-						<description>Menu Settings Sub Custom1 Label</description>
-						<label>[B]- $LOCALIZE[31150][/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom1_Label)][/COLOR]</label2>
-						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Settings_Sub_Custom1_Label)</onclick>
-					</control>
-					<control type="button" id="8202">
-						<description>Menu Settings Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31157][/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom1_Path)][/COLOR]</label2>
-						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Settings_Sub_Custom1_Path)</onclick>
-						<onclick>ActivateWindow(1114)</onclick>
-					</control>
-				</control>
-				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom2) + Skin.String(SettingsCustom,2)</visible>
-					<posy>627</posy>
-					<include>SettingsMenuList3</include>
-					<control type="button" id="8201">
-						<description>Menu Settings Sub Custom2 Label</description>
-						<label>[B]- $LOCALIZE[31150][/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom2_Label)][/COLOR]</label2>
-						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Settings_Sub_Custom2_Label)</onclick>
-					</control>
-					<control type="button" id="8202">
-						<description>Menu Settings Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31157][/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom2_Path)][/COLOR]</label2>
-						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Settings_Sub_Custom2_Path)</onclick>
-						<onclick>ActivateWindow(1114)</onclick>
-					</control>
-				</control>
-				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom3) + Skin.String(SettingsCustom,3)</visible>
-					<posy>655</posy>
-					<include>SettingsMenuList3</include>
-					<control type="button" id="8201">
-						<description>Menu Settings Sub Custom3 Label</description>
-						<label>[B]- $LOCALIZE[31150][/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom3_Label)][/COLOR]</label2>
-						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Settings_Sub_Custom3_Label)</onclick>
-					</control>
-					<control type="button" id="8202">
-						<description>Menu Settings Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[31157][/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom3_Path)][/COLOR]</label2>
-						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Settings_Sub_Custom3_Path)</onclick>
-						<onclick>ActivateWindow(1114)</onclick>
-					</control>
-				</control>
-				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom1) + Skin.String(FavouritesCustom,1)</visible>
 					<posy>491</posy>
 					<include>SettingsMenuList3</include>
@@ -7174,6 +7117,66 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Favourites_Sub_Custom5_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom1) + Skin.String(SettingsCustom,1)</visible>
+					<posy>599</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Settings Sub Custom1 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Settings_Sub_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Settings Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Settings_Sub_Custom1_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom2) + Skin.String(SettingsCustom,2)</visible>
+					<posy>627</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Settings Sub Custom2 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Settings_Sub_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Settings Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Settings_Sub_Custom2_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom3) + Skin.String(SettingsCustom,3)</visible>
+					<posy>655</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Settings Sub Custom3 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Settings_Sub_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Settings Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Settings_Sub_Custom3_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
 					</control>
 				</control>
@@ -9073,6 +9076,7 @@
 					<ondown>900</ondown>
 				</control>
 				<control type="button" id="900">
+
 					<description>Reload Skin button</description>
 					<posx>0</posx>
 					<posy>360</posy>
