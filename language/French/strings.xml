@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Translator: darknoir, Shalashaska, jpf55-->
-<!--Date of translation: 01/25/2010-->
+?<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Translator: darknoir, Shalashaska, jpf55, willynuisance-->
+<!--Date of translation: 06/02/2010--> 
 <strings>
   <!-- Dialog labels -->
   <string id="31000">Muet</string>
@@ -11,8 +11,8 @@
   <string id="31022">Musique Fichiers</string>
   <string id="31024">Page</string>
   <string id="31025">Objets</string>
-  <string id="31026">Video Library</string>
-  <string id="31027">Music Library</string>
+  <string id="31026">Médiathèque Vidéo</string>
+  <string id="31027">Médiathèque Musique</string>
   <string id="31028">Apple Movie Trailers</string>
   <!-- Viewmode labels -->
   <string id="31030">Fanart</string>
@@ -49,8 +49,8 @@
   <string id="31101">Options Accueil</string>
   <string id="31102">Arrière-plan</string>
   <string id="31103">Afficher "Pause" dans le diaporama images</string>
-  <string id="31104">Hide cases</string>
-  <string id="31105">Disable case animation in Icons view</string>
+  <string id="31104">Masquer les boitiers</string>
+  <string id="31105">Désactiver les animations boitier en vue Icones</string>
   <string id="31106">Options diverses</string>
   <string id="31111">Toujours afficher les infos Musique lors de Lyrics (paroles)</string>
   <string id="31113">Image unique</string>
@@ -68,7 +68,7 @@
   <string id="31127">Accès Répertoire Musique</string>
   <string id="31128">Accès Répertoire Séries TV</string>
   <string id="31129">Accès Répertoire Films</string>
-  <string id="31131">Enable YouTrailer script</string>
+  <string id="31131">Activer le script YouTrailer</string>
   <string id="31132">Activer le script Home Theater Experience</string>
   <string id="31133">Utiliser tri par Artistes - Albums triés par albums</string>
   <string id="31134">Arrières-plans animés</string>
@@ -93,21 +93,21 @@
   <string id="31153">Weather icon</string>
   <string id="31154">Application</string>
   <string id="31155">Command:</string>
-  <string id="31156">Favourite</string>
-  <string id="31157">Select favourite:</string>
-  <string id="31158">Change Your Settings...</string>
-  <string id="31159">[B]CONFIGURE VIDEO SETTINGS[/B][CR]Manage your video library - Set video playback options - Change video listing options[CR]Set subtitle fonts</string>
-  <string id="31160">[B]CONFIGURE TV SETTINGS[/B][CR]Change fullscreen info - Manage EPG data settings[CR]Configure recording options</string>
-  <string id="31161">[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options</string>
-  <string id="31162">[B]CONFIGURE PICTURE SETTINGS[/B][CR]Set picture listing options[CR]Configure slideshows</string>
-  <string id="31163">[B]CONFIGURE WEATHER SETTINGS[/B][CR]Set three cities to collect weather information[CR]Select a weather plugin</string>
-  <string id="31164">[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock</string>
-  <string id="31165">[B]CONFIGURE NETWORK SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Set internet access options</string>
-  <string id="31166">[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue</string>
-  <string id="31167">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR]Select a skin - Set language and region - Change file listing options[CR]Set up a screensaver</string>
-  <string id="31168">[B]CONFIGURE SKIN SETTINGS[/B][CR]Setup the Transparency! skin - Add and remove home menu items[CR]Change skin backgrounds</string>
-  <string id="31169">[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons - Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
-  <string id="31170">[B]CHECK SYTEM INFORMATION[/B][CR]Display your hardware - Check current network settings[CR]Monitor free discspace</string>
+  <string id="31156">Favoris</string>
+  <string id="31157">Selectionner favoris:</string>
+  <string id="31158">Changement des paramètres...</string>
+  <string id="31159">[B]CONFIGURATION VIDEO[/B][CR]Gérer la mediathèque vidéo - Régler les options de lecture vidéo - Changer les options de listing vidéo[CR]Régler la police des sous-titres</string>
+  <string id="31160">[B]CONFIGURATION TV[/B][CR]Changer les info plein-écran - Gérer les paramètres EPG(Guide des programmes)[CR]Configurer les options d'enregistrement</string>
+  <string id="31161">[B]CONFIGURATION MUSIQUE[/B][CR]Gérer la mediathèque musique - Régler les options de lecture - Changer les options de listing musique[CR]Configurer la soumission de chanson - Régler les options karaoke</string>
+  <string id="31162">[B]CONFIGURATION IMAGES[/B][CR]Changer les options de listing images[CR]Configurer le diaporama</string>
+  <string id="31163">[B]CONFIGURATION METEO[/B][CR]Définir trois villes pour la récupération des info météo[CR]Selectionner le plugin météo</string>
+  <string id="31164">[B]CONFIGURATION SYSTEME[/B][CR]Réglages et calibration de l'affichage - Configuration de la sortie audio - Configuration de la télécommande[CR]Régler les options d'économie d'energie - Activer le debugging - Configurer le verrou principal</string>
+  <string id="31165">[B]CONFIGURATION RESEAU[/B][CR]Configurer le contrôle d'XBMC via UPnP et HTTP - Configurer le partage de fichier[CR]Définir les options d'accès internet</string>
+  <string id="31166">[B]CONFIGURATION PROFILE[/B][CR]Sectionnez votre profil d'utilisateur XBMC[CR]pour vous logguer et continuer</string>
+  <string id="31167">[B]CONFIGURATION APPARENCE[/B][CR]Selectionner une skin - Définir les options régionales et linguistiques - CChanger les options de listing fichier[CR]SConfigurer un écran de veille</string>
+  <string id="31168">[B]CONFIGURATION SKIN[/B][CR]Configurer la skin Transparency! - Ajouter/Supprimer des éléments du menu d'acceuil[CR]Change les arrière-plan de la skin</string>
+  <string id="31169">[B]CONFIGURATION ADD-ONS[/B][CR]Gérer les Add-ons installés - Naviguer et installer des Add-ons depuis xbmc.org[CR]Modifier les paramètres des Add-ons</string>
+  <string id="31170">[B]INFORMATIONS SYSTEME[/B][CR]Afficher le matériel - Vérifier les paramètres réseau actuels[CR]Surveiller l'espace disque disponible</string>
   <!-- Script Settings labels -->
   <string id="31200">Options Script perso</string>
   <string id="31204">Chemin du Script:</string>
