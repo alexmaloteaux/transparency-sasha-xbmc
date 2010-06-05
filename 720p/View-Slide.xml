@@ -1565,7 +1565,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Duration]</label>
+						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>

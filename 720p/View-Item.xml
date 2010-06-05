@@ -56,7 +56,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - ][/B]</label>
+				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
 			</control>
 			<control type="label">
 				<posx>175</posx>
