@@ -320,7 +320,7 @@
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
 					<onclick>RunScript($INFO[Skin.String(TheaterScript_Path)])</onclick>
-					<visible>Container.Content(Movies) + Skin.HasSetting(hometheater)</visible>
+					<visible>Container.Content(Movies) + Skin.HasSetting(TheaterScript_Enable)</visible>
 				</control>
 			</control>
 			<control type="label">
@@ -566,6 +566,7 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[572]:[/B][/UPPERCASE]</label>
+
 								<label2>$INFO[ListItem.Studio]</label2>
 								<onclick>-</onclick>
 							</item>
