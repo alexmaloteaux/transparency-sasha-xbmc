@@ -457,6 +457,16 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="largeimage">
+				<posx>10</posx>
+				<posy>30</posy>
+				<width>230</width>
+				<height>89</height>
+				<texture>$INFO[ListItem.Path,,logo.png]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
+				<visible>Container.Content(TVShows)</visible>
+			</control>
 			<control type="image">
 				<posx>38</posx>
 				<posy>418</posy>

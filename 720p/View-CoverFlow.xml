@@ -1294,6 +1294,16 @@
 				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 			</control>
+			<control type="largeimage">
+				<posx>1042</posx>
+				<posy>14</posy>
+				<width>230</width>
+				<height>89</height>
+				<texture>$INFO[ListItem.Path,,logo.png]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
+				<visible>Container.Content(TVShows)</visible>
+			</control>
 			<control type="label">
 				<posx>140</posx>
 				<posy>27</posy>
