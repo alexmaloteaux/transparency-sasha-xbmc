@@ -112,6 +112,7 @@
 					<animation effect="slide" start="0,0" end="-110,42" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | [Container.Content(TvShows) + Window.IsVisible(Videofiles)]]">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-110,30" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TVShows) + Skin.HasSetting(TVLogoScript_Enable)">Conditional</animation>
 					<control type="button" id="5">
 						<description>Cast/Review</description>
 						<posx>0</posx>
@@ -127,7 +128,7 @@
 						<texturefocus border="7">button-nofocus.png</texturefocus>
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
 						<label>206</label>
-						<onleft>10</onleft>
+						<onleft>1113</onleft>
 						<onright>8</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
@@ -209,9 +210,31 @@
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
 						<label>13405</label>
 						<onleft>12</onleft>
+						<onright>1113</onright>
+						<onup>49</onup>
+						<ondown>1110</ondown>
+					</control>
+					<control type="button" id="1113">
+						<description>Get Logo</description>
+						<posx>1000</posx>
+						<posy>33</posy>
+						<width>200</width>
+						<height>35</height>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturefocus border="7">button-nofocus.png</texturefocus>
+						<texturenofocus border="7">button-nofocus.png</texturenofocus>
+						<label>31108</label>
+						<onleft>10</onleft>
 						<onright>5</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
+						<onclick>RunScript($INFO[Skin.String(TVLogoScript_Path)],$INFO[ListItem.FileNameAndPath])</onclick>
+						<visible>Container.Content(TVShows) + Skin.HasSetting(TVLogoScript_Enable)</visible>
 					</control>
 				</control>
 			</control>
@@ -225,11 +248,13 @@
 				<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(6)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(12)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="800,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="1000,0" time="200" condition="Control.HasFocus(1113)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-110,42" time="0" condition="[[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | [Container.Content(TvShows) + Window.IsVisible(Videofiles)]]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-110,30" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TVShows) + Skin.HasSetting(TVLogoScript_Enable)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-				<visible>Control.HasFocus(5) | Control.HasFocus(8) | Control.HasFocus(6) | Control.HasFocus(12) | Control.HasFocus(10)</visible>
+				<visible>Control.HasFocus(5) | Control.HasFocus(8) | Control.HasFocus(6) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(1113)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>380</posx>

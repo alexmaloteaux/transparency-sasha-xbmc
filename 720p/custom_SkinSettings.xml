@@ -2688,6 +2688,22 @@
 						<onclick>Skin.SetAddon(TrailerScript_Path,xbmc.python.script)</onclick>
 						<enable>Skin.HasSetting(TrailerScript_Enable)</enable>
 					</control>
+					<control type="image" id="514">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="515">
+						<label>$LOCALIZE[31107]</label>
+						<onclick>Skin.ToggleSetting(TVLogoScript_Enable)</onclick>
+						<selected>Skin.HasSetting(TVLogoScript_Enable)</selected>
+					</control>
+					<control type="button" id="516">
+						<label>- $LOCALIZE[31204]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(TVLogoScript_Path)][/COLOR]</label2>
+						<onclick>Skin.SetAddon(TVLogoScript_Path,xbmc.python.script)</onclick>
+						<enable>Skin.HasSetting(TVLogoScript_Enable)</enable>
+					</control>
 				</control>
 				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>
