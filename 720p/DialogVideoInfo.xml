@@ -260,7 +260,7 @@
 					<onup>5</onup>
 					<ondown>50</ondown>
 					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1112)">Conditional</animation>
-					<visible>!Skin.HasSetting(TrailerScript_Enable) + !IsEmpty(Listitem.trailer)</visible>
+					<visible>Container.Content(Movies) + !Skin.HasSetting(TrailerScript_Enable) + !IsEmpty(Listitem.trailer)</visible>
 				</control>
 				<control type="button" id="1111">
 					<posx>1095</posx>
@@ -277,7 +277,7 @@
 					<ondown>50</ondown>
 					<animation effect="slide" start="0,0" end="99,0" time="0" condition="!Control.IsVisible(1112)">Conditional</animation>
 					<onclick>RunScript($INFO[Skin.String(TrailerScript_Path)],1)</onclick>
-					<visible>Skin.HasSetting(TrailerScript_Enable)</visible>
+					<visible>Container.Content(Movies) + Skin.HasSetting(TrailerScript_Enable)</visible>
 				</control>
 				<control type="button" id="1112">
 					<posx>1194</posx>
@@ -295,7 +295,7 @@
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
 					<onclick>RunScript($INFO[Skin.String(TheaterScript_Path)])</onclick>
-					<visible>Skin.HasSetting(hometheater) + Container.Content(Movies)</visible>
+					<visible>Container.Content(Movies) + Skin.HasSetting(hometheater)</visible>
 				</control>
 			</control>
 			<control type="label">
