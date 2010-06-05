@@ -2519,7 +2519,6 @@
 						<label>$LOCALIZE[10000] - $LOCALIZE[31153]</label>
 						<onclick>Skin.ToggleSetting(Home_Weather_Icon)</onclick>
 						<selected>!Skin.HasSetting(Home_Weather_Icon)</selected>
-
 					</control>
 					<control type="radiobutton" id="403">
 						<label>$LOCALIZE[10000] - $LOCALIZE[31135]</label>
@@ -3346,7 +3345,6 @@
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
-
 					</control>
 					<control type="radiobutton" id="728">
 						<label>$LOCALIZE[0] - $LOCALIZE[31031]</label>
@@ -3669,8 +3667,6 @@
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Files)</onclick>
 						<selected>!Skin.HasSetting(Menu_Movies_Sub_Files)</selected>
 						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
-
-
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Movies Sub Genres</description>
@@ -6310,7 +6306,6 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom9_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom9_Label)</onclick>
-
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom9 Path</description>
@@ -6858,7 +6853,6 @@
 						<description>Menu Scripts Sub Custom6 Path</description>
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Path)][/COLOR]</label2>
-
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Scripts_Sub_Custom6_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
@@ -7269,8 +7263,6 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_PlayDisc_Sub_Custom5_Label)</onclick>
-
-
 					</control>
 					<control type="button" id="8202">
 						<description>Menu PlayDisc Sub Custom5 Path</description>
@@ -7572,7 +7564,6 @@
 						<onup>72</onup>
 						<ondown>73</ondown>
 					</control>
-
 					<control type="label">
 						<posx>985</posx>
 						<posy>90</posy>
@@ -7771,14 +7762,12 @@
 						<animation effect="fade" start="100" end="0" time="500" pulse="true" condition="true">Conditional</animation>
 						<visible>Skin.String(playerturn,1) + ![Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]] + !Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(900)</visible>
 					</control>
-
 					<control type="label" id="75">
 						<posx>950</posx>
 						<posy>330</posy>
 						<width>300</width>
 						<height>40</height>
 						<label>[B]It's your turn[CR]$INFO[Skin.String(player2name)][/B]</label>
-
 						<font>font-28</font>
 						<textcolor>lightgreen</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -8355,7 +8344,6 @@
 								<ondown>1</ondown>
 							</control>
 						</control>
-
 						<control type="group" id="81">
 							<posx>384</posx>
 							<posy>154</posy>
@@ -9077,7 +9065,6 @@
 					<ondown>900</ondown>
 				</control>
 				<control type="button" id="900">
-
 					<description>Reload Skin button</description>
 					<posx>0</posx>
 					<posy>360</posy>
