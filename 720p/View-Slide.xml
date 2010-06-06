@@ -777,6 +777,7 @@
 				<height>116</height>
 				<texture background="true">$INFO[ListItem(-2).Icon]</texture>
 
+
 				<animation reversible="false" effect="zoom" start="265,112,82,116" end="349,96,93,132" time="250">Hidden</animation>
 				<visible>Container(596).OnPrevious</visible>
 			</control>
