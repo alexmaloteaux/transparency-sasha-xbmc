@@ -1292,16 +1292,7 @@
 				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 			</control>
-			<control type="largeimage">
-				<posx>1042</posx>
-				<posy>14</posy>
-				<width>230</width>
-				<height>89</height>
-				<texture>$INFO[ListItem.Path,,logo.png]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
-				<visible>Container.Content(TVShows)</visible>
-			</control>
+			<include condition="!Skin.HasSetting(SafeMode)">tvlogo-coverflow</include>
 			<control type="label">
 				<posx>140</posx>
 				<posy>27</posy>
@@ -2867,6 +2858,7 @@
 					<width>318</width>
 					<height>318</height>
 					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Thumb]</texture>
+
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">

@@ -310,4 +310,40 @@
 	<include name="musicsongsdisc-View_Icons">
 		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path,,cdart.png]</texture>
 	</include>
+	<include name="tvlogo-fanart">
+		<control type="largeimage">
+			<posx>10</posx>
+			<posy>30</posy>
+			<width>230</width>
+			<height>89</height>
+			<texture>$INFO[ListItem.Path,,logo.png]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
+			<visible>Container.Content(TVShows)</visible>
+		</control>
+	</include>
+	<include name="tvlogo-coverflow">
+		<control type="largeimage">
+			<posx>1042</posx>
+			<posy>14</posy>
+			<width>230</width>
+			<height>89</height>
+			<texture>$INFO[ListItem.Path,,logo.png]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
+			<visible>Container.Content(TVShows)</visible>
+		</control>
+	</include>
+	<include name="tvlogo-slide">
+		<control type="largeimage">
+			<posx>1042</posx>
+			<posy>14</posy>
+			<width>230</width>
+			<height>89</height>
+			<texture>$INFO[ListItem.Path,,logo.png]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
+			<visible>Container.Content(TVShows)</visible>
+		</control>
+	</include>
 </includes>
