@@ -378,9 +378,6 @@
 			<include>WindowTitleCommons</include>
 			<visible>Substring(Container.FolderPath,shout://,Left)</visible>
 		</control>
-
-
-
 		<control type="label" id="1101">
 			<description>Shoutcast</description>
 			<label>$LOCALIZE[15200]</label>

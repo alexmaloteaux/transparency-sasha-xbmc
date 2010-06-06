@@ -541,8 +541,6 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-
-
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
@@ -1452,7 +1450,6 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
-
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1549,7 +1546,6 @@
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-
 					<posx>34</posx>
 					<posy>346</posy>
 					<width>318</width>
@@ -2004,7 +2000,6 @@
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + stringcompare(ListItem(4).Label,..)</visible>
-
 				</control>
 				<control type="image">
 					<posx>34</posx>
