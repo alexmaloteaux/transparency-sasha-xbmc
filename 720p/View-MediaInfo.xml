@@ -1811,7 +1811,7 @@
 		<control type="group">
 			<posx>125</posx>
 			<posy>490</posy>
-			<visible>Control.IsVisible(599) + [Window.IsVisible(Scripts) | Window.IsVisible(AddonBrowser)]</visible>
+			<visible>Control.IsVisible(599) + [Window.IsVisible(Scripts) | Window.IsVisible(AddonBrowser)] + !IsEmpty(ListItem.Property(Addon.Name))</visible>
 			<control type="label">
 				<description>Author txt</description>
 				<posx>190</posx>
@@ -1830,7 +1830,7 @@
 				<posy>0</posy>
 				<width>250</width>
 				<height>25</height>
-				<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+				<label>$INFO[ListItem.Property(Addon.Creator)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -1853,7 +1853,7 @@
 				<posy>25</posy>
 				<width>250</width>
 				<height>25</height>
-				<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+				<label>$INFO[ListItem.Property(Addon.Type)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -1876,7 +1876,7 @@
 				<posy>50</posy>
 				<width>250</width>
 				<height>25</height>
-				<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
+				<label>$INFO[ListItem.Property(Addon.Version)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -1899,7 +1899,7 @@
 				<posy>75</posy>
 				<width>125</width>
 				<height>25</height>
-				<texture fallback="rating0.png">$INFO[ListItem.Property(Addon.Rating)]</texture>
+				<texture>$INFO[ListItem.Property(Addon.Rating)]</texture>
 			</control>
 			<control type="textbox">
 				<description>Description Value</description>
@@ -1907,12 +1907,11 @@
 				<posy>0</posy>
 				<width>505</width>
 				<height>105</height>
-				<label fallback="416">$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>center</align>
 				<textcolor>white</textcolor>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 			</control>
 		</control>
 	</include>
