@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Translator: Mika Pirinen -->
-<!--Date of translation: 30/12/2009 -->
+<!--Date of translation: 13/6/2010 -->
 <strings>
   <!-- Dialog labels -->
   <string id="31000">Ääni vaimennettu</string>
   <string id="31001">Suoritetaan...</string>
   <!-- Page labels -->
   <string id="31020">Luvun otsake</string>
-  <string id="31021">Video Tiedostot</string>
-  <string id="31022">Musiikki Tiedostot</string>
+  <string id="31021">Videotiedostot</string>
+  <string id="31022">Musiikkitiedostot</string>
   <string id="31024">Sivu</string>
   <string id="31025">Kohdetta</string>
-  <string id="31026">Video Library</string>
-  <string id="31027">Music Library</string>
+  <string id="31026">Videokirjasto</string>
+  <string id="31027">Musiikkikirjasto</string>
   <string id="31028">Apple Movie Trailers</string>
   <!-- Viewmode labels -->
   <string id="31030">Fanitaide</string>
@@ -23,8 +23,8 @@
   <string id="31035">Diakuva</string>
   <string id="31036">Polaroid</string>
   <string id="31037">Karuselli</string>
-  <string id="31038">Wall</string>
-  <string id="31039">Item</string>
+  <string id="31038">Seinä</string>
+  <string id="31039">Kohdetta</string>
   <string id="31040">Jukebox</string>
   <!-- Misc labels -->
   <string id="31042">TOISTETAAN</string>
@@ -53,9 +53,9 @@
   <string id="31104">Hide cases</string>
   <string id="31105">Disable case animation in Icons view</string>
   <string id="31106">Yleiset asetukset</string>
-  <string id="31107">Enable Logo Downloader script</string>
-  <string id="31108">Get logo</string>
-  <string id="31109">Enable TV Show logos</string>
+  <string id="31107">Logo Downloader- skripti käytössä</string>
+  <string id="31108">Nouda logo</string>
+  <string id="31109">TV-ohjelmien logot käytössä</string>
   <string id="31111">Näytä musiikin tiedot käytettäessä Lyrics-skriptiä</string>
   <string id="31113">Yksittäinen kuva</string>
   <string id="31114">Vaihtuva kuva</string>
@@ -72,8 +72,8 @@
   <string id="31127">Musiikin polku</string>
   <string id="31128">TV-ohjelmien polku</string>
   <string id="31129">Elokuvien polku</string>
-  <string id="31131">Enable YouTrailer script</string>
-  <string id="31132">Home Theater Experience skripti käytössä</string>
+  <string id="31131">YouTrailer -skripti käytössä</string>
+  <string id="31132">Home Theater Experience -skripti käytössä</string>
   <string id="31133">Albumit - käytä esittäjäjärjestystä</string>
   <string id="31134">Animoidut taustakuvat</string>
   <string id="31135">Animoidut sääkuvakkeet</string>
@@ -94,26 +94,26 @@
   <string id="31150">Painikkeen teksti:</string>
   <string id="31151">Lähteen nimi:</string>
   <string id="31152">Lisäosan nimi:</string>
-  <string id="31153">Weather icon</string>
+  <string id="31153">Sää kuvake</string>
   <string id="31154">Application</string>
-  <string id="31155">Command:</string>
-  <string id="31156">Favourite</string>
-  <string id="31157">Select favourite:</string>
-  <string id="31158">Change Your Settings...</string>
-  <string id="31159">[B]CONFIGURE VIDEO SETTINGS[/B][CR]Manage your video library - Set video playback options - Change video listing options[CR]Set subtitle fonts</string>
-  <string id="31160">[B]CONFIGURE TV SETTINGS[/B][CR]Change fullscreen info - Manage EPG data settings[CR]Configure recording options</string>
-  <string id="31161">[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options</string>
-  <string id="31162">[B]CONFIGURE PICTURE SETTINGS[/B][CR]Set picture listing options[CR]Configure slideshows</string>
-  <string id="31163">[B]CONFIGURE WEATHER SETTINGS[/B][CR]Set three cities to collect weather information[CR]Select a weather plugin</string>
-  <string id="31164">[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock</string>
-  <string id="31165">[B]CONFIGURE NETWORK SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Set internet access options</string>
-  <string id="31166">[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue</string>
-  <string id="31167">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR]Select a skin - Set language and region - Change file listing options[CR]Set up a screensaver</string>
-  <string id="31168">[B]CONFIGURE SKIN SETTINGS[/B][CR]Setup the Transparency! skin - Add and remove home menu items[CR]Change skin backgrounds</string>
-  <string id="31169">[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons - Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
-  <string id="31170">[B]CHECK SYTEM INFORMATION[/B][CR]Display your hardware - Check current network settings[CR]Monitor free discspace</string>
+  <string id="31155">Komento:</string>
+  <string id="31156">Suosikki</string>
+  <string id="31157">Valitse suosikki:</string>
+  <string id="31158">Vaihda asetuksia...</string>
+  <string id="31159">[B]Muokkaa videoasetuksia[/B][CR]Hallitse videokirjastoa - Aseta videotoiston asetukset - Vaihda videolistauksen asetuksia[CR]Aseta tekstitysasetukset</string>
+  <string id="31160">[B]Muokkaa TV-asetuksia[/B][CR]vaihda kokoruudun tiedot tilaan - aseta ohjelmaoppaan tietojen asetukset[CR]Määritä nauhoitus asetukset</string>
+  <string id="31161">[B]Muokkaa musiikkiasetuksia[/B][CR]Hallitse musiikkikirjastoa - Aseta musiikkitoiston asetukset - Vaihda musiikkilistauksen[CR]asetuksia - Aseta kappaleen lähetysasetuksia - Aseta karaoke-asetukset</string>
+  <string id="31162">[B]Muokkaa kuva-asetuksia[/B][CR]Aseta kuvalistauksen asetukset - Määritä kuvaesityksiä</string>
+  <string id="31163">[B]Muokkaa sää-asetuksia[/B][CR]Aseta kolme kaupunkia joista noudetaan säätiedot</string>
+  <string id="31164">[B]Muokkaa järjestelmän asetuksia[/B][CR]Aseta ja kalibroi näyttö - Määritä äänilähtö - Aseta kauko-ohjaus[CR]Aseta sähkönsäästöasetukset - Ota debuggaus käyttöön - Muokkaa pääkäyttäjän lukituksia</string>
+  <string id="31165">[B]Muokkaa verkkoasetuksia[/B][CR]Aseta XBMC ohjaus UPNP:n ja HTTP:n kautta - Määritä tiedostojen jako[CR]Aseta internet asetukset</string>
+  <string id="31166">[B]Muokkaa profiiliasetuksia[/B][CR]Valitse XBMC käyttäjäprofiili[CR]kirjautuaksesi sisään</string>
+  <string id="31167">[B]Muokkaa käyttöliittymän asetuksia[/B][CR]Vaihda ulkoasua - Vaihda kieliasetuksia - Aseta tiedostolistauksen asetukset[CR]Aseta ruudunsäästäjä</string>
+  <string id="31168">[B]Muokkaa ulkoasun asetuksia[/B][CR]Aseta Transparency! -ulkoasun asetukset - Lisää ja poista päävalikon kohteita[CR]Vaihda ulkoasun taustakuvia</string>
+  <string id="31169">[B]Muokkaa laajennuksia[/B][CR]Hallitse asennettuja laajennuksia - Valitse ja asenna laajennuksia xbmc.org:sta[CR]Muokkaa laajennusten asetuksia</string>
+  <string id="31170">[B]Tarkista järjestelmän tiedot[/B][CR]Näytä laitteistosta tietoja - tarkista nykyiset verkon asetukset[CR]Valvo vapaata muistitilaa</string>
   <!-- Script Settings labels -->
-  <string id="31200">Skripti asetukset</string>
+  <string id="31200">Skripti-asetukset</string>
   <string id="31204">Polku</string>
   <string id="31208">Näytä Lyrics-skriptin painike OSD:ssä</string>
   <!-- AMT Script Extra labels -->
@@ -128,6 +128,6 @@
   <!-- Temp PVR labels -->
   <string id="31500">TV</string>
   <!-- Weather labels -->
-  <string id="31600">10 päivää</string>  
+  <string id="31600">10 päivää</string>
 </strings>
 
