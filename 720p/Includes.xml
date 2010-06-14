@@ -5,6 +5,7 @@
 	<include file="View-FullList.xml" />
 	<include file="View-Icons.xml" />
 	<include file="View-Item.xml" />
+	<include file="View-Jukebox.xml" />
 	<include file="View-List.xml" />
 	<include file="View-MediaInfo.xml" />
 	<include file="View-PicThumb.xml" />
@@ -1365,7 +1366,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasVideo</visible>
-			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1480,7 +1481,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasAudio</visible>
-			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![[[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)]] | Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>
