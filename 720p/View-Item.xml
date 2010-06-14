@@ -11,7 +11,7 @@
 			<visible>Control.IsVisible(590)</visible>
 		</control>
 		<control type="group">
-			<control type="largeimage">
+			<control type="image">
 				<posx>-40</posx>
 				<posy>610</posy>
 				<width>220</width>
@@ -20,7 +20,7 @@
 				<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Item</include>
 				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>-40</posx>
 				<posy>610</posy>
 				<width>220</width>

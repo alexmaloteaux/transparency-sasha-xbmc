@@ -1,49 +1,49 @@
 <includes>
 	<include name="cdart-home">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for showing cdart image</description>
 			<posx>816</posx>
 			<posy>4</posy>
 			<width>142</width>
 			<height>142</height>
-			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath,,cdart.png]</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspinhome</include>
 		</control>
 	</include>
 	<include name="cdart-musicvisualisation">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for showing cdart image</description>
 			<width>200</width>
 			<height>200</height>
 			<posx>35</posx>
 			<posy>-4</posy>
-			<texture fallback="disc.png" diffuse="disc_mask.png">$INFO[Player.FolderPath,,cdart.png]</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspin</include>
 		</control>
 	</include>
 	<include name="clearart-dialogfullscreeninfo">
-		<control type="largeimage" id="7017">
+		<control type="image" id="7017">
 			<description>dirty hack for showing clearart image (episodes in tv show folder)</description>
 			<posx>10</posx>
 			<posy>183</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Player.FolderPath,,clearart.png]</texture>
+			<texture background="true">$INFO[Player.FolderPath,,clearart.png]</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-230,0" time="300">WindowClose</animation>
 			<visible>Skin.HasSetting(ClearArt)</visible>
 		</control>
-		<control type="largeimage" id="7018">
+		<control type="image" id="7018">
 			<description>dirty hack for showing clearart image (episodes in season folders)</description>
 			<posx>10</posx>
 			<posy>183</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Player.FolderPath,,../clearart.png]</texture>
+			<texture background="true">$INFO[Player.FolderPath,,../clearart.png]</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
@@ -52,31 +52,31 @@
 		</control>
 	</include>
 	<include name="clearart-dialogseekbar">
-		<control type="largeimage" id="7019">
+		<control type="image" id="7019">
 			<description>dirty hack for showing clearart image (episodes in tv show folder)</description>
 			<posx>1</posx>
 			<posy>63</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Player.FolderPath,,clearart.png]</texture>
+			<texture background="true">$INFO[Player.FolderPath,,clearart.png]</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 		</control>
-		<control type="largeimage" id="7020">
+		<control type="image" id="7020">
 			<description>dirty hack for showing clearart image (episodes in season folders)</description>
 			<posx>1</posx>
 			<posy>63</posy>
 			<width>279</width>
 			<height>157</height>
-			<texture>$INFO[Player.FolderPath,,../clearart.png]</texture>
+			<texture background="true">$INFO[Player.FolderPath,,../clearart.png]</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 		</control>
 	</include>
 	<include name="games-thumb">
-		<control type="largeimage">
+		<control type="image">
 			<posx>10</posx>
 			<posy>414</posy>
 			<width>214</width>
@@ -105,7 +105,7 @@
 		</control>
 	</include>
 	<include name="fanart-mymusicplaylisteditor">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart in album and song view</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -117,7 +117,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart for album up icon</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -129,7 +129,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart in artist view and song up icon</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -143,7 +143,7 @@
 		</control>
 	</include>
 	<include name="fanart-mymusicsongs">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart in album and song view</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -155,7 +155,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart for album up icon</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -167,7 +167,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart in artist view and song up icon</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -181,7 +181,7 @@
 		</control>
 	</include>
 	<include name="fanart-myvideo">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart in filemode for seasons</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -194,7 +194,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>Container.Content(TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart in filemode for episode view</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -209,7 +209,7 @@
 		</control>
 	</include>
 	<include name="fanart-myvideoplaylist">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart for movies queued from filemode</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -222,7 +222,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for fanart for episodes queued from filemode</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -237,7 +237,7 @@
 		</control>
 	</include>
 	<include name="fanart-Programs_Pictures_Scripts">
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -249,7 +249,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -261,7 +261,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>dirty hack for (folder) fanart in programs pictures scripts</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -275,19 +275,19 @@
 		</control>
 	</include>
 	<include name="moviedisc-dvd-View_Icons">
-		<texture fallback="disc-dvd.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
 	</include>
 	<include name="moviedisc-bluray-View_Icons">
-		<texture fallback="disc-bluray.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
 	</include>
 	<include name="movienodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>
 	<include name="moviedisc-dvd-View_Item">
-		<texture fallback="disc-dvd.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
 	</include>
 	<include name="moviedisc-bluray-View_Item">
-		<texture fallback="disc-bluray.png" diffuse="disc_mask.png">$INFO[ListItem.Path,,disc.png]</texture>
+		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
 	</include>
 	<include name="movienodisc-View_Item">
 		<texture diffuse="disc_mask.png">disc-dvd.png</texture>
@@ -296,51 +296,51 @@
 		<texture>disc.png</texture>
 	</include>
 	<include name="musicalbumsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]$INFO[ListItem.Album,/,/cdart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]$INFO[ListItem.Album,/,/cdart.png]</texture>
 	</include>
 	<include name="musicalbumsdisc0-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]$INFO[ListItem(-1).Album,/,/cdart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]$INFO[ListItem(-1).Album,/,/cdart.png]</texture>
 	</include>
 	<include name="musicalbumsdisc1-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]$INFO[ListItem(1).Album,/,/cdart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]$INFO[ListItem(1).Album,/,/cdart.png]</texture>
 	</include>
 	<include name="musicsongsnodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>
 	<include name="musicsongsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png">$INFO[ListItem.Path,,cdart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[ListItem.Path,,cdart.png]</texture>
 	</include>
 	<include name="tvlogo-fanart">
-		<control type="largeimage">
+		<control type="image">
 			<posx>10</posx>
 			<posy>30</posy>
 			<width>230</width>
 			<height>89</height>
-			<texture>$INFO[ListItem.Path,,logo.png]</texture>
+			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
 			<visible>Container.Content(TVShows)</visible>
 		</control>
 	</include>
 	<include name="tvlogo-coverflow">
-		<control type="largeimage">
+		<control type="image">
 			<posx>1042</posx>
 			<posy>14</posy>
 			<width>230</width>
 			<height>89</height>
-			<texture>$INFO[ListItem.Path,,logo.png]</texture>
+			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
 			<visible>Container.Content(TVShows)</visible>
 		</control>
 	</include>
 	<include name="tvlogo-slide">
-		<control type="largeimage">
+		<control type="image">
 			<posx>1042</posx>
 			<posy>14</posy>
 			<width>230</width>
 			<height>89</height>
-			<texture>$INFO[ListItem.Path,,logo.png]</texture>
+			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
 			<visible>Container.Content(TVShows)</visible>

@@ -2,7 +2,7 @@
 	<defaultcontrol allways="true">6</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<control type="largeimage">
+		<control type="image">
 			<description>album and song fanart in library section</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -14,7 +14,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!IsEmpty(Fanart.Image)</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>artist fanart in library section</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -436,6 +436,7 @@
 							<width>410</width>
 							<height>30</height>
 							<font>font-20</font>
+
 							<textcolor>white</textcolor>
 							<selectedcolor>blue</selectedcolor>
 							<align>left</align>

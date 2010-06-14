@@ -50,7 +50,7 @@
 			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -61,7 +61,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)]</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>splash</description>
 			<posx>0</posx>
 			<posy>0</posy>

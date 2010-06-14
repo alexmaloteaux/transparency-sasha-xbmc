@@ -3,7 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,55,56,59,591,592</views>
 	<controls>
-		<control type="largeimage">
+		<control type="image">
 			<description>album and song level fanart</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,7 +15,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!IsEmpty(Fanart.Image) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<description>artist level fanart</description>
 			<posx>0</posx>
 			<posy>0</posy>

@@ -251,7 +251,7 @@
 						<animation effect="zoom" start="-20,-30,244,374" end="0,0,202,310" time="250">UnFocus</animation>
 						<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>9</posx>
 						<posy>63</posy>
 						<width>173</width>
@@ -263,7 +263,7 @@
 						<animation effect="zoom" start="-9,45,209,209" end="9,63,173,173" time="250">UnFocus</animation>
 						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>9</posx>
 						<posy>63</posy>
 						<width>173</width>
@@ -275,7 +275,7 @@
 						<animation effect="zoom" start="-9,45,209,209" end="9,63,173,173" time="250">UnFocus</animation>
 						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>9</posx>
 						<posy>63</posy>
 						<width>173</width>
@@ -501,7 +501,7 @@
 			<control type="group" id="7015">
 				<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
 				<visible>Container.OnNext</visible>
-				<control type="largeimage">
+				<control type="image">
 					<posx>547</posx>
 					<posy>479</posy>
 					<width>213</width>
@@ -516,7 +516,7 @@
 			<control type="group" id="7016">
 				<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
-				<control type="largeimage">
+				<control type="image">
 					<posx>547</posx>
 					<posy>479</posy>
 					<width>213</width>
@@ -530,7 +530,7 @@
 			</control>
 			<control type="group">
 				<visible>!Control.IsVisible(7015) + !Control.IsVisible(7016)</visible>
-				<control type="largeimage">
+				<control type="image">
 					<posx>547</posx>
 					<posy>479</posy>
 					<width>213</width>
@@ -658,7 +658,7 @@
 						<animation reversible="false" effect="zoom" end="0,40,192,168" start="-39,7,268,234" time="250">UnFocus</animation>
 						<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>30</posx>
 						<posy>49</posy>
 						<width>152</width>

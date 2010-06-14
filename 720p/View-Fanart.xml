@@ -1370,7 +1370,7 @@
 				<texture background="true">$INFO[Listitem.Icon]</texture>
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>16</posx>
 				<posy>491</posy>
 				<width>218</width>
@@ -1380,7 +1380,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(Container.FolderPath,Games) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>10</posx>
 				<posy>414</posy>
 				<width>214</width>
@@ -1389,7 +1389,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(Container.FolderName,Games) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>10</posx>
 				<posy>414</posy>
 				<width>214</width>
@@ -1607,12 +1607,12 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<control type="largeimage">
+			<control type="image">
 				<posx>34</posx>
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio aligny="center">keep</aspectratio>
 			</control>
 		</control>

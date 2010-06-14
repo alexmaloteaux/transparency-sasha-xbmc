@@ -179,7 +179,7 @@
 		<onfocus>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onfocus>
 	</include>
 	<include name="recentlyfanartmovies">
-		<control type="largeimage" id="7021">
+		<control type="image" id="7021">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -192,7 +192,7 @@
 		</control>
 	</include>
 	<include name="recentlyfanartepisodes">
-		<control type="largeimage" id="7022">
+		<control type="image" id="7022">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -205,7 +205,7 @@
 		</control>
 	</include>
 	<include name="recentlyfanartalbums">
-		<control type="largeimage" id="7023">
+		<control type="image" id="7023">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -1219,7 +1219,7 @@
 				<height>124</height>
 				<texture>gamecase-shadow.png</texture>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>933</posx>
 				<posy>31</posy>
 				<width>78</width>
@@ -1402,7 +1402,7 @@
 				<height>127</height>
 				<texture border="10">video-shadow.png</texture>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>820</posx>
 				<posy>32</posy>
 				<width>195</width>
@@ -1578,7 +1578,7 @@
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>896</posx>
 				<posy>31</posy>
 				<width>112</width>

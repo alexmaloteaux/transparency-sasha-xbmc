@@ -28,7 +28,7 @@
 				<height>243</height>
 				<texture>jukebox-fanart-fallback.png</texture>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<description>album and song level fanart</description>
 				<posx>409</posx>
 				<posy>154</posy>
@@ -40,7 +40,7 @@
 				<include>VisibleFadeEffect4</include>
 				<visible>!Player.HasAudio</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<description>artist level fanart</description>
 				<posx>409</posx>
 				<posy>154</posy>
@@ -52,7 +52,7 @@
 				<include>VisibleFadeEffect4</include>
 				<visible>!Player.HasAudio</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<description>musicplayer fanart</description>
 				<posx>409</posx>
 				<posy>154</posy>

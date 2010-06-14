@@ -1,13 +1,13 @@
 <window type="buttonMenu" id="111">
 	<defaultcontrol>36</defaultcontrol>
 	<controls>
-		<control type="largeimage">
+		<control type="image">
 			<description>shutdown</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>special://skin/images/backgrounds/shutdown.jpg</texture>
+			<texture background="true">special://skin/images/backgrounds/shutdown.jpg</texture>
 			<aspectratio>scale</aspectratio>
 			<animation effect="fade" start="0" end="70" time="400">WindowOpen</animation>
 			<animation effect="fade" start="70" end="0" time="400">WindowClose</animation>
@@ -205,6 +205,7 @@
 					<control type="button" id="35">
 						<description>Cancel ShutdownTimer button</description>
 						<posx>0</posx>
+
 						<posy>0</posy>
 						<width>80</width>
 						<height>81</height>
