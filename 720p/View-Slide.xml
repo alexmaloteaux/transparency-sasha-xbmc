@@ -749,7 +749,7 @@
 				<height>127</height>
 				<texture>case-dvd.png</texture>
 				<animation reversible="false" effect="zoom" start="187,110,82,127" end="265,102,88,135" time="250">Hidden</animation>
-				<visible>Container.Content(Movies) + Container(596).OnPrevious + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>Container.Content(Movies) + Container(596).OnPrevious + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>187</posx>
@@ -758,7 +758,7 @@
 				<height>127</height>
 				<texture>case-bluray.png</texture>
 				<animation reversible="false" effect="zoom" start="187,110,82,127" end="265,102,88,135" time="250">Hidden</animation>
-				<visible>Container.Content(Movies) + Container(596).OnPrevious + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>Container.Content(Movies) + Container(596).OnPrevious + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>187</posx>
