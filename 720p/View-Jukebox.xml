@@ -17,7 +17,7 @@
 				<height>1648</height>
 				<texture>jukebox-background.jpg</texture>
 				<animation effect="fade" start="0" end ="80" time="1000" reversible="true">Visible</animation>
-				<animation effect="fade" start="80" end ="0" time="300" reversible="true">Hidden</animation>
+				<animation effect="fade" start="80" end ="0" time="500" reversible="true">Hidden</animation>
 				<animation effect="rotate" end="-3600" center="auto" time="1000000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
 				<visible>Player.Playing</visible>
 			</control>
@@ -37,7 +37,7 @@
 				<texture background="true">$INFO[Fanart.Image]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>VisibleFadeEffect</include>
+				<include>VisibleFadeEffect4</include>
 				<visible>!Player.HasAudio</visible>
 			</control>
 			<control type="largeimage">
@@ -49,7 +49,7 @@
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>VisibleFadeEffect</include>
+				<include>VisibleFadeEffect4</include>
 				<visible>!Player.HasAudio</visible>
 			</control>
 			<control type="largeimage">
@@ -61,39 +61,39 @@
 				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>VisibleFadeEffect</include>
+				<include>VisibleFadeEffect4</include>
 				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="image">
-				<posx>442</posx>
-				<posy>418</posy>
-				<width>110</width>
-				<height>110</height>
+				<posx>434</posx>
+				<posy>405</posy>
+				<width>132</width>
+				<height>132</height>
 				<texture>jukebox-icon-fallback.png</texture>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>420</posy>
-				<width>107</width>
-				<height>107</height>
+				<posx>434</posx>
+				<posy>405</posy>
+				<width>132</width>
+				<height>132</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..) | !Container.Content(Albums)</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>420</posy>
-				<width>107</width>
-				<height>107</height>
+				<posx>434</posx>
+				<posy>405</posy>
+				<width>132</width>
+				<height>132</height>
 				<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Albums)</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>420</posy>
-				<width>107</width>
-				<height>107</height>
+				<posx>434</posx>
+				<posy>405</posy>
+				<width>132</width>
+				<height>132</height>
 				<texture background="true">$INFO[MusicPlayer.Cover]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>Player.HasAudio</visible>
@@ -250,6 +250,7 @@
 				<height>150</height>
 				<texture>jukebox-light-top.png</texture>
 				<animation effect="fade" start="0" end="100" time="1400" pulse="true" tween="bounce" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -259,6 +260,7 @@
 				<height>430</height>
 				<texture>jukebox-light-upper.png</texture>
 				<animation effect="fade" start="0" end="70" time="600" delay="600" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -268,6 +270,7 @@
 				<height>321</height>
 				<texture>jukebox-light-inner.png</texture>
 				<animation effect="fade" start="0" end="60" time="800" delay="1200" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -277,6 +280,7 @@
 				<height>24</height>
 				<texture>jukebox-light.png</texture>
 				<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -286,6 +290,7 @@
 				<height>24</height>
 				<texture>jukebox-light.png</texture>
 				<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -295,6 +300,7 @@
 				<height>24</height>
 				<texture>jukebox-light.png</texture>
 				<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -304,6 +310,7 @@
 				<height>24</height>
 				<texture>jukebox-light.png</texture>
 				<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -313,6 +320,7 @@
 				<height>203</height>
 				<texture>jukebox-light-bottomleft2.png</texture>
 				<animation effect="fade" start="0" end="100" time="1100" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -322,6 +330,7 @@
 				<height>196</height>
 				<texture>jukebox-light-bottomleft1.png</texture>
 				<animation effect="fade" start="0" end="100" time="1300" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -331,6 +340,7 @@
 				<height>193</height>
 				<texture>jukebox-light-bottomright1.png</texture>
 				<animation effect="fade" start="0" end="100" time="1800" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -340,12 +350,14 @@
 				<height>197</height>
 				<texture>jukebox-light-bottomright2.png</texture>
 				<animation effect="fade" start="0" end="100" time="1000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				<visible>Player.Playing</visible>
 			</control>
 		</control>
 		<control type="group">
 			<posx>638</posx>
 			<posy>434</posy>
+			<animation effect="fade" time="50" delay="300">Hidden</animation>
 			<visible>Control.IsVisible(591) + !Player.HasAudio</visible>
 			<control type="label">
 				<posx>0</posx>
@@ -384,6 +396,7 @@
 		<control type="group">
 			<posx>638</posx>
 			<posy>434</posy>
+			<animation effect="fade" time="50" delay="300">Hidden</animation>
 			<visible>Control.IsVisible(591) + Player.HasAudio</visible>
 			<control type="label">
 				<posx>0</posx>
@@ -420,15 +433,17 @@
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>-4</posx>
-				<posy>78</posy>
-				<width>196</width>
-				<height>4</height>
+				<posx>0</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>3</height>
+				<texturebg>jukebox-progress-back.png</texturebg>
+				<midtexture>jukebox-progress-mid.png</midtexture>
 				<info>Player.Progress</info>
 			</control>
 		</control>
 		<control type="group">
-			<posx>574</posx>
+			<posx>582</posx>
 			<posy>420</posy>
 			<visible>Control.IsVisible(591)</visible>
 			<control type="togglebutton" id="1001">
