@@ -1882,6 +1882,7 @@
 						<include>ButtonScroll</include>
 					</control>
 
+
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
@@ -2916,6 +2917,7 @@
 					</control>
 					<control type="button" id="607">
 						<posx>360</posx>
+
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
@@ -3163,67 +3165,67 @@
 					</control>
 					<control type="label">
 						<label>20045</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(602)</visible>
 					</control>
 					<control type="label">
 						<label>20126</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(603)</visible>
 					</control>
 					<control type="label">
 						<label>130</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(604)</visible>
 					</control>
 					<control type="label">
 						<label>7</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(605)</visible>
 					</control>
 					<control type="label">
 						<label>$LOCALIZE[13012] XBMC</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(606)</visible>
 					</control>
 					<control type="label">
 						<label>$LOCALIZE[13313] XBMC</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(607)</visible>
 					</control>
 					<control type="label">
 						<label>13005</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(608)</visible>
 					</control>
 					<control type="label">
 						<label>13011</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(609)</visible>
 					</control>
 					<control type="label">
 						<label>13010</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(610)</visible>
 					</control>
 					<control type="label">
 						<label>1036</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(611)</visible>
 					</control>
 					<control type="label">
 						<label>13013</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(612)</visible>
 					</control>
 					<control type="label">
 						<label>5</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(613)</visible>
 					</control>
 					<control type="label">
 						<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-						<include>ShutdownLabel</include>
+						<include>ShutdownMenuLabel</include>
 						<visible>Control.HasFocus(614)</visible>
 					</control>
 				</control>
@@ -5492,6 +5494,7 @@
 					</control>
 				</control>				
 				<control type="grouplist" id="8200">
+
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom1) + Skin.String(MoviesCustom,1)</visible>
 					<posy>463</posy>
 					<include>SettingsMenuList3</include>
@@ -7361,6 +7364,7 @@
 					<posy>401</posy>
 					<width>25</width>
 					<height>19</height>
+
 					<texture>nav-right.png</texture>
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + [[Skin.HasSetting(Menu_TVShows_Sub_Custom1) + Skin.String(TVShowsCustom,1)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom2) + Skin.String(TVShowsCustom,2)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom3) + Skin.String(TVShowsCustom,3)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom4) + Skin.String(TVShowsCustom,4)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom5) + Skin.String(TVShowsCustom,5)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom6) + Skin.String(TVShowsCustom,6)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom7) + Skin.String(TVShowsCustom,7)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom8) + Skin.String(TVShowsCustom,8)]]</visible>
 					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(TVShowsCustom,2)">Conditional</animation>
