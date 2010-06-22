@@ -1761,7 +1761,6 @@
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
-			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Scripts)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_PlayDisc)">Conditional</animation>
@@ -1793,7 +1792,6 @@
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
-			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Scripts)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_PlayDisc)">Conditional</animation>
@@ -1937,13 +1935,6 @@
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Programs)</visible>
 				</item>
-				<item id="9">
-					<label>247</label>
-					<onclick>ActivateWindow(Scripts)</onclick>
-					<icon>special://skin/images/backgrounds/scripts.jpg</icon>
-					<thumb>$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</thumb>
-					<visible>!Skin.HasSetting(Menu_Scripts)</visible>
-				</item>
 				<item id="10">
 					<label>8</label>
 					<onclick>ActivateWindow(Weather)</onclick>
@@ -1988,7 +1979,6 @@
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
-			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Scripts)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_PlayDisc)">Conditional</animation>
@@ -2246,13 +2236,6 @@
 					<icon>special://skin/images/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Programs)</visible>
-				</item>
-				<item id="9">
-					<label>247</label>
-					<onclick>ActivateWindow(Scripts)</onclick>
-					<icon>special://skin/images/backgrounds/scripts.jpg</icon>
-					<thumb>$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</thumb>
-					<visible>!Skin.HasSetting(Menu_Scripts)</visible>
 				</item>
 				<item id="10">
 					<label>8</label>
@@ -3078,61 +3061,6 @@
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom18_Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom18)</visible>
-					</item>
-				</content>
-			</control>
-			<control type="fixedlist" id="8001">
-				<visible>Skin.HasSetting(Menu_Scripts_Sub) + Container(5040).HasFocus(9)</visible>
-				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
-				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
-				<content>
-					<item id="8102">
-						<description>Menu Scripts Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom1_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom1_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom1)</visible>
-					</item>
-					<item id="8103">
-						<description>Menu Scripts Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom2_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom2_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom2)</visible>
-					</item>
-					<item id="8104">
-						<description>Menu Scripts Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom3_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom3_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom3)</visible>
-					</item>
-					<item id="8105">
-						<description>Menu Scripts Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom4_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom4_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom4)</visible>
-					</item>
-					<item id="8106">
-						<description>Menu Scripts Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom5_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Scripts_Sub_Custom5_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom5)</visible>
-					</item>
-					<item id="8107">
-						<description>Menu Scripts Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Scripts_Sub_Custom6_Path)]</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom6)</visible>
-					</item>
-					<item id="8108">
-						<description>Menu Scripts Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Scripts_Sub_Custom7_Path)]</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom7)</visible>
-					</item>
-					<item id="8109">
-						<description>Menu Scripts Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Scripts_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Scripts_Sub_Custom8_Path)]</onclick>
-						<visible>Skin.HasSetting(Menu_Scripts_Sub_Custom8)</visible>
 					</item>
 				</content>
 			</control>
