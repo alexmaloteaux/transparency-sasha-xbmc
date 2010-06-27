@@ -5268,7 +5268,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Movies_Sub_Custom1_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Movies_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5287,7 +5287,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Movies_Sub_Custom2_Path)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5306,7 +5306,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Movies_Sub_Custom3_Path)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5325,7 +5325,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Movies_Sub_Custom4_Path)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5345,7 +5345,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Movies_Sub_Custom5_Path)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5424,7 +5424,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_TVShows_Sub_Custom1_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5443,7 +5443,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_TVShows_Sub_Custom2_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5462,7 +5462,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_TVShows_Sub_Custom3_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5481,7 +5481,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_TVShows_Sub_Custom4_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5501,7 +5501,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_TVShows_Sub_Custom5_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5580,7 +5580,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_MusicVideos_Sub_Custom1_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5599,7 +5599,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_MusicVideos_Sub_Custom2_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5618,7 +5618,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_MusicVideos_Sub_Custom3_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5637,7 +5637,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_MusicVideos_Sub_Custom4_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5657,7 +5657,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_MusicVideos_Sub_Custom5_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5796,7 +5796,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Music_Sub_Custom1_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5815,7 +5815,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Music_Sub_Custom2_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5834,7 +5834,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Music_Sub_Custom3_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5853,7 +5853,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Music_Sub_Custom4_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5873,7 +5873,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Music_Sub_Custom5_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6048,7 +6048,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom6_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom6_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom6_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6067,7 +6067,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom7_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom7_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom7_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6086,7 +6086,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom8_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom8_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom8_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6105,7 +6105,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom9_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom9_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom9_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6125,7 +6125,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom10_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom10_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom10_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6395,7 +6395,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom11_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Programs_Sub_Custom11_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom11_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6414,7 +6414,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom12_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Programs_Sub_Custom12_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom12_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6433,7 +6433,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom13_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Programs_Sub_Custom13_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom13_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6452,7 +6452,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom14_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Programs_Sub_Custom14_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom14_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6472,7 +6472,7 @@
 						<label>[B]- $LOCALIZE[31152][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom15_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Programs_Sub_Custom15_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom15_Path,xbmc.python.pluginsource)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
