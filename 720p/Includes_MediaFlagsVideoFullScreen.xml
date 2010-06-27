@@ -137,27 +137,27 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-g.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,Rated G)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated G) | substring(VideoPlayer.Mpaa,Rated: G)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-pg.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,Rated PG) + !substring(VideoPlayer.Mpaa,Rated PG-13)</visible>
+			<visible>[substring(VideoPlayer.Mpaa,Rated PG) | substring(VideoPlayer.Mpaa,Rated: PG)] + !substring(VideoPlayer.Mpaa,Rated PG-13) + !substring(VideoPlayer.Mpaa,Rated: PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-pg13.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,Rated PG-13)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated PG-13) | substring(VideoPlayer.Mpaa,Rated: PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-r.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,Rated R)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated R) | substring(VideoPlayer.Mpaa,Rated: R)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-nc17.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,Rated NC-17)</visible>
+			<visible>substring(VideoPlayer.Mpaa,Rated NC-17) | substring(VideoPlayer.Mpaa,Rated: NC-17)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>

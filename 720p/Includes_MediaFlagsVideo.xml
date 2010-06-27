@@ -169,27 +169,27 @@
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-g.png</texture>
-			<visible>substring(ListItem.Mpaa,Rated G)</visible>
+			<visible>substring(ListItem.Mpaa,Rated G) | substring(ListItem.Mpaa,Rated: G)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-pg.png</texture>
-			<visible>substring(ListItem.Mpaa,Rated PG) + !substring(ListItem.Mpaa,Rated PG-13)</visible>
+			<visible>[substring(ListItem.Mpaa,Rated PG) | substring(ListItem.Mpaa,Rated: PG)] + !substring(ListItem.Mpaa,Rated PG-13) + !substring(ListItem.Mpaa,Rated: PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-pg13.png</texture>
-			<visible>substring(ListItem.Mpaa,Rated PG-13)</visible>
+			<visible>substring(ListItem.Mpaa,Rated PG-13) | substring(ListItem.Mpaa,Rated: PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-r.png</texture>
-			<visible>substring(ListItem.Mpaa,Rated R)</visible>
+			<visible>substring(ListItem.Mpaa,Rated R) | substring(ListItem.Mpaa,Rated: R)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-nc17.png</texture>
-			<visible>substring(ListItem.Mpaa,Rated NC-17)</visible>
+			<visible>substring(ListItem.Mpaa,Rated NC-17) | substring(ListItem.Mpaa,Rated: NC-17)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
