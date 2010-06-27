@@ -2296,7 +2296,7 @@
 					<item id="8102">
 						<description>Menu Videos Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
-						<onclick>ActivateWindow(VideoFiles,plugin://video/)</onclick>
+						<onclick>ActivateWindow(VideoFiles,Addons)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_VideoPlugins)</visible>
 					</item>
 					<item id="8103">
@@ -2429,7 +2429,7 @@
 					<item id="8113">
 						<description>Menu Movies Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
-						<onclick>ActivateWindow(VideoLibrary,plugin://video/,return)</onclick>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_VideoPlugins)</visible>
 					</item>
 					<item id="8114">
@@ -2532,7 +2532,7 @@
 					<item id="8107">
 						<description>Menu TVShows Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
-						<onclick>ActivateWindow(VideoLibrary,plugin://video/,return)</onclick>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_VideoPlugins)</visible>
 					</item>
 					<item id="8108">
@@ -2629,7 +2629,7 @@
 					<item id="8108">
 						<description>Menu MusicVideos Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
-						<onclick>ActivateWindow(VideoLibrary,plugin://video/,return)</onclick>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_MusicVideos_Sub_VideoPlugins)</visible>
 					</item>
 					<item id="8109">
@@ -2787,7 +2787,7 @@
 					<item id="8114">
 						<description>Menu Music Sub MusicPlugins</description>
 						<label>$LOCALIZE[1038]</label>
-						<onclick>ActivateWindow(MusicLibrary,plugin://music/,return)</onclick>
+						<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Music_Sub_MusicPlugins)</visible>
 					</item>
 					<item id="8113">
@@ -2860,7 +2860,7 @@
 					<item id="8102">
 						<description>Menu Pictures Sub PicturePlugins</description>
 						<label>$LOCALIZE[1039]</label>
-						<onclick>ActivateWindow(Pictures,plugin://pictures/)</onclick>
+						<onclick>ActivateWindow(Pictures,Addons)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_PicturePlugins)</visible>
 					</item>
 					<item id="8103">
@@ -2951,7 +2951,7 @@
 					<item id="8102">
 						<description>Menu Programs Sub ProgramPlugins</description>
 						<label>$LOCALIZE[1043]</label>
-						<onclick>ActivateWindow(Programs,plugin://programs/)</onclick>
+						<onclick>ActivateWindow(Programs,Addons)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_ProgramPlugins)</visible>
 					</item>
 					<item id="8103">
