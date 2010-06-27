@@ -2363,7 +2363,7 @@
 					<item id="8102">
 						<description>Menu Movies Sub Files</description>
 						<label>$LOCALIZE[744]</label>
-						<onclick>ActivateWindow(VideoFiles,,return)</onclick>
+						<onclick>ActivateWindow(VideoFiles)</onclick>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Files)</visible>
 					</item>
 					<item id="8103">
@@ -2715,7 +2715,7 @@
 					<item id="8102">
 						<description>Menu Music Sub Files</description>
 						<label>$LOCALIZE[744]</label>
-						<onclick>ActivateWindow(MusicFiles,,return)</onclick>
+						<onclick>ActivateWindow(MusicFiles)</onclick>
 						<visible>!Skin.HasSetting(Menu_Music_Sub_Files)</visible>
 					</item>
 					<item id="8103">
