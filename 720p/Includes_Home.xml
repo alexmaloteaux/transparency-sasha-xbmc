@@ -2296,43 +2296,43 @@
 					<item id="8102">
 						<description>Menu Videos Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
-						<onclick>ActivateWindow(VideoFiles,Addons)</onclick>
+						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_VideoPlugins)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Videos Sub Recordings</description>
 						<label>$LOCALIZE[20007]</label>
-						<onclick>ActivateWindow(VideoFiles,Recordings)</onclick>
+						<onclick>ActivateWindow(VideoFiles,Recordings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Recordings)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Videos Sub Custom1</description>
 						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom1_Label)]</label>
-						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom1_Path)])</onclick>
+						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom1)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Videos Sub Custom2</description>
 						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom2_Label)]</label>
-						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom2_Path)])</onclick>
+						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom2_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom2)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Videos Sub Custom3</description>
 						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom3_Label)]</label>
-						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom3_Path)])</onclick>
+						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom3_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom3)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Videos Sub Custom4</description>
 						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom4_Label)]</label>
-						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom4_Path)])</onclick>
+						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom4_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom4)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Videos Sub Custom5</description>
 						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom5_Label)]</label>
-						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom5_Path)])</onclick>
+						<onclick>ActivateWindow(VideoFiles,$INFO[Skin.String(Menu_Videos_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom5)</visible>
 					</item>
 					<item id="8109">
@@ -2363,7 +2363,7 @@
 					<item id="8102">
 						<description>Menu Movies Sub Files</description>
 						<label>$LOCALIZE[744]</label>
-						<onclick>ActivateWindow(VideoFiles)</onclick>
+						<onclick>ActivateWindow(VideoFiles,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Files)</visible>
 					</item>
 					<item id="8103">
@@ -2441,7 +2441,7 @@
 					<item id="8115">
 						<description>Menu Movies Sub VideoPartyMode</description>
 						<label>$LOCALIZE[589]</label>
-						<onclick>PlayerControl(Partymode(video))</onclick>
+						<onclick>PlayerControl(Partymode(video),return)</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_VideoPartyMode)</visible>
 					</item>
 					<item id="8116">
@@ -2715,7 +2715,7 @@
 					<item id="8102">
 						<description>Menu Music Sub Files</description>
 						<label>$LOCALIZE[744]</label>
-						<onclick>ActivateWindow(MusicFiles)</onclick>
+						<onclick>ActivateWindow(MusicFiles,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_Music_Sub_Files)</visible>
 					</item>
 					<item id="8103">
@@ -2799,7 +2799,7 @@
 					<item id="8114">
 						<description>Menu Music Sub MusicPartyMode</description>
 						<label>$LOCALIZE[589]</label>
-						<onclick>PlayerControl(Partymode(music))</onclick>
+						<onclick>PlayerControl(Partymode(music),return)</onclick>
 						<visible>Skin.HasSetting(Menu_Music_Sub_MusicPartyMode)</visible>
 					</item>
 					<item id="8115">
@@ -2860,37 +2860,37 @@
 					<item id="8102">
 						<description>Menu Pictures Sub PicturePlugins</description>
 						<label>$LOCALIZE[1039]</label>
-						<onclick>ActivateWindow(Pictures,Addons)</onclick>
+						<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_PicturePlugins)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Pictures Sub Custom1</description>
 						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Label)]</label>
-						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Path)])</onclick>
+						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom1)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Pictures Sub Custom2</description>
 						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Label)]</label>
-						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Path)])</onclick>
+						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom2)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Pictures Sub Custom3</description>
 						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Label)]</label>
-						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Path)])</onclick>
+						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom3)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Pictures Sub Custom4</description>
 						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Label)]</label>
-						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Path)])</onclick>
+						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom4)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Pictures Sub Custom5</description>
 						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Label)]</label>
-						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Path)])</onclick>
+						<onclick>ActivateWindow(Pictures,$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom5)</visible>
 					</item>
 					<item id="8108">
@@ -2951,67 +2951,67 @@
 					<item id="8102">
 						<description>Menu Programs Sub ProgramPlugins</description>
 						<label>$LOCALIZE[1043]</label>
-						<onclick>ActivateWindow(Programs,Addons)</onclick>
+						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_ProgramPlugins)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Programs Sub Custom1</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom1_Label)]</label>
-						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom1_Path)])</onclick>
+						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom1)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Programs Sub Custom2</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom2_Label)]</label>
-						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom2_Path)])</onclick>
+						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom2_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom2)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Programs Sub Custom3</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom3_Label)]</label>
-						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom3_Path)])</onclick>
+						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom3_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom3)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Programs Sub Custom4</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom4_Label)]</label>
-						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom4_Path)])</onclick>
+						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom4_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom4)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Programs Sub Custom5</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom5_Label)]</label>
-						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom5_Path)])</onclick>
+						<onclick>ActivateWindow(Programs,$INFO[Skin.String(Menu_Programs_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom5)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Programs Sub Custom6</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom6_Label)]</label>
-						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom6)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Programs Sub Custom7</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom7_Label)]</label>
-						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom7)</visible>
 					</item>
 					<item id="81010">
 						<description>Menu Programs Sub Custom8</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom8_Label)]</label>
-						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom8)</visible>
 					</item>
 					<item id="81011">
 						<description>Menu Programs Sub Custom9</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom9_Label)]</label>
-						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom9)</visible>
 					</item>
 					<item id="81012">
 						<description>Menu Programs Sub Custom10</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom10_Label)]</label>
-						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)])</onclick>
+						<onclick>System.Exec($INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom10)</visible>
 					</item>
 					<item id="8113">
@@ -3072,19 +3072,19 @@
 					<item id="8102">
 						<description>Menu Weather Sub Custom1</description>
 						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
+						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom1)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Weather Sub Custom2</description>
 						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
+						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom2)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Weather Sub Custom3</description>
 						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)])</onclick>
+						<onclick>RunScript($INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom3)</visible>
 					</item>
 					<item id="8105">
@@ -3152,79 +3152,79 @@
 					<item id="8102">
 						<description>Menu Settings Sub Skin Settings</description>
 						<label>$LOCALIZE[20077]</label>
-						<onclick>ActivateWindow(1111)</onclick>
+						<onclick>ActivateWindow(1111),return</onclick>
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_SkinSettings)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Settings Sub Videos</description>
 						<label>$LOCALIZE[3]</label>
-						<onclick>ActivateWindow(VideosSettings)</onclick>
+						<onclick>ActivateWindow(VideosSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Videos)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Settings Sub TV</description>
 						<label>$LOCALIZE[31500]</label>
-						<onclick>ActivateWindow(TVSettings)</onclick>
+						<onclick>ActivateWindow(TVSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_TV)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Settings Sub Music</description>
 						<label>$LOCALIZE[2]</label>
-						<onclick>ActivateWindow(MusicSettings)</onclick>
+						<onclick>ActivateWindow(MusicSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Music)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Settings Sub Pictures</description>
 						<label>$LOCALIZE[1]</label>
-						<onclick>ActivateWindow(PicturesSettings)</onclick>
+						<onclick>ActivateWindow(PicturesSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Pictures)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Settings Sub Weather</description>
 						<label>$LOCALIZE[8]</label>
-						<onclick>ActivateWindow(WeatherSettings)</onclick>
+						<onclick>ActivateWindow(WeatherSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Weather)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Settings Sub System</description>
 						<label>$LOCALIZE[13000]</label>
-						<onclick>ActivateWindow(SystemSettings)</onclick>
+						<onclick>ActivateWindow(SystemSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_System)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Settings Sub Network</description>
 						<label>$LOCALIZE[705]</label>
-						<onclick>ActivateWindow(NetworkSettings)</onclick>
+						<onclick>ActivateWindow(NetworkSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Network)</visible>
 					</item>
 					<item id="8110">
 						<description>Menu Settings Sub Profiles</description>
 						<label>$LOCALIZE[13200]</label>
-						<onclick>ActivateWindow(Profiles)</onclick>
+						<onclick>ActivateWindow(Profiles,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Profiles)</visible>
 					</item>
 					<item id="8111">
 						<description>Menu Settings Sub Appearance</description>
 						<label>$LOCALIZE[480]</label>
-						<onclick>ActivateWindow(AppearanceSettings)</onclick>
+						<onclick>ActivateWindow(AppearanceSettings,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Appearance)</visible>
 					</item>
 					<item id="8112">
 						<description>Menu Settings Sub Addons</description>
 						<label>$LOCALIZE[24001]</label>
-						<onclick>ActivateWindow(AddonBrowser)</onclick>
+						<onclick>ActivateWindow(AddonBrowser,return)</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Addons)</visible>
 					</item>
 					<item id="8113">
 						<description>Menu Settings Sub System Info</description>
 						<label>$LOCALIZE[130]</label>
-						<onclick>ActivateWindow(SystemInfo)</onclick>
+						<onclick>ActivateWindow(SystemInfo,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_SystemInfo)</visible>
 					</item>
 					<item id="8114">
 						<description>Menu Settings Sub File Manager</description>
 						<label>$LOCALIZE[10003]</label>
-						<onclick>ActivateWindow(FileManager)</onclick>
+						<onclick>ActivateWindow(FileManager,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_Settings_Sub_FileManager)</visible>
 					</item>
 					<item id="8115">
@@ -3261,7 +3261,7 @@
 					<item id="8103">
 						<description>Menu PlayDisc Sub Eject</description>
 						<label>$LOCALIZE[13391]</label>
-						<onclick>EjectTray()</onclick>
+						<onclick>EjectTray</onclick>
 						<visible>!Skin.HasSetting(Menu_PlayDisc_Sub_Eject)</visible>
 					</item>
 					<item id="8104">
