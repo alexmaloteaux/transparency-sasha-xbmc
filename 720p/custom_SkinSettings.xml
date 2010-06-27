@@ -4494,9 +4494,9 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs)</visible>
 					<posx>460</posx>
-					<posy>130</posy>
+					<posy>43</posy>
 					<width>350</width>
-					<height>578</height>
+					<height>690</height>
 					<itemgap>-2</itemgap>
 					<pagecontrol>-</pagecontrol>
 					<onleft>801</onleft>
@@ -4661,7 +4661,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu Programs Sub Custom16</description>
-						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,16)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom16)</onclick>
@@ -4670,7 +4670,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu Programs Sub Custom17</description>
-						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,17)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom17)</onclick>
@@ -4679,11 +4679,47 @@
 					</control>
 					<control type="radiobutton" id="8120">
 						<description>Menu Programs Sub Custom18</description>
-						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31408] 3$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,18)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom18)</onclick>
 						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom18)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8121">
+						<description>Menu Programs Sub Custom19</description>
+						<label>[B]$LOCALIZE[31408] 4$INFO[Skin.String(Menu_Programs_Sub_Custom19_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,19)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom19)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom19)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8122">
+						<description>Menu Programs Sub Custom20</description>
+						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Programs_Sub_Custom20_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,20)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom20)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom20)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8123">
+						<description>Menu Programs Sub Custom21</description>
+						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Programs_Sub_Custom21_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,21)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom21)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom21)</selected>
+						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8124">
+						<description>Menu Programs Sub Custom22</description>
+						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Programs_Sub_Custom22_Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(ProgramsCustom,22)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom22)</onclick>
+						<selected>Skin.HasSetting(Menu_Programs_Sub_Custom22)</selected>
 						<enable>Skin.HasSetting(Menu_Programs_Sub)</enable>
 					</control>
 				</control>
@@ -6190,7 +6226,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)</visible>
-					<posy>186</posy>
+					<posy>99</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom1 Label</description>
@@ -6209,7 +6245,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)</visible>
-					<posy>214</posy>
+					<posy>127</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom2 Label</description>
@@ -6228,7 +6264,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)</visible>
-					<posy>242</posy>
+					<posy>155</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom3 Label</description>
@@ -6247,7 +6283,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)</visible>
-					<posy>270</posy>
+					<posy>183</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom4 Label</description>
@@ -6266,7 +6302,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)</visible>
-					<posy>298</posy>
+					<posy>211</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom5 Label</description>
@@ -6286,7 +6322,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)</visible>
-					<posy>326</posy>
+					<posy>239</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom6 Label</description>
@@ -6305,7 +6341,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)</visible>
-					<posy>354</posy>
+					<posy>267</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom7 Label</description>
@@ -6324,7 +6360,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)</visible>
-					<posy>382</posy>
+					<posy>295</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom8 Label</description>
@@ -6343,7 +6379,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)</visible>
-					<posy>410</posy>
+					<posy>323</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom9 Label</description>
@@ -6362,7 +6398,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)</visible>
-					<posy>438</posy>
+					<posy>351</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom10 Label</description>
@@ -6381,7 +6417,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)</visible>
-					<posy>466</posy>
+					<posy>379</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom11 Label</description>
@@ -6400,7 +6436,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)</visible>
-					<posy>494</posy>
+					<posy>407</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom12 Label</description>
@@ -6419,7 +6455,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)</visible>
-					<posy>522</posy>
+					<posy>435</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom13 Label</description>
@@ -6438,7 +6474,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)</visible>
-					<posy>550</posy>
+					<posy>463</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom14 Label</description>
@@ -6457,7 +6493,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)</visible>
-					<posy>578</posy>
+					<posy>491</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom15 Label</description>
@@ -6477,10 +6513,11 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)</visible>
-					<posy>606</posy>
+					<posy>519</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom16 Label</description>
+						<width>400</width>
 						<label>[B]- $LOCALIZE[31150][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
@@ -6488,19 +6525,19 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom16 Path</description>
-						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom16_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Programs_Sub_Custom16_Path)</onclick>
-						<onclick>ActivateWindow(1114)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom16_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)</visible>
-					<posy>634</posy>
+					<posy>547</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom17 Label</description>
+						<width>400</width>
 						<label>[B]- $LOCALIZE[31150][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
@@ -6508,19 +6545,19 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom17 Path</description>
-						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom17_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Programs_Sub_Custom17_Path)</onclick>
-						<onclick>ActivateWindow(1114)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom17_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)</visible>
-					<posy>662</posy>
+					<posy>575</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom18 Label</description>
+						<width>400</width>
 						<label>[B]- $LOCALIZE[31150][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
@@ -6528,10 +6565,89 @@
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom18 Path</description>
-						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom18_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Programs_Sub_Custom18_Path)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom18_Path,xbmc.python.script)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom19) + Skin.String(ProgramsCustom,19)</visible>
+					<posy>603</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom19 Label</description>
+						<width>400</width>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom19_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom19_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom19 Path</description>
+						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom19_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom19_Path,xbmc.python.script)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom20) + Skin.String(ProgramsCustom,20)</visible>
+					<posy>631</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom20 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom20_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom20_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom20 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom20_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Programs_Sub_Custom20_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom21) + Skin.String(ProgramsCustom,21)</visible>
+					<posy>659</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom21 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom21_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom21_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom21 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom21_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Programs_Sub_Custom21_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + Skin.HasSetting(Menu_Programs_Sub_Custom22) + Skin.String(ProgramsCustom,22)</visible>
+					<posy>659</posy>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Programs Sub Custom22 Label</description>
+						<label>[B]- $LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom22_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Programs_Sub_Custom22_Label)</onclick>
+					</control>
+					<control type="button" id="8202">
+						<description>Menu Programs Sub Custom22 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom22_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Programs_Sub_Custom22_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
 					</control>
 				</control>
@@ -6551,7 +6667,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom1_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom1_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6570,7 +6686,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom2_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom2_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6589,7 +6705,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_Weather_Sub_Custom3_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom3_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6828,7 +6944,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom1_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_PlayDisc_Sub_Custom1_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6847,7 +6963,7 @@
 						<label>[B]- $LOCALIZE[31204][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetFile(Menu_PlayDisc_Sub_Custom2_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_PlayDisc_Sub_Custom2_Path,xbmc.python.script)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -7037,11 +7153,11 @@
 				</control>
 				<control type="image">
 					<posx>810</posx>
-					<posy>192</posy>
+					<posy>105</posy>
 					<width>25</width>
 					<height>19</height>
 					<texture>nav-right.png</texture>
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + [[Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)] | [Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)] | [Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)] | [Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)] | [Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)] | [Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)] | [Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)] | [Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)] | [Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)] | [Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)] | [Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)] | [Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)] | [Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)] | [Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)] | [Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)] | [Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)] | [Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)] | [Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)]]</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,8) + Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub) + [[Skin.HasSetting(Menu_Programs_Sub_Custom1) + Skin.String(ProgramsCustom,1)] | [Skin.HasSetting(Menu_Programs_Sub_Custom2) + Skin.String(ProgramsCustom,2)] | [Skin.HasSetting(Menu_Programs_Sub_Custom3) + Skin.String(ProgramsCustom,3)] | [Skin.HasSetting(Menu_Programs_Sub_Custom4) + Skin.String(ProgramsCustom,4)] | [Skin.HasSetting(Menu_Programs_Sub_Custom5) + Skin.String(ProgramsCustom,5)] | [Skin.HasSetting(Menu_Programs_Sub_Custom6) + Skin.String(ProgramsCustom,6)] | [Skin.HasSetting(Menu_Programs_Sub_Custom7) + Skin.String(ProgramsCustom,7)] | [Skin.HasSetting(Menu_Programs_Sub_Custom8) + Skin.String(ProgramsCustom,8)] | [Skin.HasSetting(Menu_Programs_Sub_Custom9) + Skin.String(ProgramsCustom,9)] | [Skin.HasSetting(Menu_Programs_Sub_Custom10) + Skin.String(ProgramsCustom,10)] | [Skin.HasSetting(Menu_Programs_Sub_Custom11) + Skin.String(ProgramsCustom,11)] | [Skin.HasSetting(Menu_Programs_Sub_Custom12) + Skin.String(ProgramsCustom,12)] | [Skin.HasSetting(Menu_Programs_Sub_Custom13) + Skin.String(ProgramsCustom,13)] | [Skin.HasSetting(Menu_Programs_Sub_Custom14) + Skin.String(ProgramsCustom,14)] | [Skin.HasSetting(Menu_Programs_Sub_Custom15) + Skin.String(ProgramsCustom,15)] | [Skin.HasSetting(Menu_Programs_Sub_Custom16) + Skin.String(ProgramsCustom,16)] | [Skin.HasSetting(Menu_Programs_Sub_Custom17) + Skin.String(ProgramsCustom,17)] | [Skin.HasSetting(Menu_Programs_Sub_Custom18) + Skin.String(ProgramsCustom,18)] | [Skin.HasSetting(Menu_Programs_Sub_Custom19) + Skin.String(ProgramsCustom,19)] | [Skin.HasSetting(Menu_Programs_Sub_Custom20) + Skin.String(ProgramsCustom,20)] | [Skin.HasSetting(Menu_Programs_Sub_Custom21) + Skin.String(ProgramsCustom,21)] | [Skin.HasSetting(Menu_Programs_Sub_Custom22) + Skin.String(ProgramsCustom,22)]]</visible>
 					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(ProgramsCustom,2)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(ProgramsCustom,3)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(ProgramsCustom,4)">Conditional</animation>
@@ -7059,6 +7175,10 @@
 					<animation effect="slide" start="0,0" end="0,420" time="100" tween="linear" condition="Skin.String(ProgramsCustom,16)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,448" time="100" tween="linear" condition="Skin.String(ProgramsCustom,17)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,476" time="100" tween="linear" condition="Skin.String(ProgramsCustom,18)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,504" time="100" tween="linear" condition="Skin.String(ProgramsCustom,19)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,532" time="100" tween="linear" condition="Skin.String(ProgramsCustom,20)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,560" time="100" tween="linear" condition="Skin.String(ProgramsCustom,21)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,588" time="100" tween="linear" condition="Skin.String(ProgramsCustom,22)">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>810</posx>
