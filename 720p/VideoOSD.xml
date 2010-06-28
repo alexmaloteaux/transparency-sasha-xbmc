@@ -11,7 +11,7 @@
 				<posy>380</posy>
 				<animation effect="slide" start="-280,0" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-280,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
-				<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(SafeMode)">clearart-dialogfullscreeninfo</include>
+				<include condition="Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + !Skin.HasSetting(SafeMode)">clearart-dialogfullscreeninfo</include>
 				<control type="image">
 					<description>cover image</description>
 					<posx>10</posx>
@@ -20,7 +20,7 @@
 					<height>157</height>
 					<aspectratio align="center" aligny="center" scalediffuse="true">keep</aspectratio>
 					<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-					<visible>!VideoPlayer.Content(Movies) + ![VideoPlayer.Content(Episodes) + Skin.HasSetting(ClearArt) + !IsEmpty(Control.GetLabel(7013))]</visible>
+					<visible>!VideoPlayer.Content(Movies) + ![VideoPlayer.Content(Episodes) + Skin.HasSetting(ClearArt) + [!IsEmpty(Control.GetLabel(7017)) | !IsEmpty(Control.GetLabel(7018))]]</visible>
 				</control>
 				<control type="image">
 					<description>cover image</description>

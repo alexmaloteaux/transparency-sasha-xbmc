@@ -35,7 +35,6 @@
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-230,0" time="300">WindowClose</animation>
-			<visible>Skin.HasSetting(ClearArt)</visible>
 		</control>
 		<control type="image" id="7018">
 			<description>dirty hack for showing clearart image (episodes in season folders)</description>
@@ -48,7 +47,6 @@
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-230,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-230,0" time="300">WindowClose</animation>
-			<visible>Skin.HasSetting(ClearArt)</visible>
 		</control>
 	</include>
 	<include name="clearart-dialogseekbar">
@@ -61,7 +59,7 @@
 			<texture background="true">$INFO[Player.FolderPath,,clearart.png]</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+			<visible>VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 		</control>
 		<control type="image" id="7020">
 			<description>dirty hack for showing clearart image (episodes in season folders)</description>
@@ -72,7 +70,7 @@
 			<texture background="true">$INFO[Player.FolderPath,,../clearart.png]</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
+			<visible>VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 		</control>
 	</include>
 	<include name="games-thumb">
