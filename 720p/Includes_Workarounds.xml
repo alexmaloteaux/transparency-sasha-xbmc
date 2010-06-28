@@ -21,7 +21,7 @@
 			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspinjukebox</include>
-			<visible>Player.Playing</visible>
+			<visible>Player.HasAudio</visible>
 		</control>
 	</include>
 	<include name="cdart-musicvisualisation">
