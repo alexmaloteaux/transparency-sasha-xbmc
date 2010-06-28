@@ -11,6 +11,19 @@
 			<include>cdartspinhome</include>
 		</control>
 	</include>
+	<include name="cdart-jukebox">
+		<control type="image">
+			<description>dirty hack for showing cdart image</description>
+			<posx>540</posx>
+			<posy>390</posy>
+			<width>200</width>
+			<height>200</height>
+			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
+			<aspectratio align="bottom">keep</aspectratio>
+			<include>cdartspinjukebox</include>
+			<visible>Player.Playing</visible>
+		</control>
+	</include>
 	<include name="cdart-musicvisualisation">
 		<control type="image">
 			<description>dirty hack for showing cdart image</description>

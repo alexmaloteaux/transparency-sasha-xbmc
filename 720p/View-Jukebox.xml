@@ -64,6 +64,7 @@
 				<include>VisibleFadeEffect4</include>
 				<visible>Player.HasAudio</visible>
 			</control>
+			<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-jukebox</include>
 			<control type="image">
 				<posx>434</posx>
 				<posy>405</posy>
