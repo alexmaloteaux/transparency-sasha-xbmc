@@ -72,6 +72,20 @@
 				<visible>Player.Seeking</visible>
 			</control>
 			<control type="label">
+				<description>Seek Label</description>
+				<posx>100</posx>
+				<posy>3</posy>
+				<width>205</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-15</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>[B]$INFO[Player.SeekOffset][/B]</label>
+				<visible>Player.DisplayAfterSeek + !Player.Seeking</visible>
+			</control>
+			<control type="label">
 				<description>Playing Label</description>
 				<posx>100</posx>
 				<posy>3</posy>
@@ -83,7 +97,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$LOCALIZE[31042][/B]</label>
-				<visible>Player.Playing + !Player.Seeking</visible>
+				<visible>Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
 			<control type="label">
 				<description>Paused Label</description>
@@ -97,7 +111,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$LOCALIZE[31043][/B]</label>
-				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking</visible>
+				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
 			<control type="label">
 				<description>Cache Label</description>
@@ -111,7 +125,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$LOCALIZE[15107] $INFO[Player.CacheLevel]%[/B]</label>
-				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
+				<visible>[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
 			<control type="label">
 				<description>Seeking Label</description>
@@ -124,7 +138,7 @@
 				<font>font-15</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<label>[B]$LOCALIZE[773][/B]</label>
+				<label>[B]$LOCALIZE[773] $INFO[Player.SeekOffset][/B]</label>
 				<visible>Player.Seeking</visible>
 			</control>
 			<control type="label">
