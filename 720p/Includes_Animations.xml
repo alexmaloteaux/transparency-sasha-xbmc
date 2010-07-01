@@ -600,6 +600,25 @@
 		<animation effect="slide" start="0,0" end="-320,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 		<animation effect="slide" start="-320,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
 	</include>
+	<include name="Window_OpenClose_Visible_ItemDisc_Animation">
+		<animation type="WindowOpen">
+			<effect type="slide" start="0,120" end="0,0" tween="cubic" easing="out" time="400" />
+			<effect type="rotate" center="auto" start="-180" end="0" time="400" />
+		</animation>
+		<animation type="WindowClose">
+			<effect type="slide" start="0,0" end="0,120" tween="cubic" easing="out" time="400" />
+			<effect type="rotate" center="auto" start="0" end="-180" time="400" />
+		</animation>
+		<animation type="Visible">
+			<effect type="slide" start="0,120" end="0,0" tween="cubic" easing="out" time="400" />
+			<effect type="rotate" center="auto" start="-180" end="0" time="400" />
+		</animation>
+	</include>
+	<include name="Window_OpenClose_Visible_ItemIcon_Animation">
+		<animation effect="slide" start="320,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="320,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="320,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+	</include>
 	<include name="Window_OpenClose_Visible_MediaFlags_Animation">
 		<animation effect="slide" start="0,130" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="0,130" time="400" tween="quadratic" easing="out">WindowClose</animation>
