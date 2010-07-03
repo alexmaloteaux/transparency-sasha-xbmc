@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Translator: bardenas-->
-<!--Date of translation: 08/15/2009-->
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Translator: xbmcero-->
+<!--Date of translation: 07/02/2010-->
 <strings>
   <!-- Dialog labels -->
   <string id="31000">Silencio</string>
@@ -11,20 +11,20 @@
   <string id="31022">Archivos de música</string>
   <string id="31024">Página</string>
   <string id="31025">Elementos</string>
-  <string id="31026">Video Library</string>
-  <string id="31027">Music Library</string>
+  <string id="31026">Vídeoteca</string>
+  <string id="31027">Fonoteca</string>
   <string id="31028">Apple Movie Trailers</string>
   <!-- Viewmode labels -->
   <string id="31030">Fanart</string>
   <string id="31031">Lista completa</string>
   <string id="31032">Flujo de portadas</string>
-  <string id="31033">Minifotos</string>
+  <string id="31033">Miniaturas</string>
   <string id="31034">Iconos anchos</string>
   <string id="31035">Diapositiva</string>
   <string id="31036">Polaroid</string>
   <string id="31037">Carrusel</string>
-  <string id="31038">Pared</string>
-  <string id="31039">Item</string>
+  <string id="31038">Mosaico</string>
+  <string id="31039">Elemento</string>
   <string id="31040">Jukebox</string>
   <!-- Misc labels -->
   <string id="31042">REPRODUCIENDO</string>
@@ -37,7 +37,7 @@
   <string id="31051">Apagado en 90 minutos</string>
   <string id="31052">IMDB</string>
   <!-- Lyrics Script Extra labels -->
-  <string id="31053">XBMC Lyrics</string>
+  <string id="31053">Letras XBMC</string>
   <string id="31054">Elija su canción de la lista</string>
   <!-- Playlist Editor labels -->
   <string id="31055">Abrir lista reproducción</string>
@@ -45,42 +45,42 @@
   <string id="31057">Cerrar lista reproducción</string>
   <string id="31058">Archivos de música del sistema</string>
   <string id="31059">Lista reproducción actual</string>
-  <string id="31060">Éste archivo está apilado, seleccione la parte desde la que quiere reproducir</string>
+  <string id="31060">Éste archivo está agrupado, seleccione la parte desde la que quiere reproducir</string>
   <!-- Skin Settings labels -->
   <string id="31101">Opciones de pantalla de inicio</string>
   <string id="31102">Fondos</string>
-  <string id="31103">Mostrar "pausado" en presentación de imágenes</string>
-  <string id="31104">Hide cases</string>
-  <string id="31105">Disable case animation in Icons view</string>
-  <string id="31106">Otras opciones</string>
-  <string id="31107">Enable Logo Downloader script</string>
-  <string id="31108">Get logo</string>
-  <string id="31109">Enable TV Show logos</string>
+  <string id="31103">Mostrar "Pausado" en presentación de imágenes</string>
+  <string id="31104">Ocultar cajas</string>
+  <string id="31105">Deshabiltar animación de las cajas en vista Iconos</string>
+  <string id="31106">Opciones misceláneas</string>
+  <string id="31107">Activar script Logo Downloader</string>
+  <string id="31108">Obtener logo</string>
+  <string id="31109">Activar logos de series de TV</string>
   <string id="31111">Mostrar siempre información de música en letras</string>
-  <string id="31113">Una imágen</string>
-  <string id="31114">Multi-imágen</string>
+  <string id="31113">Una imagen</string>
+  <string id="31114">Multi-imagen</string>
   <string id="31115">Modo a prueba de errores</string>
   <string id="31116">Menú lateral amplio</string>
   <string id="31117">Menú principal amplio</string>
   <string id="31118">Menú principal en horizontal</string>
-  <string id="31120">Deshabilitar elementos del menú</string>
+  <string id="31120">Elementos del menú deshabilitados</string>
   <string id="31121">Personalizado</string>
   <string id="31122">Condicional</string>
-  <string id="31124">Mostrar FanArt en lugar de visualización</string>
+  <string id="31124">Mostrar fanart en lugar de visualización</string>
   <string id="31125">Activar cdArt</string>
   <string id="31126">Activar clearArt</string>
   <string id="31127">Ruta carpeta Música</string>
-  <string id="31128">Carpeta de Series de TV</string>
-  <string id="31129">Carpeta de Películas</string>
+  <string id="31128">Carpeta de series de TV</string>
+  <string id="31129">Carpeta de películas</string>
   <string id="31131">Activar script YouTrailer</string>
   <string id="31132">Activar script Home Theater Experience</string>
   <string id="31133">Ordenar álbumes por Intéprete - Álbum</string>
   <string id="31134">Fondos animados</string>
   <string id="31135">Iconos animados para El Tiempo</string>
   <string id="31136">Utilizar iconos de género</string>
-  <string id="31137">Mostrar etiquetas de Medio</string>
+  <string id="31137">Mostrar etiquetas de medio</string>
   <string id="31138">Menú apagar personalizado</string>
-  <string id="31139">Utilizar pósters para Series de TV</string>
+  <string id="31139">Utilizar pósters para series de TV</string>
   <string id="31140">Odio Transparency!</string>
   <string id="31141">Mostrar botón de buscar subtítulos en OSD</string>
   <string id="31142">(¡¡No elimine si no está realmente seguro!!)</string>
@@ -90,16 +90,16 @@
   <string id="31146">Reproducir trailers en pantalla completa</string>
   <string id="31147">Mostrar diapositivas fanart en lugar de visualización</string>
   <string id="31148">Mostrar mosaico de CDs en lugar de visualización</string>
-  <string id="31149">Desactivar vistas</string>
+  <string id="31149">Vistas desactivadas</string>
   <string id="31150">Etiqueta de botón:</string>
-  <string id="31151">Nombre del Origen:</string>
-  <string id="31152">Select plugin:</string>
+  <string id="31151">Nombre de fuente:</string>
+  <string id="31152">Elegir plugin:</string>
   <string id="31153">Icono El Tiempo</string>
   <string id="31154">Aplicación</string>
   <string id="31155">Comando:</string>
   <string id="31156">Favorito</string>
-  <string id="31157">Seleccionar Favorito:</string>
-  <string id="31158">Ajustar Opciones...</string>
+  <string id="31157">Elegir favorito:</string>
+  <string id="31158">Ajustar opciones...</string>
   <string id="31159">[B]AJUSTAR OPCIONES DE VIDEO[/B][CR]Gestionar Biblioteca de Videos - Opciones de reproducción - Opciones de listas de video[CR]Fuentes de Subtítulos</string>
   <string id="31160">[B]AJUSTES DE TELEVISIÓN[/B][CR]Información a pantalla completa - Opciones de Guía de Programas[CR]Opciones de grabación</string>
   <string id="31161">[B]AJUSTES DE MÚSICA[/B][CR]Gestionar Biblioteca Musical - Opciones de reproducción - Opciones de listas de música[CR]Envío de canciones - Opciones de Karaoke</string>
@@ -114,7 +114,7 @@
   <string id="31170">[B]INFORMACIÓN DE SISTEMA[/B][CR]Mostrar Hardware - Configuración de Red[CR]Espacio libre en Disco</string>
   <!-- Script Settings labels -->
   <string id="31200">Opciones personalizadas de script</string>
-  <string id="31204">Select script:</string>
+  <string id="31204">Elegir script:</string>
   <string id="31208">Mostrar botón de script de letras en OSD</string>
   <!-- AMT Script Extra labels -->
   <string id="31300">Mostrar reparto</string>
@@ -122,9 +122,9 @@
   <string id="31400">Nuevo:</string>
   <string id="31407">Plugin</string>
   <string id="31408">Script</string>
-  <string id="31409">Player Controls</string>
-  <string id="31410">Recently Added</string>
-  <string id="31411">Recently Played</string>
+  <string id="31409">Controles del reproductor</string>
+  <string id="31410">Añadido recientemente</string>
+  <string id="31411">Reproducido recientemente</string>
   <!-- Temp PVR labels -->
   <string id="31500">TV</string>
   <!-- Weather labels -->
