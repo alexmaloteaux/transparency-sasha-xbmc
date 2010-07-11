@@ -3,6 +3,18 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53</views>
 	<controls>
+		<control type="image">
+			<description>addon fanart</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+		</control>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -14,6 +26,7 @@
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-Programs_Pictures_Scripts</include>
 		<control type="group">
