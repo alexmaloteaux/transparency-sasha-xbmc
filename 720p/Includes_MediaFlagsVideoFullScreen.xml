@@ -4,25 +4,25 @@
 		<height>40</height>
 	</include>
 	<include name="FullScreenVideoMediaFlags">
-		<!-- Resolution -->
+	<!-- Resolution -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
 			<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
 		</control>
-		<!-- AspectRatio -->
+	<!-- AspectRatio -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
 			<visible>!IsEmpty(VideoPlayer.VideoAspect)</visible>
 		</control>
-		<!-- Video Codec -->
+	<!-- Video Codec -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/videocodec/$INFO[VideoPlayer.VideoCodec,,.png]</texture>
 			<visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
 		</control>
-		<!-- Audio Codec -->
+	<!-- Audio Codec -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/aac.png</texture>
@@ -133,7 +133,7 @@
 			<texture>special://skin/images/flags/movies/audiocodec/wmahd.png</texture>
 			<visible>stringcompare(VideoPlayer.AudioCodec,wmapro) | stringcompare(VideoPlayer.AudioCodec,wma3)</visible>
 		</control>
-		<!-- Rating -->
+	<!-- Rating US -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-g.png</texture>
@@ -159,6 +159,74 @@
 			<texture>special://skin/images/flags/movies/rating/rating-nc17.png</texture>
 			<visible>substring(VideoPlayer.Mpaa,Rated NC-17) | substring(VideoPlayer.Mpaa,Rated: NC-17)</visible>
 		</control>
+	<!-- Rating UK -->
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcU.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:U)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcUC.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:UC)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcPG.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:PG)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc12.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:12)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc12A.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:12A)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc15.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:15)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc18.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:18)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcR18.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:R18)</visible>
+		</control>
+	<!-- Rating DE -->
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk0.png</texture>
+			<visible>substring(VideoPlayer.Mpaa,FSK0) | substring(VideoPlayer.Mpaa,FSK 0) | substring(VideoPlayer.Mpaa,FSK o.A.)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk6.png</texture>
+			<visible>substring(VideoPlayer.Mpaa,FSK6) | substring(VideoPlayer.Mpaa,FSK 6)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk12.png</texture>
+			<visible>substring(VideoPlayer.Mpaa,FSK12) | substring(VideoPlayer.Mpaa,FSK 12)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk16.png</texture>
+			<visible>substring(VideoPlayer.Mpaa,FSK16) | substring(VideoPlayer.Mpaa,FSK 16)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk18.png</texture>
+			<visible>substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)</visible>
+		</control>
+	<!-- Rating TV -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-y.png</texture>
@@ -189,32 +257,7 @@
 			<texture>special://skin/images/flags/movies/rating/tv-ma.png</texture>
 			<visible>substring(VideoPlayer.Mpaa,TV-MA)</visible>
 		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk0.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,FSK0) | substring(VideoPlayer.Mpaa,FSK 0) | substring(VideoPlayer.Mpaa,FSK o.A.)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk6.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,FSK6) | substring(VideoPlayer.Mpaa,FSK 6)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk12.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,FSK12) | substring(VideoPlayer.Mpaa,FSK 12)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk16.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,FSK16) | substring(VideoPlayer.Mpaa,FSK 16)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk18.png</texture>
-			<visible>substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)</visible>
-		</control>
-		<!-- Studio HD-->
+	<!-- Studio HD-->
 		<control type="image" id="5082">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/studio/ABC_hd.png</texture>
@@ -325,13 +368,13 @@
 			<texture>special://skin/images/flags/movies/studio/USA Network_hd.png</texture>
 			<visible>stringcompare(VideoPlayer.Studio,USA Network) + [stringcompare(VideoPlayer.VideoResolution,720) | stringcompare(VideoPlayer.VideoResolution,1080)] + !VideoPlayer.Content(MusicVideos)</visible>
 		</control>
-		<!-- Studio -->
+	<!-- Studio -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture fallback="special://skin/images/flags/movies/studio/default-studio.png">special://skin/images/flags/movies/studio/$INFO[VideoPlayer.Studio,,.png]</texture>
 			<visible>Player.HasMedia + !VideoPlayer.Content(MusicVideos) + !Control.IsVisible(5082)</visible>
 		</control>
-		<!-- Studio MusicVideos-->
+	<!-- Studio MusicVideos-->
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture fallback="special://skin/images/flags/movies/studio/default-studio.png">special://skin/images/flags/music/recordlabel/$INFO[VideoPlayer.Studio,,.png]</texture>

@@ -165,7 +165,7 @@
 			<texture>special://skin/images/flags/movies/subtitles/cc.png</texture>
 			<visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
 		</control>
-	<!-- Rating -->
+	<!-- Rating US -->
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/rating-g.png</texture>
@@ -191,6 +191,74 @@
 			<texture>special://skin/images/flags/movies/rating/rating-nc17.png</texture>
 			<visible>substring(ListItem.Mpaa,Rated NC-17) | substring(ListItem.Mpaa,Rated: NC-17)</visible>
 		</control>
+	<!-- Rating UK -->
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcU.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:U)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcUC.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:UC)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcPG.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:PG)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc12.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:12)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc12A.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:12A)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc15.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:15)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfc18.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:18)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/bbfcR18.png</texture>
+			<visible>StringCompare(ListItem.Mpaa,UK:R18)</visible>
+		</control>
+	<!-- Rating DE -->
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk0.png</texture>
+			<visible>substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A.)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk6.png</texture>
+			<visible>substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk12.png</texture>
+			<visible>substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk16.png</texture>
+			<visible>substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>special://skin/images/flags/movies/rating/fsk18.png</texture>
+			<visible>substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)</visible>
+		</control>
+	<!-- Rating TV -->
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-y.png</texture>
@@ -220,31 +288,6 @@
 			<include>VideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/rating/tv-ma.png</texture>
 			<visible>substring(ListItem.Mpaa,TV-MA)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk0.png</texture>
-			<visible>substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A.)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk6.png</texture>
-			<visible>substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk12.png</texture>
-			<visible>substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk16.png</texture>
-			<visible>substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsVars</include>
-			<texture>special://skin/images/flags/movies/rating/fsk18.png</texture>
-			<visible>substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)</visible>
 		</control>
 	<!-- Studio HD-->
 		<control type="image" id="5082">
