@@ -3,6 +3,20 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,55,56,59,591,592</views>
 	<controls>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath fallback="special://skin/images/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
+			<visible>[[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)] | stringcompare(ListItem.Path,plugin://)</visible>
+		</control>
 		<control type="image">
 			<description>album and song level fanart</description>
 			<posx>0</posx>
@@ -26,20 +40,6 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]</visible>
-		</control>
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/images/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>

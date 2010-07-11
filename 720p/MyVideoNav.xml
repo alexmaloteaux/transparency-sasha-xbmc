@@ -3,28 +3,6 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,54,55,57,58,59,590,592,596</views>
 	<controls>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[Fanart.Image]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
-		</control>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -37,7 +15,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/)</visible>
+			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/)] | stringcompare(ListItem.Path,plugin://)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -80,6 +58,28 @@
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://3/)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Fanart.Image]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>!IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
