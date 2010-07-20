@@ -143,6 +143,41 @@
 			</control>
 		</control>
 		<control type="group">
+			<include>VisibleFadeEffect</include>
+			<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
+			<control type="image">
+				<posx>240</posx>
+				<posy>640</posy>
+				<width>800</width>
+				<height>100</height>
+				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+			</control>
+			<control type="label">
+				<posx>40</posx>
+				<posy>654</posy>
+				<width>1200</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[24096]</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<font>font-20</font>
+			</control>
+			<control type="label">
+				<posx>40</posx>
+				<posy>654</posy>
+				<width>1200</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>$INFO[ListItem.Property(Addon.Broken)]</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<font>font-20</font>
+			</control>
+		</control>
+		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
