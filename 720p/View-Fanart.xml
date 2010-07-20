@@ -1018,7 +1018,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist) </visible>
 			</control>
 			<control type="label">
 				<posx>865</posx>
@@ -1032,7 +1032,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>!ListItem.IsPlaying + [Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)]</visible>
+				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !ListItem.IsPlaying + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1046,7 +1046,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
 				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)</visible>
+				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles)] + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1059,6 +1059,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
+				<visible>!Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1071,17 +1072,63 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
+				<visible>!Window.IsVisible(MusicPlaylist)</visible>
 			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>390</posx>
-				<posy>674</posy>
-				<width>380</width>
-				<height>20</height>
-				<info>Player.Progress</info>
-				<visible>ListItem.IsPlaying</visible>
+			<control type="label">
+				<posx>262</posx>
+				<posy>577</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
+				<visible>Window.IsVisible(MusicPlaylist) </visible>
 			</control>
-			<control type="label" id="1">
+			<control type="label">
+				<posx>262</posx>
+				<posy>607</posy>
+				<width>613</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
+				<visible>Window.IsVisible(MusicPlaylist) </visible>
+			</control>
+			<control type="label">
+				<posx>262</posx>
+				<posy>644</posy>
+				<width>613</width>
+				<height>30</height>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[MusicPlayer.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
+				<visible>Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="label">
+				<posx>262</posx>
+				<posy>667</posy>
+				<width>613</width>
+				<height>30</height>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[MusicPlayer.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
+				<visible>Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="label">
 				<description>time label</description>
 				<posx>865</posx>
 				<posy>577</posy>
@@ -1093,7 +1140,16 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[MusicPlayer.Time]</label>
-				<visible>ListItem.IsPlaying</visible>
+				<visible>ListItem.IsPlaying | Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>390</posx>
+				<posy>674</posy>
+				<width>380</width>
+				<height>20</height>
+				<info>Player.Progress</info>
+				<visible>ListItem.IsPlaying | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 		</control>
 		<control type="group">
