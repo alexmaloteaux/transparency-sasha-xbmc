@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Translator: blittan-->
-<!--Date of translation: 12/11/2009-->
+<!--Translator: blittan, sekarud-->
+<!--Date translation: 21/08/2010-->
 <strings>
   <!-- Dialog labels -->
   <string id="31000">Volym avstängd</string>
@@ -11,8 +11,8 @@
   <string id="31022">Musik Filer</string>
   <string id="31024">Sida</string>
   <string id="31025">Objekt</string>
-  <string id="31026">Video Library</string>
-  <string id="31027">Music Library</string>
+  <string id="31026">Video Bibliotek</string>
+  <string id="31027">Musik Bibliotek</string>
   <string id="31028">Apple Movie Trailers</string>
   <!-- Viewmode labels -->
   <string id="31030">Fanart</string>
@@ -23,8 +23,8 @@
   <string id="31035">Bildspel</string>
   <string id="31036">Polaroid</string>
   <string id="31037">Karusell</string>
-  <string id="31038">Wall</string>
-  <string id="31039">Item</string>
+  <string id="31038">Vägg</string>
+  <string id="31039">Objekt</string>
   <string id="31040">Jukebox</string>
   <!-- Misc labels -->
   <string id="31042">SPELAR</string>
@@ -35,7 +35,7 @@
   <string id="31047">Senast inloggad</string>
   <string id="31050">Sluttid</string>
   <string id="31051">Avstängning om 90 minuter</string>
-  <string id="31052">IMDB Top 250</string>
+  <string id="31052">IMDB</string>
   <!-- Lyrics Script Extra labels -->
   <string id="31053">XBMC SÅNGTEXTER</string>
   <string id="31054">Välj din låt från listan</string>
@@ -50,12 +50,12 @@
   <string id="31101">Hemskärmalternativ</string>
   <string id="31102">Bakgrunder</string>
   <string id="31103">Visa "Pausad" i bildspelet</string>
-  <string id="31104">Hide cases</string>
-  <string id="31105">Disable case animation in Icons view</string>
+  <string id="31104">Dölj fodral</string>
+  <string id="31105">Inaktivera fodral-animering i Ikon-vy</string>
   <string id="31106">Diverse val</string>
-  <string id="31107">Enable Logo Downloader script</string>
-  <string id="31108">Get logo</string>
-  <string id="31109">Enable TV Show logos</string>
+  <string id="31107">Aktivera Logo Downloader skript</string>
+  <string id="31108">Hämta logo</string>
+  <string id="31109">Aktivera TV-serie logos</string>
   <string id="31111">Visa alltid musikinfo vid sångtexter</string>
   <string id="31113">Enstaka bild</string>
   <string id="31114">Flerbild</string>
@@ -72,7 +72,7 @@
   <string id="31127">Sökväg till Musik</string>
   <string id="31128">Sökväg till TV-serier</string>
   <string id="31129">Sökväg till Filmer</string>
-  <string id="31131">Enable YouTrailer script</string>
+  <string id="31131">Aktivera YouTrailer skript</string>
   <string id="31132">Aktivera Home Theater Experience skript</string>
   <string id="31133">Använd "Artist - Album"-sortering för album</string>
   <string id="31134">Animerade bakgrunder</string>
@@ -90,44 +90,44 @@
   <string id="31146">Spela alltid trailer i helskärmsläge</string>
   <string id="31147">Visa fanartbildspel istället för visualisering</string>
   <string id="31148">Visa CD-vägg istället för visualisering</string>
-  <string id="31149">Disabled views</string>
-  <string id="31150">Button label:</string>
-  <string id="31151">Source name:</string>
-  <string id="31152">Select plugin:</string>
-  <string id="31153">Weather icon</string>
-  <string id="31154">Application</string>
-  <string id="31155">Command:</string>
-  <string id="31156">Favourite</string>
-  <string id="31157">Select favourite:</string>
-  <string id="31158">Change Your Settings...</string>
-  <string id="31159">[B]CONFIGURE VIDEO SETTINGS[/B][CR]Manage your video library - Set video playback options - Change video listing options[CR]Set subtitle fonts</string>
-  <string id="31160">[B]CONFIGURE TV SETTINGS[/B][CR]Change fullscreen info - Manage EPG data settings[CR]Configure recording options</string>
-  <string id="31161">[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options</string>
-  <string id="31162">[B]CONFIGURE PICTURE SETTINGS[/B][CR]Set picture listing options[CR]Configure slideshows</string>
-  <string id="31163">[B]CONFIGURE WEATHER SETTINGS[/B][CR]Set three cities to collect weather information[CR]Select a weather plugin</string>
-  <string id="31164">[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock</string>
-  <string id="31165">[B]CONFIGURE NETWORK SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Set internet access options</string>
-  <string id="31166">[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue</string>
-  <string id="31167">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR]Select a skin - Set language and region - Change file listing options[CR]Set up a screensaver</string>
-  <string id="31168">[B]CONFIGURE SKIN SETTINGS[/B][CR]Setup the Transparency! skin - Add and remove home menu items[CR]Change skin backgrounds</string>
-  <string id="31169">[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons - Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
-  <string id="31170">[B]CHECK SYTEM INFORMATION[/B][CR]Display your hardware - Check current network settings[CR]Monitor free discspace</string>
+  <string id="31149">Inaktiverade vyer</string>
+  <string id="31150">Knappetikett:</string>
+  <string id="31151">Källnamn:</string>
+  <string id="31152">Välj plugin:</string>
+  <string id="31153">Väderikoner</string>
+  <string id="31154">Applikation</string>
+  <string id="31155">Kommando:</string>
+  <string id="31156">Favorit</string>
+  <string id="31157">Välj favorit:</string>
+  <string id="31158">Ändra dina inställningar...</string>
+  <string id="31159">[B]KONFIGURERA VIDEOINSTÄLLNINGAR[/B][CR]Hantera ditt videobibliotek - Ändra uppspelningsinställningar[CR]Ändra inställningar för videolistor - Ändra utseende på undertexten</string>
+  <string id="31160">[B]ÄNDRA TVINSTÄLLNINGAR[/B][CR]Ändra helskärmsinfo - Hantera din EPG-inställningar[CR]Ändra inspelningsinställningar</string>
+  <string id="31161">[B]ÄNDRA MUSIKINSTÄLLNINGAR[/B][CR]Hantera ditt musikbibliotek - Ändra uppspelningsinställningar[CR]Ändra inställningar för musiklistor - Ställ in låtinlämning och karaoke</string>
+  <string id="31162">[B]ÄNDRA BILDINSTÄLLNINGAR[/B][CR]Ändra inställningar för bildlistor[CR]Ställ in bildspel</string>
+  <string id="31163">[B]ÄNDRA VÄDERINSTÄLLNINGAR[/B][CR]Välj tre städer att hämta väderinformation om[CR]Välj väderplugin</string>
+  <string id="31164">[B]ÄNDRA SYSTEMINSTÄLLNINGAR[/B][CR]Ställ in och kalibrera bildskärmar - Konfigurera ljudutgångar - Ställ in fjärrkontroll[CR]Justera strömbesparing - Aktivera debugging - Sätt huvudlås</string>
+  <string id="31165">[B]ÄNDRA NÄTVERKSINSTÄLLNINGAR[/B][CR]Konfigurera kontroll av XBMC via UPnP och HTTP[CR]Ställ in fildelning - Ändra internetåtkomst</string>
+  <string id="31166">[B]ÄNDRA PROFILINSTÄLLNINGAR[/B][CR]Välj och hantera XBMC användarprofiler</string>
+  <string id="31167">[B]ÄNDRA UTSEENDEINSTÄLLNINGAR[/B][CR]Välj land och region - Ändra inställningar för fillistor[CR]Välj ett skal - Ställ in skärmsläckare</string>
+  <string id="31168">[B]ÄNDRA SKALINSTÄLLNINGAR[/B][CR]Ställ in Transparency! - Ändra bakgrunder[CR]Lägg till och ta bort från hemmenyn</string>
+  <string id="31169">[B]KONFIGURERA TILLÄGG[/B][CR]Hantera installerade tillägg - Bläddra och installera nya tillägg[CR]Ändra inställningar för tillägg</string>
+  <string id="31170">[B]VISA SYSTEMINFORMATION[/B][CR]Visa din hårdvara - Visa nuvarande nätverksinställningar[CR]Övervaka diskutrymme</string>
   <!-- Script Settings labels -->
   <string id="31200">Anpassade skriptalternativ</string>
-  <string id="31204">Select script:</string>
+  <string id="31204">Välj skript:</string>
   <string id="31208">Visa sångtexts-skriptsknappen i OSD</string>
   <!-- AMT Script Extra labels -->
   <string id="31300">Visa rollsättning</string>
   <!-- Home Page labels -->
   <string id="31400">Ny:</string>
   <string id="31407">Plugin</string>
-  <string id="31408">Script</string>
-  <string id="31409">Player Controls</string>
-  <string id="31410">Recently Added</string>
-  <string id="31411">Recently Played</string>
+  <string id="31408">Skript</string>
+  <string id="31409">Spelkontroller</string>
+  <string id="31410">Nyligen Tillagt</string>
+  <string id="31411">Nyligen Spelat</string>
   <!-- Temp PVR labels -->
   <string id="31500">TV</string>
   <!-- Weather labels -->
-  <string id="31600">10 Day</string>
+  <string id="31600">10 Dagar</string>
 </strings>
 
