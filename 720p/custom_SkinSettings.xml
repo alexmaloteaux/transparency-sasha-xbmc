@@ -4412,6 +4412,7 @@
 						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom4)</selected>
 						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
 					</control>
+
 					<control type="radiobutton" id="8107">
 						<description>Menu Pictures Sub Custom5</description>
 						<label>[B]$LOCALIZE[20334] 5$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Label), - ][/B]</label>
@@ -7174,6 +7175,7 @@
 					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(ProgramsCustom,5)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,140" time="100" tween="linear" condition="Skin.String(ProgramsCustom,6)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,168" time="100" tween="linear" condition="Skin.String(ProgramsCustom,7)">Conditional</animation>
+
 					<animation effect="slide" start="0,0" end="0,196" time="100" tween="linear" condition="Skin.String(ProgramsCustom,8)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,224" time="100" tween="linear" condition="Skin.String(ProgramsCustom,9)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,252" time="100" tween="linear" condition="Skin.String(ProgramsCustom,10)">Conditional</animation>
@@ -8626,6 +8628,7 @@
 		ezechiel1917 [COLOR=lightblue]- Czech[/COLOR]
 		Dannermax [COLOR=lightblue]- Danish[/COLOR]
 		dynamix [COLOR=lightblue]- Dutch[/COLOR]
+		Verberzerk [COLOR=lightblue]- Dutch[/COLOR]
 		Mika Pirinen [COLOR=lightblue]- Finnish[/COLOR]
 		darknoir [COLOR=lightblue]- French[/COLOR]
 		Shalashaska [COLOR=lightblue]- French[/COLOR]
