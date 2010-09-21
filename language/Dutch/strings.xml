@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Translator: dynamix-->
-<!--Date of translation: 08/19/2009-->
+<!--Translator: dynamix / verberzerk-->
+<!--Date of translation: 09/21/2010-->
 <strings>
   <!-- Dialog labels -->
   <string id="31000">Volume gedempt</string>
   <string id="31001">Bezig...</string>
   <!-- Page labels -->
-  <string id="31020">Hoofdstuk titel</string>
-  <string id="31021">Video Bestanden</string>
-  <string id="31022">Muziek Bestanden</string>
+  <string id="31020">Hoofdstuktitel</string>
+  <string id="31021">Videobestanden</string>
+  <string id="31022">Muziekbestanden</string>
   <string id="31024">Pagina</string>
   <string id="31025">Items</string>
-  <string id="31026">Video Library</string>
-  <string id="31027">Music Library</string>
+  <string id="31026">Videobibliotheek</string>
+  <string id="31027">Muziekbibliotheek</string>
   <string id="31028">Apple Movie Trailers</string>
   <!-- Viewmode labels -->
   <string id="31030">Fanart</string>
   <string id="31031">Volledige lijst</string>
-  <string id="31032">Cover flow</string>
-  <string id="31033">Foto tegels</string>
+  <string id="31032">Coverflow</string>
+  <string id="31033">Fotominiaturen</string>
   <string id="31034">Brede iconen</string>
   <string id="31035">Dia</string>
   <string id="31036">Polaroid</string>
@@ -34,100 +34,100 @@
   <string id="31046">Welkom bij XBMC - Inloggen, alstublieft</string>
   <string id="31047">Laatst ingelogd</string>
   <string id="31050">Eindtijd</string>
-  <string id="31051">Uitschakeling in 90 minuten</string>
+  <string id="31051">Uitschakelen na 90 minuten</string>
   <string id="31052">IMDB</string>
   <!-- Lyrics Script Extra labels -->
-  <string id="31053">XBMC LYRICS</string>
+  <string id="31053">XBMC songteksten</string>
   <string id="31054">Kies uw nummer uit de lijst</string>
   <!-- Playlist Editor labels -->
-  <string id="31055">Open afspeellijst</string>
-  <string id="31056">Bewaar afspeellijst</string>
-  <string id="31057">Sluit afspeellijst</string>
+  <string id="31055">Afspeellijst openen</string>
+  <string id="31056">Afspeellijst bewaren</string>
+  <string id="31057">Afspeellijst sluiten</string>
   <string id="31058">Systeem muziekbestanden</string>
   <string id="31059">Huidige afspeellijst</string>
   <string id="31060">Dit bestand bestaat uit meerdere delen, selecteer het gedeelte vanaf waar u wilt afspelen.</string>
   <!-- Skin Settings labels -->
-  <string id="31101">Beginscherm opties</string>
+  <string id="31101">Opties beginscherm</string>
   <string id="31102">Achtergronden</string>
   <string id="31103">Laat "PAUZE" zien in diavoorstelling</string>
-  <string id="31104">Hide cases</string>
-  <string id="31105">Disable case animation in Icons view</string>
+  <string id="31104">DVD-boxen / CD-cases verbergen</string>
+  <string id="31105">Geanimeerde "cases" in iconenweergave uitschakelen</string>
   <string id="31106">Diverse opties</string>
-  <string id="31107">Enable Logo Downloader script</string>
-  <string id="31108">Get logo</string>
-  <string id="31109">Enable TV Show logos</string>
-  <string id="31111">Altijd muziek info tonen tijdens songteksten</string>
+  <string id="31107">Logo Downloader script activeren</string>
+  <string id="31108">Logo ophalen</string>
+  <string id="31109">Serie-logo's activeren</string>
+  <string id="31111">Altijd muziekinfo tonen tijdens songteksten</string>
   <string id="31113">Enkele afbeelding</string>
   <string id="31114">Meervoudige afbeelding</string>
   <string id="31115">Veilige modus</string>
   <string id="31116">Bredere knoppen in zijmenu</string>
   <string id="31117">Bredere knoppen in hoofdmenu</string>
   <string id="31118">Horizontaal hoofdmenu</string>
-  <string id="31120">Uitgeschakelde menu items</string>
-  <string id="31121">Personaliseer</string>
-  <string id="31122">Voorwaardelijk</string>
-  <string id="31124">Toon fanart i.p.v. visualisatie</string>
-  <string id="31125">Activeer cdArt</string>
-  <string id="31126">Activeer clearArt</string>
-  <string id="31127">Pad naar muziek</string>
-  <string id="31128">Pad naar TV shows</string>
-  <string id="31129">Pad naar films</string>
-  <string id="31131">Enable YouTrailer script</string>
-  <string id="31132">Activeer Home Theater Experience script</string>
+  <string id="31120">Uitgeschakelde menu-onderdelen</string>
+  <string id="31121">Personaliseren</string>
+  <string id="31122">Weersafhankelijk</string>
+  <string id="31124">Fanart tonen i.p.v. visualisatie</string>
+  <string id="31125">CdArt activeren</string>
+  <string id="31126">ClearArt activeren</string>
+  <string id="31127">Pad naar map voor muziek</string>
+  <string id="31128">Pad naar map voor series</string>
+  <string id="31129">Pad naar map voor films</string>
+  <string id="31131">YouTrailer script activeren</string>
+  <string id="31132">Home Theater Experience script activeren</string>
   <string id="31133">Albums rangschikken op artiest - album</string>
   <string id="31134">Geanimeerde achtergronden</string>
-  <string id="31135">Geanimeerde weer iconen</string>
-  <string id="31136">Gebruik genre iconen</string>
-  <string id="31137">Toon media vlaggen</string>
+  <string id="31135">Geanimeerde weericonen</string>
+  <string id="31136">Genre-iconen gebruiken</string>
+  <string id="31137">Media-flags tonen</string>
   <string id="31138">Persoonlijk afsluitmenu</string>
-  <string id="31139">Gebruik posters voor TV shows</string>
+  <string id="31139">Posters i.p.v. banners gebruiken voor series</string>
   <string id="31140">Ik haat Transparency!</string>
-  <string id="31141">Toon knop voor ondertiteling-script in OSD</string>
+  <string id="31141">Knop voor ondertitelscript tonen in OSD</string>
   <string id="31142">(Niet uitschakelen, tenzij je het zeker weet!!!)</string>
-  <string id="31143">Fanart - Korte lijst</string>
-  <string id="31144">Fanart - Lange lijst</string>
-  <string id="31145">CD wall folder path</string>
-  <string id="31146">Speel trailers altijd in volledig schrem</string>
-  <string id="31147">Toon fanart diavoorstelling i.p.v. visualisatie</string>
-  <string id="31148">Toon CD wall i.p.v. visualisatie</string>
-  <string id="31149">Disabled views</string>
-  <string id="31150">Button label:</string>
-  <string id="31151">Source name:</string>
-  <string id="31152">Select plugin:</string>
-  <string id="31153">Weather icon</string>
-  <string id="31154">Application</string>
+  <string id="31143">Fanart - korte lijst</string>
+  <string id="31144">Fanart - lange lijst</string>
+  <string id="31145">Pad naar map voor CD-wall</string>
+  <string id="31146">Trailers altijd afspelen in volledig scherm</string>
+  <string id="31147">Fanart diavoorstelling tonen i.p.v. visualisatie</string>
+  <string id="31148">CD-wall tonen i.p.v. visualisatie</string>
+  <string id="31149">Uitgeschakelde weergave-opties</string>
+  <string id="31150">Naam knop:</string>
+  <string id="31151">Bronmap:</string>
+  <string id="31152">Plugin selecteren:</string>
+  <string id="31153">Weericoon</string>
+  <string id="31154">Programma</string>
   <string id="31155">Command:</string>
-  <string id="31156">Favourite</string>
-  <string id="31157">Select favourite:</string>
-  <string id="31158">Change Your Settings...</string>
-  <string id="31159">[B]CONFIGURE VIDEO SETTINGS[/B][CR]Manage your video library - Set video playback options - Change video listing options[CR]Set subtitle fonts</string>
-  <string id="31160">[B]CONFIGURE TV SETTINGS[/B][CR]Change fullscreen info - Manage EPG data settings[CR]Configure recording options</string>
-  <string id="31161">[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options</string>
-  <string id="31162">[B]CONFIGURE PICTURE SETTINGS[/B][CR]Set picture listing options[CR]Configure slideshows</string>
-  <string id="31163">[B]CONFIGURE WEATHER SETTINGS[/B][CR]Set three cities to collect weather information[CR]Select a weather plugin</string>
-  <string id="31164">[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock</string>
-  <string id="31165">[B]CONFIGURE NETWORK SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Set internet access options</string>
-  <string id="31166">[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue</string>
-  <string id="31167">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR]Select a skin - Set language and region - Change file listing options[CR]Set up a screensaver</string>
-  <string id="31168">[B]CONFIGURE SKIN SETTINGS[/B][CR]Setup the Transparency! skin - Add and remove home menu items[CR]Change skin backgrounds</string>
-  <string id="31169">[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons - Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
-  <string id="31170">[B]CHECK SYTEM INFORMATION[/B][CR]Display your hardware - Check current network settings[CR]Monitor free discspace</string>
+  <string id="31156">Favoriet</string>
+  <string id="31157">Favoriet selecteren:</string>
+  <string id="31158">Wijzig uw instellingen...</string>
+  <string id="31159">[B]VIDEO-INSTELLINGEN CONFIGUREREN[/B][CR]Beheer uw videobibliotheek - Configureer afspeelopties en bestandslijstopties[CR]Stel lettertype in voor ondertitels</string>
+  <string id="31160">[B]TV-INSTELLINGEN CONFIGUREREN[/B][CR]Wijzig informatie volledig scherm - Beheer EPG-instellingen[CR]Configureer opname-opties</string>
+  <string id="31161">[B]MUZIEKINSTELLINGEN CONFIGUREREN[/B][CR]Beheer uw muziekbibliotheek - Configureer afspeelopties en bestandslijstopties[CR]Configureer het toevoegen van nummers - Configureer karaoke-opties</string>
+  <string id="31162">[B]AFBEELDINGSINSTELLINGEN CONFIGUREREN[/B][CR]Configureer bestandslijstopties en diavoorstelling</string>
+  <string id="31163">[B]WEERINSTELLINGEN CONFIGUREREN[/B][CR]Stel drie locaties in voor weersverwachtingen</string>
+  <string id="31164">[B]SYSTEEMINSTELLINGEN CONFIGUREREN[/B][CR]Configureer en kalibreer scherm en geluidsuitgang - Configureer invoerapparaten en energiebeheeropties[CR]Schakel foutregistratie in - Configureer vergrendelopties</string>
+  <string id="31165">[B]NETWERKINSTELLINGEN CONFIGUREREN[/B][CR]Configureer de bediening van XBMC via UPnP en HTTP - Configureer het delen van bestanden[CR]Configureer de internetverbinding</string>
+  <string id="31166">[B]PROFIELINSTELLINGEN CONFIGUREREN[/B][CR]Selecteer uw XBMC gebruikersprofiel om aan te melden en door te gaan[CR]Voeg eventueel nieuwe profielen toe</string>
+  <string id="31167">[B]UITERLIJK-INSTELLINGEN CONFIGUREREN[/B][CR]Kies een skin - Stel taal en regio in[CR]Configureer bestandslijstopties en schermbeveiliging</string>
+  <string id="31168">[B]SKININSTELLINGEN CONFIGUREREN[/B][CR]Configureer de Transparency! skin - Voeg onderdelen toe aan[CR]of verwijder ze uit het beginscherm - Wijzig skinachtergronden</string>
+  <string id="31169">[B]ADD-ONS CONFIGUREREN[/B][CR]Beheer uw geïnstalleerde Add-ons - Zoek en installeer Add-ons via xbmc.org.[CR]Wijzig instellingen van Add-ons</string>
+  <string id="31170">[[B]SYTEEMINFORMATIE CONTROLEREN[/B][CR]Bekijk de hardware-configuratie - Controleer huidige netwerkinstellingen[CR]Bekijk beschikbare schijfruimte</string>
   <!-- Script Settings labels -->
-  <string id="31200">Persoonlijke script opties</string>
-  <string id="31204">Select script:</string>
-  <string id="31208">Toon knop voor songtekst-script in OSD</string>
+  <string id="31200">Persoonlijke script-opties</string>
+  <string id="31204">Script selecteren:</string>
+  <string id="31208">Knop voor songtekst-script tonen in OSD</string>
   <!-- AMT Script Extra labels -->
-  <string id="31300">Toon cast</string>
+  <string id="31300">Cast tonen</string>
   <!-- Home Page labels -->
   <string id="31400">Nieuw:</string>
   <string id="31407">Plugin</string>
   <string id="31408">Script</string>
-  <string id="31409">Player Controls</string>
-  <string id="31410">Recently Added</string>
-  <string id="31411">Recently Played</string>
+  <string id="31409">Bediening speler</string>
+  <string id="31410">Onlangs toegevoegd</string>
+  <string id="31411">Onlangs afgespeeld</string>
   <!-- Temp PVR labels -->
   <string id="31500">TV</string>
   <!-- Weather labels -->
-  <string id="31600">10 Day</string>
+  <string id="31600">10 dagen</string>
 </strings>
 
