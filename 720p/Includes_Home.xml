@@ -1749,7 +1749,7 @@
 		<include>Window_OpenClose_Home_Panel_Animation</include>
 		<control type="group">
 			<posx>12</posx>
-			<posy>348</posy>
+			<posy>356</posy>
 			<width>201</width>
 			<height>13</height>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Videos)">Conditional</animation>
@@ -1764,6 +1764,10 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_PlayDisc)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom1)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom2)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom3)">Conditional</animation>
+
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -1776,7 +1780,7 @@
 		<control type="list" id="5040">
 			<orientation>vertical</orientation>
 			<posx>12</posx>
-			<posy>361</posy>
+			<posy>369</posy>
 			<width>251</width>
 			<height>680</height>
 			<onup>5040</onup>
@@ -1795,6 +1799,9 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_PlayDisc)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom1)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom2)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom3)">Conditional</animation>
 			<itemlayout width="251" height="40">
 				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus1</include>
 				<control type="image">
@@ -1963,11 +1970,32 @@
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
 				</item>
+				<item id="14">
+					<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom1_Path)]</onclick>
+					<icon>$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
+					<visible>Skin.HasSetting(Menu_Custom1)</visible>
+				</item>
+				<item id="15">
+					<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom2_Path)]</onclick>
+					<icon>$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
+					<visible>Skin.HasSetting(Menu_Custom2)</visible>
+				</item>
+				<item id="16">
+					<label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom3_Path)]</onclick>
+					<icon>$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
+					<visible>Skin.HasSetting(Menu_Custom3)</visible>
+				</item>
 			</content>
 		</control>
 		<control type="group">
 			<posx>12</posx>
-			<posy>361</posy>
+			<posy>369</posy>
 			<width>201</width>
 			<height>13</height>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Videos)">Conditional</animation>
@@ -1982,6 +2010,9 @@
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_PlayDisc)">Conditional</animation>
+			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Custom1)">Conditional</animation>
+			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Custom2)">Conditional</animation>
+			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Custom3)">Conditional</animation>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -2257,6 +2288,27 @@
 					<icon>special://skin/images/backgrounds/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
+				</item>
+				<item id="14">
+					<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom1_Path)]</onclick>
+					<icon>$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
+					<visible>Skin.HasSetting(Menu_Custom1)</visible>
+				</item>
+				<item id="15">
+					<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom2_Path)]</onclick>
+					<icon>$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
+					<visible>Skin.HasSetting(Menu_Custom2)</visible>
+				</item>
+				<item id="16">
+					<label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom3_Path)]</onclick>
+					<icon>$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
+					<visible>Skin.HasSetting(Menu_Custom3)</visible>
 				</item>
 			</content>
 		</control>
