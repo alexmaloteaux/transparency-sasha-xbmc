@@ -1815,9 +1815,6 @@
 						</control>
 						<include>ButtonScroll</include>
 					</control>
-
-
-
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
@@ -2801,7 +2798,6 @@
 					</control>
 					<control type="button" id="607">
 						<posx>360</posx>
-
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
@@ -3306,7 +3302,7 @@
 					<posx>176</posx>
 					<posy>133</posy>
 					<width>250</width>
-					<height>455</height>
+					<height>562</height>
 					<itemgap>-2</itemgap>
 					<pagecontrol>-</pagecontrol>
 					<onleft>9000</onleft>
@@ -3408,6 +3404,30 @@
 						<onfocus>Skin.SetString(SettingsMenu,13)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_PlayDisc)</onclick>
 						<selected>Skin.HasSetting(Menu_PlayDisc)</selected>
+					</control>
+					<control type="radiobutton" id="815">
+						<description>Menu Custom 1</description>
+						<label>[B]$LOCALIZE[636] 1[/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,14)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Custom1)</selected>
+					</control>
+					<control type="radiobutton" id="816">
+						<description>Menu Custom 2</description>
+						<label>[B]$LOCALIZE[636] 2[/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,15)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Custom2)</selected>
+					</control>
+					<control type="radiobutton" id="817">
+						<description>Menu Custom 3</description>
+						<label>[B]$LOCALIZE[636] 3[/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,16)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Custom3)</selected>
 					</control>
 				</control>
 				<control type="grouplist" id="8100">
@@ -4412,7 +4432,6 @@
 						<selected>Skin.HasSetting(Menu_Pictures_Sub_Custom4)</selected>
 						<enable>Skin.HasSetting(Menu_Pictures_Sub)</enable>
 					</control>
-
 					<control type="radiobutton" id="8107">
 						<description>Menu Pictures Sub Custom5</description>
 						<label>[B]$LOCALIZE[20334] 5$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Label), - ][/B]</label>
@@ -4842,7 +4861,6 @@
 					<control type="radiobutton" id="8103">
 						<description>Menu Favourites Sub Custom2</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Label), - ][/B]</label>
-
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(FavouritesCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Favourites_Sub_Custom2)</onclick>
@@ -5134,6 +5152,114 @@
 						<enable>!Skin.HasSetting(Menu_PlayDisc_Sub)</enable>
 					</control>
 				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1)</visible>
+					<posx>460</posx>
+					<posy>529</posy>
+					<width>350</width>
+					<height>150</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="button" id="8101">
+						<description>Menu Custom 1 Label</description>
+						<label>[B]$LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(Menu_Custom1_Label)</onclick>
+					</control>
+					<control type="button" id="8102">
+						<description>Menu Custom 1 Path</description>
+						<label>[B]$LOCALIZE[31156]:[/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom1_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+					<control type="button" id="8103">
+						<description>Menu Custom 1 Background</description>
+						<label>[B]Background:[/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetImage(Home_Custom_Back_Custom1_Folder)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2)</visible>
+					<posx>460</posx>
+					<posy>562</posy>
+					<width>350</width>
+					<height>150</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="button" id="8101">
+						<description>Menu Custom 2 Label</description>
+						<label>[B]$LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(Menu_Custom2_Label)</onclick>
+					</control>
+					<control type="button" id="8102">
+						<description>Menu Custom 2 Path</description>
+						<label>[B]$LOCALIZE[31156]:[/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom2_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+					<control type="button" id="8103">
+						<description>Menu Custom 2 Background</description>
+						<label>[B]Background:[/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetImage(Home_Custom_Back_Custom2_Folder)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3)</visible>
+					<posx>460</posx>
+					<posy>595</posy>
+					<width>350</width>
+					<height>150</height>
+					<itemgap>-2</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="button" id="8101">
+						<description>Menu Custom 3 Label</description>
+						<label>[B]$LOCALIZE[31150][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(Menu_Custom3_Label)</onclick>
+					</control>
+					<control type="button" id="8102">
+						<description>Menu Custom 3 Path</description>
+						<label>[B]$LOCALIZE[31156]:[/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Path)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom3_Path)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+					</control>
+					<control type="button" id="8103">
+						<description>Menu Custom 3 Background</description>
+						<label>[B]Background:[/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)][/COLOR]</label2>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetImage(Home_Custom_Back_Custom3_Folder)</onclick>
+					</control>
+				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom1) + Skin.String(VideosCustom,1)</visible>
 					<posy>217</posy>
@@ -5291,7 +5417,6 @@
 					</control>
 				</control>				
 				<control type="grouplist" id="8200">
-
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,2) + !Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub) + Skin.HasSetting(Menu_Movies_Sub_Custom1) + Skin.String(MoviesCustom,1)</visible>
 					<posy>463</posy>
 					<include>SettingsMenuList3</include>
@@ -5300,7 +5425,6 @@
 						<label>[B]- $LOCALIZE[31150][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom1_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-
 						<onclick>Skin.SetString(Menu_Movies_Sub_Custom1_Label)</onclick>
 					</control>
 					<control type="button" id="8202">
@@ -5576,10 +5700,6 @@
 						<onclick>Skin.SetString(Menu_TVShows_Sub_Custom7_Label)</onclick>
 					</control>
 					<control type="button" id="8202">
-
-
-
-
 						<description>Menu TVShows Sub Custom7 Path</description>
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Path)][/COLOR]</label2>
@@ -5849,9 +5969,6 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Music Sub Custom2 Label</description>
-
-
-
 						<label>[B]- $LOCALIZE[31150][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom2_Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
@@ -7054,6 +7171,9 @@
 					<animation effect="slide" start="0,0" end="0,297" time="100" tween="linear" condition="Skin.String(SettingsMenu,11)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,330" time="100" tween="linear" condition="Skin.String(SettingsMenu,12)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,363" time="100" tween="linear" condition="Skin.String(SettingsMenu,13)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,396" time="100" tween="linear" condition="Skin.String(SettingsMenu,14)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,429" time="100" tween="linear" condition="Skin.String(SettingsMenu,15)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,462" time="100" tween="linear" condition="Skin.String(SettingsMenu,16)">Conditional</animation>
 					<visible>Skin.String(SkinSettings,8)</visible>
 				</control>
 				<control type="image">
@@ -7091,7 +7211,6 @@
 					<posy>401</posy>
 					<width>25</width>
 					<height>19</height>
-
 					<texture>nav-right.png</texture>
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + [[Skin.HasSetting(Menu_TVShows_Sub_Custom1) + Skin.String(TVShowsCustom,1)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom2) + Skin.String(TVShowsCustom,2)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom3) + Skin.String(TVShowsCustom,3)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom4) + Skin.String(TVShowsCustom,4)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom5) + Skin.String(TVShowsCustom,5)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom6) + Skin.String(TVShowsCustom,6)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom7) + Skin.String(TVShowsCustom,7)] | [Skin.HasSetting(Menu_TVShows_Sub_Custom8) + Skin.String(TVShowsCustom,8)]]</visible>
 					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(TVShowsCustom,2)">Conditional</animation>
@@ -7175,7 +7294,6 @@
 					<animation effect="slide" start="0,0" end="0,112" time="100" tween="linear" condition="Skin.String(ProgramsCustom,5)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,140" time="100" tween="linear" condition="Skin.String(ProgramsCustom,6)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,168" time="100" tween="linear" condition="Skin.String(ProgramsCustom,7)">Conditional</animation>
-
 					<animation effect="slide" start="0,0" end="0,196" time="100" tween="linear" condition="Skin.String(ProgramsCustom,8)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,224" time="100" tween="linear" condition="Skin.String(ProgramsCustom,9)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,252" time="100" tween="linear" condition="Skin.String(ProgramsCustom,10)">Conditional</animation>
@@ -8806,7 +8924,6 @@
 				<control type="button" id="700">
 					<description>Views Options</description>
 					<posx>0</posx>
-
 					<posy>270</posy>
 					<include>ButtonCommonValues</include>
 					<label>582</label>
