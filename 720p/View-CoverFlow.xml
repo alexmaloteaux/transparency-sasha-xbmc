@@ -2858,7 +2858,6 @@
 					<width>318</width>
 					<height>318</height>
 					<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Thumb]</texture>
-
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem(2).Label,..)</visible>
 				</control>
 				<control type="image">

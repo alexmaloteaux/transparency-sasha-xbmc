@@ -230,11 +230,11 @@
 					<posx>80</posx>
 					<posy>0</posy>
 					<animation effect="slide" start="435,160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(2)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(2)">
 						<effect type="slide" start="0,0" end="435,160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(2)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(2)">
 						<effect type="slide" start="0,0" end="435,160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -284,11 +284,11 @@
 					<posx>370</posx>
 					<posy>0</posy>
 					<animation effect="slide" start="145,160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(3)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(3)">
 						<effect type="slide" start="0,0" end="145,160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(3)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(3)">
 						<effect type="slide" start="0,0" end="145,160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -338,11 +338,11 @@
 					<posx>660</posx>
 					<posy>0</posy>
 					<animation effect="slide" start="-145,160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(4)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(4)">
 						<effect type="slide" start="0,0" end="-145,160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(4)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(4)">
 						<effect type="slide" start="0,0" end="-145,160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -392,11 +392,11 @@
 					<posx>950</posx>
 					<posy>0</posy>
 					<animation effect="slide" start="-435,160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(5)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(5)">
 						<effect type="slide" start="0,0" end="-435,160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(5)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(5)">
 						<effect type="slide" start="0,0" end="-435,160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -446,11 +446,11 @@
 					<posx>80</posx>
 					<posy>160</posy>
 					<animation effect="slide" start="435,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(6)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(6)">
 						<effect type="slide" start="0,0" end="435,0" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(6)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(6)">
 						<effect type="slide" start="0,0" end="435,0" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -500,11 +500,11 @@
 					<posx>370</posx>
 					<posy>160</posy>
 					<animation effect="slide" start="145,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(7)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(7)">
 						<effect type="slide" start="0,0" end="145,0" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(7)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(7)">
 						<effect type="slide" start="0,0" end="145,0" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -554,11 +554,11 @@
 					<posx>660</posx>
 					<posy>160</posy>
 					<animation effect="slide" start="-145,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(8)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(8)">
 						<effect type="slide" start="0,0" end="-145,0" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(8)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(8)">
 						<effect type="slide" start="0,0" end="-145,0" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -608,11 +608,11 @@
 					<posx>950</posx>
 					<posy>160</posy>
 					<animation effect="slide" start="-435,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(9)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(9)">
 						<effect type="slide" start="0,0" end="-435,0" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(9)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(9)">
 						<effect type="slide" start="0,0" end="-435,0" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -662,11 +662,11 @@
 					<posx>80</posx>
 					<posy>320</posy>
 					<animation effect="slide" start="435,-160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(10)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(10)">
 						<effect type="slide" start="0,0" end="435,-160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(10)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(10)">
 						<effect type="slide" start="0,0" end="435,-160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -716,11 +716,11 @@
 					<posx>370</posx>
 					<posy>320</posy>
 					<animation effect="slide" start="145,-160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(11)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(11)">
 						<effect type="slide" start="0,0" end="145,-160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(11)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(11)">
 						<effect type="slide" start="0,0" end="145,-160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -770,11 +770,11 @@
 					<posx>660</posx>
 					<posy>320</posy>
 					<animation effect="slide" start="-145,-160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(12)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(12)">
 						<effect type="slide" start="0,0" end="-145,-160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(12)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(12)">
 						<effect type="slide" start="0,0" end="-145,-160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
@@ -824,11 +824,11 @@
 					<posx>950</posx>
 					<posy>320</posy>
 					<animation effect="slide" start="-435,-160" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(13)"> 
+					<animation type="WindowClose" condition="!Control.HasFocus(13)">
 						<effect type="slide" start="0,0" end="-435,-160" time="400" tween="quadratic" easing="in" />
 						<effect type="fade" start="100" end="0" time="400" />
 					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(13)"> 
+					<animation type="WindowClose" condition="Control.HasFocus(13)">
 						<effect type="slide" start="0,0" end="-435,-160" time="400" tween="quadratic" easing="in" />
 					</animation>
 					<control type="image">
