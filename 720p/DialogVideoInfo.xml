@@ -233,9 +233,9 @@
 						<onright>5</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
-						<onclick>RunScript($INFO[Skin.String(TVLogoScript_Path)],$INFO[ListItem.FileNameAndPath])</onclick>
+						<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
 						<animation effect="slide" start="0,0" end="-200,50" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
-						<visible>Container.Content(TVShows) + Skin.HasSetting(TVLogoScript_Enable) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
+						<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
 					</control>
 				</control>
 			</control>
