@@ -270,7 +270,7 @@
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="49">
 					<posx>100</posx>
-					<posy>140</posy>
+					<posy>125</posy>
 					<width>1080</width>
 					<height>265</height>
 					<onleft>49</onleft>
@@ -391,6 +391,11 @@
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[569]:[/B][/UPPERCASE]</label>
 							<label2>$INFO[ListItem.Comment]</label2>
+							<onclick>-</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.FilenameAndPath]</label2>
 							<onclick>-</onclick>
 						</item>
 					</content>
