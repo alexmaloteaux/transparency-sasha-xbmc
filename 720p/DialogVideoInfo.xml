@@ -590,6 +590,13 @@
 								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label2>
 								<onclick>-</onclick>
+								<visible>!substring(ListItem.Duration,min)</visible>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.Duration]</label2>
+								<onclick>-</onclick>
+								<visible>substring(ListItem.Duration,min)</visible>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
@@ -917,6 +924,13 @@
 								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label2>
 								<onclick>-</onclick>
+								<visible>!substring(ListItem.Duration,min)</visible>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.Duration]</label2>
+								<onclick>-</onclick>
+								<visible>substring(ListItem.Duration,min)</visible>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
@@ -1065,6 +1079,13 @@
 								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label2>
 								<onclick>-</onclick>
+								<visible>!substring(ListItem.Duration,min)</visible>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.Duration]</label2>
+								<onclick>-</onclick>
+								<visible>substring(ListItem.Duration,min)</visible>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>

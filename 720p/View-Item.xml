@@ -59,6 +59,20 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
+				<visible>!substring(ListItem.Duration,min)</visible>
+			</control>
+			<control type="label">
+				<posx>160</posx>
+				<posy>615</posy>
+				<width>830</width>
+				<height>20</height>
+				<font>font-21</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - ][/B]</label>
+				<visible>substring(ListItem.Duration,min)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>

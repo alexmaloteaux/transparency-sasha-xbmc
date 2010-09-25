@@ -721,7 +721,17 @@
 					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
 					<textcolor>lightblue</textcolor>
 					<font>font-21</font>
-					<visible>!Container.Content(Seasons)</visible>
+					<visible>!Container.Content(Seasons) + !substring(ListItem.Duration,min)</visible>
+				</control>
+				<control type="label">
+					<posx>40</posx>
+					<posy>115</posy>
+					<width>1200</width>
+					<height>60</height>
+					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - ][/B]</label>
+					<textcolor>lightblue</textcolor>
+					<font>font-21</font>
+					<visible>!Container.Content(Seasons) + substring(ListItem.Duration,min)</visible>
 				</control>
 				<control type="label">
 					<posx>40</posx>
