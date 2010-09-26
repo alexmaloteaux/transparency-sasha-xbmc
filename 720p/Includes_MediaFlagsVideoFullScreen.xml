@@ -61,12 +61,12 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/cook.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,cook)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,cook)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>special://skin/images/flags/movies/audiocodec/eac3.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,eac3)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,eac3)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
