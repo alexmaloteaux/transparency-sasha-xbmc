@@ -6,7 +6,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-settings.jpg">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-settings.jpg">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -19,7 +19,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-programs.jpg">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-programs.jpg">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -57,7 +57,7 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="label"id="3">
+			<control type="label" id="3">
 				<description>List label</description>
 				<posx>200</posx>
 				<posy>100</posy>
