@@ -11,7 +11,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/images/backgrounds/background-videos.jpg">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-videos.jpg">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>

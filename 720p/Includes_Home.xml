@@ -1,34 +1,34 @@
 <includes>
 	<include name="home-movies-background">
-		<icon>special://skin/images/backgrounds/movies.jpg</icon>
+		<icon>special://skin/backgrounds/movies.jpg</icon>
 		<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 	</include>
 	<include name="home-movies-background-fanart">
-		<icon>special://skin/images/backgrounds/movies.png</icon>
-		<thumb>special://skin/images/backgrounds/movies.png</thumb>
+		<icon>special://skin/backgrounds/movies.png</icon>
+		<thumb>special://skin/backgrounds/movies.png</thumb>
 	</include>
 	<include name="home-tvshows-background">
-		<icon>special://skin/images/backgrounds/tvshows.jpg</icon>
+		<icon>special://skin/backgrounds/tvshows.jpg</icon>
 		<thumb>$INFO[Skin.String(Home_Custom_Back_TVShows_Folder)]</thumb>
 	</include>
 	<include name="home-tvshows-background-fanart">
-		<icon>special://skin/images/backgrounds/tvshows.png</icon>
-		<thumb>special://skin/images/backgrounds/tvshows.png</thumb>
+		<icon>special://skin/backgrounds/tvshows.png</icon>
+		<thumb>special://skin/backgrounds/tvshows.png</thumb>
 	</include>
 	<include name="home-music-background">
-		<icon>special://skin/images/backgrounds/music.jpg</icon>
+		<icon>special://skin/backgrounds/music.jpg</icon>
 		<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 	</include>
 	<include name="home-music-background-fanart">
-		<icon>special://skin/images/backgrounds/music.png</icon>
-		<thumb>special://skin/images/backgrounds/music.png</thumb>
+		<icon>special://skin/backgrounds/music.png</icon>
+		<thumb>special://skin/backgrounds/music.png</thumb>
 	</include>
 	<include name="home-weather-background-conditional">
-		<icon>special://skin/images/backgrounds/weather.jpg</icon>
-		<thumb>special://skin/images/backgrounds/home-weather-conditional/$INFO[Weather.FanartCode]</thumb>
+		<icon>special://skin/backgrounds/weather.jpg</icon>
+		<thumb>special://skin/backgrounds/home-weather-conditional/$INFO[Weather.FanartCode]</thumb>
 	</include>
 	<include name="home-weather-background">
-		<icon>special://skin/images/backgrounds/weather.jpg</icon>
+		<icon>special://skin/backgrounds/weather.jpg</icon>
 		<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 	</include>
 	<include name="Home_Movies_Fanart">
@@ -1882,7 +1882,7 @@
 				<item id="1">
 					<label>3</label>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
-					<icon>special://skin/images/backgrounds/videos.jpg</icon>
+					<icon>special://skin/backgrounds/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Videos)</visible>
 				</item>
@@ -1903,14 +1903,14 @@
 				<item id="4">
 					<label>20389</label>
 					<onclick>ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
-					<icon>special://skin/images/backgrounds/musicvideos.jpg</icon>
+					<icon>special://skin/backgrounds/musicvideos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_MusicVideos)</visible>
 				</item>
 				<item id="5">
 					<label>31500</label>
 					<onclick>ActivateWindow(TV)</onclick>
-					<icon>special://skin/images/backgrounds/tv.jpg</icon>
+					<icon>special://skin/backgrounds/tv.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_TV)</visible>
 				</item>
@@ -1931,14 +1931,14 @@
 				<item id="7">
 					<label>1</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
-					<icon>special://skin/images/backgrounds/pictures.jpg</icon>
+					<icon>special://skin/backgrounds/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Pictures)</visible>
 				</item>
 				<item id="8">
 					<label>0</label>
 					<onclick>ActivateWindow(Programs)</onclick>
-					<icon>special://skin/images/backgrounds/programs.jpg</icon>
+					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Programs)</visible>
 				</item>
@@ -1952,21 +1952,21 @@
 				<item id="11">
 					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
-					<icon>special://skin/images/backgrounds/favourites.jpg</icon>
+					<icon>special://skin/backgrounds/favourites.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Favourites)</visible>
 				</item>
 				<item id="12">
 					<label>5</label>
 					<onclick>ActivateWindow(Settings)</onclick>
-					<icon>special://skin/images/backgrounds/settings.jpg</icon>
+					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Settings)</visible>
 				</item>
 				<item id="13">
 					<label>341</label>
 					<onclick>PlayDVD()</onclick>
-					<icon>special://skin/images/backgrounds/playdisc.jpg</icon>
+					<icon>special://skin/backgrounds/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
 				</item>
@@ -2201,14 +2201,14 @@
 				<item id="12">
 					<label>5</label>
 					<onclick>ActivateWindow(Settings)</onclick>
-					<icon>special://skin/images/backgrounds/settings.jpg</icon>
+					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Settings)</visible>
 				</item>
 				<item id="7">
 					<label>1</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
-					<icon>special://skin/images/backgrounds/pictures.jpg</icon>
+					<icon>special://skin/backgrounds/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Pictures)</visible>
 				</item>
@@ -2229,7 +2229,7 @@
 				<item id="1">
 					<label>3</label>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
-					<icon>special://skin/images/backgrounds/videos.jpg</icon>
+					<icon>special://skin/backgrounds/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Videos)</visible>
 				</item>
@@ -2250,21 +2250,21 @@
 				<item id="4">
 					<label>20389</label>
 					<onclick>ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
-					<icon>special://skin/images/backgrounds/musicvideos.jpg</icon>
+					<icon>special://skin/backgrounds/musicvideos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_MusicVideos)</visible>
 				</item>
 				<item id="5">
 					<label>31500</label>
 					<onclick>ActivateWindow(TV)</onclick>
-					<icon>special://skin/images/backgrounds/tv.jpg</icon>
+					<icon>special://skin/backgrounds/tv.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_TV)</visible>
 				</item>
 				<item id="8">
 					<label>0</label>
 					<onclick>ActivateWindow(Programs)</onclick>
-					<icon>special://skin/images/backgrounds/programs.jpg</icon>
+					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Programs)</visible>
 				</item>
@@ -2278,14 +2278,14 @@
 				<item id="11">
 					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
-					<icon>special://skin/images/backgrounds/favourites.jpg</icon>
+					<icon>special://skin/backgrounds/favourites.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Favourites)</visible>
 				</item>
 				<item id="13">
 					<label>341</label>
 					<onclick>PlayDVD()</onclick>
-					<icon>special://skin/images/backgrounds/playdisc.jpg</icon>
+					<icon>special://skin/backgrounds/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
 				</item>

@@ -7,7 +7,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-settings.jpg">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-settings.jpg">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -22,7 +22,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-videos.jpg">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-videos.jpg">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -37,7 +37,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -52,7 +52,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/images/backgrounds/background-pictures.jpg">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-pictures.jpg">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
