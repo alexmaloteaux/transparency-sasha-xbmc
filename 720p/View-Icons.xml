@@ -293,7 +293,7 @@
 						<height>45</height>
 						<animation effect="zoom" start="64,10,66,45" end="57,-15,80,54" time="250">Focus</animation>
 						<animation effect="zoom" start="57,-15,80,54" end="64,10,66,45" time="250">UnFocus</animation>
-						<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
+						<texture>flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 						<colordiffuse>FF7C7063</colordiffuse>
 						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>
@@ -304,7 +304,7 @@
 						<height>45</height>
 						<animation effect="zoom" start="64,10,66,45" end="57,-15,80,54" time="250">Focus</animation>
 						<animation effect="zoom" start="57,-15,80,54" end="64,10,66,45" time="250">UnFocus</animation>
-						<texture>special://skin/images/flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
+						<texture>flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 						<colordiffuse>FF4EA3F8</colordiffuse>
 						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Skin.HasSetting(HideVideoCase)</visible>
 					</control>

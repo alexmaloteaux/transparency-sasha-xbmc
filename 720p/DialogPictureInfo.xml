@@ -23,7 +23,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/bmp.png</texture>
+				<texture>foldericons/pictures/bmp.png</texture>
 				<visible>substring(Listitem.Filename,.bmp,right)</visible>
 			</control>
 			<control type="image">
@@ -31,7 +31,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/gif.png</texture>
+				<texture>foldericons/pictures/gif.png</texture>
 				<visible>substring(Listitem.Filename,.gif,right)</visible>
 			</control>
 			<control type="image">
@@ -39,7 +39,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/jpg.png</texture>
+				<texture>foldericons/pictures/jpg.png</texture>
 				<visible>substring(Listitem.Filename,.jpg,right) | substring(Listitem.Filename,.jpeg,right)</visible>
 			</control>
 			<control type="image">
@@ -47,7 +47,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/png.png</texture>
+				<texture>foldericons/pictures/png.png</texture>
 				<visible>substring(Listitem.Filename,.png,right)</visible>
 			</control>
 			<control type="image">
@@ -55,7 +55,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/tga.png</texture>
+				<texture>foldericons/pictures/tga.png</texture>
 				<visible>substring(Listitem.Filename,.tga,right)</visible>
 			</control>
 			<control type="image">
@@ -63,7 +63,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/tiff.png</texture>
+				<texture>foldericons/pictures/tiff.png</texture>
 				<visible>substring(Listitem.Filename,.tiff,right)</visible>
 			</control>
 			<control type="image">
@@ -71,7 +71,7 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>special://skin/images/foldericons/pictures/wmf.png</texture>
+				<texture>foldericons/pictures/wmf.png</texture>
 				<visible>substring(Listitem.Filename,.wmf,right)</visible>
 			</control>
 			<control type="label">

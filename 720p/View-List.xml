@@ -331,7 +331,7 @@
 				<width>161</width>
 				<height>109</height>
 				<aspectratio>keep</aspectratio>
-				<texture>special://skin/images/flags/movies/studio/$INFO[Listitem.label,,.png]</texture>
+				<texture>flags/movies/studio/$INFO[Listitem.label,,.png]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios)</visible>
 			</control>
 			<control type="image">
@@ -349,7 +349,7 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-movies-icon.jpg">special://skin/images/foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-movies-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)</visible>
 			</control>
 			<control type="image">
@@ -388,7 +388,7 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-tvshows-icon.jpg">special://skin/images/foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-tvshows-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
 			</control>
 			<control type="image">
@@ -834,7 +834,7 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-music-icon.jpg">special://skin/images/foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + substring(Container.FolderPath,musicdb://1/)</visible>
 			</control>
 			<control type="image">
