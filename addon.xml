@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
 	id="skin.transparency"
-	version="3.06.0"
+	version="3.10.0"
 	name="Transparency!"
 	provider-name="ronie">
 	<requires>
 		<import	addon="xbmc.gui" version="2.11"/>
 		<import addon="script.recentlyadded" version="1.0.4"/>
-		<import addon="script.favourites" version="1.0.1"/> 
+		<import addon="script.favourites" version="1.0.1"/>
+		<import addon="script.logo-downloader" version="2.0.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin"
 	defaultresolution="720p"
@@ -18,7 +19,6 @@
 	<extension point="xbmc.addon.metadata">
 		<summary>Transparency! a fanart skin for XBMC</summary>
 		<description>What is Transparency!? Short answer: a fanart skin. The main goal of Transparency! is showing your fanart, fullscreen, in all of the views, all of the time. Besides this, it also tries to support every neat new feature xbmc has to offer. To save everyone a lot of time and trouble hacking the xml code themselves, all of these new features are already included in the skin, pre-configured and enabled by default (wherever possible).</description>
-		<disclaimer>You are using a svn version of Transparency!, there is no guarantee svn versions of this skin are stable.</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
