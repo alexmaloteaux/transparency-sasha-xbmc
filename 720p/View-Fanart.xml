@@ -1306,9 +1306,9 @@
 			</control>
 		</control>
 	</include>
-	<include name="Fanart-ProgramsPicturesScripts">
+	<include name="Fanart-ProgramsPicturesAddons">
 		<control type="list" id="50">
-			<visible>Window.IsVisible(Programs) | Window.IsVisible(Pictures) | Window.IsVisible(Scripts)</visible>
+			<visible>Window.IsVisible(Programs) | Window.IsVisible(Pictures) | Window.IsVisible(AddonBrowser)</visible>
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>355</width>
@@ -1395,7 +1395,7 @@
 			</focusedlayout>
 		</control>
 	</include>
-	<include name="Fanart-Programs-Extras">
+	<include name="Fanart-ProgramsAddons-Extras">
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
@@ -1431,7 +1431,6 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<pagecontrol>60</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="button" id="7009">
@@ -1449,8 +1448,8 @@
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<aspectratio aligny="center">keep</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 		</control>
 	</include>

@@ -3258,7 +3258,32 @@
 						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
 					</control>
-					<control type="image" id="732">
+					<control type="radiobutton" id="732">
+						<label>$LOCALIZE[0] - $LOCALIZE[544]</label>
+						<onclick>Skin.ToggleSetting(Hide-Programs-MediaInfo)</onclick>
+						<selected>Skin.HasSetting(Hide-Programs-MediaInfo)</selected>
+					</control>
+					<control type="image" id="733">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="734">
+						<label>$LOCALIZE[24001] - $LOCALIZE[31031]</label>
+						<onclick>Skin.ToggleSetting(Hide-Addons-FullList)</onclick>
+						<selected>Skin.HasSetting(Hide-Addons-FullList)</selected>
+					</control>
+					<control type="radiobutton" id="735">
+						<label>$LOCALIZE[24001] - $LOCALIZE[535]</label>
+						<onclick>Skin.ToggleSetting(Hide-Addons-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Addons-List)</selected>
+					</control>
+					<control type="radiobutton" id="736">
+						<label>$LOCALIZE[24001] - $LOCALIZE[21371]</label>
+						<onclick>Skin.ToggleSetting(Hide-Addons-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Addons-Thumbnail)</selected>
+					</control>
+					<control type="image" id="737">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
@@ -5314,6 +5339,7 @@
 					<control type="button" id="8202">
 						<description>Menu Videos Sub Custom4 Path</description>
 						<label>[B]- $LOCALIZE[31151][/B]</label>
+
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
 						<onclick>Skin.SetString(Menu_Videos_Sub_Custom4_Path)</onclick>
@@ -6133,6 +6159,7 @@
 						<onclick>Skin.SetString(Menu_Pictures_Sub_Custom3_Label)</onclick>
 					</control>
 					<control type="button" id="8202">
+
 						<description>Menu Pictures Sub Custom3 Path</description>
 						<label>[B]- $LOCALIZE[31151][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Path)][/COLOR]</label2>
@@ -7750,6 +7777,7 @@
 							<visible>Skin.HasSetting(circle5)</visible>
 						</control>
 						<control type="image">
+
 							<posx>380</posx>
 							<posy>185</posy>
 							<width>110</width>

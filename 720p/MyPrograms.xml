@@ -1,7 +1,7 @@
 <window id="1">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,52,53</views>
+	<views>50,51,52,53,599</views>
 	<controls>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -28,7 +28,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanart-Programs_Pictures_Scripts</include>
+		<include condition="!Skin.HasSetting(SafeMode)">fanart-Programs_Pictures</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
@@ -36,7 +36,8 @@
 			<include condition="!Skin.HasSetting(Hide-Programs-FullList)">FullList</include>
 			<include condition="!Skin.HasSetting(Hide-Programs-List)">List</include>
 			<include condition="!Skin.HasSetting(Hide-Programs-Thumbnail)">Thumbnail</include>
-			<include>Fanart-ProgramsPicturesScripts</include>
+			<include condition="!Skin.HasSetting(Hide-Programs-MediaInfo)">MediaInfo-AddOns</include>
+			<include>Fanart-ProgramsPicturesAddons</include>
 			<include>AllViewCommonPageControls</include>
 			<include>ScrollOffsetLabel</include>
 			<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
@@ -46,7 +47,7 @@
 		</control>
 		<control type="group">
 			<include>ContentFade2</include>
-			<include>Fanart-Programs-Extras</include>
+			<include>Fanart-ProgramsAddons-Extras</include>
 		</control>
 		<control type="group">
 			<posy>23</posy>
