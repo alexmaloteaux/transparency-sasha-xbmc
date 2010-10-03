@@ -687,93 +687,111 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 								<visible>Skin.HasSetting(Home_Weather_Conditional_Backgrounds)</visible>
 							</item>
-							<item id="11">
+							<item id="10">
 								<label>$LOCALIZE[10000] - $LOCALIZE[1036]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/favourites.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
 							</item>
-							<item id="12">
+							<item id="11">
 								<label>$LOCALIZE[10000] - $LOCALIZE[5]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/settings.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 							</item>
-							<item id="13">
+							<item id="12">
 								<label>$LOCALIZE[10000] - $LOCALIZE[341]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/playdisc.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 							</item>
+							<item id="13">
+								<label>$LOCALIZE[10000] - $LOCALIZE[636] 1</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/settings.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)]</thumb>
+							</item>
 							<item id="14">
+								<label>$LOCALIZE[10000] - $LOCALIZE[636] 2</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/settings.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)]</thumb>
+							</item>
+							<item id="15">
+								<label>$LOCALIZE[10000] - $LOCALIZE[636] 3</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/settings.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)]</thumb>
+							</item>
+							<item id="16">
 								<label>$LOCALIZE[3]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Videos_Folder)]</thumb>
 							</item>
-							<item id="15">
+							<item id="17">
 								<label>$LOCALIZE[342]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-movies.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Movies_Folder)]</thumb>
 							</item>
-							<item id="16">
+							<item id="18">
 								<label>$LOCALIZE[20343]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-tvshows.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_TVShows_Folder)]</thumb>
 							</item>
-							<item id="17">
+							<item id="19">
 								<label>$LOCALIZE[20389]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-musicvideos.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</thumb>
 							</item>
-							<item id="18">
+							<item id="20">
 								<label>$LOCALIZE[31500]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-tv.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Trailers_Folder)]</thumb>
 							</item>
-							<item id="19">
+							<item id="21">
 								<label>$LOCALIZE[2]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-music.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Music_Folder)]</thumb>
 							</item>
-							<item id="20">
+							<item id="22">
 								<label>$LOCALIZE[1]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-pictures.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Pictures_Folder)]</thumb>
 							</item>
-							<item id="21">
+							<item id="23">
 								<label>$LOCALIZE[0]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-programs.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Programs_Folder)]</thumb>
 							</item>
-							<item id="22">
+							<item id="24">
 								<label>$LOCALIZE[8]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-weather.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)]$INFO[Weather.FanartCode]</thumb>
 								<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 							</item>
-							<item id="22">
+							<item id="24">
 								<label>$LOCALIZE[8]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-weather.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Weather_Folder)]</thumb>
 								<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 							</item>
-							<item id="24">
+							<item id="25">
 								<label>$LOCALIZE[5]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-settings.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Settings_Folder)]</thumb>
 							</item>
-							<item id="25">
+							<item id="26">
 								<label>$LOCALIZE[20096]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-login.jpg</icon>
@@ -1548,7 +1566,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(11)</visible>
+						<visible>Container(302).HasFocus(10)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1602,7 +1620,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(12)</visible>
+						<visible>Container(302).HasFocus(11)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1656,7 +1674,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(13)</visible>
+						<visible>Container(302).HasFocus(12)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1710,7 +1728,169 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
+						<visible>Container(302).HasFocus(13)</visible>
+						<control type="button" id="303">
+							<description>Single Image button</description>
+							<posx>10</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>31113</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.SetImage(Home_Custom_Back_Custom1_Folder)</onclick>
+							<onleft>302</onleft>
+							<onright>304</onright>
+							<onup>303</onup>
+							<ondown>303</ondown>
+						</control>
+						<control type="button" id="304">
+							<description>Multi Image button</description>
+							<posx>180</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>31114</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.SetPath(Home_Custom_Back_Custom1_Folder)</onclick>
+							<onleft>303</onleft>
+							<onright>305</onright>
+							<onup>304</onup>
+							<ondown>304</ondown>
+						</control>
+						<control type="button" id="305">
+							<description>Default Image button</description>
+							<posx>350</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>571</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.Reset(Home_Custom_Back_Custom1_Folder)</onclick>
+							<onleft>304</onleft>
+							<onright>399</onright>
+							<onup>305</onup>
+							<ondown>305</ondown>
+						</control>
+						<include>ButtonScroll</include>
+					</control>
+					<control type="group">
+						<posx>555</posx>
+						<posy>215</posy>
 						<visible>Container(302).HasFocus(14)</visible>
+						<control type="button" id="303">
+							<description>Single Image button</description>
+							<posx>10</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>31113</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.SetImage(Home_Custom_Back_Custom2_Folder)</onclick>
+							<onleft>302</onleft>
+							<onright>304</onright>
+							<onup>303</onup>
+							<ondown>303</ondown>
+						</control>
+						<control type="button" id="304">
+							<description>Multi Image button</description>
+							<posx>180</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>31114</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.SetPath(Home_Custom_Back_Custom2_Folder)</onclick>
+							<onleft>303</onleft>
+							<onright>305</onright>
+							<onup>304</onup>
+							<ondown>304</ondown>
+						</control>
+						<control type="button" id="305">
+							<description>Default Image button</description>
+							<posx>350</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>571</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.Reset(Home_Custom_Back_Custom2_Folder)</onclick>
+							<onleft>304</onleft>
+							<onright>399</onright>
+							<onup>305</onup>
+							<ondown>305</ondown>
+						</control>
+						<include>ButtonScroll</include>
+					</control>
+					<control type="group">
+						<posx>555</posx>
+						<posy>215</posy>
+						<visible>Container(302).HasFocus(15)</visible>
+						<control type="button" id="303">
+							<description>Single Image button</description>
+							<posx>10</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>31113</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.SetImage(Home_Custom_Back_Custom3_Folder)</onclick>
+							<onleft>302</onleft>
+							<onright>304</onright>
+							<onup>303</onup>
+							<ondown>303</ondown>
+						</control>
+						<control type="button" id="304">
+							<description>Multi Image button</description>
+							<posx>180</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>31114</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.SetPath(Home_Custom_Back_Custom3_Folder)</onclick>
+							<onleft>303</onleft>
+							<onright>305</onright>
+							<onup>304</onup>
+							<ondown>304</ondown>
+						</control>
+						<control type="button" id="305">
+							<description>Default Image button</description>
+							<posx>350</posx>
+							<posy>0</posy>
+							<width>165</width>
+							<height>35</height>
+							<label>571</label>
+							<align>center</align>
+							<texturenofocus border="7">button-nofocus.png</texturenofocus>
+							<texturefocus border="7">button-nofocus.png</texturefocus>
+							<onclick>Skin.Reset(Home_Custom_Back_Custom3_Folder)</onclick>
+							<onleft>304</onleft>
+							<onright>399</onright>
+							<onup>305</onup>
+							<ondown>305</ondown>
+						</control>
+						<include>ButtonScroll</include>
+					</control>
+					<control type="group">
+						<posx>555</posx>
+						<posy>215</posy>
+						<visible>Container(302).HasFocus(16)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1764,7 +1944,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(15)</visible>
+						<visible>Container(302).HasFocus(17)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1818,7 +1998,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(16)</visible>
+						<visible>Container(302).HasFocus(18)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1872,7 +2052,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(17)</visible>
+						<visible>Container(302).HasFocus(19)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1926,7 +2106,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(18)</visible>
+						<visible>Container(302).HasFocus(20)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -1980,7 +2160,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(19)</visible>
+						<visible>Container(302).HasFocus(21)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -2034,7 +2214,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(20)</visible>
+						<visible>Container(302).HasFocus(22)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -2088,7 +2268,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(21)</visible>
+						<visible>Container(302).HasFocus(23)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -2142,7 +2322,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(22)</visible>
+						<visible>Container(302).HasFocus(24)</visible>
 						<control type="button" id="304">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -2248,7 +2428,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(24)</visible>
+						<visible>Container(302).HasFocus(25)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -2302,7 +2482,7 @@
 					<control type="group">
 						<posx>555</posx>
 						<posy>215</posy>
-						<visible>Container(302).HasFocus(25)</visible>
+						<visible>Container(302).HasFocus(26)</visible>
 						<control type="button" id="303">
 							<description>Single Image button</description>
 							<posx>10</posx>
@@ -2374,7 +2554,7 @@
 						<timeperimage>6000</timeperimage>
 						<randomize>true</randomize>
 						<fadetime>400</fadetime>
-						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(22) + Skin.HasSetting(Weather_Conditional_Backgrounds) + Skin.HasSetting(Weather_Conditional_Options)]">conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds) + Skin.HasSetting(Weather_Conditional_Options)]">conditional</animation>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">
@@ -5165,7 +5345,7 @@
 					<posx>460</posx>
 					<posy>529</posy>
 					<width>350</width>
-					<height>150</height>
+					<height>100</height>
 					<itemgap>-2</itemgap>
 					<pagecontrol>-</pagecontrol>
 					<onleft>801</onleft>
@@ -5188,20 +5368,13 @@
 						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom1_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
 					</control>
-					<control type="button" id="8103">
-						<description>Menu Custom 1 Background</description>
-						<label>[B]Background:[/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)][/COLOR]</label2>
-						<include>ButtonMenuSettings2</include>
-						<onclick>Skin.SetImage(Home_Custom_Back_Custom1_Folder)</onclick>
-					</control>
 				</control>
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2)</visible>
 					<posx>460</posx>
 					<posy>562</posy>
 					<width>350</width>
-					<height>150</height>
+					<height>100</height>
 					<itemgap>-2</itemgap>
 					<pagecontrol>-</pagecontrol>
 					<onleft>801</onleft>
@@ -5224,20 +5397,13 @@
 						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom2_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
 					</control>
-					<control type="button" id="8103">
-						<description>Menu Custom 2 Background</description>
-						<label>[B]Background:[/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)][/COLOR]</label2>
-						<include>ButtonMenuSettings2</include>
-						<onclick>Skin.SetImage(Home_Custom_Back_Custom2_Folder)</onclick>
-					</control>
 				</control>
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3)</visible>
 					<posx>460</posx>
 					<posy>595</posy>
 					<width>350</width>
-					<height>150</height>
+					<height>100</height>
 					<itemgap>-2</itemgap>
 					<pagecontrol>-</pagecontrol>
 					<onleft>801</onleft>
@@ -5259,13 +5425,6 @@
 						<include>ButtonMenuSettings2</include>
 						<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom3_Path)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-					</control>
-					<control type="button" id="8103">
-						<description>Menu Custom 3 Background</description>
-						<label>[B]Background:[/B]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)][/COLOR]</label2>
-						<include>ButtonMenuSettings2</include>
-						<onclick>Skin.SetImage(Home_Custom_Back_Custom3_Folder)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
