@@ -2760,6 +2760,10 @@
 						<enable>Skin.HasSetting(TrailerScript_Enable)</enable>
 						<visible>false</visible>
 					</control>
+					<control type="button" id="514">
+						<label>$LOCALIZE[31209]</label>
+						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
+					</control>
 				</control>
 				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>
