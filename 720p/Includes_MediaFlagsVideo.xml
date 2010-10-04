@@ -55,6 +55,11 @@
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
+			<texture>flags/movies/audiocodec/dd61.png</texture>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,7)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
 			<texture>flags/movies/audiocodec/dd71.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,8)</visible>
 		</control>
@@ -82,6 +87,11 @@
 			<include>VideoMediaFlagsVars</include>
 			<texture>flags/movies/audiocodec/dts51.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,6)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsVars</include>
+			<texture>flags/movies/audiocodec/dts61.png</texture>
+			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,7)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
