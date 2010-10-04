@@ -20,14 +20,14 @@
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
+				<posx>265</posx>
 				<posy>572</posy>
-				<width>636</width>
+				<width>975</width>
 				<height>30</height>
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<align>center</align>
+				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
@@ -35,8 +35,8 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>265</posx>
-				<posy>600</posy>
-				<width>600</width>
+				<posy>604</posy>
+				<width>975</width>
 				<height>85</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
@@ -51,7 +51,7 @@
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<aspectratio aligny="center">keep</aspectratio>
 			</control>
 		</control>
