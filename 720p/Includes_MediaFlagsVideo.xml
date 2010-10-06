@@ -121,7 +121,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>flags/movies/audiocodec/ogg.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,vorbis)</visible>
+			<visible>stringcompare(ListItem.AudioCodec,ogg) | stringcompare(ListItem.AudioCodec,vorbis)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>

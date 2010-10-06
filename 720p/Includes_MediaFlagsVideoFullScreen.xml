@@ -121,7 +121,7 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
 			<texture>flags/movies/audiocodec/ogg.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,vorbis)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,ogg) | stringcompare(VideoPlayer.AudioCodec,vorbis)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
