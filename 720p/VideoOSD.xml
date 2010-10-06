@@ -553,6 +553,7 @@
 						<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 						<texturefocus>osd-subs-focus.png</texturefocus>
 						<onclick>RunScript($INFO[Skin.String(SubsScript_Path)])</onclick>
+						<onclick>Dialog.Close(videoosd)</onclick>
 						<onleft>913</onleft>
 						<onright>915</onright>
 						<onup>9040</onup>
