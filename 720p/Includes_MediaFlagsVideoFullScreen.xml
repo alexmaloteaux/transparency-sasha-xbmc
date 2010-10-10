@@ -30,22 +30,22 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/mono.png</texture>
+			<texture>flags/movies/audiocodec/dd10.png</texture>
 			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/dolby20.png</texture>
+			<texture>flags/movies/audiocodec/dd20.png</texture>
 			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,2)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/dd40.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,4)</visible>
+			<texture>flags/movies/audiocodec/dd30.png</texture>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,3)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/dd41.png</texture>
+			<texture>flags/movies/audiocodec/dd50.png</texture>
 			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,5)</visible>
 		</control>
 		<control type="image">
@@ -125,13 +125,8 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/wav.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,pcm)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/lpcm.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,pcm_bluray)</visible>
+			<texture>flags/movies/audiocodec/pcm.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,pcm) | stringcompare(VideoPlayer.AudioCodec,pcm_bluray)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVars</include>

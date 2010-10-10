@@ -30,22 +30,22 @@
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/mono.png</texture>
+			<texture>flags/movies/audiocodec/dd10.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,1)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/dolby20.png</texture>
+			<texture>flags/movies/audiocodec/dd20.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,2)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/dd40.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,4)</visible>
+			<texture>flags/movies/audiocodec/dd30.png</texture>
+			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,3)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/dd41.png</texture>
+			<texture>flags/movies/audiocodec/dd50.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,5)</visible>
 		</control>
 		<control type="image">
@@ -126,12 +126,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
 			<texture>flags/movies/audiocodec/wav.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,pcm)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsVars</include>
-			<texture>flags/movies/audiocodec/lpcm.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,pcm_bluray)</visible>
+			<visible>stringcompare(ListItem.AudioCodec,pcm) | stringcompare(ListItem.AudioCodec,pcm_bluray)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsVars</include>
