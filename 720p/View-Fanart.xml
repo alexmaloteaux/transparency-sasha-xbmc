@@ -470,7 +470,6 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<include condition="Skin.HasSetting(TVLogo) + !Skin.HasSetting(SafeMode)">tvlogo-fanart</include>
 			<control type="image">
 				<posx>38</posx>
 				<posy>418</posy>

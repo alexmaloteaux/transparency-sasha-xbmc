@@ -321,7 +321,7 @@
 	<include name="musicsongsdisc-View_Icons">
 		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[ListItem.Path,,cdart.png]</texture>
 	</include>
-	<include name="tvlogo-fanart">
+	<include name="tvlogo">
 		<control type="image">
 			<posx>10</posx>
 			<posy>30</posy>
@@ -330,31 +330,17 @@
 			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>Container.Content(TVShows)</visible>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(596)] + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 		</control>
-	</include>
-	<include name="tvlogo-coverflow">
 		<control type="image">
-			<posx>1042</posx>
-			<posy>14</posy>
+			<posx>10</posx>
+			<posy>30</posy>
 			<width>230</width>
 			<height>89</height>
-			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
+			<texture background="true">$INFO[ListItem.Path,,../logo.png]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
-			<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>Container.Content(TVShows)</visible>
-		</control>
-	</include>
-	<include name="tvlogo-slide">
-		<control type="image">
-			<posx>1042</posx>
-			<posy>14</posy>
-			<width>230</width>
-			<height>89</height>
-			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<animation effect="rotate" start="0" end="-15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>Container.Content(TVShows)</visible>
+			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(596)] + Container.Content(Episodes)</visible>
 		</control>
 	</include>
 </includes>

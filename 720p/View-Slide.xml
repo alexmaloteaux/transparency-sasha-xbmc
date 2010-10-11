@@ -1752,7 +1752,6 @@
 				<texture background="true">$INFO[ListItem.Overlay]</texture>
 				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
-			<include condition="Skin.HasSetting(TVLogo) + !Skin.HasSetting(SafeMode)">tvlogo-slide</include>
 			<control type="label">
 				<posx>140</posx>
 				<posy>27</posy>
