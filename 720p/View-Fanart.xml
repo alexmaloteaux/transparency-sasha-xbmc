@@ -255,11 +255,19 @@
 				<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
+			<control type="image">
+				<posx>1212</posx>
+				<posy>14</posy>
+				<width>50</width>
+				<height>40</height>
+				<texture>mediaflag.png</texture>
+				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
+			</control>
 			<control type="button" id="7005">
-				<posx>776</posx>
-				<posy>596</posy>
-				<width>60</width>
-				<height>41</height>
+				<posx>1213</posx>
+				<posy>18</posy>
+				<width>48</width>
+				<height>31</height>
 				<label>-</label>
 				<font>-</font>
 				<texturefocus>trailer-small-focus.png</texturefocus>
@@ -276,14 +284,11 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !Window.IsVisible(VideoFiles)</visible>
-				<control type="grouplist">
-					<posx>257</posx>
-					<posy>659</posy>
-					<width>577</width>
-					<height>40</height>
-					<itemgap>13</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
+				<control type="group">
+					<posx>252</posx>
+					<posy>655</posy>
+					<width>472</width>
+					<height>48</height>
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				</control>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
@@ -745,25 +750,19 @@
 				<label>$INFO[ListItem.year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
 				<visible>Container.Content(MusicVideos) + !Window.IsVisible(Videofiles)</visible>
 			</control>
-			<control type="grouplist">
-				<posx>310</posx>
-				<posy>659</posy>
-				<width>563</width>
-				<height>40</height>
-				<itemgap>13</itemgap>
-				<align>center</align>
-				<orientation>horizontal</orientation>
+			<control type="group">
+				<posx>311</posx>
+				<posy>655</posy>
+				<width>540</width>
+				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
 				<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags) + Container.Content(Episodes) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
-			<control type="grouplist">
-				<posx>317</posx>
-				<posy>659</posy>
-				<width>563</width>
-				<height>40</height>
-				<itemgap>13</itemgap>
-				<align>left</align>
-				<orientation>horizontal</orientation>
+			<control type="group">
+				<posx>311</posx>
+				<posy>655</posy>
+				<width>540</width>
+				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
 				<visible>!Skin.HasSetting(Enable_MusicVideos_Media_Flags) + Container.Content(MusicVideos) + !Window.IsVisible(VideoFiles)</visible>
 			</control>

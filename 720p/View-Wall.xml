@@ -765,8 +765,8 @@
 					<effect type="fade" start="100" end="0" time="3000" />
 				</animation>
 				<control type="group">
-					<posx>410</posx>
-					<posy>20</posy>
+					<posx>578</posx>
+					<posy>148</posy>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
 				</control>
@@ -2391,8 +2391,8 @@
 					<effect type="fade" start="100" end="0" time="3000" />
 				</animation>
 				<control type="group">
-					<posx>410</posx>
-					<posy>20</posy>
+					<posx>440</posx>
+					<posy>31</posy>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 					<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 					<visible>!Container.Content(Artists)</visible>

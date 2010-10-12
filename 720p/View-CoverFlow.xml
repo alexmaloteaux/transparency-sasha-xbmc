@@ -1304,25 +1304,19 @@
 				<aligny>center</aligny>
 				<label>[B]$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)][/B]</label>
 			</control>
-			<control type="grouplist">
-				<posx>355</posx>
+			<control type="group">
+				<posx>370</posx>
 				<posy>60</posy>
-				<width>577</width>
-				<height>40</height>
-				<itemgap>13</itemgap>
-				<align>center</align>
-				<orientation>horizontal</orientation>
+				<width>540</width>
+				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
-			<control type="grouplist">
-				<posx>355</posx>
+			<control type="group">
+				<posx>370</posx>
 				<posy>60</posy>
-				<width>577</width>
-				<height>40</height>
-				<itemgap>13</itemgap>
-				<align>center</align>
-				<orientation>horizontal</orientation>
+				<width>540</width>
+				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(TVShows) + !Window.IsVisible(VideoFiles)</visible>
 			</control>

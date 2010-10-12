@@ -234,14 +234,11 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 				</control>
-				<control type="grouplist">
-					<posx>662</posx>
-					<posy>160</posy>
-					<width>419</width>
-					<height>40</height>
-					<align>center</align>
-					<itemgap>13</itemgap>
-					<orientation>horizontal</orientation>
+				<control type="group">
+					<posx>668</posx>
+					<posy>156</posy>
+					<width>404</width>
+					<height>48</height>
 					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>

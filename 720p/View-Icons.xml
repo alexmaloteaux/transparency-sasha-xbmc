@@ -483,14 +483,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(57) + !Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
-			<control type="grouplist">
-				<posx>686</posx>
+			<control type="group">
+				<posx>792</posx>
 				<posy>675</posy>
-				<width>577</width>
-				<height>40</height>
-				<itemgap>13</itemgap>
-				<align>right</align>
-				<orientation>horizontal</orientation>
+				<width>472</width>
+				<height>48</height>
 				<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="zoom" start="90" end="90" center="auto" time="0" condition="true">Conditional</animation>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
@@ -750,8 +747,8 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-				<posx>387</posx>
-				<posy>33</posy>
+				<posx>411</posx>
+				<posy>40</posy>
 				<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			</control>
 		</control>
