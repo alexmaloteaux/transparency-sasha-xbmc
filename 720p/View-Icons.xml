@@ -537,6 +537,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<animation effect="fade" begin="100" end="0" time="35">Hidden</animation>
 				<visible>!Control.IsVisible(7015) + !Control.IsVisible(7016)</visible>
 				<control type="image">
 					<posx>547</posx>
