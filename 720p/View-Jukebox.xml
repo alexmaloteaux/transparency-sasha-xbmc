@@ -168,6 +168,7 @@
 			<pagecontrol>60</pagecontrol>
 			<orientation>horizontal</orientation>
 			<scrolltime>200</scrolltime>
+			<visible>!Container.Content(AddOns)</visible>
 			<itemlayout width="240" height="51">
 				<control type="image">
 					<posx>0</posx>

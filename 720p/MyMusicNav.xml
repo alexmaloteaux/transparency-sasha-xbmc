@@ -1,7 +1,7 @@
 <window id="502">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,52,53,55,56,59,591,592</views>
+	<views>50,51,52,53,55,56,59,591,592,599</views>
 	<controls>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -15,7 +15,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>[[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)] | stringcompare(ListItem.Path,plugin://)</visible>
+			<visible>[[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)]</visible>
 		</control>
 		<control type="image">
 			<description>album and song level fanart</description>
@@ -63,6 +63,7 @@
 				<include condition="!Skin.HasSetting(Hide-Music-Thumbnail)">Thumbnail</include>		<!-- view id = 53 -->
 				<include>Fanart-Music</include>								<!-- view id = 50 -->
 				<include condition="!Skin.HasSetting(Hide-Music-MediaInfo)">MediaInfo-Music</include>	<!-- view id = 59 -->
+				<include condition="!Skin.HasSetting(Hide-Music-MediaInfo)">MediaInfo-AddOns</include>	<!-- view id = 599 -->
 				<include>AllViewCommonPageControls</include>
 				<include>ScrollOffsetLabel</include>
 			</control>

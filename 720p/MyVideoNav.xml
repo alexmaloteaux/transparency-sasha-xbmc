@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,52,53,54,55,57,58,59,590,592,596</views>
+	<views>50,51,52,53,54,55,57,58,59,590,592,596,599</views>
 	<controls>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -15,7 +15,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/)] | stringcompare(ListItem.Path,plugin://)</visible>
+			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -107,6 +107,7 @@
 				<include>Fanart-Videos</include>								<!-- view id = 50 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include>		<!-- view id = 58 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-TVShows</include>	<!-- view id = 59 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-AddOns</include>		<!-- view id = 599 -->
 				<include>AllViewCommonPageControls</include>
 				<include>ScrollOffsetLabel</include>
 			</control>

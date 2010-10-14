@@ -757,7 +757,7 @@
 	</include>
 	<include name="MediaInfo-Music">
 		<control type="list" id="59">
-			<visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)</visible>
+			<visible>[Window.IsVisible(MusicFiles) + !Container.Content(AddOns)] | Window.IsVisible(MusicPlaylist) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)</visible>
 			<posx>450</posx>
 			<posy>142</posy>
 			<width>630</width>
@@ -1657,7 +1657,7 @@
 	</include>
 	<include name="MediaInfo-AddOns">
 		<control type="list" id="599">
-			<visible>Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)</visible>
+			<visible>Container.Content(AddOns)</visible>
 			<posx>448</posx>
 			<posy>135</posy>
 			<width>630</width>
@@ -1752,7 +1752,7 @@
 		<control type="group">
 			<posx>175</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(599) + [Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)]</visible>
+			<visible>Control.IsVisible(599)</visible>
 			<control type="image">
 				<posx>47</posx>
 				<posy>87</posy>
@@ -1802,7 +1802,7 @@
 		<control type="group">
 			<posx>125</posx>
 			<posy>490</posy>
-			<visible>Control.IsVisible(599) + [Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)] + !IsEmpty(ListItem.Property(Addon.Name))</visible>
+			<visible>Control.IsVisible(599) + !IsEmpty(ListItem.Property(Addon.Name))</visible>
 			<control type="label">
 				<description>Author txt</description>
 				<posx>190</posx>

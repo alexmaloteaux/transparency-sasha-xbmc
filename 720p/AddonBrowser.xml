@@ -14,6 +14,8 @@
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
