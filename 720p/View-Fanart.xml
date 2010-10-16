@@ -1659,6 +1659,7 @@
 				<ondown>7009</ondown>
 				<onleft>9000</onleft>
 				<onright>50</onright>
+				<visible>!IsEmpty(ListItem.FileName)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1670,7 +1671,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/bmp.png</texture>
-				<visible>substring(ListItem.Filename,.bmp,Right)</visible>
+				<visible>substring(ListItem.Filename,.bmp,Right) + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1678,7 +1679,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/gif.png</texture>
-				<visible>substring(ListItem.Filename,.gif,Right)</visible>
+				<visible>substring(ListItem.Filename,.gif,Right) + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1686,7 +1687,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/jpg.png</texture>
-				<visible>substring(ListItem.Filename,.jpg,Right) | stringcompare(ListItem.Filename,.jpeg,right,Right)</visible>
+				<visible>[substring(ListItem.Filename,.jpg,Right) | stringcompare(ListItem.Filename,.jpeg,right,Right)] + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1694,7 +1695,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/png.png</texture>
-				<visible>substring(ListItem.Filename,.png,Right)</visible>
+				<visible>substring(ListItem.Filename,.png,Right) + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1702,7 +1703,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/tga.png</texture>
-				<visible>substring(ListItem.Filename,.tga,Right)</visible>
+				<visible>substring(ListItem.Filename,.tga,Right) + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1710,7 +1711,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/tiff.png</texture>
-				<visible>substring(ListItem.Filename,.tiff,Right)</visible>
+				<visible>substring(ListItem.Filename,.tiff,Right) + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image" id="7010">
 				<posx>50</posx>
@@ -1718,7 +1719,7 @@
 				<width>156</width>
 				<height>210</height>
 				<texture>foldericons/pictures/wmf.png</texture>
-				<visible>substring(ListItem.Filename,.wmf,Right)</visible>
+				<visible>substring(ListItem.Filename,.wmf,Right) + !IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image">
 				<posx>16</posx>

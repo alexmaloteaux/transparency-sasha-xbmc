@@ -46,7 +46,8 @@
 				<onup>9000</onup>
 				<ondown>594</ondown>
 				<onleft>9000</onleft>
-				<onright>594</onright>
+				<onright>7009</onright>
+				<visible>!IsEmpty(ListItem.FileName)</visible>
 			</control>
 		</control>
 		<control type="wraplist" id="594">
