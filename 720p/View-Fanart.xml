@@ -256,6 +256,21 @@
 				<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
 				<visible>!Window.IsVisible(VideoFiles)</visible>
 			</control>
+			<control type="group">
+				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !Window.IsVisible(VideoFiles)</visible>
+				<control type="group">
+					<posx>252</posx>
+					<posy>655</posy>
+					<width>472</width>
+					<height>48</height>
+					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
+				</control>
+				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
+			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<control type="image">
 				<posx>1212</posx>
 				<posy>14</posy>
@@ -282,17 +297,6 @@
 				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
-			</control>
-			<control type="group">
-				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !Window.IsVisible(VideoFiles)</visible>
-				<control type="group">
-					<posx>252</posx>
-					<posy>655</posy>
-					<width>472</width>
-					<height>48</height>
-					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				</control>
-				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
 			</control>
 		</control>
 		<control type="videowindow">
@@ -1659,7 +1663,7 @@
 				<ondown>7009</ondown>
 				<onleft>9000</onleft>
 				<onright>50</onright>
-				<visible>!IsEmpty(ListItem.FileName)</visible>
+f				<visible>!IsEmpty(ListItem.FileName)</visible>
 			</control>
 		</control>
 		<control type="group">
