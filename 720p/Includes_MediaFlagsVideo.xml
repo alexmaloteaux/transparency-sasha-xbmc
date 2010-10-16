@@ -191,7 +191,7 @@
 		<control type="image" id="5083">
 			<include>VideoMediaFlagsSource</include>
 			<texture>flags/movies/source/dvd.png</texture>
-			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + Container.Content(Movies) + [stringcompare(ListItem.VideoResolution,SD) | stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
+			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + Container.Content(Movies) + [stringcompare(ListItem.VideoResolution,SD) | stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
 		</control>
 		<control type="image" id="5083">
 			<include>VideoMediaFlagsSource</include>
