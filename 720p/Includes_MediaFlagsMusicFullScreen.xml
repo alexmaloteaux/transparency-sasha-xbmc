@@ -34,7 +34,7 @@
 			</control>
 			<control type="image">
 				<include>FullScreenMusicRecordLabel</include>
-				<texture fallback="mediaflag-source.png">flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
+				<texture fallback="mediaflag-recordlabel.png">flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
 				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 		</control>
