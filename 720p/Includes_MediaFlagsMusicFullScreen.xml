@@ -20,7 +20,7 @@
 		<!-- Audio Codec -->
 			<control type="image">
 				<include>FullScreenMusicAudioCodec</include>
-				<texture>flags/music/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
+				<texture fallback="mediaflag-audiocodec.png">flags/music/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
 				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 		<!-- Record Label -->
@@ -29,7 +29,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>48</height>
-				<texture fallback="mediaflag-audiocodec.png">mediaflag.png</texture>
+				<texture>mediaflag.png</texture>
 				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 			<control type="image">
