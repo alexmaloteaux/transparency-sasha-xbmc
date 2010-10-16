@@ -40,19 +40,16 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsResolution</include>
 			<texture fallback="mediaflag-resolution.png">flags/movies/resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
-			<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
 		</control>
 	<!-- Aspect Ratio -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAspectRatio</include>
 			<texture fallback="mediaflag-aspectratio.png">flags/movies/aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
-			<visible>!IsEmpty(VideoPlayer.VideoAspect)</visible>
 		</control>
 	<!-- Video Codec -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsVideoCodec</include>
 			<texture fallback="mediaflag-videocodec.png">flags/movies/videocodec/$INFO[VideoPlayer.VideoCodec,,.png]</texture>
-			<visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
 		</control>
 	<!-- Audio Codec -->
 		<control type="image" id="5084">
@@ -143,7 +140,7 @@
 		<control type="image" id="5084">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/mp2.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,mp2) | stringcompare(VideoPlayer.AudioCodec,mpeg audio)</visible>
+			<visible>stringcompare(VideoPlayer.AudioCodec,mp2) | stringcompare(VideoPlayer.AudioCodec,mpeg audio) | stringcompare(VideoPlayer.AudioCodec,mpeg2audio)</visible>
 		</control>
 		<control type="image" id="5084">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
@@ -170,100 +167,100 @@
 			<texture>flags/movies/audiocodec/wmahd.png</texture>
 			<visible>stringcompare(VideoPlayer.AudioCodec,wmapro) | stringcompare(VideoPlayer.AudioCodec,wma3)</visible>
 		</control>
-	<!-- Rating US -->
 		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>mediaflag-audiocodec.png</texture>
+			<visible>!Control.IsVisible(5084)</visible>
+		</control>
+	<!-- Rating US -->
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-g.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,Rated G) | substring(VideoPlayer.Mpaa,Rated: G)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-pg.png</texture>
 			<visible>VideoPlayer.Content(Movies) + [substring(VideoPlayer.Mpaa,Rated PG) | substring(VideoPlayer.Mpaa,Rated: PG)] + !substring(VideoPlayer.Mpaa,Rated PG-13) + !substring(VideoPlayer.Mpaa,Rated: PG-13)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-pg13.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,Rated PG-13) | substring(VideoPlayer.Mpaa,Rated: PG-13)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-r.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,Rated R) | substring(VideoPlayer.Mpaa,Rated: R)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-nc17.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,Rated NC-17) | substring(VideoPlayer.Mpaa,Rated: NC-17)</visible>
 		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsRating</include>
-			<texture>mediaflag-audiocodec.png</texture>
-			<visible>VideoPlayer.Content(Movies) + !Control.IsVisible(5084)</visible>
-		</control>
 	<!-- Rating UK -->
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcU.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:U)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcUC.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:UC)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcPG.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:PG)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc12.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:12)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc12A.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:12A)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc15.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:15)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc18.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:18)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcR18.png</texture>
 			<visible>VideoPlayer.Content(Movies) + StringCompare(ListItem.Mpaa,UK:R18)</visible>
 		</control>
 	<!-- Rating DE -->
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk0.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,FSK0) | substring(VideoPlayer.Mpaa,FSK 0) | substring(VideoPlayer.Mpaa,FSK o.A.)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk6.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,FSK6) | substring(VideoPlayer.Mpaa,FSK 6)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk12.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,FSK12) | substring(VideoPlayer.Mpaa,FSK 12)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk16.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,FSK16) | substring(VideoPlayer.Mpaa,FSK 16)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk18.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)</visible>
@@ -271,35 +268,35 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>mediaflag-rating.png</texture>
-			<visible>VideoPlayer.Content(Movies) + IsEmpty(VideoPlayer.Mpaa)</visible>
+			<visible>VideoPlayer.Content(Movies) + !Control.IsVisible(5085)</visible>
 		</control>
 	<!-- Rating TV -->
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-y.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + substring(VideoPlayer.Mpaa,TV-Y) + ![substring(VideoPlayer.Mpaa,TV-Y7) | substring(VideoPlayer.Mpaa,TV-Y7-FV)]</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-y7.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + substring(VideoPlayer.Mpaa,TV-Y7) | substring(VideoPlayer.Mpaa,TV-Y7-FV)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-g.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + substring(VideoPlayer.Mpaa,TV-G)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-pg.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + substring(VideoPlayer.Mpaa,TV-PG)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-14.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + substring(VideoPlayer.Mpaa,TV-14)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="5085">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-ma.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + substring(VideoPlayer.Mpaa,TV-MA)</visible>
@@ -307,13 +304,19 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>mediaflag-rating.png</texture>
-			<visible>VideoPlayer.Content(Episodes) + IsEmpty(VideoPlayer.Mpaa)</visible>
+			<visible>VideoPlayer.Content(Episodes) + !Control.IsVisible(5085)</visible>
 		</control>
 	<!-- Rating Music Videos -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>mediaflag-rating.png</texture>
 			<visible>VideoPlayer.Content(MusicVideos)</visible>
+		</control>
+	<!-- Rating Live TV -->
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsRating</include>
+			<texture>mediaflag-rating.png</texture>
+			<visible>VideoPlayer.Content(LiveTV)</visible>
 		</control>
 	<!-- Studio Background-->
 		<control type="image">
