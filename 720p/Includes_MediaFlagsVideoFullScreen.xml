@@ -306,17 +306,11 @@
 			<texture>mediaflag-rating.png</texture>
 			<visible>VideoPlayer.Content(Episodes) + !Control.IsVisible(6085)</visible>
 		</control>
-	<!-- Rating Music Videos -->
+	<!-- Rating Others -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>mediaflag-rating.png</texture>
-			<visible>VideoPlayer.Content(MusicVideos)</visible>
-		</control>
-	<!-- Rating Live TV -->
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsRating</include>
-			<texture>mediaflag-rating.png</texture>
-			<visible>VideoPlayer.Content(LiveTV)</visible>
+			<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 		</control>
 	<!-- Studio Background-->
 		<control type="image">
