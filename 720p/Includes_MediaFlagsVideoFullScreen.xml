@@ -54,11 +54,6 @@
 	<!-- Audio Codec -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/aac.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,aac)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dd10.png</texture>
 			<visible>[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1)</visible>
 		</control>
@@ -94,21 +89,6 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/cook.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,cook)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/eac3.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,eac3)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dolbytruehd.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,truehd)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dts.png</texture>
 			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,2)</visible>
 		</control>
@@ -129,48 +109,8 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/flac.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,flac)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/mpeg audio.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,mp1)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/mp2.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,mp2) | stringcompare(VideoPlayer.AudioCodec,mpeg audio) | stringcompare(VideoPlayer.AudioCodec,mpeg2audio)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/mp3.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,mp3)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/ogg.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,ogg) | stringcompare(VideoPlayer.AudioCodec,vorbis)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/pcm.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,pcm) | stringcompare(VideoPlayer.AudioCodec,pcm_bluray)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/wma.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,wmav2) | stringcompare(VideoPlayer.AudioCodec,wma2)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/wmahd.png</texture>
-			<visible>stringcompare(VideoPlayer.AudioCodec,wmapro) | stringcompare(VideoPlayer.AudioCodec,wma3)</visible>
-		</control>
-		<control type="image">
-			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>mediaflag-audiocodec.png</texture>
-			<visible>IsEmpty(VideoPlayer.AudioCodec)</visible>
+			<texture fallback="mediaflag-audiocodec.png">flags/movies/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</texture>
+			<visible>![stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3) | stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)]</visible>
 		</control>
 	<!-- Rating US -->
 		<control type="image">

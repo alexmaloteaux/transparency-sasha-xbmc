@@ -67,11 +67,6 @@
 			<visible>!stringcompare(ListItem.Label,..)</visible>
 		</control>
 	<!-- Audio Codec -->
-	<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/aac.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,aac)</visible>
-		</control>
 		<control type="image">
 			<include>VideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dd10.png</texture>
@@ -109,21 +104,6 @@
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/cook.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,cook)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/eac3.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,eac3)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dolbytruehd.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,truehd)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dts.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,2)</visible>
 		</control>
@@ -144,48 +124,8 @@
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/flac.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,flac)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/mpeg audio.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,mp1)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/mp2.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,mp2) | stringcompare(ListItem.AudioCodec,mpeg audio) | stringcompare(ListItem.AudioCodec,mpeg2audio)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/mp3.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,mp3)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/ogg.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,ogg) | stringcompare(ListItem.AudioCodec,vorbis)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/wav.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,pcm) | stringcompare(ListItem.AudioCodec,pcm_bluray)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/wma.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,wmav2) | stringcompare(ListItem.AudioCodec,wma2)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/wmahd.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,wmapro) | stringcompare(ListItem.AudioCodec,wma3)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>mediaflag-audiocodec.png</texture>
-			<visible>IsEmpty(ListItem.AudioCodec) + !stringcompare(ListItem.Label,..)</visible>
+			<texture fallback="mediaflag-audiocodec.png">flags/movies/audiocodec/$INFO[ListItem.AudioCodec,,.png]</texture>
+			<visible>![stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3) | stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	<!-- Source -->
 		<control type="image">
