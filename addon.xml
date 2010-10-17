@@ -17,8 +17,10 @@
 	effectslowdown="1"
 	debugging="false"/>
 	<extension point="xbmc.addon.metadata">
-		<summary>Transparency! a fanart skin for XBMC</summary>
-		<description>What is Transparency!? Short answer: a fanart skin. The main goal of Transparency! is showing your fanart, fullscreen, in all of the views, all of the time. Besides this, it also tries to support every neat new feature xbmc has to offer. To save everyone a lot of time and trouble hacking the xml code themselves, all of these new features are already included in the skin, pre-configured and enabled by default (wherever possible).</description>
+		<summary lang="en">Transparency! a fanart skin for XBMC</summary>
+		<summary lang="pl">Transparency! skóra z naciskiem na fanart</summary>
+		<description lang="en">What is Transparency!? Short answer: a fanart skin. The main goal of Transparency! is showing your fanart, fullscreen, in all of the views, all of the time. Besides this, it also tries to support every neat new feature xbmc has to offer. To save everyone a lot of time and trouble hacking the xml code themselves, all of these new features are already included in the skin, pre-configured and enabled by default (wherever possible).</description>
+		<description lang="pl">Czym jest Transparency!? Krótka odpowiedź: skórą dla fanartu. Głównym celem Transparency! jest pokazywanie twoich fanartów, na pełnym ekranie, w każdym widoku, przez cały czas. Skóra próbuje również wspierać wszystkie najnowsze funkcje, które XBMC ma do zaoferowania.</description> 
 		<platform>all</platform>
 	</extension>
 </addon>
