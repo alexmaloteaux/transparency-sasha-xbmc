@@ -416,7 +416,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Window.IsVisible(VideoFiles) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout width="176" height="235" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
@@ -471,7 +471,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Window.IsVisible(VideoFiles) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
 			<itemlayout width="176" height="156" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">

@@ -2656,16 +2656,21 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="416">
+						<label>$LOCALIZE[3] - $LOCALIZE[16102]</label>
+						<onclick>Skin.ToggleSetting(Enable_Videos_Watched_Flags)</onclick>
+						<selected>!Skin.HasSetting(Enable_Videos_Watched_Flags)</selected>
+					</control>
+					<control type="radiobutton" id="417">
 						<label>$LOCALIZE[20342] - $LOCALIZE[16102]</label>
 						<onclick>Skin.ToggleSetting(Enable_Movies_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Movies_Watched_Flags)</selected>
 					</control>
-					<control type="radiobutton" id="417">
+					<control type="radiobutton" id="418">
 						<label>$LOCALIZE[20343] - $LOCALIZE[16102]</label>
 						<onclick>Skin.ToggleSetting(Enable_TVShows_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</selected>
 					</control>
-					<control type="radiobutton" id="418">
+					<control type="radiobutton" id="419">
 						<label>$LOCALIZE[20389] - $LOCALIZE[16102]</label>
 						<onclick>Skin.ToggleSetting(Enable_MusicVideos_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</selected>
