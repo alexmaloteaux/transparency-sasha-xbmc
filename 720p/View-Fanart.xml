@@ -1724,7 +1724,7 @@
 				<ondown>7009</ondown>
 				<onleft>9000</onleft>
 				<onright>50</onright>
-f				<visible>!IsEmpty(ListItem.FileName)</visible>
+				<visible>!IsEmpty(ListItem.FileName) + !IsEmpty(Container.FolderPath)]</visible>
 			</control>
 		</control>
 		<control type="group">
