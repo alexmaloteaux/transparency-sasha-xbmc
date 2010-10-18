@@ -194,5 +194,6 @@
 				<include>Breadcrumbs-Video-Files</include>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>
 	</controls>
 </window>

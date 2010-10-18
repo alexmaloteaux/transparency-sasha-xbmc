@@ -338,5 +338,6 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				</control>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(DebugMode)">debuginfomusicplayer</include>
 	</controls>
 </window>

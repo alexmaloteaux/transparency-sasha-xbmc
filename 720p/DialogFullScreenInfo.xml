@@ -633,5 +633,6 @@
 				</control>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(DebugMode)">debuginfovideoplayer</include>
 	</controls>
 </window>

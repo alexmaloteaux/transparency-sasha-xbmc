@@ -1878,5 +1878,6 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
+		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>
 	</controls>
 </window>
