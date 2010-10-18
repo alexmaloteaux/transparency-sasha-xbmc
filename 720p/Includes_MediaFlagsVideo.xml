@@ -305,13 +305,13 @@
 			<width>64</width>
 			<height>48</height>
 			<texture>mediaflag.png</texture>
-			<visible>!stringcompare(ListItem.Label,..) + ![Control.IsVisible(50) + Container.Content(Movies)] + !Control.IsVisible(57)</visible>
+			<visible>Container.Content(Movies) + ![Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	<!-- Studio -->
 		<control type="image">
 			<include>VideoMediaFlagsStudio</include>
 			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>Container.Content(Movies) + !Control.IsVisible(50) + !Control.IsVisible(57) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>Container.Content(Movies) + ![Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsStudio</include>
