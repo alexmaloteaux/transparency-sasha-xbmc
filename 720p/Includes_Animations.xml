@@ -41,12 +41,12 @@
 			<width>176</width>
 			<height>35</height>
 			<texture border="7">list-focus.png</texture>
-			<animation effect="slide" start="0,0" end="176,0" time="100" condition="Control.HasFocus(141)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="352,0" time="100" condition="Control.HasFocus(142)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Control.HasFocus(143)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="704,0" time="100" condition="Control.HasFocus(144)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="176,0" time="100" condition="Control.HasFocus(146)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="352,0" time="100" condition="Control.HasFocus(147)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Control.HasFocus(148)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="704,0" time="100" condition="Control.HasFocus(149)">Conditional</animation>
 			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-			<visible>Control.HasFocus(140) | Control.HasFocus(141) | Control.HasFocus(142) | Control.HasFocus(143) | Control.HasFocus(144)</visible>
+			<visible>Control.HasFocus(145) | Control.HasFocus(146) | Control.HasFocus(147) | Control.HasFocus(148) | Control.HasFocus(149)</visible>
 		</control>
 	</include>
 	<include name="ButtonScroll4">

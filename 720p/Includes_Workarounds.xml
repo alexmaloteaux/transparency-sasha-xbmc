@@ -247,6 +247,54 @@
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
 		</control>
 	</include>
+	<include name="fanart-seasons">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(Seasons) + !IsEmpty(ListItem.Path)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path)</visible>
+		</control>
+	</include>
+	<include name="fanart-seasons-filemode">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..)</visible>
+		</control>
+	</include>
 	<include name="fanart-Programs_Pictures">
 		<control type="image">
 			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
