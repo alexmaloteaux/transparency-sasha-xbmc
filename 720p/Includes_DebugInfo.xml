@@ -9,7 +9,6 @@
 				<posy>0</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Container.FolderPath: $INFO[Container.FolderPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -18,7 +17,6 @@
 				<posy>20</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Container.FolderName: $INFO[Container.FolderName]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -27,7 +25,6 @@
 				<posy>40</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.FileName: $INFO[Listitem.FileName]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -36,7 +33,6 @@
 				<posy>60</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.Path: $INFO[Listitem.Path]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -45,7 +41,6 @@
 				<posy>80</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>ListItem.FolderName: $INFO[ListItem.FolderName]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -54,7 +49,6 @@
 				<posy>100</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.FileNameAndPath: $INFO[Listitem.FileNameAndPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -63,7 +57,6 @@
 				<posy>120</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.VideoCodec: $INFO[Listitem.VideoCodec]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -72,7 +65,6 @@
 				<posy>140</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.VideoResolution: $INFO[Listitem.VideoResolution]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -81,7 +73,6 @@
 				<posy>160</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.VideoAspect: $INFO[Listitem.VideoAspect]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -90,7 +81,6 @@
 				<posy>180</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.AudioCodec: $INFO[Listitem.AudioCodec]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -99,7 +89,6 @@
 				<posy>200</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>ListItem.AudioChannels: $INFO[ListItem.AudioChannels]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -108,7 +97,6 @@
 				<posy>220</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>Listitem.AudioLanguage: $INFO[Listitem.AudioLanguage]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -124,7 +112,6 @@
 				<posy>0</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>VideoPlayer.SubtitleLanguage: $INFO[VideoPlayer.SubtitleLanguage]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -133,7 +120,6 @@
 				<posy>20</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>VideoPlayer.VideoCodec: $INFO[VideoPlayer.VideoCodec]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -142,7 +128,6 @@
 				<posy>40</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>VideoPlayer.VideoResolution: $INFO[VideoPlayer.VideoResolution]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -151,7 +136,6 @@
 				<posy>60</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>VideoPlayer.VideoAspect: $INFO[VideoPlayer.VideoAspect]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -160,7 +144,6 @@
 				<posy>80</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>VideoPlayer.AudioCodec: $INFO[VideoPlayer.AudioCodec]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -169,7 +152,6 @@
 				<posy>100</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>VideoPlayer.AudioChannels: $INFO[VideoPlayer.AudioChannels]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -185,7 +167,6 @@
 				<posy>0</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<wrapmultiline>true</wrapmultiline>
 				<label>MusicPlayer.Codec: $INFO[MusicPlayer.Codec]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
