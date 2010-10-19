@@ -40,6 +40,8 @@
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-myvideo</include>
+		<include condition="Skin.HasSetting(MoviesExtraFanart)">fanart-extra-movies-files</include>
+		<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows-files</include>
 		<include condition="Skin.HasSetting(SeasonFanart)">fanart-seasons-filemode</include>
 		<control type="group">
 			<include>ContentFade</include>

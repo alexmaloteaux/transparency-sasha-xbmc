@@ -247,6 +247,212 @@
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
 		</control>
 	</include>
+	<include name="fanart-Programs_Pictures">
+		<control type="image">
+			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+		</control>
+		<control type="image">
+			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+		</control>
+		<control type="image">
+			<description>dirty hack for (folder) fanart in programs pictures scripts</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-movies">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-movies-files">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[Container.FolderPath,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-tvshows">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-tvshows-files">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.FolderName,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-music">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,/,/extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..)</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-music-files">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[Container.FolderPath,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath>$INFO[Container.FolderPath,,..extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<visible>!substring(ListItem.Path,lastfm://) + !substring(ListItem.Path,shout://) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,lastfm://) + !substring(Container.FolderPath,shout://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://) + !substring(Container.FolderPath,addons://)</visible>
+		</control>
+	</include>
 	<include name="fanart-seasons">
 		<control type="image">
 			<posx>0</posx>
@@ -293,44 +499,6 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	</include>
-	<include name="fanart-Programs_Pictures">
-		<control type="image">
-			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for (folder) fanart in programs pictures scripts</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://) + !substring(ListItem.Path,special://) + !substring(Container.FolderPath,plugin://) + !substring(Container.FolderPath,special://)</visible>
 		</control>
 	</include>
 	<include name="moviedisc-dvd-View_Icons">
