@@ -366,12 +366,12 @@
 			<control type="group">
 				<animation effect="slide" start="0,0" end="199,-143" time="0" condition="true">Conditional</animation>
 				<control type="label">
-					<label>20045</label>
+					<label>20046</label>
 					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(21) + System.IsMaster</visible>
 				</control>
 				<control type="label">
-					<label>20046</label>
+					<label>20045</label>
 					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(21) + !System.IsMaster</visible>
 				</control>
