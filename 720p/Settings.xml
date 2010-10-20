@@ -18,6 +18,7 @@
 			<include>ContentFade</include>
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-SettingsHeader1</include>
 				<control type="image">
 					<posx>240</posx>
 					<posy>72</posy>
@@ -40,6 +41,7 @@
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Settings_Bottom_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay55</include>
 				<control type="image">
 					<posx>240</posx>
 					<posy>640</posy>
@@ -216,6 +218,7 @@
 					<visible>Control.HasFocus(13)</visible>
 				</control>
 			</control>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay119</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>115</posy>

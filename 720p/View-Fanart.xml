@@ -1586,7 +1586,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay118</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>560</posy>
@@ -1799,7 +1799,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay112</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay117</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>585</posy>

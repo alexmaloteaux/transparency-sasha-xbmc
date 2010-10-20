@@ -34,7 +34,6 @@
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay11</include>
 			<visible>Control.IsVisible(590)</visible>
 			<control type="label">
 				<posx>40</posx>

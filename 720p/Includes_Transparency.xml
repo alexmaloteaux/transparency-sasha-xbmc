@@ -381,6 +381,7 @@
 			<texture border="0,45,0,0">keyboard-input.png</texture>
 			<animation effect="zoom" start="335,90,624,1" end="335,30,624,60" time="300" delay="300">WindowOpen</animation>
 			<animation effect="zoom" start="335,30,624,60" end="335,90,624,1" time="200" delay="150">WindowClose</animation>
+			<include>T-Level</include>
 		</control>
 	</include>
 	<include name="T-KeyboardInput2">
@@ -392,6 +393,17 @@
 			<texture border="45,45,45,0">keyboard-input.png</texture>
 			<animation effect="zoom" start="543,90,208,1" end="543,30,208,60" time="300" delay="300">WindowOpen</animation>
 			<animation effect="zoom" start="543,30,208,60" end="543,90,208,1" time="200" delay="150">WindowClose</animation>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-SettingsHeader1">
+		<control type="image">
+			<posx>240</posx>
+			<posy>72</posy>
+			<width>800</width>
+			<height>52</height>
+			<texture border="20">settings-header.png</texture>
+			<include>T-Level</include>
 		</control>
 	</include>
 	<include name="T-Underlay11">
@@ -455,6 +467,7 @@
 			<width>875</width>
 			<height>186</height>
 			<texture border="10">underlay.png</texture>
+			<include>T-Level</include>
 		</control>
 	</include>
 	<include name="T-Underlay18">
@@ -550,6 +563,37 @@
 			<height>186</height>
 			<texture border="10">underlay.png</texture>
 			<visible>Container.Content(MusicVideos)</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay117">
+		<control type="image">
+			<posx>0</posx>
+			<posy>585</posy>
+			<width>875</width>
+			<height>115</height>
+			<texture border="10">underlay.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay118">
+		<control type="image">
+			<posx>0</posx>
+			<posy>560</posy>
+			<width>875</width>
+			<height>140</height>
+			<texture border="10">underlay.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay119">
+		<control type="image">
+			<posx>0</posx>
+			<posy>115</posy>
+			<width>1280</width>
+			<height>520</height>
+			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
+			<include>Window_OpenClose_Animation</include>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -795,8 +839,29 @@
 			<width>1280</width>
 			<height>178</height>
 			<texture border="10">underlay5.png</texture>
-			<include>Window_OpenClose_Animation</include>
+			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
+			<include>T-Level</include>
 			<visible>Control.IsVisible(590)</visible>
+		</control>
+	</include>
+	<include name="T-Underlay54">
+		<control type="image">
+			<posx>240</posx>
+			<posy>630</posy>
+			<width>800</width>
+			<height>82</height>
+			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay55">
+		<control type="image">
+			<posx>240</posx>
+			<posy>640</posy>
+			<width>800</width>
+			<height>100</height>
+			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+			<include>T-Level</include>
 		</control>
 	</include>
 </includes>
