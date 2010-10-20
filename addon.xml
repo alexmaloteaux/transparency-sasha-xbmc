@@ -6,9 +6,10 @@
 	provider-name="ronie">
 	<requires>
 		<import	addon="xbmc.gui" version="2.11"/>
-		<import addon="script.recentlyadded" version="1.0.8"/>
-		<import addon="script.favourites" version="1.0.3"/>
+		<import addon="script.favourites" version="1.0.4"/>
 		<import addon="script.logo-downloader" version="2.1.0"/>
+		<import addon="script.randomitems" version="1.0.4"/>
+		<import addon="script.recentlyadded" version="1.0.8"/>
 	</requires>
 	<extension point="xbmc.gui.skin"
 	defaultresolution="720p"
