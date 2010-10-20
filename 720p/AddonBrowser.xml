@@ -123,17 +123,28 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>4</onup>
+					<ondown>6</ondown>
+				</control>
+				<control type="radiobutton" id ="6">
+					<description>No notifications</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>25000</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>5</onup>
 					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
 					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>5</onup>
+					<onup>6</onup>
 					<ondown>603</ondown>
 					<visible>false</visible>
 				</control>
 				<control type="group">
 					<posx>0</posx>
-					<posy>135</posy>
+					<posy>180</posy>
 					<include>CommonNowPlaying_Controls</include>
 				</control>
 				<control type="button" id="611">
@@ -144,7 +155,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>137</posy>
+					<posy>182</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
