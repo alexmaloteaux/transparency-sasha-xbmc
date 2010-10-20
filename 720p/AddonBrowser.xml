@@ -11,7 +11,7 @@
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
+			<randomize>true</randomize>32
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
@@ -39,8 +39,8 @@
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus">Conditional</animation>
 			<include>ContentFade</include>
 			<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="700,257" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
+			<animation effect="zoom" start="175,110,932,501" end="876,362,670,358" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
+			<animation effect="zoom" start="175,110,932,501" end="876,2,1406,756" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 		</control>
 		<control type="group">
 			<include>ContentPanel</include>
@@ -155,17 +155,19 @@
 		</control>
 		<control type="group">
 			<include>VisibleFadeEffect</include>
+			<animation effect="slide" start="0,0" end="0,-620" time="0" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartLong)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-140,-620" time="0" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 			<control type="image">
 				<posx>240</posx>
-				<posy>640</posy>
+				<posy>630</posy>
 				<width>800</width>
-				<height>100</height>
+				<height>82</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
 			</control>
 			<control type="label">
 				<posx>40</posx>
-				<posy>654</posy>
+				<posy>644</posy>
 				<width>1200</width>
 				<height>60</height>
 				<align>center</align>
@@ -177,7 +179,7 @@
 			</control>
 			<control type="label">
 				<posx>40</posx>
-				<posy>654</posy>
+				<posy>674</posy>
 				<width>1200</width>
 				<height>60</height>
 				<align>center</align>
