@@ -131,7 +131,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
 			<texture>flags/movies/source/dvd.png</texture>
-			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + Container.Content(Movies) + [stringcompare(ListItem.VideoResolution,SD) | stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
+			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [stringcompare(ListItem.VideoResolution,SD) | stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
@@ -141,7 +141,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
 			<texture>flags/movies/source/bluray.png</texture>
-			<visible>substring(ListItem.Filename,bluray) | substring(ListItem.Filename,blu-ray) | substring(ListItem.Filename,brrip) | substring(ListItem.Filename,.m2ts,Right) | substring(ListItem.Filename,.bdmv,Right) | [[!substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + Container.Content(Movies) +  [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]]</visible>
+			<visible>substring(ListItem.Filename,bluray) | substring(ListItem.Filename,blu-ray) | substring(ListItem.Filename,brrip) | substring(ListItem.Filename,.m2ts,Right) | substring(ListItem.Filename,.bdmv,Right) | [[!substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] +  [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]]</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
@@ -173,125 +173,125 @@
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-g.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,Rated G) | substring(ListItem.Mpaa,Rated: G)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated G) | substring(ListItem.Mpaa,Rated: G)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-pg.png</texture>
-			<visible>Container.Content(Movies) + [substring(ListItem.Mpaa,Rated PG) | substring(ListItem.Mpaa,Rated: PG)] + !substring(ListItem.Mpaa,Rated PG-13) + !substring(ListItem.Mpaa,Rated: PG-13)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [substring(ListItem.Mpaa,Rated PG) | substring(ListItem.Mpaa,Rated: PG)] + !substring(ListItem.Mpaa,Rated PG-13) + !substring(ListItem.Mpaa,Rated: PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-pg13.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,Rated PG-13) | substring(ListItem.Mpaa,Rated: PG-13)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated PG-13) | substring(ListItem.Mpaa,Rated: PG-13)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-r.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,Rated R) | substring(ListItem.Mpaa,Rated: R)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated R) | substring(ListItem.Mpaa,Rated: R)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/rating-nc17.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,Rated NC-17) | substring(ListItem.Mpaa,Rated: NC-17)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated NC-17) | substring(ListItem.Mpaa,Rated: NC-17)</visible>
 		</control>
 	<!-- Rating UK -->
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcU.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:U)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:U)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcUC.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:UC)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:UC)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcPG.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:PG)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:PG)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc12.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:12)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:12)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc12A.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:12A)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:12A)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc15.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:15)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:15)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfc18.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:18)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:18)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/bbfcR18.png</texture>
-			<visible>Container.Content(Movies) + StringCompare(ListItem.Mpaa,UK:R18)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:R18)</visible>
 		</control>
 	<!-- Rating DE -->
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk0.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A.)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A.)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk6.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk12.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk16.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/fsk18.png</texture>
-			<visible>Container.Content(Movies) + substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)</visible>
 		</control>
 	<!-- Rating TV -->
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-y.png</texture>
-			<visible>Container.Content(Episodes) + substring(ListItem.Mpaa,TV-Y) + ![substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)]</visible>
+			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-Y) + ![substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)]</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-y7.png</texture>
-			<visible>Container.Content(Episodes) + substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)</visible>
+			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-g.png</texture>
-			<visible>Container.Content(Episodes) + substring(ListItem.Mpaa,TV-G)</visible>
+			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-G)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-pg.png</texture>
-			<visible>Container.Content(Episodes) + substring(ListItem.Mpaa,TV-PG)</visible>
+			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-PG)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-14.png</texture>
-			<visible>Container.Content(Episodes) + substring(ListItem.Mpaa,TV-14)</visible>
+			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-14)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/tv-ma.png</texture>
-			<visible>Container.Content(Episodes) + substring(ListItem.Mpaa,TV-MA)</visible>
+			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-MA)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
@@ -305,7 +305,7 @@
 			<width>64</width>
 			<height>48</height>
 			<texture>mediaflag.png</texture>
-			<visible>![Container.Content(Movies) + Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>![Container.Content(Movies) + Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	<!-- Studio -->
 		<control type="image">
@@ -316,7 +316,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsStudio</include>
 			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>!Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	</include>
 	<include name="MovieStudioFlag">
@@ -339,7 +339,7 @@
 			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
 			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(592)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="1,1" time="0" condition="Control.IsVisible(592)">Conditional</animation>
-			<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	<!-- Studio MusicVideos -->
 		<control type="image">
