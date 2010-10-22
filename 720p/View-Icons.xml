@@ -478,6 +478,11 @@
 				<visible>Control.HasFocus(57) + Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(57)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+		</control>
 	</include>
 	<include name="Icons-Movies_Extras">
 		<control type="group">

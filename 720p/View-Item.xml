@@ -201,6 +201,11 @@
 				<visible>ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(590)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+		</control>
 		<control type="wraplist" id="590">
 			<include>Window_OpenClose_Animation</include>
 			<posx>0</posx>

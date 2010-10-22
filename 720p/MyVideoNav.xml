@@ -81,9 +81,9 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(MoviesExtraFanart)">fanart-extra-movies</include>
-		<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows</include>
-		<include condition="Skin.HasSetting(SeasonFanart)">fanart-seasons</include>
+		<include condition="Skin.HasSetting(MoviesExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-movies</include>
+		<include condition="Skin.HasSetting(TVShowsExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-tvshows</include>
+		<include condition="Skin.HasSetting(SeasonFanart) + !Skin.HasSetting(SafeMode)">fanart-seasons</include>
 		<include condition="Skin.HasSetting(TVLogo) + !Skin.HasSetting(SafeMode)">tvlogo</include>
 		<control type="group">
 			<include>ContentFade</include>
