@@ -86,18 +86,6 @@
 			<visible>VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)</visible>
 		</control>
 	</include>
-	<include name="games-thumb">
-		<control type="image">
-			<posx>10</posx>
-			<posy>414</posy>
-			<width>214</width>
-			<height>300</height>
-			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<texture fallback="DefaultProgram.png" diffuse="thumb-diffuse.png" background="true">$INFO[Container.FolderPath,,folder.jpg]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>stringcompare(Container.FolderPath,Games) + !ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	</include>
 	<include name="fanartslideshow-musicvisualisation">
 		<control type="multiimage">
 			<description>dirty hack for showing fanart slideshow instead of visualisation</description>
