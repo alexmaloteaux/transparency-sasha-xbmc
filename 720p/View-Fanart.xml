@@ -1289,7 +1289,7 @@
 				<width>380</width>
 				<height>20</height>
 				<info>Player.Progress</info>
-				<visible>ListItem.IsPlaying | Window.IsVisible(MusicPlaylist)</visible>
+				<visible>ListItem.IsPlaying | [Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
 		</control>
 		<control type="group">
