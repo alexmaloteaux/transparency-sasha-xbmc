@@ -2177,5 +2177,10 @@
 				</control>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(596)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<include condition="Skin.HasSetting(MoviesExtraThumbs) + Window.IsVisible(VideoFiles) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies-files</include>
+		</control>
 	</include>
 </includes>
