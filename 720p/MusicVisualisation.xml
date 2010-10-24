@@ -133,7 +133,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<animation effect="slide" start="0,0" end="-320,0" time="300">Hidden</animation>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1700">WindowClose</animation>
-				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">cdart-musicvisualisation</include>
+				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
 				<control type="image">
 					<description>default cd image</description>
 					<posx>35</posx>
@@ -143,7 +143,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<texture diffuse="disc_mask.png">disc.png</texture>
 					<aspectratio align="bottom">keep</aspectratio>
 					<include>cdartspin</include>
-					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)] | substring(Player.FolderPath,pvr://)</visible>
+					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]</visible>
 				</control>
 				<control type="image">
 					<description>cover image</description>
@@ -235,7 +235,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				</control>
 				<control type="image">
 					<description>Rating image</description>
-					<posx>1030</posx>
+					<posx>1020</posx>
 					<posy>60</posy>
 					<width>125</width>
 					<height>25</height>
