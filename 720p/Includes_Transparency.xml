@@ -154,6 +154,18 @@
 			<include>T-Level</include>
 		</control>
 	</include>
+	<include name="T-Panel9">
+		<control type="image">
+			<posx>0</posx>
+			<posy>20</posy>
+			<width>300</width>
+			<height>450</height>
+			<texture border="30">panel.png</texture>
+			<bordertexture border="45">panel-shadow.png</bordertexture>
+			<bordersize>22</bordersize>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-Button_Home_NoFocus1">
 		<control type="image">
 			<posx>0</posx>
