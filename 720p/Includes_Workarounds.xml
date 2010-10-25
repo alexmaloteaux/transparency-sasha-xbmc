@@ -34,6 +34,7 @@
 			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,cdart.png]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 			<include>cdartspin</include>
+			<visible>!substring(Player.FolderPath,pvr://)</visible>
 		</control>
 	</include>
 	<include name="clearart-dialogfullscreeninfo">
