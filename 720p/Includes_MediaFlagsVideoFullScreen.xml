@@ -205,6 +205,27 @@
 			<texture>flags/movies/rating/fsk18.png</texture>
 			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)</visible>
 		</control>
+	<!-- Rating FR -->
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa10.png</texture>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 10 ans)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa12.png</texture>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 12 ans)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa16.png</texture>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 16 ans)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa18.png</texture>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 18 ans)</visible>
+		</control>
 	<!-- Rating TV -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>

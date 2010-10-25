@@ -262,6 +262,27 @@
 			<texture>flags/movies/rating/fsk18.png</texture>
 			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)</visible>
 		</control>
+	<!-- Rating FR -->
+		<control type="image">
+			<include>VideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa10.png</texture>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,Interdit aux moins de 10 ans)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa12.png</texture>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,Interdit aux moins de 12 ans)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa16.png</texture>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,Interdit aux moins de 16 ans)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csa18.png</texture>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,Interdit aux moins de 18 ans)</visible>
+		</control>
 	<!-- Rating TV -->
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
