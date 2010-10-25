@@ -209,22 +209,22 @@
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa10.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 10 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,10 ans)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa12.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 12 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,12 ans)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa16.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 16 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,16 ans)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa18.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,Interdit aux moins de 18 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,18 ans)</visible>
 		</control>
 	<!-- Rating TV -->
 		<control type="image">
