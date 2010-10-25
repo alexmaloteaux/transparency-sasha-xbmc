@@ -2862,7 +2862,22 @@
 						<enable>Skin.HasSetting(TrailerScript_Enable)</enable>
 						<visible>false</visible>
 					</control>
-					<control type="button" id="514">
+					<control type="image" id="514">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="515">
+						<label>Script.Favourites - $LOCALIZE[136]: $LOCALIZE[208]</label>
+						<onclick>Skin.ToggleSetting(FavouritesPlaylists_Play)</onclick>
+						<selected>!Skin.HasSetting(FavouritesPlaylists_Play)</selected>
+					</control>
+					<control type="image" id="516">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="button" id="517">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
 					</control>

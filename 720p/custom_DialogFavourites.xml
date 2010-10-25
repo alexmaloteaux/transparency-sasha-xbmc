@@ -18,6 +18,24 @@
 				<onleft>450</onleft>
 				<onright>450</onright>
 				<ondown>450</ondown>
+				<visible>!Skin.HasSetting(FavouritesPlaylists_Play)</visible>
+			</control>
+			<control type="button" id="451">
+				<description>run favourites script on windowopen</description>
+				<posx>-20</posx>
+				<posy>-20</posy>
+				<width>1</width>
+				<height>1</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onfocus>RunScript(script.favourites,playlists=open)</onfocus>
+				<onup>450</onup>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<ondown>450</ondown>
+				<visible>Skin.HasSetting(FavouritesPlaylists_Play)</visible>
 			</control>
 			<control type="image">
 				<description>background image</description>
