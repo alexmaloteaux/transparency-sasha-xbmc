@@ -768,7 +768,7 @@
 					<posx>578</posx>
 					<posy>148</posy>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
-					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
+					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)">MovieStudioFlag</include>
 				</control>
 			</control>
 		</control>
