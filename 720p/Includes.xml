@@ -957,7 +957,7 @@
 			<orientation>horizontal</orientation>
 			<itemgap>0</itemgap>
 			<animation effect="slide" start="0,0" end="0,70" time="0" condition="Window.IsVisible(Favourites)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-365,50" time="0" condition="Window.IsVisible(custom_DialogFavourites.xml)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-165,50" time="0" condition="Window.IsVisible(custom_DialogFavourites.xml)">Conditional</animation>
 			<control type="label">
 				<description>Page Count Label</description>
 				<width min="10" max="250">auto</width>

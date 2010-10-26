@@ -122,7 +122,7 @@
 				<width>408</width>
 				<height>408</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Container(450).ListItem.Icon]</texture>
+				<texture fallback="DefaultFolder.png" diffuse="thumb-diffuse.png" background="true">$INFO[Container(450).ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<include>CommonFileCount2</include>
