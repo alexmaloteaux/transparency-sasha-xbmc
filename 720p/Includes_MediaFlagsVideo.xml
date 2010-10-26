@@ -105,7 +105,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dts.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,2)</visible>
+			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + [stringcompare(ListItem.AudioChannels,1) | stringcompare(ListItem.AudioChannels,2)]</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsAudioCodec</include>
