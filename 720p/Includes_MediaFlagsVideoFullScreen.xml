@@ -89,8 +89,13 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts.png</texture>
-			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + [stringcompare(VideoPlayer.AudioChannels,1) | stringcompare(VideoPlayer.AudioChannels,2)]</visible>
+			<texture>flags/movies/audiocodec/dts10.png</texture>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,1)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dts20.png</texture>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,2)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
