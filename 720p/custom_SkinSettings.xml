@@ -2877,7 +2877,17 @@
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="button" id="517">
+					<control type="radiobutton" id="517">
+						<label>Script.TvTunes</label>
+						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
+						<selected>Skin.HasSetting(TvTunes)</selected>
+					</control>
+					<control type="image" id="518">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="button" id="519">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
 					</control>

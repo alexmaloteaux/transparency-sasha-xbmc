@@ -625,4 +625,11 @@
 			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(596)] + Container.Content(Episodes)</visible>
 		</control>
 	</include>
+	<include name="TvTunes">
+		<onfocus>XBMC.RunScript(script.TvTunes,backend=True)</onfocus>
+		<onfocus>SetFocus(50)</onfocus>
+	</include>
+	<include name="NoTvTunes">
+		<onfocus>SetFocus(50)</onfocus>
+	</include>
 </includes>
