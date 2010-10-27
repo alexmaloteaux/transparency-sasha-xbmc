@@ -512,12 +512,17 @@
 						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
 						<selected>Skin.HasSetting(WideHomeMenu)</selected>
 					</control>
-					<control type="image" id="205">
+					<control type="radiobutton" id="205">
+						<label>31176</label>
+						<onclick>Skin.ToggleSetting(FavouritesPlaylists_Play)</onclick>
+						<selected>!Skin.HasSetting(FavouritesPlaylists_Play)</selected>
+					</control>
+					<control type="image" id="206">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="207">
 						<description>enable recent movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentMovies)</onclick>
@@ -527,7 +532,7 @@
 						<onclick>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onclick>
 						<selected>Skin.HasSetting(HomepageRecentMovies)</selected>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="208">
 						<description>enable recent tv-shows info</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentTVShows)</onclick>
@@ -537,7 +542,7 @@
 						<onclick>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onclick>
 						<selected>Skin.HasSetting(HomepageRecentTVShows)</selected>
 					</control>
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="209">
 						<description>enable recent music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentAlbums)</onclick>
@@ -547,62 +552,62 @@
 						<onclick>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onclick>
 						<selected>Skin.HasSetting(HomepageRecentAlbums)</selected>
 					</control>
-					<control type="image" id="209">
+					<control type="image" id="210">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="211">
 						<description>enable random movies info</description>
-						<label>$LOCALIZE[20342] - $LOCALIZE[590]</label>
+						<label>$LOCALIZE[20342] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomepageRandomMovies)</onclick>
 						<onclick>Skin.Reset(HomepageRecentMovies)</onclick>
 						<onclick>Skin.Reset(HomepageRecentTVShows)</onclick>
 						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
 						<selected>Skin.HasSetting(HomepageRandomMovies)</selected>
 					</control>
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="212">
 						<description>enable random tv-shows info</description>
-						<label>$LOCALIZE[20343] - $LOCALIZE[590]</label>
+						<label>$LOCALIZE[20343] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomepageRandomTVShows)</onclick>
 						<onclick>Skin.Reset(HomepageRecentMovies)</onclick>
 						<onclick>Skin.Reset(HomepageRecentTVShows)</onclick>
 						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
 						<selected>Skin.HasSetting(HomepageRandomTVShows)</selected>
 					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="213">
 						<description>enable random music info</description>
-						<label>$LOCALIZE[2] - $LOCALIZE[590]</label>
+						<label>$LOCALIZE[2] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomepageRandomAlbums)</onclick>
 						<onclick>Skin.Reset(HomepageRecentMovies)</onclick>
 						<onclick>Skin.Reset(HomepageRecentTVShows)</onclick>
 						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
 						<selected>Skin.HasSetting(HomepageRandomAlbums)</selected>
 					</control>
-					<control type="image" id="213">
+					<control type="image" id="214">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="214">
+					<control type="radiobutton" id="215">
 						<description>enable weather info</description>
 						<label>20084</label>
 						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
 					</control>
-					<control type="radiobutton" id="215">
+					<control type="radiobutton" id="216">
 						<description>enable System info</description>
 						<label>20085</label>
 						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
 						<selected>!Skin.HasSetting(homepageSysteminfo)</selected>
 					</control>
-					<control type="radiobutton" id="216">
+					<control type="radiobutton" id="217">
 						<description>enable video info</description>
 						<label>20176</label>
 						<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
 					</control>
-					<control type="radiobutton" id="217">
+					<control type="radiobutton" id="218">
 						<description>enable music info</description>
 						<label>20083</label>
 						<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
@@ -613,7 +618,7 @@
 					<posx>1083</posx>
 					<posy>182</posy>
 					<width>20</width>
-					<height>393</height>
+					<height>418</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 					<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 					<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
@@ -2868,26 +2873,16 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="515">
-						<label>Script.Favourites - $LOCALIZE[136]: $LOCALIZE[208]</label>
-						<onclick>Skin.ToggleSetting(FavouritesPlaylists_Play)</onclick>
-						<selected>!Skin.HasSetting(FavouritesPlaylists_Play)</selected>
+						<label>31210</label>
+						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
+						<selected>Skin.HasSetting(TvTunes)</selected>
 					</control>
 					<control type="image" id="516">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="517">
-						<label>Script.TvTunes</label>
-						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
-						<selected>Skin.HasSetting(TvTunes)</selected>
-					</control>
-					<control type="image" id="518">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="button" id="519">
+					<control type="button" id="517">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
 					</control>
