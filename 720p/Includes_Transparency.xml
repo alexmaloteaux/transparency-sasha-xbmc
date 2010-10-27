@@ -273,6 +273,31 @@
 		<texturenofocus border="10">Button_Side_NoFocus2.png</texturenofocus>
 		<include>T-Level-SB</include>
 	</include>
+	<include name="T-ButtonPlayerControls">
+		<control type="image">
+			<description>Unfocus Background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>47</height>
+			<texture border="10">Button_Side_NoFocus.png</texture>
+			<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
+			<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
+			<visible>!ControlGroup(9005).HasFocus</visible>
+			<include>T-Level</include>
+		</control>
+		<control type="image">
+			<description>Focus Background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>47</height>
+			<texture border="10">Button_Side_Focus.png</texture>
+			<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
+			<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
+			<animation effect="fade" start="100" end="70" time="900" pulse="true" condition="ControlGroup(9005).HasFocus">conditional</animation>
+			<visible>ControlGroup(9005).HasFocus</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-Home_Ver_Sub">
 		<control type="image">
 			<posx>199</posx>
