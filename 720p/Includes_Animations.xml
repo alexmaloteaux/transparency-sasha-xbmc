@@ -118,6 +118,10 @@
 			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000" />
 			<effect type="rotate" center="auto" end="162" time="2250" />
 		</animation>
+		<animation type="WindowOpen">
+			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000" />
+			<effect type="rotate" center="auto" end="162" time="2250" />
+		</animation>
 		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding4x">Conditional</animation>

@@ -20,7 +20,17 @@
 					<height>157</height>
 					<aspectratio align="center" aligny="center" scalediffuse="true">keep</aspectratio>
 					<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-					<visible>!VideoPlayer.Content(Movies) + ![VideoPlayer.Content(Episodes) + Skin.HasSetting(ClearArt) + [!IsEmpty(Control.GetLabel(7017)) | !IsEmpty(Control.GetLabel(7018))]]</visible>
+					<visible>VideoPlayer.Content(Episodes) + [!Skin.HasSetting(ClearArt) | [IsEmpty(Control.GetLabel(7017)) + IsEmpty(Control.GetLabel(7018))] | Skin.HasSetting(Safemode) | substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
+				</control>
+				<control type="image">
+					<description>cover image</description>
+					<posx>10</posx>
+					<posy>183</posy>
+					<width>279</width>
+					<height>157</height>
+					<aspectratio align="center" aligny="center" scalediffuse="true">keep</aspectratio>
+					<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+					<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
 					<description>cover image</description>

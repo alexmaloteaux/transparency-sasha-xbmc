@@ -1104,9 +1104,9 @@
 				<height>142</height>
 				<texture diffuse="disc_mask.png">disc.png</texture>
 				<include>cdartspinhome</include>
-				<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)] | substring(Player.FolderPath,pvr://)</visible>
+				<visible>Skin.HasSetting(CDArt) | Skin.HasSetting(SafeMode)</visible>
 			</control>
-			<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">cdart-home</include>
+			<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-home</include>
 			<control type="image">
 				<description>Cover image</description>
 				<posx>816</posx>
@@ -3460,7 +3460,7 @@
 					<item id="8103">
 						<description>Menu PlayDisc Sub Eject</description>
 						<label>$LOCALIZE[13391]</label>
-						<onclick>EjectTray</onclick>
+						<onclick>cdEjectTray</onclick>
 						<visible>!Skin.HasSetting(Menu_PlayDisc_Sub_Eject)</visible>
 					</item>
 					<item id="8104">

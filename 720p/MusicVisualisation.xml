@@ -143,7 +143,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<texture diffuse="disc_mask.png">disc.png</texture>
 					<aspectratio align="bottom">keep</aspectratio>
 					<include>cdartspin</include>
-					<visible>Skin.HasSetting(CDArt) | [!Skin.HasSetting(CDArt) + Skin.HasSetting(SafeMode)]</visible>
+					<visible>Skin.HasSetting(CDArt) | Skin.HasSetting(SafeMode)</visible>
 				</control>
 				<control type="image">
 					<description>cover image</description>

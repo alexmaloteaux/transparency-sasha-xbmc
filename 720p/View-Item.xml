@@ -16,8 +16,8 @@
 				<posy>610</posy>
 				<width>220</width>
 				<height>220</height>
-				<include condition="!Skin.HasSetting(SafeMode)">moviedisc-dvd-View_Item</include>
-				<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Item</include>
+				<include condition="!Skin.HasSetting(SafeMode) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addons://)]">moviedisc-dvd-View_Item</include>
+				<include condition="Skin.HasSetting(SafeMode) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addons://)">movienodisc-View_Item</include>
 				<include>Window_OpenClose_Visible_ItemDisc_Animation</include>
 				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -26,8 +26,8 @@
 				<posy>610</posy>
 				<width>220</width>
 				<height>220</height>
-				<include condition="!Skin.HasSetting(SafeMode)">moviedisc-bluray-View_Item</include>
-				<include condition="Skin.HasSetting(SafeMode)">movienodisc-View_Item</include>
+				<include condition="!Skin.HasSetting(SafeMode) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addons://)]">moviedisc-bluray-View_Item</include>
+				<include condition="Skin.HasSetting(SafeMode) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addons://)">movienodisc-View_Item</include>
 				<include>Window_OpenClose_Visible_ItemDisc_Animation</include>
 				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
