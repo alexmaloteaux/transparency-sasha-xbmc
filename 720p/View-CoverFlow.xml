@@ -1263,7 +1263,7 @@
 				<width>1280</width>
 				<height>81</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons)] + Skin.HasSetting(Enable_TVShows_Media_Flags)]</visible>
+				<visible>Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay12</include>
 			<control type="image">
@@ -1272,7 +1272,7 @@
 				<width>1280</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Media_Flags)]</visible>
+				<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>
@@ -1312,14 +1312,6 @@
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
-			<control type="group">
-				<posx>370</posx>
-				<posy>60</posy>
-				<width>540</width>
-				<height>48</height>
-				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
-				<visible>Container.Content(TVShows) + !Window.IsVisible(VideoFiles)</visible>
-			</control>
 			<control type="label">
 				<posx>355</posx>
 				<posy>60</posy>
@@ -1330,7 +1322,7 @@
 				<font>font-21</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<visible>Container.Content(Seasons)</visible>
+				<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 			</control>
 		</control>
 	</include>
