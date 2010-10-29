@@ -184,5 +184,6 @@
 				<label>$INFO[Weather.Location]</label>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
 	</controls>
 </window>

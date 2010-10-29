@@ -41,12 +41,12 @@
 			<width>176</width>
 			<height>35</height>
 			<texture border="7">list-focus.png</texture>
-			<animation effect="slide" start="0,0" end="176,0" time="100" condition="Control.HasFocus(147)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="352,0" time="100" condition="Control.HasFocus(148)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Control.HasFocus(149)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="704,0" time="100" condition="Control.HasFocus(150)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="176,0" time="100" condition="Control.HasFocus(148)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="352,0" time="100" condition="Control.HasFocus(149)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Control.HasFocus(150)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="704,0" time="100" condition="Control.HasFocus(151)">Conditional</animation>
 			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-			<visible>Control.HasFocus(146) | Control.HasFocus(147) | Control.HasFocus(148) | Control.HasFocus(149) | Control.HasFocus(150)</visible>
+			<visible>Control.HasFocus(147) | Control.HasFocus(148) | Control.HasFocus(149) | Control.HasFocus(150) | Control.HasFocus(151)</visible>
 		</control>
 	</include>
 	<include name="ButtonScroll4">
@@ -66,15 +66,15 @@
 	</include>
 	<include name="cdartspin">
 		<animation type="WindowOpen">
-			<effect type="slide" end="95" tween="cubic" easing="out" delay="1000" time="2000" />
-			<effect type="rotate" center="auto" end="234" time="3250" />
+			<effect type="slide" end="95" tween="cubic" easing="out" delay="1000" time="2000"/>
+			<effect type="rotate" center="auto" end="234" time="3250"/>
 		</animation>
 		<animation type="WindowClose" reversible="false" condition="Player.Playing">
-			<effect type="slide" start="95" end="0" tween="cubic" easing="out" time="2000" />
-			<effect type="rotate" center="auto" start="0" end="20" time="500" />
-			<effect type="rotate" center="auto" start="0" end="25" time="500" delay="500" />
-			<effect type="rotate" center="auto" start="0" end="30" time="500" delay="1000" />
-			<effect type="rotate" center="auto" start="0" end="36" time="500" delay="1500" />
+			<effect type="slide" start="95" end="0" tween="cubic" easing="out" time="2000"/>
+			<effect type="rotate" center="auto" start="0" end="20" time="500"/>
+			<effect type="rotate" center="auto" start="0" end="25" time="500" delay="500"/>
+			<effect type="rotate" center="auto" start="0" end="30" time="500" delay="1000"/>
+			<effect type="rotate" center="auto" start="0" end="36" time="500" delay="1500"/>
 		</animation>
 		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
@@ -94,8 +94,8 @@
 	</include>
 	<include name="cdartspinhome">
 		<animation type="WindowOpen">
-			<effect type="slide" end="64" tween="cubic" easing="out" delay="1000" time="2000" />
-			<effect type="rotate" center="auto" end="234" time="3250" />
+			<effect type="slide" end="64" tween="cubic" easing="out" delay="1000" time="2000"/>
+			<effect type="rotate" center="auto" end="234" time="3250"/>
 		</animation>
 		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
@@ -115,12 +115,12 @@
 	</include>
 	<include name="cdartspinjukebox">
 		<animation type="Visible">
-			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000" />
-			<effect type="rotate" center="auto" end="162" time="2250" />
+			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000"/>
+			<effect type="rotate" center="auto" end="162" time="2250"/>
 		</animation>
 		<animation type="WindowOpen">
-			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000" />
-			<effect type="rotate" center="auto" end="162" time="2250" />
+			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000"/>
+			<effect type="rotate" center="auto" end="162" time="2250"/>
 		</animation>
 		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
@@ -350,74 +350,74 @@
 	</include>
 	<include name="Music-Icons-CaseAnimation1">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="18,211,168,162" end="-14,244,235,226" time="250" />
-			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="18,211,168,162" end="-14,244,235,226" time="250"/>
+			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" end="18,211,168,162" start="-14,244,235,226" time="250" reversible="true" />
-			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" end="18,211,168,162" start="-14,244,235,226" time="250" reversible="true"/>
+			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseAnimation2">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,208,192,168" end="-39,242,268,234" time="250" />
-			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="0,208,192,168" end="-39,242,268,234" time="250"/>
+			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" end="0,208,192,168" start="-39,242,268,234" time="250" reversible="true" />
-			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" end="0,208,192,168" start="-39,242,268,234" time="250" reversible="true"/>
+			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseAnimation3">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="18,43,168,162" end="-14,11,235,226" time="250" />
-			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="18,43,168,162" end="-14,11,235,226" time="250"/>
+			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" end="18,43,168,162" start="-14,11,235,226" time="250" reversible="true" />
-			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" end="18,43,168,162" start="-14,11,235,226" time="250" reversible="true"/>
+			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseAnimation4">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,40,192,168" end="-39,7,268,234" time="250" />
-			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="0,40,192,168" end="-39,7,268,234" time="250"/>
+			<effect type="rotatey" delay="500" center="7" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-39,7,268,234" end="0,40,192,168" time="250" reversible="true" />
-			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="-39,7,268,234" end="0,40,192,168" time="250" reversible="true"/>
+			<effect type="rotatey" center="7" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseNoAnimation1">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="18,211,168,162" end="-14,244,235,226" time="250" />
+			<effect type="zoom" start="18,211,168,162" end="-14,244,235,226" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" end="18,211,168,162" start="-14,244,235,226" time="250" reversible="true" />
+			<effect type="zoom" end="18,211,168,162" start="-14,244,235,226" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseNoAnimation2">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,208,192,168" end="-39,242,268,234" time="250" />
+			<effect type="zoom" start="0,208,192,168" end="-39,242,268,234" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" end="0,208,192,168" start="-39,242,268,234" time="250" reversible="true" />
+			<effect type="zoom" end="0,208,192,168" start="-39,242,268,234" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseNoAnimation3">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="18,43,168,162" end="-14,11,235,226" time="250" />
+			<effect type="zoom" start="18,43,168,162" end="-14,11,235,226" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" end="18,43,168,162" start="-14,11,235,226" time="250" reversible="true" />
+			<effect type="zoom" end="18,43,168,162" start="-14,11,235,226" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Music-Icons-CaseNoAnimation4">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,40,192,168" end="-39,7,268,234" time="250" />
+			<effect type="zoom" start="0,40,192,168" end="-39,7,268,234" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-39,7,268,234" end="0,40,192,168" time="250" reversible="true" />
+			<effect type="zoom" start="-39,7,268,234" end="0,40,192,168" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="RecentFadeEffect">
@@ -426,110 +426,110 @@
 	</include>
 	<include name="Video-Icons-CaseAnimation1">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,302,188,267" end="-21,332,228,324" time="250" />
-			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="0,302,188,267" end="-21,332,228,324" time="250"/>
+			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,332,228,324" end="0,302,188,267" time="250" />
-			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="-21,332,228,324" end="0,302,188,267" time="250"/>
+			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseAnimation2">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250" />
-			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250"/>
+			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250" />
-			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250"/>
+			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseAnimation3">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250" />
-			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250"/>
+			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250" reversible="true" />
-			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250" reversible="true"/>
+			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseAnimation4">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250" />
-			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250"/>
+			<effect type="rotatey" delay="500" center="1" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" reversible="true" />
-			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" reversible="true"/>
+			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseAnimation5">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="155,254,35,35" end="167,276,41,41" time="250" />
-			<effect type="rotatey" delay="500" center="-10" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="155,254,35,35" end="167,276,41,41" time="250"/>
+			<effect type="rotatey" delay="500" center="-10" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="167,276,41,41" end="155,254,35,35" time="250" />
-			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="167,276,41,41" end="155,254,35,35" time="250"/>
+			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseAnimation6">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="155,304,35,35" end="167,334,41,41" time="250" />
-			<effect type="rotatey" delay="500" center="-10" start="0" end="75" time="1000" tween="quadratic" easing="out" />
+			<effect type="zoom" start="155,304,35,35" end="167,334,41,41" time="250"/>
+			<effect type="rotatey" delay="500" center="-10" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="167,334,41,41" end="155,304,35,35" time="250" />
-			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true" />
+			<effect type="zoom" start="167,334,41,41" end="155,304,35,35" time="250"/>
+			<effect type="rotatey" center="1" start="75" end="0" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseNoAnimation1">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,302,188,267" end="-21,332,228,324" time="250" />
+			<effect type="zoom" start="0,302,188,267" end="-21,332,228,324" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,332,228,324" end="0,302,188,267" time="250" />
+			<effect type="zoom" start="-21,332,228,324" end="0,302,188,267" time="250"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseNoAnimation2">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250" />
+			<effect type="zoom" start="0,283,202,310" end="-21,309,244,374" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250" />
+			<effect type="zoom" start="-21,309,244,374" end="0,283,202,310" time="250"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseNoAnimation3">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250" />
+			<effect type="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250" reversible="true" />
+			<effect type="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseNoAnimation4">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250" />
+			<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" reversible="true" />
+			<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" reversible="true"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseNoAnimation5">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="155,254,35,35" end="167,276,41,41" time="250" />
+			<effect type="zoom" start="155,254,35,35" end="167,276,41,41" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="167,276,41,41" end="155,254,35,35" time="250" />
+			<effect type="zoom" start="167,276,41,41" end="155,254,35,35" time="250"/>
 		</animation>
 	</include>
 	<include name="Video-Icons-CaseNoAnimation6">
 		<animation type="focus" reversible="false">
-			<effect type="zoom" start="155,304,35,35" end="167,334,41,41" time="250" />
+			<effect type="zoom" start="155,304,35,35" end="167,334,41,41" time="250"/>
 		</animation>
 		<animation type="UnFocus" reversible="true">
-			<effect type="zoom" start="167,334,41,41" end="155,304,35,35" time="250" />
+			<effect type="zoom" start="167,334,41,41" end="155,304,35,35" time="250"/>
 		</animation>
 	</include>
 	<include name="VisibleFadeEffect">
@@ -616,12 +616,12 @@
 	</include>
 	<include name="Window_OpenClose_Visible_ItemDisc_Animation">
 		<animation type="WindowOpen">
-			<effect type="slide" start="0,120" end="0,0" tween="cubic" easing="out" time="400" />
-			<effect type="rotate" center="auto" start="-180" end="0" time="400" />
+			<effect type="slide" start="0,120" end="0,0" tween="cubic" easing="out" time="400"/>
+			<effect type="rotate" center="auto" start="-180" end="0" time="400"/>
 		</animation>
 		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="0,120" tween="cubic" easing="out" time="400" />
-			<effect type="rotate" center="auto" start="0" end="-180" time="400" />
+			<effect type="slide" start="0,0" end="0,120" tween="cubic" easing="out" time="400"/>
+			<effect type="rotate" center="auto" start="0" end="-180" time="400"/>
 		</animation>
 	</include>
 	<include name="Window_OpenClose_Visible_ItemIcon_Animation">

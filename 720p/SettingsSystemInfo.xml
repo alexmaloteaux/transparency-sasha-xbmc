@@ -156,7 +156,7 @@
 					<posx>0</posx>
 					<posy>370</posy>
 					<width>880</width>
-					<label>Transparency! v3.10.3 (SVN)</label>
+					<label>Transparency! v3.11.0 (SVN)</label>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font-20</font>
@@ -234,5 +234,6 @@
 				<include>Breadcrumbs-Settings-SystemInfo</include>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
 	</controls>
 </window>

@@ -2048,6 +2048,30 @@
 	<include name="ToggleButtonWide">
 		<posx>231</posx>
 	</include>
+	<include name="TouchScreenHomeBack">
+		<control type="group">
+			<posx>25</posx>
+			<posy>45</posy>
+			<control type="button">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-home.png</texturefocus>
+				<texturenofocus>touch-home.png</texturenofocus>
+				<onclick>ActivateWindow(Home)</onclick>
+			</control>
+			<control type="button">
+				<posx>45</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-back.png</texturefocus>
+				<texturenofocus>touch-back.png</texturenofocus>
+				<onclick>ParentDir</onclick>
+			</control>
+		</control>
+	</include>
 	<include name="Trailer-BuiltIn-FullScreen">
 		<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
 		<visible>!IsEmpty(Listitem.Trailer)</visible>

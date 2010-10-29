@@ -219,5 +219,6 @@
 				<include>Breadcrumbs-Settings-Addons</include>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
 	</controls>
 </window>

@@ -178,6 +178,7 @@
 				<include>Breadcrumbs-VideoPlaylist</include>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>
 	</controls>
 </window>

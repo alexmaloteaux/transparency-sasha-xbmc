@@ -315,7 +315,8 @@
 			<include condition="!Skin.HasSetting(TvTunes)">NoTvTunes</include>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-		</control> 
+		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>
 	</controls>
 </window>

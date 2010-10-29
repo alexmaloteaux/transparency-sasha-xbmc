@@ -80,11 +80,11 @@
 						<bordersize>7</bordersize>
 						<animation type="focus">
 							<effect type="slide" start="0,0" end="0,-10" time="200" reversible="false"/>
-							<effect type="zoom" start="100" end="117" center="auto" time="200" reversible="false" />
+							<effect type="zoom" start="100" end="117" center="auto" time="200" reversible="false"/>
 						</animation>
 						<animation type="unfocus">
 							<effect type="slide" start="0,-10" end="0,0" time="200" reversible="false"/>
-							<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false" />
+							<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false"/>
 						</animation>
 					</control>
 					<control type="label">
@@ -199,5 +199,6 @@
 				<include>Breadcrumbs-Settings-Profile</include>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
 	</controls>
 </window>
