@@ -60,7 +60,7 @@
 					<preloaditems>2</preloaditems>
 					<focusposition>2</focusposition>
 					<orientation>horizontal</orientation>
-					<hitrect x="512" y="260" w="256" h="256" />
+					<hitrect x="512" y="260" w="256" h="256"/>
 					<itemlayout width="256" height="310">
 						<control type="image">
 							<posx>2</posx>
@@ -106,12 +106,12 @@
 							<bordertexture border="7" flipy="true" diffuse="diffuse_mirror2.png">thumb-shadow.png</bordertexture>
 							<bordersize>10</bordersize>
 							<animation type="focus" reversible="false">
-								<effect type="zoom" start="100" end="130" center="auto" time="200" />
-								<effect type="slide" start="0,0" end="0,54" center="auto" time="200" />
+								<effect type="zoom" start="100" end="130" center="auto" time="200"/>
+								<effect type="slide" start="0,0" end="0,54" center="auto" time="200"/>
 							</animation>
 							<animation type="unfocus" reversible="false">
-								<effect type="zoom" start="130" end="100" center="auto" time="200" />
-								<effect type="slide" start="0,54" end="0,0" center="auto" time="200" />
+								<effect type="zoom" start="130" end="100" center="auto" time="200"/>
+								<effect type="slide" start="0,54" end="0,0" center="auto" time="200"/>
 							</animation>
 						</control>
 					</focusedlayout>

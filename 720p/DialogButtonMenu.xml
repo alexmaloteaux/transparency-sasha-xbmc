@@ -466,6 +466,16 @@
 					<visible>Control.HasFocus(20)</visible>
 				</control>
 			</control>
+			<control type="button">
+				<posx>1240</posx>
+				<posy>130</posy>
+				<width>20</width>
+				<height>20</height>
+				<texturefocus>close-window-focus.png</texturefocus>
+				<texturenofocus>close-window-nofocus.png</texturenofocus>
+				<onclick>Dialog.Close(buttonmenu)</onclick>
+				<visible>Skin.HasSetting(TouchScreenMode)</visible>
+			</control>
 		</control>
 	</controls>
 </window>

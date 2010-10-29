@@ -260,6 +260,16 @@
 					<aligny>center</aligny>
 					<font>font-23</font>
 				</control>
+				<control type="button">
+					<posx>1258</posx>
+					<posy>62</posy>
+					<width>20</width>
+					<height>20</height>
+					<texturefocus>close-window-focus.png</texturefocus>
+					<texturenofocus>close-window-nofocus.png</texturenofocus>
+					<onclick>Dialog.Close(fullscreeninfo)</onclick>
+					<visible>Skin.HasSetting(TouchScreenMode)</visible>
+				</control>
 				<control type="label">
 					<description>Video End Time</description>
 					<posx>1255</posx>

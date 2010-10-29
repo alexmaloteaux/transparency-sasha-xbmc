@@ -17,6 +17,18 @@
 			<animation effect="zoom" start="547,90,202,1" end="547,20,202,80" time="300" delay="300">WindowOpen</animation>
 			<animation effect="zoom" start="547,20,202,80" end="547,90,202,1" time="200" delay="150">WindowClose</animation>
 		</control>
+		<control type="button">
+			<posx>700</posx>
+			<posy>40</posy>
+			<width>20</width>
+			<height>20</height>
+			<texturefocus>close-window-focus.png</texturefocus>
+			<texturenofocus>close-window-nofocus.png</texturenofocus>
+			<onclick>Dialog.Close(numericinput )</onclick>
+			<visible>Skin.HasSetting(TouchScreenMode)</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		</control>
 		<control type="label" id="1">
 			<description>dialog Heading</description>
 			<posx>560</posx>

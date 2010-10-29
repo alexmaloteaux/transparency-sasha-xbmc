@@ -423,13 +423,13 @@
 	</include>
 	<include name="T-KeyboardInput2">
 		<control type="image">
-			<posx>543</posx>
-			<posy>30</posy>
-			<width>208</width>
-			<height>60</height>
+			<posx>547</posx>
+			<posy>20</posy>
+			<width>202</width>
+			<height>90</height>
 			<texture border="45,45,45,0">keyboard-input.png</texture>
-			<animation effect="zoom" start="543,90,208,1" end="543,30,208,60" time="300" delay="300">WindowOpen</animation>
-			<animation effect="zoom" start="543,30,208,60" end="543,90,208,1" time="200" delay="150">WindowClose</animation>
+			<animation effect="zoom" start="547,90,202,1" end="547,20,202,80" time="300" delay="300">WindowOpen</animation>
+			<animation effect="zoom" start="547,20,202,80" end="547,90,202,1" time="200" delay="150">WindowClose</animation>
 			<include>T-Level</include>
 		</control>
 	</include>

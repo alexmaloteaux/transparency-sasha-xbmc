@@ -79,6 +79,16 @@
 					<height>200</height>
 					<texture border="30">panel.png</texture>
 				</control>
+				<control type="button">
+					<posx>1258</posx>
+					<posy>62</posy>
+					<width>20</width>
+					<height>20</height>
+					<texturefocus>close-window-focus.png</texturefocus>
+					<texturenofocus>close-window-nofocus.png</texturenofocus>
+					<onclick>Dialog.Close(videoosd)</onclick>
+					<visible>Skin.HasSetting(TouchScreenMode)</visible>
+				</control>
 				<control type="label">
 					<posx>325</posx>
 					<posy>58</posy>

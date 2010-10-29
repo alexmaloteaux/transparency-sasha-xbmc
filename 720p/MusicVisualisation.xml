@@ -189,6 +189,16 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<height>200</height>
 					<texture border="30">panel.png</texture>
 				</control>
+				<control type="button">
+					<posx>1258</posx>
+					<posy>62</posy>
+					<width>20</width>
+					<height>20</height>
+					<texturefocus>close-window-focus.png</texturefocus>
+					<texturenofocus>close-window-nofocus.png</texturenofocus>
+					<onclick>FullScreen</onclick>
+					<visible>Skin.HasSetting(TouchScreenMode) + !Window.IsVisible(MusicOSD)</visible>
+				</control>
 				<control type="label">
 					<posx>360</posx>
 					<posy>58</posy>

@@ -21,6 +21,16 @@
 				<posx>0</posx>
 				<posy>35</posy>
 			<!-- ** Required ** Do not change <id> or <type>-->
+				<control type="button">
+					<posx>744</posx>
+					<posy>-2</posy>
+					<width>20</width>
+					<height>20</height>
+					<texturefocus>close-window-focus.png</texturefocus>
+					<texturenofocus>close-window-nofocus.png</texturenofocus>
+					<onclick>PreviousMenu</onclick>
+					<visible>Skin.HasSetting(TouchScreenMode)</visible>
+				</control>
 				<control type="image" id="110">
 					<description>logo icon</description>
 					<posx>45</posx>
