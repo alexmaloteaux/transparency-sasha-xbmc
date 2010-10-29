@@ -845,7 +845,7 @@
 		</control>
 		<control type="group" id="7000">
 			<posy>260</posy>
-			<visible>Control.IsVisible(55) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
+			<visible>Control.IsVisible(55) + !Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
 			<control type="group">
 				<posx>80</posx>
 				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
@@ -1239,8 +1239,8 @@
 			<scrolltime>250</scrolltime>
 			<focusposition>3</focusposition>
 			<preloaditems>2</preloaditems>
-			<hitrect x="510" y="300" w="260" h="380" />
-			<itemlayout width="300" height="440" />
+			<hitrect x="510" y="300" w="260" h="380"/>
+			<itemlayout width="300" height="440"/>
 			<focusedlayout width="300" height="440">
 				<control type="image">
 					<posx>0</posx>
@@ -1341,7 +1341,7 @@
 			<posx>2</posx>
 			<posy>345</posy>
 			<visible>Control.IsVisible(55) + Container.OnNext</visible>
-                        <animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
+			<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
 			<control type="group">
 				<posx>20</posx>
@@ -2498,7 +2498,7 @@
 			<posx>2</posx>
 			<posy>345</posy>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
-			<visible>Control.IsVisible(55) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
+			<visible>Control.IsVisible(55) + !Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
 			<control type="group">
 				<posx>20</posx>
 				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
@@ -3014,9 +3014,9 @@
 			<scrolltime>250</scrolltime>
 			<focusposition>3</focusposition>
 			<preloaditems>2</preloaditems>
-			<hitrect x="490" y="370" w="318" h="318" />
+			<hitrect x="490" y="370" w="318" h="318"/>
 			<visible>!Container.Content(AddOns)</visible>
-			<itemlayout width="318" height="318" />
+			<itemlayout width="318" height="318"/>
 			<focusedlayout width="318" height="318">
 				<control type="image">
 					<posx>34</posx>

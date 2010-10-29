@@ -293,8 +293,8 @@
 						<ondown>901</ondown>
 						<onclick>PlayerControl(Previous)</onclick>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="902">
@@ -313,8 +313,8 @@
 						<onclick>PlayerControl(Rewind)</onclick>
 						<animation effect="slide" start="0,0" end="-8,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="togglebutton" id="903">
@@ -336,8 +336,8 @@
 						<onclick>PlayerControl(Play)</onclick>
 						<animation effect="slide" start="0,0" end="-16,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="904">
@@ -356,8 +356,8 @@
 						<onclick>PlayerControl(Forward)</onclick>
 						<animation effect="slide" start="0,0" end="-24,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="905">
@@ -376,8 +376,8 @@
 						<onclick>PlayerControl(Next)</onclick>
 						<animation effect="slide" start="0,0" end="-32,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="906">
@@ -396,8 +396,8 @@
 						<onclick>PlayerControl(Stop)</onclick>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="907">
@@ -416,8 +416,8 @@
 						<onclick>PlayerControl(record)</onclick>
 						<visible>!VideoPlayer.HasMenu + Player.CanRecord + !Player.Recording</visible>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="908">
@@ -436,8 +436,8 @@
 						<onclick>PlayerControl(record)</onclick>
 						<visible>!VideoPlayer.HasMenu + Player.CanRecord + Player.Recording</visible>
 						<animation type="focus">
-							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"  />
-							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true"  delay="70" />
+							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
+							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 				</control>
