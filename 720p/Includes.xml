@@ -1,30 +1,30 @@
 <includes>
-	<include file="defaults.xml" />
-	<include file="View-CoverFlow.xml" />
-	<include file="View-Fanart.xml" />
-	<include file="View-FullList.xml" />
-	<include file="View-Icons.xml" />
-	<include file="View-Item.xml" />
-	<include file="View-Jukebox.xml" />
-	<include file="View-List.xml" />
-	<include file="View-MediaInfo.xml" />
-	<include file="View-PicThumb.xml" />
-	<include file="View-Polaroid.xml" />
-	<include file="View-Slide.xml" />
-	<include file="View-Thumbnail.xml" />
-	<include file="View-Wall.xml" />
-	<include file="View-WideIcon.xml" />
-	<include file="Includes_Animations.xml" />
-	<include file="Includes_CDWall.xml" />
-	<include file="Includes_DebugInfo.xml" />
-	<include file="Includes_Home.xml" />
-	<include file="Includes_MediaFlagsMusic.xml" />
-	<include file="Includes_MediaFlagsMusicFullScreen.xml" />
-	<include file="Includes_MediaFlagsVideo.xml" />
-	<include file="Includes_MediaFlagsVideoFullScreen.xml" />
-	<include file="Includes_Transparency.xml" />
-	<include file="Includes_Weather.xml" />
-	<include file="Includes_Workarounds.xml" />
+	<include file="defaults.xml"/>
+	<include file="View-CoverFlow.xml"/>
+	<include file="View-Fanart.xml"/>
+	<include file="View-FullList.xml"/>
+	<include file="View-Icons.xml"/>
+	<include file="View-Item.xml"/>
+	<include file="View-Jukebox.xml"/>
+	<include file="View-List.xml"/>
+	<include file="View-MediaInfo.xml"/>
+	<include file="View-PicThumb.xml"/>
+	<include file="View-Polaroid.xml"/>
+	<include file="View-Slide.xml"/>
+	<include file="View-Thumbnail.xml"/>
+	<include file="View-Wall.xml"/>
+	<include file="View-WideIcon.xml"/>
+	<include file="Includes_Animations.xml"/>
+	<include file="Includes_CDWall.xml"/>
+	<include file="Includes_DebugInfo.xml"/>
+	<include file="Includes_Home.xml"/>
+	<include file="Includes_MediaFlagsMusic.xml"/>
+	<include file="Includes_MediaFlagsMusicFullScreen.xml"/>
+	<include file="Includes_MediaFlagsVideo.xml"/>
+	<include file="Includes_MediaFlagsVideoFullScreen.xml"/>
+	<include file="Includes_Transparency.xml"/>
+	<include file="Includes_Weather.xml"/>
+	<include file="Includes_Workarounds.xml"/>
 	<constant name="FanartCrossfadeTime">300</constant>
 	<constant name="IconCrossfadeTime">300</constant>
 	<include name="AllViewCommonPageControls">
@@ -58,7 +58,7 @@
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
-			<visible>Control.IsVisible(50) + !Skin.HasSetting(FanartShort)  + !Skin.HasSetting(FanartLong)</visible>
+			<visible>Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>557</posx>
@@ -188,7 +188,7 @@
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
-			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + !Skin.HasSetting(FanartShort)  + !Skin.HasSetting(FanartLong)</visible>
+			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)</visible>
 		</control>
 		<control type="scrollbar" id="61">
 			<posx>557</posx>
@@ -1650,7 +1650,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>PlayerControl(Previous)</onclick>
-				<hitrect x="-45" y="-10" w="68" h="45" />
+				<hitrect x="-45" y="-10" w="68" h="45"/>
 			</control>
 			<control type="button" id="601">
 				<posx>23</posx>
@@ -1666,7 +1666,7 @@
 				<ondown>611</ondown>
 				<onclick>Up</onclick>
 				<onclick>PlayerControl(Stop)</onclick>
-				<hitrect x="23" y="-10" w="23" h="45" />
+				<hitrect x="23" y="-10" w="23" h="45"/>
 			</control>
 			<control type="togglebutton" id="603">
 				<posx>46</posx>
@@ -1684,7 +1684,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>PlayerControl(Play)</onclick>
-				<hitrect x="46" y="-10" w="23" h="45" />
+				<hitrect x="46" y="-10" w="23" h="45"/>
 			</control>
 			<control type="button" id="602">
 				<posx>69</posx>
@@ -1699,7 +1699,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>PlayerControl(Next)</onclick>
-				<hitrect x="69" y="-10" w="23" h="45" />
+				<hitrect x="69" y="-10" w="23" h="45"/>
 			</control>
 			<control type="button" id="608">
 				<posx>92</posx>
@@ -1714,7 +1714,7 @@
 				<onright>605</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<hitrect x="92" y="-10" w="23" h="45" />
+				<hitrect x="92" y="-10" w="23" h="45"/>
 				<visible>LastFM.RadioPlaying</visible>
 			</control>
 			<control type="button" id="608">
@@ -1730,7 +1730,7 @@
 				<onright>605</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<hitrect x="92" y="-10" w="23" h="45" />
+				<hitrect x="92" y="-10" w="23" h="45"/>
 				<visible>!LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
@@ -1794,7 +1794,7 @@
 				<onright>606</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<hitrect x="115" y="-10" w="23" h="45" />
+				<hitrect x="115" y="-10" w="23" h="45"/>
 				<visible>LastFM.RadioPlaying</visible>
 			</control>
 			<control type="togglebutton" id="605">
@@ -1813,7 +1813,7 @@
 				<onright>606</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<hitrect x="115" y="-10" w="23" h="45" />
+				<hitrect x="115" y="-10" w="23" h="45"/>
 				<visible>!LastFM.RadioPlaying</visible>
 			</control>
 			<control type="button" id="606">
@@ -1829,7 +1829,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>FullScreen</onclick>
-				<hitrect x="138" y="-10" w="32" h="45" />
+				<hitrect x="138" y="-10" w="32" h="45"/>
 				<visible>!Skin.HasSetting(WideSideMenuButtons)</visible>
 			</control>
 			<control type="button" id="606">
@@ -1845,7 +1845,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>FullScreen</onclick>
-				<hitrect x="138" y="-10" w="70" h="45" />
+				<hitrect x="138" y="-10" w="70" h="45"/>
 				<visible>Skin.HasSetting(WideSideMenuButtons)</visible>
 			</control>
 		</control>
