@@ -163,7 +163,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<visible>Window.IsVisible(VideoFiles)  + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>257</posx>
