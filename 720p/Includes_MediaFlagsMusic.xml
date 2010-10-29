@@ -44,7 +44,7 @@
 			<control type="image">
 				<include>MusicAudioCodec</include>
 				<texture>flags/music/audiocodec/aif.png</texture>
-				<visible>substring(ListItem.Filename,.aif,Right) + ![substring(ListItem.Filename,.aifc,Right)  | substring(ListItem.Filename,.aiff,Right)]</visible>
+				<visible>substring(ListItem.Filename,.aif,Right) + ![substring(ListItem.Filename,.aifc,Right) | substring(ListItem.Filename,.aiff,Right)]</visible>
 			</control>
 			<control type="image">
 				<include>MusicAudioCodec</include>
@@ -150,7 +150,7 @@
 			<control type="image">
 				<include>MusicPlayerAudioCodec</include>
 				<texture>flags/music/audiocodec/aif.png</texture>
-				<visible>substring(Player.FilenameAndPath ,.aif,Right) + ![substring(Player.FilenameAndPath ,.aifc,Right)  | substring(Player.FilenameAndPath ,.aiff,Right)]</visible>
+				<visible>substring(Player.FilenameAndPath ,.aif,Right) + ![substring(Player.FilenameAndPath ,.aifc,Right) | substring(Player.FilenameAndPath ,.aiff,Right)]</visible>
 			</control>
 			<control type="image">
 				<include>MusicPlayerAudioCodec</include>
