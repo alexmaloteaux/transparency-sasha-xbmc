@@ -31,6 +31,7 @@
 				<texturenofocus>close-window-nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(playercontrols)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
+				<animation effect="slide" start="0,0" end="-54,0" time="0" condition="!System.HasMediaDVD">Conditional</animation>
 			</control>
 			<control type="button" id="400">
 				<posx>0</posx>

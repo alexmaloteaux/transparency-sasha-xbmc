@@ -2070,6 +2070,17 @@
 				<texturefocus>touch-back.png</texturefocus>
 				<texturenofocus>touch-back.png</texturenofocus>
 				<onclick>ParentDir</onclick>
+				<visible>!Window.IsVisible(profiles) + !Window.IsVisible(systeminfo)</visible>
+			</control>
+			<control type="button">
+				<posx>45</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-back.png</texturefocus>
+				<texturenofocus>touch-back.png</texturenofocus>
+				<onclick>PreviousMenu</onclick>
+				<visible>Window.IsVisible(profiles) | Window.IsVisible(systeminfo)</visible>
 			</control>
 		</control>
 	</include>
