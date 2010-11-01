@@ -915,9 +915,9 @@
 	</include>
 	<include name="CommonFileCount">
 		<control type="grouplist">
-			<posx>765</posx>
+			<posx>455</posx>
 			<posy>0</posy>
-			<width>500</width>
+			<width>810</width>
 			<height>30</height>
 			<align>right</align>
 			<orientation>horizontal</orientation>
@@ -944,6 +944,22 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+			</control>
+			<control type="image">
+				<width>29</width>
+				<height>30</height>
+				<texture>dot.png</texture>
+				<visible>!IsEmpty(Container.TotalTime)</visible>
+			</control>
+			<control type="label">
+				<description>Item Count Label</description>
+				<width min="10" max="250">auto</width>
+				<height>30</height>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<label>$LOCALIZE[555]: $INFO[Container.TotalTime]</label>
+				<visible>!IsEmpty(Container.TotalTime)</visible>
 			</control>
 		</control>
 	</include>
