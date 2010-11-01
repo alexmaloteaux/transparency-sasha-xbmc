@@ -771,9 +771,9 @@
 	</include>
 	<include name="T-Underlay36">
 		<control type="image">
-			<posx>240</posx>
-			<posy>-10</posy>
-			<width>1040</width>
+			<posx>300</posx>
+			<posy>40</posy>
+			<width>980</width>
 			<height>135</height>
 			<texture diffuse="underlay-diffuse.png" border="0,11,0,11">underlay3.png</texture>
 			<include>T-Level</include>
@@ -813,7 +813,7 @@
 		<control type="image">
 			<posx>300</posx>
 			<posy>50</posy>
-			<width>600</width>
+			<width>980</width>
 			<height>210</height>
 			<texture diffuse="underlay-diffuse.png" border="0,11,0,11">underlay3.png</texture>
 			<include>T-Level</include>
