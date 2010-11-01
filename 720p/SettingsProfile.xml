@@ -199,6 +199,6 @@
 				<include>Breadcrumbs-Settings-Profile</include>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenHomeBack</include>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 	</controls>
 </window>

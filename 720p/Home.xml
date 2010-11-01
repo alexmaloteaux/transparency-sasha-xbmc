@@ -255,5 +255,6 @@
 				</control>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControlsHome</include>
 	</controls>
 </window>

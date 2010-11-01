@@ -2048,7 +2048,7 @@
 	<include name="ToggleButtonWide">
 		<posx>231</posx>
 	</include>
-	<include name="TouchScreenHomeBack">
+	<include name="TouchScreenControls">
 		<control type="group">
 			<posx>25</posx>
 			<posy>45</posy>
@@ -2081,6 +2081,68 @@
 				<texturenofocus>touch-back.png</texturenofocus>
 				<onclick>PreviousMenu</onclick>
 				<visible>Window.IsVisible(profiles) | Window.IsVisible(systeminfo)</visible>
+			</control>
+			<control type="button">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-player.png</texturefocus>
+				<texturenofocus>touch-player.png</texturenofocus>
+				<onclick>ActivateWindow(PlayerControls)</onclick>
+				<visible>Player.Playing</visible>
+			</control>
+		</control>
+	</include>
+	<include name="TouchScreenControlsHome">
+		<control type="group">
+			<posx>25</posx>
+			<posy>45</posy>
+			<include>ContentFade</include>
+			<control type="button">
+				<posx>1110</posx>
+				<posy>24</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-player.png</texturefocus>
+				<texturenofocus>touch-player.png</texturenofocus>
+				<onclick>ActivateWindow(PlayerControls)</onclick>
+				<visible>Player.Playing</visible>
+			</control>
+		</control>
+	</include>
+	<include name="TouchScreenControlsAMT">
+		<control type="group">
+			<posx>25</posx>
+			<posy>45</posy>
+			<include>ContentFade</include>
+			<control type="button">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-home.png</texturefocus>
+				<texturenofocus>touch-home.png</texturenofocus>
+				<onclick>PreviousMenu</onclick>
+			</control>
+			<control type="button">
+				<posx>45</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-back.png</texturefocus>
+				<texturenofocus>touch-back.png</texturenofocus>
+				<onclick>PreviousMenu</onclick>
+			</control>
+			<control type="button">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>touch-player.png</texturefocus>
+				<texturenofocus>touch-player.png</texturenofocus>
+				<onclick>ActivateWindow(PlayerControls)</onclick>
+				<visible>Player.Playing</visible>
 			</control>
 		</control>
 	</include>
