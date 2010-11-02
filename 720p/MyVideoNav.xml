@@ -317,6 +317,7 @@
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
+		<include condition="Skin.HasSetting(NextAired)">NextAiredInfo</include>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>
 	</controls>

@@ -22,6 +22,7 @@
 	<include file="Includes_MediaFlagsMusicFullScreen.xml"/>
 	<include file="Includes_MediaFlagsVideo.xml"/>
 	<include file="Includes_MediaFlagsVideoFullScreen.xml"/>
+	<include file="Includes_NextAired.xml"/>
 	<include file="Includes_Transparency.xml"/>
 	<include file="Includes_Weather.xml"/>
 	<include file="Includes_Workarounds.xml"/>
@@ -1955,6 +1956,9 @@
 		<onfocus>Skin.Reset(circle9)</onfocus>
 		<onfocus>SetFocus(74)</onfocus>
 	</include>
+	<include name="NextAiredScript">
+		<onfocus>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=3600)</onfocus>
+	</include>
 	<include name="PlayerControlsNormal">
 		<posx>8</posx>
 	</include>
@@ -2057,6 +2061,9 @@
 	</include>
 	<include name="SideMenuAnim3Wide">
 		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
+	</include>
+	<include name="StartupPlaylist">
+		<onfocus>PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
 	</include>
 	<include name="ToggleButtonNormal">
 		<posx>157</posx>

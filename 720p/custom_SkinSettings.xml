@@ -2889,12 +2889,17 @@
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
 						<selected>Skin.HasSetting(TvTunes)</selected>
 					</control>
-					<control type="image" id="516">
+					<control type="radiobutton" id="516">
+						<label>31211</label>
+						<onclick>Skin.ToggleSetting(NextAired)</onclick>
+						<selected>Skin.HasSetting(NextAired)</selected>
+					</control>
+					<control type="image" id="517">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="button" id="517">
+					<control type="button" id="518">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
 					</control>
