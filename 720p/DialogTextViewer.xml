@@ -27,7 +27,7 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<align>left</align>
+				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
@@ -47,12 +47,23 @@
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="image">
-				<posx>34</posx>
-				<posy>499</posy>
-				<width>208</width>
-				<height>208</height>
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<texture>thumb-shadow.png</texture>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<aspectratio aligny="center">keep</aspectratio>
+				<bordersize>6</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
