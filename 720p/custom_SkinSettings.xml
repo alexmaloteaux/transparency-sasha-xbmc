@@ -367,34 +367,40 @@
 						<selected>Skin.HasSetting(TouchScreenMode)</selected>
 					</control>
 					<control type="radiobutton" id="142">
+						<description>KioskMode</description>
+						<label>31178</label>
+						<onclick>Skin.ToggleSetting(KioskMode)</onclick>
+						<selected>Skin.HasSetting(KioskMode)</selected>
+					</control>
+					<control type="radiobutton" id="143">
 						<description>SafeMode</description>
 						<label>31115</label>
 						<onclick>Skin.ToggleSetting(SafeMode)</onclick>
 						<selected>Skin.HasSetting(SafeMode)</selected>
 					</control>
-					<control type="radiobutton" id="143">
+					<control type="radiobutton" id="144">
 						<description>DebugMode</description>
 						<label>654</label>
 						<onclick>Skin.ToggleSetting(DebugMode)</onclick>
 						<selected>Skin.HasSetting(DebugMode)</selected>
 					</control>
-					<control type="radiobutton" id="144">
+					<control type="radiobutton" id="145">
 						<description>Hate Transparency</description>
 						<label>31140</label>
 						<onclick>Skin.ToggleSetting(HateTransparency)</onclick>
 						<selected>Skin.HasSetting(HateTransparency)</selected>
 					</control>
-					<control type="group" id="145">
+					<control type="group" id="146">
 						<width>880</width>
 						<height>35</height>
-						<control type="grouplist" id="146">
+						<control type="grouplist" id="147">
 							<orientation>horizontal</orientation>
 							<width>880</width>
 							<height>35</height>
 							<itemgap>0</itemgap>
-							<onup>144</onup>
+							<onup>145</onup>
 							<ondown>102</ondown>
-							<control type="radiobutton" id="147">
+							<control type="radiobutton" id="148">
 								<description>Transparency Level 20</description>
 								<width>176</width>
 								<height>35</height>
@@ -410,7 +416,7 @@
 								<selected>Skin.HasSetting(Trans_20)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="148">
+							<control type="radiobutton" id="149">
 								<description>Transparency Level 40</description>
 								<width>176</width>
 								<height>35</height>
@@ -426,7 +432,7 @@
 								<selected>Skin.HasSetting(Trans_40)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 								</control>
-							<control type="radiobutton" id="149">
+							<control type="radiobutton" id="150">
 								<description>Transparency Level 60</description>
 								<width>176</width>
 								<height>35</height>
@@ -442,7 +448,7 @@
 								<selected>!Skin.HasSetting(Trans_60)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="150">
+							<control type="radiobutton" id="151">
 								<description>Transparency Level 80</description>
 								<width>176</width>
 								<height>35</height>
@@ -458,7 +464,7 @@
 								<selected>Skin.HasSetting(Trans_80)</selected>
 								<enable>Skin.HasSetting(HateTransparency)</enable>
 							</control>
-							<control type="radiobutton" id="151">
+							<control type="radiobutton" id="152">
 								<description>Transparency Level 100</description>
 								<width>176</width>
 								<height>35</height>
