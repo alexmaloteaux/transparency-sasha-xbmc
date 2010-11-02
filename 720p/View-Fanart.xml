@@ -313,6 +313,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
+			<animation effect="slide" end="-401,0" time="0" condition="Skin.HasSetting(FanartLong)">Conditional</animation>
 			<control type="image">
 				<posx>1212</posx>
 				<posy>14</posy>
@@ -337,7 +338,6 @@
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
 				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
-				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 		</control>
