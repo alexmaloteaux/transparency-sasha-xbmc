@@ -1684,6 +1684,20 @@
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
+			<control type="textbox">
+				<description>plot description used by addons</description>
+				<posx>245</posx>
+				<posy>604</posy>
+				<width>600</width>
+				<height>85</height>
+				<label>$INFO[ListItem.Plot]</label>
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Plot)</visible>
+			</control>
 			<control type="button" id="7009">
 				<description>fake button to pass focus</description>
 				<texturefocus>-</texturefocus>
@@ -1694,6 +1708,15 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<visible>stringcompare(Listitem.Label,..)</visible>
+			</control>
 			<control type="image">
 				<posx>8</posx>
 				<posy>505</posy>
