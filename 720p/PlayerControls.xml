@@ -21,10 +21,11 @@
 				<height>64</height>
 				<texture border="1">playercontrol.png</texture>
 				<animation effect="zoom" start="0,0,496,64" end="0,0,550,64" time="0" condition="System.HasMediaDVD">Conditional</animation>
+				<animation effect="zoom" start="0,0,496,64" end="0,0,550,64" time="0" condition="Skin.HasSetting(TouchScreenMode)">Conditional</animation>
 			</control>
 			<control type="button">
-				<posx>550</posx>
-				<posy>-2</posy>
+				<posx>555</posx>
+				<posy>23</posy>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
