@@ -161,9 +161,9 @@
 					<texture>xbmc-logo.png</texture>
 				</control>
 				<control type="grouplist">
-					<posx>765</posx>
+					<posx>719</posx>
 					<posy>0</posy>
-					<width>500</width>
+					<width>529</width>
 					<height>30</height>
 					<align>right</align>
 					<orientation>horizontal</orientation>
@@ -191,6 +191,47 @@
 						<textcolor>white</textcolor>
 						<label>$INFO[System.Time]</label>
 					</control>
+					<control type="image">
+						<width>29</width>
+						<height>30</height>
+						<texture>dot.png</texture>
+					</control>
+				</control>
+				<control type="button" id="20">
+					<description>Power push button</description>
+					<posx>1248</posx>
+					<posy>7</posy>
+					<width>20</width>
+					<height>20</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>ActivateWindow(ShutdownMenu)</onclick>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<pulseonselect>true</pulseonselect>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+				</control>
+				<control type="image">
+					<posx>1248</posx>
+					<posy>7</posy>
+					<width>20</width>
+					<height>20</height>
+					<aspectratio>keep</aspectratio>
+					<texture>home-power.png</texture>
+					<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
+				</control>
+				<control type="image">
+					<posx>1248</posx>
+					<posy>7</posy>
+					<width>20</width>
+					<height>20</height>
+					<aspectratio>keep</aspectratio>
+					<texture>home-power-focus.png</texture>
+					<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(20)">Conditional</animation>
+					<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 			</control>
 			<include condition="!Skin.HasSetting(Home_Weather_Icon)">Home_Top_Weather_Icon</include>
@@ -205,47 +246,11 @@
 					<height>66</height>
 					<texture>Footer.png</texture>
 				</control>
-				<control type="button" id="20">
-					<description>Power push button</description>
-					<posx>1229</posx>
-					<posy>44r</posy>
-					<width>35</width>
-					<height>35</height>
-					<label>-</label>
-					<font>-</font>
-					<onclick>ActivateWindow(ShutdownMenu)</onclick>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<pulseonselect>true</pulseonselect>
-					<onleft>9000</onleft>
-					<onright>9000</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-				</control>
-				<control type="image">
-					<posx>1229</posx>
-					<posy>44r</posy>
-					<width>35</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-					<texture>home-power.png</texture>
-					<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
-				</control>
-				<control type="image">
-					<posx>1229</posx>
-					<posy>44r</posy>
-					<width>35</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-					<texture>home-power-focus.png</texture>
-					<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(20)">Conditional</animation>
-					<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
-				</control>
 				<control type="rss">
 					<description>rss feed</description>
 					<posx>0</posx>
 					<posy>29r</posy>
-					<width>1195</width>
+					<width>1280</width>
 					<font>font-20</font>
 					<urlset>1</urlset>
 					<textcolor>blue</textcolor>

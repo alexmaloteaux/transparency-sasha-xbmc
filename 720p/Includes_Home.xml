@@ -1263,10 +1263,10 @@
 				<posy>10</posy>
 				<height>120</height>
 				<width>770</width>
-				<onup>9000</onup>
+				<onup>20</onup>
 				<ondown>9000</ondown>
 				<onleft>9000</onleft>
-				<onright>20</onright>
+				<onright>9000</onright>
 				<animation effect="slide" start="0,0" end="0,20" time="0" condition="Skin.HasSetting(HomepageRandomMovies)">Conditional</animation>
 				<itemlayout width="770" height="40">
 					<control type="label">
@@ -1486,10 +1486,10 @@
 				<posy>10</posy>
 				<height>120</height>
 				<width>770</width>
-				<onup>9000</onup>
+				<onup>20</onup>
 				<ondown>9000</ondown>
 				<onleft>9000</onleft>
-				<onright>20</onright>
+				<onright>9000</onright>
 				<animation effect="slide" start="0,0" end="0,20" time="0" condition="Skin.HasSetting(HomepageRandomTVShows)">Conditional</animation>
 				<itemlayout width="770" height="40">
 					<control type="label">
@@ -1709,10 +1709,10 @@
 				<posy>10</posy>
 				<height>120</height>
 				<width>770</width>
-				<onup>9000</onup>
+				<onup>20</onup>
 				<ondown>9000</ondown>
 				<onleft>9000</onleft>
-				<onright>20</onright>
+				<onright>9000</onright>
 				<animation effect="slide" start="0,0" end="0,20" time="0" condition="Skin.HasSetting(HomepageRandomAlbums)">Conditional</animation>
 				<itemlayout width="770" height="40">
 					<control type="label">
