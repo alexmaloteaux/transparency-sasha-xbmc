@@ -1943,8 +1943,6 @@
 					<shadowcolor>88000000</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<scroll>true</scroll>
-					<scrollspeed>0</scrollspeed>
 					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 					<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonLabelNormal</include>
 					<include condition="Skin.HasSetting(WideHomeMenu)">HomeButtonLabelWide</include>
@@ -2194,8 +2192,6 @@
 					<shadowcolor>88000000</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<scroll>true</scroll>
-					<scrollspeed>0</scrollspeed>
 					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 				</control>
 			</itemlayout>
@@ -2267,7 +2263,6 @@
 					<shadowcolor>88000000</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<scrollspeed>0</scrollspeed>
 					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 				</control>
 			</itemlayout>
@@ -3832,8 +3827,6 @@
 				<shadowcolor>88000000</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<scrollspeed>0</scrollspeed>
 				<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 			</control>
 		</itemlayout>
