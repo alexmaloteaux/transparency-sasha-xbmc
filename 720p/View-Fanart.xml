@@ -886,6 +886,14 @@
 				<posy>505</posy>
 				<width>210</width>
 				<height>210</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -1541,6 +1549,14 @@
 				<posy>505</posy>
 				<width>210</width>
 				<height>210</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -1920,6 +1936,14 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<control type="image">
+				<posx>8</posx>
+				<posy>505</posy>
+				<width>210</width>
+				<height>210</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>stringcompare(ListItem.Label,..)</visible>
+			</control>
 			<control type="image">
 				<posx>8</posx>
 				<posy>505</posy>
