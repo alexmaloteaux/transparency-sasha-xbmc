@@ -443,6 +443,16 @@
 			<include>T-Level</include>
 		</control>
 	</include>
+	<include name="T-SettingsHeader2">
+		<control type="image">
+			<posx>240</posx>
+			<posy>141</posy>
+			<width>800</width>
+			<height>52</height>
+			<texture border="20">settings-header.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-Underlay11">
 		<control type="image">
 			<posx>0</posx>
@@ -629,6 +639,17 @@
 			<posy>115</posy>
 			<width>1280</width>
 			<height>520</height>
+			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
+			<include>Window_OpenClose_Animation</include>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay120">
+		<control type="image">
+			<posx>0</posx>
+			<posy>185</posy>
+			<width>1280</width>
+			<height>420</height>
 			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 			<include>Window_OpenClose_Animation</include>
 			<include>T-Level</include>
