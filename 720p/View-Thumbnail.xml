@@ -29,17 +29,17 @@
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-					<visible>!Container.Content(Artists)</visible>
+					<visible>!Container.Content(Artists) + !Window.IsVisible(Programs)</visible>
 				</control>
 				<control type="image">
 					<posx>30</posx>
 					<posy>11</posy>
 					<width>120</width>
 					<height>120</height>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture background="true">$INFO[Listitem.Icon]</texture>
+					<aspectratio scalediffuse="true">keep</aspectratio>
+					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 					<bordersize>3</bordersize>
-					<visible>Container.Content(Artists) + stringcompare(ListItem.Label,..)</visible>
+					<visible>[Container.Content(Artists) + stringcompare(ListItem.Label,..)] | Window.IsVisible(Programs)</visible>
 				</control>
 				<control type="image">
 					<posx>30</posx>
@@ -72,8 +72,6 @@
 					<width>120</width>
 					<height>120</height>
 					<texture border="7">thumb-focus.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,-4" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="115" center="auto" time="200" reversible="false"/>
@@ -99,15 +97,15 @@
 						<effect type="slide" start="0,-4" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="123" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
-					<visible>!Container.Content(Artists)</visible>
+					<visible>!Container.Content(Artists) + !Window.IsVisible(Programs)</visible>
 				</control>
 				<control type="image">
 					<posx>30</posx>
 					<posy>11</posy>
 					<width>120</width>
 					<height>120</height>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture background="true">$INFO[Listitem.Icon]</texture>
+					<aspectratio scalediffuse="true">keep</aspectratio>
+					<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 					<bordersize>3</bordersize>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,-4" time="200" reversible="false"/>
@@ -117,7 +115,7 @@
 						<effect type="slide" start="0,-4" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="120" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
-					<visible>Container.Content(Artists) + stringcompare(ListItem.Label,..)</visible>
+					<visible>[Container.Content(Artists) + stringcompare(ListItem.Label,..)] | Window.IsVisible(Programs)</visible>
 				</control>
 				<control type="image">
 					<posx>30</posx>
