@@ -2921,21 +2921,13 @@
 					<onright>9000</onright>
 					<onup>601</onup>
 					<ondown>601</ondown>
-					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay31</include>
-					<control type="image">
-						<posx>0</posx>
-						<posy>138</posy>
-						<width>928</width>
-						<height>55</height>
-						<texture border="0,11,0,11">underlay3.png</texture>
-					</control>
 					<control type="image">
 						<posx>10</posx>
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-master-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(602)">Conditional</animation>
+						<texture>shut-master-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(602)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Master)</visible>
 					</control>
 					<control type="image">
@@ -2943,8 +2935,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-master-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(602)">Conditional</animation>
+						<texture>shut-master-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(602)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Master)</visible>
 					</control>
 					<control type="button" id="602">
@@ -2966,8 +2958,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-logoff-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(603)">Conditional</animation>
+						<texture>shut-logoff-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(603)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Logoff)</visible>
 					</control>
 					<control type="image">
@@ -2975,8 +2967,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-logoff-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(603)">Conditional</animation>
+						<texture>shut-logoff-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(603)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Logoff)</visible>
 					</control>
 					<control type="button" id="603">
@@ -2998,8 +2990,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-info-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(604)">Conditional</animation>
+						<texture>shut-info-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(604)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Info)</visible>
 					</control>
 					<control type="image">
@@ -3007,8 +2999,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-info-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(604)">Conditional</animation>
+						<texture>shut-info-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(604)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Info)</visible>
 					</control>
 					<control type="button" id="604">
@@ -3030,8 +3022,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-filemanager-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(605)">Conditional</animation>
+						<texture>shut-filemanager-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(605)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Filemanager)</visible>
 					</control>
 					<control type="image">
@@ -3039,8 +3031,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-filemanager-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(605)">Conditional</animation>
+						<texture>shut-filemanager-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(605)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager)</visible>
 					</control>
 					<control type="button" id="605">
@@ -3062,8 +3054,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-exit-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(606)">Conditional</animation>
+						<texture>shut-exit-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(606)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Exit)</visible>
 					</control>
 					<control type="image">
@@ -3071,8 +3063,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-exit-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(606)">Conditional</animation>
+						<texture>shut-exit-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(606)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
 					</control>
 					<control type="button" id="606">
@@ -3094,8 +3086,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-restart-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(607)">Conditional</animation>
+						<texture>shut-restart-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(607)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Restart)</visible>
 					</control>
 					<control type="image">
@@ -3103,8 +3095,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-restart-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(607)">Conditional</animation>
+						<texture>shut-restart-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(607)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Restart)</visible>
 					</control>
 					<control type="button" id="607">
@@ -3126,8 +3118,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-shutdown-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(608)">Conditional</animation>
+						<texture>shut-shutdown-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(608)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 					</control>
 					<control type="image">
@@ -3135,8 +3127,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-shutdown-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(608)">Conditional</animation>
+						<texture>shut-shutdown-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(608)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 					</control>
 					<control type="button" id="608">
@@ -3158,8 +3150,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-suspend-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(609)">Conditional</animation>
+						<texture>shut-suspend-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(609)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Suspend)</visible>
 					</control>
 					<control type="image">
@@ -3167,8 +3159,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-suspend-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(609)">Conditional</animation>
+						<texture>shut-suspend-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(609)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Suspend)</visible>
 					</control>
 					<control type="button" id="609">
@@ -3190,8 +3182,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-hibernate-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(610)">Conditional</animation>
+						<texture>shut-hibernate-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(610)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Hibernate)</visible>
 					</control>
 					<control type="image">
@@ -3199,8 +3191,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-hibernate-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(610)">Conditional</animation>
+						<texture>shut-hibernate-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(610)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate)</visible>
 					</control>
 					<control type="button" id="610">
@@ -3222,8 +3214,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-favourites-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(611)">Conditional</animation>
+						<texture>shut-favourites-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(611)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Favourites)</visible>
 					</control>
 					<control type="image">
@@ -3231,8 +3223,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-favourites-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(611)">Conditional</animation>
+						<texture>shut-favourites-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(611)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Favourites)</visible>
 					</control>
 					<control type="button" id="611">
@@ -3254,8 +3246,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-reboot-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(612)">Conditional</animation>
+						<texture>shut-reboot-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(612)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
 					</control>
 					<control type="image">
@@ -3263,8 +3255,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-reboot-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(612)">Conditional</animation>
+						<texture>shut-reboot-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(612)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
 					</control>
 					<control type="button" id="612">
@@ -3286,8 +3278,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-settings-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(613)">Conditional</animation>
+						<texture>shut-settings-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(613)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Settings)</visible>
 					</control>
 					<control type="image">
@@ -3295,8 +3287,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-settings-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(613)">Conditional</animation>
+						<texture>shut-settings-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(613)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Settings)</visible>
 					</control>
 					<control type="button" id="613">
@@ -3318,8 +3310,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-eject-nofocus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(614)">Conditional</animation>
+						<texture>shut-eject-focus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(614)">Conditional</animation>
 						<visible>Skin.HasSetting(Hide_Shutdown_Eject)</visible>
 					</control>
 					<control type="image">
@@ -3327,8 +3319,8 @@
 						<posy>130</posy>
 						<width>70</width>
 						<height>70</height>
-						<texture>shut-eject-focus.png</texture>
-						<animation effect="zoom" start="100" end="130" center="auto" time="100" condition="Control.HasFocus(614)">Conditional</animation>
+						<texture>shut-eject-nofocus.png</texture>
+						<animation effect="zoom" start="100" end="120" center="auto" time="100" condition="Control.HasFocus(614)">Conditional</animation>
 						<visible>!Skin.HasSetting(Hide_Shutdown_Eject)</visible>
 					</control>
 					<control type="button" id="614">
@@ -3354,70 +3346,74 @@
 						<colordiffuse>CCFFFFFF</colordiffuse>
 						<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
 					</control>
-					<control type="label">
-						<label>20045</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(602)</visible>
-					</control>
-					<control type="label">
-						<label>20126</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(603)</visible>
-					</control>
-					<control type="label">
-						<label>130</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(604)</visible>
-					</control>
-					<control type="label">
-						<label>7</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(605)</visible>
-					</control>
-					<control type="label">
-						<label>$LOCALIZE[13012] XBMC</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(606)</visible>
-					</control>
-					<control type="label">
-						<label>$LOCALIZE[13313] XBMC</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(607)</visible>
-					</control>
-					<control type="label">
-						<label>13005</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(608)</visible>
-					</control>
-					<control type="label">
-						<label>13011</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(609)</visible>
-					</control>
-					<control type="label">
-						<label>13010</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(610)</visible>
-					</control>
-					<control type="label">
-						<label>1036</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(611)</visible>
-					</control>
-					<control type="label">
-						<label>13013</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(612)</visible>
-					</control>
-					<control type="label">
-						<label>5</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(613)</visible>
-					</control>
-					<control type="label">
-						<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-						<include>ShutdownMenuLabel</include>
-						<visible>Control.HasFocus(614)</visible>
+					<control type="group">
+						<posx>184</posx>
+						<posy>258</posy>
+						<control type="label">
+							<label>20045</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(602)</visible>
+						</control>
+						<control type="label">
+							<label>20126</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(603)</visible>
+						</control>
+						<control type="label">
+							<label>130</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(604)</visible>
+						</control>
+						<control type="label">
+							<label>7</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(605)</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[13012] XBMC</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(606)</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[13313] XBMC</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(607)</visible>
+						</control>
+						<control type="label">
+							<label>13005</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(608)</visible>
+						</control>
+						<control type="label">
+							<label>13011</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(609)</visible>
+						</control>
+						<control type="label">
+							<label>13010</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(610)</visible>
+						</control>
+						<control type="label">
+							<label>1036</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(611)</visible>
+						</control>
+						<control type="label">
+							<label>13013</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(612)</visible>
+						</control>
+						<control type="label">
+							<label>5</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(613)</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
+							<include>ShutdownMenuLabel</include>
+							<visible>Control.HasFocus(614)</visible>
+						</control>
 					</control>
 				</control>
 				<control type="grouplist" id="701">

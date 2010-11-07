@@ -433,6 +433,19 @@
 			<include>T-Level</include>
 		</control>
 	</include>
+	<include name="T-KeyboardInput3">
+		<control type="image">
+			<posx>338</posx>
+			<posy>0</posy>
+			<width>624</width>
+			<height>40</height>
+			<texture border="0,40,0,0">keyboard-input.png</texture>
+			<animation effect="zoom" start="338,40,624,1" end="338,0,624,40" time="300" delay="300">WindowOpen</animation>
+			<animation effect="zoom" start="338,0,624,40" end="338,40,624,1" time="200" delay="150">WindowClose</animation>
+			<visible>System.HasLoginScreen + System.LoggedOn</visible>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-KeyboardInputReverse1">
 		<control type="image">
 			<posx>50</posx>
@@ -442,6 +455,18 @@
 			<texture border="0,0,0,45">keyboard-input-reverse.png</texture>
 			<animation effect="zoom" start="50,298,444,1" end="50,358,444,78" time="300" delay="300">WindowOpen</animation>
 			<animation effect="zoom" start="50,358,444,78" end="50,298,444,1" time="200" delay="150">WindowClose</animation>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-KeyboardInputReverse2">
+		<control type="image">
+			<posx>338</posx>
+			<posy>120</posy>
+			<width>624</width>
+			<height>60</height>
+			<texture border="0,0,0,45">keyboard-input-reverse.png</texture>
+			<animation effect="zoom" start="338,120,624,1" end="338,180,624,60" time="300" delay="300">WindowOpen</animation>
+			<animation effect="zoom" start="338,180,624,60" end="338,120,624,1" time="200" delay="150">WindowClose</animation>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -751,16 +776,6 @@
 			<include>T-Level</include>
 		</control>
 	</include>
-	<include name="T-Underlay31">
-		<control type="image">
-			<posx>0</posx>
-			<posy>138</posy>
-			<width>928</width>
-			<height>55</height>
-			<texture border="0,11,0,11">underlay3.png</texture>
-			<include>T-Level</include>
-		</control>
-	</include>
 	<include name="T-Underlay32">
 		<control type="image">
 			<posx>0</posx>
@@ -771,27 +786,6 @@
 			<include>T-Level</include>
 		</control>
 	</include>
-	<include name="T-Underlay33">
-		<control type="image">
-			<posx>0</posx>
-			<posy>10</posy>
-			<width>1280</width>
-			<height>70</height>
-			<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
-			<include>T-Level</include>
-		</control>
-	</include>
-	<include name="T-Underlay34">
-		<control type="image" id="0">
-			<posx>0</posx>
-			<posy>-80</posy>
-			<width>1280</width>
-			<height>60</height>
-			<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
-			<visible>system.hasloginscreen + System.Loggedon</visible>
-			<include>T-Level</include>
-		</control>
-	</include>
 	<include name="T-Underlay35">
 		<control type="image" id="0">
 			<posx>0</posx>
@@ -799,16 +793,6 @@
 			<width>1280</width>
 			<height>60</height>
 			<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
-			<include>T-Level</include>
-		</control>
-	</include>
-	<include name="T-Underlay36">
-		<control type="image">
-			<posx>300</posx>
-			<posy>40</posy>
-			<width>980</width>
-			<height>135</height>
-			<texture diffuse="underlay-diffuse.png" border="0,11,0,11">underlay3.png</texture>
 			<include>T-Level</include>
 		</control>
 	</include>
