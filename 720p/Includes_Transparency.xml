@@ -1,44 +1,84 @@
 <includes>
 	<include name="T-Level">
-		<include condition="Skin.HasSetting(Trans_20)">T-Level20</include>
-		<include condition="Skin.HasSetting(Trans_40)">T-Level40</include>
-		<include condition="!Skin.HasSetting(Trans_60)">T-Level60</include>
-		<include condition="Skin.HasSetting(Trans_80)">T-Level80</include>
-		<include condition="Skin.HasSetting(Trans_100)">T-Level100</include>
+		<include condition="Skin.String(Trans,10)">T-Level10</include>
+		<include condition="Skin.String(Trans,20)">T-Level20</include>
+		<include condition="Skin.String(Trans,30)">T-Level30</include>
+		<include condition="Skin.String(Trans,40)">T-Level40</include>
+		<include condition="Skin.String(Trans,50)">T-Level50</include>
+		<include condition="Skin.String(Trans,60)">T-Level60</include>
+		<include condition="Skin.String(Trans,70)">T-Level70</include>
+		<include condition="Skin.String(Trans,80)">T-Level80</include>
+		<include condition="Skin.String(Trans,90)">T-Level90</include>
+		<include condition="Skin.String(Trans,100)">T-Level100</include>
 	</include>
 	<include name="T-Level-SB">
-		<include condition="Skin.HasSetting(Trans_20)">T-Level-SB20</include>
-		<include condition="Skin.HasSetting(Trans_40)">T-Level-SB40</include>
-		<include condition="!Skin.HasSetting(Trans_60)">T-Level-SB60</include>
-		<include condition="Skin.HasSetting(Trans_80)">T-Level-SB80</include>
-		<include condition="Skin.HasSetting(Trans_100)">T-Level-SB100</include>
+		<include condition="Skin.String(Trans,10)">T-Level-SB10</include>
+		<include condition="Skin.String(Trans,20)">T-Level-SB20</include>
+		<include condition="Skin.String(Trans,30)">T-Level-SB30</include>
+		<include condition="Skin.String(Trans,40)">T-Level-SB40</include>
+		<include condition="Skin.String(Trans,50)">T-Level-SB50</include>
+		<include condition="Skin.String(Trans,60)">T-Level-SB60</include>
+		<include condition="Skin.String(Trans,70)">T-Level-SB70</include>
+		<include condition="Skin.String(Trans,80)">T-Level-SB80</include>
+		<include condition="Skin.String(Trans,90)">T-Level-SB90</include>
+		<include condition="Skin.String(Trans,100)">T-Level-SB100</include>
+	</include>
+	<include name="T-Level10">
+		<colordiffuse>18FFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level20">
 		<colordiffuse>2FFFFFFF</colordiffuse>
 	</include>
+	<include name="T-Level30">
+		<colordiffuse>48FFFFFF</colordiffuse>
+	</include>
 	<include name="T-Level40">
 		<colordiffuse>5FFFFFFF</colordiffuse>
+	</include>
+	<include name="T-Level50">
+		<colordiffuse>78FFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level60">
 		<colordiffuse>8FFFFFFF</colordiffuse>
 	</include>
+	<include name="T-Level70">
+		<colordiffuse>A8FFFFFF</colordiffuse>
+	</include>
 	<include name="T-Level80">
 		<colordiffuse>BFFFFFFF</colordiffuse>
+	</include>
+	<include name="T-Level90">
+		<colordiffuse>DFFFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level100">
 		<colordiffuse>FFFFFFFF</colordiffuse>
 	</include>
+	<include name="T-Level-SB10">
+		<colordiffuse>98FFFFFF</colordiffuse>
+	</include>
 	<include name="T-Level-SB20">
 		<colordiffuse>AFFFFFFF</colordiffuse>
+	</include>
+	<include name="T-Level-SB30">
+		<colordiffuse>B8FFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level-SB40">
 		<colordiffuse>BFFFFFFF</colordiffuse>
 	</include>
+	<include name="T-Level-SB50">
+		<colordiffuse>CBFFFFFF</colordiffuse>
+	</include>
 	<include name="T-Level-SB60">
 		<colordiffuse>D8FFFFFF</colordiffuse>
 	</include>
+	<include name="T-Level-SB70">
+		<colordiffuse>DFFFFFFF</colordiffuse>
+	</include>
 	<include name="T-Level-SB80">
 		<colordiffuse>E8FFFFFF</colordiffuse>
+	</include>
+	<include name="T-Level-SB90">
+		<colordiffuse>F4FFFFFF</colordiffuse>
 	</include>
 	<include name="T-Level-SB100">
 		<colordiffuse>FFFFFFFF</colordiffuse>
