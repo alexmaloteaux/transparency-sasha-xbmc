@@ -63,22 +63,6 @@
 			<control type="group">
 				<posx>355</posx>
 				<posy>678</posy>
-				<control type="image">
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>300</width>
-					<height>2</height>
-					<texture>highlight.png</texture>
-					<animation effect="zoom" start="10,10,300,2" end="10,10,340,2" time="0" condition="Player.CanRecord">conditional</animation>
-				</control>
-				<control type="image">
-					<posx>10</posx>
-					<posy>31</posy>
-					<width>300</width>
-					<height>2</height>
-					<texture>highlight.png</texture>
-					<animation effect="zoom" start="10,10,300,2" end="10,10,340,2" time="0" condition="Player.CanRecord">conditional</animation>
-				</control>
 				<control type="button" id="901">
 					<posx>0</posx>
 					<posy>0</posy>

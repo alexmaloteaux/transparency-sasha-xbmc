@@ -255,13 +255,14 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="group">
-					<posx>668</posx>
+					<posx>650</posx>
 					<posy>156</posy>
 					<width>404</width>
 					<height>48</height>
 					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
+					<animation effect="slide" start="0,0" end="20,0" time="0" condition="Player.CanRecord">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
@@ -274,20 +275,6 @@
 					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
 					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
-					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>260</width>
-						<height>2</height>
-						<texture>highlight.png</texture>
-					</control>
-					<control type="image">
-						<posx>10</posx>
-						<posy>31</posy>
-						<width>260</width>
-						<height>2</height>
-						<texture>highlight.png</texture>
-					</control>
 					<control type="button" id="901">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -308,7 +295,7 @@
 						</animation>
 					</control>
 					<control type="button" id="902">
-						<posx>48</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -321,14 +308,13 @@
 						<onup>902</onup>
 						<ondown>902</ondown>
 						<onclick>PlayerControl(Rewind)</onclick>
-						<animation effect="slide" start="0,0" end="-8,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="togglebutton" id="903">
-						<posx>96</posx>
+						<posx>80</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -344,14 +330,13 @@
 						<onup>903</onup>
 						<ondown>903</ondown>
 						<onclick>PlayerControl(Play)</onclick>
-						<animation effect="slide" start="0,0" end="-16,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="904">
-						<posx>144</posx>
+						<posx>120</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -364,14 +349,13 @@
 						<onup>904</onup>
 						<ondown>904</ondown>
 						<onclick>PlayerControl(Forward)</onclick>
-						<animation effect="slide" start="0,0" end="-24,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="905">
-						<posx>192</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -384,14 +368,13 @@
 						<onup>905</onup>
 						<ondown>905</ondown>
 						<onclick>PlayerControl(Next)</onclick>
-						<animation effect="slide" start="0,0" end="-32,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
 						</animation>
 					</control>
 					<control type="button" id="906">
-						<posx>240</posx>
+						<posx>200</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -404,7 +387,6 @@
 						<onup>906</onup>
 						<ondown>906</ondown>
 						<onclick>PlayerControl(Stop)</onclick>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu + Player.CanRecord">Conditional</animation>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
@@ -424,7 +406,7 @@
 						<onup>907</onup>
 						<ondown>907</ondown>
 						<onclick>PlayerControl(record)</onclick>
-						<visible>!VideoPlayer.HasMenu + Player.CanRecord + !Player.Recording</visible>
+						<visible>Player.CanRecord + !Player.Recording</visible>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
@@ -444,7 +426,7 @@
 						<onup>908</onup>
 						<ondown>908</ondown>
 						<onclick>PlayerControl(record)</onclick>
-						<visible>!VideoPlayer.HasMenu + Player.CanRecord + Player.Recording</visible>
+						<visible>Player.CanRecord + Player.Recording</visible>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="80" center="auto" time="70" reversible="true"/>
 							<effect type="zoom" start="100" end="128" center="auto" time="70" reversible="true" delay="70"/>
