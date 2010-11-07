@@ -3337,14 +3337,12 @@
 						<onup>614</onup>
 						<ondown>614</ondown>
 					</control>
-					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay32</include>
 					<control type="image">
-						<posx>0</posx>
-						<posy>250</posy>
-						<width>928</width>
-						<height>65</height>
-						<colordiffuse>CCFFFFFF</colordiffuse>
-						<texture diffuse="underlay2-diffuse.png" border="0,11,0,11">underlay3.png</texture>
+						<posx>200</posx>
+						<posy>262</posy>
+						<width>528</width>
+						<height>40</height>
+						<texture>label-back-focus.png</texture>
 					</control>
 					<control type="group">
 						<posx>184</posx>
@@ -10259,14 +10257,6 @@
 					<onright>1001</onright>
 					<onup>900</onup>
 					<ondown>100</ondown>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>452</posy>
-					<height>16</height>
-					<texture border="0,0,10,0">shadow-bottom2.png</texture>
-					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
-					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
 				</control>
 			</control>
 		</control>

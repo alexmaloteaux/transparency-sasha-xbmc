@@ -211,12 +211,6 @@
 					<include>ButtonCommonValues</include>
 					<label>13281</label>
 				</control>
-				<control type="image">
-					<height>16</height>
-					<texture border="0,0,10,0">shadow-bottom2.png</texture>
-					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
-					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
-				</control>
 			</control>
 		</control>
 		<control type="group">
