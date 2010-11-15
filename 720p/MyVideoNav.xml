@@ -306,6 +306,10 @@
 		</control>
 		<control type="button" id="9999">
 			<description>TvTunes Script</description>
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
 			<include condition="Skin.HasSetting(TvTunes)">TvTunes</include>
 			<include condition="!Skin.HasSetting(TvTunes)">NoTvTunes</include>
 			<texturenofocus>-</texturenofocus>
