@@ -246,7 +246,7 @@
 			<posy>50</posy>
 			<width>72</width>
 			<height>72</height>
-			<imagepath>special://skin/images/weather/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -340,7 +340,7 @@
 			<posy>7</posy>
 			<width>136</width>
 			<height>136</height>
-			<imagepath>special://skin/images/weather/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -504,7 +504,7 @@
 			<posy>0</posy>
 			<width>90</width>
 			<height>90</height>
-			<imagepath>special://skin/images/weather/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -515,7 +515,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -526,7 +526,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -537,7 +537,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -548,7 +548,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -559,7 +559,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -570,7 +570,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -581,7 +581,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>special://skin/images/weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
