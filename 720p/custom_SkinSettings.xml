@@ -2927,17 +2927,20 @@
 						<label>$LOCALIZE[31132]</label>
 						<onclick>Skin.ToggleSetting(TheaterScript_Enable)</onclick>
 						<selected>Skin.HasSetting(TheaterScript_Enable)</selected>
+						<visible>false</visible>
 					</control>
 					<control type="button" id="510">
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(TheaterScript_Path)][/COLOR]</label2>
 						<onclick>Skin.SetAddon(TheaterScript_Path,xbmc.python.script)</onclick>
 						<enable>Skin.HasSetting(TheaterScript_Enable)</enable>
+						<visible>false</visible>
 					</control>
 					<control type="image" id="511">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
+						<visible>false</visible>
 					</control>
 					<control type="radiobutton" id="512">
 						<label>$LOCALIZE[31131]</label>
