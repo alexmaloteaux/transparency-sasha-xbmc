@@ -72,6 +72,8 @@
 			<font>font-20</font>
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
+			<disabledcolor>white</disabledcolor>
+			<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
