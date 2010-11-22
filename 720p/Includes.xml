@@ -1820,7 +1820,7 @@
 		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
 	</include>
 	<include name="StartupPlaylist">
-		<onfocus>PlayMedia("$INFO[Skin.String(Startup_Playlist_Path)]")</onfocus>
+		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;)</onfocus>
 	</include>
 	<include name="ToggleButtonNormal">
 		<posx>157</posx>
@@ -1927,11 +1927,11 @@
 		</control>
 	</include>
 	<include name="Trailer-BuiltIn-FullScreen">
-		<onclick>PlayMedia("$INFO[ListItem.Trailer]")</onclick>
+		<onclick>PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
 		<visible>!IsEmpty(Listitem.Trailer)</visible>
 	</include>
 	<include name="Trailer-BuiltIn-Preview">
-		<onclick>PlayMedia("$INFO[ListItem.Trailer]",1)</onclick>
+		<onclick>PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
 		<visible>!IsEmpty(Listitem.Trailer)</visible>
 	</include>
 	<include name="Trailer-Script">
