@@ -213,23 +213,28 @@
 	<!-- Rating FR -->
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csaU.png</texture>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,French:U)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa10.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,10 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,French:-10)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa12.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,12 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,French:-12)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa16.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,16 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,French:-16)</visible>
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa18.png</texture>
-			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,18 ans)</visible>
+			<visible>VideoPlayer.Content(Movies) + substring(VideoPlayer.mpaa,French:-18)</visible>
 		</control>
 	<!-- Rating TV -->
 		<control type="image">

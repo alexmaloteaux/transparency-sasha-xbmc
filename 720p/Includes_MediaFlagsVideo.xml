@@ -269,23 +269,28 @@
 	<!-- Rating FR -->
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
+			<texture>flags/movies/rating/csaU.png</texture>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:U)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa10.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,10 ans)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-10)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa12.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,12 ans)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-12)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa16.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,16 ans)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-16)</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsRating</include>
 			<texture>flags/movies/rating/csa18.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,18 ans)</visible>
+			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-18)</visible>
 		</control>
 	<!-- Rating TV -->
 		<control type="image">
