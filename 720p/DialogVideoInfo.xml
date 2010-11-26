@@ -8,8 +8,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
-			<animation effect="fade" start="0" end ="70" time="300">WindowOpen</animation>
-			<animation effect="fade" start="70" end ="0" time="300">WindowClose</animation>
+			<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
+			<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
 		</control>
 		<control type="group">
 			<include>DialogFade</include>
@@ -664,7 +664,7 @@
 					<posy>210</posy>
 					<width>1200</width>
 					<height>140</height>
-					<texture flipy ="true" diffuse="banner-diffuse-mirror.png">$INFO[Listitem.Icon]</texture>
+					<texture flipy="true" diffuse="banner-diffuse-mirror.png">$INFO[Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>[Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)] | Window.IsVisible(Videofiles)</visible>
 				</control>

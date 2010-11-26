@@ -11,8 +11,8 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
-			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>Window.IsVisible(FileBrowser) + Window.IsVisible(FileManager)</visible>
 		</control>
@@ -26,8 +26,8 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
-			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>Window.IsVisible(FileBrowser) + Window.IsVisible(VideoFiles)</visible>
 		</control>
@@ -41,8 +41,8 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
-			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>Window.IsVisible(FileBrowser) + Window.IsVisible(MusicFiles)</visible>
 		</control>
@@ -56,8 +56,8 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<animation effect="fade" start="0" end ="100" time="0">WindowOpen</animation>
-			<animation effect="fade" start="100" end ="0" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>Window.IsVisible(FileBrowser) + Window.IsVisible(Pictures)</visible>
 		</control>
@@ -67,8 +67,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
-			<animation effect="fade" start="0" end ="70" time="0">WindowOpen</animation>
-			<animation effect="fade" start="70" end ="0" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="70" time="0">WindowOpen</animation>
+			<animation effect="fade" start="70" end="0" time="0">WindowClose</animation>
 		</control>
 		<control type="group">
 			<include>dialogeffect</include>
