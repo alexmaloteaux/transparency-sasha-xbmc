@@ -622,7 +622,7 @@
 					<posx>370</posx>
 					<posy>136</posy>
 					<width>328</width>
-					<height>442</height>
+					<height>446</height>
 					<texture border="40" diffuse="cover-diffuse2.png">cover-glow.png</texture>
 					<animation type="WindowOpen">
 						<effect type="fade" start="0" end="100" time="1000" delay="2000"/>
@@ -636,15 +636,15 @@
 					<posx>410</posx>
 					<posy>176</posy>
 					<width>248</width>
-					<height>362</height>
+					<height>366</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem.Icon]</texture>
 					<animation type="WindowOpen">
 						<effect type="fade" start="0" end="100" time="500" delay="500"/>
-						<effect type="zoom" start="458,239,164,242" end="410,176,248,362" time="1000" delay="1000"/>
+						<effect type="zoom" start="458,239,164,242" end="410,176,248,366" time="1000" delay="1000"/>
 					</animation>
 					<animation type="WindowClose">
-						<effect type="zoom" start="410,176,248,362" end="458,239,164,242" time="1000" delay="1000"/>
+						<effect type="zoom" start="410,176,248,366" end="458,239,164,242" time="1000" delay="1000"/>
 						<effect type="fade" start="100" end="0" time="500" delay="3250"/>
 						<effect type="rotatey" center="auto" start="0" end="60" time="500" delay="3250"/>
 					</animation>
@@ -665,7 +665,7 @@
 					<posx>410</posx>
 					<posy>176</posy>
 					<width>248</width>
-					<height>362</height>
+					<height>366</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
@@ -675,7 +675,7 @@
 					<posx>410</posx>
 					<posy>176</posy>
 					<width>248</width>
-					<height>362</height>
+					<height>366</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
@@ -685,7 +685,7 @@
 					<posx>410</posx>
 					<posy>176</posy>
 					<width>248</width>
-					<height>362</height>
+					<height>366</height>
 					<texture diffuse="cover-diffuse2.png">cover-highlight.png</texture>
 					<animation type="WindowOpen">
 						<effect type="fade" start="0" end="100" time="1000" delay="2000"/>
