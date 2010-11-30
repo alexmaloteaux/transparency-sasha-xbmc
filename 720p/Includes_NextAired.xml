@@ -9,7 +9,7 @@
 			<animation effect="slide" start="0,0" end="0,-510" condition="Control.IsVisible(57)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="385,-165" condition="Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-200,90" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
-			<visible>!substring(ListItem.Label,..) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + Control.IsVisible(50)]]</visible>
+			<visible>!substring(ListItem.Label,..) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + Control.IsVisible(50)]] + !IsEmpty(ListItem.TVShowTitle)</visible>
 			<control type="group">
 				<visible>StringCompare(Window(Home).Property(NextAired.1.ShowTitle),ListItem.TVShowTitle)</visible>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay56</include>
