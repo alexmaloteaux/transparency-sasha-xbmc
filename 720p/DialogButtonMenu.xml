@@ -196,6 +196,7 @@
 					<height>60</height>
 					<texturefocus>shut-logoff-focus.png</texturefocus>
 					<texturenofocus>shut-logoff-nofocus.png</texturenofocus>
+					<onclick>dialog.close(all,true)</onclick>
 					<onclick>system.logoff</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
