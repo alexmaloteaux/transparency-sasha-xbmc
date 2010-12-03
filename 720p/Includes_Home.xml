@@ -1582,7 +1582,7 @@
 				<content>
 					<item id="1">
 						<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
-						<label2>$INFO[Window.Property(LatestEpisode.1.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label2>
+						<label2>$INFO[Window.Property(LatestEpisode.1.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label2>
 						<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
@@ -1590,7 +1590,7 @@
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
-						<label2>$INFO[Window.Property(LatestEpisode.2.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label2>
+						<label2>$INFO[Window.Property(LatestEpisode.2.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label2>
 						<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
@@ -1598,7 +1598,7 @@
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
-						<label2>$INFO[Window.Property(LatestEpisode.3.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label2>
+						<label2>$INFO[Window.Property(LatestEpisode.3.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label2>
 						<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
@@ -1606,7 +1606,7 @@
 					</item>
 					<item id="4">
 						<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
-						<label2>$INFO[Window.Property(RandomEpisode.1.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]</label2>
+						<label2>$INFO[Window.Property(RandomEpisode.1.EpisodeNo),, - ]$INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]</label2>
 						<thumb>$INFO[Window.Property(RandomEpisode.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
@@ -1614,7 +1614,7 @@
 					</item>
 					<item id="5">
 						<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
-						<label2>$INFO[Window.Property(RandomEpisode.2.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.2.EpisodeTitle)]</label2>
+						<label2>$INFO[Window.Property(RandomEpisode.2.EpisodeNo),, - ]$INFO[Window.Property(RandomEpisode.2.EpisodeTitle)]</label2>
 						<thumb>$INFO[Window.Property(RandomEpisode.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
@@ -1622,7 +1622,7 @@
 					</item>
 					<item id="6">
 						<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)]</label>
-						<label2>$INFO[Window.Property(RandomEpisode.3.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.3.EpisodeTitle)]</label2>
+						<label2>$INFO[Window.Property(RandomEpisode.3.EpisodeNo),, - ]$INFO[Window.Property(RandomEpisode.3.EpisodeTitle)]</label2>
 						<thumb>$INFO[Window.Property(RandomEpisode.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
