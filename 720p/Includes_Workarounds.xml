@@ -431,7 +431,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,/,/extrafanart/]</imagepath>
+			<imagepath>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
