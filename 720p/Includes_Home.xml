@@ -3455,7 +3455,7 @@
 					<item id="8103">
 						<description>Menu PlayDisc Sub Eject</description>
 						<label>$LOCALIZE[13391]</label>
-						<onclick>cdEjectTray</onclick>
+						<onclick>EjectTray</onclick>
 						<visible>!Skin.HasSetting(Menu_PlayDisc_Sub_Eject)</visible>
 					</item>
 					<item id="8104">
