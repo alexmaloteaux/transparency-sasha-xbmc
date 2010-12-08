@@ -268,6 +268,31 @@
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
+				<description>Date txt</description>
+				<posx>0</posx>
+				<posy>180</posy>
+				<width>225</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes)</visible>
+			</control>
+			<control type="label">
+				<description>Date Value</description>
+				<posx>0</posx>
+				<posy>200</posy>
+				<width>225</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Date]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes)</visible>
+			</control>
+			<control type="label">
 				<description>Genre txt</description>
 				<posx>0</posx>
 				<posy>180</posy>
@@ -278,7 +303,7 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
 				<description>Genre Value</description>
@@ -290,7 +315,32 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(MusicVideos)</visible>
+			</control>
+			<control type="label">
+				<description>Duration txt</description>
+				<posx>0</posx>
+				<posy>230</posy>
+				<width>225</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[2050]:[/UPPERCASE][/B]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes)</visible>
+			</control>
+			<control type="label">
+				<description>Duration Value</description>
+				<posx>0</posx>
+				<posy>250</posy>
+				<width>225</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Duration]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="label">
 				<description>Year txt</description>
@@ -298,12 +348,12 @@
 				<posy>230</posy>
 				<width>225</width>
 				<height>25</height>
-				<label>[UPPERCASE][B]$LOCALIZE[562]:[/UPPERCASE][/B]</label>
+				<label>[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
 				<description>Year Value</description>
@@ -311,11 +361,11 @@
 				<posy>250</posy>
 				<width>225</width>
 				<height>25</height>
-				<label fallback="416">$INFO[ListItem.Year]</label>
+				<label fallback="416">$INFO[ListItem.Date]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
 				<description>Studio txt</description>
@@ -607,6 +657,7 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Episodes Value</description>
@@ -618,9 +669,10 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
-				<description>First Aired txt</description>
+				<description>Date txt</description>
 				<posx>225</posx>
 				<posy>160</posy>
 				<width>240</width>
@@ -630,17 +682,44 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
+				<visible>Container.Content(TVShows) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
-				<description>First Aired Value</description>
+				<description>Date Value</description>
 				<posx>232</posx>
 				<posy>160</posy>
 				<width>220</width>
 				<height>25</height>
-				<label fallback="416">$INFO[ListItem.premiered]</label>
+				<label fallback="416">$INFO[ListItem.Date]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<visible>Container.Content(TVShows) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<description>Studio txt</description>
+				<posx>225</posx>
+				<posy>160</posy>
+				<width>240</width>
+				<height>25</height>
+				<label>[UPPERCASE][B]$LOCALIZE[572]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<description>Studio Value</description>
+				<posx>232</posx>
+				<posy>160</posy>
+				<width>220</width>
+				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Studio]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<visible>Container.Content(Seasons) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Genre txt</description>
@@ -653,6 +732,7 @@
 				<aligny>center</aligny>
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Genre Value</description>
@@ -664,6 +744,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<description>Episodes Value</description>
@@ -675,7 +756,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
