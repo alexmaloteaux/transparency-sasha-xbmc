@@ -340,8 +340,8 @@
 					<ondown>50</ondown>
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
-					<onclick>RunScript($INFO[Skin.String(TheaterScript_Path)])</onclick>
-					<visible>Container.Content(Movies) + Skin.HasSetting(TheaterScript_Enable-disabled)</visible>
+					<onclick>RunScript($INFO[Skin.String(CinemaScript_Path)])</onclick>
+					<visible>Container.Content(Movies) + Skin.HasSetting(CinemaScript_Enable)</visible>
 				</control>
 			</control>
 			<control type="label">

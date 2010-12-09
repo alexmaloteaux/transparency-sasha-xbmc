@@ -2941,16 +2941,14 @@
 					</control>
 					<control type="radiobutton" id="509">
 						<label>$LOCALIZE[31132]</label>
-						<onclick>Skin.ToggleSetting(TheaterScript_Enable)</onclick>
-						<selected>Skin.HasSetting(TheaterScript_Enable)</selected>
-						<visible>false</visible>
+						<onclick>Skin.ToggleSetting(CinemaScript_Enable)</onclick>
+						<selected>Skin.HasSetting(CinemaScript_Enable)</selected>
 					</control>
 					<control type="button" id="510">
 						<label>- $LOCALIZE[31204]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(TheaterScript_Path)][/COLOR]</label2>
-						<onclick>Skin.SetAddon(TheaterScript_Path,xbmc.python.script)</onclick>
-						<enable>Skin.HasSetting(TheaterScript_Enable)</enable>
-						<visible>false</visible>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(CinemaScript_Path)][/COLOR]</label2>
+						<onclick>Skin.SetAddon(CinemaScript_Path,xbmc.python.script)</onclick>
+						<enable>Skin.HasSetting(CinemaScript_Enable)</enable>
 					</control>
 					<control type="image" id="511">
 						<width>880</width>
