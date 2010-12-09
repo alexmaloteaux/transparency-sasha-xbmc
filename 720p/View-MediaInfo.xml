@@ -336,11 +336,23 @@
 				<posy>250</posy>
 				<width>225</width>
 				<height>25</height>
+				<label fallback="416">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes) + !substring(ListItem.Duration,min)</visible>
+			</control>
+			<control type="label">
+				<description>Duration Value</description>
+				<posx>0</posx>
+				<posy>250</posy>
+				<width>225</width>
+				<height>25</height>
 				<label fallback="416">$INFO[ListItem.Duration]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Episodes) + substring(ListItem.Duration,min)</visible>
 			</control>
 			<control type="label">
 				<description>Year txt</description>
