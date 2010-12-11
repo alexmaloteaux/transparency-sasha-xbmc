@@ -311,9 +311,9 @@
 			<width>1</width>
 			<height>1</height>
 			<include condition="Skin.HasSetting(TvTunes)">TvTunes</include>
-			<include condition="!Skin.HasSetting(TvTunes)">NoTvTunes</include>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
+			<onfocus>SetFocus(50)</onfocus>
 		</control>
 		<include condition="Skin.HasSetting(NextAired)">NextAiredInfo</include>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
