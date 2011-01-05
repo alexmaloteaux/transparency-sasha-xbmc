@@ -2042,7 +2042,7 @@
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !ListItem.IsFolder</visible>
 			</control>
 			<control type="image">
 				<posx>8</posx>
