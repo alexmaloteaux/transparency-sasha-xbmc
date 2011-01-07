@@ -2989,7 +2989,18 @@
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="button" id="518">
+					<control type="radiobutton" id="518">
+						<label>31212</label>
+						<onclick>Skin.ToggleSetting(Qlock)</onclick>
+						<onclick>RunScript(script.qlock,-startup)</onclick>
+						<selected>Skin.HasSetting(Qlock)</selected>
+					</control>
+					<control type="image" id="519">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="button" id="520">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
 					</control>
