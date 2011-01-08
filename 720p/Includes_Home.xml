@@ -179,7 +179,7 @@
 		<onfocus>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onfocus>
 	</include>
 	<include name="randomitemsscript">
-		<onfocus>RunScript(script.randomitems,limit=3)</onfocus>
+		<onfocus>RunScript(script.randomitems,limit=3&amp;albums=True)</onfocus>
 	</include>
 	<include name="recentlyfanartmovies">
 		<control type="image" id="7021">
@@ -1808,7 +1808,7 @@
 						<label2>$INFO[Window.Property(LatestSong.1.Album)]</label2>
 						<thumb>$INFO[Window.Property(LatestSong.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestSong.1.Fanart)]</property>
-						<onclick>$INFO[Window.Property(LatestSong.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<onclick>$INFO[Window.Property(LatestSong.1.Path)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestSong.1.Title)) + Skin.HasSetting(HomepageRecentAlbums)</visible>
 					</item>
 					<item id="2">
@@ -1816,7 +1816,7 @@
 						<label2>$INFO[Window.Property(LatestSong.2.Album)]</label2>
 						<thumb>$INFO[Window.Property(LatestSong.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestSong.2.Fanart)]</property>
-						<onclick>$INFO[Window.Property(LatestSong.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<onclick>$INFO[Window.Property(LatestSong.2.Path)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestSong.2.Title)) + Skin.HasSetting(HomepageRecentAlbums)</visible>
 					</item>
 					<item id="3">
@@ -1824,7 +1824,7 @@
 						<label2>$INFO[Window.Property(LatestSong.3.Album)]</label2>
 						<thumb>$INFO[Window.Property(LatestSong.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestSong.3.Fanart)]</property>
-						<onclick>$INFO[Window.Property(LatestSong.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<onclick>$INFO[Window.Property(LatestSong.3.Path)]</onclick>
 						<visible>!IsEmpty(Window.Property(LatestSong.3.Title)) + Skin.HasSetting(HomepageRecentAlbums)</visible>
 					</item>
 					<item id="4">
