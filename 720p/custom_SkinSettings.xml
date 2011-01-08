@@ -2982,6 +2982,7 @@
 					<control type="radiobutton" id="516">
 						<label>31211</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
+						<onclick>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=3600)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 					</control>
 					<control type="image" id="517">
