@@ -1829,26 +1829,26 @@
 					</item>
 					<item id="4">
 						<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
-						<label2>$INFO[Window.Property(RandomSong.1.Album)]</label2>
+						<label2>$INFO[Window.Property(RandomSong.1.Title)]</label2>
 						<thumb>$INFO[Window.Property(RandomSong.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomSong.1.Fanart)]</property>
-						<onclick>$INFO[Window.Property(RandomSong.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<onclick>$INFO[Window.Property(RandomSong.1.Path)]</onclick>
 						<visible>!IsEmpty(Window.Property(RandomSong.1.Title)) + Skin.HasSetting(HomepageRandomAlbums)</visible>
 					</item>
 					<item id="5">
 						<label>$INFO[Window.Property(RandomSong.2.Artist)]</label>
-						<label2>$INFO[Window.Property(RandomSong.2.Album)]</label2>
+						<label2>$INFO[Window.Property(RandomSong.2.Title)]</label2>
 						<thumb>$INFO[Window.Property(RandomSong.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomSong.2.Fanart)]</property>
-						<onclick>$INFO[Window.Property(RandomSong.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<onclick>$INFO[Window.Property(RandomSong.2.Path)]</onclick>
 						<visible>!IsEmpty(Window.Property(RandomSong.2.Title)) + Skin.HasSetting(HomepageRandomAlbums)</visible>
 					</item>
 					<item id="6">
 						<label>$INFO[Window.Property(RandomSong.3.Artist)]</label>
-						<label2>$INFO[Window.Property(RandomSong.3.Album)]</label2>
+						<label2>$INFO[Window.Property(RandomSong.3.Title)]</label2>
 						<thumb>$INFO[Window.Property(RandomSong.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomSong.3.Fanart)]</property>
-						<onclick>$INFO[Window.Property(RandomSong.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<onclick>$INFO[Window.Property(RandomSong.3.Path)]</onclick>
 						<visible>!IsEmpty(Window.Property(RandomSong.3.Title)) + Skin.HasSetting(HomepageRandomAlbums)</visible>
 					</item>
 				</content>
