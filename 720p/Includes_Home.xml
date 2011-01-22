@@ -1805,7 +1805,7 @@
 				<content>
 					<item id="1">
 						<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
-						<label2>$INFO[Window.Property(LatestSong.1.Album)]</label2>
+						<label2>$INFO[Window.Property(LatestSong.1.Title)]</label2>
 						<thumb>$INFO[Window.Property(LatestSong.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestSong.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestSong.1.Path)]</onclick>
@@ -1813,7 +1813,7 @@
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestSong.2.Artist)]</label>
-						<label2>$INFO[Window.Property(LatestSong.2.Album)]</label2>
+						<label2>$INFO[Window.Property(LatestSong.2.Title)]</label2>
 						<thumb>$INFO[Window.Property(LatestSong.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestSong.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestSong.2.Path)]</onclick>
@@ -1821,7 +1821,7 @@
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestSong.3.Artist)]</label>
-						<label2>$INFO[Window.Property(LatestSong.3.Album)]</label2>
+						<label2>$INFO[Window.Property(LatestSong.3.Title)]</label2>
 						<thumb>$INFO[Window.Property(LatestSong.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestSong.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestSong.3.Path)]</onclick>
