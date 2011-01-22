@@ -114,8 +114,63 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtshra.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_hra) + ![stringcompare(VideoPlayer.AudioChannels,6) | stringcompare(VideoPlayer.AudioChannels,7) | stringcompare(VideoPlayer.AudioChannels,8)]</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtshra51.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_hra) + stringcompare(VideoPlayer.AudioChannels,6)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtshra61.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_hra) + stringcompare(VideoPlayer.AudioChannels,7)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtshra71.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_hra) + stringcompare(VideoPlayer.AudioChannels,8)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + ![stringcompare(VideoPlayer.AudioChannels,3) | stringcompare(VideoPlayer.AudioChannels,4) | stringcompare(VideoPlayer.AudioChannels,5) | stringcompare(VideoPlayer.AudioChannels,6) | stringcompare(VideoPlayer.AudioChannels,7) | stringcompare(VideoPlayer.AudioChannels,8)]</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma30.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,3)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma40.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,4)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma50.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,5)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma51.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,6)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma61.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,7)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dtsma71.png</texture>
+			<visible>stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,8)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
 			<texture fallback="mediaflag-audiocodec.png">flags/movies/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</texture>
-			<visible>![stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3) | stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)]</visible>
+			<visible>![stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3) | stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts) | stringcompare(VideoPlayer.AudioCodec,dtshd_hra) | stringcompare(VideoPlayer.AudioCodec,dtshd_ma)]</visible>
 		</control>
 	<!-- Rating US -->
 		<control type="image">
