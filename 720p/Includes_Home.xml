@@ -3699,7 +3699,7 @@
 		<include condition="Skin.HasSetting(HateTransparency)">T-Home_Ver_Sub</include>
 		<control type="image">
 			<posx>199</posx>
-			<posy>212</posy>
+			<posy>219</posy>
 			<width>210</width>
 			<height>280</height>
 			<texture border="0,30,30,30">submenu-ver.png</texture>
@@ -3726,7 +3726,7 @@
 	<include name="VerticalSubMenuLayout">
 		<orientation>vertical</orientation>
 		<posx>199</posx>
-		<posy>241</posy>
+		<posy>248</posy>
 		<width>200</width>
 		<height>242</height>
 		<hitrect x="170" y="0" w="250" h="720"/>
@@ -3863,17 +3863,17 @@
 		</focusedlayout>
 	</include>
 	<include name="VerticalSubMenuButtonAnim">
-		<animation effect="zoom" start="199,216,1,288" end="199,216,210,288" time="200">Visible</animation>
-		<animation effect="zoom" start="199,216,210,288" end="199,216,1,288" time="200">Hidden</animation>
+		<animation effect="zoom" start="199,219,1,288" end="199,219,210,288" time="200">Visible</animation>
+		<animation effect="zoom" start="199,219,210,288" end="199,219,1,288" time="200">Hidden</animation>
 	</include>
 	<include name="VerticalSubMenuButtonAnimWide">
-		<animation effect="zoom" start="249,216,1,288" end="249,216,210,288" time="200">Visible</animation>
-		<animation effect="zoom" start="249,216,210,288" end="249,216,1,288" time="200">Hidden</animation>
+		<animation effect="zoom" start="249,219,1,288" end="249,219,210,288" time="200">Visible</animation>
+		<animation effect="zoom" start="249,219,210,288" end="249,219,1,288" time="200">Hidden</animation>
 	</include>
 	<include name="VerticalSubMenuLayoutAnim">
-		<animation effect="zoom" start="199,241,5,242" end="199,241,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
+		<animation effect="zoom" start="199,248,5,242" end="199,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 	</include>
 	<include name="VerticalSubMenuLayoutAnimWide">
-		<animation effect="zoom" start="249,241,5,242" end="249,241,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
+		<animation effect="zoom" start="249,248,5,242" end="249,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 	</include>
 </includes>
