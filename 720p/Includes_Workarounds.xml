@@ -472,7 +472,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Container.FolderPath,,..extrafanart/]</imagepath>
+			<imagepath>$INFO[Container.FolderPath,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
