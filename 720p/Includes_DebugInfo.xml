@@ -160,7 +160,7 @@
 				<posy>120</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<label>Player.FolderPath : $INFO[Player.FileNameAndPath ]</label>
+				<label>Player.FolderPath: $INFO[Player.FolderPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -168,7 +168,7 @@
 				<posy>140</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<label>Player.FileNameAndPath : $INFO[Player.FileNameAndPath ]</label>
+				<label>Player.FileNameAndPath: $INFO[Player.FileNameAndPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
@@ -191,7 +191,7 @@
 				<posy>20</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<label>Player.FolderPath : $INFO[Player.FileNameAndPath ]</label>
+				<label>Player.FolderPath: $INFO[Player.FolderPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -199,7 +199,7 @@
 				<posy>40</posy>
 				<width>1240</width>
 				<heigth>40</heigth>
-				<label>Player.FileNameAndPath : $INFO[Player.FileNameAndPath ]</label>
+				<label>Player.FileNameAndPath: $INFO[Player.FileNameAndPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
