@@ -627,6 +627,9 @@
 				<align>left</align>
 				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
+				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+				<animation effect="slide" start="0,0" end="-120,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
 				<visible>Window.IsVisible(Videofiles) + !Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
