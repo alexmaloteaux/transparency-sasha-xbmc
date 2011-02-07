@@ -393,7 +393,7 @@
 					<textcolor>white</textcolor>
 					<pagecontrol>60</pagecontrol>
 					<label>$INFO[VideoPlayer.Plot]</label>
-					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Control.HasFocus(2) | Control.HasFocus(60)</visible>
 				</control>
 				<control type="textbox">
@@ -407,7 +407,7 @@
 					<textcolor>lightblue</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$INFO[VideoPlayer.CastAndRole]</label>
-					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="12000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Control.HasFocus(3) | Control.HasFocus(61)</visible>
 				</control>
 				<control type="scrollbar" id="60">
