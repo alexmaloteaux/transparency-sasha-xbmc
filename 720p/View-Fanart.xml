@@ -2,7 +2,6 @@
 	<include name="Fanart-Videos">
 		<control type="list" id="50">
 			<posx>200</posx>
-			<posy>142</posy>
 			<width>355</width>
 			<onleft>7005</onleft>
 			<onright>60</onright>
@@ -12,10 +11,13 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
-			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
-			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
-			<itemlayout width="355" height="29">
+			<include condition="![Window.IsVisible(VideoLibrary) + Skin.HasSetting(Fanart_Show_Banners)] + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
+			<include condition="![Window.IsVisible(VideoLibrary) + Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartShort)">FanartShort</include>
+			<include condition="![Window.IsVisible(VideoLibrary) + Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartLong)">FanartLong</include>
+			<include condition="Window.IsVisible(VideoLibrary) + Skin.HasSetting(Fanart_Show_Banners) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormalBanners</include>
+			<include condition="Window.IsVisible(VideoLibrary) + Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartShort)">FanartShortBanners</include>
+			<include condition="Window.IsVisible(VideoLibrary) + Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLongBanners</include>
+			<itemlayout width="355" height="29" condition="![Window.IsVisible(VideoLibrary) + Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)]">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -46,7 +48,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [[Window.IsVisible(VideoPlaylist) | Window.IsVisible(VideoFiles)] + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout width="355" height="29">
+			<focusedlayout width="355" height="29" condition="![Window.IsVisible(VideoLibrary) + Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)]">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -85,6 +87,90 @@
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [[Window.IsVisible(VideoPlaylist) | Window.IsVisible(VideoFiles)] + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
+				</control>
+			</focusedlayout>
+			<itemlayout width="355" height="87" condition="Window.IsVisible(VideoLibrary) + Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)">
+				<control type="image">
+					<posx>-8</posx>
+					<posy>0</posy>
+					<width>355</width>
+					<height>87</height>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
+					<visible>stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>-8</posx>
+					<posy>0</posy>
+					<width>355</width>
+					<height>87</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[Listitem.Thumb]</texture>
+					<bordertexture border="13">banner-shadow.png</bordertexture>
+					<bordersize>13</bordersize>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>300</posx>
+					<posy>44</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout width="355" height="87" condition="Window.IsVisible(VideoLibrary) + Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)">
+				<control type="image">
+					<posx>-8</posx>
+					<posy>0</posy>
+					<width>355</width>
+					<height>87</height>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false" />
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false" />
+					</animation>
+					<visible>stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>-8</posx>
+					<posy>0</posy>
+					<width>355</width>
+					<height>87</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[Listitem.Thumb]</texture>
+					<bordertexture border="13">banner-shadow.png</bordertexture>
+					<bordersize>13</bordersize>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false" />
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false" />
+					</animation>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>300</posx>
+					<posy>44</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="18,2" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false" />
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="18,2" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false" />
+					</animation>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 			</focusedlayout>
 		</control>

@@ -1678,13 +1678,28 @@
 		</control>
 	</include>
 	<include name="FanartNormal">
+		<posy>142</posy>
 		<height>436</height>
 	</include>
 	<include name="FanartShort">
+		<posy>142</posy>
 		<height>291</height>
 	</include>
 	<include name="FanartLong">
+		<posy>142</posy>
 		<height>668</height>
+	</include>
+	<include name="FanartNormalBanners">
+		<posy>142</posy>
+		<height>436</height>
+	</include>
+	<include name="FanartLongBanners">
+		<posy>142</posy>
+		<height>696</height>
+	</include>
+	<include name="FanartShortBanners">
+		<posy>112</posy>
+		<height>348</height>
 	</include>
 	<include name="game-button">
 		<texturenofocus>-</texturenofocus>
