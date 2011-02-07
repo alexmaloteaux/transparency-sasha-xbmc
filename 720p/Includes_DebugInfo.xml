@@ -171,6 +171,22 @@
 				<label>Player.FileNameAndPath: $INFO[Player.FileNameAndPath]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>180</posy>
+				<width>640</width>
+				<heigth>20</heigth>
+				<label>VideoPlayer.Cast: $INFO[VideoPlayer.Cast]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>640</posx>
+				<posy>180</posy>
+				<width>640</width>
+				<heigth>20</heigth>
+				<label>VideoPlayer.CastAndRole: $INFO[VideoPlayer.CastAndRole]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<include name="debuginfomusicplayer">
