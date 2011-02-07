@@ -33,18 +33,19 @@
 	</include>
 	<include name="Home_Movies_Fanart">
 		<control type="multiimage">
-			<posx>515</posx>
-			<posy>95</posy>
-			<width>595</width>
-			<height>325</height>
+			<posx>320</posx>
+			<posy>20</posy>
+			<width>740</width>
+			<height>370</height>
 			<include condition="!Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Custom_Path</include>
-			<aspectratio>scale</aspectratio>
+			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>750</fadetime>
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
-			<animation effect="rotatey" center="0" start="6" end="6" time="0" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="320" start="20" end="20" time="0" condition="true">Conditional</animation>
+			<animation effect="rotate" center="320,220" start="-10" end="-10" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_Movies_Fanart_Background)">backgroundanimation2</include>
 			<visible>Container(5040).HasFocus(2) + !Player.HasVideo</visible>
 		</control>
@@ -57,12 +58,12 @@
 			<height>535</height>
 			<include condition="!Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)">Home_TVShows_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)">Home_TVShows_Fanart_Custom_Path</include>
-			<aspectratio>scale</aspectratio>
+			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>750</fadetime>
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
-			<animation effect="rotatey" center="0" start="-5" end="-5" time="0" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="333" start="-6" end="-6" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)">backgroundanimation2</include>
 			<visible>Container(5040).HasFocus(3) + !Player.HasVideo</visible>
 		</control>
@@ -75,7 +76,7 @@
 			<height>405</height>
 			<include condition="!Skin.HasSetting(Custom_Home_Music_Fanart_Background)">Home_Music_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_Music_Fanart_Background)">Home_Music_Fanart_Custom_Path</include>
-			<aspectratio>scale</aspectratio>
+			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>750</fadetime>
