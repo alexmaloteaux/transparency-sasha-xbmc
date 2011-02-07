@@ -1,6 +1,7 @@
 <window id="1111">
 	<defaultcontrol always="true">100</defaultcontrol>
 	<controls>
+		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -12,6 +13,7 @@
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>175</posx>
@@ -24,6 +26,7 @@
 			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(custom_SkinSettings.xml) + [Skin.String(SkinSettings,8) | Skin.String(SkinSettings,9)]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus">Conditional</animation>
 			<include>ContentFade</include>
+			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
@@ -739,17 +742,17 @@
 						<selected>Skin.HasSetting(AnimateBackgrounds)</selected>
 						<onleft>9000</onleft>
 						<onright>399</onright>
-						<onup>302</onup>
-						<ondown>302</ondown>
+						<onup>301</onup>
+						<ondown>314</ondown>
 					</control>
 					<control type="list" id="302">
 						<posx>200</posx>
-						<posy>220</posy>
+						<posy>255</posy>
 						<width>345</width>
 						<height>350</height>
 						<onleft>9000</onleft>
 						<onright>303</onright>
-						<onup>301</onup>
+						<onup>314</onup>
 						<ondown>302</ondown>
 						<pagecontrol>399</pagecontrol>
 						<scrolltime>200</scrolltime>
@@ -2753,6 +2756,20 @@
 						<randomize>true</randomize>
 						<fadetime>400</fadetime>
 						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds) + Skin.HasSetting(Weather_Conditional_Options)]">conditional</animation>
+					</control>
+					<control type="radiobutton" id="314">
+						<description>video backgrounds</description>
+						<posx>200</posx>
+						<posy>220</posy>
+						<width>325</width>
+						<height>35</height>
+						<label>31180</label>
+						<onclick>Skin.ToggleSetting(VideoBackgrounds)</onclick>
+						<selected>Skin.HasSetting(VideoBackgrounds)</selected>
+						<onleft>9000</onleft>
+						<onright>399</onright>
+						<onup>301</onup>
+						<ondown>302</ondown>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">
@@ -10119,6 +10136,10 @@
 		[COLOR=darkblue]Home Fanart Backdrops:[/COLOR]
 		francyboy [COLOR=lightblue]- for the idea &amp; Movies backdrop[/COLOR]
 		Steveb [COLOR=lightblue]- for the TV Shows &amp; Music backdrops[/COLOR]
+
+
+		[COLOR=darkblue]Now playing video background:[/COLOR]
+		Stile
 
 
 		[COLOR=darkblue]Translations:[/COLOR]

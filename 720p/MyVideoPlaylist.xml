@@ -3,6 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,58</views>
 	<controls>
+		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -12,7 +13,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(Fanart.Image)</visible>
+			<visible>!IsEmpty(Fanart.Image) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -23,7 +24,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -37,7 +38,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image)</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-myvideoplaylist</include>
 		<control type="group">

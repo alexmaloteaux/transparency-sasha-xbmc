@@ -3,6 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,55,59,599</views>
 	<controls>
+		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,6 +16,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
+			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanart-mymusicsongs</include>
 		<control type="image">
@@ -27,7 +29,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>			
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>			
 		</control>
 		<include condition="Skin.HasSetting(MusicExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-music-files</include>
 		<control type="group">

@@ -1403,7 +1403,7 @@
 		<control type="group">
 			<posx>5</posx>
 			<posy>547</posy>
-			<visible>Player.HasVideo</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)</visible>
 			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
@@ -1638,6 +1638,15 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
+		</control>
+	</include>
+	<include name="CommonVideoPlayingBackground">
+		<control type="videowindow">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>Player.HasVideo</visible>
 		</control>
 	</include>
 	<include name="ContentPanel">

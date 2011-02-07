@@ -3,6 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,594,597,599</views>
 	<controls>
+		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,7 +16,7 @@
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Container(597).ListItem(0).Thumb)]</visible>
+			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Container(597).ListItem(0).Thumb)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
