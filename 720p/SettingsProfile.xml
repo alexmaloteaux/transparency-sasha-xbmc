@@ -28,6 +28,7 @@
 			<include>ContentFade</include>
 			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include>ContentPanel</include>

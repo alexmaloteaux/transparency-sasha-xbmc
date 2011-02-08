@@ -44,6 +44,7 @@
 		<include condition="Skin.HasSetting(MoviesExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-movies-files</include>
 		<include condition="Skin.HasSetting(TVShowsExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-tvshows-files</include>
 		<include condition="Skin.HasSetting(SeasonFanart) + !Skin.HasSetting(SafeMode)">fanart-seasons-filemode</include>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include condition="!Skin.HasSetting(Hide-Videos-CoverFlow)">CoverFlow-Movies</include>			<!-- view id=55 -->

@@ -16,6 +16,7 @@
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + !Control.HasFocus(90) + !ControlGroup(5).HasFocus">Conditional</animation>
 			<control type="image">

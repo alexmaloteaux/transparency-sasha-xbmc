@@ -76,6 +76,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>[Control.IsVisible(594) | Control.IsVisible(50)] + Skin.HasSetting(Picture_Fullscreen)</visible>
 		</control>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include condition="!Skin.HasSetting(Hide-Pictures-Polaroid)">Polaroid</include>

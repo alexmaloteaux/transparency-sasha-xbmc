@@ -43,6 +43,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio</visible>
 		</control>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<control type="group">

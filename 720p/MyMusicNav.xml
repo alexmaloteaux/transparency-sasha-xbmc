@@ -43,6 +43,7 @@
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<include condition="Skin.HasSetting(MusicExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-music</include>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include condition="!Skin.HasSetting(Hide-Music-CoverFlow)">CoverFlow-Music</include>		<!-- view id=55 -->

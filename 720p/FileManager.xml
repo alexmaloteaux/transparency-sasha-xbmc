@@ -25,6 +25,7 @@
 			<aspectratio>scale</aspectratio>
 			<visible>!Skin.HasSetting(Enable_Custom_Back_Settings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<include>ContentFade</include>

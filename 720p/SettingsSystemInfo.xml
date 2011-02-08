@@ -16,6 +16,7 @@
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
+		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="button" id="5999">
 			<description>fake button to steal focus</description>
 			<onleft>9000</onleft>
