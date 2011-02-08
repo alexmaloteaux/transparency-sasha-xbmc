@@ -27,6 +27,10 @@
 		<icon>special://skin/backgrounds/weather.jpg</icon>
 		<thumb>special://skin/backgrounds/home-weather-conditional/$INFO[Weather.FanartCode]</thumb>
 	</include>
+	<include name="home-weather-custom-background-conditional">
+		<icon>special://skin/backgrounds/weather.jpg</icon>
+		<thumb>$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)]$INFO[Weather.FanartCode]</thumb>
+	</include>
 	<include name="home-weather-background">
 		<icon>special://skin/backgrounds/weather.jpg</icon>
 		<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
@@ -2069,7 +2073,8 @@
 					<label>8</label>
 					<onclick>ActivateWindow(Weather)</onclick>
 					<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
-					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background-conditional</include>
+					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + !Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-background-conditional</include>
+					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-custom-background-conditional</include>
 					<visible>!Skin.HasSetting(Menu_Weather)</visible>
 				</item>
 				<item id="11">
@@ -2392,7 +2397,8 @@
 					<label>8</label>
 					<onclick>ActivateWindow(Weather)</onclick>
 					<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
-					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background-conditional</include>
+					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + !Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-background-conditional</include>
+					<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-custom-background-conditional</include>
 					<visible>!Skin.HasSetting(Menu_Weather)</visible>
 				</item>
 				<item id="11">
