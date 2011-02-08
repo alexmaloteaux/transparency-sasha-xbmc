@@ -1,5 +1,17 @@
 <includes>
 	<include name="Icons-Movies">
+		<control type="videowindow">
+			<description>trailer preview</description>
+			<posx>351</posx>
+			<posy>90</posy>
+			<width>578</width>
+			<height>282</height>
+			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<visible>Control.IsVisible(57) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer)</visible>
+		</control>
 		<control type="group">
 			<animation effect="rotatex" center="720,0" start="-70" end="0" time="500" reversible="true">WindowOpen</animation>
 			<animation effect="rotatex" center="720,0" start="0" end="-70" time="500" reversible="true">WindowClose</animation>
