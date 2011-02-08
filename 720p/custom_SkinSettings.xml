@@ -3554,7 +3554,7 @@
 					<posx>200</posx>
 					<posy>185</posy>
 					<width>880</width>
-					<height>400</height>
+					<height>412</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>799</pagecontrol>
 					<onleft>9000</onleft>
@@ -3574,7 +3574,7 @@
 						<selected>Skin.HasSetting(FanartLong)</selected>
 					</control>
 					<control type="radiobutton" id="704">
-						<label>$LOCALIZE[20343] - $LOCALIZE[31181]</label>
+						<label>$LOCALIZE[31030] - $LOCALIZE[20343] - $LOCALIZE[31181]</label>
 						<onclick>Skin.ToggleSetting(Fanart_Show_Banners)</onclick>
 						<onclick>Skin.Reset(TVShowsPosters)</onclick>
 						<selected>Skin.HasSetting(Fanart_Show_Banners)</selected>
@@ -3586,14 +3586,14 @@
 					</control>
 					<control type="radiobutton" id="706">
 						<description>Hide Video Case Animation</description>
-						<label>$LOCALIZE[3] - $LOCALIZE[31105]</label>
+						<label>$LOCALIZE[536] - $LOCALIZE[3] - $LOCALIZE[31105]</label>
 						<onclick>Skin.ToggleSetting(Hide-Video-Icons-CaseAnimation)</onclick>
 						<selected>Skin.HasSetting(Hide-Video-Icons-CaseAnimation)</selected>
 						<enable>!Skin.HasSetting(HideMovieCase)</enable>
 					</control>
 					<control type="radiobutton" id="707">
 						<description>Hide Music Case Animation</description>
-						<label>$LOCALIZE[2] - $LOCALIZE[31105]</label>
+						<label>$LOCALIZE[536] - $LOCALIZE[2] - $LOCALIZE[31105]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Icons-CaseAnimation)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Icons-CaseAnimation)</selected>
 						<enable>!Skin.HasSetting(HideMusicCase)</enable>
@@ -3604,7 +3604,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="709">
-						<label>31133</label>
+						<label>$LOCALIZE[535] - $LOCALIZE[2] - $LOCALIZE[31133]</label>
 						<onclick>Skin.ToggleSetting(Artist_Album_Order)</onclick>
 						<selected>Skin.HasSetting(Artist_Album_Order)</selected>
 					</control>
@@ -3794,7 +3794,7 @@
 					<posx>1083</posx>
 					<posy>182</posy>
 					<width>20</width>
-					<height>402</height>
+					<height>416</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 					<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 					<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
