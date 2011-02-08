@@ -1792,7 +1792,6 @@
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
 				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
-				<visible>Container.Content(Movies)</visible>
 			</control>
 			<control type="group">
 				<posx>370</posx>

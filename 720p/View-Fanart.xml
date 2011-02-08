@@ -406,7 +406,7 @@
 				<width>50</width>
 				<height>40</height>
 				<texture>mediaflag.png</texture>
-				<visible>!IsEmpty(Listitem.Trailer) + !Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!IsEmpty(Listitem.Trailer)</visible>
 			</control>
 			<control type="button" id="7005">
 				<posx>1213</posx>
@@ -424,7 +424,6 @@
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
 				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
-				<visible>!Window.IsVisible(VideoPlaylist) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
 		</control>
 		<control type="videowindow">
