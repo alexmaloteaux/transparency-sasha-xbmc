@@ -51,7 +51,7 @@
 			<animation effect="rotatey" center="320" start="20" end="20" time="0" condition="true">Conditional</animation>
 			<animation effect="rotate" center="320,220" start="-10" end="-10" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_Movies_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(2) + !Player.HasVideo</visible>
+			<visible>Container(5040).HasFocus(2) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_TVShows_Fanart">
@@ -69,7 +69,7 @@
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 			<animation effect="rotatey" center="333" start="-6" end="-6" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(3) + !Player.HasVideo</visible>
+			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_Music_Fanart">
@@ -87,7 +87,7 @@
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 			<animation effect="rotatey" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_Music_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(6) + !Player.HasVideo</visible>
+			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_Movies_Fanart_Path">
@@ -196,7 +196,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>Control.HasFocus(5044)</visible>
+			<visible>Control.HasFocus(5044) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartepisodes">
@@ -209,7 +209,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>Control.HasFocus(5045)</visible>
+			<visible>Control.HasFocus(5045) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartalbums">
@@ -222,7 +222,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>Control.HasFocus(5046)</visible>
+			<visible>Control.HasFocus(5046) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_Top_Weather_Icon">

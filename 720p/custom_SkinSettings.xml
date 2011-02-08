@@ -509,41 +509,46 @@
 					<posx>200</posx>
 					<posy>185</posy>
 					<width>880</width>
-					<height>412</height>
+					<height>420</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>299</pagecontrol>
 					<onleft>9000</onleft>
 					<onright>299</onright>
 					<onup>201</onup>
 					<ondown>201</ondown>
-					<control type="radiobutton" id="203">
+					<control type="radiobutton" id="202">
 						<description>Horizontal</description>
 						<label>31118</label>
 						<onclick>Skin.ToggleSetting(HorizontalHomeMenu)</onclick>
 						<selected>Skin.HasSetting(HorizontalHomeMenu)</selected>
 					</control>
-					<control type="radiobutton" id="204">
+					<control type="radiobutton" id="203">
 						<description>Wide Home Buttons</description>
 						<label>31117</label>
 						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
 						<selected>Skin.HasSetting(WideHomeMenu)</selected>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="204">
 						<label>31176</label>
 						<onclick>Skin.ToggleSetting(FavouritesPlaylists_Play)</onclick>
 						<selected>!Skin.HasSetting(FavouritesPlaylists_Play)</selected>
 					</control>
-					<control type="radiobutton" id="206">
-						<label>31183</label>
-						<onclick>Skin.ToggleSetting(Show_Custom_Home_Logo)</onclick>
-						<onclick>Skin.Reset(Custom_Home_Logo)</onclick>
-						<selected>Skin.HasSetting(Show_Custom_Home_Logo)</selected>
+					<control type="image" id="205">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
 					</control>
-					<control type="button" id="207">
-						<label>$LOCALIZE[561]:</label>
-						<label2>$INFO[Skin.String(Custom_Home_Logo)]</label2>
-						<onclick>Skin.SetFile(Custom_Home_Logo)</onclick>
-						<enable>Skin.HasSetting(Show_Custom_Home_Logo)</enable>
+					<control type="radiobutton" id="206">
+						<description>Hide Home Video Background</description>
+						<label>31123</label>
+						<onclick>Skin.ToggleSetting(HideHomeVideoBackground)</onclick>
+						<selected>Skin.HasSetting(HideHomeVideoBackground)</selected>
+					</control>
+					<control type="radiobutton" id="207">
+						<description>Hide Home Visualization Background</description>
+						<label>31119</label>
+						<onclick>Skin.ToggleSetting(HideHomeVizBackground)</onclick>
+						<selected>Skin.HasSetting(HideHomeVizBackground)</selected>
 					</control>
 					<control type="image" id="208">
 						<width>880</width>
@@ -551,6 +556,23 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="209">
+						<label>31183</label>
+						<onclick>Skin.ToggleSetting(Show_Custom_Home_Logo)</onclick>
+						<onclick>Skin.Reset(Custom_Home_Logo)</onclick>
+						<selected>Skin.HasSetting(Show_Custom_Home_Logo)</selected>
+					</control>
+					<control type="button" id="210">
+						<label>$LOCALIZE[561]:</label>
+						<label2>$INFO[Skin.String(Custom_Home_Logo)]</label2>
+						<onclick>Skin.SetFile(Custom_Home_Logo)</onclick>
+						<enable>Skin.HasSetting(Show_Custom_Home_Logo)</enable>
+					</control>
+					<control type="image" id="211">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="212">
 						<description>enable recent movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentMovies)</onclick>
@@ -560,7 +582,7 @@
 						<onclick>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onclick>
 						<selected>Skin.HasSetting(HomepageRecentMovies)</selected>
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="213">
 						<description>enable recent tv-shows info</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentTVShows)</onclick>
@@ -570,7 +592,7 @@
 						<onclick>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onclick>
 						<selected>Skin.HasSetting(HomepageRecentTVShows)</selected>
 					</control>
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="214">
 						<description>enable recent music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomepageRecentAlbums)</onclick>
@@ -580,12 +602,12 @@
 						<onclick>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onclick>
 						<selected>Skin.HasSetting(HomepageRecentAlbums)</selected>
 					</control>
-					<control type="image" id="212">
+					<control type="image" id="215">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="213">
+					<control type="radiobutton" id="216">
 						<description>enable random movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomepageRandomMovies)</onclick>
@@ -594,7 +616,7 @@
 						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
 						<selected>Skin.HasSetting(HomepageRandomMovies)</selected>
 					</control>
-					<control type="radiobutton" id="214">
+					<control type="radiobutton" id="217">
 						<description>enable random tv-shows info</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomepageRandomTVShows)</onclick>
@@ -603,7 +625,7 @@
 						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
 						<selected>Skin.HasSetting(HomepageRandomTVShows)</selected>
 					</control>
-					<control type="radiobutton" id="215">
+					<control type="radiobutton" id="218">
 						<description>enable random music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomepageRandomAlbums)</onclick>
@@ -612,30 +634,30 @@
 						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
 						<selected>Skin.HasSetting(HomepageRandomAlbums)</selected>
 					</control>
-					<control type="image" id="216">
+					<control type="image" id="219">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="217">
+					<control type="radiobutton" id="220">
 						<description>enable weather info</description>
 						<label>20084</label>
 						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
 					</control>
-					<control type="radiobutton" id="218">
+					<control type="radiobutton" id="221">
 						<description>enable System info</description>
 						<label>20085</label>
 						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
 						<selected>!Skin.HasSetting(homepageSysteminfo)</selected>
 					</control>
-					<control type="radiobutton" id="219">
+					<control type="radiobutton" id="222">
 						<description>enable video info</description>
 						<label>20176</label>
 						<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
 					</control>
-					<control type="radiobutton" id="220">
+					<control type="radiobutton" id="223">
 						<description>enable music info</description>
 						<label>20083</label>
 						<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
@@ -661,9 +683,37 @@
 				<control type="group">
 					<visible>Skin.String(SkinSettings,3)</visible>
 					<control type="radiobutton" id="301">
-						<description>animate backgrounds</description>
+						<description>video backgrounds</description>
 						<posx>200</posx>
 						<posy>185</posy>
+						<width>325</width>
+						<height>35</height>
+						<label>31180</label>
+						<onclick>Skin.ToggleSetting(VideoBackgrounds)</onclick>
+						<selected>Skin.HasSetting(VideoBackgrounds)</selected>
+						<onleft>9000</onleft>
+						<onright>399</onright>
+						<onup>302</onup>
+						<ondown>312</ondown>
+					</control>
+					<control type="radiobutton" id="312">
+						<description>visualisation backgrounds</description>
+						<posx>200</posx>
+						<posy>220</posy>
+						<width>325</width>
+						<height>35</height>
+						<label>31112</label>
+						<onclick>Skin.ToggleSetting(VizBackgrounds)</onclick>
+						<selected>Skin.HasSetting(VizBackgrounds)</selected>
+						<onleft>9000</onleft>
+						<onright>399</onright>
+						<onup>301</onup>
+						<ondown>313</ondown>
+					</control>
+					<control type="radiobutton" id="313">
+						<description>animate backgrounds</description>
+						<posx>200</posx>
+						<posy>255</posy>
 						<width>325</width>
 						<height>35</height>
 						<label>31134</label>
@@ -671,14 +721,28 @@
 						<selected>Skin.HasSetting(AnimateBackgrounds)</selected>
 						<onleft>9000</onleft>
 						<onright>399</onright>
-						<onup>301</onup>
+						<onup>312</onup>
 						<ondown>314</ondown>
+					</control>
+					<control type="radiobutton" id="314">
+						<description>animate fanart</description>
+						<posx>200</posx>
+						<posy>290</posy>
+						<width>325</width>
+						<height>35</height>
+						<label>31110</label>
+						<onclick>Skin.ToggleSetting(AnimateFanart)</onclick>
+						<selected>Skin.HasSetting(AnimateFanart)</selected>
+						<onleft>9000</onleft>
+						<onright>399</onright>
+						<onup>313</onup>
+						<ondown>302</ondown>
 					</control>
 					<control type="list" id="302">
 						<posx>200</posx>
-						<posy>255</posy>
+						<posy>325</posy>
 						<width>345</width>
-						<height>350</height>
+						<height>280</height>
 						<onleft>9000</onleft>
 						<onright>303</onright>
 						<onup>314</onup>
@@ -2738,20 +2802,6 @@
 						<randomize>true</randomize>
 						<fadetime>400</fadetime>
 						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + Skin.HasSetting(Home_Weather_Conditional_Options)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds) + Skin.HasSetting(Weather_Conditional_Options)]">conditional</animation>
-					</control>
-					<control type="radiobutton" id="314">
-						<description>video backgrounds</description>
-						<posx>200</posx>
-						<posy>220</posy>
-						<width>325</width>
-						<height>35</height>
-						<label>31180</label>
-						<onclick>Skin.ToggleSetting(VideoBackgrounds)</onclick>
-						<selected>Skin.HasSetting(VideoBackgrounds)</selected>
-						<onleft>9000</onleft>
-						<onright>399</onright>
-						<onup>301</onup>
-						<ondown>302</ondown>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">

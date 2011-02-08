@@ -7,7 +7,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasVideo</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)</visible>
 		</control>
 		<include condition="Skin.HasSetting(Home_Movies_Fanart_Background)">Home_Movies_Fanart</include>
 		<include condition="Skin.HasSetting(Home_TVShows_Fanart_Background)">Home_TVShows_Fanart</include>
@@ -24,7 +24,7 @@
 			<fadetime>600</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>!Player.HasVideo + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))]]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)] + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))]]</visible>
 		</control>
 		<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRandomMovies)">recentlyfanartmovies</include>
 		<include condition="Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRandomTVShows)">recentlyfanartepisodes</include>
@@ -41,7 +41,7 @@
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -53,7 +53,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)]</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
@@ -62,7 +62,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(Viz-Visualization)</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Viz-Visualization)</visible>
 		</control>
 		<control type="image">
 			<description>splash</description>
