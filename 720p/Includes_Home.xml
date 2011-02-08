@@ -2046,14 +2046,14 @@
 					<onclick>ActivateWindow(MusicLibrary)</onclick>
 					<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 					<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
-					<visible>!Skin.HasSetting(Menu_Music) + Library.HasContent(Music)</visible>
+					<visible>!Skin.HasSetting(Menu_Music) + Library.HasContent(Music) + !Skin.HasSetting(Menu_Music_FileMode)</visible>
 				</item>
 				<item id="6">
 					<label>2</label>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
 					<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 					<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
-					<visible>!Skin.HasSetting(Menu_Music) + !Library.HasContent(Music)</visible>
+					<visible>!Skin.HasSetting(Menu_Music) + [!Library.HasContent(Music) | Skin.HasSetting(Menu_Music_FileMode)]</visible>
 				</item>
 				<item id="7">
 					<label>1</label>
@@ -2342,14 +2342,14 @@
 					<onclick>ActivateWindow(MusicLibrary)</onclick>
 					<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 					<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
-					<visible>!Skin.HasSetting(Menu_Music) + Library.HasContent(Music)</visible>
+					<visible>!Skin.HasSetting(Menu_Music) + Library.HasContent(Music) + !Skin.HasSetting(Menu_Music_FileMode)</visible>
 				</item>
 				<item id="6">
 					<label>2</label>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
 					<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 					<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
-					<visible>!Skin.HasSetting(Menu_Music) + !Library.HasContent(Music)</visible>
+					<visible>!Skin.HasSetting(Menu_Music) + [!Library.HasContent(Music) | Skin.HasSetting(Menu_Music_FileMode)]</visible>
 				</item>
 				<item id="1">
 					<label>3</label>
