@@ -619,7 +619,7 @@
 	<include name="List_Extras">
 		<control type="group">
 			<visible>Control.IsVisible(51) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
-			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
+			<include>Window_OpenClose_Visible_MediaFlags_Animation2</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
 			<control type="image">
 				<posx>330</posx>
