@@ -406,7 +406,7 @@
 				<width>50</width>
 				<height>40</height>
 				<texture>mediaflag.png</texture>
-				<visible>!IsEmpty(Listitem.Trailer)</visible>
+				<visible>!IsEmpty(Listitem.Trailer) + !Skin.HasSetting(Hide_Trailer_Icon)</visible>
 			</control>
 			<control type="button" id="7005">
 				<posx>1213</posx>
@@ -424,6 +424,7 @@
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
 				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
+				<visible>!Skin.HasSetting(Hide_Trailer_Icon)</visible>
 			</control>
 		</control>
 		<control type="videowindow">
@@ -436,7 +437,7 @@
 			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<visible>Control.IsVisible(50) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+			<visible>Control.IsVisible(50) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>

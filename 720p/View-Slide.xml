@@ -1792,6 +1792,7 @@
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
 				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
 				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
+				<visible>!Skin.HasSetting(Hide_Trailer_Icon)</visible>
 			</control>
 			<control type="group">
 				<posx>370</posx>
@@ -1835,7 +1836,7 @@
 					<width>960</width>
 					<height>321</height>
 					<animation effect="fade" start="0" end="100" time="250" delay="900">Visible</animation>
-					<visible>!Window.IsVisible(VideoFiles) + !Skin.HasSetting(Fullscreen_Trailer) + !Skin.HasSetting(VideoBackgrounds)</visible>
+					<visible>!Skin.HasSetting(Fullscreen_Trailer) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)]</visible>
 				</control>
 			</control>
 			<control type="group">

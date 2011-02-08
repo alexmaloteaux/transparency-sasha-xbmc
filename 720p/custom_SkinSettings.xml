@@ -2916,6 +2916,16 @@
 						<onclick>Skin.ToggleSetting(Enable_MusicVideos_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</selected>
 					</control>
+					<control type="image" id="421">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="422">
+						<label>$LOCALIZE[20342] - $LOCALIZE[31149]</label>
+						<onclick>Skin.ToggleSetting(Hide_Trailer_Icon)</onclick>
+						<selected>Skin.HasSetting(Hide_Trailer_Icon)</selected>
+					</control>
 				</control>
 				<control type="scrollbar" id="499">
 					<posx>1083</posx>
