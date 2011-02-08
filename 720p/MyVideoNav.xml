@@ -314,6 +314,7 @@
 			<include condition="Skin.HasSetting(TvTunes)">TvTunes</include>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
+			<onfocus>SetProperty(videomode,librarymode)</onfocus>
 			<onfocus>SetFocus(50)</onfocus>
 		</control>
 		<include condition="Skin.HasSetting(NextAired)">NextAiredInfo</include>

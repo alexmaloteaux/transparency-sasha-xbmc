@@ -1,5 +1,5 @@
 <window id="24">
-	<defaultcontrol always="true">50</defaultcontrol>
+	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,55,57,593,596,599</views>
 	<controls>
@@ -194,6 +194,16 @@
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Video-Files</include>
 			</control>
+		</control>
+		<control type="button" id="9999">
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<onfocus>SetProperty(videomode,filemode)</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
 		</control>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>

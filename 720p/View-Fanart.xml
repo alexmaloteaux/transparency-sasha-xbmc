@@ -462,25 +462,16 @@
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
 				<posy>368</posy>
 				<width>234</width>
 				<height>360</height>
-				<texture>case-dvd.png</texture>
+				<texture fallback="cases/librarymode/case-sets.png">cases/$INFO[Window.Property(videomode)]/case$INFO[ListItem.VideoResolution].png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(HideVideoCase)</visible>
-			</control>
-			<control type="image">
-				<posx>18</posx>
-				<posy>368</posy>
-				<width>234</width>
-				<height>360</height>
-				<texture>case-bluray.png</texture>
-				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(VideoPlaylist) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
 			</control>
 			<control type="image">
 				<posx>164</posx>
@@ -490,17 +481,6 @@
 				<texture>movieset.png</texture>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoPlaylist)</visible>
-			</control>
-			<control type="image">
-				<posx>30</posx>
-				<posy>412</posy>
-				<width>198</width>
-				<height>288</height>
-				<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
-				<texture diffuse="gamecase-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 		</control>
 		<control type="group">
