@@ -3,7 +3,7 @@
 		<control type="group">
 			<posx>-35</posx>
 			<posy>-15</posy>
-			<visible>Skin.HasSetting(CDWallNoVisualisation)</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(Viz-CDWall) + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
 			<control type="multiimage">
 				<posx>0</posx>
 				<posy>0</posy>

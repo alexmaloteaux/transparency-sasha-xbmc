@@ -2,14 +2,6 @@
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<control type="visualisation" id="2">
-			<description>visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(FanartNoVisualisation) + !Skin.HasSetting(FanartSlideshowNoVisualisation) + !Skin.HasSetting(CDWallNoVisualisation)</visible>
-		</control>
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
 			<posx>0</posx>
@@ -21,8 +13,8 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation) | Skin.HasSetting(CDWallNoVisualisation)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
+			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -33,11 +25,19 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Player.HasAudio + [Skin.HasSetting(FanartNoVisualisation) | Skin.HasSetting(FanartSlideshowNoVisualisation)]</visible>
+			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
+			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)]</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode) + !substring(Player.FolderPath,pvr://)">fanartslideshow-musicvisualisation</include>
+		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
+		<control type="visualisation" id="2">
+			<description>visualisation</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>Player.HasAudio + !Skin.HasSetting(Viz-Visualization)</visible>
+		</control>
 		<control type="group">
 			<include>ContentFade</include>
 			<control type="group">

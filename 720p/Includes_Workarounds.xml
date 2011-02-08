@@ -137,7 +137,7 @@
 			<fadetime>750</fadetime>
 			<include condition="!Skin.HasSetting(FanartSlideshowAnimation)">backgroundanimation2</include>
 			<include>VisibleFadeEffect</include>
-			<visible>Player.HasAudio + Skin.HasSetting(FanartSlideshowNoVisualisation) + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(Viz-Slideshow) + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
 		</control>
 	</include>
 	<include name="fanart-mymusicplaylisteditor">

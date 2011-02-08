@@ -250,45 +250,6 @@
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="124">
-						<label>31124</label>
-						<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
-						<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
-						<onclick>Skin.ToggleSetting(FanartNoVisualisation)</onclick>
-						<selected>Skin.HasSetting(FanartNoVisualisation)</selected>
-					</control>
-					<control type="radiobutton" id="125">
-						<label>31147</label>
-						<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
-						<onclick>Skin.Reset(CDWallNoVisualisation)</onclick>
-						<onclick>Skin.ToggleSetting(FanartSlideshowNoVisualisation)</onclick>
-						<selected>Skin.HasSetting(FanartSlideshowNoVisualisation)</selected>
-					</control>
-					<control type="radiobutton" id="126">
-						<label>- $LOCALIZE[12379]</label>
-						<onclick>Skin.ToggleSetting(FanartSlideshowAnimation)</onclick>
-						<selected>!Skin.HasSetting(FanartSlideshowAnimation)</selected>
-						<enable>Skin.HasSetting(FanartSlideshowNoVisualisation)</enable>
-					</control>
-					<control type="radiobutton" id="127">
-						<label>31148</label>
-						<onclick>Skin.Reset(FanartNoVisualisation)</onclick>
-						<onclick>Skin.Reset(FanartSlideshowNoVisualisation)</onclick>
-						<onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
-						<selected>Skin.HasSetting(CDWallNoVisualisation)</selected>
-					</control>
-					<control type="button" id="128">
-						<description>CD Wall Folder Path</description>
-						<label>- $LOCALIZE[31145]</label>
-						<label2>$INFO[Skin.String(CDWall_Folder_Path)]</label2>
-						<onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
-						<enable>Skin.HasSetting(CDWallNoVisualisation)</enable>
-					</control>
-					<control type="image" id="129">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
 					<control type="radiobutton" id="130">
 						<description>Fullscreen Trailer</description>
 						<label>31146</label>
