@@ -573,7 +573,7 @@
 						<selected>!Skin.HasSetting(FavouritesPlaylists_Play)</selected>
 					</control>
 					<control type="radiobutton" id="206">
-						<label>31182</label>
+						<label>31183</label>
 						<onclick>Skin.ToggleSetting(Show_Custom_Home_Logo)</onclick>
 						<onclick>Skin.Reset(Custom_Home_Logo)</onclick>
 						<selected>Skin.HasSetting(Show_Custom_Home_Logo)</selected>
