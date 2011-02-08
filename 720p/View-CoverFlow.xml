@@ -1692,6 +1692,12 @@
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>15</posy>
+			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
+			<visible>Control.IsVisible(55)</visible>
 			<control type="button" id="7024">
 				<posx>1142</posx>
 				<posy>34</posy>

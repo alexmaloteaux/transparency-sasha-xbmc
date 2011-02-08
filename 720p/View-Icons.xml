@@ -477,6 +477,10 @@
 				<animation effect="fade" reversible="false" start="100" end="0" time="0">WindowClose</animation>
 				<visible>Control.HasFocus(57) + Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
+			<visible>Control.IsVisible(57)</visible>
 			<control type="image">
 				<posx>1212</posx>
 				<posy>56</posy>
