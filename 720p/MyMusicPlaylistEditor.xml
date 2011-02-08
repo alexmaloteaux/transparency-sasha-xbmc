@@ -13,6 +13,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>!IsEmpty(Fanart.Image) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
@@ -25,6 +26,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">

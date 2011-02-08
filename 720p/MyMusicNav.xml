@@ -28,6 +28,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>!IsEmpty(Fanart.Image) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
@@ -40,6 +41,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<include condition="Skin.HasSetting(MusicExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-music</include>

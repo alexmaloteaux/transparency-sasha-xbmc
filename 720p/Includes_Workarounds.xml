@@ -151,6 +151,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -163,6 +164,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -175,6 +177,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
@@ -189,6 +192,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -201,6 +205,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -213,6 +218,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
@@ -228,6 +234,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -241,6 +248,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
@@ -256,6 +264,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://)</visible>
 		</control>
 		<control type="image">
@@ -269,6 +278,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://)</visible>
 		</control>
 	</include>
@@ -283,6 +293,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -295,6 +306,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="image">
@@ -307,6 +319,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
@@ -322,6 +335,7 @@
 			<imagepath>$INFO[ListItem.Path,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
@@ -337,6 +351,7 @@
 			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 		<control type="multiimage">
@@ -350,6 +365,7 @@
 			<imagepath>$INFO[Container.FolderPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
@@ -365,6 +381,7 @@
 			<imagepath>$INFO[ListItem.Path,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 		<control type="multiimage">
@@ -378,6 +395,7 @@
 			<imagepath>$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
@@ -393,6 +411,7 @@
 			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 		<control type="multiimage">
@@ -406,6 +425,7 @@
 			<imagepath>$INFO[ListItem.FolderName,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 		<control type="multiimage">
@@ -419,6 +439,7 @@
 			<imagepath>$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
@@ -434,6 +455,7 @@
 			<imagepath>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
@@ -449,6 +471,7 @@
 			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="multiimage">
@@ -462,6 +485,7 @@
 			<imagepath>$INFO[Container.FolderPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 		<control type="multiimage">
@@ -475,6 +499,7 @@
 			<imagepath>$INFO[Container.FolderPath,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
@@ -488,6 +513,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Seasons) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 		<control type="image">
@@ -499,6 +525,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
@@ -512,6 +539,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 		<control type="image">
@@ -523,6 +551,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
