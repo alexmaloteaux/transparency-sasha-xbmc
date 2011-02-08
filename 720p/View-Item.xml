@@ -1,6 +1,7 @@
 <includes>
 	<include name="Item">
 		<control type="group">
+			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<visible>Control.IsVisible(590)</visible>
 			<control type="image">
 				<posx>1212</posx>
