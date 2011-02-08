@@ -73,6 +73,12 @@
 					<visible>!Skin.HasSetting(Fullscreen_Trailer) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)]</visible>
 				</control>
 			</control>
+		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>6</posy>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Control.IsVisible(590) + !Skin.HasSetting(HideInfoPanelItemView)</visible>
 			<control type="group">
 				<animation effect="zoom" start="640,0,1,720" end="0,0,1280,720" time="200" delay="2000">Visible</animation>
 				<animation effect="zoom" start="0,0,1280,720" end="0,360,1280,1" time="200">Hidden</animation>
