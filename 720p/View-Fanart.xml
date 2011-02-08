@@ -471,7 +471,7 @@
 				<height>360</height>
 				<texture fallback="cases/librarymode/case-sets.png">cases/$INFO[Window.Property(videomode)]/case$INFO[ListItem.VideoResolution].png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
 				<posx>164</posx>
@@ -627,7 +627,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
-				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -738,7 +738,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideVideoCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 		</control>
 		<control type="group">

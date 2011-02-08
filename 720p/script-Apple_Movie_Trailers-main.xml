@@ -195,7 +195,7 @@
 							<width>196</width>
 							<height>304</height>
 							<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-							<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+							<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
 							<posx>22</posx>
@@ -203,7 +203,7 @@
 							<width>196</width>
 							<height>304</height>
 							<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
 							<posx>22</posx>
@@ -219,7 +219,7 @@
 							<width>196</width>
 							<height>304</height>
 							<texture>case-dvd.png</texture>
-							<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+							<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
 							<posx>22</posx>
@@ -227,7 +227,7 @@
 							<width>196</width>
 							<height>304</height>
 							<texture>case-bluray.png</texture>
-							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
 							<posx>166</posx>
@@ -344,7 +344,7 @@
 								<width>196</width>
 								<height>298</height>
 								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -352,7 +352,7 @@
 								<width>196</width>
 								<height>298</height>
 								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -368,7 +368,7 @@
 								<width>196</width>
 								<height>298</height>
 								<texture>case-dvd.png</texture>
-								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -376,7 +376,7 @@
 								<width>196</width>
 								<height>298</height>
 								<texture>case-bluray.png</texture>
-								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>145</posx>
@@ -406,7 +406,7 @@
 								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
 								<animation reversible="false" effect="zoom" start="0,272,196,298" end="-19,296,235,358" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="-19,296,235,358" end="0,272,196,298" time="200">unfocus</animation>
-								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -416,7 +416,7 @@
 								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
 								<animation reversible="false" effect="zoom" start="0,272,196,298" end="-19,296,235,358" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="-19,296,235,358" end="0,272,196,298" time="200">unfocus</animation>
-								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -436,7 +436,7 @@
 								<texture>case-dvd.png</texture>
 								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
-								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -446,7 +446,7 @@
 								<texture>case-bluray.png</texture>
 								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
-								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideVideoCase)</visible>
+								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
 								<posx>145</posx>
