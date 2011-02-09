@@ -78,7 +78,7 @@
 		<control type="group">
 			<include>ContentFade</include>
 			<control type="button" id="5043">
-				<description>conditionally run RecentlyAdded or RandomItems script at startup</description>
+				<description>conditionally run RecentlyAdded and RandomItems script at startup</description>
 				<posx>-20</posx>
 				<posy>-20</posy>
 				<width>1</width>
@@ -87,14 +87,14 @@
 				<font>-</font>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums)">recentlyaddedscript</include>
+				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">recentlyaddedscript</include>
 				<include condition="Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">randomitemsscript</include>
 				<onfocus>Skin.Reset(Startup)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>Skin.HasSetting(Startup)</visible>
 			</control>
 			<control type="button" id="5043">
-				<description>run RandomItems script and don't run RecentlyAdded script</description>
+				<description>don't run scripts</description>
 				<posx>-20</posx>
 				<posy>-20</posy>
 				<width>1</width>
@@ -103,12 +103,11 @@
 				<font>-</font>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<include condition="Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">randomitemsscript</include>
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>!Skin.HasSetting(Startup) + [!Skin.HasSetting(LibraryUpdated) | [Skin.HasSetting(LibraryUpdated) + [Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(DialogVideoScan.xml)]]]</visible>
 			</control>
 			<control type="button" id="5043">
-				<description>run RandomItems script and conditionally run RecentlyAdded script after library update</description>
+				<description>conditionally run RecentlyAdded script after library update</description>
 				<posx>-20</posx>
 				<posy>-20</posy>
 				<width>1</width>
@@ -117,8 +116,7 @@
 				<font>-</font>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums)">recentlyaddedscript</include>
-				<include condition="Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">randomitemsscript</include>
+				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">recentlyaddedscript</include>
 				<onfocus>Skin.Reset(LibraryUpdated)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(DialogMusicScan.xml) + !Window.IsVisible(DialogVideoScan.xml)</visible>
