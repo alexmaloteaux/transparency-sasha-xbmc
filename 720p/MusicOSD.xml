@@ -33,8 +33,8 @@
 					<height>25</height>
 					<label>-</label>
 					<font>-</font>
-					<texturenofocus>lastfm-love-nofocus.png</texturenofocus>
-					<texturefocus>lastfm-love-focus.png</texturefocus>
+					<texturenofocus>osd-lastfmlove-nofocus.png</texturenofocus>
+					<texturefocus>osd-lastfmlove-focus.png</texturefocus>
 					<onclick>LastFM.Love</onclick>
 					<onleft>917</onleft>
 					<onright>917</onright>
@@ -50,8 +50,8 @@
 					<height>25</height>
 					<label>-</label>
 					<font>-</font>
-					<texturenofocus>lastfm-hate-nofocus.png</texturenofocus>
-					<texturefocus>lastfm-hate-focus.png</texturefocus>
+					<texturenofocus>osd-lastfmhate-nofocus.png</texturenofocus>
+					<texturefocus>osd-lastfmhate-focus.png</texturefocus>
 					<onclick>LastFM.Ban</onclick>
 					<onleft>916</onleft>
 					<onright>916</onright>
@@ -304,8 +304,8 @@
 					<height>32</height>
 					<label>-</label>
 					<font>-</font>
-					<texturenofocus>info-nofocus.png</texturenofocus>
-					<texturefocus>info-focus.png</texturefocus>
+					<texturenofocus>osd-info-nofocus.png</texturenofocus>
+					<texturefocus>osd-info-focus.png</texturefocus>
 					<onclick>Skin.ToggleSetting(Music_OSD_Info)</onclick>
 					<onleft>991</onleft>
 					<onright>500</onright>
