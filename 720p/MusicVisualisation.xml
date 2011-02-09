@@ -122,7 +122,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 
 				</label>
 				<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-				<animation effect="fade" start="100" end="0" time="2000">WindowClose</animation>
+				<animation effect="fade" start="100" end="0" time="1500">WindowClose</animation>
 				<visible>Skin.HasSetting(Music_OSD_Info)</visible>
 			</control>
 			<control type="group">
@@ -132,7 +132,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<animation effect="slide" start="-320,0" end="0,0" time="300">Visible</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300">Hidden</animation>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">WindowOpen</animation>
-				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1700">WindowClose</animation>
+				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1200">WindowClose</animation>
 				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
 				<control type="image">
 					<description>default cd image</description>
@@ -152,7 +152,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<width>200</width>
 					<height>200</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
-				<animation effect="fade" start="100" end="0" time="8000">Hidden</animation>
+					<animation effect="fade" start="100" end="0" time="8000">Hidden</animation>
 				<visible>Player.HasAudio</visible>
 				</control>
 				<control type="image">
@@ -170,7 +170,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 				<animation effect="slide" start="0,180" end="0,0" time="300">Visible</animation>
 				<animation effect="slide" start="0,0" end="0,180" time="300">Hidden</animation>
 				<animation effect="slide" start="0,180" end="0,0" time="300">WindowOpen</animation>
-				<animation effect="slide" start="0,0" end="0,180" time="300" delay="1700">WindowClose</animation>
+				<animation effect="slide" start="0,0" end="0,180" time="300" delay="1200">WindowClose</animation>
 				<visible>Player.ShowInfo | Window.IsVisible(MusicOSD)</visible>
 				<control type="image">
 					<description>media info background image</description>
