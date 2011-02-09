@@ -23,44 +23,6 @@
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>520</posy>
-				<control type="button" id="916">
-					<description>last.fm love button</description>
-					<posx>1088</posx>
-					<posy>85</posy>
-					<width>25</width>
-					<height>25</height>
-					<label>-</label>
-					<font>-</font>
-					<texturenofocus>osd-lastfmlove-nofocus.png</texturenofocus>
-					<texturefocus>osd-lastfmlove-focus.png</texturefocus>
-					<onclick>LastFM.Love</onclick>
-					<onleft>917</onleft>
-					<onright>917</onright>
-					<onup>916</onup>
-					<ondown>903</ondown>
-					<visible>LastFM.RadioPlaying</visible>
-				</control>
-				<control type="button" id="917">
-					<description>last.fm hate button</description>
-					<posx>1120</posx>
-					<posy>85</posy>
-					<width>25</width>
-					<height>25</height>
-					<label>-</label>
-					<font>-</font>
-					<texturenofocus>osd-lastfmhate-nofocus.png</texturenofocus>
-					<texturefocus>osd-lastfmhate-focus.png</texturefocus>
-					<onclick>LastFM.Ban</onclick>
-					<onleft>916</onleft>
-					<onright>916</onright>
-					<onup>917</onup>
-					<ondown>903</ondown>
-					<visible>LastFM.RadioPlaying</visible>
-				</control>
-			</control>
-			<control type="group">
 				<posx>355</posx>
 				<posy>678</posy>
 				<control type="button" id="901">
@@ -107,7 +69,7 @@
 					<alttexturenofocus>osdplayer-play-nofocus.png</alttexturenofocus>
 					<onleft>902</onleft>
 					<onright>904</onright>
-					<onup>916</onup>
+					<onup>903</onup>
 					<ondown>903</ondown>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
@@ -122,7 +84,7 @@
 					<texturenofocus>osdplayer-forward-nofocus.png</texturenofocus>
 					<onleft>903</onleft>
 					<onright>905</onright>
-					<onup>916</onup>
+					<onup>904</onup>
 					<ondown>904</ondown>
 					<onclick>PlayerControl(Forward)</onclick>
 				</control>
@@ -137,7 +99,7 @@
 					<texturenofocus>osdplayer-next-nofocus.png</texturenofocus>
 					<onleft>904</onleft>
 					<onright>906</onright>
-					<onup>916</onup>
+					<onup>905</onup>
 					<ondown>905</ondown>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
@@ -152,7 +114,7 @@
 					<texturenofocus>osdplayer-stop-nofocus.png</texturenofocus>
 					<onleft>905</onleft>
 					<onright>907</onright>
-					<onup>916</onup>
+					<onup>906</onup>
 					<ondown>906</ondown>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
@@ -167,7 +129,7 @@
 					<texturenofocus>-</texturenofocus>
 					<onleft>906</onleft>
 					<onright>908</onright>
-					<onup>916</onup>
+					<onup>907</onup>
 					<ondown>907</ondown>
 					<onclick>PlayerControl(Repeat)</onclick>
 				</control>
@@ -240,7 +202,7 @@
 					<onclick>PlayerControl(Random)</onclick>
 					<onleft>907</onleft>
 					<onright>909</onright>
-					<onup>916</onup>
+					<onup>908</onup>
 					<ondown>908</ondown>
 				</control>
 				<control type="button" id="909">
@@ -254,7 +216,7 @@
 					<texturenofocus>osdplayer-record-nofocus.png</texturenofocus>
 					<onleft>908</onleft>
 					<onright>910</onright>
-					<onup>916</onup>
+					<onup>909</onup>
 					<ondown>909</ondown>
 					<onclick>PlayerControl(record)</onclick>
 					<visible>Player.CanRecord + !Player.Recording</visible>
@@ -269,8 +231,8 @@
 					<texturefocus>osdplayer-recordrecording-focus.png</texturefocus>
 					<texturenofocus>osdplayer-recordrecording-nofocus.png</texturenofocus>
 					<onleft>909</onleft>
-					<onright>991</onright>
-					<onup>916</onup>
+					<onright>916</onright>
+					<onup>910</onup>
 					<ondown>910</ondown>
 					<onclick>PlayerControl(record)</onclick>
 					<visible>Player.CanRecord + Player.Recording</visible>
@@ -280,6 +242,40 @@
 				<posx>1062</posx>
 				<posy>678</posy>
 				<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Skin.HasSetting(LyricScript_Enable)">Conditional</animation>
+				<control type="button" id="916">
+					<description>last.fm love button</description>
+					<posx>-80</posx>
+					<posy>0</posy>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-lastfmlove-nofocus.png</texturenofocus>
+					<texturefocus>osd-lastfmlove-focus.png</texturefocus>
+					<onclick>LastFM.Love</onclick>
+					<onleft>910</onleft>
+					<onright>917</onright>
+					<onup>916</onup>
+					<ondown>916</ondown>
+					<visible>LastFM.RadioPlaying</visible>
+				</control>
+				<control type="button" id="917">
+					<description>last.fm hate button</description>
+					<posx>-40</posx>
+					<posy>0</posy>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-lastfmhate-nofocus.png</texturenofocus>
+					<texturefocus>osd-lastfmhate-focus.png</texturefocus>
+					<onclick>LastFM.Ban</onclick>
+					<onleft>916</onleft>
+					<onright>991</onright>
+					<onup>917</onup>
+					<ondown>917</ondown>
+					<visible>LastFM.RadioPlaying</visible>
+				</control>
 				<control type="button" id="991">
 					<description>Background Settings</description>
 					<posx>0</posx>
@@ -291,9 +287,9 @@
 					<texturenofocus>osd-background-nofocus.png</texturenofocus>
 					<texturefocus>osd-background-focus.png</texturefocus>
 					<onclick>ActivateWindow(1112)</onclick>
-					<onleft>910</onleft>
+					<onleft>917</onleft>
 					<onright>915</onright>
-					<onup>916</onup>
+					<onup>991</onup>
 					<ondown>991</ondown>
 				</control>
 				<control type="button" id="915">
@@ -309,7 +305,7 @@
 					<onclick>Skin.ToggleSetting(Music_OSD_Info)</onclick>
 					<onleft>991</onleft>
 					<onright>500</onright>
-					<onup>916</onup>
+					<onup>915</onup>
 					<ondown>915</ondown>
 				</control>
 				<control type="button" id="500">
@@ -324,7 +320,7 @@
 					<texturefocus>osd-vis-focus.png</texturefocus>
 					<onleft>915</onleft>
 					<onright>912</onright>
-					<onup>916</onup>
+					<onup>500</onup>
 					<ondown>500</ondown>
 				</control>
 				<control type="button" id="912">
@@ -340,7 +336,7 @@
 					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 					<onleft>500</onleft>
 					<onright>913</onright>
-					<onup>916</onup>
+					<onup>912</onup>
 					<ondown>912</ondown>
 				</control>
 				<control type="button" id="913">
@@ -356,7 +352,7 @@
 					<onclick>ActivateWindow(VisualisationPresetList)</onclick>
 					<onleft>912</onleft>
 					<onright>914</onright>
-					<onup>916</onup>
+					<onup>913</onup>
 					<ondown>913</ondown>
 				</control>
 				<control type="button" id="914">
@@ -373,7 +369,7 @@
 					<onclick>Dialog.Close(musicosd)</onclick>
 					<onleft>913</onleft>
 					<onright>901</onright>
-					<onup>916</onup>
+					<onup>914</onup>
 					<ondown>914</ondown>
 					<visible>Skin.HasSetting(LyricScript_Enable)</visible>
 				</control>
