@@ -507,7 +507,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">cdwall-grid.png</texture>
-			<visible>Skin.HasSetting(Viz-CDWall)</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(Viz-CDWall) + ![Window.IsVisible(Home) + Skin.HasSetting(HideHomeVizBackground)] + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
 		</control>
 	</include>
 </includes>
