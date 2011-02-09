@@ -459,6 +459,7 @@
 	</include>
 	<include name="MediaInfo-Movies_Extras">
 		<control type="group">
+			<posy>10</posy>
 			<visible>Control.IsVisible(58) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)] + !Window.IsVisible(VideoFiles)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation2</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
