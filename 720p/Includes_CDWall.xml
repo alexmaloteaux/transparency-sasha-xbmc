@@ -507,7 +507,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">cdwall-grid.png</texture>
-			<visible>Skin.HasSetting(CDWallNoVisualisation)</visible>
+			<visible>Skin.HasSetting(Viz-CDWall)</visible>
 		</control>
 	</include>
 </includes>
