@@ -2473,7 +2473,7 @@
 		<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 	</include>
 	<include name="recentlyaddedscript">
-		<include condition="Window.IsVisible(Home)">recentlyaddedscripthome</include>
+		<include condition="!Window.IsVisible(1111)">recentlyaddedscripthome</include>
 		<include condition="Window.IsVisible(1111)">recentlyaddedscriptsettings</include>
 	</include>
 	<include name="recentlyaddedscripthome">
