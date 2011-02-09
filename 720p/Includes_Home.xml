@@ -246,7 +246,7 @@
 		<control type="group">
 			<posx>250</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -338,7 +338,7 @@
 		<control type="group">
 			<posx>250</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -635,7 +635,7 @@
 		<control type="group">
 			<posx>250</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(12) + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(12) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -929,7 +929,7 @@
 		<control type="group">
 			<posx>250</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(5) + [PVR.IsRecording | PVR.HasTimer] + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(5) + [PVR.IsRecording | PVR.HasTimer] + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
@@ -1186,7 +1186,7 @@
 			<posy>490</posy>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<visible>[Container(5040).HasFocus(1) | Container(5040).HasFocus(2)] + !Player.HasMedia</visible>
+			<visible>[Container(5040).HasFocus(1) | Container(5040).HasFocus(2)] + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
@@ -1409,7 +1409,7 @@
 			<posy>490</posy>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<visible>Container(5040).HasFocus(3) + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
@@ -1632,7 +1632,7 @@
 			<posy>490</posy>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<visible>Container(5040).HasFocus(6) + !Player.HasMedia</visible>
+			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
