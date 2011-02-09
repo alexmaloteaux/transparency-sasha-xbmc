@@ -1711,14 +1711,14 @@
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(55)</visible>
 			<control type="button" id="7024">
-				<posx>1142</posx>
+				<posx>1147</posx>
 				<posy>34</posy>
-				<width>45</width>
-				<height>30</height>
+				<width>40</width>
+				<height>40</height>
 				<label>-</label>
 				<font>-</font>
-				<texturefocus>trailer-small-focus.png</texturefocus>
-				<texturenofocus>trailer-small-nofocus.png</texturenofocus>
+				<texturefocus>trailer-focus.png</texturefocus>
+				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onup>9000</onup>
 				<ondown>55</ondown>
 				<onleft>9000</onleft>

@@ -400,23 +400,15 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<animation effect="slide" end="-401,0" time="0" condition="Skin.HasSetting(FanartLong)">Conditional</animation>
-			<control type="image">
-				<posx>1212</posx>
-				<posy>14</posy>
-				<width>50</width>
-				<height>40</height>
-				<texture>mediaflag.png</texture>
-				<visible>!IsEmpty(Listitem.Trailer) + !Skin.HasSetting(Hide_Trailer_Icon)</visible>
-			</control>
 			<control type="button" id="7005">
-				<posx>1213</posx>
-				<posy>18</posy>
-				<width>48</width>
-				<height>31</height>
+				<posx>1222</posx>
+				<posy>14</posy>
+				<width>40</width>
+				<height>40</height>
 				<label>-</label>
 				<font>-</font>
-				<texturefocus>trailer-small-focus.png</texturefocus>
-				<texturenofocus>trailer-small-nofocus.png</texturenofocus>
+				<texturefocus>trailer-focus.png</texturefocus>
+				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onleft>9000</onleft>
 				<onright>50</onright>
 				<onup>7005</onup>

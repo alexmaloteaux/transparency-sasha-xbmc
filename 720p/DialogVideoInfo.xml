@@ -294,13 +294,13 @@
 			<control type="group" id="1110">
 				<control type="button" id="11">
 					<posx>1095</posx>
-					<posy>475</posy>
-					<width>59</width>
-					<height>40</height>
+					<posy>480</posy>
+					<width>50</width>
+					<height>50</height>
 					<label>-</label>
 					<font>-</font>
-					<texturefocus>trailer-small-focus.png</texturefocus>
-					<texturenofocus>trailer-small-nofocus.png</texturenofocus>
+					<texturefocus>trailer-focus.png</texturefocus>
+					<texturenofocus>trailer-nofocus.png</texturenofocus>
 					<onleft>1112</onleft>
 					<onright>1111</onright>
 					<onup>5</onup>
@@ -310,13 +310,13 @@
 				</control>
 				<control type="button" id="1111">
 					<posx>1095</posx>
-					<posy>475</posy>
-					<width>59</width>
-					<height>40</height>
+					<posy>480</posy>
+					<width>50</width>
+					<height>50</height>
 					<label>-</label>
 					<font>-</font>
-					<texturefocus>trailer-small-focus.png</texturefocus>
-					<texturenofocus>trailer-small-nofocus.png</texturenofocus>
+					<texturefocus>trailer-focus.png</texturefocus>
+					<texturenofocus>trailer-nofocus.png</texturenofocus>
 					<onleft>11</onleft>
 					<onright>1112</onright>
 					<onup>5</onup>
@@ -326,14 +326,14 @@
 					<visible>Container.Content(Movies) + Skin.HasSetting(TrailerScript_Enable-disabled)</visible>
 				</control>
 				<control type="button" id="1112">
-					<posx>1194</posx>
-					<posy>475</posy>
-					<width>59</width>
-					<height>40</height>
+					<posx>1195</posx>
+					<posy>480</posy>
+					<width>50</width>
+					<height>50</height>
 					<label>-</label>
 					<font>-</font>
-					<texturefocus>theater-small-focus.png</texturefocus>
-					<texturenofocus>theater-small-nofocus.png</texturenofocus>
+					<texturefocus>cinema-focus.png</texturefocus>
+					<texturenofocus>cinema-nofocus.png</texturenofocus>
 					<onleft>1111</onleft>
 					<onright>11</onright>
 					<onup>5</onup>
