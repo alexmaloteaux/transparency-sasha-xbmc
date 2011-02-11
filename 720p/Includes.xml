@@ -2476,6 +2476,9 @@
 		<include condition="!Window.IsVisible(1111)">recentlyaddedscripthome</include>
 		<include condition="Window.IsVisible(1111)">recentlyaddedscriptsettings</include>
 	</include>
+	<include name="recentlyaddedscriptupdated">
+		<onfocus>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True)</onfocus>
+	</include>
 	<include name="recentlyaddedscripthome">
 		<onfocus>RunScript(script.recentlyadded,limit=3&amp;albums=True&amp;totals=True&amp;alarm=720)</onfocus>
 	</include>

@@ -116,7 +116,7 @@
 				<font>-</font>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">recentlyaddedscript</include>
+				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">recentlyaddedscriptupdated</include>
 				<onfocus>Skin.Reset(LibraryUpdated)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(DialogMusicScan.xml) + !Window.IsVisible(DialogVideoScan.xml)</visible>
