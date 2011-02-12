@@ -1795,6 +1795,14 @@
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
 					<visible>!Control.HasFocus(5998)</visible>
 				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>692</posy>
+					<width>1280</width>
+					<height>28</height>
+					<texture>black.png</texture>
+					<colordiffuse>80000000</colordiffuse>
+				</control>
 				<control type="fadelabel">
 					<description>rss alerts</description>
 					<posx>0</posx>
