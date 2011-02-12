@@ -586,15 +586,6 @@
 		</control>
 	</include>
 	<include name="weatherplus">
-		<control type="button" id="6000">
-			<description>fake button to steal focus</description>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onup>49</onup>
-			<ondown>49</ondown>
-			<onleft>9000</onleft>
-			<onright>49</onright>
-		</control>
 		<control type="group">
 			<description>Today</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
@@ -1147,7 +1138,7 @@
 					<label>[B]$INFO[Window.Property(Weather.CurrentMap)][/B]</label>
 					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<visible>!Control.HasFocus(49) + !Control.HasFocus(5998) + !Control.HasFocus(5999)</visible>
+					<visible>!Control.HasFocus(6000) + !Control.HasFocus(5998) + !Control.HasFocus(5999)</visible>
 				</control>
 				<control type="spincontrol" id="5999">
 					<description>Next page button</description>
@@ -1155,28 +1146,28 @@
 					<posy>436</posy>
 					<subtype>page</subtype>
 					<font>font-19</font>
-					<onleft>49</onleft>
+					<onleft>6000</onleft>
 					<onright>9000</onright>
 					<ondown>5999</ondown>
 					<onup>5998</onup>
 					<textcolor>white</textcolor>
 					<showonepage>true</showonepage>
 				</control>
-				<control type="list" id="49">
+				<control type="list" id="6000">
 					<posx>683</posx>
 					<posy>436</posy>
 					<width>350</width>
 					<height>20</height>
-					<onleft>6000</onleft>
+					<onleft>5997</onleft>
 					<onright>5999</onright>
-					<onup>49</onup>
-					<ondown>49</ondown>
+					<onup>6000</onup>
+					<ondown>6000</ondown>
 					<hitrect x="673" y="426" w="415" h="40"/>
 					<pagecontrol>5999</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<visible allowhiddenfocus="true">Control.HasFocus(49) | Control.HasFocus(5998) | Control.HasFocus(5999)</visible>
+					<visible allowhiddenfocus="true">Control.HasFocus(6000) | Control.HasFocus(5998) | Control.HasFocus(5999)</visible>
 					<itemlayout width="350" height="20">
 						<control type="label">
 							<posx>175</posx>
@@ -1198,7 +1189,7 @@
 							<height>20</height>
 							<texture border="7">list-focus2.png</texture>
 							<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-							<visible>Control.HasFocus(49)</visible>
+							<visible>Control.HasFocus(6000)</visible>
 						</control>
 						<control type="label">
 							<posx>175</posx>
@@ -1763,7 +1754,7 @@
 					<texture border="16">weather-shadow.png</texture>
 					<animation effect="zoom" start="545,65,625,380" end="41,25,1196,704" time="500" tween="back" easing="out" condition="Control.HasFocus(5998)">Conditional</animation>
 				</control>
-				<control type="multiimage" id="5998">
+				<control type="multiimage">
 					<description>radar multiimage</description>
 					<posx>560</posx>
 					<posy>80</posy>
@@ -1779,10 +1770,17 @@
 					<loop>yes</loop>
 					<animation effect="zoom" start="560,80,596,350" end="68,52,1142,650" time="500" tween="back" easing="out" condition="Control.HasFocus(5998)">Conditional</animation>
 				</control>
+				<control type="videowindow">
+					<posx>542</posx>
+					<posy>57</posy>
+					<width>628</width>
+					<height>390</height>
+					<visible>!IsEmpty(Window.Property(Video)) + Player.HasVideo</visible>
+				</control>
 				<control type="button" id="5998">
 					<description>zoom</description>
-					<posx>1086</posx>
-					<posy>373</posy>
+					<posx>1077</posx>
+					<posy>364</posy>
 					<width>55</width>
 					<height>55</height>
 					<texturefocus>-</texturefocus>
@@ -1790,10 +1788,26 @@
 					<onclick>-</onclick>
 					<onup>5999</onup>
 					<ondown>5999</ondown>
-					<onleft>5999</onleft>
+					<onleft>5997</onleft>
 					<onright>5999</onright>
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
 					<visible>!Control.HasFocus(5998)</visible>
+				</control>
+				<control type="button" id="5997">
+					<description>zoom</description>
+					<posx>586</posx>
+					<posy>364</posy>
+					<width>55</width>
+					<height>55</height>
+					<texturefocus>trailer-focus2.png</texturefocus>
+					<texturenofocus>trailer-nofocus.png</texturenofocus>
+					<onup>9000</onup>
+					<ondown>6000</ondown>
+					<onleft>5998</onleft>
+					<onright>5998</onright>
+					<onclick>PlayMedia(&quot;$INFO[Window.Property(Video)]&quot;,1)</onclick>
+					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
+					<visible allowhiddenfocus="true">!IsEmpty(Window.Property(Video)) + !Control.HasFocus(5998)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -1814,6 +1828,17 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<textoffsetx>1280</textoffsetx>
+				</control>
+				<control type="label">
+					<description>rss alerts</description>
+					<posx>0</posx>
+					<posy>695</posy>
+					<width>1280</width>
+					<height>20</height>
+					<label>VIDEO: $INFO[Window.Property(Video)]</label>
+					<font>font-20bc</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 		</control>
