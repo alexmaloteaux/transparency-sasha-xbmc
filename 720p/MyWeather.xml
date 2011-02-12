@@ -32,14 +32,14 @@
 		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
-			<include condition="!StringCompare(Weather.Plugin,weather.com plus)">weather</include>
-			<include condition="StringCompare(Weather.Plugin,weather.com plus)">weatherplus</include>
+			<include condition="!StringCompare(Weather.Plugin,weather.weatherplus)">weather</include>
+			<include condition="StringCompare(Weather.Plugin,weather.weatherplus)">weatherplus</include>
 		</control>
 		<control type="group">
 			<posy>23</posy>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
-			<include condition="!StringCompare(Weather.Plugin,weather.com plus)">CommonNowPlaying</include>
+			<include condition="!StringCompare(Weather.Plugin,weather.weatherplus)">CommonNowPlaying</include>
 			<visible>!Skin.HasSetting(KioskMode)</visible>
 			<control type="group" id="9000">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
@@ -89,7 +89,7 @@
 					<onup>3</onup>
 					<ondown>102</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,1)</onfocus>
-					<visible>StringCompare(Weather.Plugin,weather.com plus)</visible>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="102">
 					<description>Hourly button</description>
@@ -102,7 +102,7 @@
 					<onup>101</onup>
 					<ondown>103</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
-					<visible>StringCompare(Weather.Plugin,weather.com plus)</visible>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="103">
 					<description>10 day button</description>
@@ -115,7 +115,7 @@
 					<onup>102</onup>
 					<ondown>2</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,3)</onfocus>
-					<visible>StringCompare(Weather.Plugin,weather.com plus)</visible>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="2">
 					<description>Refresh button</description>
@@ -127,7 +127,7 @@
 					<onright>6000</onright>
 					<onup>103</onup>
 					<ondown>610</ondown>
-					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="!StringCompare(Weather.Plugin,weather.com plus)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
@@ -140,7 +140,7 @@
 					<onup>2</onup>
 					<ondown>3</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
-					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="!StringCompare(Weather.Plugin,weather.com plus)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 				<control type="image">
@@ -148,7 +148,7 @@
 					<posy>227</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
-					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="!StringCompare(Weather.Plugin,weather.com plus)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-135" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>

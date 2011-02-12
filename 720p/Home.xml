@@ -121,8 +121,8 @@
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(DialogMusicScan.xml) + !Window.IsVisible(DialogVideoScan.xml)</visible>
 			</control>
-			<include condition="!StringCompare(Weather.Plugin,weather.com plus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
-			<include condition="StringCompare(Weather.Plugin,weather.com plus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
+			<include condition="!StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
+			<include condition="StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
 			<include condition="!Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
 			<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
 			<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>
