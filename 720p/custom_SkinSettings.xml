@@ -692,9 +692,9 @@
 						<onleft>9000</onleft>
 						<onright>399</onright>
 						<onup>302</onup>
-						<ondown>312</ondown>
+						<ondown>311</ondown>
 					</control>
-					<control type="radiobutton" id="312">
+					<control type="radiobutton" id="311">
 						<description>visualisation backgrounds</description>
 						<posx>200</posx>
 						<posy>220</posy>
@@ -706,9 +706,9 @@
 						<onleft>9000</onleft>
 						<onright>399</onright>
 						<onup>301</onup>
-						<ondown>313</ondown>
+						<ondown>312</ondown>
 					</control>
-					<control type="radiobutton" id="313">
+					<control type="radiobutton" id="312">
 						<description>animate backgrounds</description>
 						<posx>200</posx>
 						<posy>255</posy>
@@ -719,10 +719,10 @@
 						<selected>Skin.HasSetting(AnimateBackgrounds)</selected>
 						<onleft>9000</onleft>
 						<onright>399</onright>
-						<onup>312</onup>
-						<ondown>314</ondown>
+						<onup>311</onup>
+						<ondown>313</ondown>
 					</control>
-					<control type="radiobutton" id="314">
+					<control type="radiobutton" id="313">
 						<description>animate fanart</description>
 						<posx>200</posx>
 						<posy>290</posy>
@@ -733,7 +733,7 @@
 						<selected>Skin.HasSetting(AnimateFanart)</selected>
 						<onleft>9000</onleft>
 						<onright>399</onright>
-						<onup>313</onup>
+						<onup>312</onup>
 						<ondown>302</ondown>
 					</control>
 					<control type="list" id="302">
@@ -743,7 +743,7 @@
 						<height>280</height>
 						<onleft>9000</onleft>
 						<onright>303</onright>
-						<onup>314</onup>
+						<onup>313</onup>
 						<ondown>302</ondown>
 						<pagecontrol>399</pagecontrol>
 						<scrolltime>200</scrolltime>
@@ -1156,10 +1156,10 @@
 							<onleft>302</onleft>
 							<onright>303</onright>
 							<onup>307</onup>
-							<ondown>311</ondown>
+							<ondown>309</ondown>
 							<visible>Skin.HasSetting(Home_Movies_Fanart_Background)</visible>
 						</control>
-						<control type="radiobutton" id="311">
+						<control type="radiobutton" id="309">
 							<posx>10</posx>
 							<posy>80</posy>
 							<width>505</width>
@@ -1168,12 +1168,12 @@
 							<onclick>Skin.ToggleSetting(Animate_Home_Movies_Fanart_Background)</onclick>
 							<selected>!Skin.HasSetting(Animate_Home_Movies_Fanart_Background)</selected>
 							<onup>307</onup>
-							<ondown>312</ondown>
+							<ondown>310</ondown>
 							<onleft>302</onleft>
-							<onright>311</onright>
+							<onright>309</onright>
 							<visible>Skin.HasSetting(Home_Movies_Fanart_Options)</visible>
 						</control>
-						<control type="radiobutton" id="312">
+						<control type="radiobutton" id="310">
 							<posx>10</posx>
 							<posy>110</posy>
 							<width>505</width>
@@ -1181,13 +1181,13 @@
 							<label>$LOCALIZE[33071]</label>
 							<onclick>Skin.ToggleSetting(Custom_Home_Movies_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Custom_Home_Movies_Fanart_Background)</selected>
-							<onup>311</onup>
-							<ondown>313</ondown>
+							<onup>309</onup>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>312</onright>
+							<onright>310</onright>
 							<visible>Skin.HasSetting(Home_Movies_Fanart_Options)</visible>
 						</control>
-						<control type="button" id="313">
+						<control type="button" id="308">
 							<posx>10</posx>
 							<posy>140</posy>
 							<width>505</width>
@@ -1196,10 +1196,10 @@
 							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)][/COLOR]</label2>
 							<onclick>Skin.SetPath(Custom_Home_Movies_Fanart_Background_Path)</onclick>
 							<enable>Skin.HasSetting(Custom_Home_Movies_Fanart_Background)</enable>
-							<onup>312</onup>
-							<ondown>313</ondown>
+							<onup>310</onup>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>313</onright>
+							<onright>308</onright>
 							<visible>Skin.HasSetting(Home_Movies_Fanart_Options)</visible>
 						</control>
 						<include>ButtonScroll4</include>
@@ -1290,10 +1290,10 @@
 							<onleft>302</onleft>
 							<onright>303</onright>
 							<onup>307</onup>
-							<ondown>311</ondown>
+							<ondown>309</ondown>
 							<visible>Skin.HasSetting(Home_TVShows_Fanart_Background)</visible>
 						</control>
-						<control type="radiobutton" id="311">
+						<control type="radiobutton" id="309">
 							<posx>10</posx>
 							<posy>80</posy>
 							<width>505</width>
@@ -1302,12 +1302,12 @@
 							<onclick>Skin.ToggleSetting(Animate_Home_TVShows_Fanart_Background)</onclick>
 							<selected>!Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)</selected>
 							<onup>307</onup>
-							<ondown>312</ondown>
+							<ondown>310</ondown>
 							<onleft>302</onleft>
-							<onright>311</onright>
+							<onright>309</onright>
 							<visible>Skin.HasSetting(Home_TVShows_Fanart_Options)</visible>
 						</control>
-						<control type="radiobutton" id="312">
+						<control type="radiobutton" id="310">
 							<posx>10</posx>
 							<posy>110</posy>
 							<width>505</width>
@@ -1315,13 +1315,13 @@
 							<label>$LOCALIZE[33071]</label>
 							<onclick>Skin.ToggleSetting(Custom_Home_TVShows_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)</selected>
-							<onup>311</onup>
-							<ondown>313</ondown>
+							<onup>309</onup>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>312</onright>
+							<onright>310</onright>
 							<visible>Skin.HasSetting(Home_TVShows_Fanart_Options)</visible>
 						</control>
-						<control type="button" id="313">
+						<control type="button" id="308">
 							<posx>10</posx>
 							<posy>140</posy>
 							<width>505</width>
@@ -1330,10 +1330,10 @@
 							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)][/COLOR]</label2>
 							<onclick>Skin.SetPath(Custom_Home_TVShows_Fanart_Background_Path)</onclick>
 							<enable>Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)</enable>
-							<onup>312</onup>
-							<ondown>313</ondown>
+							<onup>310</onup>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>313</onright>
+							<onright>308</onright>
 							<visible>Skin.HasSetting(Home_TVShows_Fanart_Options)</visible>
 						</control>
 						<include>ButtonScroll4</include>
@@ -1532,10 +1532,10 @@
 							<onleft>302</onleft>
 							<onright>303</onright>
 							<onup>307</onup>
-							<ondown>311</ondown>
+							<ondown>309</ondown>
 							<visible>Skin.HasSetting(Home_Music_Fanart_Background)</visible>
 						</control>
-						<control type="radiobutton" id="311">
+						<control type="radiobutton" id="309">
 							<posx>10</posx>
 							<posy>80</posy>
 							<width>505</width>
@@ -1544,12 +1544,12 @@
 							<onclick>Skin.ToggleSetting(Animate_Home_Music_Fanart_Background)</onclick>
 							<selected>!Skin.HasSetting(Animate_Home_Music_Fanart_Background)</selected>
 							<onup>307</onup>
-							<ondown>312</ondown>
+							<ondown>310</ondown>
 							<onleft>302</onleft>
-							<onright>311</onright>
+							<onright>309</onright>
 							<visible>Skin.HasSetting(Home_Music_Fanart_Options)</visible>
 						</control>
-						<control type="radiobutton" id="312">
+						<control type="radiobutton" id="310">
 							<posx>10</posx>
 							<posy>110</posy>
 							<width>505</width>
@@ -1557,13 +1557,13 @@
 							<label>$LOCALIZE[33071]</label>
 							<onclick>Skin.ToggleSetting(Custom_Home_Music_Fanart_Background)</onclick>
 							<selected>Skin.HasSetting(Custom_Home_Music_Fanart_Background)</selected>
-							<onup>311</onup>
-							<ondown>313</ondown>
+							<onup>309</onup>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>312</onright>
+							<onright>310</onright>
 							<visible>Skin.HasSetting(Home_Music_Fanart_Options)</visible>
 						</control>
-						<control type="button" id="313">
+						<control type="button" id="308">
 							<posx>10</posx>
 							<posy>140</posy>
 							<width>505</width>
@@ -1572,10 +1572,10 @@
 							<label2>[COLOR=blue]$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)][/COLOR]</label2>
 							<onclick>Skin.SetPath(Custom_Home_Music_Fanart_Background_Path)</onclick>
 							<enable>Skin.HasSetting(Custom_Home_Music_Fanart_Background)</enable>
-							<onup>312</onup>
-							<ondown>313</ondown>
+							<onup>310</onup>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>313</onright>
+							<onright>308</onright>
 							<visible>Skin.HasSetting(Home_Music_Fanart_Options)</visible>
 						</control>
 						<include>ButtonScroll4</include>
@@ -1758,7 +1758,7 @@
 							<onleft>307</onleft>
 							<onright>399</onright>
 							<onup>306</onup>
-							<ondown>303</ondown>
+							<ondown>308</ondown>
 						</control>
 						<control type="button" id="307">
 							<description>Options Image button</description>
@@ -1786,12 +1786,12 @@
 							<onclick>Skin.ToggleSetting(Home_Weather_Custom_Conditional_Backgrounds)</onclick>
 							<selected>Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</selected>
 							<onup>307</onup>
-							<ondown>313</ondown>
+							<ondown>309</ondown>
 							<onleft>302</onleft>
-							<onright>303</onright>
+							<onright>399</onright>
 							<visible>Skin.HasSetting(Home_Weather_Conditional_Options)</visible>
 						</control>
-						<control type="button" id="313">
+						<control type="button" id="309">
 							<posx>10</posx>
 							<posy>140</posy>
 							<width>505</width>
@@ -1800,9 +1800,9 @@
 							<label2>[COLOR=blue]$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetPath(Home_Back_Weather_Custom_Conditional_Folder)</onclick>
 							<onup>308</onup>
-							<ondown>313</ondown>
+							<ondown>308</ondown>
 							<onleft>302</onleft>
-							<onright>313</onright>
+							<onright>399</onright>
 							<enable>Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</enable>
 							<visible>Skin.HasSetting(Home_Weather_Conditional_Options)</visible>
 						</control>
@@ -2651,10 +2651,10 @@
 							<onleft>302</onleft>
 							<onright>303</onright>
 							<onup>307</onup>
-							<ondown>313</ondown>
+							<ondown>308</ondown>
 							<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
 						</control>
-						<control type="button" id="313">
+						<control type="button" id="308">
 							<posx>10</posx>
 							<posy>140</posy>
 							<width>505</width>
@@ -2665,7 +2665,7 @@
 							<onup>307</onup>
 							<ondown>307</ondown>
 							<onleft>302</onleft>
-							<onright>313</onright>
+							<onright>308</onright>
 							<visible>Skin.HasSetting(Weather_Conditional_Options)</visible>
 						</control>
 						<include>ButtonScroll4</include>
