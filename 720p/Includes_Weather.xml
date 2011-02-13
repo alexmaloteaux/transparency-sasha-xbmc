@@ -586,6 +586,15 @@
 		</control>
 	</include>
 	<include name="weatherplus">
+		<control type="button" id="6000">
+			<description>fake button to steal focus</description>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>-</onclick>
+			<visible>Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3)</visible>
+		</control>
 		<control type="group">
 			<description>Today</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
@@ -641,7 +650,7 @@
 						<posx>198</posx>
 						<posy>130</posy>
 						<width>220</width>
-						<height>20</height>
+						<height>40</height>
 						<font>font-30</font>
 						<align>center</align>
 						<textcolor>lightblue</textcolor>
@@ -1828,17 +1837,6 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<textoffsetx>1280</textoffsetx>
-				</control>
-				<control type="label">
-					<description>rss alerts</description>
-					<posx>0</posx>
-					<posy>695</posy>
-					<width>1280</width>
-					<height>20</height>
-					<label>VIDEO: $INFO[Window.Property(Video)]</label>
-					<font>font-20bc</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 		</control>
