@@ -1780,11 +1780,11 @@
 					<animation effect="zoom" start="560,80,596,350" end="68,52,1142,650" time="500" tween="back" easing="out" condition="Control.HasFocus(5998)">Conditional</animation>
 				</control>
 				<control type="videowindow">
-					<posx>542</posx>
-					<posy>57</posy>
+					<posx>544</posx>
+					<posy>80</posy>
 					<width>628</width>
-					<height>390</height>
-					<visible>!IsEmpty(Window.Property(Video)) + Player.HasVideo</visible>
+					<height>350</height>
+					<visible>![IsEmpty(Window.Property(Video)) + IsEmpty(Window.Property(Video.Local))] + Player.HasVideo</visible>
 				</control>
 				<control type="button" id="5998">
 					<description>zoom</description>
@@ -1803,7 +1803,23 @@
 					<visible>!Control.HasFocus(5998)</visible>
 				</control>
 				<control type="button" id="5997">
-					<description>zoom</description>
+					<description>play</description>
+					<posx>586</posx>
+					<posy>364</posy>
+					<width>55</width>
+					<height>55</height>
+					<texturefocus>trailer-focus2.png</texturefocus>
+					<texturenofocus>trailer-nofocus.png</texturenofocus>
+					<onup>9000</onup>
+					<ondown>6000</ondown>
+					<onleft>5996</onleft>
+					<onright>5998</onright>
+					<onclick>PlayMedia(&quot;$INFO[Window.Property(Video.Local)]&quot;,1)</onclick>
+					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
+					<visible>!IsEmpty(Window.Property(Video.Local)) + !Control.HasFocus(5998)</visible>
+				</control>
+				<control type="button" id="5996">
+					<description>play</description>
 					<posx>586</posx>
 					<posy>364</posy>
 					<width>55</width>
@@ -1813,10 +1829,10 @@
 					<onup>9000</onup>
 					<ondown>6000</ondown>
 					<onleft>9000</onleft>
-					<onright>5998</onright>
+					<onright>5997</onright>
 					<onclick>PlayMedia(&quot;$INFO[Window.Property(Video)]&quot;,1)</onclick>
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
-					<visible allowhiddenfocus="true">!IsEmpty(Window.Property(Video)) + !Control.HasFocus(5998)</visible>
+					<visible>IsEmpty(Window.Property(Video.Local)) + !IsEmpty(Window.Property(Video)) + !Control.HasFocus(5998)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
