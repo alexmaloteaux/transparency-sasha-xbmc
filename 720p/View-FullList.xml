@@ -239,7 +239,6 @@
 	</include>
 	<include name="FullList_Extras">
 		<control type="group">
-			<posy>10</posy>
 			<visible>Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
