@@ -58,7 +58,7 @@
 		<control type="multiimage">
 			<posx>320</posx>
 			<posy>40</posy>
-			<width>745</width>
+			<width>900</width>
 			<height>535</height>
 			<include condition="!Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)">Home_TVShows_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)">Home_TVShows_Fanart_Custom_Path</include>
@@ -74,10 +74,10 @@
 	</include>
 	<include name="Home_Music_Fanart">
 		<control type="multiimage">
-			<posx>350</posx>
-			<posy>158</posy>
-			<width>560</width>
-			<height>405</height>
+			<posx>390</posx>
+			<posy>170</posy>
+			<width>530</width>
+			<height>370</height>
 			<include condition="!Skin.HasSetting(Custom_Home_Music_Fanart_Background)">Home_Music_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_Music_Fanart_Background)">Home_Music_Fanart_Custom_Path</include>
 			<aspectratio aligny="top">scale</aspectratio>
@@ -86,6 +86,7 @@
 			<fadetime>750</fadetime>
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 			<animation effect="rotatey" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
+			<animation effect="rotatex" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_Music_Fanart_Background)">backgroundanimation2</include>
 			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
