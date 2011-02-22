@@ -97,6 +97,14 @@
 				<height>15</height>
 				<info>Player.progress</info>
 			</control>
+			<control type="slider" id="888">
+				<description>Slider</description>
+				<posx>152</posx>
+				<posy>55</posy>
+				<width>266</width>
+				<height>15</height>
+				<action>seek</action>
+			</control>
 			<control type="label">
 				<posx>420</posx>
 				<posy>51</posy>

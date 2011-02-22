@@ -1423,6 +1423,15 @@
 				<info>Player.Progress</info>
 				<visible>ListItem.IsPlaying | [Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
+			<control type="slider" id="888">
+				<description>Slider</description>
+				<posx>390</posx>
+				<posy>674</posy>
+				<width>380</width>
+				<height>20</height>
+				<action>seek</action>
+				<visible>ListItem.IsPlaying | [Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
+			</control>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(MusicVideos)</visible>

@@ -23,6 +23,25 @@
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
 			<control type="group">
+				<posy>520</posy>
+				<control type="progress">
+					<description>Progressbar</description>
+					<posx>441</posx>
+					<posy>140</posy>
+					<width>730</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+				</control>
+				<control type="slider" id="888">
+					<description>Slider</description>
+					<posx>441</posx>
+					<posy>140</posy>
+					<width>730</width>
+					<height>15</height>
+					<action>seek</action>
+				</control>
+			</control>
+			<control type="group">
 				<posx>355</posx>
 				<posy>678</posy>
 				<control type="button" id="901">

@@ -453,6 +453,14 @@
 				<midtexture>jukebox-progress-mid.png</midtexture>
 				<info>Player.Progress</info>
 			</control>
+			<control type="slider" id="888">
+				<description>Slider</description>
+				<posx>0</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>3</height>
+				<action>seek</action>
+			</control>
 		</control>
 		<control type="group">
 			<posx>582</posx>

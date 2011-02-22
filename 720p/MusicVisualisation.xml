@@ -321,6 +321,14 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<height>15</height>
 					<info>Player.Progress</info>
 				</control>
+				<control type="slider" id="888">
+					<description>Slider</description>
+					<posx>441</posx>
+					<posy>140</posy>
+					<width>730</width>
+					<height>15</height>
+					<action>seek</action>
+				</control>
 				<control type="label">
 					<description>time label</description>
 					<posx>1255</posx>
