@@ -332,7 +332,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -348,7 +348,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -362,7 +362,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Container.FolderPath,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[Container.FolderPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -378,7 +378,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -392,7 +392,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -408,7 +408,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -422,7 +422,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.FolderName,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.FolderName,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -436,7 +436,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -468,7 +468,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -482,7 +482,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Container.FolderPath,,extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[Container.FolderPath,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -496,7 +496,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath>$INFO[Container.FolderPath,,../extrafanart/]</imagepath>
+			<imagepath background="true">$INFO[Container.FolderPath,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>

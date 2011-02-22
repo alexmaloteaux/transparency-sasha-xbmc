@@ -2,6 +2,7 @@
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
 			<posx>0</posx>
@@ -11,10 +12,10 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-music.jpg">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | [Skin.HasSetting(Viz-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -26,9 +27,8 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | Skin.HasSetting(Viz-Slideshow)]</visible>
+			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | [Skin.HasSetting(Viz-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
