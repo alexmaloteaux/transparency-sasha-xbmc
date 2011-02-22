@@ -1979,7 +1979,8 @@
 				</item>
 				<item id="2">
 					<label>342</label>
-					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
+					<include condition="!Skin.HasSetting(CinemaScript_Enable)">movietitles-default</include>
+					<include condition="Skin.HasSetting(CinemaScript_Enable)">movietitles-cinema</include>
 					<include condition="!Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background</include>
 					<include condition="Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background-fanart</include>
 					<visible>!Skin.HasSetting(Menu_Movies)</visible>
@@ -2324,7 +2325,8 @@
 				</item>
 				<item id="2">
 					<label>342</label>
-					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
+					<include condition="!Skin.HasSetting(CinemaScript_Enable)">movietitles-default</include>
+					<include condition="Skin.HasSetting(CinemaScript_Enable)">movietitles-cinema</include>
 					<include condition="!Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background</include>
 					<include condition="Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background-fanart</include>
 					<visible>!Skin.HasSetting(Menu_Movies)</visible>
@@ -2511,49 +2513,57 @@
 					<item id="8103">
 						<description>Menu Movies Sub Genres</description>
 						<label>$LOCALIZE[135]</label>
-						<onclick>ActivateWindow(VideoLibrary,moviegenres,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">moviegenres-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">moviegenres-cinema</include>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Genres)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Movies Sub Year</description>
 						<label>$LOCALIZE[345]</label>
-						<onclick>ActivateWindow(VideoLibrary,movieyears,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">movieyears-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">movieyears-cinema</include>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Years)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Movies Sub Actors</description>
 						<label>$LOCALIZE[344]</label>
-						<onclick>ActivateWindow(VideoLibrary,movieactors,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">movieactors-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">movieactors-cinema</include>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Actors)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Movies Sub Directors</description>
 						<label>$LOCALIZE[20348]</label>
-						<onclick>ActivateWindow(VideoLibrary,moviedirectors,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">moviedirectors-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">moviedirectors-cinema</include>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Directors)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Movies Sub Studio</description>
 						<label>$LOCALIZE[20388]</label>
-						<onclick>ActivateWindow(VideoLibrary,moviestudios,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">moviestudios-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">moviestudios-cinema</include>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Studios)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Movies Sub Studio</description>
 						<label>$LOCALIZE[20451]</label>
-						<onclick>ActivateWindow(VideoLibrary,moviecountries,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">moviecountries-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">moviecountries-cinema</include>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Countries)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Movies Sub Sets</description>
 						<label>$LOCALIZE[20434]</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieSets,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">moviesets-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">moviesets-cinema</include>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Sets)</visible>
 					</item>
 					<item id="8110">
 						<description>Menu Movies Sub RecentlyAdded</description>
 						<label>$LOCALIZE[31410]</label>
-						<onclick>ActivateWindow(VideoLibrary,recentlyaddedmovies,return)</onclick>
+						<include condition="!Skin.HasSetting(CinemaScript_Enable)">recentlyaddedmovies-default</include>
+						<include condition="Skin.HasSetting(CinemaScript_Enable)">recentlyaddedmovies-cinema</include>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_RecentlyAdded)</visible>
 					</item>
 					<item id="8111">

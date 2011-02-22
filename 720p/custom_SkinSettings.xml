@@ -3001,64 +3001,58 @@
 						<onclick>Skin.ToggleSetting(CinemaScript_Enable)</onclick>
 						<selected>Skin.HasSetting(CinemaScript_Enable)</selected>
 					</control>
-					<control type="button" id="510">
-						<label>- $LOCALIZE[31204]</label>
-						<label2>[COLOR=lightblue]$INFO[Skin.String(CinemaScript_Path)][/COLOR]</label2>
-						<onclick>Skin.SetAddon(CinemaScript_Path,xbmc.python.script)</onclick>
-						<enable>Skin.HasSetting(CinemaScript_Enable)</enable>
-					</control>
-					<control type="image" id="511">
+					<control type="image" id="510">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 						<visible>false</visible>
 					</control>
-					<control type="radiobutton" id="512">
+					<control type="radiobutton" id="511">
 						<label>$LOCALIZE[31131]</label>
 						<onclick>Skin.ToggleSetting(TrailerScript_Enable)</onclick>
 						<selected>Skin.HasSetting(TrailerScript_Enable)</selected>
 						<visible>false</visible>
 					</control>
-					<control type="button" id="513">
+					<control type="button" id="512">
 						<label>- $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(TrailerScript_Path)][/COLOR]</label2>
 						<onclick>Skin.SetAddon(TrailerScript_Path,xbmc.python.script)</onclick>
 						<enable>Skin.HasSetting(TrailerScript_Enable)</enable>
 						<visible>false</visible>
 					</control>
-					<control type="image" id="514">
+					<control type="image" id="513">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="515">
+					<control type="radiobutton" id="514">
 						<label>31210</label>
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
 						<selected>Skin.HasSetting(TvTunes)</selected>
 					</control>
-					<control type="radiobutton" id="516">
+					<control type="radiobutton" id="515">
 						<label>31211</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<onclick>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=3600)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 					</control>
-					<control type="image" id="517">
+					<control type="image" id="516">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="518">
+					<control type="radiobutton" id="517">
 						<label>31212</label>
 						<onclick>Skin.ToggleSetting(Qlock)</onclick>
 						<onclick>RunScript(script.qlock,-startup)</onclick>
 						<selected>Skin.HasSetting(Qlock)</selected>
 					</control>
-					<control type="image" id="519">
+					<control type="image" id="518">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="button" id="520">
+					<control type="button" id="519">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
 					</control>
