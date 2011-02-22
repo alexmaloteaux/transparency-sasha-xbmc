@@ -29,8 +29,9 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!IsEmpty(Fanart.Image) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Skin.HasSetting(MusicExtraFanart) + !IsEmpty(Control.GetLabel(6110))] + !IsEmpty(Fanart.Image) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
+		<include condition="Skin.HasSetting(MusicExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-music</include>
 		<control type="image">
 			<description>artist level fanart</description>
 			<posx>0</posx>
@@ -42,9 +43,8 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Skin.HasSetting(MusicExtraFanart) + !IsEmpty(Control.GetLabel(6110))] + !IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(MusicExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-music</include>
 		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
