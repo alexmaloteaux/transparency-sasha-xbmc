@@ -2717,6 +2717,24 @@
 				<onclick>ActivateWindow(PlayerControls)</onclick>
 				<visible>Player.Playing</visible>
 			</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>0</posx>
+				<posy>42</posy>
+				<width>130</width>
+				<height>15</height>
+				<info>Player.Volume</info>
+				<visible>Player.Playing</visible>
+			</control>
+			<control type="slider" id="888">
+				<description>Slider</description>
+				<posx>0</posx>
+				<posy>42</posy>
+				<width>130</width>
+				<height>15</height>
+				<action>volume</action>
+				<visible>Player.Playing</visible>
+			</control>
 		</control>
 	</include>
 	<include name="TouchScreenControlsHome">
@@ -2732,6 +2750,24 @@
 				<texturefocus>touch-player.png</texturefocus>
 				<texturenofocus>touch-player.png</texturenofocus>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
+				<visible>Player.Playing</visible>
+			</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>1065</posx>
+				<posy>66</posy>
+				<width>130</width>
+				<height>15</height>
+				<info>Player.Volume</info>
+				<visible>Player.Playing</visible>
+			</control>
+			<control type="slider" id="888">
+				<description>Slider</description>
+				<posx>1065</posx>
+				<posy>66</posy>
+				<width>130</width>
+				<height>15</height>
+				<action>volume</action>
 				<visible>Player.Playing</visible>
 			</control>
 		</control>
@@ -2767,6 +2803,24 @@
 				<texturefocus>touch-player.png</texturefocus>
 				<texturenofocus>touch-player.png</texturenofocus>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
+				<visible>Player.Playing</visible>
+			</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>0</posx>
+				<posy>42</posy>
+				<width>130</width>
+				<height>15</height>
+				<info>Player.Volume</info>
+				<visible>Player.Playing</visible>
+			</control>
+			<control type="slider" id="888">
+				<description>Slider</description>
+				<posx>0</posx>
+				<posy>42</posy>
+				<width>130</width>
+				<height>15</height>
+				<action>volume</action>
 				<visible>Player.Playing</visible>
 			</control>
 		</control>
