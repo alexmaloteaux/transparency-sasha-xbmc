@@ -447,7 +447,7 @@
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
-					<visible>stringcompare(ListItem.Label,..) | ![!Skin.HasSetting(Enable_Foldericons_Movies_Genre) + [substring(Container.FolderPath,videodb://1/1/) | substring(Container.FolderPath,videodb://2/1/) | substring(Container.FolderPath,videodb://3/1/)]]</visible>
+					<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + substring(Container.FolderPath,videodb://3/1/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
 					<posx>89</posx>
@@ -553,7 +553,7 @@
 						<effect type="slide" start="0,-4" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="123" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
-					<visible>stringcompare(ListItem.Label,..) | ![!Skin.HasSetting(Enable_Foldericons_Movies_Genre) + [substring(Container.FolderPath,videodb://1/1/) | substring(Container.FolderPath,videodb://2/1/) | substring(Container.FolderPath,videodb://3/1/)]]</visible>
+					<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + substring(Container.FolderPath,videodb://1/1/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + substring(Container.FolderPath,videodb://3/1/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
 					<posx>89</posx>

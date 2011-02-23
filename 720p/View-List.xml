@@ -391,7 +391,6 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + substring(Container.FolderPath,videodb://2/1/)</visible>
 			</control>
-
 			<control type="image">
 				<posx>87</posx>
 				<posy>120</posy>
