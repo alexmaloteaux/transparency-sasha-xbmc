@@ -413,9 +413,8 @@
 				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
-				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
-				<include condition="!Skin.HasSetting(TrailerScript_Enable-disabled) + !Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
-				<include condition="Skin.HasSetting(TrailerScript_Enable-disabled)">Trailer-Script</include>
+				<include condition="Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
+				<include condition="!Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon)</visible>
 			</control>
 		</control>

@@ -301,27 +301,11 @@
 					<font>-</font>
 					<texturefocus>trailer-focus.png</texturefocus>
 					<texturenofocus>trailer-nofocus.png</texturenofocus>
-					<onleft>1111</onleft>
-					<onright>1111</onright>
-					<onup>5</onup>
-					<ondown>50</ondown>
-					<visible>Container.Content(Movies) + !Skin.HasSetting(TrailerScript_Enable-disabled) + !IsEmpty(Listitem.trailer)</visible>
-				</control>
-				<control type="button" id="1111">
-					<posx>1195</posx>
-					<posy>471</posy>
-					<width>48</width>
-					<height>48</height>
-					<label>-</label>
-					<font>-</font>
-					<texturefocus>trailer-focus.png</texturefocus>
-					<texturenofocus>trailer-nofocus.png</texturenofocus>
 					<onleft>11</onleft>
 					<onright>11</onright>
 					<onup>5</onup>
 					<ondown>50</ondown>
-					<onclick>RunScript($INFO[Skin.String(TrailerScript_Path)],1)</onclick>
-					<visible>Container.Content(Movies) + Skin.HasSetting(TrailerScript_Enable-disabled)</visible>
+					<visible>Container.Content(Movies) + !IsEmpty(Listitem.trailer)</visible>
 				</control>
 			</control>
 			<control type="label">
