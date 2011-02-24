@@ -83,6 +83,17 @@
 	<include name="T-Level-SB100">
 		<colordiffuse>FFFFFFFF</colordiffuse>
 	</include>
+	<include name="T-Black1">
+		<control type="image">
+			<posx>0</posx>
+			<posy>692</posy>
+			<width>1280</width>
+			<height>28</height>
+			<texture>black.png</texture>
+			<colordiffuse>80000000</colordiffuse>
+			<visible>!IsEmpty(Window.Property(Alerts.RSS))</visible>
+		</control>
+	</include>
 	<include name="T-Header1">
 		<control type="image">
 			<posx>0</posx>
