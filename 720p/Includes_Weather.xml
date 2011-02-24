@@ -1834,6 +1834,7 @@
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
 					<visible>IsEmpty(Window.Property(Video.Local)) + !IsEmpty(Window.Property(Video)) + !Control.HasFocus(5998)</visible>
 				</control>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Black1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>692</posy>
@@ -1841,6 +1842,7 @@
 					<height>28</height>
 					<texture>black.png</texture>
 					<colordiffuse>80000000</colordiffuse>
+					<visible>!IsEmpty(Window.Property(Alerts.RSS))</visible>
 				</control>
 				<control type="fadelabel">
 					<description>rss alerts</description>
