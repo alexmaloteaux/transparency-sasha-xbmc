@@ -3041,7 +3041,7 @@
 					</control>
 					<control type="button" id="517">
 						<label>$LOCALIZE[31209]</label>
-						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
+						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,banner=True)</onclick>
 					</control>
 				</control>
 				<control type="group" id="601">
