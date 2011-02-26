@@ -2997,15 +2997,16 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="509">
-						<label>$LOCALIZE[31132]</label>
-						<onclick>Skin.ToggleSetting(CinemaScript_Enable)</onclick>
-						<selected>Skin.HasSetting(CinemaScript_Enable)</selected>
+						<label>$LOCALIZE[31213]</label>
+						<onclick>Skin.ToggleSetting(CinemaScript_MovieInfo)</onclick>
+						<onclick>Skin.Reset(CinemaScript_HomeMenu)</onclick>
+						<selected>Skin.HasSetting(CinemaScript_MovieInfo)</selected>
 					</control>
-					<control type="image" id="510">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-						<visible>false</visible>
+					<control type="radiobutton" id="510">
+						<label>$LOCALIZE[31214]</label>
+						<onclick>Skin.ToggleSetting(CinemaScript_HomeMenu)</onclick>
+						<onclick>Skin.Reset(CinemaScript_MovieInfo)</onclick>
+						<selected>Skin.HasSetting(CinemaScript_HomeMenu)</selected>
 					</control>
 					<control type="image" id="511">
 						<width>880</width>

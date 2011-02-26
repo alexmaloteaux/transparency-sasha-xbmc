@@ -305,7 +305,7 @@
 					<onright>1112</onright>
 					<onup>5</onup>
 					<ondown>50</ondown>
-					<animation effect="slide" start="0,0" end="-55,0" time="0" condition="Skin.HasSetting(CinemaScript_Enable)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-55,0" time="0" condition="Skin.HasSetting(CinemaScript_MovieInfo)">Conditional</animation>
 					<visible>Container.Content(Movies) + !IsEmpty(Listitem.trailer)</visible>
 				</control>
 				<control type="button" id="1112">
@@ -324,7 +324,7 @@
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
 					<onclick>RunScript(script.cinema.experience)</onclick>
-					<visible>Container.Content(Movies) + Skin.HasSetting(CinemaScript_Enable)</visible>
+					<visible>Container.Content(Movies) + Skin.HasSetting(CinemaScript_MovieInfo)</visible>
 				</control>
 			</control>
 			<control type="label">
