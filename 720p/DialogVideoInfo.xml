@@ -292,6 +292,7 @@
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
 			</control>
 			<control type="group" id="1110">
+				<ondown>61</ondown>
 				<control type="button" id="11">
 					<posx>1195</posx>
 					<posy>471</posy>
@@ -304,7 +305,7 @@
 					<onleft>1112</onleft>
 					<onright>1112</onright>
 					<onup>5</onup>
-					<ondown>50</ondown>
+					<ondown>61</ondown>
 					<animation effect="slide" start="0,0" end="-55,0" time="0" condition="Skin.HasSetting(CinemaScript_MovieInfo)">Conditional</animation>
 					<visible>Container.Content(Movies) + !IsEmpty(Listitem.trailer)</visible>
 				</control>
@@ -320,7 +321,7 @@
 					<onleft>11</onleft>
 					<onright>11</onright>
 					<onup>5</onup>
-					<ondown>50</ondown>
+					<ondown>61</ondown>
 					<onclick>Dialog.Close(MovieInformation)</onclick>
 					<onclick>Playlist.Clear</onclick>
 					<onclick>RunScript(script.cinema.experience)</onclick>

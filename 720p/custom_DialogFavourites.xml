@@ -80,7 +80,7 @@
 			</control>
 			<control type="image">
 				<posx>185</posx>
-				<posy>620</posy>
+				<posy>600</posy>
 				<width>930</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -89,11 +89,11 @@
 				<posx>185</posx>
 				<posy>135</posy>
 				<width>510</width>
-				<height>465</height>
+				<height>436</height>
 				<onup>450</onup>
 				<onleft>450</onleft>
 				<onright>61</onright>
-				<ondown>450</ondown>
+				<ondown>1001</ondown>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout width="510" height="29">
@@ -292,18 +292,36 @@
 				<posx>698</posx>
 				<posy>135</posy>
 				<width>20</width>
-				<height>470</height>
+				<height>441</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
 				<onleft>450</onleft>
-				<onright>450</onright>
+				<onright>1001</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 			</control>
 			<include>CommonFileCount2</include>
+			<control type="button" id="1001">
+				<description>Cancel Button</description>
+				<posx>540</posx>
+				<posy>614</posy>
+				<width>200</width>
+				<height>35</height>
+				<label>$LOCALIZE[222]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus border="7">button-focus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<label>186</label>
+				<onleft>1001</onleft>
+				<onright>1001</onright>
+				<onup>450</onup>
+				<ondown>450</ondown>
+				<onclick>Dialog.Close(1114)</onclick>
+			</control>
 		</control>
 	</controls>
 </window>
