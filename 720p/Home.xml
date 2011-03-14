@@ -250,6 +250,7 @@
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Footer_Animation</include>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Home_Panel_Hor_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Footer1</include>
+				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 				<control type="image">
 					<posx>0</posx>
 					<posy>66r</posy>
@@ -268,7 +269,6 @@
 					<textcolor>blue</textcolor>
 					<titlecolor>blue</titlecolor>
 					<headlinecolor>white</headlinecolor>
-					<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 				</control>
 			</control>
 		</control>
