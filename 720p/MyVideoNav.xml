@@ -167,7 +167,7 @@
 					<onleft>50</onleft>
 					<onright>4</onright>
 					<onup>2</onup>
-					<ondown>5</ondown>
+					<ondown>7</ondown>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
@@ -178,17 +178,16 @@
 					<onleft>3</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
-					<ondown>5</ondown>
+					<ondown>7</ondown>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ToggleButtonNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ToggleButtonWide</include>
 				</control>
-				<control type="radiobutton" id="5">
-					<description>Library button</description>
+				<control type="radiobutton" id="7">
+					<description>Stack button</description>
 					<posx>0</posx>
 					<posy>90</posy>
-					<label>$LOCALIZE[29800]</label>
+					<label>$LOCALIZE[346]</label>
 					<include>ButtonCommonValues</include>
-					<selected>Window.IsVisible(MyVideoLibrary)</selected>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>3</onup>
@@ -202,7 +201,7 @@
 					<label>20367</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>5</onup>
+					<onup>7</onup>
 					<ondown>8</ondown>
 				</control>
 				<control type="button" id="8">
@@ -305,7 +304,7 @@
 			<include>CommonFileCount</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
-				<include>Breadcrumbs-Video-Library</include>
+				<include>Breadcrumbs-Videos</include>
 			</control>
 		</control>
 		<control type="button" id="9999">

@@ -86,7 +86,7 @@
 					<effect type="fade" start="0" end="100" time="0" delay="450"/>
 					<effect type="rotatey" center="640" start="-90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
-				<visible>Control.IsVisible(590) + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7011) + !Control.IsVisible(7012)</visible>
+				<visible>Control.IsVisible(590) + ![Container.Content(Movies) + ListItem.IsFolder] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7011) + !Control.IsVisible(7012)</visible>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay51</include>
 				<control type="image">
 					<posx>160</posx>
@@ -131,7 +131,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
-						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -144,33 +143,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Director]</label>
-						<visible>!Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalEpisodes)]</label>
-						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -183,7 +155,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[20417]:[/B][/UPPERCASE]</label>
-						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -196,59 +167,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Writer]</label>
-						<visible>!Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[16102]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(WatchedEpisodes)]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>245</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[16101]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>265</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -285,7 +203,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
-						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -298,7 +215,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-						<visible>!Container.Content(TVShows) + !substring(ListItem.Duration,min)</visible>
+						<visible>!substring(ListItem.Duration,min)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -311,33 +228,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Duration]</label>
-						<visible>!Container.Content(TVShows) + substring(ListItem.Duration,min)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>345</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20074]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Mpaa]</label>
-						<visible>Container.Content(TVShows)</visible>
+						<visible>substring(ListItem.Duration,min)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -625,7 +516,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(590)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<include condition="Skin.HasSetting(MoviesExtraThumbs) + Window.IsVisible(VideoLibrary) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
 		</control>
 		<control type="wraplist" id="590">
 			<include>Window_OpenClose_Animation</include>

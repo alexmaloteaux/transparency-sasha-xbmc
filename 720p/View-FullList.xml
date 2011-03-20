@@ -28,6 +28,15 @@
 					<width>40</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<visible>!Container.Content(Addons)</visible>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>40</width>
+					<height>22</height>
+					<texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+					<visible>Container.Content(Addons)</visible>
 				</control>
 				<control type="label">
 					<posx>60</posx>
@@ -79,6 +88,15 @@
 					<width>40</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<visible>!Container.Content(Addons)</visible>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>40</width>
+					<height>22</height>
+					<texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+					<visible>Container.Content(Addons)</visible>
 				</control>
 				<control type="label">
 					<posx>60</posx>
@@ -160,7 +178,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
-					<animation effect="slide" start="0,0" end="40,0" time="0" condition="[Window.IsVisible(VideoFiles) + Container.Content(TVShows) + Skin.HasSetting(Enable_TVShows_Watched_Flags)]">Conditional</animation>
 					<animation effect="slide" start="0,0" end="40,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
 				</control>
 				<control type="image">
@@ -170,7 +187,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [[Window.IsVisible(VideoPlaylist) | Window.IsVisible(VideoFiles)] + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout width="880" height="29">
@@ -222,7 +239,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
-					<animation effect="slide" start="0,0" end="40,0" time="0" condition="[Window.IsVisible(VideoFiles) + Container.Content(TVShows) + Skin.HasSetting(Enable_TVShows_Watched_Flags)]">Conditional</animation>
 					<animation effect="slide" start="0,0" end="40,0" time="0" condition="[Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]">Conditional</animation>
 				</control>
 				<control type="image">
@@ -232,14 +248,14 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [[Window.IsVisible(VideoPlaylist) | Window.IsVisible(VideoFiles)] + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 			</focusedlayout>
 		</control>
 	</include>
 	<include name="FullList_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Window.IsVisible(VideoFiles)</visible>
+			<visible>Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay25</include>
 			<control type="image">

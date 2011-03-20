@@ -1588,7 +1588,7 @@
 					<height>61</height>
 					<texture>movieset.png</texture>
 					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>208</posx>
@@ -1597,7 +1597,7 @@
 					<height>61</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">movieset.png</texture>
 					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 			</control>
 		</control>
@@ -1702,7 +1702,7 @@
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>Container.Content(Movies)</visible>
 			</control>
 		</control>
 		<control type="group">

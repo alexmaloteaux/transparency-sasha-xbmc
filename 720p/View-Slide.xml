@@ -1448,7 +1448,7 @@
 					<height>41</height>
 					<texture>movieset.png</texture>
 					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1732,7 +1732,7 @@
 				<width>1280</width>
 				<height>81</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>Skin.HasSetting(Enable_Movies_Media_Flags) | Window.IsVisible(VideoFiles)</visible>
+				<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay115</include>
 			<control type="image">
@@ -1741,7 +1741,7 @@
 				<width>1280</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>
@@ -1799,7 +1799,7 @@
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>!Container.Content(TVShows) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>!Container.Content(TVShows)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1859,7 +1859,7 @@
 					<effect type="fade" start="0" end="100" time="0" delay="450"/>
 					<effect type="rotatey" center="640" start="-90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
-				<visible>Control.IsVisible(596) + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
+				<visible>Control.IsVisible(596) + ![Container.Content(Movies) + ListItem.IsFolder] + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay51</include>
 				<control type="image">
 					<posx>160</posx>
@@ -2193,11 +2193,6 @@
 					</control>
 				</control>
 			</control>
-		</control>
-		<control type="group">
-			<visible>Control.IsVisible(596)</visible>
-			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<include condition="Skin.HasSetting(MoviesExtraThumbs) + Window.IsVisible(VideoFiles) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies-files</include>
 		</control>
 	</include>
 </includes>

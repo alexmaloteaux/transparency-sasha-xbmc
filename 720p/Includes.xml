@@ -676,51 +676,7 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
-	<include name="Breadcrumbs-Video-Files">
-		<control type="image">
-			<width>29</width>
-			<height>30</height>
-			<texture>dot.png</texture>
-		</control>
-		<control type="label">
-			<description>Video-Files</description>
-			<label>$LOCALIZE[31021]</label>
-			<include>WindowTitleCommons</include>
-		</control>
-		<control type="image">
-			<width>29</width>
-			<height>30</height>
-			<texture>dot.png</texture>
-			<animation effect="fade" start="0" end="100" center="0,15" time="400">Visible</animation>
-			<animation effect="fade" start="100" end="0" center="0,15" time="400">Hidden</animation>
-			<visible>Control.IsVisible(1101)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Movies</description>
-			<label>$LOCALIZE[342]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Container.Content(Movies)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>TV Shows</description>
-			<label>$LOCALIZE[20343]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Container.Content(TVShows)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Music Videos</description>
-			<label>$LOCALIZE[20389]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Container.Content(MusicVideos)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Video Plugins</description>
-			<label>$LOCALIZE[1037]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,plugin://video/,Left)</visible>
-		</control>
-	</include>
-	<include name="Breadcrumbs-Video-Library">
+	<include name="Breadcrumbs-Videos">
 		<control type="image">
 			<width>29</width>
 			<height>30</height>
@@ -1414,7 +1370,7 @@
 				<width>600</width>
 				<height>90</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient7</include>
 			<control type="image">
@@ -1423,7 +1379,7 @@
 				<width>600</width>
 				<height>50</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="videowindow">
 				<posx>5</posx>
@@ -1442,7 +1398,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1455,7 +1411,7 @@
 				<font>font-19</font>
 				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1468,7 +1424,7 @@
 				<font>font-19</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1481,7 +1437,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>175</posx>
@@ -1543,7 +1499,7 @@
 				<width>600</width>
 				<height>90</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient3</include>
 			<control type="image">
@@ -1552,7 +1508,7 @@
 				<width>600</width>
 				<height>50</height>
 				<texture border="3">gradient2.png</texture>
-				<visible>Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="image">
 				<posx>15</posx>
@@ -1580,7 +1536,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1593,7 +1549,7 @@
 				<font>font-19</font>
 				<textcolor>lightblue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1606,7 +1562,7 @@
 				<font>font-19</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -1619,7 +1575,7 @@
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>175</posx>
@@ -1793,55 +1749,55 @@
 		<onfocus>SetFocus(74)</onfocus>
 	</include>
 	<include name="movietitles-default">
-		<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
+		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
 	</include>
 	<include name="movietitles-cinema">
 		<onclick>RunScript(script.cinema.experience,movietitles)</onclick>
 	</include>
 	<include name="moviegenres-default">
-		<onclick>ActivateWindow(VideoLibrary,moviegenres,return)</onclick>
+		<onclick>ActivateWindow(Videos,moviegenres,return)</onclick>
 	</include>
 	<include name="moviegenres-cinema">
 		<onclick>RunScript(script.cinema.experience,moviegenres)</onclick>
 	</include>
 	<include name="movieyears-default">
-		<onclick>ActivateWindow(VideoLibrary,movieyears,return)</onclick>
+		<onclick>ActivateWindow(Videos,movieyears,return)</onclick>
 	</include>
 	<include name="movieyears-cinema">
 		<onclick>RunScript(script.cinema.experience,movieyears)</onclick>
 	</include>
 	<include name="movieactors-default">
-		<onclick>ActivateWindow(VideoLibrary,movieactors,return)</onclick>
+		<onclick>ActivateWindow(Videos,movieactors,return)</onclick>
 	</include>
 	<include name="movieactors-cinema">
 		<onclick>RunScript(script.cinema.experience,movieactors)</onclick>
 	</include>
 	<include name="moviedirectors-default">
-		<onclick>ActivateWindow(VideoLibrary,moviedirectors,return)</onclick>
+		<onclick>ActivateWindow(Videos,moviedirectors,return)</onclick>
 	</include>
 	<include name="moviedirectors-cinema">
 		<onclick>RunScript(script.cinema.experience,moviedirectors)</onclick>
 	</include>
 	<include name="moviestudios-default">
-		<onclick>ActivateWindow(VideoLibrary,moviestudios,return)</onclick>
+		<onclick>ActivateWindow(Videos,moviestudios,return)</onclick>
 	</include>
 	<include name="moviestudios-cinema">
 		<onclick>RunScript(script.cinema.experience,moviestudios)</onclick>
 	</include>
 	<include name="moviecountries-default">
-		<onclick>ActivateWindow(VideoLibrary,moviecountries,return)</onclick>
+		<onclick>ActivateWindow(Videos,moviecountries,return)</onclick>
 	</include>
 	<include name="moviecountries-cinema">
 		<onclick>RunScript(script.cinema.experience,moviecountries)</onclick>
 	</include>
 	<include name="moviesets-default">
-		<onclick>ActivateWindow(VideoLibrary,moviesets,return)</onclick>
+		<onclick>ActivateWindow(Videos,moviesets,return)</onclick>
 	</include>
 	<include name="moviesets-cinema">
 		<onclick>RunScript(script.cinema.experience,moviesets)</onclick>
 	</include>
 	<include name="recentlyaddedmovies-default">
-		<onclick>ActivateWindow(VideoLibrary,recentlyaddedmovies,return)</onclick>
+		<onclick>ActivateWindow(Videos,recentlyaddedmovies,return)</onclick>
 	</include>
 	<include name="recentlyaddedmovies-cinema">
 		<onclick>RunScript(script.cinema.experience,recentlyaddedmovies)</onclick>

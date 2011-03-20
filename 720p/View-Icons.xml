@@ -487,7 +487,7 @@
 				<animation effect="fade" reversible="false" start="0" end="100" time="300" delay="1200">Visible</animation>
 				<animation effect="fade" reversible="false" start="0" end="100" time="300" delay="1200">WindowOpen</animation>
 				<animation effect="fade" reversible="false" start="100" end="0" time="0">WindowClose</animation>
-				<visible>Control.HasFocus(57) + Container.Content(Movies) + ListItem.IsFolder + !Window.IsVisible(VideoFiles) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Control.HasFocus(57) + Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -514,13 +514,12 @@
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<include condition="Skin.HasSetting(MoviesExtraThumbs) + Window.IsVisible(VideoLibrary) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
-			<include condition="Skin.HasSetting(MoviesExtraThumbs) + Window.IsVisible(VideoFiles) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies-files</include>
+			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
 		</control>
 	</include>
 	<include name="Icons-Movies_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(57) + !Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies) + !Window.IsVisible(VideoFiles)</visible>
+			<visible>Control.IsVisible(57) + !Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<control type="group">
 				<posx>792</posx>

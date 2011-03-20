@@ -393,7 +393,7 @@
 			<width>600</width>
 			<height>90</height>
 			<texture border="3">gradient2.png</texture>
-			<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+			<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -404,7 +404,7 @@
 			<width>600</width>
 			<height>50</height>
 			<texture border="3">gradient2.png</texture>
-			<visible>Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
+			<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -425,7 +425,7 @@
 			<width>600</width>
 			<height>90</height>
 			<texture border="3">gradient2.png</texture>
-			<visible>Window.IsVisible(VideoFiles) | [!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
+			<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -436,7 +436,7 @@
 			<width>600</width>
 			<height>50</height>
 			<texture border="3">gradient2.png</texture>
-			<visible>Window.IsVisible(VideoLibrary) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
+			<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -675,7 +675,7 @@
 			<width>1280</width>
 			<height>81</height>
 			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-			<visible>Skin.HasSetting(Enable_Movies_Media_Flags) | Window.IsVisible(VideoFiles)</visible>
+			<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>
@@ -686,7 +686,7 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-			<visible>!Skin.HasSetting(Enable_Movies_Media_Flags) + !Window.IsVisible(VideoFiles) </visible>
+			<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			<include>T-Level</include>
 		</control>
 	</include>

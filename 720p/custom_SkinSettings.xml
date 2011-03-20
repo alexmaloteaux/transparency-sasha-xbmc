@@ -2906,31 +2906,26 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="417">
-						<label>$LOCALIZE[3] - $LOCALIZE[16102]</label>
-						<onclick>Skin.ToggleSetting(Enable_Videos_Watched_Flags)</onclick>
-						<selected>!Skin.HasSetting(Enable_Videos_Watched_Flags)</selected>
-					</control>
-					<control type="radiobutton" id="418">
 						<label>$LOCALIZE[20342] - $LOCALIZE[16102]</label>
 						<onclick>Skin.ToggleSetting(Enable_Movies_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Movies_Watched_Flags)</selected>
 					</control>
-					<control type="radiobutton" id="419">
+					<control type="radiobutton" id="418">
 						<label>$LOCALIZE[20343] - $LOCALIZE[16102]</label>
 						<onclick>Skin.ToggleSetting(Enable_TVShows_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</selected>
 					</control>
-					<control type="radiobutton" id="420">
+					<control type="radiobutton" id="419">
 						<label>$LOCALIZE[20389] - $LOCALIZE[16102]</label>
 						<onclick>Skin.ToggleSetting(Enable_MusicVideos_Watched_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</selected>
 					</control>
-					<control type="image" id="421">
+					<control type="image" id="420">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="422">
+					<control type="radiobutton" id="421">
 						<label>$LOCALIZE[20342] - $LOCALIZE[31149]</label>
 						<onclick>Skin.ToggleSetting(Hide_Trailer_Icon)</onclick>
 						<selected>Skin.HasSetting(Hide_Trailer_Icon)</selected>
@@ -4023,24 +4018,6 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub)</selected>
 					</control>
 					<control type="radiobutton" id="8102">
-						<description>Menu Videos Sub VideoPlugins</description>
-						<label>[B]$LOCALIZE[1037][/B]</label>
-						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(VideosCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_VideoPlugins)</onclick>
-						<selected>Skin.HasSetting(Menu_Videos_Sub_VideoPlugins)</selected>
-						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
-					</control>
-					<control type="radiobutton" id="8103">
-						<description>Menu Videos Sub Recordings</description>
-						<label>[B]$LOCALIZE[20007][/B]</label>
-						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(VideosCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Recordings)</onclick>
-						<selected>Skin.HasSetting(Menu_Videos_Sub_Recordings)</selected>
-						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
-					</control>
-					<control type="radiobutton" id="8104">
 						<description>Menu Videos Sub Custom1</description>
 						<label>[B]$LOCALIZE[20334] 1$INFO[Skin.String(Menu_Videos_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4049,7 +4026,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom1)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8105">
+					<control type="radiobutton" id="8103">
 						<description>Menu Videos Sub Custom2</description>
 						<label>[B]$LOCALIZE[20334] 2$INFO[Skin.String(Menu_Videos_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4058,7 +4035,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom2)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8106">
+					<control type="radiobutton" id="8104">
 						<description>Menu Videos Sub Custom3</description>
 						<label>[B]$LOCALIZE[20334] 3$INFO[Skin.String(Menu_Videos_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4067,7 +4044,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom3)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8107">
+					<control type="radiobutton" id="8105">
 						<description>Menu Videos Sub Custom4</description>
 						<label>[B]$LOCALIZE[20334] 4$INFO[Skin.String(Menu_Videos_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4076,7 +4053,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom4)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8108">
+					<control type="radiobutton" id="8106">
 						<description>Menu Videos Sub Custom5</description>
 						<label>[B]$LOCALIZE[20334] 5$INFO[Skin.String(Menu_Videos_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4085,7 +4062,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom5)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8109">
+					<control type="radiobutton" id="8107">
 						<description>Menu Videos Sub Custom6</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Videos_Sub_Custom6_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4094,7 +4071,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom6)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8110">
+					<control type="radiobutton" id="8108">
 						<description>Menu Videos Sub Custom7</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Videos_Sub_Custom7_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4103,7 +4080,7 @@
 						<selected>Skin.HasSetting(Menu_Videos_Sub_Custom7)</selected>
 						<enable>Skin.HasSetting(Menu_Videos_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8111">
+					<control type="radiobutton" id="8109">
 						<description>Menu Videos Sub Custom8</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Videos_Sub_Custom8_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -6121,7 +6098,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom1) + Skin.String(VideosCustom,1)</visible>
-					<posy>217</posy>
+					<posy>161</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom1 Label</description>
@@ -6140,7 +6117,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom2) + Skin.String(VideosCustom,2)</visible>
-					<posy>245</posy>
+					<posy>189</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom2 Label</description>
@@ -6159,7 +6136,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom3) + Skin.String(VideosCustom,3)</visible>
-					<posy>273</posy>
+					<posy>217</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom3 Label</description>
@@ -6178,7 +6155,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom4) + Skin.String(VideosCustom,4)</visible>
-					<posy>301</posy>
+					<posy>245</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom4 Label</description>
@@ -6198,7 +6175,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom5) + Skin.String(VideosCustom,5)</visible>
-					<posy>329</posy>
+					<posy>273</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom5 Label</description>
@@ -6218,7 +6195,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom6) + Skin.String(VideosCustom,6)</visible>
-					<posy>357</posy>
+					<posy>301</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom6 Label</description>
@@ -6238,7 +6215,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom7) + Skin.String(VideosCustom,7)</visible>
-					<posy>385</posy>
+					<posy>329</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom7 Label</description>
@@ -6258,7 +6235,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,1) + !Skin.HasSetting(Menu_Videos) + Skin.HasSetting(Menu_Videos_Sub) + Skin.HasSetting(Menu_Videos_Sub_Custom8) + Skin.String(VideosCustom,8)</visible>
-					<posy>413</posy>
+					<posy>357</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Videos Sub Custom8 Label</description>
@@ -8640,7 +8617,7 @@
 				</control>
 				<control type="image">
 					<posx>810</posx>
-					<posy>222</posy>
+					<posy>166</posy>
 					<width>25</width>
 					<height>19</height>
 					<texture>nav-right.png</texture>

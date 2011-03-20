@@ -1,6 +1,6 @@
 <includes>
 	<include name="cdart-home">
-		<control type="image">
+		<control type="image">fil
 			<description>dirty hack for showing cdart image</description>
 			<posx>816</posx>
 			<posy>4</posy>
@@ -222,66 +222,6 @@
 			<visible>![substring(ListItem.Path,lastfm://) | substring(ListItem.Path,shout://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,lastfm://) | substring(Container.FolderPath,shout://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
 		</control>
 	</include>
-	<include name="fanart-myvideo">
-		<control type="image">
-			<description>dirty hack for fanart in filemode for seasons</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for fanart in filemode for episode view</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)]</visible>
-		</control>
-	</include>
-	<include name="fanart-myvideoplaylist">
-		<control type="image">
-			<description>dirty hack for fanart for movies queued from filemode</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://)</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for fanart for episodes queued from filemode</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(ListItem.Path,plugin://)</visible>
-		</control>
-	</include>
 	<include name="fanart-Programs_Pictures">
 		<control type="image">
 			<description>dirty hack for (inside folder) fanart in programs pictures scripts</description>
@@ -339,36 +279,6 @@
 			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
-	<include name="fanart-extra-movies-files">
-		<control type="multiimage" id="6103">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="multiimage" id="6104">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[Container.FolderPath,,extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-	</include>
 	<include name="fanart-extra-tvshows">
 		<control type="multiimage" id="6105">
 			<posx>0</posx>
@@ -397,50 +307,6 @@
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-	</include>
-	<include name="fanart-extra-tvshows-files">
-		<control type="multiimage" id="6107">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="multiimage" id="6108">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[ListItem.FolderName,,extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="multiimage" id="6109">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-music">
@@ -529,32 +395,6 @@
 			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
-	<include name="fanart-seasons-filemode">
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Path) + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-	</include>
 	<include name="moviedisc-dvd-View_Icons">
 		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
 		<visible>!stringcompare(ListItem.Label,..)</visible>
@@ -620,58 +460,6 @@
 			<aspectratio scalediffuse="false">scale</aspectratio>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-	</include>
-	<include name="thumbs-extra-movies-files">
-		<animation effect="slide" start="0,0" end="00,100" time="0" condition="Control.IsVisible(596)">Conditional</animation>
-		<control type="image">
-			<posx>14</posx>
-			<posy>14</posy>
-			<width>235</width>
-			<height>132</height>
-			<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.FileNameAndPath,,extrathumbs/thumb1.jpg]</texture>
-			<bordertexture border="9">video-shadow.png</bordertexture>
-			<bordersize>8</bordersize>
-			<aspectratio scalediffuse="false">scale</aspectratio>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="image">
-			<posx>14</posx>
-			<posy>152</posy>
-			<width>235</width>
-			<height>132</height>
-			<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.FileNameAndPath,,extrathumbs/thumb2.jpg]</texture>
-			<bordertexture border="9">video-shadow.png</bordertexture>
-			<bordersize>8</bordersize>
-			<aspectratio scalediffuse="false">scale</aspectratio>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<animation effect="slide" start="0,0" end="10,70" time="0" condition="Control.IsVisible(57)">Conditional</animation>
-		<control type="image">
-			<posx>14</posx>
-			<posy>14</posy>
-			<width>235</width>
-			<height>132</height>
-			<texture background="true" diffuse="video-diffuse.png">$INFO[Container.FolderPath,,extrathumbs/thumb1.jpg]</texture>
-			<bordertexture border="9">video-shadow.png</bordertexture>
-			<bordersize>8</bordersize>
-			<aspectratio scalediffuse="false">scale</aspectratio>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="image">
-			<posx>14</posx>
-			<posy>152</posy>
-			<width>235</width>
-			<height>132</height>
-			<texture background="true" diffuse="video-diffuse.png">$INFO[Container.FolderPath,,extrathumbs/thumb2.jpg]</texture>
-			<bordertexture border="9">video-shadow.png</bordertexture>
-			<bordersize>8</bordersize>
-			<aspectratio scalediffuse="false">scale</aspectratio>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
 	<include name="tvlogo">
