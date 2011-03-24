@@ -42,6 +42,15 @@
 				<visible>Player.Seeking</visible>
 			</control>
 			<control type="progress">
+				<description>Progressbar Cache</description>
+				<posx>100</posx>
+				<posy>9</posy>
+				<width>205</width>
+				<height>15</height>
+				<info>Player.ProgressCache</info>
+				<midtexture border="10,0,10,0">ProgressCache.png</midtexture>
+			</control>
+			<control type="progress">
 				<description>Progressbar</description>
 				<posx>100</posx>
 				<posy>9</posy>

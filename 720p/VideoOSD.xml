@@ -234,6 +234,15 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="progress">
+					<description>Progressbar Cache</description>
+					<posx>420</posx>
+					<posy>140</posy>
+					<width>741</width>
+					<height>15</height>
+					<info>Player.ProgressCache</info>
+					<midtexture border="10,0,10,0">ProgressCache.png</midtexture>
+				</control>
+				<control type="progress">
 					<description>Progressbar</description>
 					<posx>420</posx>
 					<posy>140</posy>
