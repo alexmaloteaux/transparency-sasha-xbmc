@@ -659,11 +659,36 @@
 			<posy>110</posy>
 			<animation effect="slide" start="0,0" end="0,252" time="0" condition="[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			<control type="label">
+				<description>Seasons txt</description>
+				<posx>225</posx>
+				<posy>130</posy>
+				<width>240</width>
+				<height>20</height>
+				<label>[UPPERCASE][B]$LOCALIZE[33054]:[/UPPERCASE][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<description>Seasons Value</description>
+				<posx>232</posx>
+				<posy>130</posy>
+				<width>220</width>
+				<height>20</height>
+				<label fallback="416">$INFO[ListItem.Property(TotalSeasons)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
 				<description>Episodes txt</description>
 				<posx>225</posx>
-				<posy>135</posy>
+				<posy>150</posy>
 				<width>240</width>
-				<height>25</height>
+				<height>20</height>
 				<label>[UPPERCASE][B]$LOCALIZE[20360]:[/UPPERCASE][/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -674,9 +699,9 @@
 			<control type="label">
 				<description>Episodes Value</description>
 				<posx>232</posx>
-				<posy>135</posy>
+				<posy>150</posy>
 				<width>220</width>
-				<height>25</height>
+				<height>20</height>
 				<label fallback="416">$INFO[ListItem.Property(TotalEpisodes)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -686,9 +711,9 @@
 			<control type="label">
 				<description>Date txt</description>
 				<posx>225</posx>
-				<posy>160</posy>
+				<posy>170</posy>
 				<width>240</width>
-				<height>25</height>
+				<height>20</height>
 				<label>[UPPERCASE][B]$LOCALIZE[20416]:[/UPPERCASE][/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -699,9 +724,9 @@
 			<control type="label">
 				<description>Date Value</description>
 				<posx>232</posx>
-				<posy>160</posy>
+				<posy>170</posy>
 				<width>220</width>
-				<height>25</height>
+				<height>20</height>
 				<label fallback="416">$INFO[ListItem.Date]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -711,9 +736,9 @@
 			<control type="label">
 				<description>Studio txt</description>
 				<posx>225</posx>
-				<posy>160</posy>
+				<posy>170</posy>
 				<width>240</width>
-				<height>25</height>
+				<height>20</height>
 				<label>[UPPERCASE][B]$LOCALIZE[572]:[/UPPERCASE][/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -724,9 +749,9 @@
 			<control type="label">
 				<description>Studio Value</description>
 				<posx>232</posx>
-				<posy>160</posy>
+				<posy>170</posy>
 				<width>220</width>
-				<height>25</height>
+				<height>20</height>
 				<label fallback="416">$INFO[ListItem.Studio]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -736,9 +761,9 @@
 			<control type="label">
 				<description>Genre txt</description>
 				<posx>225</posx>
-				<posy>185</posy>
+				<posy>190</posy>
 				<width>240</width>
-				<height>25</height>
+				<height>20</height>
 				<label>[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -749,9 +774,9 @@
 			<control type="label">
 				<description>Genre Value</description>
 				<posx>232</posx>
-				<posy>185</posy>
+				<posy>190</posy>
 				<width>220</width>
-				<height>25</height>
+				<height>20</height>
 				<label fallback="416">$INFO[ListItem.Genre]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -763,7 +788,7 @@
 				<posx>0</posx>
 				<posy>210</posy>
 				<width>440</width>
-				<height>25</height>
+				<height>20</height>
 				<label fallback="416">[COLOR=lightgrey]($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]])[/COLOR]</label>
 				<align>center</align>
 				<aligny>center</aligny>

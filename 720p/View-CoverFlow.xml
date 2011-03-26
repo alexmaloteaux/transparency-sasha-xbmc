@@ -1689,7 +1689,7 @@
 				<posy>60</posy>
 				<width>577</width>
 				<height>40</height>
-				<label>[B]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ][/B]</label>
+				<label>[B]$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ][/B]</label>
 				<textcolor>lightblue</textcolor>
 				<font>font-21</font>
 				<align>center</align>

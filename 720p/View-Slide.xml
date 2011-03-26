@@ -1769,7 +1769,7 @@
 				<posy>60</posy>
 				<width>577</width>
 				<height>40</height>
-				<label>[B]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ][/B]</label>
+				<label>[B]$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ][/B]</label>
 				<textcolor>lightblue</textcolor>
 				<font>font-21</font>
 				<align>center</align>
@@ -1922,27 +1922,27 @@
 					<control type="label">
 						<posx>257</posx>
 						<posy>195</posy>
-						<width>300</width>
+						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
+						<label>[UPPERCASE][B]$LOCALIZE[33054]:[/B][/UPPERCASE]</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
 						<posy>215</posy>
-						<width>300</width>
+						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalEpisodes)]</label>
+						<label>$INFO[ListItem.Property(TotalSeasons)]</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
@@ -1995,6 +1995,32 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Property(WatchedEpisodes)]</label>
+						<visible>Container.Content(TVShows)</visible>
+					</control>
+					<control type="label">
+						<posx>407</posx>
+						<posy>195</posy>
+						<width>150</width>
+						<height>30</height>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
+						<visible>Container.Content(TVShows)</visible>
+					</control>
+					<control type="label">
+						<posx>407</posx>
+						<posy>215</posy>
+						<width>150</width>
+						<height>30</height>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(TotalEpisodes)]</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">

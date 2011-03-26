@@ -662,9 +662,9 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>57</posx>
-						<posy>212</posy>
+						<posy>211</posy>
 						<width>1200</width>
-						<height>210</height>
+						<height>240</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>5</onup>
@@ -751,6 +751,12 @@
 							</control>
 						</focusedlayout>
 						<content>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[33054]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.Property(TotalSeasons)]</label2>
+								<onclick>-</onclick>
+								<visible>StringCompare(Container.FolderPath,videodb://2/2/)</visible>
+							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Property(TotalEpisodes)] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label2>

@@ -528,7 +528,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
+				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ] $INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
 				<visible>!Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
@@ -541,7 +541,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
+				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
 				<visible>Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="textbox">
