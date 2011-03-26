@@ -375,7 +375,7 @@
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label2>
+							<label2>$INFO[ListItem.Album]$INFO[ListItem.DiscNumber, ($LOCALIZE[427] ,)]</label2>
 							<onclick>-</onclick>
 						</item>
 						<item>
