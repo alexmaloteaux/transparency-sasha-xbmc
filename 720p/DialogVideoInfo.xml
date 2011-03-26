@@ -134,7 +134,8 @@
 				<control type="group" id="9000">
 					<posx>250</posx>
 					<posy>382</posy>
-					<animation effect="slide" start="0,0" end="-220,42" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-220,42" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-110,42" time="0" condition="Container.Content(TvShows) + !SubString(Container.FolderPath,videodb://2/2/,left) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-110,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
 					<control type="button" id="5">
@@ -278,7 +279,8 @@
 				<animation effect="slide" start="0,0" end="800,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="1000,0" time="200" condition="Control.HasFocus(1113) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="800,50" time="200" condition="Control.HasFocus(1113) + Skin.HasSetting(TVShowsPosters)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-220,42" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-220,42" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-110,42" time="0" condition="Container.Content(TvShows) + !SubString(Container.FolderPath,videodb://2/2/,left) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-110,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
