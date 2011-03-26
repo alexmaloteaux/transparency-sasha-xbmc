@@ -1232,7 +1232,7 @@
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
-			<include condition="!Window.IsVisible(Musicfiles) + !Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
+			<include condition="!Window.IsVisible(MusicFiles) + !Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			<control type="label">
 				<posx>262</posx>
 				<posy>577</posy>
@@ -1269,9 +1269,8 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist) </visible>
+				<label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
+				<visible>Container.Content(Songs) + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>865</posx>
@@ -1283,9 +1282,34 @@
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
+				<label>$INFO[ListItem.Duration]</label>
+				<visible>Container.Content(Songs) + !ListItem.IsPlaying + !Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="label">
+				<posx>262</posx>
+				<posy>618</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Window.IsVisible(MusicFiles) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="label">
+				<posx>865</posx>
+				<posy>618</posy>
+				<width>200</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>right</align>
+				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label2]</label>
-				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles) | Window.IsVisible(MusicPlaylist)] + !ListItem.IsPlaying + !Window.IsVisible(MusicPlaylist)</visible>
+				<visible>Window.IsVisible(MusicFiles) + !ListItem.IsPlaying + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1298,8 +1322,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(Musicfiles)] + !Window.IsVisible(MusicPlaylist)</visible>
+				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
+				<visible>[Container.Content(Songs) | Window.IsVisible(MusicFiles)] + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1338,8 +1362,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[MusicPlayer.Title]</label>
-				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>Window.IsVisible(MusicPlaylist) </visible>
+				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
+				<visible>Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1352,8 +1376,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[MusicPlayer.Artist]</label>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(Musicfiles)">conditional</animation>
-				<visible>Window.IsVisible(MusicPlaylist) </visible>
+				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
+				<visible>Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1512,7 +1536,7 @@
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Window.IsVisible(Musicfiles)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="image">
 				<posx>34</posx>
@@ -1521,7 +1545,7 @@
 				<height>208</height>
 				<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="image">
 				<posx>8</posx>
@@ -1530,7 +1554,7 @@
 				<height>225</height>
 				<texture>cdcase-shadow.png</texture>
 				<description>music fanart view</description>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>12</posx>
@@ -1539,7 +1563,7 @@
 				<height>214</height>
 				<texture>cdcase.png</texture>
 				<description>music fanart view</description>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(Musicfiles) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
