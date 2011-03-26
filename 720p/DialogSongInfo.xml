@@ -280,9 +280,9 @@
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="49">
 					<posx>100</posx>
-					<posy>125</posy>
+					<posy>115</posy>
 					<width>1080</width>
-					<height>265</height>
+					<height>315</height>
 					<onleft>49</onleft>
 					<onright>49</onright>
 					<onup>13</onup>
@@ -391,6 +391,11 @@
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
 							<label2>$INFO[ListItem.Genre]</label2>
+							<onclick>-</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.PlayCount]</label2>
 							<onclick>-</onclick>
 						</item>
 						<item>

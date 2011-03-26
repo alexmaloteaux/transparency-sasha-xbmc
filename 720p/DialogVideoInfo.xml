@@ -472,21 +472,21 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>57</posx>
-						<posy>61</posy>
+						<posy>57</posy>
 						<width>1200</width>
-						<height>300</height>
+						<height>330</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout width="1200" height="25">
+						<itemlayout width="1200" height="23">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
 								<width>1166</width>
-								<height>25</height>
+								<height>23</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
@@ -494,7 +494,7 @@
 								<posx>160</posx>
 								<posy>0</posy>
 								<width>160</width>
-								<height>25</height>
+								<height>23</height>
 								<font>font-20c</font>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -506,7 +506,7 @@
 								<posx>175</posx>
 								<posy>0</posy>
 								<width>980</width>
-								<height>25</height>
+								<height>23</height>
 								<font>font-20</font>
 								<align>left</align>
 								<aligny>center</aligny>
@@ -515,12 +515,12 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout width="1200" height="25">
+						<focusedlayout width="1200" height="23">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
 								<width>1166</width>
-								<height>25</height>
+								<height>23</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
@@ -528,7 +528,7 @@
 								<posx>0</posx>
 								<posy>0</posy>
 								<width>1166</width>
-								<height>25</height>
+								<height>23</height>
 								<texture border="7">list-focus2.png</texture>
 								<include>VisibleFadeEffect</include>
 								<visible>Control.HasFocus(49)</visible>
@@ -538,7 +538,7 @@
 								<posx>160</posx>
 								<posy>0</posy>
 								<width>160</width>
-								<height>25</height>
+								<height>23</height>
 								<font>font-20c</font>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -550,7 +550,7 @@
 								<posx>175</posx>
 								<posy>0</posy>
 								<width>980</width>
-								<height>25</height>
+								<height>23</height>
 								<font>font-20</font>
 								<align>left</align>
 								<aligny>center</aligny>
@@ -601,6 +601,11 @@
 								<label2>$INFO[ListItem.Duration]</label2>
 								<onclick>-</onclick>
 								<visible>substring(ListItem.Duration,min)</visible>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.PlayCount]</label2>
+								<onclick>-</onclick>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
@@ -791,9 +796,9 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>57</posx>
-						<posy>68</posy>
+						<posy>58</posy>
 						<width>1200</width>
-						<height>350</height>
+						<height>380</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>5</onup>
@@ -932,6 +937,11 @@
 								<visible>substring(ListItem.Duration,min)</visible>
 							</item>
 							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.PlayCount]</label2>
+								<onclick>-</onclick>
+							</item>
+							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Rating]</label2>
 								<onclick>-</onclick>
@@ -951,9 +961,9 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>57</posx>
-						<posy>88</posy>
+						<posy>73</posy>
 						<width>1200</width>
-						<height>270</height>
+						<height>300</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>5</onup>
@@ -1080,6 +1090,11 @@
 								<label2>$INFO[ListItem.Duration]</label2>
 								<onclick>-</onclick>
 								<visible>substring(ListItem.Duration,min)</visible>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.PlayCount]</label2>
+								<onclick>-</onclick>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
