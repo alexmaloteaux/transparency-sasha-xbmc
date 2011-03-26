@@ -102,7 +102,7 @@
 				<visible>Container.Content(Albums)</visible>
 			</control>
 			<control type="group">
-				<animation effect="slide" start="0,0" end="60,-12" time="0" condition="Container.Content(Episodes)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="60,-12" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
 				<visible>!Container.Content(Artists) + !Container.Content(Albums)</visible>
 				<control type="label">
 					<posx>257</posx>
