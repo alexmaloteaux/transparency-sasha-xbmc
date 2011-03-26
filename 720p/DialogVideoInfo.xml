@@ -604,7 +604,7 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.PlayCount]</label2>
+								<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
 								<onclick>-</onclick>
 							</item>
 							<item>
@@ -938,7 +938,7 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.PlayCount]</label2>
+								<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
 								<onclick>-</onclick>
 							</item>
 							<item>
@@ -1093,7 +1093,7 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.PlayCount]</label2>
+								<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
 								<onclick>-</onclick>
 							</item>
 							<item>
