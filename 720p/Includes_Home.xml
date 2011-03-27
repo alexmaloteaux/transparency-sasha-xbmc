@@ -353,7 +353,7 @@
 				<posy>10</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>[B]$INFO[Weather.Location][/B]</label>
+				<label>[B]$INFO[Window(Weather).Property(Location)][/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-25</font>

@@ -593,13 +593,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<onclick>-</onclick>
-			<visible>Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3)</visible>
+			<visible>Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3) | Skin.String(WeatherPlus,4) | Skin.String(WeatherPlus,5) | Skin.String(WeatherPlus,6)</visible>
 		</control>
 		<control type="group">
 			<description>Today</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3)</visible>
+			<visible>[!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3) + !Skin.String(WeatherPlus,4) + !Skin.String(WeatherPlus,5) + !Skin.String(WeatherPlus,6)] | [Skin.String(WeatherPlus,6) + IsEmpty(Window.Property(Alerts.RSS))]</visible>
 			<control type="group">
 				<include>Window_OpenClose_Right_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Panel3</include>
@@ -2741,10 +2741,1277 @@
 			</control>
 		</control>
 		<control type="group">
-			<description>10 Day</description>
+			<description>36 Hour</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<visible>Skin.String(WeatherPlus,3)</visible>
+			<control type="group">
+				<control type="group">
+					<include>Window_OpenClose_Right_Animation</include>
+					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay29</include>
+					<control type="image">
+						<posx>0</posx>
+						<posy>33</posy>
+						<width>1280</width>
+						<height>690</height>
+						<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<include>Window_OpenClose_Left_Animation</include>
+					<control type="image">
+						<posx>61</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="image">
+						<posx>447</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="image">
+						<posx>833</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="image">
+						<posx>1219</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<description>36 hour 1</description>
+					<include>Window_OpenClose_Bottom_Animation</include>
+					<posx>61</posx>
+					<posy>70</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>386</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.1.Heading)][/B]</label>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>40</posy>
+						<width>286</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>70</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.1.DaylightTitle)] $INFO[Window.Property(36Hour.1.DaylightTime)][/B]</label>
+					</control>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_36Hour1_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_36Hour1_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>260</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.1.Outlook)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>320</posy>
+						<width>193</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[Window.Property(36Hour.1.TemperatureHeading)]</label>
+					</control>
+					<control type="label">
+						<posx>193</posx>
+						<posy>320</posy>
+						<width>193</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>340</posy>
+						<width>193</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.1.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>193</posx>
+						<posy>340</posy>
+						<width>193</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.1.Precipitation),,%][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>395</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[I]$LOCALIZE[10508]: [/I]</label>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>418</posy>
+						<width>206</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="textbox">
+						<posx>20</posx>
+						<posy>420</posy>
+						<width>346</width>
+						<height>280</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.1.Forecast)][/B]</label>
+					</control>
+				</control>
+				<control type="group">
+					<description>36 hour 2</description>
+					<include>Window_OpenClose_Top_Animation</include>
+					<posx>447</posx>
+					<posy>70</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>386</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.2.Heading)][/B]</label>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>40</posy>
+						<width>286</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>70</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.2.DaylightTitle)] $INFO[Window.Property(36Hour.2.DaylightTime)][/B]</label>
+					</control>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_36Hour2_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_36Hour2_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>260</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.2.Outlook)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>320</posy>
+						<width>193</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[Window.Property(36Hour.2.TemperatureHeading)]</label>
+					</control>
+					<control type="label">
+						<posx>193</posx>
+						<posy>320</posy>
+						<width>193</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>340</posy>
+						<width>193</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.2.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>193</posx>
+						<posy>340</posy>
+						<width>193</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.2.Precipitation),,%][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>395</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[I]$LOCALIZE[10508]: [/I]</label>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>418</posy>
+						<width>206</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="textbox">
+						<posx>20</posx>
+						<posy>420</posy>
+						<width>346</width>
+						<height>280</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.2.Forecast)][/B]</label>
+					</control>
+				</control>
+				<control type="group">
+					<description>36 hour 3</description>
+					<include>Window_OpenClose_Bottom_Animation</include>
+					<posx>833</posx>
+					<posy>70</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>386</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.3.Heading)][/B]</label>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>40</posy>
+						<width>286</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>70</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.3.DaylightTitle)] $INFO[Window.Property(36Hour.3.DaylightTime)][/B]</label>
+					</control>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_36Hour3_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_36Hour3_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>260</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.3.Outlook)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>320</posy>
+						<width>193</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[Window.Property(36Hour.3.TemperatureHeading)]</label>
+					</control>
+					<control type="label">
+						<posx>193</posx>
+						<posy>320</posy>
+						<width>193</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>340</posy>
+						<width>193</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.3.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>193</posx>
+						<posy>340</posy>
+						<width>193</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.3.Precipitation),,%][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>395</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[I]$LOCALIZE[10508]: [/I]</label>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>418</posy>
+						<width>206</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="textbox">
+						<posx>20</posx>
+						<posy>420</posy>
+						<width>346</width>
+						<height>280</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(36Hour.3.Forecast)][/B]</label>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<description>Weekend</description>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<visible>Skin.String(WeatherPlus,4)</visible>
+			<control type="group">
+				<control type="group">
+					<include>Window_OpenClose_Left_Animation</include>
+					<include condition="Skin.HasSetting(HateTransparency)">T-Underlay29</include>
+					<control type="image">
+						<posx>0</posx>
+						<posy>33</posy>
+						<width>1280</width>
+						<height>690</height>
+						<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<include>Window_OpenClose_Right_Animation</include>
+					<control type="image">
+						<posx>61</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="image">
+						<posx>447</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="image">
+						<posx>833</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="image">
+						<posx>1219</posx>
+						<posy>33</posy>
+						<width>1</width>
+						<height>687</height>
+						<texture>separator2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<description>Weekend 1</description>
+					<include>Window_OpenClose_Top_Animation</include>
+					<posx>61</posx>
+					<posy>70</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>386</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[15][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>30</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.Date)][/B]</label>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>70</posy>
+						<width>286</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>90</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[33027]: $INFO[Window.Property(Weekend.1.Sunrise)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>110</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[33028]: $INFO[Window.Property(Weekend.1.Sunset)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.Observed)][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Weekend1_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Weekend1_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>190</posy>
+						<width>125</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[391]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>210</posy>
+						<width>125</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.LowTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>261</posx>
+						<posy>190</posy>
+						<width>125</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[393]</label>
+					</control>
+					<control type="label">
+						<posx>261</posx>
+						<posy>210</posy>
+						<width>125</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>290</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.Outlook)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>350</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Precipitation),,%][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>370</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[404]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Wind)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>390</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[406]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Humidity)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>410</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[403]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.UV)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>460</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[I]$LOCALIZE[10508]: [/I]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>483</posy>
+						<width>206</width>
+						<height>1</height>
+						<texture>white.png</texture>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="textbox">
+						<posx>20</posx>
+						<posy>485</posy>
+						<width>346</width>
+						<height>215</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.Forecast)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>400</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedPrecipitation)][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>450</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31601]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedAvgLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31602]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedAvgHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>530</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31603]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedRecordLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>560</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31604]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedRecordHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+					</control>
+				</control>
+				<control type="group">
+					<description>Weekend 2</description>
+					<include>Window_OpenClose_Bottom_Animation</include>
+					<posx>447</posx>
+					<posy>70</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>386</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[15][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>30</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.Date)][/B]</label>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>70</posy>
+						<width>286</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>90</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[33027]: $INFO[Window.Property(Weekend.2.Sunrise)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>110</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[33028]: $INFO[Window.Property(Weekend.2.Sunset)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.Observed)][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Weekend2_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Weekend2_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>190</posy>
+						<width>125</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[391]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>210</posy>
+						<width>125</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.LowTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>261</posx>
+						<posy>190</posy>
+						<width>125</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[393]</label>
+					</control>
+					<control type="label">
+						<posx>261</posx>
+						<posy>210</posy>
+						<width>125</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>290</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.Outlook)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>350</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Precipitation),,%][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>370</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[404]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Wind)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>390</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[406]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Humidity)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>410</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[403]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.UV)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>460</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[I]$LOCALIZE[10508]: [/I]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>483</posy>
+						<width>206</width>
+						<height>1</height>
+						<texture>white.png</texture>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="textbox">
+						<posx>20</posx>
+						<posy>485</posy>
+						<width>346</width>
+						<height>215</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.Forecast)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>400</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedPrecipitation)][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>450</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31601]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedAvgLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31602]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedAvgHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>530</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31603]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedRecordLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>560</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31604]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedRecordHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+					</control>
+				</control>
+				<control type="group">
+					<description>Weekend 3</description>
+					<include>Window_OpenClose_Top_Animation</include>
+					<posx>833</posx>
+					<posy>70</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>386</width>
+						<height>30</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[15][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>30</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.Date)][/B]</label>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>70</posy>
+						<width>286</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>90</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[33027]: $INFO[Window.Property(Weekend.3.Sunrise)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>110</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$LOCALIZE[33028]: $INFO[Window.Property(Weekend.3.Sunset)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.Observed)][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Weekend3_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Weekend3_Icon</include>
+					<control type="label">
+						<posx>0</posx>
+						<posy>190</posy>
+						<width>125</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[391]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>210</posy>
+						<width>125</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.LowTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>261</posx>
+						<posy>190</posy>
+						<width>125</width>
+						<height>21</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[393]</label>
+					</control>
+					<control type="label">
+						<posx>261</posx>
+						<posy>210</posy>
+						<width>125</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-30</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>290</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.Outlook)][/B]</label>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>350</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.Precipitation),,%][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>370</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[404]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.Wind)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>390</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[406]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.Humidity)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>410</posy>
+						<width>386</width>
+						<height>20</height>
+						<align>center</align>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[403]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.UV)][/COLOR][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>460</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[I]$LOCALIZE[10508]: [/I]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>483</posy>
+						<width>206</width>
+						<height>1</height>
+						<texture>white.png</texture>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="textbox">
+						<posx>20</posx>
+						<posy>485</posy>
+						<width>346</width>
+						<height>215</height>
+						<align>center</align>
+						<font>font-21</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.Forecast)][/B]</label>
+						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>400</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedPrecipitation)][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>450</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31601]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedAvgLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>480</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31602]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedAvgHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>530</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31603]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedRecordLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>560</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$LOCALIZE[31604]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedRecordHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
+						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<description>10 Day</description>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<visible>Skin.String(WeatherPlus,5)</visible>
 			<control type="group">
 				<control type="group">
 					<include>Window_OpenClose_Right_Animation</include>
@@ -3730,6 +4997,56 @@
 				</control>
 			</control>
 		</control>
+		<control type="group">
+			<description>Hourly</description>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<visible>Skin.String(WeatherPlus,6) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
+			<control type="group">
+				<include>Window_OpenClose_Right_Animation</include>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Panel10</include>
+				<control type="image">
+					<posx>83</posx>
+					<posy>54</posy>
+					<width>1114</width>
+					<height>650</height>
+					<colordiffuse>AAFFFFFF</colordiffuse>
+					<texture border="30">panel.png</texture>
+					<bordertexture border="45">panel-shadow.png</bordertexture>
+					<bordersize>22</bordersize>
+				</control>
+				<control type="label">
+					<posx>180</posx>
+					<posy>100</posy>
+					<width>920</width>
+					<height>30</height>
+					<align>center</align>
+					<font>font-30c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[Window.Property(Alerts.Label)][/B]</label>
+				</control>
+				<control type="image">
+					<posx>180</posx>
+					<posy>140</posy>
+					<width>920</width>
+					<height>4</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="textbox">
+					<posx>180</posx>
+					<posy>160</posy>
+					<width>920</width>
+					<height>500</height>
+					<align>center</align>
+					<font>font-23</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[Window.Property(Alerts)][/B]</label>
+					<autoscroll time="3000" delay="20000" repeat="5000">true</autoscroll>
+				</control>
+			</control>
+		</control>
 	</include>
 	<include name="WeatherPlus_Current_Icon">
 		<control type="image">
@@ -4170,6 +5487,132 @@
 			<height>140</height>
 			<imagepath>weather/$INFO[Window.Property(Hourly.12.FanartCode)]</imagepath>
 			<colordiffuse>99FFFFFF</colordiffuse>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_36Hour1_Icon">
+		<control type="image">
+			<posx>123</posx>
+			<posy>110</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_36Hour2_Icon">
+		<control type="image">
+			<posx>123</posx>
+			<posy>110</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_36Hour3_Icon">
+		<control type="image">
+			<posx>123</posx>
+			<posy>110</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Animated_36Hour1_Icon">
+		<control type="multiimage">
+			<posx>123</posx>
+			<posy>110</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>weather/$INFO[Window.Property(36Hour.1.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_36Hour2_Icon">
+		<control type="multiimage">
+			<posx>123</posx>
+			<posy>110</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>weather/$INFO[Window.Property(36Hour.2.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_36Hour3_Icon">
+		<control type="multiimage">
+			<posx>123</posx>
+			<posy>110</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>weather/$INFO[Window.Property(36Hour.3.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Weekend1_Icon">
+		<control type="image">
+			<posx>123</posx>
+			<posy>140</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Weekend2_Icon">
+		<control type="image">
+			<posx>123</posx>
+			<posy>140</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Weekend3_Icon">
+		<control type="image">
+			<posx>123</posx>
+			<posy>140</posy>
+			<width>140</width>
+			<height>140</height>
+			<texture>$INFO[Window.Property(Weekend.3.OutlookIcon)]</texture>
+		</control>
+	</include>
+	<include name="Weather_Animated_Weekend1_Icon">
+		<control type="multiimage">
+			<posx>123</posx>
+			<posy>140</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>weather/$INFO[Window.Property(Weekend.1.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Weekend2_Icon">
+		<control type="multiimage">
+			<posx>123</posx>
+			<posy>140</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>weather/$INFO[Window.Property(Weekend.2.FanartCode)]</imagepath>
+			<timeperimage>100</timeperimage>
+			<randomize>false</randomize>
+			<fadetime>0</fadetime>
+		</control>
+	</include>
+	<include name="Weather_Animated_Weekend3_Icon">
+		<control type="multiimage">
+			<posx>123</posx>
+			<posy>140</posy>
+			<width>140</width>
+			<height>140</height>
+			<imagepath>weather/$INFO[Window.Property(Weekend.3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>

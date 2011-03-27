@@ -217,6 +217,19 @@
 			<include>T-Level</include>
 		</control>
 	</include>
+	<include name="T-Panel10">
+		<control type="image">
+			<posx>83</posx>
+			<posy>54</posy>
+			<width>1114</width>
+			<height>650</height>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+			<texture border="30">panel.png</texture>
+			<bordertexture border="45">panel-shadow.png</bordertexture>
+			<bordersize>22</bordersize>
+			<include>T-Level</include>
+		</control>
+	</include>
 	<include name="T-Button_Home_NoFocus1">
 		<control type="image">
 			<posx>0</posx>
@@ -823,6 +836,16 @@
 			<posy>377</posy>
 			<width>1280</width>
 			<height>344</height>
+			<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
+			<include>T-Level</include>
+		</control>
+	</include>
+	<include name="T-Underlay29">
+		<control type="image">
+			<posx>0</posx>
+			<posy>33</posy>
+			<width>1280</width>
+			<height>690</height>
 			<texture diffuse="underlay-diffuse.png" border="100,2,100,2">underlay2.png</texture>
 			<include>T-Level</include>
 		</control>
