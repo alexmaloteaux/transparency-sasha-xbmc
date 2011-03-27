@@ -295,8 +295,8 @@
 			</control>
 			<control type="label">
 				<posx>257</posx>
-				<posy>614</posy>
-				<width>550</width>
+				<posy>568</posy>
+				<width>617</width>
 				<height>30</height>
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
@@ -770,10 +770,36 @@
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Container.Content(Episodes) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<posx>317</posx>
+				<posy>535</posy>
+				<width>540</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
 				<visible>Container.Content(MusicVideos)</visible>
+			</control>
+			<control type="label">
+				<posx>317</posx>
+				<posy>535</posy>
+				<width>540</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Container.Content(MusicVideos) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>317</posx>
