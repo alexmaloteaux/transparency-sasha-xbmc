@@ -4998,7 +4998,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<description>Hourly</description>
+			<description>Alerts</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<visible>Skin.String(WeatherPlus,6) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
