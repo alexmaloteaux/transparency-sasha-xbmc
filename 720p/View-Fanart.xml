@@ -481,16 +481,30 @@
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>400</posx>
-				<posy>600</posy>
-				<width>465</width>
+				<posx>40</posx>
+				<posy>535</posy>
+				<width>785</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.label]</label>
+				<visible>!Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="label">
+				<posx>257</posx>
+				<posy>535</posy>
+				<width>600</width>
 				<height>30</height>
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
+				<aligny>center</aligny>
 				<label>$INFO[ListItem.label]</label>
-				<visible>IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -503,7 +517,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<visible>!Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + SubString(Container.FolderPath,videodb://2/)</visible>
 			</control>
 			<control type="label">
 				<posx>257</posx>
@@ -516,7 +530,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
-				<visible>Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) | !SubString(Container.FolderPath,videodb://2/)</visible>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -556,7 +570,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + SubString(Container.FolderPath,videodb://2/)</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
@@ -570,7 +584,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) | !SubString(Container.FolderPath,videodb://2/)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -585,10 +599,10 @@
 				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
-				<posx>25</posx>
-				<posy>532</posy>
-				<width>350</width>
-				<height>166</height>
+				<posx>18</posx>
+				<posy>480</posy>
+				<width>218</width>
+				<height>218</height>
 				<aspectratio align="left" aligny="center">keep</aspectratio>
 				<align>left</align>
 				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
