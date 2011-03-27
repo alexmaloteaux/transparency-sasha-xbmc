@@ -16,9 +16,9 @@
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>[IsEmpty(Control.GetLabel(987)) | IsEmpty(ListItem.Property(Fanart_Image))] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="987">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
