@@ -3,7 +3,7 @@
 		<control type="group">
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<visible>Control.IsVisible(590)</visible>
-			<control type="button" id="7013">
+			<control type="button" id="7026">
 				<posx>1222</posx>
 				<posy>14</posy>
 				<width>40</width>
@@ -524,7 +524,7 @@
 			<posy>300</posy>
 			<width>1280</width>
 			<height>430</height>
-			<onup>7013</onup>
+			<onup>7026</onup>
 			<ondown>60</ondown>
 			<onleft>590</onleft>
 			<onright>590</onright>
