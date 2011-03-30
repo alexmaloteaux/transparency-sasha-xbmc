@@ -1769,6 +1769,12 @@
 		<onfocus>Skin.Reset(circle9)</onfocus>
 		<onfocus>SetFocus(74)</onfocus>
 	</include>
+	<include name="LogoDownloader-Solo-Banners">
+		<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,banner=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
+	</include>
+	<include name="LogoDownloader-Solo-Posters">
+		<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,poster=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
+	</include>
 	<include name="movietitles-default">
 		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
 	</include>
