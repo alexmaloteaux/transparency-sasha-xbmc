@@ -455,7 +455,7 @@
 				<posy>368</posy>
 				<width>234</width>
 				<height>360</height>
-				<texture fallback="cases/librarymode/case-sets.png">cases/$INFO[Window.Property(videomode)]/case$INFO[ListItem.VideoResolution].png</texture>
+				<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -466,6 +466,7 @@
 				<height>61</height>
 				<texture>movieset.png</texture>
 				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 		</control>
