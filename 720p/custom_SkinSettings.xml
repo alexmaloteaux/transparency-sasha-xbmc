@@ -4338,6 +4338,15 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub)</selected>
 					</control>
 					<control type="radiobutton" id="8102">
+						<description>Menu TVShows Sub TVGuide</description>
+						<label>[B]$LOCALIZE[4][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVShowsCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_TVGuide)</onclick>
+						<selected>Skin.HasSetting(Menu_TVShows_Sub_TVGuide)</selected>
+						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
 						<description>Menu TVShows Sub Genres</description>
 						<label>[B]$LOCALIZE[135][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4346,7 +4355,7 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Genres)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8103">
+					<control type="radiobutton" id="8104">
 						<description>Menu TVShows Sub Year</description>
 						<label>[B]$LOCALIZE[345][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4355,7 +4364,7 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Years)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8104">
+					<control type="radiobutton" id="8105">
 						<description>Menu TVShows Sub Actors</description>
 						<label>[B]$LOCALIZE[344][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4364,7 +4373,7 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Actors)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8105">
+					<control type="radiobutton" id="8106">
 						<description>Menu TVShows Sub Studio</description>
 						<label>[B]$LOCALIZE[20388][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4373,7 +4382,7 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub_Studio)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8106">
+					<control type="radiobutton" id="8107">
 						<description>Menu TVShows Sub RecentlyAdded</description>
 						<label>[B]$LOCALIZE[31410][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4382,7 +4391,7 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub_RecentlyAdded)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8107">
+					<control type="radiobutton" id="8108">
 						<description>Menu TVShows Sub VideoPlugins</description>
 						<label>[B]$LOCALIZE[1037][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4391,7 +4400,7 @@
 						<selected>!Skin.HasSetting(Menu_TVShows_Sub_VideoPlugins)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8108">
+					<control type="radiobutton" id="8109">
 						<description>Menu TVShows Sub Custom1</description>
 						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4400,7 +4409,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom1)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8109">
+					<control type="radiobutton" id="8110">
 						<description>Menu TVShows Sub Custom2</description>
 						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4409,7 +4418,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom2)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8110">
+					<control type="radiobutton" id="8111">
 						<description>Menu TVShows Sub Custom3</description>
 						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4418,7 +4427,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom3)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8111">
+					<control type="radiobutton" id="8112">
 						<description>Menu TVShows Sub Custom4</description>
 						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4427,7 +4436,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom4)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8112">
+					<control type="radiobutton" id="8113">
 						<description>Menu TVShows Sub Custom5</description>
 						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4436,7 +4445,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom5)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8113">
+					<control type="radiobutton" id="8114">
 						<description>Menu TVShows Sub Custom6</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4445,7 +4454,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom6)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8114">
+					<control type="radiobutton" id="8115">
 						<description>Menu TVShows Sub Custom7</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -4454,7 +4463,7 @@
 						<selected>Skin.HasSetting(Menu_TVShows_Sub_Custom7)</selected>
 						<enable>!Skin.HasSetting(Menu_TVShows_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8115">
+					<control type="radiobutton" id="8116">
 						<description>Menu TVShows Sub Custom8</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -6411,7 +6420,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom1) + Skin.String(TVShowsCustom,1)</visible>
-					<posy>395</posy>
+					<posy>425</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom1 Label</description>
@@ -6430,7 +6439,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom2) + Skin.String(TVShowsCustom,2)</visible>
-					<posy>423</posy>
+					<posy>453</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom2 Label</description>
@@ -6449,7 +6458,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom3) + Skin.String(TVShowsCustom,3)</visible>
-					<posy>451</posy>
+					<posy>481</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom3 Label</description>
@@ -6468,7 +6477,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom4) + Skin.String(TVShowsCustom,4)</visible>
-					<posy>479</posy>
+					<posy>509</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom4 Label</description>
@@ -6487,7 +6496,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom5) + Skin.String(TVShowsCustom,5)</visible>
-					<posy>507</posy>
+					<posy>537</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom5 Label</description>
@@ -6507,7 +6516,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom6) + Skin.String(TVShowsCustom,6)</visible>
-					<posy>535</posy>
+					<posy>565</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom6 Label</description>
@@ -6527,7 +6536,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom7) + Skin.String(TVShowsCustom,7)</visible>
-					<posy>563</posy>
+					<posy>593</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom7 Label</description>
@@ -6547,7 +6556,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,3) + !Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub) + Skin.HasSetting(Menu_TVShows_Sub_Custom8) + Skin.String(TVShowsCustom,8)</visible>
-					<posy>591</posy>
+					<posy>621</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom8 Label</description>
@@ -8647,7 +8656,7 @@
 				</control>
 				<control type="image">
 					<posx>810</posx>
-					<posy>401</posy>
+					<posy>431</posy>
 					<width>25</width>
 					<height>19</height>
 					<texture>nav-right.png</texture>

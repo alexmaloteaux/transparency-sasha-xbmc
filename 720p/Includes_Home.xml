@@ -2677,84 +2677,90 @@
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 				<content>
 					<item id="8102">
+						<description>Menu TVShows Sub TVGuide</description>
+						<label>$LOCALIZE[4]</label>
+						<onclick>ActivateWindow(1115)</onclick>
+						<visible>Skin.HasSetting(Menu_TVShows_Sub_TVGuide)</visible>
+					</item>
+					<item id="8103">
 						<description>Menu TVShows Sub Genres</description>
 						<label>$LOCALIZE[135]</label>
 						<onclick>ActivateWindow(Videos,tvshowgenres,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_Genres)</visible>
 					</item>
-					<item id="8103">
+					<item id="8104">
 						<description>Menu TVShows Sub Year</description>
 						<label>$LOCALIZE[345]</label>
 						<onclick>ActivateWindow(Videos,tvshowyears,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_Years)</visible>
 					</item>
-					<item id="8104">
+					<item id="8105">
 						<description>Menu TVShows Sub Actors</description>
 						<label>$LOCALIZE[344]</label>
 						<onclick>ActivateWindow(Videos,tvshowactors,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_Actors)</visible>
 					</item>
-					<item id="8105">
+					<item id="8106">
 						<description>Menu TVShows Sub Studio</description>
 						<label>$LOCALIZE[20388]</label>
 						<onclick>ActivateWindow(Videos,tvshowstudio,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_Studio)</visible>
 					</item>
-					<item id="8106">
+					<item id="8107">
 						<description>Menu TVShows Sub RecentlyAdded</description>
 						<label>$LOCALIZE[31410]</label>
 						<onclick>ActivateWindow(Videos,recentlyaddedepisodes,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_RecentlyAdded)</visible>
 					</item>
-					<item id="8107">
+					<item id="8108">
 						<description>Menu TVShows Sub VideoPlugins</description>
 						<label>$LOCALIZE[1037]</label>
 						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_TVShows_Sub_VideoPlugins)</visible>
 					</item>
-					<item id="8108">
+					<item id="8109">
 						<description>Menu TVShows Sub Custom1</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Label)]</label>
 						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom1)</visible>
 					</item>
-					<item id="8109">
+					<item id="8110">
 						<description>Menu TVShows Sub Custom2</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Label)]</label>
 						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom2)</visible>
 					</item>
-					<item id="8110">
+					<item id="8111">
 						<description>Menu TVShows Sub Custom3</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Label)]</label>
 						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom3)</visible>
 					</item>
-					<item id="8111">
+					<item id="8112">
 						<description>Menu TVShows Sub Custom4</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Label)]</label>
 						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom4)</visible>
 					</item>
-					<item id="8112">
+					<item id="8113">
 						<description>Menu TVShows Sub Custom5</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Label)]</label>
 						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom5)</visible>
 					</item>
-					<item id="8113">
+					<item id="8114">
 						<description>Menu TVShows Sub Custom6</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom6)</visible>
 					</item>
-					<item id="8114">
+					<item id="8115">
 						<description>Menu TVShows Sub Custom7</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom7)</visible>
 					</item>
-					<item id="8115">
+					<item id="8116">
 						<description>Menu TVShows Sub Custom8</description>
 						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Path)]</onclick>

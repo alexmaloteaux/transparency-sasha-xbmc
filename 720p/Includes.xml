@@ -676,6 +676,18 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
+	<include name="Breadcrumbs-TVGuide">
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<description>TVGuide</description>
+			<label>$LOCALIZE[4]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+	</include>
 	<include name="Breadcrumbs-Videos">
 		<control type="image">
 			<width>29</width>
