@@ -153,7 +153,7 @@ $INFO[MusicPlayer.Property(Album_Description)][/B]
 					<height>200</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
 					<animation effect="fade" start="100" end="0" time="8000">Hidden</animation>
-				<visible>Player.HasAudio</visible>
+					<visible>Player.HasAudio</visible>
 				</control>
 				<control type="image">
 					<posx>10</posx>
