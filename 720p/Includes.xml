@@ -173,7 +173,7 @@
 			<orientation>horizontal</orientation>
 			<animation effect="slide" start="0,0" end="0,-18" time="200" condition="Control.HasFocus(60)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
-			<visible>Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
+			<visible>Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(592) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597)</visible>
 		</control>
 		<control type="scrollbar" id="61">
 			<posx>1083</posx>
@@ -1372,7 +1372,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)</visible>
-			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1510,7 +1510,7 @@
 			<posx>5</posx>
 			<posy>547</posy>
 			<visible>Player.HasAudio</visible>
-			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml) | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)]</visible>
+			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml) | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>
@@ -2563,7 +2563,7 @@
 			<animation effect="slide" end="-1105,215" time="0" condition="Control.IsVisible(56)">Conditional</animation>
 			<animation effect="slide" end="130,-50" time="0" condition="Control.IsVisible(58) | [!Window.IsVisible(Videolibrary) + Control.IsVisible(59)]">Conditional</animation>
 			<animation effect="slide" end="235,0" time="0" condition="Window.IsVisible(Videolibrary) + Control.IsVisible(59)">Conditional</animation>
-			<animation effect="slide" end="-1105,0" time="0" condition="Control.IsVisible(590)">Conditional</animation>
+			<animation effect="slide" end="-1105,0" time="0" condition="Control.IsVisible(590) | Control.IsVisible(595)">Conditional</animation>
 			<animation effect="slide" end="-1215,0" time="0" condition="Control.IsVisible(592)">Conditional</animation>
 			<animation effect="slide" end="-1160,60" time="0" condition="Control.IsVisible(597)">Conditional</animation>
 			<posx>602</posx>

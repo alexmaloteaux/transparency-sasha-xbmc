@@ -3725,83 +3725,88 @@
 						<onclick>Skin.ToggleSetting(Hide-Music-Jukebox)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Jukebox)</selected>
 					</control>
-					<control type="image" id="752">
+					<control type="radiobutton" id="752">
+						<label>$LOCALIZE[24021] - $LOCALIZE[2] - $LOCALIZE[31039]</label>
+						<onclick>Skin.ToggleSetting(Hide-Music-Item)</onclick>
+						<selected>Skin.HasSetting(Hide-Music-Item)</selected>
+					</control>
+					<control type="image" id="753">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="753">
+					<control type="radiobutton" id="754">
 						<label>$LOCALIZE[24021] - $LOCALIZE[1] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-FullList)</selected>
 					</control>
-					<control type="radiobutton" id="754">
+					<control type="radiobutton" id="755">
 						<label>$LOCALIZE[24021] - $LOCALIZE[1] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-List)</selected>
 					</control>
-					<control type="radiobutton" id="755">
+					<control type="radiobutton" id="756">
 						<label>$LOCALIZE[24021] - $LOCALIZE[1] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Thumbnail)</selected>
 					</control>
 
-					<control type="radiobutton" id="756">
+					<control type="radiobutton" id="757">
 						<label>$LOCALIZE[24021] - $LOCALIZE[1] - $LOCALIZE[544]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-MediaInfo)</selected>
 					</control>
-					<control type="radiobutton" id="757">
+					<control type="radiobutton" id="758">
 						<label>$LOCALIZE[24021] - $LOCALIZE[1] - $LOCALIZE[31033]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-PicThumb)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-PicThumb)</selected>
 					</control>
-					<control type="radiobutton" id="758">
+					<control type="radiobutton" id="759">
 						<label>$LOCALIZE[24021] - $LOCALIZE[1] - $LOCALIZE[31036]</label>
 						<onclick>Skin.ToggleSetting(Hide-Pictures-Polaroid)</onclick>
 						<selected>Skin.HasSetting(Hide-Pictures-Polaroid)</selected>
 					</control>
-					<control type="image" id="759">
+					<control type="image" id="760">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="760">
+					<control type="radiobutton" id="761">
 						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-FullList)</selected>
 					</control>
-					<control type="radiobutton" id="761">
+					<control type="radiobutton" id="762">
 						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-List)</selected>
 					</control>
-					<control type="radiobutton" id="762">
+					<control type="radiobutton" id="763">
 						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
 					</control>
-					<control type="radiobutton" id="763">
+					<control type="radiobutton" id="764">
 						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[544]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-MediaInfo)</selected>
 					</control>
-					<control type="image" id="764">
+					<control type="image" id="765">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="765">
+					<control type="radiobutton" id="766">
 						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-FullList)</selected>
 					</control>
-					<control type="radiobutton" id="766">
+					<control type="radiobutton" id="767">
 						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-List)</selected>
 					</control>
-					<control type="radiobutton" id="767">
+					<control type="radiobutton" id="768">
 						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-Thumbnail)</selected>
