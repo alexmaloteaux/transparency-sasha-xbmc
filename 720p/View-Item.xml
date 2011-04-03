@@ -131,7 +131,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -144,7 +144,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Director]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -226,6 +226,32 @@
 					</control>
 					<control type="label">
 						<posx>257</posx>
+						<posy>245</posy>
+						<width>300</width>
+						<height>30</height>
+						<font>font-20c</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
+						<visible>Container.Content(MusicVideos)</visible>
+					</control>
+					<control type="label">
+						<posx>257</posx>
+						<posy>265</posy>
+						<width>300</width>
+						<height>30</height>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Album]</label>
+						<visible>Container.Content(MusicVideos)</visible>
+					</control>
+					<control type="label">
+						<posx>257</posx>
 						<posy>295</posy>
 						<width>300</width>
 						<height>30</height>
@@ -287,7 +313,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -300,7 +326,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-						<visible>[Container.Content(Movies) | Container.Content(Episodes)] + !substring(ListItem.Duration,min)</visible>
+						<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -313,7 +339,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Duration]</label>
-						<visible>[Container.Content(Movies) | Container.Content(Episodes)] + substring(ListItem.Duration,min)</visible>
+						<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -406,7 +432,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-						<visible>!Container.Content(Seasons)</visible>
+						<visible>![Container.Content(Seasons) | Container.Content(MusicVideos)]</visible>
 					</control>
 					<control type="label">
 						<posx>407</posx>
@@ -419,7 +445,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Rating]</label>
-						<visible>!Container.Content(Seasons)</visible>
+						<visible>![Container.Content(Seasons) | Container.Content(MusicVideos)]</visible>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -560,7 +586,7 @@
 				<height>220</height>
 				<texture>disc.png</texture>
 				<include>Window_OpenClose_Visible_ItemDisc_Animation</include>
-				<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)] + Control.IsVisible(590) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -780,7 +806,7 @@
 				<aspectratio scalediffuse="true">keep</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(Episodes) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>275</posx>
@@ -790,7 +816,7 @@
 				<aspectratio scalediffuse="true">keep</aspectratio>
 				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Container.Content(Episodes) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>310</posx>
@@ -871,7 +897,7 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>
 			<preloaditems>2</preloaditems>
-			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
+			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 			<hitrect x="1022" y="320" w="220" h="400"/>
 			<itemlayout width="256" height="430"/>
 			<focusedlayout width="256" height="430">
