@@ -137,6 +137,7 @@
 			<fadetime>750</fadetime>
 			<include condition="!Skin.HasSetting(FanartSlideshowAnimation)">backgroundanimation2</include>
 			<include>VisibleFadeEffect</include>
+			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Viz-Visualization)">Conditional</animation>
 			<visible>Player.HasAudio + Skin.HasSetting(Viz-Slideshow) + ![Window.IsVisible(Home) + Skin.HasSetting(HideHomeVizBackground)] + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
 		</control>
 	</include>
