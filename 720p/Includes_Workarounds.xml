@@ -486,6 +486,6 @@
 		</control>
 	</include>
 	<include name="TvTunes">
-		<onfocus>XBMC.RunScript(script.TvTunes,backend=True)</onfocus>
+		<onfocus>RunScript(script.TvTunes,backend=True)</onfocus>
 	</include>
 </includes>
