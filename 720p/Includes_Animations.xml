@@ -160,7 +160,7 @@
 		<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings)">Conditional</animation>
 	</include>
 	<include name="DialogFade2">
-		<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(FileBrowser)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(FileBrowser) | Window.IsVisible(TextViewer)">Conditional</animation>
 	</include>
 	<include name="DialogFade3">
 		<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(FileBrowser) | Window.IsVisible(ContentSettings)">Conditional</animation>
