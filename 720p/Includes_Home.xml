@@ -2009,7 +2009,7 @@
 			<content>
 				<item id="1">
 					<label>3</label>
-					<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<icon>special://skin/backgrounds/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Videos)</visible>
@@ -2355,7 +2355,7 @@
 				</item>
 				<item id="1">
 					<label>3</label>
-					<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<icon>special://skin/backgrounds/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
 					<visible>!Skin.HasSetting(Menu_Videos)</visible>
@@ -2532,7 +2532,7 @@
 					<item id="8102">
 						<description>Menu Movies Sub Files</description>
 						<label>$LOCALIZE[744]</label>
-						<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
+						<onclick>ActivateWindow(Videos,Files,return)</onclick>
 						<visible>!Skin.HasSetting(Menu_Movies_Sub_Files)</visible>
 					</item>
 					<item id="8103">
