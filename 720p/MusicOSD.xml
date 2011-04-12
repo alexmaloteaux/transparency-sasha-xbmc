@@ -294,7 +294,7 @@
 					<onright>991</onright>
 					<onup>917</onup>
 					<ondown>917</ondown>
-					<animation effect="slide" end="0,120" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<animation effect="slide" end="0,160" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>LastFM.RadioPlaying</visible>
 				</control>
 				<control type="button" id="991">
@@ -312,7 +312,7 @@
 					<onright>915</onright>
 					<onup>991</onup>
 					<ondown>991</ondown>
-					<animation effect="slide" end="0,120" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="915">
 					<description>Info Button</description>
