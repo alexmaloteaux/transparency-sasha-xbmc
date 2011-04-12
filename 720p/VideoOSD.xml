@@ -493,6 +493,7 @@
 						<onright>912</onright>
 						<onup>911</onup>
 						<ondown>911</ondown>
+						<visible>!Skin.HasSetting(KioskMode)</visible>
 					</control>
 					<control type="button" id="912">
 						<description>Video Menu</description>
@@ -509,6 +510,7 @@
 						<onright>913</onright>
 						<onup>912</onup>
 						<ondown>912</ondown>
+						<visible>!Skin.HasSetting(KioskMode)</visible>
 					</control>
 					<control type="button" id="913">
 						<description>Bookmarks Menu</description>

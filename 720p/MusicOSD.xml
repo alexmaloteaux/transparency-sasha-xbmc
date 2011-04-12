@@ -276,6 +276,7 @@
 					<onright>917</onright>
 					<onup>916</onup>
 					<ondown>916</ondown>
+					<animation effect="slide" end="0,120" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>LastFM.RadioPlaying</visible>
 				</control>
 				<control type="button" id="917">
@@ -293,6 +294,7 @@
 					<onright>991</onright>
 					<onup>917</onup>
 					<ondown>917</ondown>
+					<animation effect="slide" end="0,120" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>LastFM.RadioPlaying</visible>
 				</control>
 				<control type="button" id="991">
@@ -310,6 +312,7 @@
 					<onright>915</onright>
 					<onup>991</onup>
 					<ondown>991</ondown>
+					<animation effect="slide" end="0,120" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 				</control>
 				<control type="button" id="915">
 					<description>Info Button</description>
@@ -326,6 +329,7 @@
 					<onright>500</onright>
 					<onup>915</onup>
 					<ondown>915</ondown>
+					<animation effect="slide" end="0,120" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 				</control>
 				<control type="button" id="500">
 					<description>Visualization Menu</description>
@@ -341,6 +345,7 @@
 					<onright>912</onright>
 					<onup>500</onup>
 					<ondown>500</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="912">
 					<description>Visualization Settings</description>
@@ -357,6 +362,7 @@
 					<onright>913</onright>
 					<onup>912</onup>
 					<ondown>912</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="913">
 					<description>Visualization Presets</description>
@@ -373,6 +379,7 @@
 					<onright>914</onright>
 					<onup>913</onup>
 					<ondown>913</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="914">
 					<description>Lyrics Script</description>
