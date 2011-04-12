@@ -41,8 +41,8 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [Skin.HasSetting(Viz-Fanart) | [Skin.HasSetting(Viz-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -53,8 +53,8 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [Skin.HasSetting(Viz-Fanart) | [Skin.HasSetting(Viz-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
+			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
 		<control type="visualisation">
@@ -62,7 +62,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Viz-Visualization)</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization)</visible>
 		</control>
 		<control type="image">
 			<description>splash</description>

@@ -8,7 +8,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(Viz-Visualization) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<control type="multiimage">
@@ -22,9 +22,9 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Viz-Visualization)">Conditional</animation>
-			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | [Skin.HasSetting(Viz-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
+			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -35,9 +35,9 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(Viz-Animation)">backgroundanimation</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Viz-Visualization)">Conditional</animation>
-			<visible>Player.HasAudio + [Skin.HasSetting(Viz-Fanart) | [Skin.HasSetting(Viz-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
+			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
+			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
 		<control type="visualisation" id="2">
@@ -46,7 +46,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(Viz-Visualization) + ![StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + ![StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
