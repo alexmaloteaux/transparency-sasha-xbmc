@@ -1698,7 +1698,8 @@
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
 			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
-			<onleft>7009</onleft>
+			<include condition="Window.IsVisible(Pictures)">FanartOnLeftPictures</include>
+			<include condition="Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)">FanartOnLeftProgramsAddons</include>
 			<onright>60</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>
@@ -1829,12 +1830,6 @@
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="button" id="7009">
-				<description>fake button to pass focus</description>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onfocus>SetFocus(9000)</onfocus>
 			</control>
 		</control>
 		<control type="group">
@@ -2146,12 +2141,6 @@
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Plot)</visible>
-			</control>
-			<control type="button" id="7009">
-				<description>fake button to pass focus</description>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onfocus>SetFocus(9000)</onfocus>
 			</control>
 		</control>
 		<control type="group">

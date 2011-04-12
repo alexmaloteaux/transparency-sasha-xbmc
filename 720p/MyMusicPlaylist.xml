@@ -72,7 +72,7 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
-			<visible>!Skin.HasSetting(KioskMode)</visible>
+			<visible>![Skin.HasSetting(KioskMode) + !Player.HasMedia]</visible>
 			<control type="group" id="9000">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
@@ -95,6 +95,7 @@
 					<onright>50</onright>
 					<onup>610</onup>
 					<ondown>20</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="radiobutton" id="20">
 					<description>Shuffle button</description>
@@ -106,6 +107,7 @@
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>26</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="26">
 					<description>Repeat button</description>
@@ -117,6 +119,7 @@
 					<onright>50</onright>
 					<onup>20</onup>
 					<ondown>21</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="21">
 					<description>Save button</description>
@@ -128,6 +131,7 @@
 					<onright>50</onright>
 					<onup>26</onup>
 					<ondown>22</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="22">
 					<description>Clear button</description>
@@ -140,6 +144,7 @@
 					<onright>50</onright>
 					<onup>21</onup>
 					<ondown>610</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
@@ -152,6 +157,7 @@
 					<onup>22</onup>
 					<ondown>2</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
+					<animation effect="slide" end="0,-225" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 				<control type="image">
@@ -162,6 +168,7 @@
 					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
+					<animation effect="slide" end="0,-225" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 				</control>
 			</control>
 		</control>

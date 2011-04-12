@@ -40,7 +40,6 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include condition="!StringCompare(Weather.Plugin,weather.weatherplus)">CommonNowPlaying</include>
-			<visible>!Skin.HasSetting(KioskMode)</visible>
 			<control type="group" id="9000">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
@@ -64,6 +63,7 @@
 					<onright>6000</onright>
 					<onup>610</onup>
 					<ondown>101</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="label">
 					<description>change location label</description>
@@ -77,6 +77,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="101">
 					<description>Current button</description>
@@ -89,6 +90,7 @@
 					<onup>3</onup>
 					<ondown>102</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,1)</onfocus>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="102">
@@ -102,6 +104,7 @@
 					<onup>101</onup>
 					<ondown>103</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="103">
@@ -115,6 +118,7 @@
 					<onup>102</onup>
 					<ondown>104</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,3)</onfocus>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="104">
@@ -128,6 +132,7 @@
 					<onup>103</onup>
 					<ondown>105</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,4)</onfocus>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="105">
@@ -141,6 +146,7 @@
 					<onup>104</onup>
 					<ondown>106</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,5)</onfocus>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="106">
@@ -154,6 +160,7 @@
 					<onup>105</onup>
 					<ondown>2</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,6)</onfocus>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
 				</control>
 				<control type="button" id="2">
@@ -166,6 +173,7 @@
 					<onright>6000</onright>
 					<onup>106</onup>
 					<ondown>610</ondown>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-270" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
 				</control>
@@ -180,6 +188,7 @@
 					<onup>2</onup>
 					<ondown>3</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-270" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
@@ -189,6 +198,7 @@
 					<posy>362</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
+					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-270" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
