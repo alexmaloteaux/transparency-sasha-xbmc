@@ -86,6 +86,18 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>!Container.Content(Seasons) + ![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !IsEmpty(Control.GetLabel(6102))] + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105))] + !IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Skin.String(Video_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<visible>Container.Content(Genres) + Skin.HasSetting(VideoGenreBackgrounds) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+		</control>
 		<include condition="Skin.HasSetting(SeasonFanart) + !Skin.HasSetting(SafeMode)">fanart-seasons</include>
 		<include condition="Skin.HasSetting(TVLogo) + !Skin.HasSetting(SafeMode)">tvlogo</include>
 		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
