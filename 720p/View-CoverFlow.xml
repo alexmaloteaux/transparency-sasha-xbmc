@@ -43,16 +43,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-4).VideoResolution,720) | stringcompare(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-4).VideoResolution,720) | stringcompare(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -74,16 +66,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-4).VideoResolution,720) | stringcompare(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-4).VideoResolution,720) | stringcompare(ListItem(-4).VideoResolution,1080)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -109,16 +93,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -140,16 +116,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -175,16 +143,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -206,16 +166,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -243,16 +195,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -274,16 +218,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -309,16 +245,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -340,16 +268,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -375,16 +295,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -406,16 +318,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -446,16 +350,8 @@
 						<posy>404</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -477,16 +373,8 @@
 						<posy>12</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture>case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture>case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -513,16 +401,8 @@
 						<posy>404</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -544,16 +424,8 @@
 						<posy>12</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture>case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture>case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -588,16 +460,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(4).VideoResolution,720) | stringcompare(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(4).VideoResolution,720) | stringcompare(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -619,16 +483,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(4).VideoResolution,720) | stringcompare(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(4).VideoResolution,720) | stringcompare(ListItem(4).VideoResolution,1080)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -654,16 +510,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -685,16 +533,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -720,16 +560,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -751,16 +583,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -788,16 +612,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -819,16 +635,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -854,16 +662,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -885,16 +685,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -920,16 +712,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -951,16 +735,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -991,16 +767,8 @@
 						<posy>404</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -1022,16 +790,8 @@
 						<posy>12</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture>case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture>case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -1058,16 +818,8 @@
 						<posy>404</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -1089,16 +841,8 @@
 						<posy>12</posy>
 						<width>278</width>
 						<height>428</height>
-						<texture>case-dvd.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-					</control>
-					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
-						<width>278</width>
-						<height>428</height>
-						<texture>case-bluray.png</texture>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+						<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -1130,16 +874,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1161,16 +897,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-3).VideoResolution,720) | stringcompare(ListItem(-3).VideoResolution,1080)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1197,16 +925,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1228,16 +948,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-2).VideoResolution,720) | stringcompare(ListItem(-2).VideoResolution,1080)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1264,16 +976,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1295,16 +999,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(-1).VideoResolution,720) | stringcompare(ListItem(-1).VideoResolution,1080)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1331,16 +1027,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1362,16 +1050,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(3).VideoResolution,720) | stringcompare(ListItem(3).VideoResolution,1080)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1398,16 +1078,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1429,16 +1101,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(2).VideoResolution,720) | stringcompare(ListItem(2).VideoResolution,1080)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1465,16 +1129,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1496,16 +1152,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(1).VideoResolution,720) | stringcompare(ListItem(1).VideoResolution,1080)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1531,16 +1179,8 @@
 					<posy>404</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1562,16 +1202,8 @@
 					<posy>12</posy>
 					<width>278</width>
 					<height>428</height>
-					<texture>case-dvd.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + ![stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
-					<width>278</width>
-					<height>428</height>
-					<texture>case-bluray.png</texture>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + [stringcompare(ListItem(0).VideoResolution,720) | stringcompare(ListItem(0).VideoResolution,1080)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1582,22 +1214,12 @@
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>208</posx>
-					<posy>356</posy>
-					<width>75</width>
-					<height>61</height>
+					<posx>133</posx>
+					<posy>21</posy>
+					<width>37</width>
+					<height>22</height>
 					<texture>movieset.png</texture>
-					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>208</posx>
-					<posy>426</posy>
-					<width>75</width>
-					<height>61</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png">movieset.png</texture>
-					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
 				</control>
 			</control>
 		</control>

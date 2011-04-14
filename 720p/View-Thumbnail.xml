@@ -735,16 +735,8 @@
 					<posy>4</posy>
 					<width>140</width>
 					<height>210</height>
-					<texture>case-dvd.png</texture>
-					<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>18</posx>
-					<posy>4</posy>
-					<width>140</width>
-					<height>210</height>
-					<texture>case-bluray.png</texture>
-					<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
+					<visible>![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>18</posx>
@@ -816,7 +808,7 @@
 					<posy>4</posy>
 					<width>140</width>
 					<height>210</height>
-					<texture>case-dvd.png</texture>
+					<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false"/>
@@ -825,23 +817,7 @@
 						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
-					<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
-				</control>
-				<control type="image">
-					<posx>18</posx>
-					<posy>4</posy>
-					<width>140</width>
-					<height>210</height>
-					<texture>case-bluray.png</texture>
-					<animation type="focus">
-						<effect type="slide" start="0,0" end="0,-11" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="118" center="auto" time="200" reversible="false"/>
-					</animation>
-					<animation type="unfocus">
-						<effect type="slide" start="0,-11" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="118" end="100" center="auto" time="200" reversible="false"/>
-					</animation>
-					<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + ![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
+					<visible>![[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<posx>18</posx>
@@ -861,14 +837,13 @@
 				</control>
 				<control type="image">
 					<posx>112</posx>
-					<posy>168</posy>
-					<width>50</width>
-					<height>41</height>
+					<posy>176</posy>
+					<width>44</width>
+					<height>28</height>
 					<texture>movieset.png</texture>
 					<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(53)">Conditional</animation>
-					<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
 				</control>
 				<control type="label">
 					<posx>85</posx>

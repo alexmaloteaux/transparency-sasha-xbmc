@@ -651,15 +651,15 @@
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
-					<posx>580</posx>
-					<posy>470</posy>
-					<width>75</width>
-					<height>60</height>
+					<posx>598</posx>
+					<posy>500</posy>
+					<width>44</width>
+					<height>26</height>
 					<texture>movieset.png</texture>
 					<animation effect="fade" reversible="false" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" reversible="false" start="0" end="100" time="300" delay="2000">WindowOpen</animation>
 					<animation effect="fade" reversible="false" start="100" end="0" time="300">WindowClose</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
 				</control>
 				<control type="image">
 					<posx>410</posx>

@@ -460,14 +460,13 @@
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>164</posx>
-				<posy>648</posy>
-				<width>75</width>
-				<height>61</height>
+				<posx>112</posx>
+				<posy>375</posy>
+				<width>30</width>
+				<height>18</height>
 				<texture>movieset.png</texture>
-				<animation effect="fade" start="70" end="100" time="1000" pulse="true" condition="true">Conditional</animation>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + !SubString(Container.Folderpath,plugin://,left)</visible>
 			</control>
 		</control>
 		<control type="group">

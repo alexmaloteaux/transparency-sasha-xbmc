@@ -195,7 +195,7 @@
 							<posy>276</posy>
 							<width>196</width>
 							<height>304</height>
-							<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+							<texture flipy="true" diffuse="diffuse_mirror_case.png">case540.png</texture>
 							<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
@@ -203,7 +203,7 @@
 							<posy>276</posy>
 							<width>196</width>
 							<height>304</height>
-							<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+							<texture flipy="true" diffuse="diffuse_mirror_case.png">case720.png</texture>
 							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
@@ -219,7 +219,7 @@
 							<posy>0</posy>
 							<width>196</width>
 							<height>304</height>
-							<texture>case-dvd.png</texture>
+							<texture>case540.png</texture>
 							<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 						</control>
 						<control type="image">
@@ -227,16 +227,8 @@
 							<posy>0</posy>
 							<width>196</width>
 							<height>304</height>
-							<texture>case-bluray.png</texture>
+							<texture>case720.png</texture>
 							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
-						</control>
-						<control type="image">
-							<posx>166</posx>
-							<posy>254</posy>
-							<width>35</width>
-							<height>35</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.Overlay]</texture>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -344,7 +336,7 @@
 								<posy>272</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case540.png</texture>
 								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
@@ -352,7 +344,7 @@
 								<posy>272</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case720.png</texture>
 								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
@@ -368,7 +360,7 @@
 								<posy>0</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture>case-dvd.png</texture>
+								<texture>case540.png</texture>
 								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
 							</control>
 							<control type="image">
@@ -376,16 +368,8 @@
 								<posy>0</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture>case-bluray.png</texture>
+								<texture>case720.png</texture>
 								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
-							</control>
-							<control type="image">
-								<posx>145</posx>
-								<posy>248</posy>
-								<width>35</width>
-								<height>35</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Overlay]</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout width="186" height="310">
@@ -404,7 +388,7 @@
 								<posy>272</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-dvd.png</texture>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case540.png</texture>
 								<animation reversible="false" effect="zoom" start="0,272,196,298" end="-19,296,235,358" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="-19,296,235,358" end="0,272,196,298" time="200">unfocus</animation>
 								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
@@ -414,7 +398,7 @@
 								<posy>272</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture flipy="true" diffuse="diffuse_mirror_case.png">case-bluray.png</texture>
+								<texture flipy="true" diffuse="diffuse_mirror_case.png">case720.png</texture>
 								<animation reversible="false" effect="zoom" start="0,272,196,298" end="-19,296,235,358" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="-19,296,235,358" end="0,272,196,298" time="200">unfocus</animation>
 								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
@@ -434,7 +418,7 @@
 								<posy>0</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture>case-dvd.png</texture>
+								<texture>case540.png</texture>
 								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
 								<visible>IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
@@ -444,20 +428,10 @@
 								<posy>0</posy>
 								<width>196</width>
 								<height>298</height>
-								<texture>case-bluray.png</texture>
+								<texture>case720.png</texture>
 								<animation reversible="false" effect="zoom" start="100" end="120" center="auto" time="200">focus</animation>
 								<animation reversible="false" effect="zoom" start="120" end="100" center="auto" time="200">unfocus</animation>
 								<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(HideMovieCase)</visible>
-							</control>
-							<control type="image">
-								<posx>145</posx>
-								<posy>248</posy>
-								<width>35</width>
-								<height>35</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Overlay]</texture>
-								<animation reversible="false" effect="zoom" start="145,248,35,35" end="154,267,42,42" time="200">focus</animation>
-								<animation reversible="false" effect="zoom" start="154,267,42,42" end="145,248,35,35" time="200">unfocus</animation>
 							</control>
 						</focusedlayout>
 					</control>
