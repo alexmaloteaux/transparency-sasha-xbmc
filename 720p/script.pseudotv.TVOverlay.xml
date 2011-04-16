@@ -7,6 +7,15 @@
 	</coordinates>
 	<controls>
 		<control type="group" id="102">
+			<control type="image" id="103">
+				<posx>1110</posx>
+				<posy>20</posy>
+				<width>150</width>
+				<height>100</height>
+				<aspectratio>keep</aspectratio>
+				<texture>-</texture>
+				<animation effect="fade" start="50" end="50" condition="True">Conditional</animation>
+			</control>
 			<control type="group">
 				<posx>0</posx>
 				<posy>380</posy>
@@ -317,13 +326,6 @@
 			<control type="group">
 				<visible>false</visible>
 				<control type="image" id="101">
-					<posx>-10</posx>
-					<posy>-10</posy>
-					<width>1</width>
-					<height>1</height>
-					<texture>-</texture>
-				</control>
-				<control type="image" id="103">
 					<posx>-10</posx>
 					<posy>-10</posy>
 					<width>1</width>
