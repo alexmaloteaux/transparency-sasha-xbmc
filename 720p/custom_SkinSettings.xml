@@ -605,26 +605,23 @@
 					<control type="radiobutton" id="212">
 						<description>enable recent movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31410]</label>
-						<onclick>Skin.ToggleSetting(HomepageRecentMovies)</onclick>
-						<onclick>Skin.Reset(HomepageRandomMovies)</onclick>
-						<include>recentlyaddedscript</include>
-						<selected>Skin.HasSetting(HomepageRecentMovies)</selected>
+						<onclick>Skin.ToggleSetting(HomeRecentMovies)</onclick>
+						<onclick>Skin.Reset(HomeRandomMovies)</onclick>
+						<selected>Skin.HasSetting(HomeRecentMovies)</selected>
 					</control>
 					<control type="radiobutton" id="213">
 						<description>enable recent tv-shows info</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31410]</label>
-						<onclick>Skin.ToggleSetting(HomepageRecentTVShows)</onclick>
-						<onclick>Skin.Reset(HomepageRandomTVShows)</onclick>
-						<include>recentlyaddedscript</include>
-						<selected>Skin.HasSetting(HomepageRecentTVShows)</selected>
+						<onclick>Skin.ToggleSetting(HomeRecentTVShows)</onclick>
+						<onclick>Skin.Reset(HomeRandomTVShows)</onclick>
+						<selected>Skin.HasSetting(HomeRecentTVShows)</selected>
 					</control>
 					<control type="radiobutton" id="214">
 						<description>enable recent music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31410]</label>
-						<onclick>Skin.ToggleSetting(HomepageRecentAlbums)</onclick>
-						<onclick>Skin.Reset(HomepageRandomAlbums)</onclick>
-						<include>recentlyaddedscript</include>
-						<selected>Skin.HasSetting(HomepageRecentAlbums)</selected>
+						<onclick>Skin.ToggleSetting(HomeRecentAlbums)</onclick>
+						<onclick>Skin.Reset(HomeRandomAlbums)</onclick>
+						<selected>Skin.HasSetting(HomeRecentAlbums)</selected>
 					</control>
 					<control type="image" id="215">
 						<width>880</width>
@@ -634,26 +631,26 @@
 					<control type="radiobutton" id="216">
 						<description>enable random movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31174]</label>
-						<onclick>Skin.ToggleSetting(HomepageRandomMovies)</onclick>
-						<onclick>Skin.Reset(HomepageRecentMovies)</onclick>
-						<include>randomitemsscript</include>
-						<selected>Skin.HasSetting(HomepageRandomMovies)</selected>
+						<onclick>Skin.ToggleSetting(HomeRandomMovies)</onclick>
+						<onclick>Skin.Reset(HomeRecentMovies)</onclick>
+						<include>randomitemsscriptsettings</include>
+						<selected>Skin.HasSetting(HomeRandomMovies)</selected>
 					</control>
 					<control type="radiobutton" id="217">
 						<description>enable random tv-shows info</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31174]</label>
-						<onclick>Skin.ToggleSetting(HomepageRandomTVShows)</onclick>
-						<onclick>Skin.Reset(HomepageRecentTVShows)</onclick>
-						<include>randomitemsscript</include>
-						<selected>Skin.HasSetting(HomepageRandomTVShows)</selected>
+						<onclick>Skin.ToggleSetting(HomeRandomTVShows)</onclick>
+						<onclick>Skin.Reset(HomeRecentTVShows)</onclick>
+						<include>randomitemsscriptsettings</include>
+						<selected>Skin.HasSetting(HomeRandomTVShows)</selected>
 					</control>
 					<control type="radiobutton" id="218">
 						<description>enable random music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31174]</label>
-						<onclick>Skin.ToggleSetting(HomepageRandomAlbums)</onclick>
-						<onclick>Skin.Reset(HomepageRecentAlbums)</onclick>
-						<include>randomitemsscript</include>
-						<selected>Skin.HasSetting(HomepageRandomAlbums)</selected>
+						<onclick>Skin.ToggleSetting(HomeRandomAlbums)</onclick>
+						<onclick>Skin.Reset(HomeRecentAlbums)</onclick>
+						<include>randomitemsscriptsettings</include>
+						<selected>Skin.HasSetting(HomeRandomAlbums)</selected>
 					</control>
 					<control type="image" id="219">
 						<width>880</width>

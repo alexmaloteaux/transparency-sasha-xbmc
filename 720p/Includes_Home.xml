@@ -1247,7 +1247,7 @@
 				<font>font-25c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Skin.HasSetting(HomepageRecentMovies)</visible>
+				<visible>Skin.HasSetting(HomeRecentMovies)</visible>
 			</control>
 			<control type="label">
 				<posx>922</posx>
@@ -1260,7 +1260,7 @@
 				<font>font-25c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Skin.HasSetting(HomepageRandomMovies)</visible>
+				<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 			</control>
 			<control type="list" id="5044">
 				<orientation>vertical</orientation>
@@ -1367,7 +1367,7 @@
 						<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestMovie.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentMovies)</visible>
+						<visible>Skin.HasSetting(HomeRecentMovies)</visible>
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
@@ -1375,7 +1375,7 @@
 						<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestMovie.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentMovies)</visible>
+						<visible>Skin.HasSetting(HomeRecentMovies)</visible>
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
@@ -1383,7 +1383,7 @@
 						<thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestMovie.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentMovies)</visible>
+						<visible>Skin.HasSetting(HomeRecentMovies)</visible>
 					</item>
 					<item id="4">
 						<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
@@ -1391,7 +1391,7 @@
 						<thumb>$INFO[Window.Property(RandomMovie.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomMovie.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomMovie.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomMovies)</visible>
+						<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 					</item>
 					<item id="5">
 						<label>$INFO[Window.Property(RandomMovie.2.Title)]</label>
@@ -1399,7 +1399,7 @@
 						<thumb>$INFO[Window.Property(RandomMovie.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomMovie.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomMovie.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomMovies)</visible>
+						<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 					</item>
 					<item id="6">
 						<label>$INFO[Window.Property(RandomMovie.3.Title)]</label>
@@ -1407,7 +1407,7 @@
 						<thumb>$INFO[Window.Property(RandomMovie.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomMovie.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomMovie.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomMovies)</visible>
+						<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 					</item>
 				</content>
 			</control>
@@ -1468,7 +1468,7 @@
 				<font>font-25c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Skin.HasSetting(HomepageRecentTVShows)</visible>
+				<visible>Skin.HasSetting(HomeRecentTVShows)</visible>
 			</control>
 			<control type="label">
 				<posx>820</posx>
@@ -1481,7 +1481,7 @@
 				<font>font-25c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Skin.HasSetting(HomepageRandomTVShows)</visible>
+				<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
 			</control>
 			<control type="list" id="5045">
 				<orientation>vertical</orientation>
@@ -1588,7 +1588,7 @@
 						<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentTVShows)</visible>
+						<visible>Skin.HasSetting(HomeRecentTVShows)</visible>
 					</item>
 					<item id="2">
 						<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
@@ -1596,7 +1596,7 @@
 						<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentTVShows)</visible>
+						<visible>Skin.HasSetting(HomeRecentTVShows)</visible>
 					</item>
 					<item id="3">
 						<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
@@ -1604,7 +1604,7 @@
 						<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentTVShows)</visible>
+						<visible>Skin.HasSetting(HomeRecentTVShows)</visible>
 					</item>
 					<item id="4">
 						<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
@@ -1612,7 +1612,7 @@
 						<thumb>$INFO[Window.Property(RandomEpisode.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomTVShows)</visible>
+						<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
 					</item>
 					<item id="5">
 						<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
@@ -1620,7 +1620,7 @@
 						<thumb>$INFO[Window.Property(RandomEpisode.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomTVShows)</visible>
+						<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
 					</item>
 					<item id="6">
 						<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)]</label>
@@ -1628,7 +1628,7 @@
 						<thumb>$INFO[Window.Property(RandomEpisode.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomTVShows)</visible>
+						<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
 					</item>
 				</content>
 			</control>			
@@ -1689,7 +1689,7 @@
 				<font>font-25c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Skin.HasSetting(HomepageRecentAlbums)</visible>
+				<visible>Skin.HasSetting(HomeRecentAlbums)</visible>
 			</control>
 			<control type="label">
 				<posx>884</posx>
@@ -1702,7 +1702,7 @@
 				<font>font-25c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Skin.HasSetting(HomepageRandomAlbums)</visible>
+				<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 			</control>
 			<control type="list" id="5046">
 				<orientation>vertical</orientation>
@@ -1804,28 +1804,31 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
-						<label2>$INFO[Window.Property(LatestSong.1.Title)]</label2>
-						<thumb>$INFO[Window.Property(LatestSong.1.Thumb)]</thumb>
-						<property name="FanartImage">$INFO[Window.Property(LatestSong.1.Fanart)]</property>
-						<onclick>$INFO[Window.Property(LatestSong.1.Path)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentAlbums)</visible>
+						<label>$INFO[Window.Property(LatestAlbum.1.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.1.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.1.Fanart)]</property>
+						<onclick>PlayList.Clear</onclick>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.1.Path)]&quot;)</onclick>
+						<visible>Skin.HasSetting(HomeRecentAlbums)</visible>
 					</item>
 					<item id="2">
-						<label>$INFO[Window.Property(LatestSong.2.Artist)]</label>
-						<label2>$INFO[Window.Property(LatestSong.2.Title)]</label2>
-						<thumb>$INFO[Window.Property(LatestSong.2.Thumb)]</thumb>
-						<property name="FanartImage">$INFO[Window.Property(LatestSong.2.Fanart)]</property>
-						<onclick>$INFO[Window.Property(LatestSong.2.Path)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentAlbums)</visible>
+						<label>$INFO[Window.Property(LatestAlbum.2.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.2.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.2.Fanart)]</property>
+						<onclick>PlayList.Clear</onclick>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.2.Path)]&quot;)</onclick>
+						<visible>Skin.HasSetting(HomeRecentAlbums)</visible>
 					</item>
 					<item id="3">
-						<label>$INFO[Window.Property(LatestSong.3.Artist)]</label>
-						<label2>$INFO[Window.Property(LatestSong.3.Title)]</label2>
-						<thumb>$INFO[Window.Property(LatestSong.3.Thumb)]</thumb>
-						<property name="FanartImage">$INFO[Window.Property(LatestSong.3.Fanart)]</property>
-						<onclick>$INFO[Window.Property(LatestSong.3.Path)]</onclick>
-						<visible>Skin.HasSetting(HomepageRecentAlbums)</visible>
+						<label>$INFO[Window.Property(LatestAlbum.3.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.3.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.3.Fanart)]</property>
+						<onclick>PlayList.Clear</onclick>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.3.Path)]&quot;)</onclick>
+						<visible>Skin.HasSetting(HomeRecentAlbums)</visible>
 					</item>
 					<item id="4">
 						<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
@@ -1833,7 +1836,7 @@
 						<thumb>$INFO[Window.Property(RandomSong.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomSong.1.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomSong.1.Path)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomAlbums)</visible>
+						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 					</item>
 					<item id="5">
 						<label>$INFO[Window.Property(RandomSong.2.Artist)]</label>
@@ -1841,7 +1844,7 @@
 						<thumb>$INFO[Window.Property(RandomSong.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomSong.2.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomSong.2.Path)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomAlbums)</visible>
+						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 					</item>
 					<item id="6">
 						<label>$INFO[Window.Property(RandomSong.3.Artist)]</label>
@@ -1849,7 +1852,7 @@
 						<thumb>$INFO[Window.Property(RandomSong.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomSong.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomSong.3.Path)]</onclick>
-						<visible>Skin.HasSetting(HomepageRandomAlbums)</visible>
+						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 					</item>
 				</content>
 			</control>

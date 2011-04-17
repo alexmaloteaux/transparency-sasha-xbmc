@@ -1,5 +1,5 @@
 <window id="0">
-	<defaultcontrol always="true">5043</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="videowindow">
@@ -26,9 +26,9 @@
 			<include>VisibleFadeEffect</include>
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)] + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))]]</visible>
 		</control>
-		<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRandomMovies)">recentlyfanartmovies</include>
-		<include condition="Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRandomTVShows)">recentlyfanartepisodes</include>
-		<include condition="Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomAlbums)">recentlyfanartalbums</include>
+		<include condition="Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">recentlyfanartmovies</include>
+		<include condition="Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">recentlyfanartepisodes</include>
+		<include condition="Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">recentlyfanartalbums</include>
 		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
@@ -77,50 +77,6 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
-			<control type="button" id="5043">
-				<description>conditionally run RecentlyAdded and RandomItems script at startup</description>
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>1</width>
-				<height>1</height>
-				<label>-</label>
-				<font>-</font>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">recentlyaddedscript</include>
-				<include condition="Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">randomitemsscript</include>
-				<onfocus>Skin.Reset(Startup)</onfocus>
-				<onfocus>SetFocus(9000)</onfocus>
-				<visible>Skin.HasSetting(Startup)</visible>
-			</control>
-			<control type="button" id="5043">
-				<description>don't run scripts</description>
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>1</width>
-				<height>1</height>
-				<label>-</label>
-				<font>-</font>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onfocus>SetFocus(9000)</onfocus>
-				<visible>!Skin.HasSetting(Startup) + [!Skin.HasSetting(LibraryUpdated) | [Skin.HasSetting(LibraryUpdated) + [Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(DialogVideoScan.xml)]]]</visible>
-			</control>
-			<control type="button" id="5043">
-				<description>conditionally run RecentlyAdded script after library update</description>
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>1</width>
-				<height>1</height>
-				<label>-</label>
-				<font>-</font>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomMovies) | Skin.HasSetting(HomepageRandomTVShows) | Skin.HasSetting(HomepageRandomAlbums)">recentlyaddedscriptupdated</include>
-				<onfocus>Skin.Reset(LibraryUpdated)</onfocus>
-				<onfocus>SetFocus(9000)</onfocus>
-				<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(DialogMusicScan.xml) + !Window.IsVisible(DialogVideoScan.xml)</visible>
-			</control>
 			<include condition="!StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
 			<include condition="StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
 			<include condition="!Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
@@ -131,9 +87,9 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<onright>20</onright>
-				<include condition="Skin.HasSetting(HomepageRecentMovies) | Skin.HasSetting(HomepageRandomMovies)">RecentlyAddedMovies</include>
-				<include condition="Skin.HasSetting(HomepageRecentTVShows) | Skin.HasSetting(HomepageRandomTVShows)">RecentlyAddedTVShows</include>
-				<include condition="Skin.HasSetting(HomepageRecentAlbums) | Skin.HasSetting(HomepageRandomAlbums)">RecentlyAddedAlbums</include>
+				<include condition="Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">RecentlyAddedMovies</include>
+				<include condition="Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">RecentlyAddedTVShows</include>
+				<include condition="Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">RecentlyAddedAlbums</include>
 			</control>
 			<control type="group" id="9000">
 				<posx>0</posx>
