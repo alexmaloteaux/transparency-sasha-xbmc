@@ -48,6 +48,7 @@
 		<height>35</height>
 	</include>
 	<include name="VideoMediaFlags">
+		<visible>![ListItem.IsFolder | stringcompare(ListItem.Label,..)]</visible>
 	<!-- Resolution -->
 		<control type="image">
 			<include>VideoMediaFlagsResolution</include>
@@ -447,6 +448,7 @@
 		</control>
 	</include>
 	<include name="MovieStudioFlag">
+		<visible>![ListItem.IsFolder | stringcompare(ListItem.Label,..)]</visible>
 	<!-- Studio Background-->
 		<control type="image">
 			<posx>751</posx>
