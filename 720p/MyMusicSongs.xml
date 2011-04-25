@@ -129,19 +129,31 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>3</onup>
-					<ondown>610</ondown>
+					<ondown>19</ondown>
 					<enable>Library.HasContent(Music)</enable>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
+				</control>
+				<control type="edit" id="19">
+					<description>Filter</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>587</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>5</onup>
+					<ondown>610</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
 					<posx>0</posx>
-					<posy>135</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>5</onup>
+					<onup>19</onup>
 					<ondown>2</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<animation effect="slide" end="0,-135" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
@@ -149,13 +161,13 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>137</posy>
+					<posy>182</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
-					<animation effect="slide" end="0,-135" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<animation effect="slide" end="0,-180" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 				</control>
 			</control>
 		</control>
