@@ -350,7 +350,7 @@
 			<control type="label">
 				<description>location label</description>
 				<posx>895</posx>
-				<posy>10</posy>
+				<posy>5</posy>
 				<height>30</height>
 				<width>770</width>
 				<label>[B]$INFO[Window(Weather).Property(Location)][/B]</label>
@@ -363,7 +363,7 @@
 			<control type="label">
 				<description>Conditions Label</description>
 				<posx>895</posx>
-				<posy>35</posy>
+				<posy>28</posy>
 				<height>30</height>
 				<width>770</width>
 				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Conditions]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.WindSpeed)] $INFO[Window(Weather).Property(Daily.1.ShortWindDirection)]</label>
@@ -375,7 +375,7 @@
 			<control type="label">
 				<description>Temp Label</description>
 				<posx>895</posx>
-				<posy>57</posy>
+				<posy>48</posy>
 				<height>30</height>
 				<width>770</width>
 				<label>[COLOR=lightblue]$LOCALIZE[401]: [/COLOR]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[419]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[418]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
@@ -387,7 +387,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>590</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>80</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -399,7 +399,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>660</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -411,7 +411,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>720</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -423,7 +423,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>780</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -435,7 +435,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>840</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -447,7 +447,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>900</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -459,7 +459,7 @@
 			<control type="label">
 				<description>Day label</description>
 				<posx>960</posx>
-				<posy>90</posy>
+				<posy>78</posy>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -468,15 +468,92 @@
 				<aligny>center</aligny>
 				<textcolor>lightblue</textcolor>
 			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>590</posx>
+				<posy>92</posy>
+				<width>80</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>660</posx>
+				<posy>92</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.2.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>720</posx>
+				<posy>92</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.3.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>780</posx>
+				<posy>92</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.4.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>840</posx>
+				<posy>92</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.5.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>900</posx>
+				<posy>92</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.6.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>Day label</description>
+				<posx>960</posx>
+				<posy>92</posy>
+				<width>60</width>
+				<height>20</height>
+				<font>font-15c</font>
+				<label>[B]$INFO[Window(Weather).Property(Daily.7.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
 		</control>
 	</include>
 	<include name="Home_Animated_Weather_Icons">
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>918</posx>
+			<posx>920</posx>
 			<posy>0</posy>
-			<width>90</width>
-			<height>90</height>
+			<width>86</width>
+			<height>86</height>
 			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
@@ -563,10 +640,10 @@
 	<include name="Home_Weather_Icons">
 		<control type="image">
 			<description>Weather image</description>
-			<posx>918</posx>
+			<posx>920</posx>
 			<posy>0</posy>
-			<width>90</width>
-			<height>90</height>
+			<width>86</width>
+			<height>86</height>
 			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 		</control>
 		<control type="image">
