@@ -307,6 +307,7 @@
 				<visible>IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="group">
+				<visible>!Skin.HasSetting(FanartShowPlot)</visible>
 				<control type="label">
 					<posx>257</posx>
 					<posy>593</posy>
@@ -380,6 +381,36 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(FanartShowPlot)</visible>
+				<control type="textbox">
+					<description>Plot Value for Movies</description>
+					<posx>257</posx>
+					<posy>593</posy>
+					<width>490</width>
+					<height>66</height>
+					<font>font-19</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.PlotOutline]</label>
+					<autoscroll time="1200" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox">
+					<description>Plot Value for Movies</description>
+					<posx>257</posx>
+					<posy>593</posy>
+					<width>490</width>
+					<height>66</height>
+					<font>font-19</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="1200" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 			</control>
 			<control type="group">
