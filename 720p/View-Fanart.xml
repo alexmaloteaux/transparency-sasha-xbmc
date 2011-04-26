@@ -306,79 +306,81 @@
 				<label>$INFO[ListItem.label]</label>
 				<visible>IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
-			<control type="label">
-				<posx>257</posx>
-				<posy>593</posy>
-				<width>520</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
-			</control>
-			<control type="label">
-				<posx>257</posx>
-				<posy>613</posy>
-				<width>500</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE], $LOCALIZE[12391]]</label>
-				<visible>!substring(ListItem.Duration,min)</visible>
-			</control>
-			<control type="label">
-				<posx>257</posx>
-				<posy>613</posy>
-				<width>500</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</label>
-				<visible>substring(ListItem.Duration,min)</visible>
-			</control>
-			<control type="label">
-				<posx>257</posx>
-				<posy>633</posy>
-				<width>618</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
-			</control>
-			<control type="label">
-				<posx>415</posx>
-				<posy>633</posy>
-				<width>618</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/COLOR][/B][/UPPERCASE]]</label>
-			</control>
-			<control type="label">
-				<posx>573</posx>
-				<posy>633</posy>
-				<width>618</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
+			<control type="group">
+				<control type="label">
+					<posx>257</posx>
+					<posy>593</posy>
+					<width>610</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>613</posy>
+					<width>500</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE], $LOCALIZE[12391]]</label>
+					<visible>!substring(ListItem.Duration,min)</visible>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>613</posy>
+					<width>500</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</label>
+					<visible>substring(ListItem.Duration,min)</visible>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>633</posy>
+					<width>160</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
+				<control type="label">
+					<posx>420</posx>
+					<posy>633</posy>
+					<width>160</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
+				<control type="label">
+					<posx>582</posx>
+					<posy>633</posy>
+					<width>170</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
