@@ -219,8 +219,19 @@
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
-				<label>[UPPERCASE][B]$LOCALIZE[21888]:[/B][/UPPERCASE]</label>
+				<label>[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</label>
 				<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
+			</control>
+			<control type="label">
+				<posx>325</posx>
+				<posy>530</posy>
+				<width>800</width>
+				<height>30</height>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<align>center</align>
+				<label>[UPPERCASE][B]$LOCALIZE[21888]:[/B][/UPPERCASE]</label>
+				<visible>Container.Content(Artists) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
@@ -246,6 +257,17 @@
 				<align>center</align>
 				<label>[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</label>
 				<visible>Container.Content(Albums) + !Control.IsVisible(50)</visible>
+			</control>
+			<control type="label">
+				<posx>325</posx>
+				<posy>530</posy>
+				<width>800</width>
+				<height>30</height>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<align>center</align>
+				<label>[UPPERCASE][B]$LOCALIZE[182]:[/B][/UPPERCASE]</label>
+				<visible>Container.Content(Albums) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
