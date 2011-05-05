@@ -1346,19 +1346,6 @@
 				<visible>Container.Content(Songs) + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
-				<posx>262</posx>
-				<posy>577</posy>
-				<width>510</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-				<visible>Container.Content(Songs) + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
-			</control>
-			<control type="label">
 				<posx>865</posx>
 				<posy>577</posy>
 				<width>200</width>
@@ -1450,6 +1437,19 @@
 				<label>$INFO[MusicPlayer.Title]</label>
 				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
 				<visible>Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="label">
+				<posx>262</posx>
+				<posy>577</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Title]</label>
+				<visible>Window.IsVisible(MusicPlaylist) + !Player.HasAudio</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
