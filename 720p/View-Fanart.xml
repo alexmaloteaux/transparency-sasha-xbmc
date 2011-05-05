@@ -1346,6 +1346,19 @@
 				<visible>Container.Content(Songs) + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
+				<posx>262</posx>
+				<posy>577</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Title]</label>
+				<visible>Container.Content(Songs) + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
+			</control>
+			<control type="label">
 				<posx>865</posx>
 				<posy>577</posy>
 				<width>200</width>
@@ -1356,7 +1369,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Duration]</label>
-				<visible>Container.Content(Songs) + !ListItem.IsPlaying + !Window.IsVisible(MusicPlaylist)</visible>
+				<visible>Container.Content(Songs) + !ListItem.IsPlaying + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1396,7 +1409,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Artist]</label>
 				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(MusicFiles)] + !Window.IsVisible(MusicPlaylist)</visible>
+				<visible>[Container.Content(Songs) | Window.IsVisible(MusicFiles)] + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1409,7 +1422,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>!Window.IsVisible(MusicPlaylist)</visible>
+				<visible>![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1422,7 +1435,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>!Window.IsVisible(MusicPlaylist)</visible>
+				<visible>![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
