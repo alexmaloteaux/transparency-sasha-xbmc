@@ -396,7 +396,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<label>$INFO[ListItem.PlotOutline]</label>
-					<autoscroll time="1200" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
@@ -409,7 +409,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="1200" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 			</control>
