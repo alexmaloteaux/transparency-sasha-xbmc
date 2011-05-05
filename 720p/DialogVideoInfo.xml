@@ -42,7 +42,7 @@
 				<posy>368</posy>
 				<width>234</width>
 				<height>360</height>
-				<texture fallback="case-sets.png">case$INFO[VideoPlayer.VideoResolution].png</texture>
+				<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
 				<visible>Container.Content(Movies) + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
