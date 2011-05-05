@@ -192,7 +192,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
 			<texture>flags/movies/source/dvd.png</texture>
-			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [stringcompare(ListItem.VideoResolution,SD) | stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
+			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
@@ -207,7 +207,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
 			<texture>flags/movies/source/sdtv.png</texture>
-			<visible>substring(ListItem.Filename,sdtv) | substring(ListItem.Filename,tvrip) | [[!substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + [Container.Content(Episodes) | Container.Content(MusicVideos)] + [stringcompare(ListItem.VideoResolution,SD) | stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
+			<visible>substring(ListItem.Filename,sdtv) | substring(ListItem.Filename,tvrip) | [[!substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + [Container.Content(Episodes) | Container.Content(MusicVideos)] + [stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
@@ -217,7 +217,7 @@
 		<control type="image">
 			<include>VideoMediaFlagsSource</include>
 			<texture>mediaflag-source.png</texture>
-			<visible>IsEmpty(ListItem.VideoResolution) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>IsEmpty(ListItem.VideoResolution) + !substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	<!-- Subtitles -->
 		<control type="image">
