@@ -1350,6 +1350,37 @@
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Control.IsVisible(55) + !Skin.HasSetting(HideInfoPanelCoverView)</visible>
+			<control type="group">
+				<animation effect="zoom" start="640,0,1,720" end="0,0,1280,720" time="200" delay="2000">Visible</animation>
+				<animation effect="zoom" start="0,0,1280,720" end="0,200,1280,1" time="200">Hidden</animation>
+				<visible>Control.IsVisible(55) + ![Container.Content(Movies) + ListItem.IsFolder] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay57</include>
+				<control type="image">
+					<posx>160</posx>
+					<posy>125</posy>
+					<width>960</width>
+					<height>150</height>
+					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+				</control>
+				<control type="textbox">
+					<posx>300</posx>
+					<posy>135</posy>
+					<width>680</width>
+					<height>130</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>justify</align>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+			</control>
+		</control>
 	</include>
 	<include name="CoverFlow-Music">
 		<control type="image">
