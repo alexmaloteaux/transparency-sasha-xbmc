@@ -305,7 +305,7 @@
 				<posy>615</posy>
 				<width>540</width>
 				<height>48</height>
-				<include condition="!Skin.HasSetting(Enable_MusicVideos_MusicVideos_Flags)">VideoMediaFlags</include>
+				<include condition="!Skin.HasSetting(Enable_MusicVideos_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 		</control>
