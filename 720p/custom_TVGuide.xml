@@ -711,15 +711,6 @@
 					</item>
 				</content>
 			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4001).ListItem(0).Label) + Control.HasFocus(4001)</visible>
-			</control>
 		</control>
 		<control type="group">
 			<description>tuesday</description>
@@ -1309,15 +1300,6 @@
 						<visible>StringCompare(Window(Home).Property(NextAired.100.Airday),Tuesday)</visible>
 					</item>
 				</content>
-			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4002).ListItem(0).Label) + Control.HasFocus(4002)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1909,15 +1891,6 @@
 					</item>
 				</content>
 			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4003).ListItem(0).Label) + Control.HasFocus(4003)</visible>
-			</control>
 		</control>
 		<control type="group">
 			<description>thursday</description>
@@ -2507,15 +2480,6 @@
 						<visible>StringCompare(Window(Home).Property(NextAired.100.Airday),Thursday)</visible>
 					</item>
 				</content>
-			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4004).ListItem(0).Label) + Control.HasFocus(4004)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -3107,15 +3071,6 @@
 					</item>
 				</content>
 			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4005).ListItem(0).Label) + Control.HasFocus(4005)</visible>
-			</control>
 		</control>
 		<control type="group">
 			<description>saturday</description>
@@ -3706,15 +3661,6 @@
 					</item>
 				</content>
 			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4006).ListItem(0).Label) + Control.HasFocus(4006)</visible>
-			</control>
 		</control>
 		<control type="group">
 			<description>sunday</description>
@@ -4304,15 +4250,6 @@
 						<visible>StringCompare(Window(Home).Property(NextAired.100.Airday),Sunday)</visible>
 					</item>
 				</content>
-			</control>
-			<control type="image">
-				<posx>98</posx>
-				<posy>0</posy>
-				<width>170</width>
-				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
-				<colordiffuse>9FFFFFFF</colordiffuse>
-				<visible>IsEmpty(Container(4007).ListItem(0).Label) + Control.HasFocus(4007)</visible>
 			</control>
 		</control>
 		<control type="group">
