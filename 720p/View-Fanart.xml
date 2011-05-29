@@ -1343,7 +1343,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
-				<visible>Container.Content(Songs) + !Window.IsVisible(MusicPlaylist)</visible>
+				<visible>Container.Content(Songs) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>865</posx>
