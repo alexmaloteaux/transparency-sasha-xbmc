@@ -193,6 +193,20 @@
 			<visible>Control.HasFocus(5046) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
+	<include name="randomfanartaddons">
+		<control type="image" id="7023">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Container(5047).ListItem.Property(FanartImage)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>600</fadetime>
+			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<visible>Control.HasFocus(5047) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+		</control>
+	</include>
 	<include name="Home_Top_Weather_Icon">
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
@@ -1947,6 +1961,178 @@
 			</control>
 		</control>
 	</include>
+	<include name="RandomAddons">
+		<control type="group">
+			<posx>250</posx>
+			<posy>490</posy>
+			<include>HomeInfoAnimation</include>
+			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
+			<visible>Container(5040).HasFocus(8) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
+			<control type="image">
+				<description>gradient</description>
+				<posx>430</posx>
+				<posy>0</posy>
+				<width>600</width>
+				<height>150</height>
+				<texture border="2">gradient.png</texture>
+			</control>
+			<control type="image">
+				<posx>896</posx>
+				<posy>31</posy>
+				<width>112</width>
+				<height>112</height>
+				<texture fallback="DefaultAddon.png" backgound="true" diffuse="thumb-diffuse.png">$INFO[Container(5047).ListItem.Thumb]</texture>
+				<fadetime>400</fadetime>
+			</control>
+			<control type="label">
+				<posx>888</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>128</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="list" id="5047">
+				<orientation>vertical</orientation>
+				<posx>105</posx>
+				<posy>10</posy>
+				<height>120</height>
+				<width>770</width>
+				<onup>20</onup>
+				<ondown>9000</ondown>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<itemlayout width="770" height="40">
+					<control type="label">
+						<posx>770</posx>
+						<posy>0</posy>
+						<height>17</height>
+						<width>770</width>
+						<font>font-19</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<scrollspeed>0</scrollspeed>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>17</posy>
+						<height>17</height>
+						<width>770</width>
+						<font>font-17</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<scrollspeed>0</scrollspeed>
+						<label>[I]$INFO[ListItem.Label2] [/I]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout width="770" height="40">
+					<control type="label">
+						<posx>770</posx>
+						<posy>0</posy>
+						<height>17</height>
+						<width>770</width>
+						<font>font-19</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<visible>!Control.HasFocus(5047)</visible>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>0</posy>
+						<height>17</height>
+						<width>770</width>
+						<font>font-19</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<visible>Control.HasFocus(5047)</visible>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>17</posy>
+						<height>17</height>
+						<width>770</width>
+						<font>font-17</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[I]$INFO[ListItem.Label2] [/I]</label>
+						<visible>!Control.HasFocus(5047)</visible>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>17</posy>
+						<height>17</height>
+						<width>770</width>
+						<font>font-17</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[I]$INFO[ListItem.Label2] [/I]</label>
+						<visible>Control.HasFocus(5047)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$INFO[Window.Property(RandomAddon.1.Name)]</label>
+						<label2>$INFO[Window.Property(RandomAddon.1.Version)]</label2>
+						<thumb>$INFO[Window.Property(RandomAddon.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomAddon.1.Fanart)]</property>
+						<onclick>RunAddon($INFO[Window.Property(RandomAddon.1.Path)])</onclick>
+					</item>
+					<item id="2">
+						<label>$INFO[Window.Property(RandomAddon.2.Name)]</label>
+						<label2>$INFO[Window.Property(RandomAddon.2.Version)]</label2>
+						<thumb>$INFO[Window.Property(RandomAddon.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomAddon.2.Fanart)]</property>
+						<onclick>RunAddon($INFO[Window.Property(RandomAddon.2.Path)])</onclick>
+					</item>
+					<item id="3">
+						<label>$INFO[Window.Property(RandomAddon.3.Name)]</label>
+						<label2>$INFO[Window.Property(RandomAddon.3.Version)]</label2>
+						<thumb>$INFO[Window.Property(RandomAddon.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomAddon.3.Fanart)]</property>
+						<onclick>RunAddon($INFO[Window.Property(RandomAddon.3.Path)])</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="label">
+				<posx>874</posx>
+				<posy>127</posy>
+				<height>20</height>
+				<width>500</width>
+				<label>[UPPERCASE][B]$LOCALIZE[24001]: $INFO[Window.Property(Addons.Count)][/B][/UPPERCASE]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-15c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+	</include>
 	<include name="VerticalMenu">
 		<include>Window_OpenClose_Home_Panel_Animation</include>
 		<control type="group">
@@ -2536,8 +2722,8 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group" id="8000">
-			<onup>5047</onup>
-			<onright>5047</onright>
+			<onup>5048</onup>
+			<onright>5048</onright>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!ControlGroup(8000).HasFocus">Conditional</animation>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Home_Hor_Sub</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Home_Ver_Sub</include>
@@ -3817,7 +4003,7 @@
 		<onup>8001</onup>
 		<ondown>8001</ondown>
 		<onleft>5040</onleft>
-		<onright>5047</onright>
+		<onright>5048</onright>
 		<focusposition>0</focusposition>
 		<movement>7</movement>
 		<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuLayoutAnim</include>
@@ -3886,7 +4072,7 @@
 		<height>20</height>
 		<hitrect x="144" y="540" w="992" h="60"/>
 		<itemgap>-2</itemgap>
-		<onup>5047</onup>
+		<onup>5048</onup>
 		<ondown>5040</ondown>
 		<onleft>8001</onleft>
 		<onright>8001</onright>

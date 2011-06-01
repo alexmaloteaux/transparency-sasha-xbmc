@@ -652,6 +652,13 @@
 						<include>randomitemsscriptsettings</include>
 						<selected>Skin.HasSetting(HomeRandomAlbums)</selected>
 					</control>
+					<control type="radiobutton" id="219">
+						<description>enable random addon info</description>
+						<label>$LOCALIZE[0] - $LOCALIZE[31174]</label>
+						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
+						<include>randomitemsscriptsettings</include>
+						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
+					</control>
 					<control type="image" id="220">
 						<width>880</width>
 						<height>2</height>
