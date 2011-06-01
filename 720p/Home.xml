@@ -24,11 +24,35 @@
 			<fadetime>600</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)] + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))]]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)] + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))] | [Control.HasFocus(5047) + !IsEmpty(Control.GetLabel(7024))]]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">recentlyfanartmovies</include>
 		<include condition="!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">recentlyfanartepisodes</include>
 		<include condition="!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">recentlyfanartalbums</include>
+		<control type="visualisation">
+			<description>visualisation</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+			<aspectratio>keep</aspectratio>
+			<timeperimage>5000</timeperimage>
+			<fadetime>2000</fadetime>
+			<randomize>true</randomize>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + Skin.HasSetting(Vis-LastFM) + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
+		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
@@ -41,6 +65,7 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
@@ -53,6 +78,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
@@ -62,7 +88,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization)</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization) + ![StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
 		</control>
 		<control type="image">
 			<description>splash</description>

@@ -240,6 +240,12 @@
 			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartLong)</visible>
 		</control>
 	</include>
+	<include name="ArtistSlideshow">
+		<onfocus>RunScript(script.artistslideshow)</onfocus>
+	</include>
+	<include name="ArtistSlideshowLastFM">
+		<onclick>RunScript(script.artistslideshow)</onclick>
+	</include>
 	<include name="Breadcrumbs">
 		<posx>0</posx>
 		<posy>0</posy>
