@@ -264,15 +264,14 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="group">
-					<posx>650</posx>
-					<posy>156</posy>
+					<posx>630</posx>
+					<posy>153</posy>
 					<width>404</width>
 					<height>48</height>
 					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<animation effect="slide" start="0,0" end="20,0" time="0" condition="Player.CanRecord">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
 				</control>
@@ -411,12 +410,11 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>1024</posx>
+					<posx>984</posx>
 					<posy>678</posy>
 					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
 					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
-					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
 					<control type="button" id="909">
@@ -520,7 +518,7 @@
 						<onup>913</onup>
 						<ondown>913</ondown>
 					</control>
-					<control type="button" id="9040">
+					<control type="togglebutton" id="9040">
 						<description>Subtitles Menu</description>
 						<posx>240</posx>
 						<posy>0</posy>
@@ -530,13 +528,18 @@
 						<font>-</font>
 						<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 						<texturefocus>osd-subs-focus.png</texturefocus>
+						<alttexturenofocus>osd-subs-nofocus.png</alttexturenofocus>
+						<alttexturefocus>osd-subs-focus.png</alttexturefocus>
 						<onclick>RunScript($INFO[Skin.String(SubsScript_Path)])</onclick>
 						<onclick>Dialog.Close(videoosd)</onclick>
+						<altclick>Skin.SetAddon(SubsScript_Path,xbmc.python.subtitles)</altclick>
+						<altclick>Dialog.Close(videoosd)</altclick>
+						<altclick>XBMC.RunScript($INFO[Skin.String(SubsScript_Path)])</altclick>
+						<usealttexture>IsEmpty(Skin.String(SubsScript_Path))</usealttexture>
 						<onleft>913</onleft>
 						<onright>915</onright>
 						<onup>9040</onup>
 						<ondown>9040</ondown>
-						<visible>Skin.HasSetting(SubsScript_Enable)</visible>
 					</control>
 					<control type="button" id="915">
 						<description>DVD menu button</description>
@@ -553,7 +556,6 @@
 						<onup>915</onup>
 						<ondown>915</ondown>
 						<onclick>PlayerControl(ShowVideoMenu)</onclick>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 						<visible>VideoPlayer.HasMenu</visible>
 					</control>
 					<control type="button" id="918">
@@ -571,7 +573,6 @@
 						<onup>918</onup>
 						<ondown>918</ondown>
 						<onclick>ActivateWindow(Teletext)</onclick>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!Skin.HasSetting(SubsScript_Enable)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
 						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
