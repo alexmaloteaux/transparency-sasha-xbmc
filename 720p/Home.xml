@@ -104,30 +104,34 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
-			<include condition="!StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
-			<include condition="StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
-			<include condition="!Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
-			<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
-			<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>
-			<include condition="!Skin.HasSetting(homepageMusicinfo)">MusicInfo</include>
-			<control type="group" id="5048">
-				<posx>0</posx>
-				<posy>0</posy>
-				<onright>20</onright>
-				<include condition="!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">RecentlyAddedMovies</include>
-				<include condition="!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">RecentlyAddedTVShows</include>
-				<include condition="!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">RecentlyAddedAlbums</include>
-				<include condition="!Skin.HasSetting(HomeRandomAddons)">RandomAddons</include>
+			<control type="group">
+				<animation effect="fade" start="100" end="0" time="500" condition="Window.IsVisible(script-globalsearch-main.xml)">Conditional</animation>
+				<include condition="!StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
+				<include condition="StringCompare(Weather.Plugin,weather.weatherplus) + !Skin.HasSetting(homepageWeatherinfo)">WeatherPlusInfo</include>
+				<include condition="!Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
+				<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
+				<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>
+				<include condition="!Skin.HasSetting(homepageMusicinfo)">MusicInfo</include>
+				<control type="group" id="5048">
+					<posx>0</posx>
+					<posy>0</posy>
+					<onright>20</onright>
+					<include condition="!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">RecentlyAddedMovies</include>
+					<include condition="!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">RecentlyAddedTVShows</include>
+					<include condition="!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">RecentlyAddedAlbums</include>
+					<include condition="!Skin.HasSetting(HomeRandomAddons)">RandomAddons</include>
+				</control>
+				<control type="group" id="9000">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>720</height>
+					<width>1388</width>
+					<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalMenu</include>
+					<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalMenu</include>
+				</control>
+				<include>SubMenu</include>
+				<include condition="!Skin.HasSetting(Home_Weather_Icon)">Home_Top_Weather_Icon</include>
 			</control>
-			<control type="group" id="9000">
-				<posx>0</posx>
-				<posy>0</posy>
-				<height>720</height>
-				<width>1388</width>
-				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalMenu</include>
-				<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalMenu</include>
-			</control>
-			<include>SubMenu</include>
 			<control type="group">
 				<include>Window_OpenClose_Header_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Header2</include>
@@ -156,7 +160,7 @@
 					<visible>Skin.HasSetting(Show_Custom_Home_Logo)</visible>
 				</control>
 				<control type="grouplist">
-					<posx>719</posx>
+					<posx>669</posx>
 					<posy>0</posy>
 					<width>529</width>
 					<height>30</height>
@@ -192,6 +196,30 @@
 						<texture>dot.png</texture>
 					</control>
 				</control>
+				<control type="button" id="10">
+					<description>Search push button</description>
+					<posx>1199</posx>
+					<posy>7</posy>
+					<width>20</width>
+					<height>20</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>SearchFocus.png</texturefocus>
+					<texturenofocus>SearchNoFocus.png</texturenofocus>
+					<pulseonselect>true</pulseonselect>
+					<onleft>20</onleft>
+					<onright>20</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onclick>RunScript(script.globalsearch)</onclick>
+				</control>
+				<control type="image">
+					<posx>1219</posx>
+					<posy>0</posy>
+					<width>29</width>
+					<height>30</height>
+					<texture>dot.png</texture>
+				</control>
 				<control type="button" id="20">
 					<description>Power push button</description>
 					<posx>1248</posx>
@@ -204,8 +232,8 @@
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>true</pulseonselect>
-					<onleft>9000</onleft>
-					<onright>9000</onright>
+					<onleft>10</onleft>
+					<onright>10</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 				</control>
@@ -229,7 +257,6 @@
 					<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 			</control>
-			<include condition="!Skin.HasSetting(Home_Weather_Icon)">Home_Top_Weather_Icon</include>
 			<control type="group">
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Footer_Animation</include>
 				<include condition="Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Home_Panel_Hor_Animation</include>
