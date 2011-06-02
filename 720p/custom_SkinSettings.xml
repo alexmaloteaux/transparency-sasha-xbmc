@@ -2992,32 +2992,20 @@
 					<onright>9000</onright>
 					<onup>501</onup>
 					<ondown>501</ondown>
-					<control type="radiobutton" id="503">
-						<label>31141</label>
-						<onclick>Skin.ToggleSetting(SubsScript_Enable)</onclick>
-						<selected>Skin.HasSetting(SubsScript_Enable)</selected>
-					</control>
 					<control type="button" id="504">
-						<label>- $LOCALIZE[31204]</label>
+						<label>$LOCALIZE[24012] - $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(SubsScript_Path)][/COLOR]</label2>
 						<onclick>Skin.SetAddon(SubsScript_Path,xbmc.python.subtitles)</onclick>
-						<enable>Skin.HasSetting(SubsScript_Enable)</enable>
 					</control>
 					<control type="image" id="505">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="506">
-						<label>31208</label>
-						<onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
-						<selected>Skin.HasSetting(LyricScript_Enable)</selected>
-					</control>
 					<control type="button" id="507">
-						<label>- $LOCALIZE[31204]</label>
+						<label>$LOCALIZE[24013] - $LOCALIZE[31204]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
-						<enable>Skin.HasSetting(LyricScript_Enable)</enable>
 					</control>
 					<control type="image" id="508">
 						<width>880</width>
@@ -3073,7 +3061,7 @@
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,banner=True)</onclick>
 						<visible>!Skin.HasSetting(TVShowsPosters)</visible>
 					</control>
-					<control type="button" id="517">
+					<control type="button" id="518">
 						<label>$LOCALIZE[31209]</label>
 						<onclick>RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,poster=True)</onclick>
 						<visible>Skin.HasSetting(TVShowsPosters)</visible>
