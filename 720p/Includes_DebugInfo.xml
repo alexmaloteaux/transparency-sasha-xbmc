@@ -67,6 +67,7 @@
 				<heigth>40</heigth>
 				<label>ListItem.VideoCodec: $INFO[ListItem.VideoCodec]</label>
 				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(Videos)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -75,6 +76,7 @@
 				<heigth>40</heigth>
 				<label>ListItem.VideoResolution: $INFO[ListItem.VideoResolution]</label>
 				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(Videos)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -83,6 +85,7 @@
 				<heigth>40</heigth>
 				<label>ListItem.VideoAspect: $INFO[ListItem.VideoAspect]</label>
 				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(Videos)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -91,6 +94,7 @@
 				<heigth>40</heigth>
 				<label>ListItem.AudioCodec: $INFO[ListItem.AudioCodec]</label>
 				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(Videos)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -99,6 +103,7 @@
 				<heigth>40</heigth>
 				<label>ListItem.AudioChannels: $INFO[ListItem.AudioChannels]</label>
 				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(Videos)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -107,6 +112,7 @@
 				<heigth>40</heigth>
 				<label>ListItem.AudioLanguage: $INFO[ListItem.AudioLanguage]</label>
 				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(Videos)</visible>
 			</control>
 		</control>
 	</include>
@@ -208,6 +214,14 @@
 				<width>1240</width>
 				<heigth>40</heigth>
 				<label>Player.FileNameAndPath: $INFO[Player.FileNameAndPath]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>60</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>MusicPlayer.Property(Fanart_Image): $INFO[MusicPlayer.Property(Fanart_Image)]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
