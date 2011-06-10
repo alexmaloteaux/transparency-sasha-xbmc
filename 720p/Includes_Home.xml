@@ -25,11 +25,11 @@
 	</include>
 	<include name="home-weather-background-conditional">
 		<icon>special://skin/backgrounds/weather.jpg</icon>
-		<thumb>special://skin/backgrounds/home-weather-conditional/$INFO[Weather.FanartCode]</thumb>
+		<thumb>special://skin/backgrounds/home-weather-conditional/$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
 	</include>
 	<include name="home-weather-custom-background-conditional">
 		<icon>special://skin/backgrounds/weather.jpg</icon>
-		<thumb>$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)]$INFO[Weather.FanartCode]</thumb>
+		<thumb>$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)]$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
 	</include>
 	<include name="home-weather-background">
 		<icon>special://skin/backgrounds/weather.jpg</icon>
@@ -233,7 +233,7 @@
 			<posy>50</posy>
 			<width>72</width>
 			<height>72</height>
-			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -288,7 +288,7 @@
 				<posy>60</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>$INFO[Weather.Location]</label>
+				<label>$INFO[Window(Weather).Property(Location)]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-23</font>
@@ -327,7 +327,7 @@
 			<posy>7</posy>
 			<width>136</width>
 			<height>136</height>
-			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -340,7 +340,7 @@
 			<posy>7</posy>
 			<width>136</width>
 			<height>136</height>
-			<texture>$INFO[Weather.Conditions]</texture>
+			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherPlusInfo">
@@ -568,7 +568,7 @@
 			<posy>0</posy>
 			<width>86</width>
 			<height>86</height>
-			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
+			<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
