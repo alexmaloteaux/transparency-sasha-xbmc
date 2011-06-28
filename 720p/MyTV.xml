@@ -556,7 +556,7 @@
 									<height>60</height>
 									<posx>0</posx>
 									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),240)</visible>
+									<visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),192) | stringcompare(ListItem.Property(GenreType),208) | stringcompare(ListItem.Property(GenreType),224) | stringcompare(ListItem.Property(GenreType),240)</visible>
 									<texture border="3">genre-l-unknown.png</texture>
 								</control>
 								<control type="label" id="1">
@@ -682,7 +682,7 @@
 									<height>60</height>
 									<posx>0</posx>
 									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),240)</visible>
+									<visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),192) | stringcompare(ListItem.Property(GenreType),208) | stringcompare(ListItem.Property(GenreType),224) | stringcompare(ListItem.Property(GenreType),240)</visible>
 									<texture border="3">genre-l-unknown.png</texture>
 								</control>
 								<control type="image" id="14">
