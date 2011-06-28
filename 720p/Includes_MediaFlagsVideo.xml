@@ -115,6 +115,11 @@
 		</control>
 		<control type="image">
 			<include>VideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dts40.png</texture>
+			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,4)</visible>
+		</control>
+		<control type="image">
+			<include>VideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dts51.png</texture>
 			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,6)</visible>
 		</control>

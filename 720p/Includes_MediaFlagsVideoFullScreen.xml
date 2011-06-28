@@ -99,6 +99,11 @@
 		</control>
 		<control type="image">
 			<include>FullScreenVideoMediaFlagsAudioCodec</include>
+			<texture>flags/movies/audiocodec/dts40.png</texture>
+			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,4)</visible>
+		</control>
+		<control type="image">
+			<include>FullScreenVideoMediaFlagsAudioCodec</include>
 			<texture>flags/movies/audiocodec/dts51.png</texture>
 			<visible>[stringcompare(VideoPlayer.AudioCodec,dca) | stringcompare(VideoPlayer.AudioCodec,dts)] + stringcompare(VideoPlayer.AudioChannels,6)</visible>
 		</control>
