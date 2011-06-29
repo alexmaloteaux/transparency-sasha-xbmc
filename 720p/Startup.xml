@@ -6,7 +6,7 @@
 			<include condition="Skin.HasSetting(Use_Startup_Playlist)">StartupPlaylist</include>
 			<include condition="Skin.HasSetting(NextAired)">NextAiredScript</include>
 			<include condition="Skin.HasSetting(Qlock)">QlockScript</include>
-			<include condition="Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeRandomAlbums)">randomitemsscript</include>
+			<include condition="Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeRandomAlbums) | Skin.HasSetting(HomeRandomAddons)">randomitemsscript</include>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
