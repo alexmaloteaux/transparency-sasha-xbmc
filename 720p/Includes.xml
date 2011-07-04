@@ -2538,9 +2538,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="QlockScript">
-		<onfocus>RunScript(script.qlock,-startup)</onfocus>
-	</include>
 	<include name="randomitemsscript">
 		<onfocus>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onfocus>
 	</include>
