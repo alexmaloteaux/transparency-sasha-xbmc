@@ -3487,27 +3487,27 @@
 					</item>
 					<item id="8118">
 						<description>Menu Programs Sub Custom16</description>
-						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom20_Label)]</label>
-						<onclick>RunScript($INFO[Skin.String(Menu_Programs_Sub_Custom20_Path)])</onclick>
-						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom20)</visible>
-					</item>
-					<item id="8119">
-						<description>Menu Programs Sub Custom20</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label)]</label>
 						<onclick>RunScript($INFO[Skin.String(Menu_Programs_Sub_Custom16_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom16)</visible>
 					</item>
-					<item id="8120">
+					<item id="8119">
 						<description>Menu Programs Sub Custom17</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label)]</label>
 						<onclick>RunScript($INFO[Skin.String(Menu_Programs_Sub_Custom17_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom17)</visible>
 					</item>
-					<item id="8121">
+					<item id="8120">
 						<description>Menu Programs Sub Custom18</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label)]</label>
 						<onclick>RunScript($INFO[Skin.String(Menu_Programs_Sub_Custom18_Path)])</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom18)</visible>
+					</item>
+					<item id="8121">
+						<description>Menu Programs Sub Custom19</description>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom19_Label)]</label>
+						<onclick>RunScript($INFO[Skin.String(Menu_Programs_Sub_Custom19_Path)])</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom19)</visible>
 					</item>
 					<item id="8122">
 						<description>Menu Programs Sub Custom20</description>
@@ -3522,7 +3522,7 @@
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom21)</visible>
 					</item>
 					<item id="8124">
-						<description>Menu Programs Sub Custom18</description>
+						<description>Menu Programs Sub Custom22</description>
 						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom22_Label)]</label>
 						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom22_Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom22)</visible>
