@@ -3053,7 +3053,6 @@
 					<control type="radiobutton" id="515">
 						<label>31212</label>
 						<onclick>Skin.ToggleSetting(Qlock)</onclick>
-						<onclick>RunScript(script.qlock,-startup)</onclick>
 						<selected>Skin.HasSetting(Qlock)</selected>
 					</control>
 					<control type="image" id="516">
