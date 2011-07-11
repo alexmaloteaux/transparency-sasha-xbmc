@@ -849,7 +849,7 @@
 					<texture>movieset.png</texture>
 					<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(53)">Conditional</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + SubString(Container.Folderpath,videodb://,left)</visible>
 				</control>
 				<control type="label">
 					<posx>85</posx>

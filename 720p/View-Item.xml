@@ -841,7 +841,7 @@
 				<height>16</height>
 				<texture>movieset.png</texture>
 				<animation effect="fade" reversible="false" start="0" end="100" time="300">Visible</animation>
-				<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
+				<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + SubString(Container.Folderpath,videodb://,left)</visible>
 			</control>
 			<control type="image">
 				<posx>310</posx>

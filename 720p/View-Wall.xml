@@ -659,7 +659,7 @@
 					<animation effect="fade" reversible="false" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" reversible="false" start="0" end="100" time="300" delay="2000">WindowOpen</animation>
 					<animation effect="fade" reversible="false" start="100" end="0" time="300">WindowClose</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + SubString(Container.Folderpath,videodb://,left)</visible>
 				</control>
 				<control type="image">
 					<posx>410</posx>

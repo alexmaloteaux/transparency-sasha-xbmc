@@ -492,7 +492,7 @@
 				<width>37</width>
 				<height>22</height>
 				<texture>movieset.png</texture>
-				<visible>ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..) + !SubString(Container.Folderpath,plugin://,left)</visible>
+				<visible>ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..) + SubString(Container.Folderpath,videodb://,left)</visible>
 			</control>
 		</control>
 		<control type="group">
