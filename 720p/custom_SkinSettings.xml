@@ -3665,17 +3665,22 @@
 						<onclick>Skin.ToggleSetting(HideInfoPanelCoverView)</onclick>
 						<selected>Skin.HasSetting(HideInfoPanelCoverView)</selected>
 					</control>
-					<control type="image" id="713">
+					<control type="radiobutton" id="713">
+						<label>$LOCALIZE[536] - $LOCALIZE[31182]</label>
+						<onclick>Skin.ToggleSetting(HideInfoPanelIcons)</onclick>
+						<selected>Skin.HasSetting(HideInfoPanelIcons)</selected>
+					</control>
+					<control type="image" id="714">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="714">
+					<control type="radiobutton" id="715">
 						<label>$LOCALIZE[535] - $LOCALIZE[2] - $LOCALIZE[31133]</label>
 						<onclick>Skin.ToggleSetting(Artist_Album_Order)</onclick>
 						<selected>Skin.HasSetting(Artist_Album_Order)</selected>
 					</control>
-					<control type="image" id="715">
+					<control type="image" id="716">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
