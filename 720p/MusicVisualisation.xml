@@ -371,6 +371,8 @@
 			<posy>-10</posy>
 			<width>1</width>
 			<height>1</height>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
 			<include condition="Skin.HasSetting(Vis-LastFM) + IsEmpty(Window.Property(ArtistSlideshowRunning))">ArtistSlideshow</include>
 		</control>
 	</controls>

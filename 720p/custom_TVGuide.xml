@@ -6,7 +6,8 @@
 			<posy>-10</posy>
 			<width>1</width>
 			<height>1</height>
-			<label>-</label>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
 			<include condition="substring(System.Date,$LOCALIZE[41])">NextAiredMonday</include>
 			<include condition="substring(System.Date,$LOCALIZE[42])">NextAiredTuesday</include>
 			<include condition="substring(System.Date,$LOCALIZE[43])">NextAiredWednesday</include>
