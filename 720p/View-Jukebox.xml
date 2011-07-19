@@ -89,16 +89,6 @@
 				<height>132</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>stringcompare(ListItem.Label,..) | !Container.Content(Albums)</visible>
-			</control>
-			<control type="image">
-				<posx>434</posx>
-				<posy>405</posy>
-				<width>132</width>
-				<height>132</height>
-				<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Albums)</visible>
 			</control>
 			<control type="image">
 				<posx>434</posx>

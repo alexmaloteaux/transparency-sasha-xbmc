@@ -619,7 +619,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -655,7 +655,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAlbum.png" background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Thumb]</texture>
+						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -731,7 +731,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAlbum.png" background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Thumb]</texture>
+						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
 						<include condition="!Skin.HasSetting(Hide-Music-Icons-CaseAnimation) + !Skin.HasSetting(HideMusicCase)">Music-Icons-CaseAnimation1</include>
 						<include condition="Skin.HasSetting(Hide-Music-Icons-CaseAnimation) | Skin.HasSetting(HideMusicCase)">Music-Icons-CaseNoAnimation1</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
@@ -753,7 +753,7 @@
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<include condition="!Skin.HasSetting(Hide-Music-Icons-CaseAnimation) + !Skin.HasSetting(HideMusicCase)">Music-Icons-CaseAnimation3</include>
 						<include condition="Skin.HasSetting(Hide-Music-Icons-CaseAnimation) | Skin.HasSetting(HideMusicCase)">Music-Icons-CaseNoAnimation3</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>

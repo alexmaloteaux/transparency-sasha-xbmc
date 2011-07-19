@@ -1807,7 +1807,7 @@
 				<posy>88</posy>
 				<width>252</width>
 				<height>264</height>
-				<texture fallback="DefaultAlbum.png" background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Thumb]</texture>
+				<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -1824,7 +1824,7 @@
 				<posy>360</posy>
 				<width>252</width>
 				<height>264</height>
-				<texture fallback="DefaultAlbum.png" flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>

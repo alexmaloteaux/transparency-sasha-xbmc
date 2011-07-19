@@ -1629,7 +1629,7 @@
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<texture fallback="DefaultAlbum.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos)</visible>
 			</control>

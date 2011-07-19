@@ -24,7 +24,7 @@
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<texture fallback="DefaultAlbum.png">$INFO[ListItem.Thumb]</texture>
+				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="image">
 				<posx>12</posx>
