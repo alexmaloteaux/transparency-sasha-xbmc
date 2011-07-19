@@ -3,7 +3,6 @@
 	<include>dialogeffect7</include>
 	<visible>[System.HasMediaDVD | Player.HasMedia] + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
 	<coordinates>
-		<system>2</system>
 		<posx>375</posx>
 		<posy>155</posy>
 	</coordinates>
