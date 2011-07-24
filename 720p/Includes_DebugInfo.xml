@@ -114,6 +114,22 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Window.IsVisible(Videos)</visible>
 			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>260</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>Fanart.Image: $INFO[Fanart.Image]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>280</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Property(Fanart_Image): $INFO[ListItem.Property(Fanart_Image)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<include name="debuginfovideoplayer">
