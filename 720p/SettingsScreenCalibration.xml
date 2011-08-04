@@ -39,13 +39,13 @@
 			<texturenofocus>calibrate-pixelratio.png</texturenofocus>
 		</control>
 		<control type="group">
-			<posx>240</posx>
+			<posx>40</posx>
 			<posy>60</posy>
 			<control type="label" id="2">
 				<description>coordinates label</description>
-				<posx>20</posx>
+				<posx>0</posx>
 				<posy>10</posy>
-				<width>750</width>
+				<width>1200</width>
 				<height>25</height>
 				<label>-</label>
 				<align>center</align>
@@ -53,9 +53,9 @@
 			</control>
 			<control type="label" id="3">
 				<description>help information</description>
-				<posx>20</posx>
+				<posx>0</posx>
 				<posy>40</posy>
-				<width>750</width>
+				<width>1200</width>
 				<height>25</height>
 				<label>-</label>
 				<align>center</align>
