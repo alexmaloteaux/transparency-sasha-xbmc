@@ -849,7 +849,7 @@
 				<width>197</width>
 				<height>315</height>
 				<texture>case-tv.png</texture>
-				<visible>[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !Skin.HasSetting(HideTVShowCase) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
