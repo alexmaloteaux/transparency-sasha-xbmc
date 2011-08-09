@@ -84,7 +84,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !IsEmpty(Control.GetLabel(6102))] + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105))] + !IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !IsEmpty(Control.GetLabel(6102))] + ![[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105))] + !IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
