@@ -194,26 +194,31 @@
 					<description>Button Default Values</description>
 					<include>ButtonCommonValues</include>
 					<label>20037</label>
+					<onback>SetFocus(5999)</onback>
 				</control>
 				<control type="button" id="94">
 					<description>Button Storage</description>
 					<include>ButtonCommonValues</include>
 					<label>13277</label>
+					<onback>SetFocus(5999)</onback>
 				</control>
 				<control type="button" id="96">
 					<description>Button Network</description>
 					<include>ButtonCommonValues</include>
 					<label>13279</label>
+					<onback>SetFocus(5999)</onback>
 				</control>
 				<control type="button" id="97">
 					<description>Button Video</description>
 					<include>ButtonCommonValues</include>
 					<label>13280</label>
+					<onback>SetFocus(5999)</onback>
 				</control>
 				<control type="button" id="98">
 					<description>Button Hardware</description>
 					<include>ButtonCommonValues</include>
 					<label>13281</label>
+					<onback>SetFocus(5999)</onback>
 				</control>
 			</control>
 		</control>

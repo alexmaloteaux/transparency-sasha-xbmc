@@ -10437,6 +10437,7 @@
 					<onright>101</onright>
 					<onup>1000</onup>
 					<ondown>200</ondown>
+					<onback>SetFocus(101)</onback>
 				</control>
 				<control type="button" id="200">
 					<description>Home Window Options</description>
@@ -10449,8 +10450,7 @@
 					<onright>201</onright>
 					<onup>100</onup>
 					<ondown>300</ondown>
-					<pulseonselect>no</pulseonselect>
-					<visible>true</visible>
+					<onback>SetFocus(201)</onback>
 				</control>
 				<control type="button" id="300">
 					<description>Backgrounds Options</description>
@@ -10463,6 +10463,7 @@
 					<onright>301</onright>
 					<onup>200</onup>
 					<ondown>400</ondown>
+					<onback>SetFocus(301)</onback>
 				</control>
 				<control type="button" id="400">
 					<description>Icons Options</description>
@@ -10475,6 +10476,7 @@
 					<onright>401</onright>
 					<onup>300</onup>
 					<ondown>500</ondown>
+					<onback>SetFocus(401)</onback>
 				</control>
 				<control type="button" id="500">
 					<description>Scripts Options</description>
@@ -10486,6 +10488,7 @@
 					<onleft>501</onleft>
 					<onright>501</onright>
 					<onup>400</onup>
+					<onback>SetFocus(501)</onback>
 					<ondown>600</ondown>
 				</control>
 				<control type="button" id="600">
@@ -10499,6 +10502,7 @@
 					<onright>601</onright>
 					<onup>500</onup>
 					<ondown>700</ondown>
+					<onback>SetFocus(601)</onback>
 				</control>
 				<control type="button" id="700">
 					<description>Views Options</description>
@@ -10511,6 +10515,7 @@
 					<onright>701</onright>
 					<onup>600</onup>
 					<ondown>800</ondown>
+					<onback>SetFocus(701)</onback>
 				</control>
 				<control type="button" id="800">
 					<description>Menu Options</description>
@@ -10523,6 +10528,7 @@
 					<onright>801</onright>
 					<onup>700</onup>
 					<ondown>900</ondown>
+					<onback>SetFocus(801)</onback>
 				</control>
 				<control type="button" id="900">
 					<description>Reload Skin button</description>
@@ -10537,6 +10543,7 @@
 					<onright>71</onright>
 					<onup>800</onup>
 					<ondown>1000</ondown>
+					<onback>SetFocus(901)</onback>
 				</control>
 				<control type="button" id="1000">
 					<description>Transparency! Thanx button</description>
@@ -10549,6 +10556,7 @@
 					<onright>1001</onright>
 					<onup>900</onup>
 					<ondown>100</ondown>
+					<onback>SetFocus(1001)</onback>
 				</control>
 			</control>
 		</control>
