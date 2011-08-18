@@ -1,25 +1,4 @@
 <includes>
-	<include name="NextAiredMonday">
-		<onfocus>SetFocus(4001)</onfocus>
-	</include>
-	<include name="NextAiredTuesday">
-		<onfocus>SetFocus(4002)</onfocus>
-	</include>
-	<include name="NextAiredWednesday">
-		<onfocus>SetFocus(4003)</onfocus>
-	</include>
-	<include name="NextAiredThursday">
-		<onfocus>SetFocus(4004)</onfocus>
-	</include>
-	<include name="NextAiredFriday">
-		<onfocus>SetFocus(4005)</onfocus>
-	</include>
-	<include name="NextAiredSaturday">
-		<onfocus>SetFocus(4006)</onfocus>
-	</include>
-	<include name="NextAiredSunday">
-		<onfocus>SetFocus(4007)</onfocus>
-	</include>
 	<include name="NextAiredItem1">
 		<label>$INFO[Window(Home).Property(NextAired.1.NextDate)]</label>
 		<label2>$INFO[Window(Home).Property(NextAired.1.Shortime)]</label2>

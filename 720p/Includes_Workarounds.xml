@@ -1,6 +1,6 @@
 <includes>
 	<include name="cdart-home">
-		<control type="image">fil
+		<control type="image">
 			<description>dirty hack for showing cdart image</description>
 			<posx>816</posx>
 			<posy>4</posy>
@@ -518,8 +518,5 @@
 			<fadetime>IconCrossfadeTime</fadetime>
 			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>
-	</include>
-	<include name="TvTunes">
-		<onfocus>RunScript(script.tvtunes,backend=True)</onfocus>
 	</include>
 </includes>

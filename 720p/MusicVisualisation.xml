@@ -1,5 +1,5 @@
 <window id="2006">
-	<defaultcontrol>999</defaultcontrol>
+	<onload condition="Skin.HasSetting(Vis-LastFM) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow)</onload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="visualisation" id="2">
@@ -366,14 +366,5 @@
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfomusicplayer</include>
-		<control type="button" id="999">
-			<posx>-10</posx>
-			<posy>-10</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<include condition="Skin.HasSetting(Vis-LastFM) + IsEmpty(Window.Property(ArtistSlideshowRunning))">ArtistSlideshow</include>
-		</control>
 	</controls>
 </window>

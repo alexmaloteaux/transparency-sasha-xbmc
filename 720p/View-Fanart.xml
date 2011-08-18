@@ -442,9 +442,9 @@
 				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
-				<include condition="Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
-				<include condition="!Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
-				<visible>!Skin.HasSetting(Hide_Trailer_Icon)</visible>
+				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
+				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
+				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !IsEmpty(Listitem.Trailer)</visible>
 			</control>
 		</control>
 		<control type="videowindow">
@@ -1743,8 +1743,8 @@
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
 			<include condition="Skin.HasSetting(FanartLong)">FanartLong</include>
-			<include condition="Window.IsVisible(Pictures)">FanartOnLeftPictures</include>
-			<include condition="Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)">FanartOnLeftProgramsAddons</include>
+			<onleft condition="Window.IsVisible(Pictures)">7009</onleft>
+			<onleft condition="Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)">9000</onleft>
 			<onright>60</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>

@@ -240,12 +240,6 @@
 			<visible>Window.IsVisible(TV) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartLong)</visible>
 		</control>
 	</include>
-	<include name="ArtistSlideshow">
-		<onfocus>RunScript(script.artistslideshow)</onfocus>
-	</include>
-	<include name="ArtistSlideshowLastFM">
-		<onclick>RunScript(script.artistslideshow)</onclick>
-	</include>
 	<include name="Breadcrumbs">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -1700,12 +1694,6 @@
 			<bordersize>22</bordersize>
 		</control>
 	</include>
-	<include name="FanartOnLeftPictures">
-		<onleft>7009</onleft>
-	</include>
-	<include name="FanartOnLeftProgramsAddons">
-		<onleft>9000</onleft>
-	</include>
 	<include name="FanartNormal">
 		<posy>142</posy>
 		<height>436</height>
@@ -1781,69 +1769,6 @@
 		<onfocus>Skin.Reset(circle8)</onfocus>
 		<onfocus>Skin.Reset(circle9)</onfocus>
 		<onfocus>SetFocus(74)</onfocus>
-	</include>
-	<include name="LogoDownloader-Solo-Banners">
-		<onclick>RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,banner=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-	</include>
-	<include name="LogoDownloader-Solo-Posters">
-		<onclick>RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,poster=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-	</include>
-	<include name="movietitles-default">
-		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
-	</include>
-	<include name="movietitles-cinema">
-		<onclick>RunScript(script.cinema.experience,movietitles)</onclick>
-	</include>
-	<include name="moviegenres-default">
-		<onclick>ActivateWindow(Videos,moviegenres,return)</onclick>
-	</include>
-	<include name="moviegenres-cinema">
-		<onclick>RunScript(script.cinema.experience,moviegenres)</onclick>
-	</include>
-	<include name="movieyears-default">
-		<onclick>ActivateWindow(Videos,movieyears,return)</onclick>
-	</include>
-	<include name="movieyears-cinema">
-		<onclick>RunScript(script.cinema.experience,movieyears)</onclick>
-	</include>
-	<include name="movieactors-default">
-		<onclick>ActivateWindow(Videos,movieactors,return)</onclick>
-	</include>
-	<include name="movieactors-cinema">
-		<onclick>RunScript(script.cinema.experience,movieactors)</onclick>
-	</include>
-	<include name="moviedirectors-default">
-		<onclick>ActivateWindow(Videos,moviedirectors,return)</onclick>
-	</include>
-	<include name="moviedirectors-cinema">
-		<onclick>RunScript(script.cinema.experience,moviedirectors)</onclick>
-	</include>
-	<include name="moviestudios-default">
-		<onclick>ActivateWindow(Videos,moviestudios,return)</onclick>
-	</include>
-	<include name="moviestudios-cinema">
-		<onclick>RunScript(script.cinema.experience,moviestudios)</onclick>
-	</include>
-	<include name="moviecountries-default">
-		<onclick>ActivateWindow(Videos,moviecountries,return)</onclick>
-	</include>
-	<include name="moviecountries-cinema">
-		<onclick>RunScript(script.cinema.experience,moviecountries)</onclick>
-	</include>
-	<include name="moviesets-default">
-		<onclick>ActivateWindow(Videos,moviesets,return)</onclick>
-	</include>
-	<include name="moviesets-cinema">
-		<onclick>RunScript(script.cinema.experience,moviesets)</onclick>
-	</include>
-	<include name="recentlyaddedmovies-default">
-		<onclick>ActivateWindow(Videos,recentlyaddedmovies,return)</onclick>
-	</include>
-	<include name="recentlyaddedmovies-cinema">
-		<onclick>RunScript(script.cinema.experience,recentlyaddedmovies)</onclick>
-	</include>
-	<include name="NextAiredScript">
-		<onfocus>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=3600)</onfocus>
 	</include>
 	<include name="PlayerControlsNormal">
 		<posx>8</posx>
@@ -2539,12 +2464,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="randomitemsscript">
-		<onfocus>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onfocus>
-	</include>
-	<include name="randomitemsscriptsettings">
-		<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
-	</include>
 	<include name="ScrollOffsetLabel">
 		<control type="group">
 			<visible>Container.Scrolling</visible>
@@ -2595,9 +2514,6 @@
 		<ondown>8200</ondown>
 		<include>VisibleFadeEffect</include>
 	</include>
-	<include name="Shutdown-Action">
-		<onclick>Shutdown()</onclick>
-	</include>
 	<include name="ShutdownMenuLabel">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -2641,9 +2557,6 @@
 	</include>
 	<include name="SideMenuAnim3Wide">
 		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
-	</include>
-	<include name="StartupPlaylist">
-		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;)</onfocus>
 	</include>
 	<include name="ToggleButtonNormal">
 		<posx>157</posx>
@@ -2802,14 +2715,6 @@
 				<visible>Player.Playing</visible>
 			</control>
 		</control>
-	</include>
-	<include name="Trailer-BuiltIn-FullScreen">
-		<onclick>PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
-		<visible>!IsEmpty(Listitem.Trailer)</visible>
-	</include>
-	<include name="Trailer-BuiltIn-Preview">
-		<onclick>PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
-		<visible>!IsEmpty(Listitem.Trailer)</visible>
 	</include>
 	<include name="Window_OpenClose_Left_Panel_Position_Normal">
 		<posx>-178</posx>

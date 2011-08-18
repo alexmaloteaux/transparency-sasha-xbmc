@@ -1,21 +1,12 @@
 <window id="1115">
-	<defaultcontrol always="true">999</defaultcontrol>
+	<onload condition="substring(System.Date,$LOCALIZE[41])">SetFocus(4001)</onload>
+	<onload condition="substring(System.Date,$LOCALIZE[42])">SetFocus(4002)</onload>
+	<onload condition="substring(System.Date,$LOCALIZE[43])">SetFocus(4003)</onload>
+	<onload condition="substring(System.Date,$LOCALIZE[44])">SetFocus(4004)</onload>
+	<onload condition="substring(System.Date,$LOCALIZE[45])">SetFocus(4005)</onload>
+	<onload condition="substring(System.Date,$LOCALIZE[46])">SetFocus(4006)</onload>
+	<onload condition="substring(System.Date,$LOCALIZE[47])">SetFocus(4007)</onload>
 	<controls>
-		<control type="button" id="999">
-			<posx>-10</posx>
-			<posy>-10</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<include condition="substring(System.Date,$LOCALIZE[41])">NextAiredMonday</include>
-			<include condition="substring(System.Date,$LOCALIZE[42])">NextAiredTuesday</include>
-			<include condition="substring(System.Date,$LOCALIZE[43])">NextAiredWednesday</include>
-			<include condition="substring(System.Date,$LOCALIZE[44])">NextAiredThursday</include>
-			<include condition="substring(System.Date,$LOCALIZE[45])">NextAiredFriday</include>
-			<include condition="substring(System.Date,$LOCALIZE[46])">NextAiredSaturday</include>
-			<include condition="substring(System.Date,$LOCALIZE[47])">NextAiredSunday</include>
-		</control>
 		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>

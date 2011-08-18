@@ -1,18 +1,7 @@
 <window id="2999">
-	<defaultcontrol always="true">10</defaultcontrol>
+	<onload condition="Skin.HasSetting(Use_Startup_Playlist)">PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;)</onload>
+	<onload condition="Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,silent=True&amp;alarm=3600)</onload>
+	<onload condition="Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeRandomAlbums) | !Skin.HasSetting(HomeRandomAddons)">RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onload>
+	<onload>ReplaceWindow(Home)</onload>
 	<allowoverlay>no</allowoverlay>
-	<controls>
-		<control type="button" id="10">
-			<posx>-10</posx>
-			<posy>-10</posy>
-			<width>1</width>
-			<height>1</height>
-			<include condition="Skin.HasSetting(Use_Startup_Playlist)">StartupPlaylist</include>
-			<include condition="Skin.HasSetting(NextAired)">NextAiredScript</include>
-			<include condition="Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeRandomAlbums) | !Skin.HasSetting(HomeRandomAddons)">randomitemsscript</include>
-			<onfocus>ReplaceWindow(Home)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-		</control>
-	</controls>
 </window>

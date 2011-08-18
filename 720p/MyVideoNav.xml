@@ -1,5 +1,6 @@
 <window id="25">
-	<defaultcontrol always="true">9999</defaultcontrol>
+	<onload condition="Skin.HasSetting(TvTunes)">RunScript(script.tvtunes,backend=True)</onload>
+	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,54,55,57,58,59,590,592,596,598,599</views>
 	<controls>
@@ -330,17 +331,6 @@
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Videos</include>
 			</control>
-		</control>
-		<control type="button" id="9999">
-			<description>TvTunes Script</description>
-			<posx>-10</posx>
-			<posy>-10</posy>
-			<width>1</width>
-			<height>1</height>
-			<include condition="Skin.HasSetting(TvTunes)">TvTunes</include>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<onfocus>SetFocus(50)</onfocus>
 		</control>
 		<include condition="Skin.HasSetting(NextAired)">NextAiredInfo</include>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>

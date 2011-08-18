@@ -638,7 +638,7 @@
 						<label>$LOCALIZE[20342] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomMovies)</onclick>
 						<onclick>Skin.SetBool(HomeRecentMovies)</onclick>
-						<include>randomitemsscriptsettings</include>
+						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomMovies)</selected>
 					</control>
 					<control type="radiobutton" id="217">
@@ -646,7 +646,7 @@
 						<label>$LOCALIZE[20343] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomTVShows)</onclick>
 						<onclick>Skin.SetBool(HomeRecentTVShows)</onclick>
-						<include>randomitemsscriptsettings</include>
+						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomTVShows)</selected>
 					</control>
 					<control type="radiobutton" id="218">
@@ -654,14 +654,14 @@
 						<label>$LOCALIZE[2] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAlbums)</onclick>
 						<onclick>Skin.SetBool(HomeRecentAlbums)</onclick>
-						<include>randomitemsscriptsettings</include>
+						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomAlbums)</selected>
 					</control>
 					<control type="radiobutton" id="219">
 						<description>enable random addon info</description>
 						<label>$LOCALIZE[0] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
-						<include>randomitemsscriptsettings</include>
+						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
 					</control>
 					<control type="image" id="220">

@@ -492,9 +492,9 @@
 				<ondown>57</ondown>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<include condition="Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-FullScreen</include>
-				<include condition="!Skin.HasSetting(Fullscreen_Trailer)">Trailer-BuiltIn-Preview</include>
-				<visible>!Skin.HasSetting(Hide_Trailer_Icon)</visible>
+				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
+				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
+				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !IsEmpty(Listitem.Trailer)</visible>
 			</control>
 		</control>
 		<control type="group">

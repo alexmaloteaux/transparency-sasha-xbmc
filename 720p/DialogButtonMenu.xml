@@ -372,7 +372,7 @@
 						<ondown>35</ondown>
 						<font>-</font>
 						<label>-</label>
-						<include condition="!Skin.HasSetting(Hide_Shutdown_Shutdown)">Shutdown-Action</include>
+						<onclick condition="!Skin.HasSetting(Hide_Shutdown_Shutdown)">Shutdown()</onclick>
 					</control>
 					<control type="image">
 						<description>Shutdown focus image</description>
