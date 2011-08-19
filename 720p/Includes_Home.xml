@@ -1922,27 +1922,27 @@
 						<visible>!Skin.HasSetting(HomeRecentAlbums)</visible>
 					</item>
 					<item id="4">
-						<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
-						<label2>$INFO[Window.Property(RandomSong.1.Title)]</label2>
-						<thumb>$INFO[Window.Property(RandomSong.1.Thumb)]</thumb>
-						<property name="FanartImage">$INFO[Window.Property(RandomSong.1.Fanart)]</property>
-						<onclick>$INFO[Window.Property(RandomSong.1.Path)]</onclick>
+						<label>$INFO[Window.Property(RandomAlbum.1.Artist)]</label>
+						<label2>$INFO[Window.Property(RandomAlbum.1.Title)]</label2>
+						<thumb>$INFO[Window.Property(RandomAlbum.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomAlbum.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(RandomAlbum.1.Path)]</onclick>
 						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 					</item>
 					<item id="5">
-						<label>$INFO[Window.Property(RandomSong.2.Artist)]</label>
-						<label2>$INFO[Window.Property(RandomSong.2.Title)]</label2>
-						<thumb>$INFO[Window.Property(RandomSong.2.Thumb)]</thumb>
-						<property name="FanartImage">$INFO[Window.Property(RandomSong.2.Fanart)]</property>
-						<onclick>$INFO[Window.Property(RandomSong.2.Path)]</onclick>
+						<label>$INFO[Window.Property(RandomAlbum.2.Artist)]</label>
+						<label2>$INFO[Window.Property(RandomAlbum.2.Title)]</label2>
+						<thumb>$INFO[Window.Property(RandomAlbum.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomAlbum.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(RandomAlbum.2.Path)]</onclick>
 						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 					</item>
 					<item id="6">
-						<label>$INFO[Window.Property(RandomSong.3.Artist)]</label>
-						<label2>$INFO[Window.Property(RandomSong.3.Title)]</label2>
-						<thumb>$INFO[Window.Property(RandomSong.3.Thumb)]</thumb>
-						<property name="FanartImage">$INFO[Window.Property(RandomSong.3.Fanart)]</property>
-						<onclick>$INFO[Window.Property(RandomSong.3.Path)]</onclick>
+						<label>$INFO[Window.Property(RandomAlbum.3.Artist)]</label>
+						<label2>$INFO[Window.Property(RandomAlbum.3.Title)]</label2>
+						<thumb>$INFO[Window.Property(RandomAlbum.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomAlbum.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(RandomAlbum.3.Path)]</onclick>
 						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 					</item>
 				</content>
