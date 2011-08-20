@@ -2323,7 +2323,7 @@
 					<visible>!Skin.HasSetting(Menu_Pictures)</visible>
 				</item>
 				<item id="8">
-					<label>0</label>
+					<label>24001</label>
 					<onclick>ActivateWindow(Programs,addons,return)</onclick>
 					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
@@ -2648,7 +2648,7 @@
 					<visible>Skin.HasSetting(Menu_TV)</visible>
 				</item>
 				<item id="8">
-					<label>0</label>
+					<label>24001</label>
 					<onclick>ActivateWindow(Programs,addons,return)</onclick>
 					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>

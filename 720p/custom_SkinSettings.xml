@@ -659,7 +659,7 @@
 					</control>
 					<control type="radiobutton" id="219">
 						<description>enable random addon info</description>
-						<label>$LOCALIZE[0] - $LOCALIZE[31174]</label>
+						<label>$LOCALIZE[24001] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
 						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
@@ -898,7 +898,7 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 							</item>
 							<item id="8">
-								<label>$LOCALIZE[10000] - $LOCALIZE[0]</label>
+								<label>$LOCALIZE[10000] - $LOCALIZE[24001]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/programs.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
@@ -1003,7 +1003,7 @@
 								<thumb>$INFO[Skin.String(Custom_Back_Pictures_Folder)]</thumb>
 							</item>
 							<item id="23">
-								<label>$LOCALIZE[0]</label>
+								<label>$LOCALIZE[24001]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-programs.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Programs_Folder)]</thumb>
@@ -3827,22 +3827,22 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="761">
-						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[31031]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-FullList)</selected>
 					</control>
 					<control type="radiobutton" id="762">
-						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[535]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-List)</selected>
 					</control>
 					<control type="radiobutton" id="763">
-						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[21371]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-Thumbnail)</selected>
 					</control>
 					<control type="radiobutton" id="764">
-						<label>$LOCALIZE[24021] - $LOCALIZE[0] - $LOCALIZE[544]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[544]</label>
 						<onclick>Skin.ToggleSetting(Hide-Programs-MediaInfo)</onclick>
 						<selected>Skin.HasSetting(Hide-Programs-MediaInfo)</selected>
 					</control>
@@ -3953,7 +3953,7 @@
 					</control>
 					<control type="radiobutton" id="809">
 						<description>Menu Programs</description>
-						<label>[B]$LOCALIZE[0][/B]</label>
+						<label>[B]$LOCALIZE[24001][/B]</label>
 						<include>ButtonMenuSettings1</include>
 						<onfocus>Skin.SetString(SettingsMenu,8)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs)</onclick>
