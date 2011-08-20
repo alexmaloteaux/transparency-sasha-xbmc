@@ -2147,7 +2147,7 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_TV)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Music)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
-			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
@@ -2182,7 +2182,7 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_TV)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Music)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
-			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
+			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
@@ -2324,10 +2324,10 @@
 				</item>
 				<item id="8">
 					<label>0</label>
-					<onclick>ActivateWindow(Programs)</onclick>
+					<onclick>ActivateWindow(Programs,addons,return)</onclick>
 					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-					<visible>Skin.HasSetting(Menu_Programs)</visible>
+					<visible>!Skin.HasSetting(Menu_Programs)</visible>
 				</item>
 				<item id="10">
 					<label>8</label>
@@ -2393,7 +2393,7 @@
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_TV)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Music)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Pictures)">Conditional</animation>
-			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Programs)">Conditional</animation>
+			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Programs)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Weather)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(Menu_Favourites)">Conditional</animation>
 			<animation effect="slide" end="0,20" time="0" condition="!Skin.HasSetting(Menu_Settings)">Conditional</animation>
@@ -2649,10 +2649,10 @@
 				</item>
 				<item id="8">
 					<label>0</label>
-					<onclick>ActivateWindow(Programs)</onclick>
+					<onclick>ActivateWindow(Programs,addons,return)</onclick>
 					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-					<visible>Skin.HasSetting(Menu_Programs)</visible>
+					<visible>!Skin.HasSetting(Menu_Programs)</visible>
 				</item>
 				<item id="10">
 					<label>8</label>
@@ -3390,10 +3390,10 @@
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 				<content>
 					<item id="8102">
-						<description>Menu Programs Sub ProgramPlugins</description>
-						<label>$LOCALIZE[1043]</label>
-						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-						<visible>Skin.HasSetting(Menu_Programs_Sub_ProgramPlugins)</visible>
+						<description>Menu Programs Sub Files</description>
+						<label>$LOCALIZE[1214]</label>
+						<onclick>ActivateWindow(Programs)</onclick>
+						<visible>Skin.HasSetting(Menu_Programs_Sub_Files)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Programs Sub Custom1</description>
