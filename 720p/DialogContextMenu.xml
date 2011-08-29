@@ -11,7 +11,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>380</width>
-			<height>270</height>
+			<height>720</height>
 			<texture border="50">dialog.png</texture>
 		</control>
 		<control type="button">
@@ -48,7 +48,7 @@
 			<posx>40</posx>
 			<posy>85</posy>
 			<width>300</width>
-			<height>145</height>
+			<height min="10" max="595">auto</height>
 			<itemgap>0</itemgap>
 		</control>
 		<control type="button" id="1000">
