@@ -576,7 +576,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ] $INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>!Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="label">
 				<posx>257</posx>
@@ -589,7 +589,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
