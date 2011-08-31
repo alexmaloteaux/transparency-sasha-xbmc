@@ -559,7 +559,7 @@
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Director]</label2>
-								<onclick>-</onclick>
+								<onclick>SendClick(2003,13)</onclick>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20417]:[/B][/UPPERCASE]</label>
@@ -914,7 +914,7 @@
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Director]</label2>
-								<onclick>-</onclick>
+								<onclick>SendClick(2003,13)</onclick>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20417]:[/B][/UPPERCASE]</label>
@@ -1074,7 +1074,7 @@
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Director]</label2>
-								<onclick>-</onclick>
+								<onclick>SendClick(2003,13)</onclick>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
