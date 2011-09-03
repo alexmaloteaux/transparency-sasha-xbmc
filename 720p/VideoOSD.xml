@@ -519,7 +519,7 @@
 						<ondown>913</ondown>
 					</control>
 					<control type="togglebutton" id="9040">
-						<description>Subtitles Menu</description>
+						<description>Subtitles button</description>
 						<posx>240</posx>
 						<posy>0</posy>
 						<width>40</width>
@@ -534,7 +534,7 @@
 						<onclick>Dialog.Close(videoosd)</onclick>
 						<altclick>Skin.SetAddon(SubsScript_Path,xbmc.python.subtitles)</altclick>
 						<altclick>Dialog.Close(videoosd)</altclick>
-						<altclick>XBMC.RunScript($INFO[Skin.String(SubsScript_Path)])</altclick>
+						<altclick>RunScript($INFO[Skin.String(SubsScript_Path)])</altclick>
 						<usealttexture>IsEmpty(Skin.String(SubsScript_Path))</usealttexture>
 						<onleft>913</onleft>
 						<onright>915</onright>
