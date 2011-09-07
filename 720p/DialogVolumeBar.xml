@@ -40,7 +40,7 @@
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIconLevel1.png</texture>
-				<visible>IntegerGreaterThan(player.volume,-41)</visible>
+				<visible>IntegerGreaterThan(player.volume,33)</visible>
 			</control>
 			<control type="image">
 				<posx>98</posx>
@@ -48,7 +48,7 @@
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIconLevel2.png</texture>
-				<visible>IntegerGreaterThan(player.volume,-21)</visible>
+				<visible>IntegerGreaterThan(player.volume,66)</visible>
 			</control>
 			<control type="image">
 				<posx>98</posx>
@@ -56,7 +56,7 @@
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIconLevel3.png</texture>
-				<visible>IntegerGreaterThan(player.volume,-1)</visible>
+				<visible>IntegerGreaterThan(player.volume,99)</visible>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
