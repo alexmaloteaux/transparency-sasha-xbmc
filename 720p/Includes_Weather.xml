@@ -1802,37 +1802,41 @@
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
 					<visible>!Control.HasFocus(5998)</visible>
 				</control>
-				<control type="button" id="5997">
-					<description>play</description>
-					<posx>586</posx>
-					<posy>364</posy>
-					<width>55</width>
-					<height>55</height>
-					<texturefocus>trailer-focus2.png</texturefocus>
-					<texturenofocus>trailer-nofocus.png</texturenofocus>
-					<onup>9000</onup>
-					<ondown>6000</ondown>
-					<onleft>5996</onleft>
-					<onright>5998</onright>
-					<onclick>PlayMedia(&quot;$INFO[Window.Property(Video.Local)]&quot;,1)</onclick>
+				<control type="group">
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
-					<visible>!IsEmpty(Window.Property(Video.Local)) + !Control.HasFocus(5998)</visible>
-				</control>
-				<control type="button" id="5996">
-					<description>play</description>
-					<posx>586</posx>
-					<posy>364</posy>
-					<width>55</width>
-					<height>55</height>
-					<texturefocus>trailer-focus2.png</texturefocus>
-					<texturenofocus>trailer-nofocus.png</texturenofocus>
-					<onup>9000</onup>
-					<ondown>6000</ondown>
-					<onleft>9000</onleft>
-					<onright>5997</onright>
-					<onclick>PlayMedia(&quot;$INFO[Window.Property(Video)]&quot;,1)</onclick>
-					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
-					<visible>IsEmpty(Window.Property(Video.Local)) + !IsEmpty(Window.Property(Video)) + !Control.HasFocus(5998)</visible>
+					<visible allowhiddenfocus="true">!Control.HasFocus(5998)</visible>
+					<control type="button" id="5997">
+						<description>play</description>
+						<posx>586</posx>
+						<posy>364</posy>
+						<width>55</width>
+						<height>55</height>
+						<texturefocus>trailer-focus2.png</texturefocus>
+						<texturenofocus>trailer-nofocus.png</texturenofocus>
+						<onup>9000</onup>
+						<ondown>6000</ondown>
+						<onleft>9000</onleft>
+						<onright>5998</onright>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(Video)]&quot;,1)</onclick>
+						<animation effect="fade" start="100" end="0" time="50" condition="Control.HasFocus(5998)">Conditional</animation>
+						<visible>IsEmpty(Skin.String(WeatherVideo))</visible>
+					</control>
+					<control type="button" id="5997">
+						<description>play</description>
+						<posx>586</posx>
+						<posy>364</posy>
+						<width>55</width>
+						<height>55</height>
+						<texturefocus>trailer-focus2.png</texturefocus>
+						<texturenofocus>trailer-nofocus.png</texturenofocus>
+						<onup>9000</onup>
+						<ondown>6000</ondown>
+						<onleft>9000</onleft>
+						<onright>5998</onright>
+						<onclick>PlayMedia(&quot;$INFO[Skin.String(WeatherVideo)]&quot;,1)</onclick>					
+						<animation effect="fade" start="100" end="0" time="50" condition="Control.HasFocus(5998)">Conditional</animation>
+						<visible>!IsEmpty(Skin.String(WeatherVideo))</visible>
+					</control>
 				</control>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Black1</include>
 				<control type="image">

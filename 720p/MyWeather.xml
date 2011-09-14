@@ -77,7 +77,21 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<visible>!Skin.HasSetting(KioskMode)</visible>
+					<visible>!Control.HasFocus(3) + !Skin.HasSetting(KioskMode)</visible>
+				</control>
+				<control type="label">
+					<description>change location label</description>
+					<posx>13</posx>
+					<posy>0</posy>
+					<height>44</height>
+					<width>270</width>
+					<font>font-20bc</font>
+					<label>21873</label>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Control.HasFocus(3) + !Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="101">
 					<description>Current button</description>
@@ -158,29 +172,118 @@
 					<onleft>6000</onleft>
 					<onright>6000</onright>
 					<onup>105</onup>
-					<ondown>2</ondown>
+					<ondown>5994</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,6)</onfocus>
 					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
 				</control>
+				<control type="group">
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
+					<visible>!Skin.HasSetting(KioskMode) + StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+					<control type="button" id="5994">
+						<description>video button</description>
+						<posx>0</posx>
+						<posy>315</posy>
+						<include>ButtonCommonValues</include>
+						<label>-</label>
+						<onleft>6000</onleft>
+						<onright>6000</onright>
+						<onup>106</onup>
+						<ondown>2</ondown>
+						<onclick>Control.Move(5993,1)</onclick>
+						<onclick>Skin.SetString(WeatherVideo,$INFO[Container(5993).ListItem.Label])</onclick>
+					</control>
+					<control type="list" id="5993">
+						<posx>0</posx>
+						<posy>315</posy>
+						<width>183</width>
+						<height>47</height>
+						<scrolltime>0</scrolltime>
+						<hitrect x="0" y="0" w="0" h="0" />
+						<itemlayout height="47" width="183"/>
+						<focusedlayout height="47" width="183">
+							<control type="label">
+								<posx>10</posx>
+								<posy>0</posy>
+								<width>183</width>
+								<height>47</height>
+								<label>$INFO[ListItem.Label2]</label>
+								<font>font-20bc</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<aligny>center</aligny>
+								<visible>!Control.HasFocus(5994)</visible>
+							</control>
+							<control type="label">
+								<posx>10</posx>
+								<posy>0</posy>
+								<width>183</width>
+								<height>47</height>
+								<label>$INFO[ListItem.Label2]</label>
+								<font>font-20bc</font>
+								<textcolor>blue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<aligny>center</aligny>
+								<visible>Control.HasFocus(5994)</visible>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+								<label>$INFO[Window.Property(Video.1)]</label>
+								<label2>Video: #1</label2>
+								<onclick>-</onclick>
+							</item>
+							<item id="2">
+								<label>$INFO[Window.Property(Video.2)]</label>
+								<label2>Video: #2</label2>
+								<onclick>-</onclick>
+							</item>
+							<item id="3">
+								<label>$INFO[Window.Property(Video.3)]</label>
+								<label2>Video: #3</label2>
+								<onclick>-</onclick>
+							</item>
+						</content>
+					</control>
+					<control type="image">
+						<description>up button image</description>
+						<posx>144</posx>
+						<posy>328</posy>
+						<width>32</width>
+						<height>22</height>
+						<texture>scroll-down-2.png</texture>
+						<animation effect="slide" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+						<visible>!Control.HasFocus(5994)</visible>
+					</control>
+					<control type="image">
+						<description>up button image</description>
+						<posx>144</posx>
+						<posy>328</posy>
+						<width>32</width>
+						<height>22</height>
+						<texture>scroll-down-focus-2.png</texture>
+						<animation effect="slide" end="75,0" time="0" condition="Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+						<visible>Control.HasFocus(5994)</visible>
+					</control>
+				</control>
 				<control type="button" id="2">
 					<description>Refresh button</description>
 					<posx>0</posx>
-					<posy>315</posy>
+					<posy>360</posy>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 					<onleft>6000</onleft>
 					<onright>6000</onright>
-					<onup>106</onup>
+					<onup>5994</onup>
 					<ondown>610</ondown>
-					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,-270" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
+					<animation effect="slide" end="0,-90" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-315" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
 					<posx>0</posx>
-					<posy>360</posy>
+					<posy>405</posy>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
 					<onleft>6000</onleft>
@@ -188,18 +291,18 @@
 					<onup>2</onup>
 					<ondown>3</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
-					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,-270" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
+					<animation effect="slide" end="0,-90" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-315" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>362</posy>
+					<posy>407</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
-					<animation effect="slide" end="0,-45" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,-270" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
+					<animation effect="slide" end="0,-90" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-315" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Alerts.RSS))">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
