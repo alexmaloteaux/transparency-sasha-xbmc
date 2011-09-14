@@ -230,17 +230,17 @@
 						<content>
 							<item id="1">
 								<label>$INFO[Window.Property(Video.1)]</label>
-								<label2>Video: #1</label2>
+								<label2>$LOCALIZE[1212]: #1</label2>
 								<onclick>-</onclick>
 							</item>
 							<item id="2">
 								<label>$INFO[Window.Property(Video.2)]</label>
-								<label2>Video: #2</label2>
+								<label2>$LOCALIZE[1212]: #2</label2>
 								<onclick>-</onclick>
 							</item>
 							<item id="3">
 								<label>$INFO[Window.Property(Video.3)]</label>
-								<label2>Video: #3</label2>
+								<label2>$LOCALIZE[1212]: #3</label2>
 								<onclick>-</onclick>
 							</item>
 						</content>
