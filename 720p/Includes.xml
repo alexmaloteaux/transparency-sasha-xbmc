@@ -1770,6 +1770,25 @@
 		<onfocus>Skin.Reset(circle9)</onfocus>
 		<onfocus>SetFocus(74)</onfocus>
 	</include>
+	<include name="Logo">
+		<control type="image">
+			<posx>5</posx>
+			<posy>2</posy>
+			<width>225</width>
+			<height>50</height>
+			<texture>xbmc-logo.png</texture>
+		</control>
+	</include>
+	<include name="Logo-Custom">
+		<control type="image">
+			<posx>5</posx>
+			<posy>2</posy>
+			<width>225</width>
+			<height>46</height>
+			<texture>$INFO[Skin.String(Custom_Home_Logo)]</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+	</include>
 	<include name="PlayerControlsNormal">
 		<posx>8</posx>
 	</include>
@@ -2464,6 +2483,32 @@
 			</control>
 		</control>
 	</include>
+	<include name="RSS">
+		<control type="group">
+			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Footer_Animation</include>
+			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Home_Panel_Hor_Animation</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Footer1</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>66r</posy>
+				<width>1280</width>
+				<height>66</height>
+				<texture>Footer.png</texture>
+			</control>
+			<control type="rss">
+				<description>rss feed</description>
+				<posx>0</posx>
+				<posy>29r</posy>
+				<width>1280</width>
+				<height>20</height>
+				<font>font-20</font>
+				<urlset>1</urlset>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
+				<headlinecolor>white</headlinecolor>
+			</control>
+		</control>
+	</include>
 	<include name="ScrollOffsetLabel">
 		<control type="group">
 			<visible>Container.Scrolling</visible>
@@ -2500,6 +2545,32 @@
 				<textcolor>white</textcolor>
 				<font>font-30</font>
 			</control>
+		</control>
+	</include>
+	<include name="SearchDot">
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+		</control>
+	</include>
+	<include name="SearchButton">
+		<control type="button" id="10">
+			<description>Search push button</description>
+			<posx>1199</posx>
+			<posy>7</posy>
+			<width>20</width>
+			<height>20</height>
+			<label>-</label>
+			<font>-</font>
+			<texturefocus>SearchFocus.png</texturefocus>
+			<texturenofocus>SearchNoFocus.png</texturenofocus>
+			<pulseonselect>true</pulseonselect>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<onclick>RunScript(script.globalsearch)</onclick>
 		</control>
 	</include>
 	<include name="SettingsMenuList3">
@@ -2557,6 +2628,18 @@
 	</include>
 	<include name="SideMenuAnim3Wide">
 		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
+	</include>
+	<include name="Splash">
+		<control type="image">
+			<description>splash</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>black.png</texture>
+			<animation effect="fade" start="100" end="0" time="1500" reversible="false">WindowOpen</animation>
+			<animation effect="fade" start="0" end="0" time="0" reversible="false">WindowClose</animation>
+		</control>
 	</include>
 	<include name="ToggleButtonNormal">
 		<posx>157</posx>
