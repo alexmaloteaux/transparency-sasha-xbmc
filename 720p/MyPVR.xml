@@ -764,7 +764,17 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout width="390" height="29">
+						<itemlayout width="355" height="29">
+							<control type="progress">
+								<description>Progressbar</description>
+								<posx>0</posx>
+								<posy>-8</posy>
+								<width>355</width>
+								<height>46</height>
+								<colordiffuse>60FFFFFF</colordiffuse>
+								<texturebg border="10,0,10,0">Empty.png</texturebg>
+								<info>ListItem.Progress</info>
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -798,7 +808,17 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout width="390" height="29">
+						<focusedlayout width="355" height="29">
+							<control type="progress">
+								<description>Progressbar</description>
+								<posx>0</posx>
+								<posy>-8</posy>
+								<width>355</width>
+								<height>46</height>
+								<colordiffuse>60FFFFFF</colordiffuse>
+								<texturebg border="10,0,10,0">Empty.png</texturebg>
+								<info>ListItem.Progress</info>
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -862,7 +882,17 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout width="390" height="29">
+						<itemlayout width="355" height="29">
+							<control type="progress">
+								<description>Progressbar</description>
+								<posx>0</posx>
+								<posy>-8</posy>
+								<width>355</width>
+								<height>46</height>
+								<colordiffuse>60FFFFFF</colordiffuse>
+								<texturebg border="10,0,10,0">Empty.png</texturebg>
+								<info>ListItem.Progress</info>
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -896,7 +926,17 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout width="390" height="29">
+						<focusedlayout width="355" height="29">
+							<control type="progress">
+								<description>Progressbar</description>
+								<posx>0</posx>
+								<posy>-8</posy>
+								<width>355</width>
+								<height>46</height>
+								<colordiffuse>60FFFFFF</colordiffuse>
+								<texturebg border="10,0,10,0">Empty.png</texturebg>
+								<info>ListItem.Progress</info>
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -960,7 +1000,7 @@
 						<pagecontrol>61</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<preloaditems>2</preloaditems>
-						<itemlayout width="390" height="29">
+						<itemlayout width="355" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -982,7 +1022,7 @@
 								<label>$INFO[ListItem.Label][COLOR=blue]$INFO[ListItem.Date, (,)][/COLOR]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout width="390" height="29">
+						<focusedlayout width="355" height="29">
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
