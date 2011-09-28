@@ -60,6 +60,16 @@
 				<ondown>11</ondown>
 				<onup>11</onup>
 				<itemlayout width="710" height="29">
+					<control type="progress">
+						<description>Progressbar</description>
+						<posx>0</posx>
+						<posy>-8</posy>
+						<width>710</width>
+						<height>46</height>
+						<colordiffuse>60FFFFFF</colordiffuse>
+						<texturebg border="10,0,10,0">Empty.png</texturebg>
+						<info>ListItem.Progress</info>
+					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -110,6 +120,16 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="710" height="29">
+					<control type="progress">
+						<description>Progressbar</description>
+						<posx>0</posx>
+						<posy>-8</posy>
+						<width>710</width>
+						<height>46</height>
+						<colordiffuse>60FFFFFF</colordiffuse>
+						<texturebg border="10,0,10,0">Empty.png</texturebg>
+						<info>ListItem.Progress</info>
+					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
