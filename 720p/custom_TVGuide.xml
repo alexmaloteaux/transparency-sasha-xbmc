@@ -1,11 +1,11 @@
 <window id="1115">
-	<onload condition="substring(System.Date,$LOCALIZE[41])">SetFocus(4001)</onload>
-	<onload condition="substring(System.Date,$LOCALIZE[42])">SetFocus(4002)</onload>
-	<onload condition="substring(System.Date,$LOCALIZE[43])">SetFocus(4003)</onload>
-	<onload condition="substring(System.Date,$LOCALIZE[44])">SetFocus(4004)</onload>
-	<onload condition="substring(System.Date,$LOCALIZE[45])">SetFocus(4005)</onload>
-	<onload condition="substring(System.Date,$LOCALIZE[46])">SetFocus(4006)</onload>
-	<onload condition="substring(System.Date,$LOCALIZE[47])">SetFocus(4007)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[41])">SetFocus(4001)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[42])">SetFocus(4002)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[43])">SetFocus(4003)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[44])">SetFocus(4004)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[45])">SetFocus(4005)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[46])">SetFocus(4006)</onload>
+	<onload condition="StringCompare(System.Date(ddd),$LOCALIZE[47])">SetFocus(4007)</onload>
 	<controls>
 		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
@@ -142,7 +142,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[41])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[41])</visible>
 			</control>
 			<control type="label">
 				<posx>90</posx>
@@ -737,7 +737,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[42])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[42])</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1340,7 +1340,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[43])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[43])</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1943,7 +1943,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[44])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[44])</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -2546,7 +2546,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[45])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[45])</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -3149,7 +3149,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[46])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[46])</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -3752,7 +3752,7 @@
 				<height>91</height>
 				<texture border="2">genre-g-arts.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
-				<visible>substring(System.Date,$LOCALIZE[47])</visible>
+				<visible>StringCompare(System.Date(ddd),$LOCALIZE[47])</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
