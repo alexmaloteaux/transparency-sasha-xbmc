@@ -1,5 +1,6 @@
 <window id="25">
 	<onload condition="Skin.HasSetting(TvTunes)">RunScript(script.tvtunes,backend=True)</onload>
+	<onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,52,53,54,55,57,58,59,590,592,596,598,599</views>
@@ -85,7 +86,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !IsEmpty(Control.GetLabel(6102))] + ![[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105))] + !IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !IsEmpty(Control.GetLabel(6102))] + ![[Container.Content(TVShows) | Container.Content(Seasons)] + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105))] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6106))] + !IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
