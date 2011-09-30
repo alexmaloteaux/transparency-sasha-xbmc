@@ -172,7 +172,7 @@
 				<description>name</description>
 				<posx>680</posx>
 				<posy>140</posy>
-				<width>260</width>
+				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35502]</label>
 				<font>font-20</font>
@@ -180,9 +180,9 @@
 			</control>
 			<control type="label">
 				<description>name value</description>
-				<posx>960</posx>
+				<posx>860</posx>
 				<posy>140</posy>
-				<width>300</width>
+				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Label]</label>
 				<font>font-20</font>
@@ -193,7 +193,7 @@
 				<description>location</description>
 				<posx>680</posx>
 				<posy>170</posy>
-				<width>260</width>
+				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35500]</label>
 				<font>font-20</font>
@@ -201,9 +201,9 @@
 			</control>
 			<control type="label">
 				<description>location value</description>
-				<posx>960</posx>
+				<posx>860</posx>
 				<posy>170</posy>
-				<width>300</width>
+				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Property(Bus)] - $INFO[Container(20).ListItem.Property(Location)]</label>
 				<font>font-20</font>
@@ -214,7 +214,7 @@
 				<description>class</description>
 				<posx>680</posx>
 				<posy>200</posy>
-				<width>260</width>
+				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35501]</label>
 				<font>font-20</font>
@@ -222,9 +222,9 @@
 			</control>
 			<control type="label">
 				<description>class value</description>
-				<posx>960</posx>
+				<posx>860</posx>
 				<posy>200</posy>
-				<width>300</width>
+				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Property(Class)]</label>
 				<font>font-20</font>
@@ -235,7 +235,7 @@
 				<description>vendor</description>
 				<posx>680</posx>
 				<posy>230</posy>
-				<width>260</width>
+				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35503]</label>
 				<font>font-20</font>
@@ -243,9 +243,9 @@
 			</control>
 			<control type="label">
 				<description>vendor value</description>
-				<posx>960</posx>
+				<posx>860</posx>
 				<posy>230</posy>
-				<width>300</width>
+				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Property(Vendor)]</label>
 				<font>font-20</font>
