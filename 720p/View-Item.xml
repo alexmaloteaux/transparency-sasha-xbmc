@@ -130,8 +130,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+						<label>$VAR[ViewItemLabel1]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -143,8 +142,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Director]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+						<label>$VAR[ViewItemLabel2]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -156,8 +154,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20417]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+						<label>$VAR[ViewItemLabel3]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -169,86 +166,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Writer]</label>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20416]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Premiered]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[20074]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Mpaa]</label>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(MusicVideos)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Album]</label>
-						<visible>Container.Content(MusicVideos)</visible>
+						<label>$VAR[ViewItemLabel4]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -260,8 +178,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-						<visible>!Container.Content(Episodes)</visible>
+						<label>$VAR[ViewItemLabel5]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -273,34 +190,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Genre]</label>
-						<visible>!Container.Content(Episodes)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>295</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[552]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Episodes)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>315</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Date]</label>
-						<visible>Container.Content(Episodes)</visible>
+						<label>$VAR[ViewItemLabel6]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -317,32 +207,6 @@
 					</control>
 					<control type="label">
 						<posx>257</posx>
-						<posy>365</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-						<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Duration]</label>
-						<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
 						<posy>345</posy>
 						<width>150</width>
 						<height>30</height>
@@ -352,19 +216,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>[UPPERCASE][B]$LOCALIZE[33054]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(TVShows)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalSeasons)]</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
@@ -380,6 +231,31 @@
 						<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
 						<animation effect="slide" start="0,0" end="-150,0" time="0" condition="Container.Content(Seasons)">Conditional</animation>
 						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+					</control>
+					<control type="label">
+						<posx>257</posx>
+						<posy>365</posy>
+						<width>300</width>
+						<height>30</height>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$VAR[ViewItemLabel7]</label>
+					</control>
+					<control type="label">
+						<posx>257</posx>
+						<posy>365</posy>
+						<width>150</width>
+						<height>30</height>
+						<font>font-20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(TotalSeasons)]</label>
+						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
 						<posx>407</posx>
@@ -405,21 +281,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[345]:[/B][/UPPERCASE]</label>
-						<visible>!Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-						<visible>!Container.Content(Seasons)</visible>
+						<label>$VAR[ViewItemLabel8]</label>
 					</control>
 					<control type="label">
 						<posx>407</posx>
@@ -431,34 +293,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-						<visible>![Container.Content(Seasons) | Container.Content(MusicVideos)]</visible>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Rating]</label>
-						<visible>![Container.Content(Seasons) | Container.Content(MusicVideos)]</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[16102]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Seasons)</visible>
+						<label>$VAR[ViewItemLabel9]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
@@ -470,21 +305,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(WatchedEpisodes)]</label>
-						<visible>Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[16101]:[/B][/UPPERCASE]</label>
-						<visible>Container.Content(Seasons)</visible>
+						<label>$VAR[ViewItemLabel10]</label>
 					</control>
 					<control type="label">
 						<posx>407</posx>
@@ -496,8 +317,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-						<visible>Container.Content(Seasons)</visible>
+						<label>$VAR[ViewItemLabel11]</label>
 					</control>
 					<control type="image">
 						<posx>566</posx>
@@ -527,22 +347,8 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>justify</align>
-						<label>$INFO[ListItem.Plot]</label>
+						<label>$VAR[ViewItemText1]</label>
 						<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>!Container.Content(Seasons)</visible>
-					</control>
-					<control type="textbox">
-						<posx>588</posx>
-						<posy>180</posy>
-						<width>430</width>
-						<height>256</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>justify</align>
-						<label>$INFO[Container.ShowPlot]</label>
-						<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>Container.Content(Seasons)</visible>
 					</control>
 				</control>
 			</control>
@@ -602,34 +408,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Title][/B]</label>
-				<visible>!Container.Content(Episodes)</visible>
-			</control>
-			<control type="label">
-				<posx>40</posx>
-				<posy>570</posy>
-				<width>950</width>
-				<height>35</height>
-				<font>font-35</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Episode,,.] $INFO[ListItem.Title][/B]</label>
-				<visible>Container.Content(Episodes)</visible>
-			</control>
-			<control type="label">
-				<posx>40</posx>
-				<posy>570</posy>
-				<width>950</width>
-				<height>35</height>
-				<font>font-35</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<visible>IsEmpty(ListItem.Title)</visible>
+				<label>$VAR[ViewItemLabel12]</label>
 			</control>
 			<control type="label">
 				<posx>160</posx>
@@ -641,47 +420,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
-				<visible>![Container.Content(Seasons) | Container.Content(Episodes)] + !substring(ListItem.Duration,min)</visible>
-			</control>
-			<control type="label">
-				<posx>160</posx>
-				<posy>615</posy>
-				<width>830</width>
-				<height>20</height>
-				<font>font-21</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - ][/B]</label>
-				<visible>![Container.Content(Seasons) | Container.Content(Episodes)] + substring(ListItem.Duration,min)</visible>
-			</control>
-			<control type="label">
-				<posx>160</posx>
-				<posy>615</posy>
-				<width>830</width>
-				<height>20</height>
-				<font>font-21</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Date] $INFO[ListItem.Duration, - ][/B]</label>
-				<visible>Container.Content(Episodes)</visible>
-			</control>
-			<control type="label">
-				<posx>160</posx>
-				<posy>615</posy>
-				<width>830</width>
-				<height>20</height>
-				<font>font-21</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Mpaa][/B]</label>
-				<visible>Container.Content(Seasons)</visible>
+				<label>$VAR[ViewItemLabel13]</label>
 			</control>
 			<control type="label">
 				<posx>175</posx>
@@ -705,21 +444,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Genre][/B]</label>
-				<visible>!Container.Content(Episodes)</visible>
-			</control>
-			<control type="label">
-				<posx>188</posx>
-				<posy>665</posy>
-				<width>920</width>
-				<height>20</height>
-				<font>font-21</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Rating][/B]</label>
-				<visible>Container.Content(Episodes)</visible>
+				<label>$VAR[ViewItemLabel14]</label>
 			</control>
 			<control type="label">
 				<posx>195</posx>
@@ -912,635 +637,258 @@
 					<height>339</height>
 					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay5.png</texture>
 				</control>
-				<control type="group">
+				<control type="label">
+					<posx>257</posx>
+					<posy>145</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel15]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>165</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel16]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>195</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel17]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>215</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel18]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>245</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel19]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>265</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel20]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>295</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel21]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>315</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel22]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>345</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[UPPERCASE][B]$LOCALIZE[21893]:[/B][/UPPERCASE]</label>
 					<visible>Container.Content(Artists)</visible>
-					<control type="label">
-						<posx>257</posx>
-						<posy>145</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>165</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Genre)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Mood)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Style)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>295</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21892]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>315</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Instrument)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>345</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21893]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Born)]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>345</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21897]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>365</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Died)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21894]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Formed)]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21896]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Artist_Disbanded)]</label>
-					</control>
-					<control type="image">
-						<posx>566</posx>
-						<posy>160</posy>
-						<width>2</width>
-						<height>270</height>
-						<texture>separator2.png</texture>
-					</control>
-					<control type="label">
-						<posx>588</posx>
-						<posy>145</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="textbox">
-						<posx>588</posx>
-						<posy>180</posy>
-						<width>430</width>
-						<height>256</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>justify</align>
-						<label>$INFO[ListItem.Property(Artist_Description)]</label>
-						<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					</control>
 				</control>
-				<control type="group">
-					<visible>Container.Content(Albums)</visible>
-					<control type="label">
-						<posx>257</posx>
-						<posy>145</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>165</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Genre]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Album_Mood)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Album_Style)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>295</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21895]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>315</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Album_Theme)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>345</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[21899]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Album_Label)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Album_Rating)]</label>
-					</control>
-					<control type="image">
-						<posx>566</posx>
-						<posy>160</posy>
-						<width>2</width>
-						<height>270</height>
-						<texture>separator2.png</texture>
-					</control>
-					<control type="label">
-						<posx>588</posx>
-						<posy>145</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="textbox">
-						<posx>588</posx>
-						<posy>180</posy>
-						<width>430</width>
-						<height>256</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>justify</align>
-						<label>$INFO[ListItem.Property(Album_Description)]</label>
-						<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>365</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Property(Artist_Born)]</label>
+					<visible>Container.Content(Artists)</visible>
 				</control>
-				<control type="group">
-					<visible>Container.Content(Songs)</visible>
-					<control type="label">
-						<posx>257</posx>
-						<posy>145</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>165</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Artist]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Album]$INFO[ListItem.DiscNumber, ($LOCALIZE[427]: ,)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[554]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.TrackNumber]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>295</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>315</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>345</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Genre]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>395</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="label">
-						<posx>407</posx>
-						<posy>415</posy>
-						<width>150</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Rating]</label>
-					</control>
-					<control type="image">
-						<posx>566</posx>
-						<posy>160</posy>
-						<width>2</width>
-						<height>270</height>
-						<texture>separator2.png</texture>
-					</control>
-					<control type="label">
-						<posx>588</posx>
-						<posy>145</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<textcolor>lightblue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>[UPPERCASE][B]$LOCALIZE[569]:[/B][/UPPERCASE]</label>
-					</control>
-					<control type="textbox">
-						<posx>588</posx>
-						<posy>180</posy>
-						<width>430</width>
-						<height>256</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>justify</align>
-						<label>$INFO[ListItem.Comment]</label>
-						<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					</control>
+				<control type="label">
+					<posx>407</posx>
+					<posy>345</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[UPPERCASE][B]$LOCALIZE[21897]:[/B][/UPPERCASE]</label>
+					<visible>Container.Content(Artists)</visible>
+				</control>
+				<control type="label">
+					<posx>407</posx>
+					<posy>365</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Property(Artist_Died)]</label>
+					<visible>Container.Content(Artists)</visible>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>345</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel23]</label>
+					<visible>!Container.Content(Artists)</visible>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>365</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel24]</label>
+					<visible>!Container.Content(Artists)</visible>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>395</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel25]</label>
+				</control>
+				<control type="label">
+					<posx>257</posx>
+					<posy>415</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel26]</label>
+				</control>
+				<control type="label">
+					<posx>407</posx>
+					<posy>395</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel27]</label>
+				</control>
+				<control type="label">
+					<posx>407</posx>
+					<posy>415</posy>
+					<width>150</width>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel28]</label>
+				</control>
+				<control type="image">
+					<posx>566</posx>
+					<posy>160</posy>
+					<width>2</width>
+					<height>270</height>
+					<texture>separator2.png</texture>
+				</control>
+				<control type="label">
+					<posx>588</posx>
+					<posy>145</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>font-20c</font>
+					<textcolor>lightblue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$VAR[ViewItemLabel29]</label>
+				</control>
+				<control type="textbox">
+					<posx>588</posx>
+					<posy>180</posy>
+					<width>430</width>
+					<height>256</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>justify</align>
+					<label>$VAR[ViewItemText2]</label>
+					<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 		</control>
@@ -1589,164 +937,55 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Artist][/B]</label>
+				<label>$VAR[ViewItemLabel30]</label>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>570</posy>
-				<width>950</width>
-				<height>35</height>
-				<font>font-35</font>
-				<textcolor>blue</textcolor>
+				<posx>160</posx>
+				<posy>615</posy>
+				<width>830</width>
+				<height>20</height>
+				<font>font-21</font>
+				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<visible>IsEmpty(ListItem.Artist)</visible>
+				<label>$VAR[ViewItemLabel31]</label>
 			</control>
-			<control type="group">
-				<visible>Container.Content(Artists)</visible>
-				<control type="label">
-					<posx>160</posx>
-					<posy>615</posy>
-					<width>830</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Property(Artist_Born)][/B]</label>
-				</control>
-				<control type="label">
-					<posx>175</posx>
-					<posy>640</posy>
-					<width>860</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Property(Artist_Mood)][/B]</label>
-				</control>
-				<control type="label">
-					<posx>188</posx>
-					<posy>665</posy>
-					<width>920</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Property(Artist_Style)][/B]</label>
-				</control>
-				<control type="label">
-					<posx>195</posx>
-					<posy>690</posy>
-					<width>1000</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Property(Artist_Genre)][/B]</label>
-				</control>
+			<control type="label">
+				<posx>175</posx>
+				<posy>640</posy>
+				<width>860</width>
+				<height>20</height>
+				<font>font-21</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$VAR[ViewItemLabel32]</label>
 			</control>
-			<control type="group">
-				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
-				<control type="label">
-					<posx>160</posx>
-					<posy>615</posy>
-					<width>830</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>lightblue</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Album][/B]</label>
-					<visible>Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>160</posx>
-					<posy>615</posy>
-					<width>830</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Album][/B]</label>
-					<visible>Container.Content(Songs)</visible>
-				</control>
-				<control type="label">
-					<posx>175</posx>
-					<posy>640</posy>
-					<width>860</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Property(Album_Label)][/B]</label>
-					<visible>Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>175</posx>
-					<posy>640</posy>
-					<width>860</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>lightblue</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title][/B]</label>
-					<visible>Container.Content(Songs)</visible>
-				</control>
-				<control type="label">
-					<posx>188</posx>
-					<posy>665</posy>
-					<width>920</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Year][/B]</label>
-					<visible>Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>188</posx>
-					<posy>665</posy>
-					<width>920</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Duration][/B]</label>
-					<visible>Container.Content(Songs)</visible>
-				</control>
-				<control type="label">
-					<posx>195</posx>
-					<posy>690</posy>
-					<width>1000</width>
-					<height>20</height>
-					<font>font-21</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[ListItem.Genre][/B]</label>
-				</control>
+			<control type="label">
+				<posx>188</posx>
+				<posy>665</posy>
+				<width>920</width>
+				<height>20</height>
+				<font>font-21</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$VAR[ViewItemLabel33]</label>
+			</control>
+			<control type="label">
+				<posx>195</posx>
+				<posy>690</posy>
+				<width>1000</width>
+				<height>20</height>
+				<font>font-21</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$VAR[ViewItemLabel34]</label>
 			</control>
 		</control>
 		<control type="group">

@@ -72,7 +72,7 @@
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
 			<control type="label">
-				<description>Album Title value</description>
+				<description>Title value</description>
 				<posx>40</posx>
 				<posy>45</posy>
 				<width>1200</width>
@@ -81,23 +81,8 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<label>$INFO[Listitem.Album]</label>
+				<label>$VAR[DialogAlbumInfoTitle]</label>
 				<font>font-32</font>
-				<visible>Container.Content(Albums)</visible>
-			</control>
-			<control type="label">
-				<description>Artists Title value</description>
-				<posx>40</posx>
-				<posy>45</posy>
-				<width>1200</width>
-				<height>30</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[Listitem.Artist]</label>
-				<font>font-32</font>
-				<visible>Container.Content(Artists)</visible>
 			</control>
 			<control type="image">
 				<posx>40</posx>
@@ -219,19 +204,8 @@
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
-				<label>[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</label>
+				<label>$VAR[DialogAlbumInfoLabel]</label>
 				<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
-			</control>
-			<control type="label">
-				<posx>325</posx>
-				<posy>530</posy>
-				<width>800</width>
-				<height>30</height>
-				<font>font-20c</font>
-				<textcolor>lightblue</textcolor>
-				<align>center</align>
-				<label>[UPPERCASE][B]$LOCALIZE[21888]:[/B][/UPPERCASE]</label>
-				<visible>Container.Content(Artists) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
@@ -246,28 +220,6 @@
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
-			</control>
-			<control type="label">
-				<posx>325</posx>
-				<posy>530</posy>
-				<width>800</width>
-				<height>30</height>
-				<font>font-20c</font>
-				<textcolor>lightblue</textcolor>
-				<align>center</align>
-				<label>[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</label>
-				<visible>Container.Content(Albums) + !Control.IsVisible(50)</visible>
-			</control>
-			<control type="label">
-				<posx>325</posx>
-				<posy>530</posy>
-				<width>800</width>
-				<height>30</height>
-				<font>font-20c</font>
-				<textcolor>lightblue</textcolor>
-				<align>center</align>
-				<label>[UPPERCASE][B]$LOCALIZE[182]:[/B][/UPPERCASE]</label>
-				<visible>Container.Content(Albums) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>

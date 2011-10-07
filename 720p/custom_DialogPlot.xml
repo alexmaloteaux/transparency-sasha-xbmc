@@ -1,5 +1,5 @@
 <window type="dialog" id="1113">
-	<defaultcontrol always="true">1001</defaultcontrol>
+	<defaultcontrol always="true">61</defaultcontrol>
 	<controls>
 		<control type="group">
 			<include>dialogeffect4</include>
@@ -22,35 +22,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
-				<label>[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</label>
+				<label>$VAR[DialogPlotHeader]</label>
 				<font>font-32</font>
-				<visible>!Container.Content(Artists) + !Container.Content(Albums) + !Container.Content(Songs)</visible>
-			</control>
-			<control type="label">
-				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
-				<width>1200</width>
-				<height>30</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<label>[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</label>
-				<font>font-32</font>
-				<visible>Container.Content(Artists)</visible>
-			</control>
-			<control type="label">
-				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
-				<width>1200</width>
-				<height>30</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<label>[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</label>
-				<font>font-32</font>
-				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -63,43 +36,14 @@
 				<posx>290</posx>
 				<posy>80</posy>
 				<width>700</width>
-				<height>376</height>
-				<label>$INFO[ListItem.Plot]</label>
+				<height>450</height>
+				<label>$VAR[DialogPlotTextBox]</label>
 				<font>font-23</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="30000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Container.Content(Artists) + !Container.Content(Albums) + !Container.Content(Songs)</visible>
-			</control>
-			<control type="textbox">
-				<posx>290</posx>
-				<posy>80</posy>
-				<width>700</width>
-				<height>376</height>
-				<label>$INFO[ListItem.Property(Artist_Description)]</label>
-				<font>font-23</font>
-				<align>justify</align>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<pagecontrol>61</pagecontrol>
-				<autoscroll time="3000" delay="30000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Container.Content(Artists)</visible>
-			</control>
-			<control type="textbox">
-				<posx>290</posx>
-				<posy>80</posy>
-				<width>700</width>
-				<height>376</height>
-				<label>$INFO[ListItem.Property(Album_Description)]</label>
-				<font>font-23</font>
-				<align>justify</align>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<pagecontrol>61</pagecontrol>
-				<autoscroll time="3000" delay="30000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
 			</control>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="60,-12" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
@@ -192,7 +136,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Artists)</visible>
+				<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
 				<control type="label">
 					<posx>257</posx>
 					<posy>585</posy>
@@ -215,7 +159,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Property(Artist_Genre),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
+					<label>$VAR[DialogPlotLabel2]</label>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -227,7 +171,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Property(Artist_Mood),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[175]: [/COLOR][/B][/UPPERCASE]]</label>
+					<label>$VAR[DialogPlotLabel3]</label>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -239,58 +183,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Property(Artist_Style),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[176]: [/COLOR][/B][/UPPERCASE]]</label>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
-				<control type="label">
-					<posx>257</posx>
-					<posy>580</posy>
-					<width>1000</width>
-					<height>30</height>
-					<font>font-30</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Artist]</label>
-				</control>
-				<control type="label">
-					<posx>257</posx>
-					<posy>610</posy>
-					<width>1000</width>
-					<height>30</height>
-					<font>font-30</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Album]</label>
-				</control>
-				<control type="label">
-					<posx>257</posx>
-					<posy>640</posy>
-					<width>1000</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
-				</control>
-				<control type="label">
-					<posx>257</posx>
-					<posy>660</posy>
-					<width>1000</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/COLOR][/B][/UPPERCASE]]</label>
+					<label>$VAR[DialogPlotLabel4]</label>
 				</control>
 			</control>
 			<control type="spincontrol" id="61">
@@ -299,30 +192,12 @@
 				<posy>699</posy>
 				<subtype>page</subtype>
 				<font>font-19</font>
-				<onleft>1001</onleft>
-				<onright>1001</onright>
+				<onleft>61</onleft>
+				<onright>61</onright>
 				<ondown>61</ondown>
 				<onup>61</onup>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
-			</control>
-			<control type="button" id="1001">
-				<description>OK Button</description>
-				<posx>540</posx>
-				<posy>480</posy>
-				<width>200</width>
-				<height>35</height>
-				<label>$LOCALIZE[186]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturefocus border="7">button-focus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<label>186</label>
-				<onleft>61</onleft>
-				<onright>61</onright>
-				<onup>1001</onup>
-				<ondown>1001</ondown>
-				<onclick>Dialog.Close(1113)</onclick>
 			</control>
 		</control>
 	</controls>

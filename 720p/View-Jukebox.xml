@@ -245,115 +245,107 @@
 				<height>720</height>
 				<texture>jukebox.png</texture>		
 			</control>
-			<control type="image">
-				<posx>536</posx>
-				<posy>0</posy>
-				<width>205</width>
-				<height>150</height>
-				<texture>jukebox-light-top.png</texture>
-				<animation effect="fade" start="0" end="100" time="1400" pulse="true" tween="bounce" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<control type="group">
 				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>240</posx>
-				<posy>12</posy>
-				<width>802</width>
-				<height>430</height>
-				<texture>jukebox-light-upper.png</texture>
-				<animation effect="fade" start="0" end="70" time="600" delay="600" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>327</posx>
-				<posy>84</posy>
-				<width>620</width>
-				<height>321</height>
-				<texture>jukebox-light-inner.png</texture>
-				<animation effect="fade" start="0" end="60" time="800" delay="1200" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>340</posx>
-				<posy>431</posy>
-				<width>24</width>
-				<height>24</height>
-				<texture>jukebox-light.png</texture>
-				<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>340</posx>
-				<posy>476</posy>
-				<width>24</width>
-				<height>24</height>
-				<texture>jukebox-light.png</texture>
-				<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>915</posx>
-				<posy>433</posy>
-				<width>24</width>
-				<height>24</height>
-				<texture>jukebox-light.png</texture>
-				<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>915</posx>
-				<posy>480</posy>
-				<width>24</width>
-				<height>24</height>
-				<texture>jukebox-light.png</texture>
-				<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>257</posx>
-				<posy>517</posy>
-				<width>63</width>
-				<height>203</height>
-				<texture>jukebox-light-bottomleft2.png</texture>
-				<animation effect="fade" start="0" end="100" time="1100" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>333</posx>
-				<posy>524</posy>
-				<width>33</width>
-				<height>196</height>
-				<texture>jukebox-light-bottomleft1.png</texture>
-				<animation effect="fade" start="0" end="100" time="1300" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>915</posx>
-				<posy>527</posy>
-				<width>35</width>
-				<height>193</height>
-				<texture>jukebox-light-bottomright1.png</texture>
-				<animation effect="fade" start="0" end="100" time="1800" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
-			</control>
-			<control type="image">
-				<posx>964</posx>
-				<posy>523</posy>
-				<width>59</width>
-				<height>197</height>
-				<texture>jukebox-light-bottomright2.png</texture>
-				<animation effect="fade" start="0" end="100" time="1000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Player.Playing</visible>
+				<control type="image">
+					<posx>536</posx>
+					<posy>0</posy>
+					<width>205</width>
+					<height>150</height>
+					<texture>jukebox-light-top.png</texture>
+					<animation effect="fade" start="0" end="100" time="1400" pulse="true" tween="bounce" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>240</posx>
+					<posy>12</posy>
+					<width>802</width>
+					<height>430</height>
+					<texture>jukebox-light-upper.png</texture>
+					<animation effect="fade" start="0" end="70" time="600" delay="600" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>327</posx>
+					<posy>84</posy>
+					<width>620</width>
+					<height>321</height>
+					<texture>jukebox-light-inner.png</texture>
+					<animation effect="fade" start="0" end="60" time="800" delay="1200" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>340</posx>
+					<posy>431</posy>
+					<width>24</width>
+					<height>24</height>
+					<texture>jukebox-light.png</texture>
+					<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>340</posx>
+					<posy>476</posy>
+					<width>24</width>
+					<height>24</height>
+					<texture>jukebox-light.png</texture>
+					<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>915</posx>
+					<posy>433</posy>
+					<width>24</width>
+					<height>24</height>
+					<texture>jukebox-light.png</texture>
+					<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>915</posx>
+					<posy>480</posy>
+					<width>24</width>
+					<height>24</height>
+					<texture>jukebox-light.png</texture>
+					<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>257</posx>
+					<posy>517</posy>
+					<width>63</width>
+					<height>203</height>
+					<texture>jukebox-light-bottomleft2.png</texture>
+					<animation effect="fade" start="0" end="100" time="1100" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>333</posx>
+					<posy>524</posy>
+					<width>33</width>
+					<height>196</height>
+					<texture>jukebox-light-bottomleft1.png</texture>
+					<animation effect="fade" start="0" end="100" time="1300" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>915</posx>
+					<posy>527</posy>
+					<width>35</width>
+					<height>193</height>
+					<texture>jukebox-light-bottomright1.png</texture>
+					<animation effect="fade" start="0" end="100" time="1800" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+				<control type="image">
+					<posx>964</posx>
+					<posy>523</posy>
+					<width>59</width>
+					<height>197</height>
+					<texture>jukebox-light-bottomright2.png</texture>
+					<animation effect="fade" start="0" end="100" time="1000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
 			</control>
 		</control>
 		<control type="group">

@@ -1981,60 +1981,19 @@
 					<posy>80</posy>
 					<width>1200</width>
 					<height>30</height>
-					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<label>$VAR[ViewWallLabel1]</label>
 					<font>font-30</font>
-					<visible>Container.Content(Artists) + !stringcompare(ListItem.Label,..)</visible>
-				</control>
-				<control type="label">
-					<posx>40</posx>
-					<posy>80</posy>
-					<width>1200</width>
-					<height>30</height>
-					<label>[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label][/B]</label>
-					<font>font-30</font>
-					<visible>Container.Content(Albums) + !stringcompare(ListItem.Label,..)</visible>
-				</control>
-				<control type="label">
-					<posx>40</posx>
-					<posy>80</posy>
-					<width>1200</width>
-					<height>30</height>
-					<label>[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/B]</label>
-					<font>font-30</font>
-					<visible>Container.Content(Songs)</visible>
 				</control>
 				<control type="label">
 					<posx>40</posx>
 					<posy>115</posy>
 					<width>1200</width>
 					<height>60</height>
-					<label>[B]$INFO[ListItem.Property(Artist_Genre)][/B]</label>
+					<label>$VAR[ViewWallLabel2]</label>
 					<textcolor>lightblue</textcolor>
 					<font>font-21</font>
-					<visible>Container.Content(Artists)</visible>
-				</control>
-				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
-					<width>1200</width>
-					<height>60</height>
-					<label>[B]$INFO[ListItem.Genre][CR]$INFO[ListItem.Year][/B]</label>
-					<textcolor>lightblue</textcolor>
-					<font>font-21</font>
-					<visible>Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
-					<width>1200</width>
-					<height>60</height>
-					<label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.Duration][/B]</label>
-					<textcolor>lightblue</textcolor>
-					<font>font-21</font>
-					<visible>Container.Content(Songs) + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="textbox">
-					<description>Biography Value for Artists</description>
 					<posx>40</posx>
 					<posy>182</posy>
 					<width>335</width>
@@ -2043,23 +2002,8 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$INFO[ListItem.Property(Artist_Description)]</label>
+					<label>$VAR[ViewWallText]</label>
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Container.Content(Artists)</visible>
-				</control>
-				<control type="textbox">
-					<description>Biography Value for Albums</description>
-					<posx>40</posx>
-					<posy>182</posy>
-					<width>335</width>
-					<height>344</height>
-					<font>font-19</font>
-					<align>justify</align>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$INFO[ListItem.Property(Album_Description)]</label>
-					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Container.Content(Albums)</visible>
 				</control>
 			</control>
 			<control type="group">

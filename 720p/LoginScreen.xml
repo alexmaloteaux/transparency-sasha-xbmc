@@ -183,16 +183,6 @@
 					<width>225</width>
 					<height>50</height>
 					<texture>xbmc-logo.png</texture>
-					<visible>!Skin.HasSetting(Show_Custom_Home_Logo)</visible>
-				</control>
-				<control type="image">
-					<posx>5</posx>
-					<posy>2</posy>
-					<width>225</width>
-					<height>46</height>
-					<texture>$INFO[Skin.String(Custom_Home_Logo)]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>Skin.HasSetting(Show_Custom_Home_Logo)</visible>
 				</control>
 				<control type="grouplist">
 					<posx>719</posx>
@@ -243,10 +233,10 @@
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>true</pulseonselect>
-					<onleft>52</onleft>
-					<onright>52</onright>
-					<onup>52</onup>
-					<ondown>52</ondown>
+					<onleft>10</onleft>
+					<onright>10</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
 				</control>
 				<control type="image">
 					<posx>1248</posx>
@@ -254,18 +244,8 @@
 					<width>20</width>
 					<height>20</height>
 					<aspectratio>keep</aspectratio>
-					<texture>home-power.png</texture>
-					<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
-				</control>
-				<control type="image">
-					<posx>1248</posx>
-					<posy>7</posy>
-					<width>20</width>
-					<height>20</height>
-					<aspectratio>keep</aspectratio>
-					<texture>home-power-focus.png</texture>
+					<texture>$VAR[HomePowerButton]</texture>
 					<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(20)">Conditional</animation>
-					<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 			</control>
 		</control>

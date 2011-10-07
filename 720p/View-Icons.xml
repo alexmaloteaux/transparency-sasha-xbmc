@@ -768,8 +768,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label2][/B]</label>
-				<visible>Container.Content(Albums)</visible>
+				<label>$VAR[ViewIconsLabel1]</label>
 			</control>
 			<control type="label">
 				<posx>20</posx>
@@ -781,34 +780,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<visible>Container.Content(Albums)</visible>
-			</control>
-			<control type="label">
-				<posx>20</posx>
-				<posy>50</posy>
-				<width>1240</width>
-				<height>20</height>
-				<font>font-30</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<visible>Container.Content(Songs)</visible>
-			</control>
-			<control type="label">
-				<posx>20</posx>
-				<posy>80</posy>
-				<width>1240</width>
-				<height>20</height>
-				<font>font-35</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Label2][/B]</label>
-				<visible>Container.Content(Songs)</visible>
+				<label>$VAR[ViewIconsLabel2]</label>
 			</control>
 			<control type="image">
 				<posx>240</posx>

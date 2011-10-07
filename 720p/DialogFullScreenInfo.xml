@@ -138,48 +138,11 @@
 					<posy>58</posy>
 					<width>710</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio, - ]</label>
+					<label>$VAR[DialogFullScreenInfoLabel1]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
 					<textcolor>blue</textcolor>
-					<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
-				</control>
-				<control type="label">
-					<posx>325</posx>
-					<posy>58</posy>
-					<width>710</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.ChannelName]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>blue</textcolor>
-					<visible>VideoPlayer.Content(LiveTV)</visible>
-				</control>
-				<control type="label">
-					<posx>325</posx>
-					<posy>58</posy>
-					<width>710</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.TVShowTitle]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>blue</textcolor>
-					<visible>VideoPlayer.Content(Episodes)</visible>
-				</control>
-				<control type="label">
-					<posx>325</posx>
-					<posy>58</posy>
-					<width>710</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.Artist]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>blue</textcolor>
-					<visible>VideoPlayer.Content(MusicVideos)</visible>
 				</control>
 				<control type="label">
 					<posx>325</posx>
@@ -197,48 +160,11 @@
 					<posy>110</posy>
 					<width>625</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.Genre]</label>
+					<label>$VAR[DialogFullScreenInfoLabel2]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
-					<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
-				</control>
-				<control type="label">
-					<posx>325</posx>
-					<posy>110</posy>
-					<width>625</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.PlotOutline]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<visible>VideoPlayer.Content(LiveTV)</visible>
-				</control>
-				<control type="label">
-					<posx>325</posx>
-					<posy>110</posy>
-					<width>625</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<visible>VideoPlayer.Content(Episodes)</visible>
-				</control>
-				<control type="label">
-					<posx>325</posx>
-					<posy>110</posy>
-					<width>625</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio, - ]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<visible>VideoPlayer.Content(MusicVideos)</visible>
 				</control>
 				<control type="label">
 					<description>System Time Label</description>
@@ -403,23 +329,9 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<pagecontrol>60</pagecontrol>
-					<label>$INFO[VideoPlayer.Plot]</label>
+					<label>$VAR[DialogFullScreenInfoText]</label>
 					<autoscroll time="2000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Control.HasFocus(2) | Control.HasFocus(60)</visible>
-				</control>
-				<control type="textbox">
-					<description>Cast</description>
-					<posx>385</posx>
-					<posy>-65</posy>
-					<width>805</width>
-					<height>215</height>
-					<font>font-20</font>
-					<align>justify</align>
-					<textcolor>lightblue</textcolor>
-					<pagecontrol>61</pagecontrol>
-					<label>$INFO[VideoPlayer.CastAndRole]</label>
-					<autoscroll time="2000" delay="12000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Control.HasFocus(3) | Control.HasFocus(61)</visible>
+					<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(60) | Control.HasFocus(61)</visible>
 				</control>
 				<control type="scrollbar" id="60">
 					<posx>1215</posx>

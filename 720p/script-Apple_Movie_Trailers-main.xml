@@ -148,9 +148,9 @@
 								<width>635</width>
 								<height>30</height>
 								<texture border="7">list-focus2.png</texture>
-								<visible>Control.HasFocus(50)</visible>
 								<include>VisibleFadeEffect</include>
 								<include>ListFocusScroll23</include>
+								<visible>Control.HasFocus(50)</visible>
 							</control>
 							<control type="label">
 								<posx>10</posx>

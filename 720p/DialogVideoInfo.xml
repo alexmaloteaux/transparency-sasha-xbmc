@@ -89,22 +89,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
-				<label>$INFO[Listitem.Title]</label>
+				<label>$VAR[DialogVideoInfoTitle]</label>
 				<font>font-32</font>
-				<visible>IsEmpty(ListItem.OriginalTitle)</visible>
-			</control>
-			<control type="label">
-				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
-				<width>1200</width>
-				<height>30</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<label>$INFO[Listitem.OriginalTitle]</label>
-				<font>font-32</font>
-				<visible>!IsEmpty(ListItem.OriginalTitle)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -333,10 +319,9 @@
 				<font>font-20c</font>
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
-				<label>[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</label>
+				<label>$VAR[DialogVideoInfoLabel]</label>
 				<animation effect="slide" start="0,0" end="-110,10" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,10" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos) | [Container.Content(TVShows) + [SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]">Conditional</animation>
-				<visible>!Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
@@ -369,20 +354,6 @@
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
 				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(50)</visible>
-			</control>
-			<control type="label">
-				<posx>355</posx>
-				<posy>530</posy>
-				<width>800</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>lightblue</textcolor>
-				<align>center</align>
-				<label>[B]$INFO[Container(50).Listitem.Label][/B]</label>
-				<animation effect="slide" start="0,0" end="-110,5" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,5" time="0" condition="Container.Content(TVShows) + [SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]">Conditional</animation>
-				<animation effect="slide" start="0,0" end="15,10" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
-				<visible>Control.HasFocus(50)</visible>
 			</control>
 			<control type="wraplist" id="50">
 				<posx>265</posx>

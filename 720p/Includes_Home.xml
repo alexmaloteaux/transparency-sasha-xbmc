@@ -40,7 +40,7 @@
 			<posx>320</posx>
 			<posy>20</posy>
 			<width>740</width>
-			<height>370</height>
+			<height>382</height>
 			<include condition="!Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Custom_Path</include>
 			<aspectratio aligny="top">scale</aspectratio>
@@ -872,46 +872,18 @@
 				<visible>!VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<description>TV Show Title label</description>
+				<description>Title label</description>
 				<posx>770</posx>
 				<posy>15</posy>
 				<width>770</width>
 				<height>30</height>
-				<label>$INFO[VideoPlayer.TvshowTitle]</label>
+				<label>$VAR[IncludesHomeVideoInfoLabel1]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-30</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>VideoPlayer.Content(Episodes)</visible>
-			</control>
-			<control type="label">
-				<description>Music Video Artist label</description>
-				<posx>770</posx>
-				<posy>15</posy>
-				<width>770</width>
-				<height>30</height>
-				<label>$INFO[VideoPlayer.Artist]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>VideoPlayer.Content(MusicVideos)</visible>
-			</control>
-			<control type="label">
-				<description>Channel label</description>
-				<posx>770</posx>
-				<posy>15</posy>
-				<width>770</width>
-				<height>30</height>
-				<label>$INFO[VideoPlayer.ChannelName]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<visible>VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
 				<description>Title label</description>
@@ -946,25 +918,12 @@
 				<posy>88</posy>
 				<width>770</width>
 				<height>30</height>
-				<info>VideoPlayer.Album</info>
+				<label>$VAR[IncludesHomeVideoInfoLabel2]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
 				<shadowcolor>black</shadowcolor>
-				<visible>VideoPlayer.Content(MusicVideos)</visible>
-			</control>
-			<control type="label">
-				<description>Season and Episode label</description>
-				<posx>770</posx>
-				<posy>88</posy>
-				<width>770</width>
-				<height>30</height>
-				<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<shadowcolor>black</shadowcolor>
-				<visible>VideoPlayer.Content(Episodes)</visible>
+				<visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>100</posx>

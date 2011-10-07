@@ -1,437 +1,55 @@
 <includes>
-	<include name="VideoMediaFlagsResolution">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsAspectRatio">
-		<posx>68</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsVideoCodec">
-		<posx>136</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsAudioCodec">
-		<posx>204</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsSource">
-		<posx>272</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsSubtitles">
-		<posx>340</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsRating">
-		<posx>408</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="VideoMediaFlagsStudio">
-		<posx>484</posx>
-		<posy>6</posy>
-		<width>52</width>
-		<height>35</height>
-	</include>
 	<include name="VideoMediaFlags">
 		<visible>![ListItem.IsFolder | stringcompare(ListItem.Label,..)]</visible>
-	<!-- Resolution -->
 		<control type="image">
-			<include>VideoMediaFlagsResolution</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
 			<texture fallback="mediaflag-resolution.png">flags/movies/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
-			<visible>!stringcompare(ListItem.Label,..)</visible>
 		</control>
-	<!-- Aspect Ratio -->
 		<control type="image">
-			<include>VideoMediaFlagsAspectRatio</include>
+			<posx>68</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
 			<texture fallback="mediaflag-aspectratio.png">flags/movies/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
-			<visible>!stringcompare(ListItem.Label,..)</visible>
 		</control>
-	<!-- Video Codec -->
 		<control type="image">
-			<include>VideoMediaFlagsVideoCodec</include>
+			<posx>136</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
 			<texture fallback="mediaflag-videocodec.png">flags/movies/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
-			<visible>!stringcompare(ListItem.Label,..)</visible>
 		</control>
-	<!-- Audio Codec -->
 		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd10.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,1)</visible>
+			<posx>204</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoAudioCodec]</texture>
 		</control>
 		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd20.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,2)</visible>
+			<posx>272</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-source.png">$VAR[IncludesMediaFlagsVideoSource]</texture>
 		</control>
 		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd30.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,3)</visible>
+			<posx>340</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture>$VAR[IncludesMediaFlagsVideoSubtitles]</texture>
 		</control>
 		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd50.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,5)</visible>
+			<posx>408</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
 		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd51.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,6)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd61.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,7)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dd71.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,8)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts10.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,1)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts20.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,2)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts40.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,4)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts51.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,6)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts61.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,7)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dts71.png</texture>
-			<visible>[stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts)] + stringcompare(ListItem.AudioChannels,8)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtshra.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_hra) + ![stringcompare(ListItem.AudioChannels,6) | stringcompare(ListItem.AudioChannels,7) | stringcompare(ListItem.AudioChannels,8)]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtshra51.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_hra) + stringcompare(ListItem.AudioChannels,6)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtshra61.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_hra) + stringcompare(ListItem.AudioChannels,7)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtshra71.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_hra) + stringcompare(ListItem.AudioChannels,8)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + ![stringcompare(ListItem.AudioChannels,3) | stringcompare(ListItem.AudioChannels,4) | stringcompare(ListItem.AudioChannels,5) | stringcompare(ListItem.AudioChannels,6) | stringcompare(ListItem.AudioChannels,7) | stringcompare(ListItem.AudioChannels,8)]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma30.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,3)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma40.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,4)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma50.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,5)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma51.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,6)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma61.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,7)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture>flags/movies/audiocodec/dtsma71.png</texture>
-			<visible>stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsAudioCodec</include>
-			<texture fallback="mediaflag-audiocodec.png">flags/movies/audiocodec/$INFO[ListItem.AudioCodec,,.png]</texture>
-			<visible>![stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3) | stringcompare(ListItem.AudioCodec,dca) | stringcompare(ListItem.AudioCodec,dts) | stringcompare(ListItem.AudioCodec,dtshd_hra) | stringcompare(ListItem.AudioCodec,dtshd_ma)] + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	<!-- Source -->
-		<control type="image">
-			<include>VideoMediaFlagsSource</include>
-			<texture>flags/movies/source/dvd.png</texture>
-			<visible>substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsSource</include>
-			<texture>flags/movies/source/hddvd.png</texture>
-			<visible>substring(ListItem.Filename,hddvd) | substring(ListItem.Filename,.evo,Right)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsSource</include>
-			<texture>flags/movies/source/bluray.png</texture>
-			<visible>substring(ListItem.Filename,bluray) | substring(ListItem.Filename,blu-ray) | substring(ListItem.Filename,brrip) | substring(ListItem.Filename,.m2ts,Right) | substring(ListItem.Filename,.bdmv,Right) | [[!substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsSource</include>
-			<texture>flags/movies/source/sdtv.png</texture>
-			<visible>substring(ListItem.Filename,sdtv) | substring(ListItem.Filename,tvrip) | [[!substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + [Container.Content(Episodes) | Container.Content(MusicVideos)] + [stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsSource</include>
-			<texture>flags/movies/source/hdtv.png</texture>
-			<visible>substring(ListItem.Filename,hdtv) | substring(ListItem.Filename,pdtv) | [[!substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right)] + [Container.Content(Episodes) | Container.Content(MusicVideos)] + [stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)]]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsSource</include>
-			<texture>mediaflag-source.png</texture>
-			<visible>IsEmpty(ListItem.VideoResolution) + !substring(ListItem.Filename,dvdrip) + !substring(ListItem.Filename,sddvd) + !substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,.ifo,Right) + !substring(ListItem.Filename,.vob,Right) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right) + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	<!-- Subtitles -->
-		<control type="image">
-			<include>VideoMediaFlagsSubtitles</include>
-			<texture>flags/movies/subtitles/cc.png</texture>
-			<visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsSubtitles</include>
-			<texture>mediaflag-subtitles.png</texture>
-			<visible>IsEmpty(ListItem.SubtitleLanguage) + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	<!-- Rating US -->
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/rating-g.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated G) | substring(ListItem.Mpaa,Rated: G)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/rating-pg.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [substring(ListItem.Mpaa,Rated PG) | substring(ListItem.Mpaa,Rated: PG)] + !substring(ListItem.Mpaa,Rated PG-13) + !substring(ListItem.Mpaa,Rated: PG-13)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/rating-pg13.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated PG-13) | substring(ListItem.Mpaa,Rated: PG-13)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/rating-r.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated R) | substring(ListItem.Mpaa,Rated: R)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/rating-nc17.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,Rated NC-17) | substring(ListItem.Mpaa,Rated: NC-17)</visible>
-		</control>
-	<!-- Rating UK -->
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfcU.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:U)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfcUC.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:UC)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfcPG.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:PG)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfc12.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:12)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfc12A.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:12A)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfc15.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:15)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfc18.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:18)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/bbfcR18.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,UK:R18)</visible>
-		</control>
-	<!-- Rating ES -->
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaTP.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:TP)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaR7.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:R7)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaITP.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:ITP)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaIR7.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:IR7)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaR12.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:R12)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaR16.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:R16)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaR18.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:R18)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/spaX.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + StringCompare(ListItem.Mpaa,ES:X)</visible>
-		</control>
-	<!-- Rating DE -->
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/fsk0.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A.)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/fsk6.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/fsk12.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/fsk16.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/fsk18.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)</visible>
-		</control>
-	<!-- Rating FR -->
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/csaU.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:U)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/csa10.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-10)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/csa12.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-12)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/csa16.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-16)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/csa18.png</texture>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + substring(Listitem.mpaa,French:-18)</visible>
-		</control>
-	<!-- Rating TV -->
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/tv-y.png</texture>
-			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-Y) + ![substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)]</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/tv-y7.png</texture>
-			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/tv-g.png</texture>
-			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-G)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/tv-pg.png</texture>
-			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-PG)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/tv-14.png</texture>
-			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-14)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>flags/movies/rating/tv-ma.png</texture>
-			<visible>[Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + substring(ListItem.Mpaa,TV-MA)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsRating</include>
-			<texture>mediaflag-rating.png</texture>
-			<visible>IsEmpty(ListItem.Mpaa) + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	<!-- Studio Background-->
 		<control type="image">
 			<posx>476</posx>
 			<posy>0</posy>
@@ -440,21 +58,17 @@
 			<texture>mediaflag.png</texture>
 			<visible>![Container.Content(Movies) + Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
-	<!-- Studio -->
 		<control type="image">
-			<include>VideoMediaFlagsStudio</include>
+			<posx>484</posx>
+			<posy>6</posy>
+			<width>52</width>
+			<height>35</height>
 			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>Container.Content(Movies) + ![Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-		<control type="image">
-			<include>VideoMediaFlagsStudio</include>
-			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>[[Container.Content(Movies) + ![Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57)] | [!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist)]]  + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	</include>
 	<include name="MovieStudioFlag">
 		<visible>![ListItem.IsFolder | stringcompare(ListItem.Label,..)]</visible>
-	<!-- Studio Background-->
 		<control type="image">
 			<posx>751</posx>
 			<posy>622</posy>
@@ -464,37 +78,14 @@
 			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(592)">Conditional</animation>
 			<visible>!stringcompare(ListItem.Label,..)</visible>
 		</control>
-	<!-- Studio -->
 		<control type="image">
 			<posx>762</posx>
 			<posy>633</posy>
 			<width>93</width>
 			<height>63</height>
-			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(592)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="1,1" time="0" condition="Control.IsVisible(592)">Conditional</animation>
-			<visible>[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-		<control type="image">
-			<posx>762</posx>
-			<posy>633</posy>
-			<width>93</width>
-			<height>63</height>
-			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(598)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="1,1" time="0" condition="Control.IsVisible(598)">Conditional</animation>
-			<visible>Container.Content(Episodes) + Control.IsVisible(598) + !stringcompare(ListItem.Label,..)</visible>
-		</control>
-	<!-- Studio MusicVideos -->
-		<control type="image">
-			<posx>762</posx>
-			<posy>633</posy>
-			<width>93</width>
-			<height>63</height>
-			<texture fallback="mediaflag-studio.png">flags/music/recordlabel/$INFO[ListItem.Studio,,.png]</texture>
-			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(598)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="1,1" time="0" condition="Control.IsVisible(598)">Conditional</animation>
-			<visible>Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)</visible>
+			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudio]</texture>
+			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(592) | Control.IsVisible(598)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="1,1" time="0" condition="Control.IsVisible(592) | Control.IsVisible(598)">Conditional</animation>
 		</control>
 	</include>
 </includes>

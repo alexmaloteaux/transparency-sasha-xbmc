@@ -42,6 +42,10 @@
 				<texture>cdcase-shadow.png</texture>
 				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<include>DialogFade5</include>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
 			<control type="label">
 				<posx>262</posx>
 				<posy>577</posy>
@@ -94,6 +98,7 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<include>DialogFade5</include>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
 			<control type="button">
 				<posx>1240</posx>
 				<posy>20</posy>
@@ -257,7 +262,7 @@
 				<onclick>DecreaseRating</onclick>
 				<texturenofocus>scroll-down-2.png</texturenofocus>
 				<texturefocus>scroll-down-focus-2.png</texturefocus>
-				<onleft>15</onleft>
+				<onleft>1112</onleft>
 				<onright>15</onright>
 				<ondown>13</ondown>
 				<onup>13</onup>
@@ -272,9 +277,24 @@
 				<texturenofocus>scroll-up-2.png</texturenofocus>
 				<texturefocus>scroll-up-focus-2.png</texturefocus>
 				<onleft>14</onleft>
-				<onright>14</onright>
+				<onright>1112</onright>
 				<ondown>13</ondown>
 				<onup>13</onup>
+			</control>
+			<control type="button" id="1112">
+				<posx>1250</posx>
+				<posy>701</posy>
+				<width>20</width>
+				<height>20</height>
+				<label>-</label>
+				<font>-</font>
+				<texturefocus>magnifier-small-focus.png</texturefocus>
+				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
+				<onleft>15</onleft>
+				<onright>14</onright>
+				<onup>13</onup>
+				<ondown>13</ondown>
+				<onclick>ActivateWindow(1113)</onclick>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>

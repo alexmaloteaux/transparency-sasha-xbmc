@@ -1,16 +1,4 @@
 <includes>
-	<include name="FullScreenMusicAudioCodec">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>64</width>
-		<height>48</height>
-	</include>
-	<include name="FullScreenMusicRecordLabel">
-		<posx>74</posx>
-		<posy>6</posy>
-		<width>52</width>
-		<height>35</height>
-	</include>
 	<include name="FullScreenMusicMediaFlags">
 		<control type="group">
 			<posx>354</posx>
@@ -19,7 +7,10 @@
 			<height>48</height>
 		<!-- Audio Codec -->
 			<control type="image">
-				<include>FullScreenMusicAudioCodec</include>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>48</height>
 				<texture fallback="mediaflag-audiocodec.png">flags/music/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
 				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
@@ -33,7 +24,10 @@
 				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 			<control type="image">
-				<include>FullScreenMusicRecordLabel</include>
+				<posx>74</posx>
+				<posy>6</posy>
+				<width>52</width>
+				<height>35</height>
 				<texture fallback="mediaflag-recordlabel.png">flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
 				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>

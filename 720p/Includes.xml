@@ -1,5 +1,6 @@
 <includes>
 	<include file="defaults.xml"/>
+	<include file="Includes_Variables.xml"/>
 	<include file="View-CoverFlow.xml"/>
 	<include file="View-Fanart.xml"/>
 	<include file="View-FullList.xml"/>
@@ -305,21 +306,9 @@
 		</control>
 		<control type="label" id="1101">
 			<description>Music Plugins</description>
-			<label>$LOCALIZE[1038]</label>
+			<label>$VAR[IncludesBreadcrumbsMusicFiles]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,plugin://music/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Shoutcast</description>
-			<label>$LOCALIZE[260]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,shout://,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Shoutcast</description>
-			<label>$LOCALIZE[15200]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,lastfm://,Left)</visible>
+			<visible>Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left) | Substring(Container.FolderPath,shout://,Left) | Substring(Container.FolderPath,lastfm://,Left)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs-Music-Library">
@@ -343,93 +332,9 @@
 		</control>
 		<control type="label" id="1101">
 			<description>Genres</description>
-			<label>$LOCALIZE[135]</label>
+			<label>$VAR[IncludesBreadcrumbsMusicLibrary1]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://1/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Artists</description>
-			<label>$LOCALIZE[133]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://2/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Albums</description>
-			<label>$LOCALIZE[132]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://3/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Songs</description>
-			<label>$LOCALIZE[134]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://4/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Top 100</description>
-			<label>$LOCALIZE[271]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://5/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Recently Added Albums</description>
-			<label>$LOCALIZE[359]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://6/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Recently Played Albums</description>
-			<label>$LOCALIZE[517]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://7/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Compilations</description>
-			<label>$LOCALIZE[521]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://8/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Years</description>
-			<label>$LOCALIZE[652]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://9/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Singles</description>
-			<label>$LOCALIZE[1050]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://10/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Music Plugins</description>
-			<label>$LOCALIZE[1038]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,plugin://music/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Shoutcast</description>
-			<label>$LOCALIZE[260]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,shout://,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Shoutcast</description>
-			<label>$LOCALIZE[15200]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,lastfm://,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Playlists</description>
-			<label>$LOCALIZE[136]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,special://musicplaylists/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Music Videos</description>
-			<label>$LOCALIZE[20389]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/,Left)</visible>
+			<visible>Substring(Container.FolderPath,musicdb://,Left) | Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left) | Substring(Container.FolderPath,lastfm://,Left) | Substring(Container.FolderPath,shout://,Left) | Substring(Container.FolderPath,special://musicplaylists/,Left) | Substring(Container.FolderPath,videodb://3/,Left)</visible>
 		</control>
 		<control type="image">
 			<width>29</width>
@@ -441,57 +346,9 @@
 		</control>
 		<control type="label" id="1102">
 			<description>Top 100 Songs</description>
-			<label>$LOCALIZE[10504]</label>
+			<label>$VAR[IncludesBreadcrumbsMusicLibrary2]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://5/1/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Top 100 Albums</description>
-			<label>$LOCALIZE[10505]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://5/2/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Genres</description>
-			<label>$LOCALIZE[135]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/1/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Title</description>
-			<label>$LOCALIZE[369]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/2/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Year</description>
-			<label>$LOCALIZE[562]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/3/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Artists</description>
-			<label>$LOCALIZE[133]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/4/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Albums</description>
-			<label>$LOCALIZE[132]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/5/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Directors</description>
-			<label>$LOCALIZE[20348]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/6/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Studios</description>
-			<label>$LOCALIZE[20388]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/7/,Left)</visible>
+			<visible>Substring(Container.FolderPath,musicdb://5/1,Left) | Substring(Container.FolderPath,musicdb://5/2,Left) | Substring(Container.FolderPath,videodb://3/1,Left) | Substring(Container.FolderPath,videodb://3/2,Left) | Substring(Container.FolderPath,videodb://3/3,Left) | Substring(Container.FolderPath,videodb://3/4,Left) | Substring(Container.FolderPath,videodb://3/5,Left) | Substring(Container.FolderPath,videodb://3/6,Left) | Substring(Container.FolderPath,videodb://3/7,Left)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs-MusicPlaylist">
@@ -709,51 +566,9 @@
 		</control>
 		<control type="label" id="1101">
 			<description>Movies</description>
-			<label>$LOCALIZE[342]</label>
+			<label>$VAR[IncludesBreadcrumbsVideos1]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>TV Shows</description>
-			<label>$LOCALIZE[20343]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://2/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Music Videos</description>
-			<label>$LOCALIZE[20389]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Recently Added Movies</description>
-			<label>$LOCALIZE[20386]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://4/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Recently Added Episodes</description>
-			<label>$LOCALIZE[20387]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://5/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Recently Added Music Videos</description>
-			<label>$LOCALIZE[20390]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://6/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Playlists</description>
-			<label>$LOCALIZE[136]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,special://videoplaylists/,Left)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Video Plugins</description>
-			<label>$LOCALIZE[1037]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,plugin://video/,Left)</visible>
+			<visible>Substring(Container.FolderPath,videodb://,Left) | Substring(Container.FolderPath,special://videoplaylists/,Left) | Substring(Container.FolderPath,addons://video/,Left) | Substring(Container.FolderPath,plugin://video/,Left)</visible>
 		</control>
 		<control type="image">
 			<width>29</width>
@@ -761,61 +576,13 @@
 			<texture>dot.png</texture>
 			<animation effect="fade" start="0" end="100" center="0,15" time="400">Visible</animation>
 			<animation effect="fade" start="100" end="0" center="0,15" time="400">Hidden</animation>
-			<visible>Control.IsVisible(1102)</visible>
+			<visible>!StringCompare(Container.FolderPath,videodb://1/) + !StringCompare(Container.FolderPath,videodb://2/) + !StringCompare(Container.FolderPath,videodb://3/) + !IsEmpty(Container.FolderPath)</visible>
 		</control>
 		<control type="label" id="1102">
 			<description>Genres</description>
-			<label>$LOCALIZE[135]</label>
+			<label>$VAR[IncludesBreadcrumbsVideos2]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/1/,Left) | Substring(Container.FolderPath,videodb://2/1/,Left) | Substring(Container.FolderPath,videodb://3/1/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Title</description>
-			<label>$LOCALIZE[369]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/2/,Left) | Substring(Container.FolderPath,videodb://2/2/,Left) | Substring(Container.FolderPath,videodb://3/2/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Year</description>
-			<label>$LOCALIZE[562]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/3/,Left) | Substring(Container.FolderPath,videodb://2/3/,Left) | Substring(Container.FolderPath,videodb://3/3/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Actors</description>
-			<label>$LOCALIZE[344]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/4/,Left) | Substring(Container.FolderPath,videodb://2/4/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Directors</description>
-			<label>$LOCALIZE[20348]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/5/,Left) | Substring(Container.FolderPath,videodb://3/6/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Studios</description>
-			<label>$LOCALIZE[20388]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/6/,Left) | Substring(Container.FolderPath,videodb://2/5/,Left) | Substring(Container.FolderPath,videodb://3/7/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Sets</description>
-			<label>$LOCALIZE[20434]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://1/7/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Artists</description>
-			<label>$LOCALIZE[133]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/4/,Left)</visible>
-		</control>
-		<control type="label" id="1102">
-			<description>Albums</description>
-			<label>$LOCALIZE[132]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,videodb://3/5/,Left)</visible>
+			<visible>!StringCompare(Container.FolderPath,videodb://1/) + !StringCompare(Container.FolderPath,videodb://2/) + !StringCompare(Container.FolderPath,videodb://3/)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs-VideoPlaylist">
@@ -1372,8 +1139,7 @@
 		<control type="group">
 			<posx>5</posx>
 			<posy>547</posy>
-			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)</visible>
-			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds) + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1405,52 +1171,24 @@
 				<posy>55</posy>
 				<width>930</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.Title]</label>
+				<label>$VAR[IncludesCommonNowPlayingVideoLabel1]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)</visible>
-			</control>
-			<control type="label">
-				<posx>175</posx>
-				<posy>75</posy>
-				<width>930</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-19</font>
-				<textcolor>lightblue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)</visible>
 			</control>
 			<control type="label">
 				<posx>175</posx>
 				<posy>95</posy>
 				<width>930</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.Studio]</label>
+				<label>$VAR[IncludesCommonNowPlayingVideoLabel2]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-19</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)</visible>
-			</control>
-			<control type="label">
-				<posx>175</posx>
-				<posy>95</posy>
-				<width>930</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Title]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592) + !Control.IsVisible(598)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>175</posx>
@@ -1510,8 +1248,7 @@
 		<control type="group">
 			<posx>5</posx>
 			<posy>547</posy>
-			<visible>Player.HasAudio</visible>
-			<visible>![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml) | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)]</visible>
+			<visible>Player.HasAudio + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml) | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>
@@ -2628,6 +2365,415 @@
 	</include>
 	<include name="SideMenuAnim3Wide">
 		<animation effect="slide" start="0,0" end="252,0" time="400" tween="quadratic" easing="out" condition="!ControlGroup(5).HasFocus + !Control.HasFocus(90)">Conditional</animation>
+	</include>
+	<include name="SkinSettingsImageButtonGroup">
+		<control type="group">
+			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(25) | Container(302).HasFocus(26)</visible>
+			<posx>555</posx>
+			<posy>215</posy>
+			<control type="button" id="303">
+				<description>Single Image button</description>
+				<posx>10</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31113</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(1)">Skin.SetImage(Home_Custom_Back_Videos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(4)">Skin.SetImage(Home_Custom_Back_MusicVideos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(5)">Skin.SetImage(Home_Custom_Back_TV_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(7)">Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(8)">Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(10)">Skin.SetImage(Home_Custom_Back_Favourites_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(11)">Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(12)">Skin.SetImage(Home_Custom_Back_PlayDisc_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(13)">Skin.SetImage(Home_Custom_Back_Custom1_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(14)">Skin.SetImage(Home_Custom_Back_Custom2_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(15)">Skin.SetImage(Home_Custom_Back_Custom3_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(16)">Skin.SetImage(Custom_Back_Videos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(17)">Skin.SetImage(Custom_Back_Movies_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(18)">Skin.SetImage(Custom_Back_TVShows_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(19)">Skin.SetImage(Custom_Back_MusicVideos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(20)">Skin.SetImage(Custom_Back_TV_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(21)">Skin.SetImage(Custom_Back_Music_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(22)">Skin.SetImage(Custom_Back_Pictures_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(23)">Skin.SetImage(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(25)">Skin.SetImage(Custom_Back_Settings_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(26)">Skin.SetImage(Custom_Back_Login_Folder)</onclick>
+				<onleft>302</onleft>
+				<onright>304</onright>
+				<onup>303</onup>
+				<ondown>303</ondown>
+			</control>
+			<control type="button" id="304">
+				<description>Multi Image button</description>
+				<posx>180</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31114</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(1)">Skin.SetPath(Home_Custom_Back_Videos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(4)">Skin.SetPath(Home_Custom_Back_MusicVideos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(5)">Skin.SetPath(Home_Custom_Back_TV_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(7)">Skin.SetPath(Home_Custom_Back_Pictures_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(8)">Skin.SetPath(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(10)">Skin.SetPath(Home_Custom_Back_Favourites_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(11)">Skin.SetPath(Home_Custom_Back_Settings_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(12)">Skin.SetPath(Home_Custom_Back_PlayDisc_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(13)">Skin.SetPath(Home_Custom_Back_Custom1_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(14)">Skin.SetPath(Home_Custom_Back_Custom2_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(15)">Skin.SetPath(Home_Custom_Back_Custom3_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(16)">Skin.SetPath(Custom_Back_Videos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(17)">Skin.SetPath(Custom_Back_Movies_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(18)">Skin.SetPath(Custom_Back_TVShows_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(19)">Skin.SetPath(Custom_Back_MusicVideos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(20)">Skin.SetPath(Custom_Back_TV_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(21)">Skin.SetPath(Custom_Back_Music_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(22)">Skin.SetPath(Custom_Back_Pictures_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(23)">Skin.SetPath(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(25)">Skin.SetPath(Custom_Back_Settings_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(26)">Skin.SetPath(Custom_Back_Login_Folder)</onclick>
+				<onleft>303</onleft>
+				<onright>305</onright>
+				<onup>304</onup>
+				<ondown>304</ondown>
+			</control>
+			<control type="button" id="305">
+				<description>Default Image button</description>
+				<posx>350</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>571</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(1)">Skin.Reset(Home_Custom_Back_Videos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(4)">Skin.Reset(Home_Custom_Back_MusicVideos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(5)">Skin.Reset(Home_Custom_Back_TV_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(7)">Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(8)">Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(10)">Skin.Reset(Home_Custom_Back_Favourites_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(11)">Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(12)">Skin.Reset(Home_Custom_Back_PlayDisc_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(13)">Skin.Reset(Home_Custom_Back_Custom1_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(14)">Skin.Reset(Home_Custom_Back_Custom2_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(15)">Skin.Reset(Home_Custom_Back_Custom3_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(16)">Skin.Reset(Custom_Back_Videos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(17)">Skin.Reset(Custom_Back_Movies_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(18)">Skin.Reset(Custom_Back_TVShows_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(19)">Skin.Reset(Custom_Back_MusicVideos_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(20)">Skin.Reset(Custom_Back_TV_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(21)">Skin.Reset(Custom_Back_Music_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(22)">Skin.Reset(Custom_Back_Pictures_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(23)">Skin.Reset(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(25)">Skin.Reset(Custom_Back_Settings_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(26)">Skin.Reset(Custom_Back_Login_Folder)</onclick>
+				<onleft>304</onleft>
+				<onright>399</onright>
+				<onup>305</onup>
+				<ondown>305</ondown>
+			</control>
+			<include>ButtonScroll</include>
+		</control>
+	</include>
+	<include name="SkinSettingsImageFanartButtonGroup">
+		<control type="group">
+			<posx>555</posx>
+			<posy>215</posy>
+			<visible>Container(302).HasFocus(2) | Container(302).HasFocus(3) | Container(302).HasFocus(6)</visible>
+			<control type="button" id="304">
+				<description>Single Image button</description>
+				<posx>10</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31113</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(2)">Skin.SetImage(Home_Custom_Back_Movies_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.SetImage(Home_Custom_Back_TVShows_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.SetImage(Home_Custom_Back_Music_Folder)</onclick>
+				<enable>[Container(302).HasFocus(2) + !Skin.HasSetting(Home_Movies_Fanart_Background)] | Container(302).HasFocus(3) + !Skin.HasSetting(Home_TVShows_Fanart_Background)] | Container(302).HasFocus(6) + !Skin.HasSetting(Home_Music_Fanart_Background)]</enable>
+				<onleft>302</onleft>
+				<onright>305</onright>
+				<onup>304</onup>
+				<ondown>304</ondown>
+			</control>
+			<control type="button" id="305">
+				<description>Multi Image button</description>
+				<posx>180</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31114</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Home_Custom_Back_Movies_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Home_Custom_Back_TVShows_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Home_Custom_Back_Music_Folder)</onclick>
+				<enable>[Container(302).HasFocus(2) + !Skin.HasSetting(Home_Movies_Fanart_Background)] | Container(302).HasFocus(3) + !Skin.HasSetting(Home_TVShows_Fanart_Background)] | Container(302).HasFocus(6) + !Skin.HasSetting(Home_Music_Fanart_Background)]</enable>
+				<onleft>304</onleft>
+				<onright>306</onright>
+				<onup>305</onup>
+				<ondown>305</ondown>
+			</control>
+			<control type="button" id="306">
+				<description>Default Image button</description>
+				<posx>350</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>571</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(2)">Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.Reset(Home_Custom_Back_TVShows_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
+				<enable>[Container(302).HasFocus(2) + !Skin.HasSetting(Home_Movies_Fanart_Background)] | Container(302).HasFocus(3) + !Skin.HasSetting(Home_TVShows_Fanart_Background)] | Container(302).HasFocus(6) + !Skin.HasSetting(Home_Music_Fanart_Background)]</enable>
+				<onleft>305</onleft>
+				<onright>399</onright>
+				<onup>306</onup>
+				<ondown>303</ondown>
+			</control>
+			<control type="radiobutton" id="303">
+				<description>Fanart Image button</description>
+				<posx>350</posx>
+				<posy>40</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31030</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Home_Movies_Fanart_Background)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Home_TVShows_Fanart_Background)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Home_Music_Fanart_Background)</onclick>
+				<selected>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Background)] | Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Background)]</selected>
+				<onleft>307</onleft>
+				<onright>399</onright>
+				<onup>306</onup>
+				<ondown>303</ondown>
+			</control>
+			<control type="button" id="307">
+				<description>Options Image button</description>
+				<posx>180</posx>
+				<posy>40</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>33063</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Home_Movies_Fanart_Options)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Home_TVShows_Fanart_Options)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Home_Music_Fanart_Options)</onclick>
+				<onleft>302</onleft>
+				<onright>303</onright>
+				<onup>307</onup>
+				<ondown>309</ondown>
+				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Background)]</visible>
+			</control>
+			<control type="radiobutton" id="309">
+				<posx>10</posx>
+				<posy>80</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>$LOCALIZE[31134]</label>
+				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Animate_Home_Movies_Fanart_Background)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Animate_Home_TVShows_Fanart_Background)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Animate_Home_Music_Fanart_Background)</onclick>
+				<selected>[Container(302).HasFocus(2) + !Skin.HasSetting(Animate_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + !Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + !Skin.HasSetting(Animate_Home_Music_Fanart_Background)]</selected>
+				<onup>307</onup>
+				<ondown>310</ondown>
+				<onleft>302</onleft>
+				<onright>309</onright>
+				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
+			</control>
+			<control type="radiobutton" id="310">
+				<posx>10</posx>
+				<posy>110</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>$LOCALIZE[33071]</label>
+				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Custom_Home_Movies_Fanart_Background)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Custom_Home_TVShows_Fanart_Background)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Custom_Home_Music_Fanart_Background)</onclick>
+				<selected>[Container(302).HasFocus(2) + Skin.HasSetting(Custom_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Custom_Home_Music_Fanart_Background)]</selected>
+				<onup>309</onup>
+				<ondown>308</ondown>
+				<onleft>302</onleft>
+				<onright>310</onright>
+				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
+			</control>
+			<control type="button" id="308">
+				<posx>10</posx>
+				<posy>140</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>- $LOCALIZE[15311]</label>
+				<label2>$VAR[SkinSettingsFanartPath]</label2>
+				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Custom_Home_Movies_Fanart_Background_Path)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Custom_Home_TVShows_Fanart_Background_Path)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Custom_Home_Music_Fanart_Background_Path)</onclick>
+				<enable>[Container(302).HasFocus(2) + Skin.HasSetting(Custom_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Custom_Home_Music_Fanart_Background)]</enable>
+				<onup>310</onup>
+				<ondown>308</ondown>
+				<onleft>302</onleft>
+				<onright>308</onright>
+				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
+			</control>
+			<include>ButtonScroll4</include>
+		</control>
+	</include>
+	<include name="SkinSettingsImageWeatherButtonGroup">
+		<control type="group">
+			<posx>555</posx>
+			<posy>215</posy>
+			<visible>Container(302).HasFocus(9) | Container(302).HasFocus(24)</visible>
+			<control type="button" id="304">
+				<description>Single Image button</description>
+				<posx>10</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31113</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(9)">Skin.SetImage(Home_Custom_Back_Weather_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.SetImage(Custom_Back_Weather_Folder)</onclick>
+				<enable>[Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + !Skin.HasSetting(Weather_Conditional_Backgrounds)]</enable>
+				<onleft>302</onleft>
+				<onright>305</onright>
+				<onup>304</onup>
+				<ondown>304</ondown>
+			</control>
+			<control type="button" id="305">
+				<description>Multi Image button</description>
+				<posx>180</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31114</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(9)">Skin.SetPath(Home_Custom_Back_Weather_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.SetPath(Custom_Back_Weather_Folder)</onclick>
+				<enable>[Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + !Skin.HasSetting(Weather_Conditional_Backgrounds)]</enable>
+				<onleft>304</onleft>
+				<onright>306</onright>
+				<onup>305</onup>
+				<ondown>305</ondown>
+			</control>
+			<control type="button" id="306">
+				<description>Default Image button</description>
+				<posx>350</posx>
+				<posy>0</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>571</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(Home_Custom_Back_Weather_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(Custom_Back_Weather_Folder)</onclick>
+				<enable>[Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + !Skin.HasSetting(Weather_Conditional_Backgrounds)]</enable>
+				<onleft>305</onleft>
+				<onright>399</onright>
+				<onup>306</onup>
+				<ondown>303</ondown>
+			</control>
+			<control type="radiobutton" id="303">
+				<description>Conditional Image button</description>
+				<posx>350</posx>
+				<posy>40</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>31122</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(9)">Skin.ToggleSetting(Home_Weather_Conditional_Backgrounds)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.ToggleSetting(Weather_Conditional_Backgrounds)</onclick>
+				<selected>[Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds)]</selected>
+				<onleft>307</onleft>
+				<onright>399</onright>
+				<onup>306</onup>
+				<ondown>308</ondown>
+			</control>
+			<control type="button" id="307">
+				<description>Options Image button</description>
+				<posx>180</posx>
+				<posy>40</posy>
+				<width>165</width>
+				<height>35</height>
+				<label>33063</label>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<onclick condition="Container(302).HasFocus(9)">Skin.ToggleSetting(Home_Weather_Conditional_Options)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.ToggleSetting(Weather_Conditional_Options)</onclick>
+				<onleft>302</onleft>
+				<onright>303</onright>
+				<onup>307</onup>
+				<ondown>308</ondown>
+				<visible>[Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds)]</visible>
+			</control>
+			<control type="radiobutton" id="308">
+				<posx>10</posx>
+				<posy>110</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>$LOCALIZE[33071]</label>
+				<onclick>Skin.ToggleSetting(Home_Weather_Custom_Conditional_Backgrounds)</onclick>
+				<selected>Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</selected>
+				<onup>307</onup>
+				<ondown>309</ondown>
+				<onleft>302</onleft>
+				<onright>399</onright>
+				<visible>Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Options)</visible>
+			</control>
+			<control type="button" id="309">
+				<posx>10</posx>
+				<posy>140</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>- $LOCALIZE[15311]</label>
+				<label2>[COLOR=blue]$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)][/COLOR]</label2>
+				<onclick>Skin.SetPath(Home_Back_Weather_Custom_Conditional_Folder)</onclick>
+				<onup>308</onup>
+				<ondown>308</ondown>
+				<onleft>302</onleft>
+				<onright>399</onright>
+				<enable>Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</enable>
+				<visible>Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Options)</visible>
+			</control>
+			<control type="button" id="308">
+				<posx>10</posx>
+				<posy>140</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>- $LOCALIZE[15311]</label>
+				<label2>[COLOR=blue]$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)][/COLOR]</label2>
+				<onclick>Skin.SetPath(Custom_Back_Weather_Conditional_Folder)</onclick>
+				<onup>307</onup>
+				<ondown>307</ondown>
+				<onleft>302</onleft>
+				<onright>308</onright>
+				<visible>Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Options)</visible>
+			</control>
+			<include>ButtonScroll4</include>
+		</control>
 	</include>
 	<include name="Splash">
 		<control type="image">

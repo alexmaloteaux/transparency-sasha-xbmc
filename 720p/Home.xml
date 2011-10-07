@@ -199,18 +199,8 @@
 					<width>20</width>
 					<height>20</height>
 					<aspectratio>keep</aspectratio>
-					<texture>home-power.png</texture>
-					<visible>!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)</visible>
-				</control>
-				<control type="image">
-					<posx>1248</posx>
-					<posy>7</posy>
-					<width>20</width>
-					<height>20</height>
-					<aspectratio>keep</aspectratio>
-					<texture>home-power-focus.png</texture>
+					<texture>$VAR[HomePowerButton]</texture>
 					<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(20)">Conditional</animation>
-					<visible>Control.HasFocus(20) | Window.IsVisible(ShutdownMenu)</visible>
 				</control>
 			</control>
 			<include condition="system.getbool(lookandfeel.enablerssfeeds)">RSS</include>

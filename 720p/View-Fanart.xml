@@ -330,21 +330,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE], $LOCALIZE[12391]]</label>
-					<visible>!substring(ListItem.Duration,min)</visible>
-				</control>
-				<control type="label">
-					<posx>257</posx>
-					<posy>613</posy>
-					<width>500</width>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</label>
-					<visible>substring(ListItem.Duration,min)</visible>
+					<label>$VAR[ViewFanartLabel1]</label>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -395,22 +381,8 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$INFO[ListItem.PlotOutline]</label>
+					<label>$VAR[ViewFanartText]</label>
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				</control>
-				<control type="textbox">
-					<description>Plot Value for Movies</description>
-					<posx>257</posx>
-					<posy>595</posy>
-					<width>490</width>
-					<height>62</height>
-					<font>font-19</font>
-					<align>justify</align>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -523,9 +495,8 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.label]</label>
-				<visible>!Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
+				<label>$VAR[ViewFanartLabel2]</label>
+			</control>			
 			<control type="label">
 				<posx>257</posx>
 				<posy>535</posy>
@@ -536,34 +507,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.label]</label>
-				<visible>Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
-			</control>
-			<control type="label">
-				<posx>40</posx>
-				<posy>535</posy>
-				<width>785</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-				<visible>!Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
-			</control>
-			<control type="label">
-				<posx>257</posx>
-				<posy>535</posy>
-				<width>600</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-				<visible>Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<label>$VAR[ViewFanartLabel3]</label>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -796,6 +740,8 @@
 				<texture border="10">underlay.png</texture>
 				<visible>[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
 			</control>
+
+
 			<control type="label">
 				<posx>317</posx>
 				<posy>535</posy>
@@ -806,21 +752,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-				<visible>Container.Content(Episodes)</visible>
-			</control>
-			<control type="label">
-				<posx>317</posx>
-				<posy>535</posy>
-				<width>540</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>Container.Content(Episodes) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
+				<label>$VAR[ViewFanartLabel4]</label>
 			</control>
 			<control type="label">
 				<posx>317</posx>
@@ -832,21 +764,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-				<visible>Container.Content(MusicVideos)</visible>
-			</control>
-			<control type="label">
-				<posx>317</posx>
-				<posy>535</posy>
-				<width>540</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>Container.Content(MusicVideos) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
+				<label>$VAR[ViewFanartLabel5]</label>
 			</control>
 			<control type="label">
 				<posx>317</posx>
@@ -1321,19 +1239,6 @@
 			</control>
 			<control type="label">
 				<posx>262</posx>
-				<posy>607</posy>
-				<width>613</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>Container.Content(Albums) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles)</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
 				<posy>577</posy>
 				<width>510</width>
 				<height>30</height>
@@ -1342,8 +1247,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
-				<visible>Container.Content(Songs) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist)</visible>
+				<label>$VAR[ViewFanartLabel6]</label>
 			</control>
 			<control type="label">
 				<posx>865</posx>
@@ -1357,6 +1261,32 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Duration]</label>
 				<visible>Container.Content(Songs) + !ListItem.IsPlaying + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
+			</control>
+			<control type="label">
+				<description>time label</description>
+				<posx>865</posx>
+				<posy>577</posy>
+				<width>150</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[MusicPlayer.Time]</label>
+				<visible>ListItem.IsPlaying | Window.IsVisible(MusicPlaylist)</visible>
+			</control>
+			<control type="label">
+				<posx>262</posx>
+				<posy>607</posy>
+				<width>613</width>
+				<height>30</height>
+				<font>font-30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$VAR[ViewFanartLabel7]</label>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1386,20 +1316,6 @@
 			</control>
 			<control type="label">
 				<posx>262</posx>
-				<posy>607</posy>
-				<width>613</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Artist]</label>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
-				<visible>[Container.Content(Songs) | Window.IsVisible(MusicFiles)] + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
 				<posy>644</posy>
 				<width>613</width>
 				<height>30</height>
@@ -1408,8 +1324,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
+				<label>$VAR[ViewFanartLabel8]</label>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1421,89 +1336,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
-				<posy>577</posy>
-				<width>510</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[MusicPlayer.Title]</label>
-				<animation effect="slide" start="0,0" end="0,41" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
-				<visible>Window.IsVisible(MusicPlaylist)</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
-				<posy>577</posy>
-				<width>510</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-				<visible>Window.IsVisible(MusicPlaylist) + !Player.HasAudio</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
-				<posy>607</posy>
-				<width>613</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[MusicPlayer.Artist]</label>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
-				<visible>Window.IsVisible(MusicPlaylist)</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
-				<posy>644</posy>
-				<width>613</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[MusicPlayer.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>Window.IsVisible(MusicPlaylist)</visible>
-			</control>
-			<control type="label">
-				<posx>262</posx>
-				<posy>667</posy>
-				<width>613</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[MusicPlayer.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>Window.IsVisible(MusicPlaylist)</visible>
-			</control>
-			<control type="label">
-				<description>time label</description>
-				<posx>865</posx>
-				<posy>577</posy>
-				<width>150</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<visible>ListItem.IsPlaying | Window.IsVisible(MusicPlaylist)</visible>
+				<label>$VAR[ViewFanartLabel9]</label>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
@@ -2003,56 +1836,8 @@
 				<posy>510</posy>
 				<width>156</width>
 				<height>210</height>
-				<texture>foldericons/pictures/bmp.png</texture>
-				<visible>substring(ListItem.Filename,.bmp,Right) + !IsEmpty(Container.FolderName)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>foldericons/pictures/gif.png</texture>
-				<visible>substring(ListItem.Filename,.gif,Right) + !IsEmpty(Container.FolderName)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>foldericons/pictures/jpg.png</texture>
-				<visible>[substring(ListItem.Filename,.jpg,Right) | stringcompare(ListItem.Filename,.jpeg,right,Right)] + !IsEmpty(Container.FolderName)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>foldericons/pictures/png.png</texture>
-				<visible>substring(ListItem.Filename,.png,Right) + !IsEmpty(Container.FolderName)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>foldericons/pictures/tga.png</texture>
-				<visible>substring(ListItem.Filename,.tga,Right) + !IsEmpty(Container.FolderName)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>foldericons/pictures/tiff.png</texture>
-				<visible>substring(ListItem.Filename,.tiff,Right) + !IsEmpty(Container.FolderName)</visible>
-			</control>
-			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
-				<width>156</width>
-				<height>210</height>
-				<texture>foldericons/pictures/wmf.png</texture>
-				<visible>substring(ListItem.Filename,.wmf,Right) + !IsEmpty(Container.FolderName)</visible>
+				<texture>$VAR[DialogPictureInfoImage]</texture>
+				<visible>!IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image">
 				<posx>16</posx>

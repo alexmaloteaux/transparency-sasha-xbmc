@@ -88,16 +88,6 @@
 					<font>font-19</font>
 				</control>
 				<control type="label">
-					<description>row 2 label</description>
-					<posx>50</posx>
-					<posy>50</posy>
-					<label>-</label>
-					<align>left</align>
-					<label>$LOCALIZE[131] | fps: $INFO[System.FPS] - $LOCALIZE[250] - $INFO[Visualisation.Name] - $LOCALIZE[20166]</label>
-					<font>font-19</font>
-					<visible>Visualisation.Locked</visible>
-				</control>
-				<control type="label">
 					<description>Unlocked row 2 label</description>
 					<posx>50</posx>
 					<posy>50</posy>
@@ -105,7 +95,6 @@
 					<align>left</align>
 					<label>$LOCALIZE[131] | fps: $INFO[System.FPS] - $LOCALIZE[250] - $INFO[Visualisation.Name]</label>
 					<font>font-19</font>
-					<visible>!Visualisation.Locked</visible>
 				</control>
 				<control type="label">
 					<description>row 3 label</description>

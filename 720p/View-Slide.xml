@@ -1687,21 +1687,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-						<visible>!Container.Content(TVShows) + !substring(ListItem.Duration,min)</visible>
-					</control>
-					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Duration]</label>
-						<visible>!Container.Content(TVShows) + substring(ListItem.Duration,min)</visible>
+						<label>$VAR[ViewSlideLabel1]</label>
 					</control>
 					<control type="label">
 						<posx>257</posx>
