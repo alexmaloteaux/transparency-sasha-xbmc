@@ -70,7 +70,6 @@
 		<value condition="Player.Seeking">$INFO[Player.SeekTime]</value>
 	</variable>
 	<variable name="DialogSeekBarLabel">
-		<value condition="Player.DisplayAfterSeek + !Player.Seeking">[B]$INFO[Player.SeekOffset][/B]</value>
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31042][/B]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31043][/B]</value>
 		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[15107] $INFO[Player.CacheLevel]%[/B]</value>
@@ -85,6 +84,7 @@
 		<value condition="Player.Forwarding8x + !Player.Seeking">[B]$LOCALIZE[31044] x8[/B]</value>
 		<value condition="Player.Forwarding16x + !Player.Seeking">[B]$LOCALIZE[31044] x16[/B]</value>
 		<value condition="Player.Forwarding32x + !Player.Seeking">[B]$LOCALIZE[31044] x32[/B]</value>
+		<value condition="Player.DisplayAfterSeek + !Player.Seeking">[B]$INFO[Player.SeekOffset][/B]</value>
 	</variable>
 	<variable name="DialogVideoInfoTitle">
 		<value condition="IsEmpty(ListItem.OriginalTitle)">$INFO[Listitem.Title]</value>
@@ -370,6 +370,15 @@
 	<variable name="MyWeatherButtonImage">
 		<value condition="!Control.HasFocus(5994)">scroll-down-2.png</value>
 		<value condition="Control.HasFocus(5994)">scroll-down-focus-2.png</value>
+	</variable>
+	<variable name="PartlyWatched">
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,0) + !IntegerGreatherThan(ListItem.PercentPlayed,19)">OverlayPartlywatched1.png</value>
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,19) + !IntegerGreatherThan(ListItem.PercentPlayed,31)">OverlayPartlywatched2.png</value>
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,31) + !IntegerGreatherThan(ListItem.PercentPlayed,43)">OverlayPartlywatched3.png</value>
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,43) + !IntegerGreatherThan(ListItem.PercentPlayed,56)">OverlayPartlywatched4.png</value>
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,56) + !IntegerGreatherThan(ListItem.PercentPlayed,68)">OverlayPartlywatched5.png</value>
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,68) + !IntegerGreatherThan(ListItem.PercentPlayed,81)">OverlayPartlywatched6.png</value>
+		<value condition="IntegerGreatherThan(ListItem.PercentPlayed,81)">OverlayPartlywatched7.png</value>
 	</variable>
 	<variable name="PlayerControlsLabel">
 		<value condition="!VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.Genre]</value>
