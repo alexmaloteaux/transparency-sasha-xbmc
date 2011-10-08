@@ -320,6 +320,15 @@
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
+				</control>
+				<control type="image">
+					<posx>155</posx>
+					<posy>65</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
 				</control>
@@ -369,6 +378,23 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<posx>155</posx>
+					<posy>65</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="14,5" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="123" center="auto" time="200" reversible="false"/>
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="14,5" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="123" end="100" center="auto" time="200" reversible="false"/>
+					</animation>
 				</control>
 				<control type="image">
 					<posx>155</posx>
@@ -460,6 +486,15 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<posx>128</posx>
+					<posy>125</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
 					<posx>128</posx>
@@ -573,6 +608,15 @@
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
+				</control>
+				<control type="image">
+					<posx>128</posx>
+					<posy>125</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
@@ -610,6 +654,15 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<posx>130</posx>
+					<posy>65</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
 					<posx>130</posx>
@@ -666,6 +719,23 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<posx>130</posx>
+					<posy>65</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="14,5" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="123" center="auto" time="200" reversible="false"/>
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="14,5" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="123" end="100" center="auto" time="200" reversible="false"/>
+					</animation>
+					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
 					<posx>130</posx>
@@ -733,6 +803,15 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<posx>120</posx>
+					<posy>169</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
 					<posx>120</posx>
@@ -834,6 +913,23 @@
 					<align>center</align>
 					<aligny>center</aligny>	
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<posx>120</posx>
+					<posy>169</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="8,3" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="117" center="auto" time="200" reversible="false"/>
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="8,3" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="117" end="100" center="auto" time="200" reversible="false"/>
+					</animation>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
 					<posx>120</posx>

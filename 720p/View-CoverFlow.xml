@@ -1282,8 +1282,26 @@
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
+				<texture diffuse="poster-diffuse.png">$VAR[PartlyPlayed]</texture>
+				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+			</control>
+			<control type="image">
+				<posx>110</posx>
+				<posy>27</posy>
+				<width>30</width>
+				<height>30</height>
+				<aspectratio>keep</aspectratio>
 				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
 				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+			</control>
+			<control type="image">
+				<posx>110</posx>
+				<posy>27</posy>
+				<width>30</width>
+				<height>30</height>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="poster-diffuse.png">$VAR[PartlyPlayed]</texture>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>

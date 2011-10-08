@@ -44,6 +44,15 @@
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyWatched]</texture>
+					<visible>[[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)]</visible>
+				</control>
+				<control type="image">
+					<posx>325</posx>
+					<posy>0</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
@@ -85,6 +94,15 @@
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyWatched]</texture>
+					<visible>[[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)]</visible>
+				</control>
+				<control type="image">
+					<posx>325</posx>
+					<posy>0</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
@@ -108,6 +126,15 @@
 					<bordertexture border="13">banner-shadow.png</bordertexture>
 					<bordersize>13</bordersize>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>300</posx>
+					<posy>44</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyWatched]</texture>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
 					<posx>300</posx>
@@ -154,6 +181,23 @@
 						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false" />
 					</animation>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>300</posx>
+					<posy>44</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyWatched]</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="18,2" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false" />
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="18,2" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false" />
+					</animation>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
 					<posx>300</posx>

@@ -131,9 +131,27 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
+						<texture>$VAR[PartlyPlayed]</texture>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					</control>
+					<control type="image">
+						<posx>155</posx>
+						<posy>254</posy>
+						<width>35</width>
+						<height>35</height>
+						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
+					<control type="image">
+						<posx>155</posx>
+						<posy>304</posy>
+						<width>35</width>
+						<height>35</height>
+						<aspectratio>keep</aspectratio>
+						<texture flipy="true">$VAR[PartlyPlayed]</texture>
+						<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					<control type="image">
 						<posx>155</posx>
 						<posy>304</posy>
@@ -379,9 +397,32 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
+						<texture>$VAR[PartlyPlayed]</texture>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation5</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation5</include>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					</control>
+					<control type="image">
+						<posx>155</posx>
+						<posy>254</posy>
+						<width>35</width>
+						<height>35</height>
+						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation5</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation5</include>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					</control>
+					<control type="image">
+						<posx>155</posx>
+						<posy>304</posy>
+						<width>35</width>
+						<height>35</height>
+						<aspectratio>keep</aspectratio>
+						<texture flipy="true">$VAR[PartlyPlayed]</texture>
+						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation6</include>
+						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation6</include>
+						<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">

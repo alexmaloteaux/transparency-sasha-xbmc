@@ -1340,6 +1340,15 @@
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
+				<texture background="true">$VAR[PartlyPlayed]</texture>
+				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+			</control>
+			<control type="image">
+				<posx>110</posx>
+				<posy>27</posy>
+				<width>30</width>
+				<height>30</height>
+				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Overlay]</texture>
 				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>

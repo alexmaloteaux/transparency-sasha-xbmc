@@ -40,6 +40,15 @@
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
+				</control>
+				<control type="image">
+					<posx>389</posx>
+					<posy>46</posy>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
@@ -91,6 +100,23 @@
 						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>389</posx>
+					<posy>46</posy>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[PartlyPlayed]</texture>
+					<animation type="focus">
+						<effect type="slide" start="0,0" end="18,-1" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>
+					</animation>
+					<animation type="unfocus">
+						<effect type="slide" start="18,-1" end="0,0" time="200" reversible="false"/>
+						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false"/>
+					</animation>
+					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
 					<posx>389</posx>
