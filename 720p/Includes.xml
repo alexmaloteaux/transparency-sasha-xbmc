@@ -23,7 +23,6 @@
 	<include file="Includes_MediaFlagsMusicFullScreen.xml"/>
 	<include file="Includes_MediaFlagsVideo.xml"/>
 	<include file="Includes_MediaFlagsVideoFullScreen.xml"/>
-	<include file="Includes_NextAired.xml"/>
 	<include file="Includes_Transparency.xml"/>
 	<include file="Includes_Weather.xml"/>
 	<include file="Includes_Workarounds.xml"/>
@@ -1524,6 +1523,111 @@
 			<height>46</height>
 			<texture>$INFO[Skin.String(Custom_Home_Logo)]</texture>
 			<aspectratio>keep</aspectratio>
+		</control>
+	</include>
+	<include name="NextAiredInfo">
+		<control type="group">
+			<posx>300</posx>
+			<posy>620</posy>
+			<include>Window_OpenClose_Animation</include>
+			<include>ContentFade</include>
+			<animation effect="slide" start="0,0" end="0,-590" condition="Control.IsVisible(50) | Control.IsVisible(590)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-480" condition="Control.IsVisible(55)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-510" condition="Control.IsVisible(57)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="385,-165" condition="Control.IsVisible(596)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-200,90" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="150" condition="Control.IsVisible(55) + Control.IsVisible(7031)">Conditional</animation>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay56</include>
+			<visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + !stringcompare(ListItem.Label,..) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + [Control.IsVisible(50) | Control.IsVisible(590)]]] + !IsEmpty(ListItem.TVShowTitle)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>680</width>
+				<height>100</height>
+				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>18</posy>
+				<width>680</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<label>[COLOR=blue]$LOCALIZE[31179][/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
+			</control>
+		</control>
+	</include>
+	<include name="NextAiredList">
+		<control type="image">
+			<posx>4</posx>
+			<posy>6</posy>
+			<width>160</width>
+			<height>40</height>
+			<texture background="true">$INFO[ListItem.Thumb]</texture>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+		</control>
+		<control type="image">
+			<posx>4</posx>
+			<posy>6</posy>
+			<width>160</width>
+			<height>40</height>
+			<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+		</control>
+		<control type="label">
+			<posx>84</posx>
+			<posy>46</posy>
+			<width>160</width>
+			<height>20</height>
+			<label>$INFO[ListItem.Property(NextDate)]</label>
+			<font>font-18</font>
+			<align>center</align>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+		</control>
+		<control type="label">
+			<posx>84</posx>
+			<posy>64</posy>
+			<width>160</width>
+			<height>20</height>
+			<label>$INFO[ListItem.Property(ShortTime)]</label>
+			<font>font-18</font>
+			<align>center</align>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+		</control>
+		<control type="image">
+			<posx>4</posx>
+			<posy>6</posy>
+			<width>54</width>
+			<height>80</height>
+			<texture background="true">$INFO[ListItem.Thumb]</texture>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+		</control>
+		<control type="label">
+			<posx>63</posx>
+			<posy>28</posy>
+			<width>105</width>
+			<height>20</height>
+			<label>$INFO[ListItem.Property(NextDate)]</label>
+			<font>font-17</font>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+		</control>
+		<control type="label">
+			<posx>63</posx>
+			<posy>46</posy>
+			<width>105</width>
+			<height>20</height>
+			<label>$INFO[ListItem.Property(ShortTime)]</label>
+			<font>font-17</font>
+			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+		</control>
+		<control type="image">
+			<posx>168</posx>
+			<posy>0</posy>
+			<width>1</width>
+			<height>90</height>
+			<texture>separator2.png</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="PlayerControlsNormal">

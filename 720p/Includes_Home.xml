@@ -2896,7 +2896,7 @@
 					<item id="8102">
 						<description>Menu TVShows Sub TVGuide</description>
 						<label>$LOCALIZE[4]</label>
-						<onclick>ActivateWindow(1115)</onclick>
+						<onclick>RunScript(script.tv.show.next.aired)</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_TVGuide)</visible>
 					</item>
 					<item id="8103">
