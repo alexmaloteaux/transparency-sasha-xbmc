@@ -690,5 +690,14 @@
 		</control>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>
+		<control type="button" id="8">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<label>-</label>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>
 	</controls>
 </window>
