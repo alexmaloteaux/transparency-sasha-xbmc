@@ -3307,7 +3307,7 @@
 					</control>
 					<control type="radiobutton" id="8123">
 						<description>Menu Programs Sub Custom21</description>
-						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Programs_Sub_Custom21_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Programs_Sub_Custom21_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,21)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom21)</onclick>
