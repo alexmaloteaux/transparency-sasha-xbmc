@@ -2139,12 +2139,12 @@
 						<selected>!Skin.HasSetting(Menu_Movies_Sub)</selected>
 					</control>
 					<control type="radiobutton" id="8102">
-						<description>Menu Movies Sub Files</description>
-						<label>[B]$LOCALIZE[744][/B]</label>
+						<description>Menu Movies Sub Library</description>
+						<label>[B]$LOCALIZE[14022][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Files)</onclick>
-						<selected>!Skin.HasSetting(Menu_Movies_Sub_Files)</selected>
+						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Library)</onclick>
+						<selected>!Skin.HasSetting(Menu_Movies_Sub_Library)</selected>
 						<enable>!Skin.HasSetting(Menu_Movies_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8103">

@@ -2747,10 +2747,10 @@
 				<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 				<content>
 					<item id="8102">
-						<description>Menu Movies Sub Files</description>
-						<label>$LOCALIZE[744]</label>
-						<onclick>ActivateWindow(Videos,Files,return)</onclick>
-						<visible>!Skin.HasSetting(Menu_Movies_Sub_Files)</visible>
+						<description>Menu Movies Sub Library</description>
+						<label>$LOCALIZE[14022]</label>
+						<onclick>ActivateWindow(Videos)</onclick>
+						<visible>!Skin.HasSetting(Menu_Movies_Sub_Library)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Movies Sub Genres</description>
