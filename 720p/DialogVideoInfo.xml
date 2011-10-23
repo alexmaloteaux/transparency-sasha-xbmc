@@ -321,7 +321,7 @@
 				<align>center</align>
 				<label>$VAR[DialogVideoInfoLabel]</label>
 				<animation effect="slide" start="0,0" end="-110,10" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,10" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos) | [Container.Content(TVShows) + [SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,10" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos) | [Container.Content(TVShows) + [SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]]">Conditional</animation>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
