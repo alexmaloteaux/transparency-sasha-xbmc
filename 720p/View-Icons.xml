@@ -131,7 +131,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[PartlyPlayed]</texture>
+						<texture>$VAR[PartlyWatched]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
@@ -149,7 +149,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture flipy="true">$VAR[PartlyPlayed]</texture>
+						<texture flipy="true">$VAR[PartlyWatched]</texture>
 						<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
@@ -398,7 +398,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[PartlyPlayed]</texture>
+						<texture>$VAR[PartlyWatched]</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation5</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation5</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
@@ -420,7 +420,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture flipy="true">$VAR[PartlyPlayed]</texture>
+						<texture flipy="true">$VAR[PartlyWatched]</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation6</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation6</include>
 						<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
@@ -480,7 +480,7 @@
 			<control type="group">
 				<animation effect="zoom" start="640,0,1,720" end="0,0,1280,720" time="200" delay="2000">Visible</animation>
 				<animation effect="zoom" start="0,0,1280,720" end="0,200,1280,1" time="200">Hidden</animation>
-				<visible>Control.IsVisible(57) + ![Container.Content(Movies) + ListItem.IsFolder] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7029) + !Control.IsVisible(7030)</visible>
+				<visible>Control.IsVisible(57) + ![Container.Content(Movies) + IsEmpty(ListItem.Plot)] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7029) + !Control.IsVisible(7030)</visible>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay57</include>
 				<control type="image">
 					<posx>160</posx>
