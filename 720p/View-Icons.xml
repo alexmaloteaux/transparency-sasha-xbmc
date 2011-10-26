@@ -152,6 +152,7 @@
 						<texture flipy="true">$VAR[PartlyPlayed]</texture>
 						<animation effect="fade" start="20" end="20" time="0" condition="true">Conditional</animation>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
+					</control>
 					<control type="image">
 						<posx>155</posx>
 						<posy>304</posy>
