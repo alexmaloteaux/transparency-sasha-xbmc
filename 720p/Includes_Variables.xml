@@ -727,7 +727,8 @@
 		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 	</variable>
 	<variable name="ViewItemLabel12">
-		<value condition="!Container.Content(Episodes)">[B]$INFO[ListItem.Title][/B]</value>
+		<value condition="!Container.Content(Episodes) + !IsEmpty(ListItem.Title)">[B]$INFO[ListItem.Title][/B]</value>
+		<value condition="!Container.Content(Episodes) + IsEmpty(ListItem.Title)">[B]$INFO[ListItem.Label][/B]</value>
 		<value condition="Container.Content(Episodes)">[B]$INFO[ListItem.Episode,,.] $INFO[ListItem.Title][/B]</value>
 		<value condition="IsEmpty(ListItem.Title)">[B]$INFO[ListItem.Label][/B]</value>
 	</variable>

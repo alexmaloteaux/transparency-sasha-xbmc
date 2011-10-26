@@ -1,6 +1,6 @@
 <includes>
 	<include name="VideoMediaFlags">
-		<visible>![ListItem.IsFolder | stringcompare(ListItem.Label,..)]</visible>
+		<visible>!stringcompare(ListItem.Label,..)</visible>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -68,7 +68,7 @@
 		</control>
 	</include>
 	<include name="MovieStudioFlag">
-		<visible>![ListItem.IsFolder | stringcompare(ListItem.Label,..)]</visible>
+		<visible>!stringcompare(ListItem.Label,..)</visible>
 		<control type="image">
 			<posx>751</posx>
 			<posy>622</posy>

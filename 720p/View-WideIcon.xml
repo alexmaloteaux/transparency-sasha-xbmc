@@ -40,7 +40,7 @@
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$VAR[PartlyPlayed]</texture>
+					<texture>$VAR[PartlyWatched]</texture>
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
@@ -107,7 +107,7 @@
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$VAR[PartlyPlayed]</texture>
+					<texture>$VAR[PartlyWatched]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="18,-1" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>

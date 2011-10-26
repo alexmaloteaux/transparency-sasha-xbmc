@@ -86,7 +86,7 @@
 					<effect type="fade" start="0" end="100" time="0" delay="450"/>
 					<effect type="rotatey" center="640" start="-90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
-				<visible>Control.IsVisible(590) + ![Container.Content(Movies) + ListItem.IsFolder] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7011) + !Control.IsVisible(7012)</visible>
+				<visible>Control.IsVisible(590) + ![Container.Content(Movies) + IsEmpty(ListItem.Plot)] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7011) + !Control.IsVisible(7012)</visible>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay51</include>
 				<control type="image">
 					<posx>160</posx>
