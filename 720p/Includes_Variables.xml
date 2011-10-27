@@ -978,8 +978,8 @@
 	</variable>
 	<variable name="ViewWallLabel1">
 		<value condition="Container.Content(Artists) + !stringcompare(ListItem.Label,..)">[B]$INFO[ListItem.Label][/B]</value>
-		<value condition="Container.Content(Albums) + !stringcompare(ListItem.Label,..)">B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label][/B]</value>
-		<value condition="Container.Content(Songs)">B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/B]</value>
+		<value condition="Container.Content(Albums) + !stringcompare(ListItem.Label,..)">[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label][/B]</value>
+		<value condition="Container.Content(Songs)">[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/B]</value>
 	</variable>
 	<variable name="ViewWallLabel2">
 		<value condition="Container.Content(Artists)">[B]$INFO[ListItem.Property(Artist_Genre)][/B]</value>

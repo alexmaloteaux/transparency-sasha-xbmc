@@ -1331,6 +1331,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$VAR[ViewFanartLabel7]</label>
+				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
 			</control>
 			<control type="label">
 				<posx>262</posx>
