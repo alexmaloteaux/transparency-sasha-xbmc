@@ -188,7 +188,7 @@
 						<label>- $LOCALIZE[31127]</label>
 						<label2>$INFO[Skin.String(Music_Folder_Path)]</label2>
 						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
-						<enable>!Skin.HasSetting(CDArt) | Skin.HasSetting(MusicExtraFanart)</enable>
+						<enable>!Skin.HasSetting(CDArt) | Skin.HasSetting(MusicExtraFanart) | Skin.HasSetting(ArtistLogo)</enable>
 					</control>
 					<control type="radiobutton" id="127">
 						<label>$LOCALIZE[2] - $LOCALIZE[31187]</label>
