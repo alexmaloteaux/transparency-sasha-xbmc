@@ -1820,7 +1820,7 @@
 						<onclick condition="IsEmpty(Skin.String(WeatherVideo))">PlayMedia(&quot;$INFO[Window.Property(Video)]&quot;,1)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(WeatherVideo))">PlayMedia(&quot;$INFO[Skin.String(WeatherVideo)]&quot;,1)</onclick>
 						<animation effect="fade" start="100" end="0" time="50" condition="Control.HasFocus(5998)">Conditional</animation>
-						<visible>IsEmpty(Skin.String(WeatherVideo))</visible>
+						<visible>![IsEmpty(Skin.String(WeatherVideo)) + IsEmpty(Window.Property(Video))]</visible>
 					</control>
 				</control>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Black1</include>
