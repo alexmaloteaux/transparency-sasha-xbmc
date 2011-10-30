@@ -21,10 +21,6 @@
 		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</value>
 		<value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio, - ]</value>
 	</variable>
-	<variable name="DialogFullScreenInfoText">
-		<value condition="Control.HasFocus(2) | Control.HasFocus(60)">$INFO[VideoPlayer.Plot]</value>
-		<value condition="Control.HasFocus(3) | Control.HasFocus(61)">$INFO[VideoPlayer.CastAndRole]</value>
-	</variable>
 	<variable name="DialogPictureInfoImage">
 		<value condition="substring(Listitem.Filename,.bmp,right)">foldericons/pictures/bmp.png</value>
 		<value condition="substring(Listitem.Filename,.gif,right)">foldericons/pictures/gif.png</value>

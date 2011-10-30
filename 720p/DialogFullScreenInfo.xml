@@ -329,9 +329,23 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<pagecontrol>60</pagecontrol>
-					<label>$VAR[DialogFullScreenInfoText]</label>
+					<label>$INFO[VideoPlayer.Plot]</label>
 					<autoscroll time="2000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(60) | Control.HasFocus(61)</visible>
+					<visible>Control.HasFocus(2) | Control.HasFocus(60)</visible>
+				</control>
+				<control type="textbox">
+					<description>Cast</description>
+					<posx>385</posx>
+					<posy>-65</posy>
+					<width>805</width>
+					<height>215</height>
+					<font>font-20</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<pagecontrol>61</pagecontrol>
+					<label>$INFO[VideoPlayer.CastAndRole]</label>
+					<autoscroll time="2000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>Control.HasFocus(3) | Control.HasFocus(61)</visible>
 				</control>
 				<control type="scrollbar" id="60">
 					<posx>1215</posx>
