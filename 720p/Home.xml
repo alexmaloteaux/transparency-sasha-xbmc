@@ -24,10 +24,11 @@
 			<fadetime>600</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)] + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))] | [Control.HasFocus(5047) + !IsEmpty(Control.GetLabel(7024))]]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)] + ![[Control.HasFocus(5044) + !IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !IsEmpty(Control.GetLabel(7023))] | [Control.HasFocus(5047) + !IsEmpty(Control.GetLabel(7024))] | [Control.HasFocus(5048) + !IsEmpty(Control.GetLabel(7025))]]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">recentlyfanartmovies</include>
 		<include condition="!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">recentlyfanartepisodes</include>
+		<include condition="!Skin.HasSetting(HomeRecentMusicvideos) | Skin.HasSetting(HomeRandomMusicvideos)">recentlyfanartmusicvideos</include>
 		<include condition="!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">recentlyfanartalbums</include>
 		<include condition="!Skin.HasSetting(HomeRandomAddons)">randomfanartaddons</include>
 		<control type="visualisation">
@@ -102,12 +103,13 @@
 				<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
 				<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>
 				<include condition="!Skin.HasSetting(homepageMusicinfo)">MusicInfo</include>
-				<control type="group" id="5048">
+				<control type="group" id="5049">
 					<posx>0</posx>
 					<posy>0</posy>
 					<onright>20</onright>
 					<include condition="!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies)">RecentlyAddedMovies</include>
 					<include condition="!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows)">RecentlyAddedTVShows</include>
+					<include condition="!Skin.HasSetting(HomeRecentMusicVideos) | Skin.HasSetting(HomeRandomMusicVideos)">RecentlyAddedMusicVideos</include>
 					<include condition="!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums)">RecentlyAddedAlbums</include>
 					<include condition="!Skin.HasSetting(HomeRandomAddons)">RandomAddons</include>
 				</control>

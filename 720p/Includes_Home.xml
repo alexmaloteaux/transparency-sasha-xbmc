@@ -179,6 +179,20 @@
 			<visible>Control.HasFocus(5045) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
+	<include name="recentlyfanartmusicvideos">
+		<control type="image" id="7025">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Container(5048).ListItem.Property(FanartImage)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>600</fadetime>
+			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<visible>Control.HasFocus(5048) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+		</control>
+	</include>
 	<include name="recentlyfanartalbums">
 		<control type="image" id="7023">
 			<posx>0</posx>
@@ -194,7 +208,7 @@
 		</control>
 	</include>
 	<include name="randomfanartaddons">
-		<control type="image" id="7023">
+		<control type="image" id="7024">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -1696,6 +1710,230 @@
 			</control>			
 		</control>
 	</include>
+	<include name="RecentlyAddedMusicVideos">
+		<control type="group">
+			<posx>250</posx>
+			<posy>490</posy>
+			<include>HomeInfoAnimation</include>
+			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
+			<visible>Container(5040).HasFocus(4) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
+			<control type="image">
+				<description>gradient</description>
+				<posx>430</posx>
+				<posy>0</posy>
+				<width>600</width>
+				<height>150</height>
+				<texture border="2">gradient.png</texture>
+			</control>
+			<control type="image">
+				<posx>811</posx>
+				<posy>24</posy>
+				<width>213</width>
+				<height>127</height>
+				<texture border="10">video-shadow.png</texture>
+			</control>
+			<control type="image">
+				<posx>820</posx>
+				<posy>32</posy>
+				<width>195</width>
+				<height>110</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture diffuse="video-diffuse.png" backgound="true" fallback="DefaultVideo.png">$INFO[Container(5048).ListItem.Thumb]</texture>
+				<fadetime>400</fadetime>
+			</control>
+			<control type="label">
+				<posx>820</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>195</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31400][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!Skin.HasSetting(HomeRecentMusicVideos)</visible>
+			</control>
+			<control type="label">
+				<posx>820</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>195</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Skin.HasSetting(HomeRandomMusicVideos)</visible>
+			</control>
+			<control type="list" id="5048">
+				<orientation>vertical</orientation>
+				<posx>35</posx>
+				<posy>10</posy>
+				<height>120</height>
+				<width>770</width>
+				<onup>20</onup>
+				<ondown>9000</ondown>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<itemlayout width="770" height="40">
+					<control type="label">
+						<posx>770</posx>
+						<posy>0</posy>
+						<height>16</height>
+						<width>770</width>
+						<font>font-19</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<scrollspeed>0</scrollspeed>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>16</posy>
+						<height>16</height>
+						<width>770</width>
+						<font>font-17</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<scrollspeed>0</scrollspeed>
+						<label>[I]$INFO[ListItem.Label2] [/I]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout width="770" height="40">
+					<control type="label">
+						<posx>770</posx>
+						<posy>0</posy>
+						<height>16</height>
+						<width>770</width>
+						<font>font-19</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<visible>!Control.HasFocus(5048)</visible>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>0</posy>
+						<height>16</height>
+						<width>770</width>
+						<font>font-19</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<visible>Control.HasFocus(5048)</visible>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>16</posy>
+						<height>16</height>
+						<width>770</width>
+						<font>font-17</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[I]$INFO[ListItem.Label2] [/I]</label>
+						<visible>!Control.HasFocus(5048)</visible>
+					</control>
+					<control type="label">
+						<posx>770</posx>
+						<posy>16</posy>
+						<height>16</height>
+						<width>770</width>
+						<font>font-17</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<scrollspeed>0</scrollspeed>
+						<label>[I]$INFO[ListItem.Label2] [/I]</label>
+						<visible>Control.HasFocus(5048)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$INFO[Window.Property(LatestMusicVideo.1.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestMusicVideo.1.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestMusicVideo.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMusicVideo.1.Fanart)]</property>
+						<onclick>PlayList.Clear</onclick>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestMusicVideo.1.Path)]&quot;)</onclick>
+						<visible>!Skin.HasSetting(HomeRecentMusicVideos)</visible>
+					</item>
+					<item id="2">
+						<label>$INFO[Window.Property(LatestMusicVideo.2.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestMusicVideo.2.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestMusicVideo.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMusicVideo.2.Fanart)]</property>
+						<onclick>PlayList.Clear</onclick>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestMusicVideo.2.Path)]&quot;)</onclick>
+						<visible>!Skin.HasSetting(HomeRecentMusicVideos)</visible>
+					</item>
+					<item id="3">
+						<label>$INFO[Window.Property(LatestMusicVideo.3.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestMusicVideo.3.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestMusicVideo.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMusicVideo.3.Fanart)]</property>
+						<onclick>PlayList.Clear</onclick>
+						<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestMusicVideo.3.Path)]&quot;)</onclick>
+						<visible>!Skin.HasSetting(HomeRecentMusicVideos)</visible>
+					</item>
+					<item id="4">
+						<label>$INFO[Window.Property(RandomMusicVideo.1.Artist)]</label>
+						<label2>$INFO[Window.Property(RandomMusicVideo.1.Title)]</label2>
+						<thumb>$INFO[Window.Property(RandomMusicVideo.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomMusicVideo.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(RandomMusicVideo.1.Path)]</onclick>
+						<visible>Skin.HasSetting(HomeRandomMusicVideos)</visible>
+					</item>
+					<item id="5">
+						<label>$INFO[Window.Property(RandomMusicVideo.2.Artist)]</label>
+						<label2>$INFO[Window.Property(RandomMusicVideo.2.Title)]</label2>
+						<thumb>$INFO[Window.Property(RandomMusicVideo.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomMusicVideo.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(RandomMusicVideo.2.Path)]</onclick>
+						<visible>Skin.HasSetting(HomeRandomMusicVideos)</visible>
+					</item>
+					<item id="6">
+						<label>$INFO[Window.Property(RandomMusicVideo.3.Artist)]</label>
+						<label2>$INFO[Window.Property(RandomMusicVideo.3.Title)]</label2>
+						<thumb>$INFO[Window.Property(RandomMusicVideo.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(RandomMusicVideo.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(RandomMusicVideo.3.Path)]</onclick>
+						<visible>Skin.HasSetting(HomeRandomMusicVideos)</visible>
+					</item>
+				</content>
+			</control>			
+			<control type="label">
+				<posx>805</posx>
+				<posy>127</posy>
+				<height>20</height>
+				<width>500</width>
+				<label>[UPPERCASE][B]$LOCALIZE[20389]: $INFO[Window.Property(MusicVideos.Count)][/B][/UPPERCASE]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-15c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>			
+		</control>
+	</include>
 	<include name="RecentlyAddedAlbums">
 		<control type="group">
 			<posx>250</posx>
@@ -2681,8 +2919,8 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group" id="8000">
-			<onup>5048</onup>
-			<onright>5048</onright>
+			<onup>5049</onup>
+			<onright>5049</onright>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!ControlGroup(8000).HasFocus">Conditional</animation>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Home_Hor_Sub</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Home_Ver_Sub</include>
@@ -3962,7 +4200,7 @@
 		<onup>8001</onup>
 		<ondown>8001</ondown>
 		<onleft>5040</onleft>
-		<onright>5048</onright>
+		<onright>5049</onright>
 		<focusposition>0</focusposition>
 		<movement>7</movement>
 		<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuLayoutAnim</include>
@@ -4031,7 +4269,7 @@
 		<height>20</height>
 		<hitrect x="144" y="540" w="992" h="60"/>
 		<itemgap>-2</itemgap>
-		<onup>5048</onup>
+		<onup>5049</onup>
 		<ondown>5040</ondown>
 		<onleft>8001</onleft>
 		<onright>8001</onright>

@@ -535,18 +535,25 @@
 						<selected>!Skin.HasSetting(HomeRecentTVShows)</selected>
 					</control>
 					<control type="radiobutton" id="214">
+						<description>enable recent musicvideos info</description>
+						<label>$LOCALIZE[20389] - $LOCALIZE[31410]</label>
+						<onclick>Skin.ToggleSetting(HomeRecentMusicVideos)</onclick>
+						<onclick>Skin.Reset(HomeRandomMusicVideos)</onclick>
+						<selected>!Skin.HasSetting(HomeRecentMusicVideos)</selected>
+					</control>
+					<control type="radiobutton" id="215">
 						<description>enable recent music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomeRecentAlbums)</onclick>
 						<onclick>Skin.Reset(HomeRandomAlbums)</onclick>
 						<selected>!Skin.HasSetting(HomeRecentAlbums)</selected>
 					</control>
-					<control type="image" id="215">
+					<control type="image" id="216">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="216">
+					<control type="radiobutton" id="217">
 						<description>enable random movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomMovies)</onclick>
@@ -554,7 +561,7 @@
 						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomMovies)</selected>
 					</control>
-					<control type="radiobutton" id="217">
+					<control type="radiobutton" id="218">
 						<description>enable random tv-shows info</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomTVShows)</onclick>
@@ -562,7 +569,15 @@
 						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomTVShows)</selected>
 					</control>
-					<control type="radiobutton" id="218">
+					<control type="radiobutton" id="219">
+						<description>enable random music videos info</description>
+						<label>$LOCALIZE[20389] - $LOCALIZE[31174]</label>
+						<onclick>Skin.ToggleSetting(HomeRandomMusicVideos)</onclick>
+						<onclick>Skin.SetBool(HomeRecentMusicVideos)</onclick>
+						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
+						<selected>Skin.HasSetting(HomeRandomMusicVideos)</selected>
+					</control>
+					<control type="radiobutton" id="220">
 						<description>enable random music info</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAlbums)</onclick>
@@ -570,43 +585,43 @@
 						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomAlbums)</selected>
 					</control>
-					<control type="radiobutton" id="219">
+					<control type="radiobutton" id="221">
 						<description>enable random addon info</description>
 						<label>$LOCALIZE[24001] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
 						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
 					</control>
-					<control type="image" id="220">
+					<control type="image" id="222">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="221">
+					<control type="radiobutton" id="223">
 						<description>enable video info</description>
 						<label>20176</label>
 						<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
 					</control>
-					<control type="radiobutton" id="222">
+					<control type="radiobutton" id="224">
 						<description>enable tv info</description>
 						<label>31501</label>
 						<onclick>Skin.ToggleSetting(homepageTVinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageTVinfo)</selected>
 					</control>
-					<control type="radiobutton" id="223">
+					<control type="radiobutton" id="225">
 						<description>enable music info</description>
 						<label>20083</label>
 						<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageMusicinfo)</selected>
 					</control>
-					<control type="radiobutton" id="224">
+					<control type="radiobutton" id="226">
 						<description>enable weather info</description>
 						<label>20084</label>
 						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
 					</control>
-					<control type="radiobutton" id="225">
+					<control type="radiobutton" id="227">
 						<description>enable System info</description>
 						<label>20085</label>
 						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
