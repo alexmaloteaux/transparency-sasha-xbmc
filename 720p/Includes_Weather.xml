@@ -237,7 +237,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[419] : [COLOR=white]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>low label</description>
@@ -250,7 +249,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[418] : [COLOR=white]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -301,7 +299,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[419] : [COLOR=white]$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>low label</description>
@@ -314,7 +311,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[418] : [COLOR=white]$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -365,7 +361,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[419] : [COLOR=white]$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>low label</description>
@@ -378,7 +373,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[418] : [COLOR=white]$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -429,7 +423,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[419] : [COLOR=white]$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>low label</description>
@@ -442,7 +435,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[418] : [COLOR=white]$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 				<textcolor>lightblue</textcolor>
-				<visible>Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>conditions label</description>

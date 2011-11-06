@@ -232,7 +232,7 @@
 				<posy>52</posy>
 				<width>172</width>
 				<height>72</height>
-				<label>[B]$INFO[Weather.Temperature][/B]</label>
+				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-25</font>
@@ -261,7 +261,7 @@
 			<posy>50</posy>
 			<width>72</width>
 			<height>72</height>
-			<texture>$INFO[Weather.Conditions]</texture>
+			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
 			<colordiffuse>BFFFFFFF</colordiffuse>
 		</control>
 	</include>
@@ -269,7 +269,7 @@
 		<control type="group">
 			<posx>250</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+			<visible>Container(5040).HasFocus(10) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -314,7 +314,7 @@
 				<posy>85</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>$INFO[Weather.Conditions]</label>
+				<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-23</font>
@@ -326,7 +326,7 @@
 				<posy>110</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>$INFO[Weather.Temperature]</label>
+				<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-23</font>
@@ -361,7 +361,7 @@
 		<control type="group">
 			<posx>250</posx>
 			<posy>490</posy>
-			<visible>Container(5040).HasFocus(10) + Weather.IsFetched + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+			<visible>Container(5040).HasFocus(10) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
@@ -394,7 +394,7 @@
 				<posy>28</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Conditions]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.WindSpeed)] $INFO[Window(Weather).Property(Daily.1.ShortWindDirection)]</label>
+				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Window(Weather).Property(Current.Condition)]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.WindSpeed)] $INFO[Window(Weather).Property(Daily.1.ShortWindDirection)]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-21</font>
