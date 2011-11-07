@@ -149,6 +149,12 @@
 					<onclick>RunScript(script.extrafanartdownloader, mediatype=tvshow, medianame=$INFO[ListItem.TVShowTitle])</onclick>
 					<visible>Container.Content(TVShows)</visible>
 				</item>
+				<item>
+					<label>31222</label>
+					<onclick>Dialog.Close(1115)</onclick>
+					<onclick>RunScript(script.tvtunes,mode=solo&amp;path=$INFO[ListItem.FilenameAndPath]&amp;name=$INFO[ListItem.TVShowTitle])</onclick>
+					<visible>Container.Content(TVShows)</visible>
+				</item>
 			</content>
 		</control>
 	</controls>
