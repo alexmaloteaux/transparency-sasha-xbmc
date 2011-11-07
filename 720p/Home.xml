@@ -209,5 +209,16 @@
 		</control>
 		<include condition="Skin.HasSetting(Qlock)">QlockHome</include>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControlsHome</include>
+<!-- TEMP HACK TO FORCE WEATHER FETCHING AT STARTUP -->
+		<control type="label">
+			<posx>-100</posx>
+			<posy>-100</posy>
+			<width>1</width>
+			<height>1</height>
+			<label>$INFO[Weather.Temperature]</label>
+			<font>font-20</font>
+			<textcolor>white</textcolor>
+			<visible>false</visible>
+		</control>
 	</controls>
 </window>
