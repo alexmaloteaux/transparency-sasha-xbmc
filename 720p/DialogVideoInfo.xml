@@ -202,6 +202,7 @@
 						<onright>5</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
+                                                <onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
 						<onclick>ActivateWindow(1115)</onclick>
 					</control>
 				</control>
