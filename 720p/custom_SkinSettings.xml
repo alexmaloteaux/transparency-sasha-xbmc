@@ -66,11 +66,21 @@
 					<onright>199</onright>
 					<onup>101</onup>
 					<ondown>101</ondown>
-					<control type="radiobutton" id="104">
+					<control type="radiobutton" id="102">
 						<label>31116</label>
 						<onclick>Skin.ToggleSetting(WideSideMenuButtons)</onclick>
 						<onclick>ReplaceWindow(1111)</onclick>
 						<selected>Skin.HasSetting(WideSideMenuButtons)</selected>
+					</control>
+					<control type="image" id="103">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="104">
+						<label>20189</label>
+						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
+						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
 					<control type="image" id="105">
 						<width>880</width>
@@ -78,140 +88,142 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="106">
-						<label>20189</label>
-						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
-						<selected>Skin.HasSetting(AutoScroll)</selected>
-					</control>
-					<control type="image" id="107">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="radiobutton" id="108">
 						<label>$LOCALIZE[3] - $LOCALIZE[31187]</label>
 						<onclick>Skin.ToggleSetting(VideoGenreBackgrounds)</onclick>
 						<selected>Skin.HasSetting(VideoGenreBackgrounds)</selected>
 					</control>
-					<control type="button" id="109">
+					<control type="button" id="107">
 						<description>Video Genre Folder Path</description>
 						<label>- $LOCALIZE[15311]</label>
 						<label2>$INFO[Skin.String(Video_Genre_Folder)]</label2>
 						<onclick>Skin.SetPath(Video_Genre_Folder)</onclick>
 						<enable>Skin.HasSetting(VideoGenreBackgrounds)</enable>
 					</control>
-					<control type="image" id="110">
+					<control type="image" id="108">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="109">
 						<description>Hide Movie Case</description>
 						<label>$LOCALIZE[342] - $LOCALIZE[31104]</label>
 						<onclick>Skin.ToggleSetting(HideMovieCase)</onclick>
 						<selected>Skin.HasSetting(HideMovieCase)</selected>
 					</control>
-					<control type="radiobutton" id="112">
+					<control type="radiobutton" id="110">
 						<label>$LOCALIZE[342] - $LOCALIZE[31172]</label>
 						<onclick>Skin.ToggleSetting(MoviesExtraFanart)</onclick>
 						<selected>Skin.HasSetting(MoviesExtraFanart)</selected>
 					</control>
-					<control type="radiobutton" id="113">
+					<control type="radiobutton" id="111">
 						<label>$LOCALIZE[342] - $LOCALIZE[31173]</label>
 						<onclick>Skin.ToggleSetting(MoviesExtraThumbs)</onclick>
 						<selected>Skin.HasSetting(MoviesExtraThumbs)</selected>
 					</control>
-					<control type="image" id="114">
+					<control type="radiobutton" id="112">
+						<description>Fullscreen Trailer</description>
+						<label>$LOCALIZE[342] - $LOCALIZE[31146]</label>
+						<onclick>Skin.ToggleSetting(Fullscreen_Trailer)</onclick>
+						<selected>Skin.HasSetting(Fullscreen_Trailer)</selected>
+					</control>
+					<control type="image" id="113">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="115">
+					<control type="radiobutton" id="114">
 						<description>Hide TVShow Case</description>
 						<label>$LOCALIZE[20343] - $LOCALIZE[31104]</label>
 						<onclick>Skin.ToggleSetting(HideTVShowCase)</onclick>
 						<selected>Skin.HasSetting(HideTVShowCase)</selected>
 					</control>
-					<control type="radiobutton" id="116">
+					<control type="radiobutton" id="115">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31139]</label>
 						<onclick>Skin.ToggleSetting(TVShowsPosters)</onclick>
 						<onclick>Skin.Reset(Fanart_Show_Banners)</onclick>
 						<selected>Skin.HasSetting(TVShowsPosters)</selected>
 					</control>
-					<control type="radiobutton" id="117">
+					<control type="radiobutton" id="116">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31126]</label>
 						<onclick>Skin.ToggleSetting(ClearArt)</onclick>
 						<selected>Skin.HasSetting(ClearArt)</selected>
 					</control>
-					<control type="radiobutton" id="118">
+					<control type="radiobutton" id="117">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31109]</label>
 						<onclick>Skin.ToggleSetting(TVLogo)</onclick>
 						<selected>Skin.HasSetting(TVLogo)</selected>
 					</control>
-					<control type="radiobutton" id="119">
+					<control type="radiobutton" id="118">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31171]</label>
 						<onclick>Skin.ToggleSetting(SeasonFanart)</onclick>
 						<selected>Skin.HasSetting(SeasonFanart)</selected>
 					</control>
-					<control type="radiobutton" id="120">
+					<control type="radiobutton" id="119">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31172]</label>
 						<onclick>Skin.ToggleSetting(TVShowsExtraFanart)</onclick>
 						<selected>Skin.HasSetting(TVShowsExtraFanart)</selected>
 					</control>
-					<control type="image" id="121">
+					<control type="image" id="120">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="122">
+					<control type="radiobutton" id="121">
 						<description>Hide Music Case</description>
 						<label>$LOCALIZE[2] - $LOCALIZE[31104]</label>
 						<onclick>Skin.ToggleSetting(HideMusicCase)</onclick>
 						<selected>Skin.HasSetting(HideMusicCase)</selected>
 					</control>
-					<control type="radiobutton" id="123">
+					<control type="radiobutton" id="122">
 						<label>$LOCALIZE[2] - $LOCALIZE[31125]</label>
 						<onclick>Skin.ToggleSetting(CDArt)</onclick>
 						<selected>!Skin.HasSetting(CDArt)</selected>
 					</control>
-					<control type="radiobutton" id="124">
+					<control type="radiobutton" id="123">
 						<label>$LOCALIZE[2] - $LOCALIZE[31109]</label>
 						<onclick>Skin.ToggleSetting(ArtistLogo)</onclick>
 						<selected>Skin.HasSetting(ArtistLogo)</selected>
 					</control>
-					<control type="radiobutton" id="125">
+					<control type="radiobutton" id="124">
 						<label>$LOCALIZE[2] - $LOCALIZE[31172]</label>
 						<onclick>Skin.ToggleSetting(MusicExtraFanart)</onclick>
 						<selected>Skin.HasSetting(MusicExtraFanart)</selected>
 					</control>
-					<control type="button" id="126">
+					<control type="button" id="125">
 						<description>Music Folder Path</description>
 						<label>- $LOCALIZE[31127]</label>
 						<label2>$INFO[Skin.String(Music_Folder_Path)]</label2>
 						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
 						<enable>!Skin.HasSetting(CDArt) | Skin.HasSetting(MusicExtraFanart) | Skin.HasSetting(ArtistLogo)</enable>
 					</control>
-					<control type="radiobutton" id="127">
+					<control type="radiobutton" id="126">
 						<label>$LOCALIZE[2] - $LOCALIZE[31187]</label>
 						<onclick>Skin.ToggleSetting(MusicGenreBackgrounds)</onclick>
 						<selected>Skin.HasSetting(MusicGenreBackgrounds)</selected>
 					</control>
-					<control type="button" id="128">
+					<control type="button" id="127">
 						<description>Music Genre Folder Path</description>
 						<label>- $LOCALIZE[15311]</label>
 						<label2>$INFO[Skin.String(Music_Genre_Folder)]</label2>
 						<onclick>Skin.SetPath(Music_Genre_Folder)</onclick>
 						<enable>Skin.HasSetting(MusicGenreBackgrounds)</enable>
 					</control>
-					<control type="image" id="129">
+					<control type="image" id="128">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="130">
-						<description>Fullscreen Trailer</description>
-						<label>31146</label>
-						<onclick>Skin.ToggleSetting(Fullscreen_Trailer)</onclick>
-						<selected>Skin.HasSetting(Fullscreen_Trailer)</selected>
+					<control type="radiobutton" id="129">
+						<label>$LOCALIZE[0] - $LOCALIZE[31172]</label>
+						<onclick>Skin.ToggleSetting(ProgramsExtraFanart)</onclick>
+						<selected>Skin.HasSetting(ProgramsExtraFanart)</selected>
+					</control>
+					<control type="button" id="130">
+						<description>Programs Folder Path</description>
+						<label>- $LOCALIZE[15311]</label>
+						<label2>$INFO[Skin.String(Programs_Folder_Path)]</label2>
+						<onclick>Skin.SetPath(Programs_Folder_Path)</onclick>
+						<enable>Skin.HasSetting(ProgramsExtraFanart)</enable>
 					</control>
 					<control type="image" id="131">
 						<width>880</width>
