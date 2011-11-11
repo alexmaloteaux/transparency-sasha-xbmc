@@ -383,7 +383,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Addons) + !stringcompare(ListItem.Label,..) + !IsEmpty(ListItem.Path) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>!stringcompare(ListItem.Label,..) + !IsEmpty(ListItem.Path) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-seasons">
