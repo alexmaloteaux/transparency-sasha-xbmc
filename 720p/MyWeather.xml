@@ -328,5 +328,16 @@
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
+		<control type="label">
+			<posx>1268</posx>
+			<posy>696</posy>
+			<width>1200</width>
+			<height>20</height>
+			<label>[B]Weather forecast provided by: $INFO[Window(Weather).Property(WeatherProvider)][/B]</label>
+			<font>font-15</font>
+			<align>right</align>
+			<textcolor>white</textcolor>
+			<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
+		</control>
 	</controls>
 </window>

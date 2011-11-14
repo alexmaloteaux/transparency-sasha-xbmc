@@ -232,7 +232,7 @@
 				<posy>52</posy>
 				<width>172</width>
 				<height>72</height>
-				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+				<label>[B]$INFO[Weather.Temperature][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-25</font>
@@ -326,7 +326,7 @@
 				<posy>110</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+				<label>$INFO[Weather.Temperature]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-23</font>
@@ -406,7 +406,7 @@
 				<posy>48</posy>
 				<height>30</height>
 				<width>770</width>
-				<label>[COLOR=lightblue]$LOCALIZE[401]: [/COLOR]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[419]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[418]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+				<label>[COLOR=lightblue]$LOCALIZE[401]: [/COLOR]$INFO[Weather.Temperature]   [COLOR=lightblue]$LOCALIZE[419]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]   [COLOR=lightblue]$LOCALIZE[418]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-21</font>
