@@ -333,7 +333,7 @@
 			<posy>696</posy>
 			<width>1200</width>
 			<height>20</height>
-			<label>[B]Weather forecast provided by: $INFO[Window(Weather).Property(WeatherProvider)][/B]</label>
+			<label>[B]$LOCALIZE[31605] $INFO[Window(Weather).Property(WeatherProvider)][/B]</label>
 			<font>font-15</font>
 			<align>right</align>
 			<textcolor>white</textcolor>
