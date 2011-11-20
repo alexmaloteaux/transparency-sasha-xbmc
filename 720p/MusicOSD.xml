@@ -6,6 +6,7 @@
 	<controls>
 		<control type="group">
 			<include>ContentFade</include>
+			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(Home)">Conditional</animation>
 			<posx>0</posx>
 			<posy>0</posy>
 			<visible>Player.HasAudio</visible>
