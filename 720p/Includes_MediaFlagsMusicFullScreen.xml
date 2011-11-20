@@ -5,6 +5,8 @@
 			<posy>156</posy>
 			<width>132</width>
 			<height>48</height>
+			<animation effect="fade" start="0" end="100" time="100" delay="200">Visible</animation>
+			<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 		<!-- Audio Codec -->
 			<control type="image">
 				<posx>0</posx>
@@ -12,7 +14,6 @@
 				<width>64</width>
 				<height>48</height>
 				<texture fallback="mediaflag-audiocodec.png">flags/music/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
-				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 		<!-- Record Label -->
 			<control type="image">
@@ -21,7 +22,6 @@
 				<width>64</width>
 				<height>48</height>
 				<texture>mediaflag.png</texture>
-				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 			<control type="image">
 				<posx>74</posx>
@@ -29,7 +29,6 @@
 				<width>52</width>
 				<height>35</height>
 				<texture fallback="mediaflag-recordlabel.png">flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
-				<visible>!Window.IsVisible(MusicOSD) + Player.HasMedia</visible>
 			</control>
 		</control>
 	</include>

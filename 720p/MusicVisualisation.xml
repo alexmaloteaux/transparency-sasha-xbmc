@@ -374,6 +374,7 @@
 					<aligny>center</aligny>
 					<font>font-20</font>
 					<textcolor>lightgrey</textcolor>
+					<animation effect="fade" start="0" end="100" time="100" delay="200">Visible</animation>
 					<visible>MusicPlayer.HasNext + !Window.IsVisible(MusicOSD)</visible>
 				</control>
 			</control>
