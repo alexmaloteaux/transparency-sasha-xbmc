@@ -1,7 +1,7 @@
 <window type="dialog" id="123">
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
-		<posx>285</posx>
+		<posx>235</posx>
 		<posy>35</posy>
 	</coordinates>
 	<include>dialogeffect</include>
@@ -10,7 +10,7 @@
 			<description>background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>710</width>
+			<width>810</width>
 			<height>650</height>
 			<texture border="50">dialog.png</texture>
 		</control>
@@ -26,9 +26,9 @@
 		</control>
 		<control type="label" id="1">
 			<description>heading label</description>
-			<posx>90</posx>
+			<posx>45</posx>
 			<posy>40</posy>
-			<width>510</width>
+			<width>710</width>
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -37,16 +37,16 @@
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
-			<posx>90</posx>
+			<posx>45</posx>
 			<posy>78</posy>
-			<width>510</width>
+			<width>710</width>
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="grouplist" id="5">
-			<posx>95</posx>
+			<posx>45</posx>
 			<posy>90</posy>
-			<width>500</width>
+			<width>710</width>
 			<height>441</height>
 			<pagecontrol>60</pagecontrol>
 			<onleft>9000</onleft>
@@ -56,9 +56,9 @@
 		</control>
 		<control type="label" id="3">
 			<description>no settings label</description>
-			<posx>95</posx>
+			<posx>45</posx>
 			<posy>90</posy>
-			<width>510</width>
+			<width>710</width>
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -112,7 +112,7 @@
 			<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		</control>
 		<control type="scrollbar" id="60">
-			<posx>602</posx>
+			<posx>762</posx>
 			<posy>87</posy>
 			<width>20</width>
 			<height>446</height>
@@ -129,7 +129,7 @@
 			<orientation>vertical</orientation>
 		</control>
 		<control type="group" id="9000">
-			<posx>50</posx>
+			<posx>105</posx>
 			<control type="button" id="28">
 				<description>OK button</description>
 				<posx>0</posx>
@@ -186,7 +186,7 @@
 			</control>
 		</control>
 		<control type="image">
-			<posx>50</posx>
+			<posx>105</posx>
 			<posy>570</posy>
 			<width>200</width>
 			<height>35</height>
