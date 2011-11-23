@@ -531,6 +531,25 @@
 			<label>$LOCALIZE[31500]</label>
 			<include>WindowTitleCommons</include>
 		</control>
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label" id="29">
+			<description>Category</description>
+			<include>WindowTitleCommons</include>
+		</control>
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+			<visible>!IsEmpty(Control.GetLabel(30))</visible>
+		</control>
+		<control type="label" id="30">
+			<description>Group</description>
+			<include>WindowTitleCommons</include>
+		</control>
 	</include>
 	<include name="Breadcrumbs-TVGuide">
 		<control type="image">
@@ -701,7 +720,7 @@
 				<width>29</width>
 				<height>30</height>
 				<texture>dot.png</texture>
-				<visible>!IsEmpty(Container.TotalTime)</visible>
+				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(MyTV)</visible>
 			</control>
 			<control type="label">
 				<description>Item Count Label</description>
@@ -711,7 +730,7 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[555]: $INFO[Container.TotalTime]</label>
-				<visible>!IsEmpty(Container.TotalTime)</visible>
+				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(MyTV)</visible>
 			</control>
 		</control>
 	</include>
