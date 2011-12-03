@@ -10,7 +10,6 @@
 			<height>720</height>
 			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(ArtistLogo) + !Skin.HasSetting(SafeMode)">logo-artists-visualisation1</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -57,7 +56,7 @@
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
-		<include condition="Skin.HasSetting(ArtistLogo) + !Skin.HasSetting(SafeMode)">logo-artists-visualisation2</include>
+		<include condition="Skin.HasSetting(ArtistLogo) + !Skin.HasSetting(SafeMode)">logo-artists-visualisation</include>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
 			<posx>0</posx>
