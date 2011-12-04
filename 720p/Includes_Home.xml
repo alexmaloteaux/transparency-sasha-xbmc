@@ -1326,6 +1326,19 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 			</control>
+			<control type="label">
+				<posx>917</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>110</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Skin.HasSetting(HomeWatchlistMovies)</visible>
+			</control>
 			<control type="list" id="5044">
 				<orientation>vertical</orientation>
 				<posx>144</posx>
@@ -1473,6 +1486,30 @@
 						<onclick>$INFO[Window.Property(RandomMovie.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
 						<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 					</item>
+					<item id="7">
+						<label>$INFO[Window.Property(WatchList_Movie.1.Label)]</label>
+						<label2>$INFO[Window.Property(WatchList_Movie.1.Year)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Movie.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Movie.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Movie.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistMovies)</visible>
+					</item>
+					<item id="8">
+						<label>$INFO[Window.Property(WatchList_Movie.2.Label)]</label>
+						<label2>$INFO[Window.Property(WatchList_Movie.2.Year)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Movie.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Movie.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Movie.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistMovies)</visible>
+					</item>
+					<item id="9">
+						<label>$INFO[Window.Property(WatchList_Movie.3.Label)]</label>
+						<label2>$INFO[Window.Property(WatchList_Movie.3.Year)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Movie.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Movie.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Movie.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistMovies)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="label">
@@ -1546,6 +1583,19 @@
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
+			</control>
+			<control type="label">
+				<posx>820</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>195</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Skin.HasSetting(HomeWatchlistTVShows)</visible>
 			</control>
 			<control type="list" id="5045">
 				<orientation>vertical</orientation>
@@ -1693,6 +1743,30 @@
 						<property name="FanartImage">$INFO[Window.Property(RandomEpisode.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
 						<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
+					</item>
+					<item id="7">
+						<label>$INFO[Window.Property(WatchList_Episode.1.TVShowTitle)]</label>
+						<label2>$INFO[Window.Property(WatchList_Episode.1.EpisodeNo),, - ]$INFO[Window.Property(WatchList_Episode.1.Label)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Episode.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Episode.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Episode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistTVShows)</visible>
+					</item>
+					<item id="8">
+						<label>$INFO[Window.Property(WatchList_Episode.2.TVShowTitle)]</label>
+						<label2>$INFO[Window.Property(WatchList_Episode.2.EpisodeNo),, - ]$INFO[Window.Property(WatchList_Episode.2.Label)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Episode.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Episode.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Episode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistTVShows)</visible>
+					</item>
+					<item id="9">
+						<label>$INFO[Window.Property(WatchList_Episode.3.TVShowTitle)]</label>
+						<label2>$INFO[Window.Property(WatchList_Episode.3.EpisodeNo),, - ]$INFO[Window.Property(WatchList_Episode.3.Label)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Episode.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Episode.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Episode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistTVShows)</visible>
 					</item>
 				</content>
 			</control>			
@@ -1992,6 +2066,19 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 			</control>
+			<control type="label">
+				<posx>884</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>128</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Skin.HasSetting(HomeWatchlistAlbums)</visible>
+			</control>
 			<control type="list" id="5046">
 				<orientation>vertical</orientation>
 				<posx>95</posx>
@@ -2141,6 +2228,30 @@
 						<property name="FanartImage">$INFO[Window.Property(RandomAlbum.3.Fanart)]</property>
 						<onclick>$INFO[Window.Property(RandomAlbum.3.Path)]</onclick>
 						<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
+					</item>
+					<item id="7">
+						<label>$INFO[Window.Property(WatchList_Album.1.Artist)]</label>
+						<label2>$INFO[Window.Property(WatchList_Album.1.Label)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Album.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Album.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Album.1.Path)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistAlbums)</visible>
+					</item>
+					<item id="8">
+						<label>$INFO[Window.Property(WatchList_Album.2.Artist)]</label>
+						<label2>$INFO[Window.Property(WatchList_Album.2.Label)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Album.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Album.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Album.2.Path)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistAlbums)</visible>
+					</item>
+					<item id="9">
+						<label>$INFO[Window.Property(WatchList_Album.3.Artist)]</label>
+						<label2>$INFO[Window.Property(WatchList_Album.3.Label)]</label2>
+						<thumb>$INFO[Window.Property(WatchList_Album.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(WatchList_Album.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(WatchList_Album.3.Path)]</onclick>
+						<visible>Skin.HasSetting(HomeWatchlistAlbums)</visible>
 					</item>
 				</content>
 			</control>
@@ -2919,8 +3030,8 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group" id="8000">
-			<onup>5049</onup>
-			<onright>5049</onright>
+			<onup>5050</onup>
+			<onright>5050</onright>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!ControlGroup(8000).HasFocus">Conditional</animation>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Home_Hor_Sub</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Home_Ver_Sub</include>
@@ -4200,7 +4311,7 @@
 		<onup>8001</onup>
 		<ondown>8001</ondown>
 		<onleft>5040</onleft>
-		<onright>5049</onright>
+		<onright>5050</onright>
 		<focusposition>0</focusposition>
 		<movement>7</movement>
 		<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuLayoutAnim</include>
@@ -4269,7 +4380,7 @@
 		<height>20</height>
 		<hitrect x="144" y="540" w="992" h="60"/>
 		<itemgap>-2</itemgap>
-		<onup>5049</onup>
+		<onup>5050</onup>
 		<ondown>5040</ondown>
 		<onleft>8001</onleft>
 		<onright>8001</onright>
