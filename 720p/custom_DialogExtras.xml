@@ -113,40 +113,34 @@
 					<onclick>SendClick(2003,12)</onclick>
 				</item>
 				<item>
-					<label>31217</label>
+					<label>31224</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.logo-downloader,mode=solo,banner=folder.jpg,showname=$INFO[ListItem.TVShowTitle])</onclick>
-					<visible>System.HasAddon(script.logo-downloader) + Container.Content(TVShows)</visible>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$INFO[ListItem.Title],extrathumbs)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
-					<label>31218</label>
+					<label>31221</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.logo-downloader,mode=solo,poster=folder.jpg,showname=$INFO[ListItem.TVShowTitle])</onclick>
-					<visible>System.HasAddon(script.logo-downloader) + Container.Content(TVShows)</visible>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$INFO[ListItem.Title],extrafanart)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
 					<label>31219</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.logo-downloader,mode=solo,logo=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-					<visible>System.HasAddon(script.logo-downloader) + Container.Content(TVShows)</visible>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,medianame=$INFO[ListItem.TVShowTitle],clearlogo)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
 				</item>
 				<item>
 					<label>31220</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.logo-downloader,mode=solo,clearart=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-					<visible>System.HasAddon(script.logo-downloader) + Container.Content(TVShows)</visible>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,medianame=$INFO[ListItem.TVShowTitle],clearart)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
 				</item>
 				<item>
 					<label>31221</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.extrafanartdownloader, mediatype=movie, medianame=$INFO[ListItem.Title])</onclick>
-					<visible>System.HasAddon(script.extrafanartdownloader) + Container.Content(Movies)</visible>
-				</item>
-				<item>
-					<label>31221</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.extrafanartdownloader, mediatype=tvshow, medianame=$INFO[ListItem.TVShowTitle])</onclick>
-					<visible>System.HasAddon(script.extrafanartdownloader) + Container.Content(TVShows)</visible>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,medianame=$INFO[ListItem.TVShowTitle],extrafanart)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
 				</item>
 				<item>
 					<label>31222</label>
