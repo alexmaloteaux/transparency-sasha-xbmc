@@ -32,7 +32,7 @@
 					<width>800</width>
 					<height>30</height>
 					<font>font-32c</font>
-					<textcolor>blue</textcolor>
+					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -48,7 +48,7 @@
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 				<include>Window_OpenClose_Animation</include>
 			</control>
-			<control type="wraplist" id="52">
+			<control type="fixedlist" id="52">
 				<posx>0</posx>
 				<posy>265</posy>
 				<width>1280</width>
