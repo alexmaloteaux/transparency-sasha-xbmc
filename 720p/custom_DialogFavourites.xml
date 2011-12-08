@@ -1,6 +1,6 @@
 <window type="dialog" id="1114">
 	<onload condition="!Skin.HasSetting(FavouritesPlaylists_Play)">RunScript(script.favourites,playlists=play)</onload>
-	<onload condition="Skin.HasSetting(FavouritesPlaylists_Play)">RunScript(script.favourites,playlists=window)</onload>
+	<onload condition="Skin.HasSetting(FavouritesPlaylists_Play)">RunScript(script.favourites)</onload>
 	<defaultcontrol always="true">450</defaultcontrol>
 	<include>dialogeffect3</include>
 	<controls>
