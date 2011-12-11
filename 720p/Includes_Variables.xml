@@ -10,7 +10,7 @@
 		<value condition="Container.Content(Albums) + Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[182]:[/B][/UPPERCASE]</value>
 	</variable>
 	<variable name="DialogFullScreenInfoLabel1">
-		<value condition="!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio, - ]</value>
+		<value condition="!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Year,, - ]$INFO[VideoPlayer.Studio]</value>
 		<value condition="VideoPlayer.Content(LiveTV)">$INFO[VideoPlayer.ChannelName]</value>
 		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
 		<value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist]</value>
