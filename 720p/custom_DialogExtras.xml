@@ -115,13 +115,13 @@
 				<item>
 					<label>31224</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$INFO[ListItem.Title],extrathumbs)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$INFO[ListItem.Title],mediapath=$INFO[ListItem.Path],extrathumbs)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
 					<label>31221</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$INFO[ListItem.Title],extrafanart)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$INFO[ListItem.Title],mediapath=$INFO[ListItem.Path],extrafanart)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
