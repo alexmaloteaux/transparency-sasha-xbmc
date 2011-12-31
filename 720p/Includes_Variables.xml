@@ -216,6 +216,7 @@
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,1)">flags/movies/audiocodec/dd10.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,2)">flags/movies/audiocodec/dd20.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,3)">flags/movies/audiocodec/dd30.png</value>
+		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,4)">flags/movies/audiocodec/dd40.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,5)">flags/movies/audiocodec/dd50.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,6)">flags/movies/audiocodec/dd51.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,7)">flags/movies/audiocodec/dd61.png</value>
@@ -297,6 +298,7 @@
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1)">flags/movies/audiocodec/dd10.png</value>
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,2)">flags/movies/audiocodec/dd20.png</value>
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,3)">flags/movies/audiocodec/dd30.png</value>
+		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,4)">flags/movies/audiocodec/dd40.png</value>
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,5)">flags/movies/audiocodec/dd50.png</value>
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,6)">flags/movies/audiocodec/dd51.png</value>
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,7)">flags/movies/audiocodec/dd61.png</value>
