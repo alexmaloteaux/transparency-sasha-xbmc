@@ -154,6 +154,18 @@
 					<onclick>RunScript(script.ratingupdate,Single=True)</onclick>
 					<visible>System.HasAddon(script.ratingupdate) + Container.Content(Movies)</visible>
 				</item>
+				<item>
+					<label>31224</label>
+					<onclick>Dialog.Close(1115)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,medianame=$INFO[ListItem.Title],extrathumbs)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(MusicVideos)</visible>
+				</item>
+				<item>
+					<label>31221</label>
+					<onclick>Dialog.Close(1115)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,medianame=$INFO[ListItem.Title],extrafanart)</onclick>
+					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(MusicVideos)</visible>
+				</item>
 			</content>
 		</control>
 	</controls>
