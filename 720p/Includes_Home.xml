@@ -4029,7 +4029,7 @@
 						<description>Menu PlayDisc Sub Player Controls</description>
 						<label>$LOCALIZE[31409]</label>
 						<onclick>ActivateWindow(PlayerControls)</onclick>
-						<visible>!Skin.HasSetting(Menu_PlayDisc_Sub_Playeritems)</visible>
+						<visible>!Skin.HasSetting(Menu_PlayDisc_Sub_PlayerControls)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu PlayDisc Sub Eject</description>
