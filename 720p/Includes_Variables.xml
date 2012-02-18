@@ -284,7 +284,7 @@
 		<value condition="substring(Listitem.mpaa,French:-16)">flags/movies/rating/csa16.png</value>
 		<value condition="substring(Listitem.mpaa,French:-18)">flags/movies/rating/csa18.png</value>
 		<value condition="StringCompare(Listitem.mpaa,Australia:G)">flags/movies/rating/oflcG.png</value>
-		<value condition="StringCompare(Listitem.mpaa,Australia:MA) | StringCompare(Listitem.mpaa,Australia:MA15+)">flags/movies/rating/oflcMA15+.png</value>
+		<value condition="substring(Listitem.mpaa,Australia:MA)">flags/movies/rating/oflcMA15+.png</value>
 		<value condition="StringCompare(Listitem.mpaa,Australia:M)">flags/movies/rating/oflcM.png</value>
 		<value condition="StringCompare(Listitem.mpaa,Australia:PG)">flags/movies/rating/oflcPG.png</value>
 		<value condition="StringCompare(Listitem.mpaa,Australia:R)">flags/movies/rating/oflcR18+.png</value>
