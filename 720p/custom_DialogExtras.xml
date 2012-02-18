@@ -151,7 +151,13 @@
 				<item>
 					<label>31223</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.ratingupdate,Single=True)</onclick>
+					<onclick>RunScript(script.ratingupdate,Single=TVShow)</onclick>
+					<visible>System.HasAddon(script.ratingupdate) + Container.Content(TVShows)</visible>
+				</item>
+				<item>
+					<label>31223</label>
+					<onclick>Dialog.Close(1115)</onclick>
+					<onclick>RunScript(script.ratingupdate,Single=Movie)</onclick>
 					<visible>System.HasAddon(script.ratingupdate) + Container.Content(Movies)</visible>
 				</item>
 				<item>
