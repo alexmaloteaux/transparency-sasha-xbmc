@@ -756,7 +756,7 @@
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Artist]</value>
 	</variable>
 	<variable name="ViewItemLabel17">
-		<value condition="Container.Content(Artists) | Container.Content(Albums)">UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</value>
+		<value condition="Container.Content(Artists) | Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</value>
 		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</value>
 	</variable>
 	<variable name="ViewItemLabel18">
@@ -795,7 +795,7 @@
 		<value condition="Container.Content(Albums) | Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</value>
 	</variable>
 	<variable name="ViewItemLabel26">
-		<value condition="Container.Content(Artists)">INFO[ListItem.Property(Artist_Formed)]</value>
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Formed)]</value>
 		<value condition="Container.Content(Albums) | Container.Content(Songs)">$INFO[ListItem.Year]</value>
 	</variable>
 	<variable name="ViewItemLabel27">
