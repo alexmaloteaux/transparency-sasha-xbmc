@@ -37,10 +37,10 @@
 	</include>
 	<include name="Home_Movies_Fanart">
 		<control type="multiimage">
-			<posx>320</posx>
+			<posx>315</posx>
 			<posy>20</posy>
-			<width>740</width>
-			<height>382</height>
+			<width>745</width>
+			<height>390</height>
 			<include condition="!Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Path</include>
 			<include condition="Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Custom_Path</include>
 			<aspectratio aligny="top">scale</aspectratio>
