@@ -1,5 +1,7 @@
 <window type="dialog" id="1115">
 	<onunload>ClearProperty(ActorName,Home)</onunload>
+	<onunload>ClearProperty(DirectorName,Home)</onunload>
+	<onunload>ClearProperty(WriterName,Home)</onunload>
 	<defaultcontrol always="true">3</defaultcontrol>
 	<coordinates>
 		<posx>335</posx>
