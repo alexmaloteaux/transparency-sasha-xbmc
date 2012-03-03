@@ -1,4 +1,8 @@
 <includes>
+	<variable name="ContextMenu">
+		<value condition="Container.Content(Actors)">$LOCALIZE[31226]</value>
+		<value condition="Container.Content(Directors)">$LOCALIZE[31227]</value>
+	</variable>
 	<variable name="DialogAlbumInfoTitle">
 		<value condition="Container.Content(Artists)">$INFO[Listitem.Artist]</value>
 		<value condition="Container.Content(Albums)">$INFO[Listitem.Album]</value>
