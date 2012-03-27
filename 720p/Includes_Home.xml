@@ -2667,22 +2667,22 @@
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
 				</item>
 				<item id="14">
-					<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
-					<onclick>$INFO[Skin.String(Menu_Custom1_Path)]</onclick>
+					<label>$INFO[Skin.String(Menu_Custom1.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom1.Path)]</onclick>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Custom1)</visible>
 				</item>
 				<item id="15">
-					<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
-					<onclick>$INFO[Skin.String(Menu_Custom2_Path)]</onclick>
+					<label>$INFO[Skin.String(Menu_Custom2.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom2.Path)]</onclick>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Custom2)</visible>
 				</item>
 				<item id="16">
-					<label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
-					<onclick>$INFO[Skin.String(Menu_Custom3_Path)]</onclick>
+					<label>$INFO[Skin.String(Menu_Custom3.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom3.Path)]</onclick>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Custom3)</visible>
@@ -3072,20 +3072,20 @@
 					</item>
 					<item id="8107">
 						<description>Menu Videos Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom6)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Videos Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom7)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Videos Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Videos_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Videos_Sub_Custom8)</visible>
 					</item>
 				</content>
@@ -3219,20 +3219,20 @@
 					</item>
 					<item id="8121">
 						<description>Menu Movies Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom6)</visible>
 					</item>
 					<item id="8122">
 						<description>Menu Movies Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom7)</visible>
 					</item>
 					<item id="8123">
 						<description>Menu Movies Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Movies_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Movies_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Movies_Sub_Custom8)</visible>
 					</item>
 				</content>
@@ -3316,20 +3316,20 @@
 					</item>
 					<item id="8114">
 						<description>Menu TVShows Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom6)</visible>
 					</item>
 					<item id="8115">
 						<description>Menu TVShows Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom7)</visible>
 					</item>
 					<item id="8116">
 						<description>Menu TVShows Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_TVShows_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TVShows_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TVShows_Sub_Custom8)</visible>
 					</item>
 				</content>
@@ -3419,20 +3419,20 @@
 					</item>
 					<item id="8115">
 						<description>Menu MusicVideos Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom6)</visible>
 					</item>
 					<item id="8116">
 						<description>Menu MusicVideos Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom7)</visible>
 					</item>
 					<item id="8117">
 						<description>Menu MusicVideos Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom8)</visible>
 					</item>
 				</content>
@@ -3444,20 +3444,20 @@
 				<content>
 					<item id="8102">
 						<description>Menu TV Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_TV_Sub_Custom1_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom1_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_TV_Sub_Custom1.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom1.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TV_Sub_Custom1)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu TV Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_TV_Sub_Custom2_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom2_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_TV_Sub_Custom2.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom2.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TV_Sub_Custom2)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu TV Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_TV_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_TV_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_TV_Sub_Custom3)</visible>
 					</item>
 				</content>
@@ -3589,20 +3589,20 @@
 					</item>
 					<item id="8120">
 						<description>Menu Music Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Music_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Music_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Music_Sub_Custom6)</visible>
 					</item>
 					<item id="8121">
 						<description>Menu Music Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Music_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Music_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Music_Sub_Custom7)</visible>
 					</item>
 					<item id="8122">
 						<description>Menu Music Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Music_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Music_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Music_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Music_Sub_Custom8)</visible>
 					</item>
 				</content>
@@ -3680,20 +3680,20 @@
 					</item>
 					<item id="8113">
 						<description>Menu Pictures Sub Custom11</description>
-						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom11_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom11_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom11.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom11.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom11)</visible>
 					</item>
 					<item id="8114">
 						<description>Menu Pictures Sub Custom12</description>
-						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom12_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom12_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom12.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom12.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom12)</visible>
 					</item>
 					<item id="8115">
 						<description>Menu Pictures Sub Custom13</description>
-						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom13_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom13_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom13.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Pictures_Sub_Custom13.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom13)</visible>
 					</item>
 				</content>
@@ -3825,20 +3825,20 @@
 					</item>
 					<item id="8122">
 						<description>Menu Programs Sub Custom20</description>
-						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom20_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom20_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom20.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom20.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom20)</visible>
 					</item>
 					<item id="8123">
 						<description>Menu Programs Sub Custom21</description>
-						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom21_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom21_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom21.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom21.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom21)</visible>
 					</item>
 					<item id="8124">
 						<description>Menu Programs Sub Custom22</description>
-						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom22_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom22_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Programs_Sub_Custom22.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom22.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Programs_Sub_Custom22)</visible>
 					</item>
 				</content>
@@ -3868,20 +3868,20 @@
 					</item>
 					<item id="8105">
 						<description>Menu Weather Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom4_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom4_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom4.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom4.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom4)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Weather Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom5_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom5_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom5.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom5.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom5)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Weather Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Weather_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Weather_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Weather_Sub_Custom6)</visible>
 					</item>
 				</content>
@@ -3893,32 +3893,32 @@
 				<content>
 					<item id="8102">
 						<description>Menu Favourites Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom1_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom1.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom1.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom1)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Favourites Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom2_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom2.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom2.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom2)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Favourites Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom3)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Favourites Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom4_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom4.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom4.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom4)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Favourites Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom5_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Favourites_Sub_Custom5.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Favourites_Sub_Custom5.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Favourites_Sub_Custom5)</visible>
 					</item>
 				</content>
@@ -4008,20 +4008,20 @@
 					</item>
 					<item id="8115">
 						<description>Menu Settings Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom1_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom1_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom1.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom1.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Custom1)</visible>
 					</item>
 					<item id="8116">
 						<description>Menu Settings Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom2_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom2_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom2.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom2.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Custom2)</visible>
 					</item>
 					<item id="8117">
 						<description>Menu Settings Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Settings_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Settings_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Settings_Sub_Custom3)</visible>
 					</item>
 				</content>
@@ -4057,20 +4057,20 @@
 					</item>
 					<item id="8106">
 						<description>Menu PlayDisc Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom3)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu PlayDisc Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom4)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu PlayDisc Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_PlayDisc_Sub_Custom5)</visible>
 					</item>
 				</content>
@@ -4082,62 +4082,62 @@
 				<content>
 					<item id="8102">
 						<description>Menu Custom1 Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom1_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom1_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom1.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom1.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom1)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Custom1 Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom2_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom2_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom2.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom2.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom2)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Custom1 Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom3)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Custom1 Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom4_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom4_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom4.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom4.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom4)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Custom1 Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom5_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom5_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom5.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom5.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom5)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Custom1 Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom6)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Custom1 Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom7)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Custom1 Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom8)</visible>
 					</item>
 					<item id="8110">
 						<description>Menu Custom1 Sub Custom9</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom9_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom9_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom9.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom9.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom9)</visible>
 					</item>
 					<item id="8111">
 						<description>Menu Custom1 Sub Custom10</description>
-						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom10_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom10_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom1_Sub_Custom10.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom1_Sub_Custom10.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom1_Sub_Custom10)</visible>
 					</item>
 				</content>
@@ -4149,62 +4149,62 @@
 				<content>
 					<item id="8102">
 						<description>Menu Custom2 Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom1_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom1_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom1.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom1.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom1)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Custom2 Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom2_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom2_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom2.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom2.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom2)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Custom2 Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom3)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Custom2 Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom4_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom4_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom4.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom4.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom4)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Custom2 Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom5_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom5_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom5.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom5.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom5)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Custom2 Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom6)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Custom2 Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom7)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Custom2 Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom8)</visible>
 					</item>
 					<item id="8110">
 						<description>Menu Custom2 Sub Custom9</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom9_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom9_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom9.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom9.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom9)</visible>
 					</item>
 					<item id="8111">
 						<description>Menu Custom2 Sub Custom10</description>
-						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom10_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom10_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom2_Sub_Custom10.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom2_Sub_Custom10.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom2_Sub_Custom10)</visible>
 					</item>
 				</content>
@@ -4216,62 +4216,62 @@
 				<content>
 					<item id="8102">
 						<description>Menu Custom3 Sub Custom1</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom1_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom1_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom1.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom1.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom1)</visible>
 					</item>
 					<item id="8103">
 						<description>Menu Custom3 Sub Custom2</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom2_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom2_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom2.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom2.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom2)</visible>
 					</item>
 					<item id="8104">
 						<description>Menu Custom3 Sub Custom3</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom3_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom3_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom3.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom3.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom3)</visible>
 					</item>
 					<item id="8105">
 						<description>Menu Custom3 Sub Custom4</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom4_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom4_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom4.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom4.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom4)</visible>
 					</item>
 					<item id="8106">
 						<description>Menu Custom3 Sub Custom5</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom5_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom5_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom5.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom5.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom5)</visible>
 					</item>
 					<item id="8107">
 						<description>Menu Custom3 Sub Custom6</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom6_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom6_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom6.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom6.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom6)</visible>
 					</item>
 					<item id="8108">
 						<description>Menu Custom3 Sub Custom7</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom7_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom7_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom7.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom7.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom7)</visible>
 					</item>
 					<item id="8109">
 						<description>Menu Custom3 Sub Custom8</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom8_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom8_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom8.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom8.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom8)</visible>
 					</item>
 					<item id="8110">
 						<description>Menu Custom3 Sub Custom9</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom9_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom9_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom9.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom9.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom9)</visible>
 					</item>
 					<item id="8111">
 						<description>Menu Custom3 Sub Custom10</description>
-						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom10_Label)]</label>
-						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom10_Path)]</onclick>
+						<label>$INFO[Skin.String(Menu_Custom3_Sub_Custom10.Label)]</label>
+						<onclick>$INFO[Skin.String(Menu_Custom3_Sub_Custom10.Path)]</onclick>
 						<visible>Skin.HasSetting(Menu_Custom3_Sub_Custom10)</visible>
 					</item>
 				</content>
