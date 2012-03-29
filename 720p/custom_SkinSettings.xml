@@ -574,7 +574,7 @@
 						<onclick>Skin.ToggleSetting(HomeRandomMovies)</onclick>
 						<onclick>Skin.SetBool(HomeRecentMovies)</onclick>
 						<onclick>Skin.Reset(HomeWatchlistMovies)</onclick>
-						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
+						<onclick>RunScript(script.randomitems,limit=10&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomMovies)</selected>
 					</control>
 					<control type="radiobutton" id="218">
@@ -583,7 +583,7 @@
 						<onclick>Skin.ToggleSetting(HomeRandomTVShows)</onclick>
 						<onclick>Skin.SetBool(HomeRecentTVShows)</onclick>
 						<onclick>Skin.Reset(HomeWatchlistTVShows)</onclick>
-						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
+						<onclick>RunScript(script.randomitems,limit=10&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomTVShows)</selected>
 					</control>
 					<control type="radiobutton" id="219">
@@ -591,7 +591,7 @@
 						<label>$LOCALIZE[20389] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomMusicVideos)</onclick>
 						<onclick>Skin.SetBool(HomeRecentMusicVideos)</onclick>
-						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
+						<onclick>RunScript(script.randomitems,limit=10&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomMusicVideos)</selected>
 					</control>
 					<control type="radiobutton" id="220">
@@ -600,14 +600,14 @@
 						<onclick>Skin.ToggleSetting(HomeRandomAlbums)</onclick>
 						<onclick>Skin.SetBool(HomeRecentAlbums)</onclick>
 						<onclick>Skin.Reset(HomeWatchlistAlbums)</onclick>
-						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
+						<onclick>RunScript(script.randomitems,limit=10&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>Skin.HasSetting(HomeRandomAlbums)</selected>
 					</control>
 					<control type="radiobutton" id="221">
 						<description>enable random addon info</description>
 						<label>$LOCALIZE[24001] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
-						<onclick>RunScript(script.randomitems,limit=3&amp;albums=True&amp;alarm=60)</onclick>
+						<onclick>RunScript(script.randomitems,limit=10&amp;albums=True&amp;alarm=60)</onclick>
 						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
 					</control>
 					<control type="image" id="222">
@@ -621,7 +621,7 @@
 						<onclick>Skin.ToggleSetting(HomeWatchlistMovies)</onclick>
 						<onclick>Skin.SetBool(HomeRecentMovies)</onclick>
 						<onclick>Skin.Reset(HomeRandomMovies)</onclick>
-						<onclick>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=3)</onclick>
+						<onclick>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onclick>
 						<selected>Skin.HasSetting(HomeWatchlistMovies)</selected>
 					</control>
 					<control type="radiobutton" id="224">
@@ -630,7 +630,7 @@
 						<onclick>Skin.ToggleSetting(HomeWatchlistTVShows)</onclick>
 						<onclick>Skin.SetBool(HomeRecentTVShows)</onclick>
 						<onclick>Skin.Reset(HomeRandomTVShows)</onclick>
-						<onclick>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=3)</onclick>
+						<onclick>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onclick>
 						<selected>Skin.HasSetting(HomeWatchlistTVShows)</selected>
 					</control>
 					<control type="radiobutton" id="225">
@@ -639,7 +639,7 @@
 						<onclick>Skin.ToggleSetting(HomeWatchlistAlbums)</onclick>
 						<onclick>Skin.SetBool(HomeRecentAlbums)</onclick>
 						<onclick>Skin.Reset(HomeRandomAlbums)</onclick>
-						<onclick>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=3)</onclick>
+						<onclick>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onclick>
 						<selected>Skin.HasSetting(HomeWatchlistAlbums)</selected>
 					</control>
 					<control type="image" id="226">
