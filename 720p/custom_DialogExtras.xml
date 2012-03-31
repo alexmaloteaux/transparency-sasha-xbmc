@@ -122,13 +122,13 @@
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
-					<label>31229</label>
+					<label>31221</label>
 					<onclick>Dialog.Close(1115)</onclick>
 					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$ESCINFO[ListItem.Title],mediapath=$ESCINFO[ListItem.Path],extrafanart)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
-					<label>31221</label>
+					<label>31229</label>
 					<onclick>Dialog.Close(1115)</onclick>
 					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,medianame=$ESCINFO[ListItem.Title],mediapath=$ESCINFO[ListItem.Path],discart)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
