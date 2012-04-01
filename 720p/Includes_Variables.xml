@@ -364,6 +364,12 @@
 		<value condition="substring(VideoPlayer.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
 		<value condition="substring(VideoPlayer.mpaa,French:-16)">flags/movies/rating/csa16.png</value>
 		<value condition="substring(VideoPlayer.mpaa,French:-18)">flags/movies/rating/csa18.png</value>
+		<value condition="StringCompare(VideoPlayer.mpaa,Australia:G)">flags/movies/rating/oflcG.png</value>
+		<value condition="substring(VideoPlayer.mpaa,Australia:MA)">flags/movies/rating/oflcMA15+.png</value>
+		<value condition="StringCompare(VideoPlayer.mpaa,Australia:M)">flags/movies/rating/oflcM.png</value>
+		<value condition="StringCompare(VideoPlayer.mpaa,Australia:PG)">flags/movies/rating/oflcPG.png</value>
+		<value condition="StringCompare(VideoPlayer.mpaa,Australia:R)">flags/movies/rating/oflcR18+.png</value>
+		<value condition="StringCompare(VideoPlayer.mpaa,Australia:X)">flags/movies/rating/oflcX18+.png</value>
 		<value condition="substring(VideoPlayer.Mpaa,TV-Y) + ![substring(VideoPlayer.Mpaa,TV-Y7) | substring(VideoPlayer.Mpaa,TV-Y7-FV)]">flags/movies/rating/tv-y.png</value>
 		<value condition="substring(VideoPlayer.Mpaa,TV-Y7) | substring(VideoPlayer.Mpaa,TV-Y7-FV)">flags/movies/rating/tv-y7.png</value>
 		<value condition="substring(VideoPlayer.Mpaa,TV-G)">flags/movies/rating/tv-g.png</value>
