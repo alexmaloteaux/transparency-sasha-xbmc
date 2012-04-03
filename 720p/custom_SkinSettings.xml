@@ -1688,17 +1688,22 @@
 						<onclick>Skin.ToggleSetting(HideInfoPanelIcons)</onclick>
 						<selected>Skin.HasSetting(HideInfoPanelIcons)</selected>
 					</control>
-					<control type="image" id="714">
+					<control type="radiobutton" id="714">
+						<label>$LOCALIZE[31038] - $LOCALIZE[31137]</label>
+						<onclick>Skin.ToggleSetting(WallShowPlot)</onclick>
+						<selected>Skin.HasSetting(WallShowPlot)</selected>
+					</control>
+					<control type="image" id="715">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="715">
+					<control type="radiobutton" id="716">
 						<label>$LOCALIZE[535] - $LOCALIZE[2] - $LOCALIZE[31133]</label>
 						<onclick>Skin.ToggleSetting(Artist_Album_Order)</onclick>
 						<selected>Skin.HasSetting(Artist_Album_Order)</selected>
 					</control>
-					<control type="image" id="716">
+					<control type="image" id="717">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>

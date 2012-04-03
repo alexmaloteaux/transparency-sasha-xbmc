@@ -56,7 +56,7 @@
 			<width>64</width>
 			<height>48</height>
 			<texture>mediaflag.png</texture>
-			<visible>![Container.Content(Movies) + Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
+			<visible>![Container.Content(Movies) + [Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 		<control type="image">
 			<posx>484</posx>
@@ -64,7 +64,7 @@
 			<width>52</width>
 			<height>35</height>
 			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>[[Container.Content(Movies) + ![Control.IsVisible(50) + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57)] | [!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist)]]  + !stringcompare(ListItem.Label,..)</visible>
+			<visible>[[Container.Content(Movies) + ![[Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57)] | [!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist)]]  + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 	</include>
 	<include name="MovieStudioFlag">

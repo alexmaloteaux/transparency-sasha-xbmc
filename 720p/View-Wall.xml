@@ -764,12 +764,19 @@
 				<animation type="WindowClose">
 					<effect type="fade" start="100" end="0" time="3000"/>
 				</animation>
+				<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
+				<visible>Container.Content(Movies)</visible>
+				<control type="group">
+					<posx>706</posx>
+					<posy>664</posy>
+					<width>472</width>
+					<height>48</height>
+					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags) + Skin.HasSetting(WallShowPlot)">VideoMediaFlags</include>
+				</control>
 				<control type="group">
 					<posx>578</posx>
 					<posy>148</posy>
-					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
-					<visible>Container.Content(Movies)</visible>
 				</control>
 			</control>
 		</control>
