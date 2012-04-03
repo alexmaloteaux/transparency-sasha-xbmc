@@ -51,7 +51,7 @@
 					<font>-</font>
 					<texturefocus>osdplayer-previous-focus.png</texturefocus>
 					<texturenofocus>osdplayer-previous-nofocus.png</texturenofocus>
-					<onleft>914</onleft>
+					<onleft>918</onleft>
 					<onright>902</onright>
 					<onup>901</onup>
 					<ondown>901</ondown>
@@ -250,7 +250,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>1022</posx>
+				<posx>982</posx>
 				<posy>678</posy>
 				<control type="button" id="916">
 					<description>last.fm love button</description>
@@ -372,9 +372,25 @@
 					<ondown>913</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
-				<control type="togglebutton" id="914">
-					<description>Lyrics Script</description>
+				<control type="button" id="914">
+					<description>Audio Menu</description>
 					<posx>200</posx>
+					<posy>0</posy>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-audio-nofocus.png</texturenofocus>
+					<texturefocus>osd-audio-focus.png</texturefocus>
+					<onclick>ActivateWindow(1114)</onclick>
+					<onleft>913</onleft>
+					<onright>918</onright>
+					<onup>914</onup>
+					<ondown>914</ondown>
+				</control>
+				<control type="togglebutton" id="918">
+					<description>Lyrics Script</description>
+					<posx>240</posx>
 					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
@@ -390,10 +406,10 @@
 					<altclick>Dialog.Close(musicosd)</altclick>
 					<altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
 					<usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
-					<onleft>913</onleft>
+					<onleft>914</onleft>
 					<onright>901</onright>
-					<onup>914</onup>
-					<ondown>914</ondown>
+					<onup>918</onup>
+					<ondown>918</ondown>
 				</control>
 			</control>
 		</control>
