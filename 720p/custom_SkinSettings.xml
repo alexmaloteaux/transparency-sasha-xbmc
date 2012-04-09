@@ -488,11 +488,6 @@
 						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
 						<selected>Skin.HasSetting(WideHomeMenu)</selected>
 					</control>
-					<control type="radiobutton" id="204">
-						<label>31176</label>
-						<onclick>Skin.ToggleSetting(FavouritesPlaylists_Play)</onclick>
-						<selected>!Skin.HasSetting(FavouritesPlaylists_Play)</selected>
-					</control>
 					<control type="image" id="205">
 						<width>880</width>
 						<height>2</height>
