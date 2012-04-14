@@ -262,6 +262,9 @@
 				<onright>61</onright>
 				<ondown>49</ondown>
 				<onup>7</onup>
+				<onclick condition="VideoPlayer.Content(LiveTV)">SetProperty(Transparency.EPGTitle,$ESCINFO[ListItem.Title],10000)</onclick>
+				<onclick condition="VideoPlayer.Content(LiveTV)">SetProperty(Transparency.EPGDate,$ESCINFO[ListItem.Date],10000)</onclick>
+				<onclick condition="VideoPlayer.Content(LiveTV)">SetProperty(Transparency.EPGPlot,$ESCINFO[ListItem.Plot],10000)</onclick>
 				<onclick>ActivateWindow(1113)</onclick>
 			</control>
 			<control type="button" id="7">

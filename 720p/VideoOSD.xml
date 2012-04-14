@@ -345,7 +345,7 @@
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
 					<control type="button" id="909">
 						<description>Channels Menu</description>
-						<posx>0</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -362,7 +362,7 @@
 					</control>
 					<control type="button" id="910">
 						<description>EPG Menu</description>
-						<posx>40</posx>
+						<posx>80</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
@@ -372,26 +372,9 @@
 						<texturefocus>osd-epg-focus.png</texturefocus>
 						<onclick>ActivateWindow(PVROSDGuide)</onclick>
 						<onleft>909</onleft>
-						<onright>916</onright>
+						<onright>911</onright>
 						<onup>910</onup>
 						<ondown>910</ondown>
-						<visible>VideoPlayer.Content(LiveTV)</visible>
-					</control>
-					<control type="button" id="916">
-						<description>Portal Menu</description>
-						<posx>80</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<label>-</label>
-						<font>-</font>
-						<texturenofocus>osd-portal-nofocus.png</texturenofocus>
-						<texturefocus>osd-portal-focus.png</texturefocus>
-						<onclick>ActivateWindow(PVROSDDirector)</onclick>
-						<onleft>910</onleft>
-						<onright>911</onright>
-						<onup>916</onup>
-						<ondown>916</ondown>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<control type="button" id="911">
@@ -405,7 +388,7 @@
 						<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 						<texturefocus>osd-audio-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
-						<onleft>916</onleft>
+						<onleft>910</onleft>
 						<onright>912</onright>
 						<onup>911</onup>
 						<ondown>911</ondown>
