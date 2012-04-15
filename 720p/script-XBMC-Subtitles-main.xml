@@ -147,7 +147,7 @@
 						<width>40</width>
 						<height>12</height>
 						<texture>XbmcSubtitles/icon_sync.png</texture>
-						<visible>ListItem.Property(Sync)</visible>
+						<visible>ListItem.Property(sync)</visible>
 					</control>
 					<control type="label">
 						<posx>190</posx>
@@ -162,9 +162,17 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>625</posx>
+						<posx>620</posx>
+						<posy>5</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>XbmcSubtitles/icon_hearing-impaired.png</texture>
+						<visible>ListItem.Property(hearing_imp)</visible>
+					</control>
+					<control type="image">
+						<posx>645</posx>
 						<posy>11</posy>
-						<width>90</width>
+						<width>61</width>
 						<height>9</height>
 						<texture>XbmcSubtitles/icon_rating_$INFO[ListItem.ActualIcon].png</texture>
 					</control>
@@ -211,7 +219,7 @@
 						<width>40</width>
 						<height>12</height>
 						<texture>XbmcSubtitles/icon_sync.png</texture>
-						<visible>ListItem.Property(Sync)</visible>
+						<visible>ListItem.Property(sync)</visible>
 					</control>
 					<control type="label">
 						<posx>190</posx>
@@ -226,9 +234,17 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>625</posx>
+						<posx>620</posx>
+						<posy>5</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>XbmcSubtitles/icon_hearing-impaired.png</texture>
+						<visible>ListItem.Property(hearing_imp)</visible>
+					</control>
+					<control type="image">
+						<posx>645</posx>
 						<posy>11</posy>
-						<width>90</width>
+						<width>61</width>
 						<height>9</height>
 						<texture>XbmcSubtitles/icon_rating_$INFO[ListItem.ActualIcon].png</texture>
 					</control>
