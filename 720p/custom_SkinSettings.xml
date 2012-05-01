@@ -1217,7 +1217,7 @@
 					<onup>501</onup>
 					<ondown>501</ondown>
 					<control type="button" id="504">
-						<label>$LOCALIZE[24012] - $LOCALIZE[31204]</label>
+						<label>$LOCALIZE[24012] - $LOCALIZE[31190]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(SubsScript_Path)][/COLOR]</label2>
 						<onclick>Skin.SetAddon(SubsScript_Path,xbmc.python.subtitles)</onclick>
 					</control>
@@ -1227,7 +1227,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="button" id="507">
-						<label>$LOCALIZE[24013] - $LOCALIZE[31204]</label>
+						<label>$LOCALIZE[24013] - $LOCALIZE[31190]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 					</control>
@@ -2326,7 +2326,7 @@
 					</control>
 					<control type="radiobutton" id="8116">
 						<description>Menu Movies Sub Custom1</description>
-						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_Movies_Sub_Custom1_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Movies_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom1)</onclick>
@@ -2335,7 +2335,7 @@
 					</control>
 					<control type="radiobutton" id="8117">
 						<description>Menu Movies Sub Custom2</description>
-						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_Movies_Sub_Custom2_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Movies_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom2)</onclick>
@@ -2344,7 +2344,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu Movies Sub Custom3</description>
-						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_Movies_Sub_Custom3_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Movies_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom3)</onclick>
@@ -2353,7 +2353,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu Movies Sub Custom4</description>
-						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_Movies_Sub_Custom4_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_Movies_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,4)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom4)</onclick>
@@ -2362,7 +2362,7 @@
 					</control>
 					<control type="radiobutton" id="8120">
 						<description>Menu Movies Sub Custom5</description>
-						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_Movies_Sub_Custom5_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_Movies_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom5)</onclick>
@@ -2486,7 +2486,7 @@
 					</control>
 					<control type="radiobutton" id="8109">
 						<description>Menu TVShows Sub Custom1</description>
-						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom1)</onclick>
@@ -2495,7 +2495,7 @@
 					</control>
 					<control type="radiobutton" id="8110">
 						<description>Menu TVShows Sub Custom2</description>
-						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom2)</onclick>
@@ -2504,7 +2504,7 @@
 					</control>
 					<control type="radiobutton" id="8111">
 						<description>Menu TVShows Sub Custom3</description>
-						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom3)</onclick>
@@ -2513,7 +2513,7 @@
 					</control>
 					<control type="radiobutton" id="8112">
 						<description>Menu TVShows Sub Custom4</description>
-						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,4)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom4)</onclick>
@@ -2522,7 +2522,7 @@
 					</control>
 					<control type="radiobutton" id="8113">
 						<description>Menu TVShows Sub Custom5</description>
-						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom5)</onclick>
@@ -2655,7 +2655,7 @@
 					</control>
 					<control type="radiobutton" id="8110">
 						<description>Menu MusicVideos Sub Custom1</description>
-						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_MusicVideos_Sub_Custom1_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_MusicVideos_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom1)</onclick>
@@ -2664,7 +2664,7 @@
 					</control>
 					<control type="radiobutton" id="8111">
 						<description>Menu MusicVideos Sub Custom2</description>
-						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_MusicVideos_Sub_Custom2_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_MusicVideos_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom2)</onclick>
@@ -2673,7 +2673,7 @@
 					</control>
 					<control type="radiobutton" id="8112">
 						<description>Menu MusicVideos Sub Custom3</description>
-						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_MusicVideos_Sub_Custom3_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_MusicVideos_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom3)</onclick>
@@ -2682,7 +2682,7 @@
 					</control>
 					<control type="radiobutton" id="8113">
 						<description>Menu MusicVideos Sub Custom4</description>
-						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_MusicVideos_Sub_Custom4_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_MusicVideos_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,4)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom4)</onclick>
@@ -2691,7 +2691,7 @@
 					</control>
 					<control type="radiobutton" id="8114">
 						<description>Menu MusicVideos Sub Custom5</description>
-						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom5)</onclick>
@@ -2939,7 +2939,7 @@
 					</control>
 					<control type="radiobutton" id="8117">
 						<description>Menu Music Sub Custom1</description>
-						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_Music_Sub_Custom1_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Music_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Custom1)</onclick>
@@ -2948,7 +2948,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu Music Sub Custom2</description>
-						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_Music_Sub_Custom2_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Music_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Custom2)</onclick>
@@ -2957,7 +2957,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu Music Sub Custom3</description>
-						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_Music_Sub_Custom3_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Music_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Custom3)</onclick>
@@ -2966,7 +2966,7 @@
 					</control>
 					<control type="radiobutton" id="8120">
 						<description>Menu Music Sub Custom4</description>
-						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_Music_Sub_Custom4_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_Music_Sub_Custom4_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicCustom,4)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Custom4)</onclick>
@@ -2975,7 +2975,7 @@
 					</control>
 					<control type="radiobutton" id="8121">
 						<description>Menu Music Sub Custom5</description>
-						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_Music_Sub_Custom5_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_Music_Sub_Custom5_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicCustom,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Custom5)</onclick>
@@ -3090,7 +3090,7 @@
 					</control>
 					<control type="radiobutton" id="8115">
 						<description>Menu Pictures Sub Custom6</description>
-						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_Pictures_Sub_Custom6_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Pictures_Sub_Custom6_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PicturesCustom,6)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom6)</onclick>
@@ -3099,7 +3099,7 @@
 					</control>
 					<control type="radiobutton" id="8116">
 						<description>Menu Pictures Sub Custom7</description>
-						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_Pictures_Sub_Custom7_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Pictures_Sub_Custom7_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PicturesCustom,7)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom7)</onclick>
@@ -3108,7 +3108,7 @@
 					</control>
 					<control type="radiobutton" id="8117">
 						<description>Menu Pictures Sub Custom8</description>
-						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_Pictures_Sub_Custom8_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Pictures_Sub_Custom8_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PicturesCustom,8)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom8)</onclick>
@@ -3117,7 +3117,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu Pictures Sub Custom9</description>
-						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_Pictures_Sub_Custom9_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_Pictures_Sub_Custom9_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PicturesCustom,9)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom9)</onclick>
@@ -3126,7 +3126,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu Pictures Sub Custom10</description>
-						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_Pictures_Sub_Custom10_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_Pictures_Sub_Custom10_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PicturesCustom,10)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Pictures_Sub_Custom10)</onclick>
@@ -3286,7 +3286,7 @@
 					</control>
 					<control type="radiobutton" id="8113">
 						<description>Menu Programs Sub Custom11</description>
-						<label>[B]$LOCALIZE[31407] 1$INFO[Skin.String(Menu_Programs_Sub_Custom11_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Programs_Sub_Custom11_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,11)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom11)</onclick>
@@ -3295,7 +3295,7 @@
 					</control>
 					<control type="radiobutton" id="8114">
 						<description>Menu Programs Sub Custom12</description>
-						<label>[B]$LOCALIZE[31407] 2$INFO[Skin.String(Menu_Programs_Sub_Custom12_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Programs_Sub_Custom12_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,12)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom12)</onclick>
@@ -3304,7 +3304,7 @@
 					</control>
 					<control type="radiobutton" id="8115">
 						<description>Menu Programs Sub Custom13</description>
-						<label>[B]$LOCALIZE[31407] 3$INFO[Skin.String(Menu_Programs_Sub_Custom13_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Programs_Sub_Custom13_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,13)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom13)</onclick>
@@ -3313,7 +3313,7 @@
 					</control>
 					<control type="radiobutton" id="8116">
 						<description>Menu Programs Sub Custom14</description>
-						<label>[B]$LOCALIZE[31407] 4$INFO[Skin.String(Menu_Programs_Sub_Custom14_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_Programs_Sub_Custom14_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,14)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom14)</onclick>
@@ -3322,7 +3322,7 @@
 					</control>
 					<control type="radiobutton" id="8117">
 						<description>Menu Programs Sub Custom15</description>
-						<label>[B]$LOCALIZE[31407] 5$INFO[Skin.String(Menu_Programs_Sub_Custom15_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_Programs_Sub_Custom15_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,15)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom15)</onclick>
@@ -3331,7 +3331,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu Programs Sub Custom16</description>
-						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 6$INFO[Skin.String(Menu_Programs_Sub_Custom16_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,16)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom16)</onclick>
@@ -3340,7 +3340,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu Programs Sub Custom17</description>
-						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 7$INFO[Skin.String(Menu_Programs_Sub_Custom17_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,17)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom17)</onclick>
@@ -3349,7 +3349,7 @@
 					</control>
 					<control type="radiobutton" id="8120">
 						<description>Menu Programs Sub Custom18</description>
-						<label>[B]$LOCALIZE[31408] 3$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 8$INFO[Skin.String(Menu_Programs_Sub_Custom18_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,18)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom18)</onclick>
@@ -3358,7 +3358,7 @@
 					</control>
 					<control type="radiobutton" id="8121">
 						<description>Menu Programs Sub Custom19</description>
-						<label>[B]$LOCALIZE[31408] 4$INFO[Skin.String(Menu_Programs_Sub_Custom19_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 9$INFO[Skin.String(Menu_Programs_Sub_Custom19_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(ProgramsCustom,19)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Programs_Sub_Custom19)</onclick>
@@ -3419,7 +3419,7 @@
 					</control>
 					<control type="radiobutton" id="8102">
 						<description>Menu Weather Sub Custom1</description>
-						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Weather_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(WeatherCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Weather_Sub_Custom1)</onclick>
@@ -3428,7 +3428,7 @@
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Weather Sub Custom2</description>
-						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Weather_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(WeatherCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Weather_Sub_Custom2)</onclick>
@@ -3437,7 +3437,7 @@
 					</control>
 					<control type="radiobutton" id="8104">
 						<description>Menu Weather Sub Custom3</description>
-						<label>[B]$LOCALIZE[31408] 3$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Weather_Sub_Custom3_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(WeatherCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Weather_Sub_Custom3)</onclick>
@@ -3755,7 +3755,7 @@
 					</control>
 					<control type="radiobutton" id="8104">
 						<description>Menu PlayDisc Sub Custom1</description>
-						<label>[B]$LOCALIZE[31408] 1$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PlayDiscCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub_Custom1)</onclick>
@@ -3764,7 +3764,7 @@
 					</control>
 					<control type="radiobutton" id="8105">
 						<description>Menu PlayDisc Sub Custom2</description>
-						<label>[B]$LOCALIZE[31408] 2$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(PlayDiscCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_PlayDisc_Sub_Custom2)</onclick>
@@ -4354,10 +4354,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Movies Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Movies_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Movies_Sub_Custom1_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Movies Sub Custom1 Label</description>
@@ -4373,10 +4373,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Movies Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom2_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Movies Sub Custom2 Label</description>
@@ -4392,10 +4392,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Movies Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom3_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Movies Sub Custom3 Label</description>
@@ -4411,10 +4411,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Movies Sub Custom4 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom4_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Movies Sub Custom4 Label</description>
@@ -4430,10 +4430,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Movies Sub Custom5 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddon(Menu_Movies_Sub_Custom5_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Movies Sub Custom5 Label</description>
@@ -4507,10 +4507,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom1_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu TVShows Sub Custom1 Label</description>
@@ -4526,10 +4526,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom2_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu TVShows Sub Custom2 Label</description>
@@ -4545,10 +4545,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom3_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu TVShows Sub Custom3 Label</description>
@@ -4564,10 +4564,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom4 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom4_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu TVShows Sub Custom4 Label</description>
@@ -4583,10 +4583,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu TVShows Sub Custom5 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_TVShows_Sub_Custom5_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu TVShows Sub Custom5 Label</description>
@@ -4660,10 +4660,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu MusicVideos Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom1_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu MusicVideos Sub Custom1 Label</description>
@@ -4679,10 +4679,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu MusicVideos Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom2_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu MusicVideos Sub Custom2 Label</description>
@@ -4698,10 +4698,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu MusicVideos Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom3_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu MusicVideos Sub Custom3 Label</description>
@@ -4717,10 +4717,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu MusicVideos Sub Custom4 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom4_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu MusicVideos Sub Custom4 Label</description>
@@ -4736,10 +4736,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu MusicVideos Sub Custom5 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_MusicVideos_Sub_Custom5_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu MusicVideos Sub Custom5 Label</description>
@@ -4870,10 +4870,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Music Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom1_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom1_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Music Sub Custom1 Label</description>
@@ -4889,10 +4889,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Music Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom2_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom2_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Music Sub Custom2 Label</description>
@@ -4908,10 +4908,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Music Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom3_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom3_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Music Sub Custom3 Label</description>
@@ -4927,10 +4927,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Music Sub Custom4 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom4_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom4_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom4_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Music Sub Custom4 Label</description>
@@ -4946,10 +4946,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Music Sub Custom5 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom5_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom5_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Music_Sub_Custom5_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Music Sub Custom5 Label</description>
@@ -5119,10 +5119,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Pictures Sub Custom6 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom6_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom6_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom6_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom6 Label</description>
@@ -5138,10 +5138,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Pictures Sub Custom7 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom7_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom7_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom7_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom7 Label</description>
@@ -5157,10 +5157,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Pictures Sub Custom8 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom8_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom8_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom8_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom8 Label</description>
@@ -5176,10 +5176,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Pictures Sub Custom9 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom9_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom9_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom9_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom9 Label</description>
@@ -5195,10 +5195,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Pictures Sub Custom10 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom10_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom10_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Pictures_Sub_Custom10_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Pictures Sub Custom10 Label</description>
@@ -5463,10 +5463,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom11 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom11_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom11_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom11_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom11 Label</description>
@@ -5482,10 +5482,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom12 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom12_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom12_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom12_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom12 Label</description>
@@ -5501,10 +5501,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom13 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom13_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom13_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom13_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom13 Label</description>
@@ -5520,10 +5520,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom14 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom14_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom14_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom14_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom14 Label</description>
@@ -5539,10 +5539,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom15 Path</description>
-						<label>[B]- $LOCALIZE[31152][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom15_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom15_Path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom15_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom15 Label</description>
@@ -5559,10 +5559,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom16 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom16_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom16_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom16_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom16 Label</description>
@@ -5579,10 +5579,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom17 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom17_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom17_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom17_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom17 Label</description>
@@ -5599,10 +5599,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom18 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom18_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom18_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom18_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom18 Label</description>
@@ -5619,10 +5619,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Programs Sub Custom19 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom19_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom19_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.SetAddOn(Menu_Programs_Sub_Custom19_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Programs Sub Custom19 Label</description>
@@ -5696,10 +5696,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom1_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom1_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Weather Sub Custom1 Label</description>
@@ -5715,10 +5715,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom2_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom2_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Weather Sub Custom2 Label</description>
@@ -5734,10 +5734,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom3 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom3_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom3_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_Weather_Sub_Custom3_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu Weather Sub Custom3 Label</description>
@@ -5962,10 +5962,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom1 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom1_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.AddOn(Menu_PlayDisc_Sub_Custom1_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_PlayDisc_Sub_Custom1_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu PlayDisc Sub Custom1 Label</description>
@@ -5981,10 +5981,10 @@
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom2 Path</description>
-						<label>[B]- $LOCALIZE[31204][/B]</label>
+						<label>[B]- $LOCALIZE[31190][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom2_Path)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>Skin.AddOn(Menu_PlayDisc_Sub_Custom2_Path,xbmc.python.script)</onclick>
+						<onclick>Skin.AddOn(Menu_PlayDisc_Sub_Custom2_Path,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="8202">
 						<description>Menu PlayDisc Sub Custom2 Label</description>
@@ -8261,7 +8261,7 @@
 					<posx>0</posx>
 					<posy>180</posy>
 					<include>ButtonCommonValues</include>
-					<label>10020</label>
+					<label>24001</label>
 					<onfocus>Skin.SetString(SkinSettings,5)</onfocus>
 					<onleft>501</onleft>
 					<onright>501</onright>
