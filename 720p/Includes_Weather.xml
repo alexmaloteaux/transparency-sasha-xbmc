@@ -577,7 +577,7 @@
 			<aspectratio align="right">keep</aspectratio>
 		</control>
 	</include>
-	<include name="weatherplus">
+	<include name="weatherextended">
 		<control type="button" id="6000">
 			<description>fake button to steal focus</description>
 			<onleft>9000</onleft>
@@ -585,13 +585,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<onclick>-</onclick>
-			<visible>Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3) | Skin.String(WeatherPlus,4) | Skin.String(WeatherPlus,5) | Skin.String(WeatherPlus,6)</visible>
+			<visible>Skin.String(WeatherExtended,2) | Skin.String(WeatherExtended,3) | Skin.String(WeatherExtended,4) | Skin.String(WeatherExtended,5) | Skin.String(WeatherExtended,6)</visible>
 		</control>
 		<control type="group">
 			<description>Today</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>![Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3) | Skin.String(WeatherPlus,4) | Skin.String(WeatherPlus,5) | [Skin.String(WeatherPlus,6) + !IsEmpty(Window.Property(Alerts.RSS))]]</visible>
+			<visible>![Skin.String(WeatherExtended,2) | Skin.String(WeatherExtended,3) | Skin.String(WeatherExtended,4) | Skin.String(WeatherExtended,5) | [Skin.String(WeatherExtended,6) + !IsEmpty(Window.Property(Alerts.RSS))]]</visible>
 			<control type="group">
 				<include>Window_OpenClose_Right_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Panel3</include>
@@ -627,8 +627,8 @@
 						<font>font-20</font>
 						<label>$INFO[Window.Property(Updated)]</label>
 					</control>
-					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Current_Icon</include>
-					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Current_Icon</include>
+					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Current_Icon</include>
+					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Current_Icon</include>
 					<control type="label">
 						<posx>188</posx>
 						<posy>50</posy>
@@ -651,9 +651,9 @@
 					</control>
 					<control type="label">
 						<posx>140</posx>
-						<posy>208</posy>
+						<posy>200</posy>
 						<width>150</width>
-						<height>130</height>
+						<height>140</height>
 						<align>right</align>
 						<textcolor>lightblue</textcolor>
 						<font>font-23</font>
@@ -661,11 +661,11 @@
 					</control>
 					<control type="label">
 						<posx>160</posx>
-						<posy>208</posy>
+						<posy>200</posy>
 						<width>250</width>
-						<height>130</height>
+						<height>140</height>
 						<font>font-23</font>
-						<label>$INFO[Window.Property(Hourly.1.Precipitation),,%][CR]$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(Current.Humidity)][CR]$INFO[Window.Property(Current.UVIndex)][CR]$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(Current.Wind)]</label>
+						<label>$VAR[Weather01]</label>
 					</control>
 				</control>
 				<control type="image">
@@ -719,7 +719,7 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.1.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather02]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -728,10 +728,10 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.1.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather03]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day1_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day1_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day1_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day1_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -782,7 +782,7 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.2.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather04]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -791,10 +791,10 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.2.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather05]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day2_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day2_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day2_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day2_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -845,7 +845,7 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.3.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather06]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -854,10 +854,10 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.3.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather07]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day3_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day3_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day3_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day3_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -908,7 +908,7 @@
 							<height>60</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.4.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather08]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -917,10 +917,10 @@
 							<height>80</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.4.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather09]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day4_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day4_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day4_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day4_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -971,7 +971,7 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.5.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather10]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -980,10 +980,10 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.5.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather11]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day5_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day5_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day5_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day5_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1034,7 +1034,7 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.6.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather12]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -1043,10 +1043,10 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.6.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather13]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day6_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day6_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day6_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day6_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1097,7 +1097,7 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.7.HighTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather14]</label>
 						</control>
 						<control type="label">
 							<posx>0</posx>
@@ -1106,10 +1106,10 @@
 							<height>20</height>
 							<align>center</align>
 							<font>font-18</font>
-							<label fallback="-">$LOCALIZE[418]: $INFO[Window.Property(Daily.7.LowTemperature)]$INFO[System.TemperatureUnits]</label>
+							<label fallback="-">$VAR[Weather15]</label>
 						</control>
-						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Animated_Day7_Icon</include>
-						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherPlus_Day7_Icon</include>
+						<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Animated_Day7_Icon</include>
+						<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">WeatherExtended_Day7_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1139,7 +1139,7 @@
 					<label>[B]$INFO[Window.Property(Weather.CurrentMap)][/B]</label>
 					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<visible>!Control.HasFocus(6001) + !Control.HasFocus(5998) + !Control.HasFocus(5999)</visible>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus) + [!Control.HasFocus(6001) + !Control.HasFocus(5998) + !Control.HasFocus(5999)]</visible>
 				</control>
 				<control type="spincontrol" id="5999">
 					<description>Next page button</description>
@@ -1153,6 +1153,7 @@
 					<onup>5998</onup>
 					<textcolor>white</textcolor>
 					<showonepage>true</showonepage>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="group" id="6000">
 					<control type="list" id="6001">
@@ -1169,7 +1170,7 @@
 						<scrolltime>200</scrolltime>
 						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-						<visible allowhiddenfocus="true">Control.HasFocus(6001) | Control.HasFocus(5998) | Control.HasFocus(5999)</visible>
+						<visible allowhiddenfocus="true">StringCompare(Weather.Plugin,weather.weatherplus) + [Control.HasFocus(6001) | Control.HasFocus(5998) | Control.HasFocus(5999)]</visible>
 						<itemlayout width="350" height="20">
 							<control type="label">
 								<posx>175</posx>
@@ -1751,7 +1752,8 @@
 					<control type="button" id="6002">
 						<description>fake button to steal focus</description>
 						<onleft>5997</onleft>
-						<onright>5999</onright>
+						<onright condition="!StringCompare(Weather.Plugin,weather.weatherplus)">5998</onright>
+						<onright condition="StringCompare(Weather.Plugin,weather.weatherplus)">5999</onright>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<onclick>-</onclick>
@@ -1785,7 +1787,7 @@
 					<posy>80</posy>
 					<width>628</width>
 					<height>350</height>
-					<visible>![IsEmpty(Window.Property(Video)) + IsEmpty(Window.Property(Video.Local))] + Player.HasVideo</visible>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus) + ![IsEmpty(Window.Property(Video)) + IsEmpty(Window.Property(Video.Local))] + Player.HasVideo</visible>
 				</control>
 				<control type="button" id="5998">
 					<description>zoom</description>
@@ -1796,10 +1798,14 @@
 					<texturefocus>-</texturefocus>
 					<texturenofocus>magnifier-nofocus.png</texturenofocus>
 					<onclick>-</onclick>
-					<onup>5999</onup>
-					<ondown>5999</ondown>
-					<onleft>5997</onleft>
-					<onright>5999</onright>
+					<onup condition="!StringCompare(Weather.Plugin,weather.weatherplus)">6002</onup>
+					<onup condition="StringCompare(Weather.Plugin,weather.weatherplus)">5999</onup>
+					<ondown condition="!StringCompare(Weather.Plugin,weather.weatherplus)">6002</ondown>
+					<ondown condition="StringCompare(Weather.Plugin,weather.weatherplus)">5999</ondown>
+					<onleft condition="!StringCompare(Weather.Plugin,weather.weatherplus)">6002</onleft>
+					<onleft condition="StringCompare(Weather.Plugin,weather.weatherplus)">5997</onleft>
+					<onright condition="!StringCompare(Weather.Plugin,weather.weatherplus)">6002</onright>
+					<onright condition="StringCompare(Weather.Plugin,weather.weatherplus)">5999</onright>
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
 					<visible>!Control.HasFocus(5998)</visible>
 				</control>
@@ -1852,7 +1858,7 @@
 			<description>Hourly</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,2)</visible>
+			<visible>Skin.String(WeatherExtended,2)</visible>
 			<control type="group">
 				<description>Hourly.1</description>
 				<include>Window_OpenClose_Left_Animation</include>
@@ -1900,7 +1906,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.1.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.1.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather16]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -1912,7 +1918,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.1.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.1.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather17]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -1973,7 +1979,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.2.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.2.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather18]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -1985,7 +1991,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.2.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.2.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather19]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2046,7 +2052,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.3.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.3.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather20]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2058,7 +2064,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.3.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.3.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather21]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2119,7 +2125,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.4.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.4.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather22]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2131,7 +2137,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.4.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.4.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather23]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2192,7 +2198,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.5.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.5.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather24]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2204,7 +2210,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.5.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.5.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather25]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2265,7 +2271,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.6.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.6.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather26]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2277,7 +2283,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.6.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.6.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather27]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2338,7 +2344,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.7.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.7.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather28]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2350,7 +2356,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.7.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.7.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather29]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2411,7 +2417,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.8.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.8.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather30]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2423,7 +2429,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.8.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.8.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather31]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2484,7 +2490,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.9.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.9.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather32]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2496,7 +2502,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.9.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.9.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather33]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2557,7 +2563,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.10.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.10.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather34]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2569,7 +2575,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.10.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.10.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather35]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2630,7 +2636,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.11.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.11.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather36]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2642,7 +2648,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.11.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.11.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather37]</label>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
@@ -2703,7 +2709,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.12.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.12.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>$VAR[Weather38]</label>
 				</control>
 				<control type="label">
 					<posx>252</posx>
@@ -2715,7 +2721,7 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.12.Precipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR], %][CR][B]$INFO[Window.Property(Hourly.12.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR], %][/B]</label>
+					<label>$VAR[Weather39]</label>
 				</control>1
 				<control type="label">
 					<posx>-2</posx>
@@ -2734,7 +2740,7 @@
 			<description>36 Hour</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,3)</visible>
+			<visible>Skin.String(WeatherExtended,3)</visible>
 			<control type="group">
 				<control type="group">
 					<include>Window_OpenClose_Right_Animation</include>
@@ -2856,7 +2862,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(36Hour.1.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather40]</label>
 					</control>
 					<control type="label">
 						<posx>193</posx>
@@ -2867,11 +2873,11 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(36Hour.1.Precipitation),,%][/B]</label>
+						<label>$VAR[Weather41]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>395</posy>
+						<posy>392</posy>
 						<width>386</width>
 						<height>23</height>
 						<align>center</align>
@@ -2977,7 +2983,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(36Hour.2.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather42]</label>
 					</control>
 					<control type="label">
 						<posx>193</posx>
@@ -2988,11 +2994,11 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(36Hour.2.Precipitation),,%][/B]</label>
+						<label>$VAR[Weather43]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>395</posy>
+						<posy>392</posy>
 						<width>386</width>
 						<height>23</height>
 						<align>center</align>
@@ -3098,7 +3104,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(36Hour.3.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather44]</label>
 					</control>
 					<control type="label">
 						<posx>193</posx>
@@ -3109,11 +3115,11 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(36Hour.3.Precipitation),,%][/B]</label>
+						<label>$VAR[Weather45]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>395</posy>
+						<posy>392</posy>
 						<width>386</width>
 						<height>23</height>
 						<align>center</align>
@@ -3147,7 +3153,7 @@
 			<description>Weekend</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,4)</visible>
+			<visible>Skin.String(WeatherExtended,4)</visible>
 			<control type="group">
 				<control type="group">
 					<include>Window_OpenClose_Left_Animation</include>
@@ -3205,7 +3211,7 @@
 						<font>font-30</font>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$LOCALIZE[15][/B]</label>
+						<label>$VAR[Weather46]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3217,6 +3223,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[Window.Property(Weekend.1.Date)][/B]</label>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 					</control>
 					<control type="image">
 						<posx>50</posx>
@@ -3224,6 +3231,18 @@
 						<width>286</width>
 						<height>1</height>
 						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.1.LongDate)][/B]</label>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3235,7 +3254,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$LOCALIZE[33027]: $INFO[Window.Property(Weekend.1.Sunrise)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3247,7 +3266,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$LOCALIZE[33028]: $INFO[Window.Property(Weekend.1.Sunset)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3259,7 +3278,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[Window.Property(Weekend.1.Observed)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Weekend1_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Weekend1_Icon</include>
@@ -3283,7 +3302,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.1.LowTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather49]</label>
 					</control>
 					<control type="label">
 						<posx>261</posx>
@@ -3305,7 +3324,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.1.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather50]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3327,8 +3346,7 @@
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Precipitation),,%][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<label>$VAR[Weather55]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3339,8 +3357,7 @@
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$LOCALIZE[404]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Wind)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<label>$VAR[Weather56]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3352,7 +3369,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[406]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Humidity)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.1.Observed))]</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3364,7 +3381,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[403]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.UV)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3376,7 +3393,7 @@
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[I]$LOCALIZE[10508]: [/I]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.1.Observed))]</visible>
 					</control>
 					<control type="image">
 						<posx>90</posx>
@@ -3384,7 +3401,7 @@
 						<width>206</width>
 						<height>1</height>
 						<texture>white.png</texture>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.1.Observed))]</visible>
 					</control>
 					<control type="textbox">
 						<posx>20</posx>
@@ -3395,8 +3412,7 @@
 						<font>font-21</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.1.Forecast)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<label>$VAR[Weather61]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3408,7 +3424,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedPrecipitation)][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3420,7 +3436,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31601]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedAvgLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3432,7 +3448,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31602]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedAvgHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3444,7 +3460,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31603]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedRecordLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3456,7 +3472,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31604]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.ObservedRecordHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.1.Observed))</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -3473,7 +3489,7 @@
 						<font>font-30</font>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$LOCALIZE[16][/B]</label>
+						<label>$VAR[Weather47]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3485,6 +3501,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[Window.Property(Weekend.2.Date)][/B]</label>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 					</control>
 					<control type="image">
 						<posx>50</posx>
@@ -3492,6 +3509,18 @@
 						<width>286</width>
 						<height>1</height>
 						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.2.LongDate)][/B]</label>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3503,7 +3532,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$LOCALIZE[33027]: $INFO[Window.Property(Weekend.2.Sunrise)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3515,7 +3544,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$LOCALIZE[33028]: $INFO[Window.Property(Weekend.2.Sunset)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3527,7 +3556,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[Window.Property(Weekend.2.Observed)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Weekend2_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Weekend2_Icon</include>
@@ -3551,7 +3580,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.2.LowTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather51]</label>
 					</control>
 					<control type="label">
 						<posx>261</posx>
@@ -3573,7 +3602,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.2.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather52]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3595,8 +3624,7 @@
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Precipitation),,%][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<label>$VAR[Weather57]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3607,8 +3635,7 @@
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$LOCALIZE[404]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Wind)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<label>$VAR[Weather58]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3620,7 +3647,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[406]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Humidity)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.2.Observed))]</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3632,7 +3659,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[403]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.UV)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3644,7 +3671,7 @@
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[I]$LOCALIZE[10508]: [/I]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.2.Observed))]</visible>
 					</control>
 					<control type="image">
 						<posx>90</posx>
@@ -3652,7 +3679,7 @@
 						<width>206</width>
 						<height>1</height>
 						<texture>white.png</texture>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.2.Observed))]</visible>
 					</control>
 					<control type="textbox">
 						<posx>20</posx>
@@ -3663,8 +3690,7 @@
 						<font>font-21</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.2.Forecast)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<label>$VAR[Weather62]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3676,7 +3702,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedPrecipitation)][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3688,7 +3714,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31601]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedAvgLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3700,7 +3726,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31602]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedAvgHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3712,7 +3738,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31603]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedRecordLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3724,7 +3750,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31604]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.ObservedRecordHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.2.Observed))</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -3741,7 +3767,7 @@
 						<font>font-30</font>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$LOCALIZE[17][/B]</label>
+						<label>$VAR[Weather48]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3753,6 +3779,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[Window.Property(Weekend.3.Date)][/B]</label>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 					</control>
 					<control type="image">
 						<posx>50</posx>
@@ -3760,6 +3787,18 @@
 						<width>286</width>
 						<height>1</height>
 						<texture>white.png</texture>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>386</width>
+						<height>23</height>
+						<align>center</align>
+						<font>font-23</font>
+						<textcolor>lightblue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>[B]$INFO[Window.Property(Weekend.3.LongDate)][/B]</label>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3771,7 +3810,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$LOCALIZE[33027]: $INFO[Window.Property(Weekend.3.Sunrise)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3783,7 +3822,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$LOCALIZE[33028]: $INFO[Window.Property(Weekend.3.Sunset)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3795,7 +3834,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[Window.Property(Weekend.3.Observed)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<include condition="!Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Animated_Weekend3_Icon</include>
 					<include condition="Skin.HasSetting(Animate_Weather_Page_Icons)">Weather_Weekend3_Icon</include>
@@ -3819,7 +3858,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.3.LowTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather53]</label>
 					</control>
 					<control type="label">
 						<posx>261</posx>
@@ -3841,7 +3880,7 @@
 						<font>font-30</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.3.HighTemperature)]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather54]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3863,8 +3902,7 @@
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.Precipitation),,%][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<label>$VAR[Weather59]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3875,8 +3913,7 @@
 						<font>font-20c</font>
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$LOCALIZE[404]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.Wind)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<label>$VAR[Weather60]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3888,7 +3925,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[406]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.Humidity)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.3.Observed))]</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3900,7 +3937,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[403]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.UV)][/COLOR][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3912,7 +3949,7 @@
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[I]$LOCALIZE[10508]: [/I]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.3.Observed))]</visible>
 					</control>
 					<control type="image">
 						<posx>90</posx>
@@ -3920,7 +3957,7 @@
 						<width>206</width>
 						<height>1</height>
 						<texture>white.png</texture>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.wunderground) | [StringCompare(Weather.Plugin,weather.weatherplus) + IsEmpty(Window.Property(Weekend.3.Observed))]</visible>
 					</control>
 					<control type="textbox">
 						<posx>20</posx>
@@ -3931,8 +3968,7 @@
 						<font>font-21</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Weekend.3.Forecast)][/B]</label>
-						<visible>IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<label>$VAR[Weather63]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3944,7 +3980,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[33021]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedPrecipitation)][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3956,7 +3992,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31601]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedAvgLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3968,7 +4004,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31602]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedAvgHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3980,7 +4016,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31603]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedRecordLowTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3992,7 +4028,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[31604]: [B][COLOR=white]$INFO[Window.Property(Weekend.3.ObservedRecordHighTemperature)]$INFO[System.TemperatureUnits][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.3.Observed))</visible>
+						<visible>StringCompare(Weather.Plugin,weather.weatherplus) + !IsEmpty(Window.Property(Weekend.3.Observed))</visible>
 					</control>
 				</control>
 			</control>
@@ -4001,7 +4037,7 @@
 			<description>10 Day</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,5)</visible>
+			<visible>Skin.String(WeatherExtended,5)</visible>
 			<control type="group">
 				<control type="group">
 					<include>Window_OpenClose_Right_Animation</include>
@@ -4160,35 +4196,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.1.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather64]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.1.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.1.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather65]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4247,35 +4272,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.2.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather66]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.2.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.2.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather67]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4334,35 +4348,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.3.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather68]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.3.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.3.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather69]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4421,35 +4424,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.4.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather70]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.4.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.4.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather71]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4508,35 +4500,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.5.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather72]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.5.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.5.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather73]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4595,35 +4576,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.6.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather74]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.6.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.6.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather75]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4682,35 +4652,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.7.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather76]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.7.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.7.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather77]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4769,35 +4728,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.8.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather78]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.8.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.8.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather79]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4856,35 +4804,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.9.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather80]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.9.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.9.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather81]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4943,35 +4880,24 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>259</posy>
-						<width>77</width>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.10.HighTemperature),[COLOR=blue]$LOCALIZE[419]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
+						<label>$VAR[Weather82]</label>
 					</control>
 					<control type="label">
-						<posx>77</posx>
-						<posy>259</posy>
-						<width>77</width>
+						<posx>0</posx>
+						<posy>279</posy>
+						<width>232</width>
 						<height>30</height>
 						<align>center</align>
 						<font>font-19</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.10.LowTemperature),[COLOR=blue]$LOCALIZE[418]: [/COLOR][CR]]$INFO[System.TemperatureUnits][/B]</label>
-					</control>
-					<control type="label">
-						<posx>154</posx>
-						<posy>259</posy>
-						<width>78</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font-19</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window.Property(Daily.10.Precipitation),[COLOR=blue]$LOCALIZE[33022]: [/COLOR][CR],%][/B]</label>
+						<label>$VAR[Weather83]</label>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -4991,7 +4917,7 @@
 			<description>Alerts</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,6) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
+			<visible>Skin.String(WeatherExtended,6) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
 			<control type="group">
 				<include>Window_OpenClose_Right_Animation</include>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Panel10</include>
@@ -5014,7 +4940,7 @@
 					<font>font-30c</font>
 					<textcolor>lightblue</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>[B]$INFO[Window.Property(Alerts.Label)][/B]</label>
+					<label>$VAR[Weather84]</label>
 				</control>
 				<control type="image">
 					<posx>180</posx>
@@ -5038,7 +4964,7 @@
 			</control>
 		</control>
 	</include>
-	<include name="WeatherPlus_Current_Icon">
+	<include name="WeatherExtended_Current_Icon">
 		<control type="image">
 			<posx>0</posx>
 			<posy>10</posy>
@@ -5047,7 +4973,7 @@
 			<texture>$INFO[Window.Property(Current.ConditionIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Current_Icon">
+	<include name="WeatherExtended_Animated_Current_Icon">
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>10</posy>
@@ -5059,7 +4985,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day1_Icon">
+	<include name="WeatherExtended_Day1_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5068,7 +4994,7 @@
 			<texture>$INFO[Window.Property(Daily.1.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day1_Icon">
+	<include name="WeatherExtended_Animated_Day1_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5080,7 +5006,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day2_Icon">
+	<include name="WeatherExtended_Day2_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5089,7 +5015,7 @@
 			<texture>$INFO[Window.Property(Daily.2.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day2_Icon">
+	<include name="WeatherExtended_Animated_Day2_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5101,7 +5027,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day3_Icon">
+	<include name="WeatherExtended_Day3_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5110,7 +5036,7 @@
 			<texture>$INFO[Window.Property(Daily.3.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day3_Icon">
+	<include name="WeatherExtended_Animated_Day3_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5122,7 +5048,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day4_Icon">
+	<include name="WeatherExtended_Day4_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5131,7 +5057,7 @@
 			<texture>$INFO[Window.Property(Daily.4.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day4_Icon">
+	<include name="WeatherExtended_Animated_Day4_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5143,7 +5069,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day5_Icon">
+	<include name="WeatherExtended_Day5_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5152,7 +5078,7 @@
 			<texture>$INFO[Window.Property(Daily.5.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day5_Icon">
+	<include name="WeatherExtended_Animated_Day5_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5164,7 +5090,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day6_Icon">
+	<include name="WeatherExtended_Day6_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5173,7 +5099,7 @@
 			<texture>$INFO[Window.Property(Daily.6.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day6_Icon">
+	<include name="WeatherExtended_Animated_Day6_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5185,7 +5111,7 @@
 			<fadetime>0</fadetime>
 		</control>
 	</include>
-	<include name="WeatherPlus_Day7_Icon">
+	<include name="WeatherExtended_Day7_Icon">
 		<control type="image">
 			<posx>20</posx>
 			<posy>100</posy>
@@ -5194,7 +5120,7 @@
 			<texture>$INFO[Window.Property(Daily.7.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="WeatherPlus_Animated_Day7_Icon">
+	<include name="WeatherExtended_Animated_Day7_Icon">
 		<control type="multiimage">
 			<posx>20</posx>
 			<posy>100</posy>
