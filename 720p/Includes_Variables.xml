@@ -415,6 +415,10 @@
 		<value condition="!Container.Content(MusicVideos)">flags/movies/studio/$INFO[VideoPlayer.Studio,,.png]</value>
 		<value condition="Container.Content(MusicVideos)">flags/music/recordlabel/$INFO[VideoPlayer.Studio,,.png]</value>
 	</variable>
+	<variable name="MusicVisualisation">
+		<value condition="!IsEmpty(MusicPlayer.Property(Artist_Description))">[CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR][B]$INFO[MusicPlayer.Property(Artist_Description)][CR] [CR] [CR]$INFO[MusicPlayer.Property(Album_Description)][/B][CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] </value>
+		<value condition="IsEmpty(MusicPlayer.Property(Artist_Description))">[CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR][B]$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)][/B][CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] </value>
+	</variable>
 	<variable name="MyWeatherButtonImage">
 		<value condition="!Control.HasFocus(5994)">scroll-down-2.png</value>
 		<value condition="Control.HasFocus(5994)">scroll-down-focus-2.png</value>
