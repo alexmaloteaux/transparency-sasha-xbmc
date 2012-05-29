@@ -623,6 +623,14 @@
 			<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.2.Path)]&quot;)</onclick>
 		</item>
 		<item>
+			<label>$INFO[Window.Property(LatestAlbum.3.Artist)]</label>
+			<label2>$INFO[Window.Property(LatestAlbum.3.Title)]</label2>
+			<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
+			<property name="FanartImage">$INFO[Window.Property(LatestAlbum.3.Fanart)]</property>
+			<onclick>PlayList.Clear</onclick>
+			<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.3.Path)]&quot;)</onclick>
+		</item>
+		<item>
 			<label>$INFO[Window.Property(LatestAlbum.4.Artist)]</label>
 			<label2>$INFO[Window.Property(LatestAlbum.4.Title)]</label2>
 			<thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
@@ -680,14 +688,6 @@
 		</item>
 	</include>
 	<include name="RandomAlbumsList">
-		<item>
-			<label>$INFO[Window.Property(LatestAlbum.3.Artist)]</label>
-			<label2>$INFO[Window.Property(LatestAlbum.3.Title)]</label2>
-			<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
-			<property name="FanartImage">$INFO[Window.Property(LatestAlbum.3.Fanart)]</property>
-			<onclick>PlayList.Clear</onclick>
-			<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.3.Path)]&quot;)</onclick>
-		</item>
 		<item>
 			<label>$INFO[Window.Property(RandomAlbum.1.Artist)]</label>
 			<label2>$INFO[Window.Property(RandomAlbum.1.Title)]</label2>
