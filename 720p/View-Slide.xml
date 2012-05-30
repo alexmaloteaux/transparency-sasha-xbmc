@@ -31,7 +31,7 @@
 				<height>116</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="-35,120,76,116" end="-111,120,75,115" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-8).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-8).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>37</posx>
@@ -58,7 +58,7 @@
 				<height>118</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="37,118,78,118" end="-35,120,76,116" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>111</posx>
@@ -85,7 +85,7 @@
 				<height>122</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="111,115,80,122" end="37,118,78,118" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>187</posx>
@@ -112,7 +112,7 @@
 				<height>127</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="187,110,82,127" end="111,115,80,122" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>265</posx>
@@ -139,7 +139,7 @@
 				<height>135</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="265,102,88,135" end="187,110,82,127" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>349</posx>
@@ -166,7 +166,7 @@
 				<height>154</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="349,84,100,154" end="265,102,88,135" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>444</posx>
@@ -193,7 +193,7 @@
 				<height>189</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="444,50,122,189" end="349,84,100,154" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>560</posx>
@@ -220,7 +220,7 @@
 				<height>248</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="560,-6,160,248" end="444,50,122,189" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>712</posx>
@@ -247,7 +247,7 @@
 				<height>189</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="712,50,122,189" end="560,-6,160,248" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>828</posx>
@@ -274,7 +274,7 @@
 				<height>154</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="828,84,100,154" end="712,50,122,189" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>924</posx>
@@ -301,7 +301,7 @@
 				<height>135</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="924,102,88,135" end="828,84,100,154" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1008</posx>
@@ -328,7 +328,7 @@
 				<height>127</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1008,110,82,127" end="924,102,88,135" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1087</posx>
@@ -355,7 +355,7 @@
 				<height>122</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1087,115,80,122" end="1008,110,82,127" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1164</posx>
@@ -382,7 +382,7 @@
 				<height>118</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1164,118,78,118" end="1087,115,80,122" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1239</posx>
@@ -409,7 +409,7 @@
 				<height>116</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1239,120,76,116" end="1164,118,78,118" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1312</posx>
@@ -436,7 +436,7 @@
 				<height>115</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1312,120,75,115" end="1239,120,76,116" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnNext + !stringcompare(ListItem(7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !stringcompare(ListItem(7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 		</control>
 		<control type="group" id="7004">
@@ -470,7 +470,7 @@
 				<height>115</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="-107,120,75,115" end="-35,120,76,116" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>-35</posx>
@@ -497,7 +497,7 @@
 				<height>116</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="-35,120,76,116" end="37,118,78,118" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>37</posx>
@@ -524,7 +524,7 @@
 				<height>118</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="37,118,78,118" end="111,115,80,122" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>111</posx>
@@ -551,7 +551,7 @@
 				<height>122</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="111,115,80,122" end="187,110,82,127" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>187</posx>
@@ -578,7 +578,7 @@
 				<height>127</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="187,110,82,127" end="265,102,88,135" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>265</posx>
@@ -605,7 +605,7 @@
 				<height>135</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="265,102,88,135" end="349,84,100,154" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>349</posx>
@@ -632,7 +632,7 @@
 				<height>154</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="349,84,100,154" end="444,50,122,189" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>444</posx>
@@ -659,7 +659,7 @@
 				<height>189</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="444,50,122,189" end="560,-6,160,248" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>560</posx>
@@ -686,7 +686,7 @@
 				<height>248</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="560,-6,160,248" end="712,50,122,189" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>712</posx>
@@ -713,7 +713,7 @@
 				<height>189</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="712,50,122,189" end="828,84,100,154" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>828</posx>
@@ -740,7 +740,7 @@
 				<height>154</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="828,84,100,154" end="924,102,88,135" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>924</posx>
@@ -767,7 +767,7 @@
 				<height>135</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="924,102,88,135" end="1008,110,82,127" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1008</posx>
@@ -794,7 +794,7 @@
 				<height>127</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1008,110,82,127" end="1087,115,80,122" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1087</posx>
@@ -821,7 +821,7 @@
 				<height>122</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1087,115,80,122" end="1164,118,78,118" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1164</posx>
@@ -848,7 +848,7 @@
 				<height>118</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1164,118,78,118" end="1239,120,76,116" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<posx>1239</posx>
@@ -875,7 +875,7 @@
 				<height>116</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1239,120,76,116" end="1315,120,75,115" time="250">Hidden</animation>
-				<visible>Container.Content(TVShows) + Container(596).OnPrevious + !stringcompare(ListItem(8).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !stringcompare(ListItem(8).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -905,7 +905,7 @@
 					<width>76</width>
 					<height>116</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -931,7 +931,7 @@
 					<width>78</width>
 					<height>118</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -957,7 +957,7 @@
 					<width>80</width>
 					<height>122</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -983,7 +983,7 @@
 					<width>82</width>
 					<height>127</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1009,7 +1009,7 @@
 					<width>88</width>
 					<height>135</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1035,7 +1035,7 @@
 					<width>100</width>
 					<height>154</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1061,7 +1061,7 @@
 					<width>122</width>
 					<height>189</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(-1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1087,7 +1087,7 @@
 					<width>160</width>
 					<height>248</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(0).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
 					<posx>658</posx>
@@ -1121,7 +1121,7 @@
 					<width>122</width>
 					<height>189</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(1).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1147,7 +1147,7 @@
 					<width>100</width>
 					<height>154</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(2).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1173,7 +1173,7 @@
 					<width>88</width>
 					<height>135</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(3).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1199,7 +1199,7 @@
 					<width>82</width>
 					<height>127</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(4).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1225,7 +1225,7 @@
 					<width>80</width>
 					<height>122</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(5).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1251,7 +1251,7 @@
 					<width>78</width>
 					<height>118</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(6).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1277,14 +1277,14 @@
 					<width>76</width>
 					<height>116</height>
 					<texture>case-tv.png</texture>
-					<visible>Container.Content(TVShows) + !stringcompare(ListItem(7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !stringcompare(ListItem(7).Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 		</control>
 		<control type="wraplist" id="596">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list</description>
-			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)]</visible>
+			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<posx>-785</posx>
 			<posy>487</posy>
 			<width>2850</width>
@@ -1369,12 +1369,12 @@
 				<posy>60</posy>
 				<width>577</width>
 				<height>40</height>
-				<label>[B]$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ][/B]</label>
+				<label>[B]$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : , - ]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ][/B]</label>
 				<textcolor>lightblue</textcolor>
 				<font>font-21</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<visible>Container.Content(TVShows)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			</control>
 			<control type="button" id="7008">
 				<posx>1147</posx>
@@ -1399,7 +1399,7 @@
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>!Container.Content(TVShows)</visible>
+				<visible>Container.Content(Movies)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1459,7 +1459,7 @@
 					<effect type="fade" start="0" end="100" time="0" delay="450"/>
 					<effect type="rotatey" center="640" start="-90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
-				<visible>Control.IsVisible(596) + ![Container.Content(Movies) + IsEmpty(ListItem.Plot)] + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)] + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
+				<visible>Control.IsVisible(596) + ![Container.Content(Movies) + IsEmpty(ListItem.Plot)] + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)] + !Container.Content(Seasons) + !stringcompare(ListItem.Label,..) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
 				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay51</include>
 				<control type="image">
 					<posx>160</posx>
