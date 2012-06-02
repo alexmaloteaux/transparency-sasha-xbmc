@@ -271,15 +271,15 @@
 					<visible>LastFM.RadioPlaying</visible>
 				</control>
 				<control type="button" id="917">
-					<description>last.fm hate button</description>
+					<description>last.fm ban button</description>
 					<posx>-40</posx>
 					<posy>0</posy>
 					<width>40</width>
 					<height>40</height>
 					<label>-</label>
 					<font>-</font>
-					<texturenofocus>osd-lastfmhate-nofocus.png</texturenofocus>
-					<texturefocus>osd-lastfmhate-focus.png</texturefocus>
+					<texturenofocus>osd-lastfmban-nofocus.png</texturenofocus>
+					<texturefocus>osd-lastfmban-focus.png</texturefocus>
 					<onclick>LastFM.Ban</onclick>
 					<onleft>916</onleft>
 					<onright>991</onright>
