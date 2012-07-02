@@ -2781,22 +2781,22 @@
 					<visible>Skin.HasSetting(Menu_PlayDisc)</visible>
 				</item>
 				<item id="14">
-					<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
-					<onclick>$INFO[Skin.String(Menu_Custom1_Path)]</onclick>
+					<label>$INFO[Skin.String(Menu_Custom1.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom1.Path)]</onclick>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Custom1_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Custom1)</visible>
 				</item>
 				<item id="15">
-					<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
-					<onclick>$INFO[Skin.String(Menu_Custom2_Path)]</onclick>
+					<label>$INFO[Skin.String(Menu_Custom2.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom2.Path)]</onclick>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Custom2_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Custom2)</visible>
 				</item>
 				<item id="16">
-					<label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
-					<onclick>$INFO[Skin.String(Menu_Custom3_Path)]</onclick>
+					<label>$INFO[Skin.String(Menu_Custom3.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Custom3.Path)]</onclick>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Custom3_Folder)]</thumb>
 					<visible>Skin.HasSetting(Menu_Custom3)</visible>
