@@ -1285,9 +1285,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list</description>
 			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
-			<posx>-785</posx>
+			<posx>-635</posx>
 			<posy>487</posy>
-			<width>2850</width>
+			<width>2550</width>
 			<height>233</height>
 			<onleft>596</onleft>
 			<onright>596</onright>
