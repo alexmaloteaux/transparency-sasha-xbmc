@@ -474,6 +474,18 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 		</control>
 	</include>
+	<include name="logo-movies">
+		<control type="image">
+			<posx>10</posx>
+			<posy>30</posy>
+			<width>230</width>
+			<height>89</height>
+			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(590) | Control.IsVisible(596)] + Container.Content(Movies) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+		</control>
+	</include>
 	<include name="logo-tv">
 		<control type="image">
 			<posx>10</posx>

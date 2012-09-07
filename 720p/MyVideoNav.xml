@@ -103,6 +103,7 @@
 		</control>
 		<include condition="Skin.HasSetting(SeasonFanart) + !Skin.HasSetting(SafeMode)">fanart-seasons</include>
 		<include condition="Skin.HasSetting(TVLogo) + !Skin.HasSetting(SafeMode)">logo-tv</include>
+		<include condition="Skin.HasSetting(MovieLogo) + !Skin.HasSetting(SafeMode)">logo-movies</include>
 		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
