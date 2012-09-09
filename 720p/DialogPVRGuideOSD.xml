@@ -37,7 +37,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-32</font>
-				<label>$LOCALIZE[19029]$INFO[VideoPlayer.ChannelName, - ]</label>
+				<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
 				<textcolor>blue</textcolor>
 			</control>
 			<control type="image">
@@ -92,7 +92,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Label2</info>
+						<info>ListItem.StartTime</info>
 					</control>
 					<control type="label">
 						<posx>700</posx>
@@ -148,7 +148,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Label2</info>
+						<info>ListItem.StartTime</info>
 					</control>
 					<control type="label">
 						<posx>700</posx>
@@ -162,6 +162,17 @@
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
+			</control>
+			<control type="label">
+				<posx>50</posx>
+				<posy>470</posy>
+				<width>720</width>
+				<height>20</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<label>$INFO[Container(11).ListItem.StartDate]</label>
+				<textcolor>lightblue</textcolor>
 			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
