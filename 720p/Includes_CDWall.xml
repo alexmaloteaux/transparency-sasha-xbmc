@@ -5,7 +5,7 @@
 			<posy>-15</posy>
 			<animation effect="fade" start="100" end="20" time="0" condition="![Window.IsVisible(Home) + Skin.HasSetting(HideHomeVizBackground)] + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + Skin.HasSetting(Vis-CDWall) + ![Window.IsVisible(Home) + Skin.HasSetting(HideHomeVizBackground)] + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(Vis-CDWall) + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
 			<control type="multiimage">
 				<posx>0</posx>
 				<posy>0</posy>

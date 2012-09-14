@@ -138,7 +138,7 @@
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" start="100" end="20" time="0" condition="![Window.IsVisible(Home) + Skin.HasSetting(HideHomeVizBackground)] + [StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<visible>Player.HasAudio + Skin.HasSetting(Vis-Slideshow) + ![Window.IsVisible(Home) + Skin.HasSetting(HideHomeVizBackground)] + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(Vis-Slideshow) + ![substring(Player.FolderPath,pvr://) | substring(Player.FolderPath,http://) | substring(Player.FolderPath,https://) | substring(Player.FolderPath,htsp://)]</visible>
 		</control>
 	</include>
 	<include name="fanart-mymusicplaylisteditor">
