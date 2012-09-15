@@ -549,28 +549,16 @@
 		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[ListItem.Path,,cdart.png]</texture>
 	</include>
 	<include name="thumbs-extra-movies">
-		<animation effect="slide" start="0,0" end="10,70" time="0" condition="Control.IsVisible(57)">Conditional</animation>
-		<control type="image">
+		<animation effect="slide" start="0,0" end="0,125" time="0" condition="Control.IsVisible(57)">Conditional</animation>
+		<control type="multiimage">
 			<posx>14</posx>
 			<posy>14</posy>
-			<width>235</width>
-			<height>132</height>
-			<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
-			<bordertexture border="9">video-shadow.png</bordertexture>
-			<bordersize>8</bordersize>
+			<width>212</width>
+			<height>120</height>
+			<imagepath background="true" diffuse="video-diffuse.png">$INFO[ListItem.Path,,extrathumbs/]</imagepath>
 			<aspectratio scalediffuse="false">scale</aspectratio>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="image">
-			<posx>14</posx>
-			<posy>152</posy>
-			<width>235</width>
-			<height>132</height>
-			<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
-			<bordertexture border="9">video-shadow.png</bordertexture>
-			<bordersize>8</bordersize>
-			<aspectratio scalediffuse="false">scale</aspectratio>
+			<timeperimage>4000</timeperimage>
+			<randomize>true</randomize>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 		</control>

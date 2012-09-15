@@ -471,6 +471,11 @@
 				<texture>separator.png</texture>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(57)</visible>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+		</control>
 		<control type="group" id="7029">
 			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(57) + Container.OnNext</visible>
@@ -530,11 +535,6 @@
 				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !IsEmpty(Listitem.Trailer)</visible>
 			</control>
-		</control>
-		<control type="group">
-			<visible>Control.IsVisible(57)</visible>
-			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
 		</control>
 	</include>
 	<include name="Icons-Movies_Extras">
