@@ -586,19 +586,19 @@
 						<animation effect="zoom" start="22,22,206,115" end="19,11,220,130" time="200" center="auto" condition="Control.HasFocus(8)">Conditional</animation>
 					</control>
 					<control type="button" id="8">
-						<description>Network push button</description>
+						<description>Service push button</description>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>250</width>
 						<height>159</height>
-						<label>[UPPERCASE][B]$LOCALIZE[705][/B][/UPPERCASE]</label>
+						<label>[UPPERCASE][B]$LOCALIZE[14036][/B][/UPPERCASE]</label>
 						<align>center</align>
 						<aligny>-</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-25c</font>
-						<onclick>ActivateWindow(NetworkSettings)</onclick>
+						<onclick>ActivateWindow(ServiceSettings)</onclick>
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
