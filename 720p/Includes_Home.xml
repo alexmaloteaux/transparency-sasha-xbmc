@@ -2742,7 +2742,7 @@
 	</include>
 	<include name="HomeTVButton">
 		<item id="5">
-			<label>31500</label>
+			<label>19020</label>
 			<onclick>ActivateWindow(TV)</onclick>
 			<icon>special://skin/backgrounds/tv.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
@@ -3795,7 +3795,7 @@
 				</item>
 				<item id="8104">
 					<description>Menu Settings Sub TV</description>
-					<label>$LOCALIZE[31500]</label>
+					<label>$LOCALIZE[19020]</label>
 					<onclick>ActivateWindow(TVSettings,return)</onclick>
 					<visible>Skin.HasSetting(Menu_Settings_Sub_TV)</visible>
 				</item>

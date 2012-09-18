@@ -860,7 +860,7 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 							</item>
 							<item id="5">
-								<label>$LOCALIZE[10000] - $LOCALIZE[31500]</label>
+								<label>$LOCALIZE[10000] - $LOCALIZE[19020]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/tv.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
@@ -973,7 +973,7 @@
 								<thumb>$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</thumb>
 							</item>
 							<item id="20">
-								<label>$LOCALIZE[31500]</label>
+								<label>$LOCALIZE[19020]</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/background-tv.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_TV_Folder)]</thumb>
@@ -1158,7 +1158,7 @@
 						<selected>!Skin.HasSetting(Enable_MusicVideos_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="414">
-						<label>$LOCALIZE[31500] - $LOCALIZE[31137]</label>
+						<label>$LOCALIZE[19020] - $LOCALIZE[31137]</label>
 						<onclick>Skin.ToggleSetting(Enable_TV_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_TV_Media_Flags)</selected>
 					</control>
@@ -1962,7 +1962,7 @@
 					</control>
 					<control type="radiobutton" id="806">
 						<description>Menu TV</description>
-						<label>[B]$LOCALIZE[31500][/B]</label>
+						<label>[B]$LOCALIZE[19020][/B]</label>
 						<include>ButtonMenuSettings1</include>
 						<onfocus>Skin.SetString(SettingsMenu,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TV)</onclick>
@@ -3610,7 +3610,7 @@
 					</control>
 					<control type="radiobutton" id="8104">
 						<description>Menu Settings Sub TV</description>
-						<label>[B]$LOCALIZE[31500][/B]</label>
+						<label>[B]$LOCALIZE[19020][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_TV)</onclick>
