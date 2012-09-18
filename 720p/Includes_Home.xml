@@ -3796,7 +3796,7 @@
 				<item id="8104">
 					<description>Menu Settings Sub TV</description>
 					<label>$LOCALIZE[19020]</label>
-					<onclick>ActivateWindow(TVSettings,return)</onclick>
+					<onclick>ActivateWindow(PVRSettings,return)</onclick>
 					<visible>Skin.HasSetting(Menu_Settings_Sub_TV)</visible>
 				</item>
 				<item id="8105">

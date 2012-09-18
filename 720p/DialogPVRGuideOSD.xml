@@ -7,7 +7,7 @@
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(601)">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(pvrguideinfo)">conditional</animation>
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>
@@ -25,7 +25,7 @@
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
 				<texturenofocus>close-window-nofocus.png</texturenofocus>
-				<onclick>Dialog.Close(610)</onclick>
+				<onclick>Dialog.Close(pvrosdguide)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
 			<control type="label">

@@ -78,7 +78,7 @@
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
 				<texturenofocus>close-window-nofocus.png</texturenofocus>
-				<onclick>Dialog.Close(602)</onclick>
+				<onclick>Dialog.Close(pvrrecordinginfo)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
 			<control type="label">
