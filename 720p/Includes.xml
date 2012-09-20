@@ -1199,10 +1199,22 @@
 			</control>
 			<control type="label">
 				<posx>175</posx>
-				<posy>95</posy>
+				<posy>75</posy>
 				<width>930</width>
 				<height>20</height>
 				<label>$VAR[IncludesCommonNowPlayingVideoLabel2]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-19</font>
+				<textcolor>lightblue</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>175</posx>
+				<posy>95</posy>
+				<width>930</width>
+				<height>20</height>
+				<label>$VAR[IncludesCommonNowPlayingVideoLabel3]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-19</font>

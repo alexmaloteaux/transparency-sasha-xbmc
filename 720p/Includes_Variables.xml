@@ -189,11 +189,13 @@
 	</variable>
 	<variable name="IncludesCommonNowPlayingVideoLabel1">
 		<value condition="[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)">$INFO[VideoPlayer.Title]</value>
-		<value condition="[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>
 	</variable>
 	<variable name="IncludesCommonNowPlayingVideoLabel2">
+		<value condition="[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>
+	</variable>
+	<variable name="IncludesCommonNowPlayingVideoLabel3">
 		<value condition="[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)">$INFO[VideoPlayer.Studio]</value>
-		<value condition="[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)">$INFO[VideoPlayer.Title]</value>
+		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(592) + !Control.IsVisible(598)">$INFO[VideoPlayer.Title]</value>
 	</variable>
 	<variable name="IncludesHomeVideoInfoLabel1">
 		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
