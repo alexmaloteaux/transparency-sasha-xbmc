@@ -451,7 +451,7 @@
 							<onleft>31</onleft>
 							<onright>31</onright>
 							<onup>10</onup>
-							<ondown>10</ondown>
+							<ondown>999</ondown>
 							<pagecontrol>10</pagecontrol>
 							<scrolltime>350</scrolltime>
 							<timeblocks>40</timeblocks>
@@ -1355,233 +1355,260 @@
 					<height>80</height>
 					<texture border="10">underlay5.png</texture>
 				</control>
-				<control type="image">
+				<control type="button" id="999">
+					<posx>80</posx>
+					<posy>663</posy>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>Skin.ToggleSetting(EpgLegend)</onclick>
+					<texturefocus>osd-info-focus.png</texturefocus>
+					<texturenofocus>osd-info-nofocus.png</texturenofocus>
+					<pulseonselect>true</pulseonselect>
+					<onleft>10</onleft>
+					<onright>10</onright>
+					<onup>10</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="textbox">
 					<posx>140</posx>
-					<posy>653</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-b-news.png</texture>
+					<posy>656</posy>
+					<width>880</width>
+					<height>46</height>
+					<label>$INFO[Container(10).ListItem.Plot]</label>
+					<visible>!Skin.HasSetting(EpgLegend)</visible>
 				</control>
-				<control type="label">
-					<description>News Genre</description>
-					<posx>160</posx>
-					<posy>652</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19516</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>390</posx>
-					<posy>653</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-a-moviedrama.png</texture>
-				</control>
-				<control type="label">
-					<description>Movie Genre</description>
-					<posx>410</posx>
-					<posy>652</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19500</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>640</posx>
-					<posy>653</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-k-special.png</texture>
-				</control>
-				<control type="label">
-					<description>Special Genre</description>
-					<posx>660</posx>
-					<posy>652</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19549</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>890</posx>
-					<posy>653</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-c-show.png</texture>
-				</control>
-				<control type="label">
-					<description>News Genre</description>
-					<posx>910</posx>
-					<posy>652</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19532</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>140</posx>
-					<posy>672</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-d-sports.png</texture>
-				</control>
-				<control type="label">
-					<description>Sports Genre</description>
-					<posx>160</posx>
-					<posy>671</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19548</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>390</posx>
-					<posy>672</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-e-child.png</texture>
-				</control>
-				<control type="label">
-					<description>Children Genre</description>
-					<posx>410</posx>
-					<posy>671</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19564</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>640</posx>
-					<posy>672</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-i-science.png</texture>
-				</control>
-				<control type="label">
-					<description>Educational/Science Genre</description>
-					<posx>660</posx>
-					<posy>671</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19628</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>890</posx>
-					<posy>672</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-f-music.png</texture>
-				</control>
-				<control type="label">
-					<description>Music Genre</description>
-					<posx>910</posx>
-					<posy>671</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19580</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>140</posx>
-					<posy>691</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-g-arts.png</texture>
-				</control>
-				<control type="label">
-					<description>Arts Genre</description>
-					<posx>160</posx>
-					<posy>690</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19596</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>390</posx>
-					<posy>691</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-j-hobby.png</texture>
-				</control>
-				<control type="label">
-					<description>Leisure/Hobbies Genre</description>
-					<posx>410</posx>
-					<posy>690</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19644</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>640</posx>
-					<posy>691</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-h-social.png</texture>
-				</control>
-				<control type="label">
-					<description>Social Genre</description>
-					<posx>660</posx>
-					<posy>690</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19612</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<posx>890</posx>
-					<posy>691</posy>
-					<width>15</width>
-					<height>15</height>
-					<texture>genre-l-unknown.png</texture>
-				</control>
-				<control type="label">
-					<description>Other/Unknown Genre</description>
-					<posx>910</posx>
-					<posy>690</posy>
-					<width>230</width>
-					<height>15</height>
-					<font>font-19</font>
-					<label>19499</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
+				<control type="group">
+					<visible>Skin.HasSetting(EpgLegend)</visible>
+					<control type="image">
+						<posx>140</posx>
+						<posy>653</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-b-news.png</texture>
+					</control>
+					<control type="label">
+						<description>News Genre</description>
+						<posx>160</posx>
+						<posy>652</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19516</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>390</posx>
+						<posy>653</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-a-moviedrama.png</texture>
+					</control>
+					<control type="label">
+						<description>Movie Genre</description>
+						<posx>410</posx>
+						<posy>652</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19500</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>640</posx>
+						<posy>653</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-k-special.png</texture>
+					</control>
+					<control type="label">
+						<description>Special Genre</description>
+						<posx>660</posx>
+						<posy>652</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19549</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>890</posx>
+						<posy>653</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-c-show.png</texture>
+					</control>
+					<control type="label">
+						<description>News Genre</description>
+						<posx>910</posx>
+						<posy>652</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19532</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>140</posx>
+						<posy>672</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-d-sports.png</texture>
+					</control>
+					<control type="label">
+						<description>Sports Genre</description>
+						<posx>160</posx>
+						<posy>671</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19548</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>390</posx>
+						<posy>672</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-e-child.png</texture>
+					</control>
+					<control type="label">
+						<description>Children Genre</description>
+						<posx>410</posx>
+						<posy>671</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19564</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>640</posx>
+						<posy>672</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-i-science.png</texture>
+					</control>
+					<control type="label">
+						<description>Educational/Science Genre</description>
+						<posx>660</posx>
+						<posy>671</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19628</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>890</posx>
+						<posy>672</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-f-music.png</texture>
+					</control>
+					<control type="label">
+						<description>Music Genre</description>
+						<posx>910</posx>
+						<posy>671</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19580</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>140</posx>
+						<posy>691</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-g-arts.png</texture>
+					</control>
+					<control type="label">
+						<description>Arts Genre</description>
+						<posx>160</posx>
+						<posy>690</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19596</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>390</posx>
+						<posy>691</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-j-hobby.png</texture>
+					</control>
+					<control type="label">
+						<description>Leisure/Hobbies Genre</description>
+						<posx>410</posx>
+						<posy>690</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19644</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>640</posx>
+						<posy>691</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-h-social.png</texture>
+					</control>
+					<control type="label">
+						<description>Social Genre</description>
+						<posx>660</posx>
+						<posy>690</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19612</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+					<control type="image">
+						<posx>890</posx>
+						<posy>691</posy>
+						<width>15</width>
+						<height>15</height>
+						<texture>genre-l-unknown.png</texture>
+					</control>
+					<control type="label">
+						<description>Other/Unknown Genre</description>
+						<posx>910</posx>
+						<posy>690</posy>
+						<width>230</width>
+						<height>15</height>
+						<font>font-19</font>
+						<label>19499</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
 				</control>
 			</control>
 			<control type="group">
