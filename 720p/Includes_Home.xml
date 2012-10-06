@@ -2751,7 +2751,7 @@
 	<include name="HomeMusicButton">
 		<item id="6">
 			<label>2</label>
-			<onclick>ActivateWindow(MusicLibrary)</onclick>
+			<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
 			<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 			<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
 		</item>
@@ -3317,10 +3317,10 @@
 					<visible>!Skin.HasSetting(Menu_Music_Sub_Files)</visible>
 				</item>
 				<item id="8103">
-					<description>Menu Music Sub Artists</description>
-					<label>$LOCALIZE[133]</label>
-					<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
-					<visible>!Skin.HasSetting(Menu_Music_Sub_Artists)</visible>
+					<description>Menu Music Sub Library</description>
+					<label>$LOCALIZE[15100]</label>
+					<onclick>ActivateWindow(MusicLibrary)</onclick>
+					<visible>!Skin.HasSetting(Menu_Music_Sub_Library)</visible>
 				</item>
 				<item id="8104">
 					<description>Menu Music Sub Albums</description>

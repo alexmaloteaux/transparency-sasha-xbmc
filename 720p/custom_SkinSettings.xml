@@ -2836,12 +2836,12 @@
 						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8103">
-						<description>Menu Music Sub Artists</description>
-						<label>[B]$LOCALIZE[133][/B]</label>
+						<description>Menu Music Sub Library</description>
+						<label>[B]$LOCALIZE[15100][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Artists)</onclick>
-						<selected>!Skin.HasSetting(Menu_Music_Sub_Artists)</selected>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Library)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Library)</selected>
 						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8104">
