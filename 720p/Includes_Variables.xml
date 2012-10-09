@@ -22,7 +22,7 @@
 	<variable name="DialogFullScreenInfoLabel2">
 		<value condition="!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Genre]</value>
 		<value condition="VideoPlayer.Content(LiveTV)">$INFO[VideoPlayer.PlotOutline]</value>
-		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</value>
+		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ] &#32;&#32;&#32; $INFO[VideoPlayer.Premiered,$LOCALIZE[552]: ]</value>
 		<value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio, - ]</value>
 	</variable>
 	<variable name="DialogPictureInfoImage">

@@ -1557,6 +1557,15 @@
 			<aspectratio>keep</aspectratio>
 		</control>
 	</include>
+	<include name="MusicPlayerAlbum">
+		<label>$INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  </label>
+	</include>
+	<include name="MusicPlayerArtist">
+		<label>$INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  </label>
+	</include>
+	<include name="MusicPlayerTitle">
+		<label>$INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  </label>
+	</include>
 	<include name="NextAiredInfo">
 		<control type="group">
 			<posx>300</posx>
