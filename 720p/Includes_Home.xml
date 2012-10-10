@@ -1785,6 +1785,19 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Skin.HasSetting(HomeRandomMusicVideos)</visible>
 			</control>
+			<control type="label">
+				<posx>820</posx>
+				<posy>5</posy>
+				<height>20</height>
+				<width>195</width>
+				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-25c</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Skin.HasSetting(HomeWatchlistMusicVideos)</visible>
+			</control>
 			<control type="list" id="5048">
 				<orientation>vertical</orientation>
 				<posx>35</posx>
@@ -1887,6 +1900,7 @@
 				<content>
 					<include condition="!Skin.HasSetting(HomeRecentMusicVideos)">RecentMusicVideosList</include>
 					<include condition="Skin.HasSetting(HomeRandomMusicVideos)">RandomMusicVideosList</include>
+					<include condition="Skin.HasSetting(HomeRecommendedMusicVideos)">RecommendedMusicVideosList</include>
 				</content>
 			</control>			
 			<control type="label">
@@ -2231,70 +2245,70 @@
 				</focusedlayout>
 				<content>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.1.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.1.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.1.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.1.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.1.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.1.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.2.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.2.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.2.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.2.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.2.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.2.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.3.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.3.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.3.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.3.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.3.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.3.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.4.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.4.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.4.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.4.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.4.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.4.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.5.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.5.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.5.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.5.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.5.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.5.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.6.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.6.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.6.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.6.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.6.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.6.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.7.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.7.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.7.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.7.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.7.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.7.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.8.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.8.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.8.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.8.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.8.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.8.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.9.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.9.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.9.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.9.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.9.Fanart)]</property>
 						<onclick>RunAddon($INFO[Window.Property(RandomAddon.9.Path)])</onclick>
 					</item>
 					<item>
-						<label>$INFO[Window.Property(RandomAddon.10.Name)]</label>
+						<label>$INFO[Window.Property(RandomAddon.10.Title)]</label>
 						<label2>$INFO[Window.Property(RandomAddon.10.Version)]</label2>
 						<thumb>$INFO[Window.Property(RandomAddon.10.Thumb)]</thumb>
 						<property name="FanartImage">$INFO[Window.Property(RandomAddon.10.Fanart)]</property>

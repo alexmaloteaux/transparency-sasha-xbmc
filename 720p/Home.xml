@@ -22,7 +22,7 @@
 		</control>
 		<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies)] + [!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeWatchlistMovies)]">recentlyfanartmovies</include>
 		<include condition="!Skin.HasSetting(Menu_TVShows) + [!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeWatchlistTVShows)]">recentlyfanartepisodes</include>
-		<include condition="Skin.HasSetting(Menu_MusicVideos) + [!Skin.HasSetting(HomeRecentMusicvideos) | Skin.HasSetting(HomeRandomMusicvideos)]">recentlyfanartmusicvideos</include>
+		<include condition="Skin.HasSetting(Menu_MusicVideos) + [!Skin.HasSetting(HomeRecentMusicvideos) | Skin.HasSetting(HomeRandomMusicvideos) | Skin.HasSetting(HomeWatchlistMusicvideos)]">recentlyfanartmusicvideos</include>
 		<include condition="!Skin.HasSetting(Menu_Music) + [!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums) | Skin.HasSetting(HomeWatchlistAlbums)]">recentlyfanartalbums</include>
 		<include condition="!Skin.HasSetting(Menu_Programs) + !Skin.HasSetting(HomeRandomAddons)">randomfanartaddons</include>
 		<include condition="!Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization)">home-visualisation1</include>
@@ -49,7 +49,7 @@
 					<onright>20</onright>
 					<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies)] + !Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeWatchlistMovies)">RecentlyAddedMovies</include>
 					<include condition="!Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeWatchlistTVShows)">RecentlyAddedTVShows</include>
-					<include condition="Skin.HasSetting(Menu_MusicVideos) + !Skin.HasSetting(HomeRecentMusicVideos) | Skin.HasSetting(HomeRandomMusicVideos)">RecentlyAddedMusicVideos</include>
+					<include condition="Skin.HasSetting(Menu_MusicVideos) + !Skin.HasSetting(HomeRecentMusicVideos) | Skin.HasSetting(HomeRandomMusicVideos) | Skin.HasSetting(HomeWatchlistMusicVideos)">RecentlyAddedMusicVideos</include>
 					<include condition="!Skin.HasSetting(Menu_Music) + !Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums) | Skin.HasSetting(HomeWatchlistAlbums)">RecentlyAddedAlbums</include>
 					<include condition="!Skin.HasSetting(Menu_Programs) + !Skin.HasSetting(HomeRandomAddons)">RandomAddons</include>
 				</control>
