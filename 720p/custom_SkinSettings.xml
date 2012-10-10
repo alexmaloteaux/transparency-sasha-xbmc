@@ -562,8 +562,8 @@
 						<description>enable recent musicvideos info</description>
 						<label>$LOCALIZE[20389] - $LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(HomeRecentMusicVideos)</onclick>
+						<onclick>Skin.Reset(HomeRandomMusicVideos)</onclick>
 						<onclick>Skin.Reset(HomeWatchlistMusicVideos)</onclick>
-						<onclick>Skin.Reset(HomeRecommendedMusicVideos)</onclick>
 						<selected>!Skin.HasSetting(HomeRecentMusicVideos)</selected>
 					</control>
 					<control type="radiobutton" id="215">
