@@ -227,71 +227,71 @@
 	</include>
 	<include name="RecentEpisodesList">
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.1.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.1.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.1.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.1.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.1.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.2.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.2.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.2.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.2.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.2.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.3.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.3.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.3.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.3.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.3.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.4.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.4.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.4.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.4.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.4.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.4.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.5.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.5.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.5.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.5.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.5.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.5.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.6.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.6.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.6.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.6.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.6.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.6.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.7.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.7.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.7.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.7.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.7.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.7.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.8.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.8.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.8.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.8.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.8.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.8.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.9.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.9.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.9.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.9.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.9.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.9.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.9.Path),PlayMedia(&quot;,&quot;)]</onclick>
 		</item>
 		<item>
-			<label>$INFO[Window.Property(LatestEpisode.10.TVShowTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.10.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.10.Title)]</label2>
+			<label>$INFO[Window.Property(LatestEpisode.10.ShowTitle)]</label>
+			<label2>$INFO[Window.Property(LatestEpisode.10.EpisodeNo),, - ]$INFO[Window.Property(LatestEpisode.10.EpisodeTitle)]</label2>
 			<thumb>$INFO[Window.Property(LatestEpisode.10.Thumb)]</thumb>
 			<property name="FanartImage">$INFO[Window.Property(LatestEpisode.10.Fanart)]</property>
 			<onclick>$INFO[Window.Property(LatestEpisode.10.Path),PlayMedia(&quot;,&quot;)]</onclick>
