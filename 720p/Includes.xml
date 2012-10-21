@@ -1135,7 +1135,7 @@
 		<control type="group">
 			<posx>5</posx>
 			<posy>547</posy>
-			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds) + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml)]</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds) + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(SkinSettings)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient6</include>
@@ -1256,7 +1256,7 @@
 		<control type="group">
 			<posx>5</posx>
 			<posy>547</posy>
-			<visible>Player.HasAudio + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(custom_SkinSettings.xml) | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)]</visible>
+			<visible>Player.HasAudio + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(594) | Control.IsVisible(595) | Control.IsVisible(596) | Control.IsVisible(597) | Window.IsVisible(SkinSettings) | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)]</visible>
 			<include>VisibleFadeEffect2</include>
 			<include>ContentFade</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient2</include>
@@ -1424,7 +1424,7 @@
 			<animation effect="zoom" start="153,88,976,545" end="153,88,976,391" time="300" condition="Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartShort)">Conditional</animation>
 			<animation effect="zoom" start="153,88,976,545" end="153,88,976,820" time="300" condition="Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)] + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="zoom" start="153,88,976,545" end="0,20,1280,645" time="300" condition="Window.IsVisible(PVR) + Control.IsVisible(10)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(custom_SkinSettings.xml) + [Skin.String(SkinSettings,8) | Skin.String(SkinSettings,9)]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(SkinSettings) + [Skin.String(SkinSettings,8) | Skin.String(SkinSettings,9)]">Conditional</animation>
 		</control>
 	</include>
 	<include name="ContentPanel2">

@@ -3798,7 +3798,7 @@
 				<item id="8102">
 					<description>Menu Settings Sub Skin Settings</description>
 					<label>$LOCALIZE[20077]</label>
-					<onclick>ActivateWindow(1111),return</onclick>
+					<onclick>ActivateWindow(SkinSettings),return</onclick>
 					<visible>!Skin.HasSetting(Menu_Settings_Sub_SkinSettings)</visible>
 				</item>
 				<item id="8103">
