@@ -183,8 +183,23 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
+					<ondown>20</ondown>
+					<visible>Container.CanFilter + !Container.CanFilterAdvanced + !Skin.HasSetting(KioskMode)</visible>
+				</control>
+				<control type="radiobutton" id="20">
+					<description>Advanced Filter</description>
+					<posx>0</posx>
+					<posy>180</posy>
+					<include>ButtonCommonValues</include>
+					<label>587</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>19</onup>
 					<ondown>16</ondown>
-					<visible>!Skin.HasSetting(KioskMode)</visible>
+					<onclick>right</onclick>
+					<onclick>Filter</onclick>
+					<selected>Container.Filtered</selected>
+					<visible>Container.CanFilterAdvanced + !Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
@@ -194,7 +209,7 @@
 					<label>589</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
+					<onup>20</onup>
 					<ondown>610</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
