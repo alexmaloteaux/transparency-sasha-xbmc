@@ -1635,87 +1635,96 @@
 					<ondown>701</ondown>
 					<control type="radiobutton" id="702">
 						<label>$LOCALIZE[31143]</label>
-						<onclick>Skin.ToggleSetting(FanartShort)</onclick>
+						<onclick condition="!Skin.HasSetting(FanartShort)">Skin.ToggleSetting(FanartShort)</onclick>
+						<onclick condition="!Skin.HasSetting(FanartMedium)">Skin.ToggleSetting(FanartMedium)</onclick>
 						<onclick>Skin.Reset(FanartLong)</onclick>
 						<selected>Skin.HasSetting(FanartShort)</selected>
 					</control>
 					<control type="radiobutton" id="703">
-						<label>$LOCALIZE[31144]</label>
-						<onclick>Skin.ToggleSetting(FanartLong)</onclick>
+						<label>$LOCALIZE[31142]</label>
+						<onclick condition="Skin.HasSetting(FanartMedium)">Skin.ToggleSetting(FanartMedium)</onclick>
 						<onclick>Skin.Reset(FanartShort)</onclick>
-						<selected>Skin.HasSetting(FanartLong)</selected>
+						<onclick>Skin.Reset(FanartLong)</onclick>
+						<selected>!Skin.HasSetting(FanartMedium)</selected>
 					</control>
 					<control type="radiobutton" id="704">
+						<label>$LOCALIZE[31144]</label>
+						<onclick condition="!Skin.HasSetting(FanartLong)">Skin.ToggleSetting(FanartLong)</onclick>
+						<onclick>Skin.Reset(FanartShort)</onclick>
+						<onclick condition="!Skin.HasSetting(FanartMedium)">Skin.ToggleSetting(FanartMedium)</onclick>
+						<selected>Skin.HasSetting(FanartLong)</selected>
+					</control>
+					<control type="radiobutton" id="705">
 						<label>$LOCALIZE[31030] - $LOCALIZE[20343] - $LOCALIZE[31181]</label>
 						<onclick>Skin.ToggleSetting(Fanart_Show_Banners)</onclick>
 						<onclick>Skin.Reset(TVShowsPosters)</onclick>
 						<selected>Skin.HasSetting(Fanart_Show_Banners)</selected>
 					</control>
-					<control type="radiobutton" id="705">
+					<control type="radiobutton" id="706">
 						<label>$LOCALIZE[31030] - $LOCALIZE[342] - $LOCALIZE[203]</label>
 						<onclick>Skin.ToggleSetting(FanartShowPlot)</onclick>
 						<selected>Skin.HasSetting(FanartShowPlot)</selected>
 					</control>
-					<control type="image" id="706">
+					<control type="image" id="707">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="708">
 						<description>Hide Video Case Animation</description>
 						<label>$LOCALIZE[536] - $LOCALIZE[3] - $LOCALIZE[31105]</label>
 						<onclick>Skin.ToggleSetting(Hide-Video-Icons-CaseAnimation)</onclick>
 						<selected>Skin.HasSetting(Hide-Video-Icons-CaseAnimation)</selected>
 						<enable>!Skin.HasSetting(HideMovieCase)</enable>
 					</control>
-					<control type="radiobutton" id="708">
+					<control type="radiobutton" id="709">
 						<description>Hide Music Case Animation</description>
 						<label>$LOCALIZE[536] - $LOCALIZE[2] - $LOCALIZE[31105]</label>
 						<onclick>Skin.ToggleSetting(Hide-Music-Icons-CaseAnimation)</onclick>
 						<selected>Skin.HasSetting(Hide-Music-Icons-CaseAnimation)</selected>
 						<enable>!Skin.HasSetting(HideMusicCase)</enable>
 					</control>
-					<control type="image" id="709">
+					<control type="image" id="710">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="710">
+					<control type="radiobutton" id="711">
 						<label>$LOCALIZE[31035] - $LOCALIZE[31182]</label>
 						<onclick>Skin.ToggleSetting(HideInfoPanelSlideView)</onclick>
 						<selected>Skin.HasSetting(HideInfoPanelSlideView)</selected>
 					</control>
-					<control type="radiobutton" id="711">
+					<control type="radiobutton" id="712">
 						<label>$LOCALIZE[31039] - $LOCALIZE[31182]</label>
 						<onclick>Skin.ToggleSetting(HideInfoPanelItemView)</onclick>
 						<selected>Skin.HasSetting(HideInfoPanelItemView)</selected>
 					</control>
-					<control type="radiobutton" id="712">
+					<control type="radiobutton" id="713">
 						<label>$LOCALIZE[33031] - $LOCALIZE[31182]</label>
 						<onclick>Skin.ToggleSetting(HideInfoPanelCoverView)</onclick>
 						<selected>Skin.HasSetting(HideInfoPanelCoverView)</selected>
 					</control>
-					<control type="radiobutton" id="713">
+					<control type="radiobutton" id="714">
 						<label>$LOCALIZE[536] - $LOCALIZE[31182]</label>
 						<onclick>Skin.ToggleSetting(HideInfoPanelIcons)</onclick>
 						<selected>Skin.HasSetting(HideInfoPanelIcons)</selected>
 					</control>
-					<control type="radiobutton" id="714">
+					<control type="radiobutton" id="715">
 						<label>$LOCALIZE[31038] - $LOCALIZE[31137]</label>
 						<onclick>Skin.ToggleSetting(WallShowPlot)</onclick>
 						<selected>Skin.HasSetting(WallShowPlot)</selected>
 					</control>
-					<control type="image" id="715">
+					<control type="image" id="716">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="716">
+					<control type="radiobutton" id="717">
 						<label>$LOCALIZE[535] - $LOCALIZE[2] - $LOCALIZE[31133]</label>
 						<onclick>Skin.ToggleSetting(Artist_Album_Order)</onclick>
 						<selected>Skin.HasSetting(Artist_Album_Order)</selected>
 					</control>
-					<control type="image" id="717">
+					<control type="image" id="718">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
