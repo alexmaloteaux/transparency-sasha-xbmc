@@ -47,17 +47,7 @@
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
-						<texture background="true" flipy="true" diffuse="diffuse_mirror.png">$INFO[ListItem.Icon]</texture>
-						<visible>stringcompare(ListItem.Label,..)</visible>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>302</posy>
-						<width>188</width>
-						<height>267</height>
-						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror.png">$INFO[ListItem.Thumb]</texture>
-						<visible>!stringcompare(ListItem.Label,..)</visible>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror.png">$VAR[IconPoster]</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -108,7 +98,7 @@
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideo.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -174,21 +164,9 @@
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
-						<texture background="true" flipy="true" diffuse="diffuse_mirror.png">$INFO[ListItem.Icon]</texture>
-						<animation effect="zoom" start="0,302,188,267" end="-21,332,228,324" time="250">Focus</animation>
-						<animation effect="zoom" start="-21,332,228,324" end="0,302,188,267" time="250">UnFocus</animation>
-						<visible>stringcompare(ListItem.Label,..)</visible>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>302</posy>
-						<width>188</width>
-						<height>267</height>
-						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror.png">$VAR[IconPoster]</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation1</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation1</include>
-						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -373,7 +351,7 @@
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideo.png" background="true">$VAR[IconPoster]</texture>
 						<include condition="!Skin.HasSetting(Hide-Video-Icons-CaseAnimation) + !Skin.HasSetting(HideMovieCase)">Video-Icons-CaseAnimation3</include>
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation3</include>
 						<visible>!stringcompare(ListItem.Label,..)</visible>

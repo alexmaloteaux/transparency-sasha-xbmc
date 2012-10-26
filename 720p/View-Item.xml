@@ -490,7 +490,7 @@
 				<posy>84</posy>
 				<width>184</width>
 				<height>272</height>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<texture background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -499,7 +499,7 @@
 				<posy>369</posy>
 				<width>184</width>
 				<height>272</height>
-				<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" diffuse="diffuse_mirror2.png">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -509,7 +509,7 @@
 				<width>360</width>
 				<height>100</height>
 				<aspectratio scalediffuse="true">stretch</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">$VAR[IconBanner]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -519,7 +519,7 @@
 				<width>360</width>
 				<height>100</height>
 				<aspectratio scalediffuse="true">stretch</aspectratio>
-				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$VAR[IconBanner]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>

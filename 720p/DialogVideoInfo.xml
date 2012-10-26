@@ -35,7 +35,7 @@
 				<posy>396</posy>
 				<width>218</width>
 				<height>310</height>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<texture>$VAR[IconPoster]</texture>
 				<visible>Container.Content(Movies) | [Container.Content(TVShows) + [[SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]]</visible>
 			</control>
 			<control type="image">
@@ -576,7 +576,7 @@
 					<posy>70</posy>
 					<width>1200</width>
 					<height>140</height>
-					<texture diffuse="banner-diffuse.png">$INFO[Listitem.Icon]</texture>
+					<texture diffuse="banner-diffuse.png">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]</visible>
 				</control>
@@ -586,7 +586,7 @@
 					<posy>210</posy>
 					<width>1200</width>
 					<height>140</height>
-					<texture flipy="true" diffuse="banner-diffuse-mirror.png">$INFO[Listitem.Icon]</texture>
+					<texture flipy="true" diffuse="banner-diffuse-mirror.png">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]</visible>
 				</control>

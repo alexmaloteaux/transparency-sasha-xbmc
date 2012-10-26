@@ -552,7 +552,7 @@
 				<width>466</width>
 				<height>107</height>
 				<aspectratio>keep</aspectratio>
-				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="banner-diffuse.png" background="true">$VAR[IconBanner]</texture>
 				<bordersize>13</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..)</visible>
@@ -732,7 +732,7 @@
 				<posy>30</posy>
 				<width>196</width>
 				<height>278</height>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<texture background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
@@ -750,14 +750,14 @@
 				<width>196</width>
 				<height>278</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
-				<visible>!stringcompare(ListItem.Label,..)</visible>
+				<visible>stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
 				<posy>320</posy>
 				<width>196</width>
 				<height>278</height>
-				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>

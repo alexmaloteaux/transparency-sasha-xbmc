@@ -472,7 +472,7 @@
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture diffuse="thumb-diffuse.png" background="true">$VAR[IconPoster]</texture>
 					<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
@@ -579,7 +579,7 @@
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture diffuse="thumb-diffuse.png" background="true">$VAR[IconPoster]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,-4" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="123" center="auto" time="200" reversible="false"/>

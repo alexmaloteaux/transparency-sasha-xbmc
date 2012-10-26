@@ -626,7 +626,7 @@
 				<height>218</height>
 				<aspectratio align="left" aligny="center">keep</aspectratio>
 				<align>left</align>
-				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="banner-diffuse.png" background="true">$VAR[IconBanner]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-120,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -638,7 +638,7 @@
 				<posy>396</posy>
 				<width>218</width>
 				<height>310</height>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<texture background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
 			</control>

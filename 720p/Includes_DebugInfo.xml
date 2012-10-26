@@ -130,6 +130,38 @@
 				<label>ListItem.Property(Fanart_Image): $INFO[ListItem.Property(Fanart_Image)]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>300</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Art(fanart): $INFO[ListItem.Art(fanart)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>320</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Art(poster): $INFO[ListItem.Art(poster)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>340</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Art(banner): $INFO[ListItem.Art(banner)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>360</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Art(thumb): $INFO[ListItem.Art(thumb)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<include name="debuginfovideoplayer">

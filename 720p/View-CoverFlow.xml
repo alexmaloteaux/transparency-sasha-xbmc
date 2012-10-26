@@ -36,7 +36,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -59,7 +59,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -86,7 +86,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -109,7 +109,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -136,7 +136,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -159,7 +159,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -188,7 +188,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -211,7 +211,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -238,7 +238,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -261,7 +261,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -288,7 +288,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -311,7 +311,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -343,7 +343,7 @@
 						<posy>430</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -366,7 +366,7 @@
 						<posy>44</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -394,7 +394,7 @@
 						<posy>430</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-1)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -417,7 +417,7 @@
 						<posy>44</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -453,7 +453,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -476,7 +476,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -503,7 +503,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -526,7 +526,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -553,7 +553,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -576,7 +576,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -605,7 +605,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -628,7 +628,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -655,7 +655,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -678,7 +678,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -705,7 +705,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -728,7 +728,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -760,7 +760,7 @@
 						<posy>430</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -783,7 +783,7 @@
 						<posy>44</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -811,7 +811,7 @@
 						<posy>430</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(1)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -834,7 +834,7 @@
 						<posy>44</posy>
 						<width>260</width>
 						<height>370</height>
-						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 					</control>
 					<control type="image">
 						<posx>20</posx>
@@ -867,7 +867,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -890,7 +890,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -918,7 +918,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -941,7 +941,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -969,7 +969,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -992,7 +992,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1020,7 +1020,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1043,7 +1043,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1071,7 +1071,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1094,7 +1094,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1122,7 +1122,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1145,7 +1145,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1172,7 +1172,7 @@
 					<posy>430</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -1195,7 +1195,7 @@
 					<posy>44</posy>
 					<width>260</width>
 					<height>370</height>
-					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
