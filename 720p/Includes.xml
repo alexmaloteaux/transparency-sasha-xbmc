@@ -1553,13 +1553,27 @@
 		</control>
 	</include>
 	<include name="MusicPlayerAlbum">
-		<label>$INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  $INFO[MusicPlayer.Album]  </label>
+		<font>font-40</font>
+		<textcolor>99999999</textcolor>
+		<font>font-160</font>
+		<textcolor>99FFFFFF</textcolor>
+		<scroll>true</scroll>
+		<scrollsuffix></scrollsuffix>
+		<label>$INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     </label>
 	</include>
 	<include name="MusicPlayerArtist">
-		<label>$INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  $INFO[MusicPlayer.Artist]  </label>
+		<font>font-80</font>
+		<textcolor>99666666</textcolor>
+		<scroll>true</scroll>
+		<scrollsuffix></scrollsuffix>
+		<label>$INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     </label>
 	</include>
 	<include name="MusicPlayerTitle">
-		<label>$INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  $INFO[MusicPlayer.Title]  </label>
+		<font>font-160</font>
+		<textcolor>99FFFFFF</textcolor>
+		<scroll>true</scroll>
+		<scrollsuffix></scrollsuffix>
+		<label>$INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     </label>
 	</include>
 	<include name="NextAiredInfo">
 		<control type="group">

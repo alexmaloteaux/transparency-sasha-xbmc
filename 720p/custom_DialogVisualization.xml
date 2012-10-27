@@ -163,6 +163,19 @@
 					<selected>!Skin.HasSetting(Vis-Visualization)</selected>
 					<onclick>Skin.ToggleSetting(Vis-Visualization)</onclick>
 				</control>
+				<control type="radiobutton" id="998">
+					<description>scroll labels button</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>710</width>
+					<height>29</height>
+					<label>31103</label>
+					<font>font-18</font>
+					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturenofocus border="7">list-nofocus.png</texturenofocus>
+					<selected>Skin.HasSetting(Vis-ScrollTitles)</selected>
+					<onclick>Skin.ToggleSetting(Vis-ScrollTitles)</onclick>
+				</control>
 			</control>
 			<control type="button" id="1001">
 				<description>OK Button</description>
@@ -178,7 +191,7 @@
 				<label>186</label>
 				<onleft>1001</onleft>
 				<onright>1001</onright>
-				<onup>997</onup>
+				<onup>998</onup>
 				<ondown>991</ondown>
 				<onclick>Dialog.Close(1112)</onclick>
 			</control>
