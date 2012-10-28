@@ -578,96 +578,8 @@
 									<height>60</height>
 									<posx>0</posx>
 									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),16)</visible>
-									<texture border="3">genre-a-moviedrama.png</texture>
-								</control>
-								<control type="image" id="3">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),32)</visible>
-									<texture border="3">genre-b-news.png</texture>
-								</control>
-								<control type="image" id="4">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),48)</visible>
-									<texture border="3">genre-c-show.png</texture>
-								</control>
-								<control type="image" id="5">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),64)</visible>
-									<texture border="3">genre-d-sports.png</texture>
-								</control>
-								<control type="image" id="6">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),80)</visible>
-									<texture border="3">genre-e-child.png</texture>
-								</control>
-								<control type="image" id="7">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),96)</visible>
-									<texture border="3">genre-f-music.png</texture>
-								</control>
-								<control type="image" id="8">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),112)</visible>
-									<texture border="3">genre-g-arts.png</texture>
-								</control>
-								<control type="image" id="9">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),128)</visible>
-									<texture border="3">genre-h-social.png</texture>
-								</control>
-								<control type="image" id="10">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),144)</visible>
-									<texture border="3">genre-i-science.png</texture>
-								</control>
-								<control type="image" id="11">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),160)</visible>
-									<texture border="3">genre-j-hobby.png</texture>
-								</control>
-								<control type="image" id="12">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),176)</visible>
-									<texture border="3">genre-k-special.png</texture>
-								</control>
-								<control type="image" id="13">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),192) | stringcompare(ListItem.Property(GenreType),208) | stringcompare(ListItem.Property(GenreType),224) | stringcompare(ListItem.Property(GenreType),240)</visible>
-									<texture border="3">genre-l-unknown.png</texture>
+									<aspectratio>stretch</aspectratio>
+									<texture border="3">$INFO[ListItem.Property(GenreType),epg-,.png]</texture>
 								</control>
 								<control type="label" id="1">
 									<posx>6</posx>
@@ -704,98 +616,10 @@
 									<height>60</height>
 									<posx>0</posx>
 									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),16)</visible>
-									<texture border="3">genre-a-moviedrama.png</texture>
+									<aspectratio>stretch</aspectratio>
+									<texture border="3">$INFO[ListItem.Property(GenreType),epg-,.png]</texture>
 								</control>
-								<control type="image" id="3">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),32)</visible>
-									<texture border="3">genre-b-news.png</texture>
-								</control>
-								<control type="image" id="4">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),48)</visible>
-									<texture border="3">genre-c-show.png</texture>
-								</control>
-								<control type="image" id="5">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),64)</visible>
-									<texture border="3">genre-d-sports.png</texture>
-								</control>
-								<control type="image" id="6">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),80)</visible>
-									<texture border="3">genre-e-child.png</texture>
-								</control>
-								<control type="image" id="7">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),96)</visible>
-									<texture border="3">genre-f-music.png</texture>
-								</control>
-								<control type="image" id="8">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),112)</visible>
-									<texture border="3">genre-g-arts.png</texture>
-								</control>
-								<control type="image" id="9">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),128)</visible>
-									<texture border="3">genre-h-social.png</texture>
-								</control>
-								<control type="image" id="10">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),144)</visible>
-									<texture border="3">genre-i-science.png</texture>
-								</control>
-								<control type="image" id="11">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),160)</visible>
-									<texture border="3">genre-j-hobby.png</texture>
-								</control>
-								<control type="image" id="12">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),176)</visible>
-									<texture border="3">genre-k-special.png</texture>
-								</control>
-								<control type="image" id="13">
-									<width>40</width>
-									<height>60</height>
-									<posx>0</posx>
-									<posy>0</posy>
-									<visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),192) | stringcompare(ListItem.Property(GenreType),208) | stringcompare(ListItem.Property(GenreType),224) | stringcompare(ListItem.Property(GenreType),240)</visible>
-									<texture border="3">genre-l-unknown.png</texture>
-								</control>
-								<control type="image" id="14">
+								<control type="image" id="2">
 									<width>40</width>
 									<height>60</height>
 									<posx>0</posx>
@@ -833,7 +657,7 @@
 								</control>
 							</focusedlayout>
 						</control>
-						<control type="label" id="1">
+						<control type="label">
 							<posx>40</posx>
 							<posy>577</posy>
 							<width>1200</width>
@@ -844,7 +668,7 @@
 							<textcolor>lightblue</textcolor>
 							<label>[B]$INFO[ListItem.Label][/B]</label>
 						</control>
-						<control type="label" id="1">
+						<control type="label">
 							<posx>40</posx>
 							<posy>599</posy>
 							<width>1200</width>
@@ -1387,7 +1211,7 @@
 						<posy>653</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-b-news.png</texture>
+						<texture>epg-32.png</texture>
 					</control>
 					<control type="label">
 						<description>News Genre</description>
@@ -1406,7 +1230,7 @@
 						<posy>653</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-a-moviedrama.png</texture>
+						<texture>epg-16.png</texture>
 					</control>
 					<control type="label">
 						<description>Movie Genre</description>
@@ -1425,7 +1249,7 @@
 						<posy>653</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-k-special.png</texture>
+						<texture>epg-176.png</texture>
 					</control>
 					<control type="label">
 						<description>Special Genre</description>
@@ -1444,7 +1268,7 @@
 						<posy>653</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-c-show.png</texture>
+						<texture>epg-48.png</texture>
 					</control>
 					<control type="label">
 						<description>News Genre</description>
@@ -1463,7 +1287,7 @@
 						<posy>672</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-d-sports.png</texture>
+						<texture>epg-64.png</texture>
 					</control>
 					<control type="label">
 						<description>Sports Genre</description>
@@ -1482,7 +1306,7 @@
 						<posy>672</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-e-child.png</texture>
+						<texture>epg-80.png</texture>
 					</control>
 					<control type="label">
 						<description>Children Genre</description>
@@ -1501,7 +1325,7 @@
 						<posy>672</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-i-science.png</texture>
+						<texture>epg-144.png</texture>
 					</control>
 					<control type="label">
 						<description>Educational/Science Genre</description>
@@ -1520,7 +1344,7 @@
 						<posy>672</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-f-music.png</texture>
+						<texture>epg-96.png</texture>
 					</control>
 					<control type="label">
 						<description>Music Genre</description>
@@ -1539,7 +1363,7 @@
 						<posy>691</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-g-arts.png</texture>
+						<texture>epg-112.png</texture>
 					</control>
 					<control type="label">
 						<description>Arts Genre</description>
@@ -1558,7 +1382,7 @@
 						<posy>691</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-j-hobby.png</texture>
+						<texture>epg-160.png</texture>
 					</control>
 					<control type="label">
 						<description>Leisure/Hobbies Genre</description>
@@ -1577,7 +1401,7 @@
 						<posy>691</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-h-social.png</texture>
+						<texture>epg-128.png</texture>
 					</control>
 					<control type="label">
 						<description>Social Genre</description>
@@ -1596,7 +1420,7 @@
 						<posy>691</posy>
 						<width>15</width>
 						<height>15</height>
-						<texture>genre-l-unknown.png</texture>
+						<texture>epg-0.png</texture>
 					</control>
 					<control type="label">
 						<description>Other/Unknown Genre</description>
@@ -1926,24 +1750,6 @@
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-TV</include>
 			</control>
-		</control>
-		<control type="label" id="29">
-			<description>Fake Label so we can pass it value down to the one below</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>0</width>
-			<height>0</height>
-			<font>-</font>
-			<visible>false</visible>
-		</control>
-		<control type="label" id="30">
-			<description>Fake Label so we can pass it value down to the one below</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>0</width>
-			<height>0</height>
-			<font>-</font>
-			<visible>false</visible>
 		</control>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 		<include condition="Skin.HasSetting(DebugMode)">debuginfo</include>

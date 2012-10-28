@@ -45,7 +45,7 @@
 				<posy>0</posy>
 				<width>100</width>
 				<height>630</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>5FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -53,7 +53,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -61,7 +61,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[41])</visible>
 			</control>
@@ -93,7 +93,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(200)</visible>
 					</control>
@@ -111,7 +111,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -119,7 +119,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[42])</visible>
 			</control>
@@ -159,7 +159,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(201)</visible>
 					</control>
@@ -177,7 +177,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -185,7 +185,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[43])</visible>
 			</control>
@@ -225,7 +225,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(202)</visible>
 					</control>
@@ -243,7 +243,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -251,7 +251,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[44])</visible>
 			</control>
@@ -291,7 +291,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(203)</visible>
 					</control>
@@ -309,7 +309,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -317,7 +317,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[45])</visible>
 			</control>
@@ -357,7 +357,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(204)</visible>
 					</control>
@@ -375,7 +375,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -383,7 +383,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[46])</visible>
 			</control>
@@ -423,7 +423,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(205)</visible>
 					</control>
@@ -441,7 +441,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -449,7 +449,7 @@
 				<posy>0</posy>
 				<width>948</width>
 				<height>91</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[47])</visible>
 			</control>
@@ -489,7 +489,7 @@
 						<posy>0</posy>
 						<width>170</width>
 						<height>90</height>
-						<texture border="2">genre-g-arts.png</texture>
+						<texture border="2">epg-112.png</texture>
 						<colordiffuse>9FFFFFFF</colordiffuse>
 						<visible>Control.HasFocus(206)</visible>
 					</control>
@@ -508,7 +508,7 @@
 				<posy>0</posy>
 				<width>266</width>
 				<height>630</height>
-				<texture border="2">genre-l-unknown.png</texture>
+				<texture border="2">epg-0.png</texture>
 				<colordiffuse>4F000000</colordiffuse>
 			</control>
 			<control type="image">
@@ -516,7 +516,7 @@
 				<posy>0</posy>
 				<width>266</width>
 				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -524,7 +524,7 @@
 				<posy>540</posy>
 				<width>266</width>
 				<height>90</height>
-				<texture border="2">genre-g-arts.png</texture>
+				<texture border="2">epg-112.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 				<animation effect="rotate" start="0" end="180" center="auto" time="0" condition="true">Conditional</animation>
 			</control>
