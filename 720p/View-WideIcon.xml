@@ -20,7 +20,7 @@
 					<posy>-5</posy>
 					<width>446</width>
 					<height>102</height>
-					<texture background="true">$VAR[IconBanner]</texture>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="image">
@@ -29,7 +29,7 @@
 					<width>446</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[Listitem.Thumb]</texture>
+					<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$VAR[IconBanner]</texture>
 					<bordertexture border="13">banner-shadow.png</bordertexture>
 					<bordersize>13</bordersize>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
@@ -71,7 +71,7 @@
 					<posy>-5</posy>
 					<width>446</width>
 					<height>102</height>
-					<texture background="true">$VAR[IconBanner]</texture>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,-2" time="200" reversible="false"/>
 						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>
@@ -88,7 +88,7 @@
 					<width>446</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[Listitem.Thumb]</texture>
+					<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$VAR[IconBanner]</texture>
 					<bordertexture border="13">banner-shadow.png</bordertexture>
 					<bordersize>13</bordersize>
 					<animation type="focus">

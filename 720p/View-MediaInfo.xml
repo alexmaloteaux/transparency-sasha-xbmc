@@ -552,7 +552,7 @@
 				<width>466</width>
 				<height>107</height>
 				<aspectratio>keep</aspectratio>
-				<texture diffuse="banner-diffuse.png" background="true">$VAR[IconBanner]</texture>
+				<texture diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>13</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>stringcompare(ListItem.Label,..)</visible>
@@ -574,7 +574,7 @@
 				<width>466</width>
 				<height>107</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$VAR[IconBanner]</texture>
 				<bordertexture border="13">banner-shadow.png</bordertexture>
 				<bordersize>13</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -586,7 +586,7 @@
 				<width>466</width>
 				<height>107</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture fallback="DefaultBanner.png" flipy="true" diffuse="banner-diffuse-mirror.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultBanner.png" flipy="true" diffuse="banner-diffuse-mirror.png" background="true">$VAR[IconBanner]</texture>
 				<bordertexture flipy="true" diffuse="banner-diffuse-mirror.png" border="13">banner-shadow.png</bordertexture>
 				<bordersize>13</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
