@@ -676,7 +676,7 @@
 				<width>541</width>
 				<height>100</height>
 				<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[Container.TVshowThumb]</texture>
+				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
