@@ -3852,7 +3852,7 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(Custom1Custom,0)</onfocus>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1)</onclick>
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Custom1 Sub</description>
@@ -3976,7 +3976,7 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(Custom2Custom,0)</onfocus>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2)</onclick>
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Custom2 Sub</description>
@@ -4100,7 +4100,7 @@
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(Custom3Custom,0)</onfocus>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3)</onclick>
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Custom3 Sub</description>
@@ -4309,7 +4309,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Videos_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Videos_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4321,7 +4321,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Videos_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Videos_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4333,7 +4333,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Videos_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Videos_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Videos_Sub_Custom8)</onclick>
 					</control>
 				</control>				
 				<control type="grouplist" id="8200">
@@ -4441,7 +4441,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Movies_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Movies_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4453,7 +4453,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Movies_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Movies_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4465,7 +4465,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Movies_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Movies_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Movies_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4573,7 +4573,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_TVShows_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_TVShows_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4585,7 +4585,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_TVShows_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_TVShows_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4597,7 +4597,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TVShows_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_TVShows_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_TVShows_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4705,7 +4705,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_MusicVideos_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_MusicVideos_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4717,7 +4717,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_MusicVideos_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_MusicVideos_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4729,7 +4729,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_MusicVideos_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_MusicVideos_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4741,7 +4741,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TV_Sub_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_TV_Sub_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_TV_Sub_Custom1)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4753,7 +4753,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TV_Sub_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_TV_Sub_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_TV_Sub_Custom2)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4765,7 +4765,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_TV_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_TV_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_TV_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4873,7 +4873,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Music_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Music_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4885,7 +4885,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Music_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Music_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -4897,7 +4897,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Music_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Music_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Music_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5101,7 +5101,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom11.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Pictures_Sub_Custom11)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Pictures_Sub_Custom11)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5113,7 +5113,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom12.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Pictures_Sub_Custom12)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Pictures_Sub_Custom12)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5125,7 +5125,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Pictures_Sub_Custom13.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Pictures_Sub_Custom13)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Pictures_Sub_Custom13)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5504,7 +5504,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom20.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Programs_Sub_Custom20)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Programs_Sub_Custom20)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5516,7 +5516,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom21.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Programs_Sub_Custom21)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Programs_Sub_Custom21)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5528,7 +5528,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Programs_Sub_Custom22.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Programs_Sub_Custom22)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Programs_Sub_Custom22)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5597,7 +5597,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom4.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Weather_Sub_Custom4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Weather_Sub_Custom4)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5609,7 +5609,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom5.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Weather_Sub_Custom5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Weather_Sub_Custom5)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5621,7 +5621,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Weather_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Weather_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Weather_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5633,7 +5633,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Favourites_Sub_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Favourites_Sub_Custom1)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5645,7 +5645,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Favourites_Sub_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Favourites_Sub_Custom2)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5657,7 +5657,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Favourites_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Favourites_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5669,7 +5669,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom4.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Favourites_Sub_Custom4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Favourites_Sub_Custom4)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5681,7 +5681,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Favourites_Sub_Custom5.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Favourites_Sub_Custom5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Favourites_Sub_Custom5)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5693,7 +5693,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Settings_Sub_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Settings_Sub_Custom1)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5705,7 +5705,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Settings_Sub_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Settings_Sub_Custom2)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5717,7 +5717,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Settings_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Settings_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Settings_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5767,7 +5767,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_PlayDisc_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_PlayDisc_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5779,7 +5779,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom4.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_PlayDisc_Sub_Custom4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_PlayDisc_Sub_Custom4)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5791,7 +5791,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_PlayDisc_Sub_Custom5.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_PlayDisc_Sub_Custom5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_PlayDisc_Sub_Custom5)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5803,7 +5803,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom1)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5815,7 +5815,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom2)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5827,7 +5827,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5839,7 +5839,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom4.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom4)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5851,7 +5851,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom5.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom5)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5863,7 +5863,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5875,7 +5875,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5887,7 +5887,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5899,7 +5899,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom9.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom9)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom9)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5911,7 +5911,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom1_Sub_Custom10.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom1_Sub_Custom10)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom1_Sub_Custom10)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5923,7 +5923,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom1)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5935,7 +5935,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom2)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5947,7 +5947,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5959,7 +5959,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom4.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom4)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5971,7 +5971,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom5.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom5)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5983,7 +5983,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -5995,7 +5995,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6007,7 +6007,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6019,7 +6019,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom9.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom9)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom9)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6031,7 +6031,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom2_Sub_Custom10.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom2_Sub_Custom10)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom2_Sub_Custom10)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6043,7 +6043,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom1.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom1)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6055,7 +6055,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom2.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom2)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6067,7 +6067,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom3.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom3)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6079,7 +6079,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom4.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom4)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6091,7 +6091,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom5.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom5)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6103,7 +6103,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom6.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom6)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6115,7 +6115,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom7.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom7)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6127,7 +6127,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom8.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom8)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6139,7 +6139,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom9.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom9)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom9)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
@@ -6151,7 +6151,7 @@
 						<label>[B]- $LOCALIZE[31157][/B]</label>
 						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Custom3_Sub_Custom10.Label)][/COLOR]</label2>
 						<include>ButtonMenuSettings3</include>
-						<onclick>RunScript(script.favourites,changtitle=true&amp;property=Menu_Custom3_Sub_Custom10)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=Menu_Custom3_Sub_Custom10)</onclick>
 					</control>
 				</control>
 				<control type="image">
