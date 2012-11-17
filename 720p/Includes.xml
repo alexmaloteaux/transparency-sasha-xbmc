@@ -1604,7 +1604,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<label>[COLOR=blue]$LOCALIZE[31179][/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
+				<label>[COLOR=blue]$LOCALIZE[31179][/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.Status)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
 			</control>
 		</control>
 	</include>

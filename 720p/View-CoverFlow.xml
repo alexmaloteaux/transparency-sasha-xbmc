@@ -1226,7 +1226,7 @@
 		<control type="wraplist" id="55">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
+			<visible>Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<posx>-410</posx>
 			<posy>260</posy>
 			<width>2100</width>
@@ -1274,7 +1274,7 @@
 				<width>1280</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				<visible>[[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>
@@ -1283,7 +1283,7 @@
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
 				<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched]</texture>
-				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>
@@ -1292,7 +1292,7 @@
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
 				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
-				<visible>Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="image">
 				<posx>110</posx>
@@ -1372,7 +1372,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>Window_OpenClose_Animation</include>
-			<visible>Control.IsVisible(55) + !Skin.HasSetting(HideInfoPanelCoverView)</visible>
+			<visible>Control.IsVisible(55) + !Skin.HasSetting(HideInfoPanelCoverView) + !Container.Content(Sets)</visible>
 			<control type="group" id="7031">
 				<animation effect="zoom" start="640,0,1,720" end="0,0,1280,720" time="200" delay="2000">Visible</animation>
 				<animation effect="zoom" start="0,0,1280,720" end="0,200,1280,1" time="200">Hidden</animation>

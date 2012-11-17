@@ -278,7 +278,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
+			<visible>Control.IsVisible(51) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
 			<control type="image">
 				<posx>20</posx>
 				<posy>25</posy>
@@ -487,7 +487,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(51) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
 			<control type="image">
 				<posx>55</posx>
 				<posy>60</posy>

@@ -431,7 +431,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout width="176" height="235" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
+			<itemlayout width="176" height="235" condition="!Container.Content(Movies) + !Container.Content(Sets) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>14</posx>
 					<posy>11</posy>
@@ -506,7 +506,7 @@
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout width="176" height="235" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
+			<focusedlayout width="176" height="235" condition="!Container.Content(Movies) + !Container.Content(Sets) + ![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
 				<control type="image">
 					<posx>14</posx>
 					<posy>11</posy>
@@ -755,7 +755,7 @@
 					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 			</focusedlayout>
-			<itemlayout width="176" height="235" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
+			<itemlayout width="176" height="235" condition="Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
 				<control type="image">
 					<posx>18</posx>
 					<posy>17</posy>
@@ -823,7 +823,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout width="176" height="235" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
+			<focusedlayout width="176" height="235" condition="Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
 				<control type="image">
 					<posx>18</posx>
 					<posy>17</posy>

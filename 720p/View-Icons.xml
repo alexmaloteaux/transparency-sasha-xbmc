@@ -24,7 +24,7 @@
 				<texture>floor.png</texture>
 			</control>
 			<control type="wraplist" id="57">
-				<visible>Container.Content(Movies) | Container.Content(Seasons)</visible>
+				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(Seasons)</visible>
 				<posx>-205</posx>
 				<posy>370</posy>
 				<width>1690</width>
@@ -451,7 +451,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
+			<include>Window_OpenClose_Visible_FanartIcon_Animation_Right</include>
 			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
 		</control>
 		<control type="group" id="7029">
@@ -466,7 +466,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>Window_OpenClose_Animation</include>
-			<visible>Control.IsVisible(57) + !Skin.HasSetting(HideInfoPanelIcons)</visible>
+			<visible>Control.IsVisible(57) + !Skin.HasSetting(HideInfoPanelIcons) + !Container.Content(Sets)</visible>
 			<control type="group">
 				<animation effect="zoom" start="640,0,1,720" end="0,0,1280,720" time="200" delay="2000">Visible</animation>
 				<animation effect="zoom" start="0,0,1280,720" end="0,200,1280,1" time="200">Hidden</animation>

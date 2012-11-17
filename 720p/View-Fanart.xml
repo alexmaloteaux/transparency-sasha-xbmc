@@ -221,7 +221,7 @@
 	</include>
 	<include name="Fanart-Videos_Root_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
+			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
 			<control type="image">
@@ -246,7 +246,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
+			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>10</posx>
@@ -304,7 +304,7 @@
 	</include>
 	<include name="Fanart-Videos_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay14</include>
@@ -442,7 +442,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<animation effect="slide" end="-401,0" time="0" condition="Skin.HasSetting(FanartLong)">Conditional</animation>
 			<control type="button" id="7005">
@@ -476,9 +476,11 @@
 			<visible>Control.IsVisible(50) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
-			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+			<control type="group">
+				<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+			</control>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
 				<posx>18</posx>
