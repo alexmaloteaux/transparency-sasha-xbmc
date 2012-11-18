@@ -120,8 +120,7 @@
 			<posy>20</posy>
 			<width>745</width>
 			<height>390</height>
-			<include condition="!Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Path</include>
-			<include condition="Skin.HasSetting(Custom_Home_Movies_Fanart_Background)">Home_Movies_Fanart_Custom_Path</include>
+			<imagepath background="true">$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)]</imagepath>
 			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -139,8 +138,7 @@
 			<posy>40</posy>
 			<width>900</width>
 			<height>535</height>
-			<include condition="!Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)">Home_TVShows_Fanart_Path</include>
-			<include condition="Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)">Home_TVShows_Fanart_Custom_Path</include>
+			<imagepath background="true">$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)]</imagepath>
 			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -157,8 +155,7 @@
 			<posy>170</posy>
 			<width>530</width>
 			<height>370</height>
-			<include condition="!Skin.HasSetting(Custom_Home_Music_Fanart_Background)">Home_Music_Fanart_Path</include>
-			<include condition="Skin.HasSetting(Custom_Home_Music_Fanart_Background)">Home_Music_Fanart_Custom_Path</include>
+			<imagepath background="true">$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)]</imagepath>
 			<aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -169,24 +166,6 @@
 			<include condition="!Skin.HasSetting(Animate_Home_Music_Fanart_Background)">backgroundanimation2</include>
 			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
-	</include>
-	<include name="Home_Movies_Fanart_Path">
-		<imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
-	</include>
-	<include name="Home_Movies_Fanart_Custom_Path">
-		<imagepath background="true">$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)]</imagepath>
-	</include>
-	<include name="Home_TVShows_Fanart_Path">
-		<imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
-	</include>
-	<include name="Home_TVShows_Fanart_Custom_Path">
-		<imagepath background="true">$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)]</imagepath>
-	</include>
-	<include name="Home_Music_Fanart_Path">
-		<imagepath background="true">special://profile/Thumbnails/Music/Fanart</imagepath>
-	</include>
-	<include name="Home_Music_Fanart_Custom_Path">
-		<imagepath background="true">$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)]</imagepath>
 	</include>
 	<include name="HomeButtonNormal">
 		<width>201</width>

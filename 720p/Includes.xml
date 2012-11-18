@@ -2733,12 +2733,29 @@
 				<onleft>302</onleft>
 				<onright>303</onright>
 				<onup>307</onup>
-				<ondown>309</ondown>
+				<ondown>308</ondown>
 				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Background)]</visible>
+			</control>
+			<control type="button" id="308">
+				<posx>10</posx>
+				<posy>80</posy>
+				<width>505</width>
+				<height>30</height>
+				<label>$LOCALIZE[657]:</label>
+				<label2>$VAR[SkinSettingsFanartPath]</label2>
+				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Custom_Home_Movies_Fanart_Background_Path)</onclick>
+				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Custom_Home_TVShows_Fanart_Background_Path)</onclick>
+				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Custom_Home_Music_Fanart_Background_Path)</onclick>
+				<enable>Container(302).HasFocus(2) | Container(302).HasFocus(3) | Container(302).HasFocus(6)</enable>
+				<onup>307</onup>
+				<ondown>309</ondown>
+				<onleft>302</onleft>
+				<onright>308</onright>
+				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
 			</control>
 			<control type="radiobutton" id="309">
 				<posx>10</posx>
-				<posy>80</posy>
+				<posy>110</posy>
 				<width>505</width>
 				<height>30</height>
 				<label>$LOCALIZE[31134]</label>
@@ -2746,43 +2763,10 @@
 				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Animate_Home_TVShows_Fanart_Background)</onclick>
 				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Animate_Home_Music_Fanart_Background)</onclick>
 				<selected>[Container(302).HasFocus(2) + !Skin.HasSetting(Animate_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + !Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + !Skin.HasSetting(Animate_Home_Music_Fanart_Background)]</selected>
-				<onup>307</onup>
-				<ondown>310</ondown>
+				<onup>308</onup>
+				<ondown>309</ondown>
 				<onleft>302</onleft>
 				<onright>309</onright>
-				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
-			</control>
-			<control type="radiobutton" id="310">
-				<posx>10</posx>
-				<posy>110</posy>
-				<width>505</width>
-				<height>30</height>
-				<label>$LOCALIZE[33071]</label>
-				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Custom_Home_Movies_Fanart_Background)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Custom_Home_TVShows_Fanart_Background)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Custom_Home_Music_Fanart_Background)</onclick>
-				<selected>[Container(302).HasFocus(2) + Skin.HasSetting(Custom_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Custom_Home_Music_Fanart_Background)]</selected>
-				<onup>309</onup>
-				<ondown>308</ondown>
-				<onleft>302</onleft>
-				<onright>310</onright>
-				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
-			</control>
-			<control type="button" id="308">
-				<posx>10</posx>
-				<posy>140</posy>
-				<width>505</width>
-				<height>30</height>
-				<label>- $LOCALIZE[15311]</label>
-				<label2>$VAR[SkinSettingsFanartPath]</label2>
-				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Custom_Home_Movies_Fanart_Background_Path)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Custom_Home_TVShows_Fanart_Background_Path)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Custom_Home_Music_Fanart_Background_Path)</onclick>
-				<enable>[Container(302).HasFocus(2) + Skin.HasSetting(Custom_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Custom_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Custom_Home_Music_Fanart_Background)]</enable>
-				<onup>310</onup>
-				<ondown>308</ondown>
-				<onleft>302</onleft>
-				<onright>308</onright>
 				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
 			</control>
 			<include>ButtonScroll4</include>
