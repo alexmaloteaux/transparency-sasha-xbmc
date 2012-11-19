@@ -1806,8 +1806,7 @@
 					<onleft condition="StringCompare(Weather.Plugin,weather.weatherplus)">5997</onleft>
 					<onright condition="!StringCompare(Weather.Plugin,weather.weatherplus)">6002</onright>
 					<onright condition="StringCompare(Weather.Plugin,weather.weatherplus)">5999</onright>
-					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
-					<visible>!Control.HasFocus(5998)</visible>
+					<animation effect="fade" start="0" end="100" time="500" delay="400" condition="!Control.HasFocus(5998)">Conditional</animation>
 				</control>
 				<control type="group">
 					<animation effect="fade" start="0" end="100" time="500" delay="400">Visible</animation>
