@@ -543,7 +543,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(59) + [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)]</visible>
+			<visible>Control.IsVisible(59) + [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)]</visible>
 			<posx>200</posx>
 			<posy>110</posy>
 			<control type="image">
@@ -597,7 +597,7 @@
 			<visible>Control.IsVisible(59) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			<posx>200</posx>
 			<posy>110</posy>
-			<animation effect="slide" start="0,0" end="0,252" time="0" condition="[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,252" time="0" condition="[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			<control type="label">
 				<description>Seasons txt</description>
 				<posx>225</posx>
@@ -712,11 +712,11 @@
 				<width>440</width>
 				<height>4</height>
 				<texture>separator.png</texture>
-				<animation effect="slide" start="0,0" end="0,-124" time="0" condition="[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-124" time="0" condition="[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(59) + [[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]</visible>
+			<visible>Control.IsVisible(59) + [[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]</visible>
 			<posx>302</posx>
 			<posy>140</posy>
 			<control type="image">
@@ -781,7 +781,7 @@
 			<textcolor>white</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
 			<autoscroll time="2000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<visible>Control.IsVisible(59) + Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)</visible>
+			<visible>Control.IsVisible(59) + Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)</visible>
 		</control>
 	</include>
 	<include name="MediaInfo-Music">

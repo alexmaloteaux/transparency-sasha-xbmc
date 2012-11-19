@@ -801,12 +801,12 @@
 		<value condition="IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="ViewFanartLabel2">
-		<value condition="!Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
-		<value condition="!Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
+		<value condition="Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel3">
-		<value condition="Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
-		<value condition="Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
+		<value condition="!Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel4">
 		<value condition="Container.Content(Episodes)">$INFO[ListItem.Title]</value>

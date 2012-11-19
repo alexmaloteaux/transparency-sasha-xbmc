@@ -145,7 +145,7 @@
 					<control type="radiobutton" id="116">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31139]</label>
 						<onclick>Skin.ToggleSetting(TVShowsPosters)</onclick>
-						<selected>Skin.HasSetting(TVShowsPosters)</selected>
+						<selected>!Skin.HasSetting(TVShowsPosters)</selected>
 					</control>
 					<control type="radiobutton" id="117">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31126]</label>

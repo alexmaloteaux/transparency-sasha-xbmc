@@ -115,7 +115,7 @@
 	</include>
 	<include name="List-Videos">
 		<control type="list" id="51">
-			<visible>![Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)]</visible>
+			<visible>![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)]</visible>
 			<posx>200</posx>
 			<posy>142</posy>
 			<width>470</width>
@@ -516,7 +516,7 @@
 		<control type="group">
 			<posx>700</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(51) + [[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]</visible>
+			<visible>Control.IsVisible(51) + [[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]</visible>
 			<control type="image">
 				<posx>55</posx>
 				<posy>60</posy>

@@ -566,7 +566,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ] $INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>!Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="label">
 				<posx>257</posx>
@@ -579,7 +579,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
@@ -593,7 +593,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
@@ -607,7 +607,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -633,7 +633,7 @@
 				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-120,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
-				<visible>![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)] + !Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)] + Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -642,7 +642,7 @@
 				<height>310</height>
 				<texture background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -650,7 +650,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
-				<visible>Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -670,7 +670,7 @@
 				<width>567</width>
 				<height>126</height>
 				<texture border="14">banner-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="image">
 				<posx>286</posx>
@@ -679,7 +679,7 @@
 				<height>100</height>
 				<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
 				<texture fallback="DefaultBanner.png" diffuse="banner-diffuse.png" background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
 				<posx>240</posx>
@@ -705,7 +705,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/UPPERCASE][/B][/COLOR]]</label>
-				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
 				<posx>240</posx>
@@ -718,7 +718,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalEpisodes),[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[20360]: [/UPPERCASE][/B][/COLOR]]</label>
-				<animation effect="slide" start="0,0" end="0,-47" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-47" time="0" condition="!Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="label">
@@ -732,7 +732,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>[COLOR=blue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(TVShowsPosters)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 		</control>
 		<control type="group">

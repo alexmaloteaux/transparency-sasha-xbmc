@@ -595,7 +595,7 @@
 			<preloaditems>2</preloaditems>
 			<focusposition>3</focusposition>
 			<hitrect x="410" y="176" w="248" h="362"/>
-			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
+			<visible>Container.Content(Movies) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<itemlayout width="248" height="362"/>
 			<focusedlayout width="248" height="362">
 				<control type="image">

@@ -36,7 +36,7 @@
 				<width>218</width>
 				<height>310</height>
 				<texture>$VAR[IconPoster]</texture>
-				<visible>Container.Content(Movies) | [Container.Content(TVShows) + [[SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]]</visible>
+				<visible>Container.Content(Movies) | [Container.Content(TVShows) + [[SubString(Container.FolderPath,videodb://2/2/,left) + [!Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + !Skin.HasSetting(TVShowsPosters)]]]</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -52,7 +52,7 @@
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
-				<visible>[Container.Content(TVShows) + [[SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]] + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) + [[SubString(Container.FolderPath,videodb://2/2/,left) + [!Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + !Skin.HasSetting(TVShowsPosters)]]] + !Skin.HasSetting(HideTVShowCase)</visible>
 
 			</control>
 			<control type="image">
@@ -106,7 +106,7 @@
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
-				<animation effect="slide" start="0,0" end="0,82" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,82" time="0" condition="Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,54" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="group" id="9001">
@@ -114,11 +114,11 @@
 					<posx>240</posx>
 					<posy>382</posy>
 					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(Movies)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + SubString(Container.FolderPath,videodb://2/2/,left) + !StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-0,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 					<control type="button" id="5">
 						<description>Cast/Review</description>
@@ -221,11 +221,11 @@
 				<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(6)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(1113)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(Movies)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + SubString(Container.FolderPath,videodb://2/2/,left) + !StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 				<visible>Control.HasFocus(5) | Control.HasFocus(8) | Control.HasFocus(6) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(1113)</visible>
@@ -285,8 +285,8 @@
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
 				<label>$VAR[DialogVideoInfoLabel]</label>
-				<animation effect="slide" start="0,0" end="-110,10" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,10" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos) | [Container.Content(TVShows) + [SubString(Container.FolderPath,videodb://2/2/,left) + [Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] | [!SubString(Container.FolderPath,videodb://2/2/,left) + Skin.HasSetting(TVShowsPosters)]]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-110,10" time="0" condition="Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,10" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos) | [Container.Content(TVShows) + [SubString(Container.FolderPath,videodb://2/2/,left) + [!Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)] | [!SubString(Container.FolderPath,videodb://2/2/,left) + !Skin.HasSetting(TVShowsPosters)]]]">Conditional</animation>
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
@@ -301,7 +301,7 @@
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
 				<visible>!Container.Content(Episodes) + !Container.Content(MusicVideos) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox" id="4">
@@ -317,7 +317,7 @@
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
 				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="wraplist" id="50">
@@ -335,7 +335,7 @@
 				<focusposition>4</focusposition>
 				<orientation>horizontal</orientation>
 				<hitrect x="670" y="565" w="140" h="135"/>
-				<animation effect="slide" start="0,0" end="-119,0" time="0" condition="Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-119,0" time="0" condition="Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="29,0" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
 				<itemlayout width="110" height="110">
 					<control type="image">
@@ -578,7 +578,7 @@
 					<height>140</height>
 					<texture diffuse="banner-diffuse.png">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
-					<visible>Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]</visible>
+					<visible>Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]</visible>
 				</control>
 				<control type="image">
 					<description>Cover image</description>
@@ -588,7 +588,7 @@
 					<height>140</height>
 					<texture flipy="true" diffuse="banner-diffuse-mirror.png">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
-					<visible>Container.Content(TvShows) + [!Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]</visible>
+					<visible>Container.Content(TvShows) + [Skin.HasSetting(TVShowsPosters) + [StringCompare(Container.FolderPath,videodb://2/2/) | !SubString(Container.FolderPath,videodb://2/2/,left)]]</visible>
 				</control>
 				<control type="group">
 					<include>VisibleFadeEffect</include>
@@ -603,7 +603,7 @@
 						<ondown>5</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<animation effect="slide" start="0,0" end="0,-110" time="0" condition="Skin.HasSetting(TVShowsPosters) | [SubString(Container.FolderPath,videodb://2/2/,left) + !StringCompare(Container.FolderPath,videodb://2/2/)]">Conditional</animation>
+						<animation effect="slide" start="0,0" end="0,-110" time="0" condition="!Skin.HasSetting(TVShowsPosters) | [SubString(Container.FolderPath,videodb://2/2/,left) + !StringCompare(Container.FolderPath,videodb://2/2/)]">Conditional</animation>
 						<itemlayout width="1200" height="29">
 							<control type="image">
 								<posx>0</posx>

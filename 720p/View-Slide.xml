@@ -1284,7 +1284,7 @@
 		<control type="wraplist" id="596">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list</description>
-			<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
+			<visible>Container.Content(Movies) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<posx>-635</posx>
 			<posy>487</posy>
 			<width>2550</width>

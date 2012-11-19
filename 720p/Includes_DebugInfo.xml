@@ -162,6 +162,22 @@
 				<label>ListItem.Art(thumb): $INFO[ListItem.Art(thumb)]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>380</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Thumb: $INFO[ListItem.Thumb]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>400</posy>
+				<width>1240</width>
+				<heigth>40</heigth>
+				<label>ListItem.Icon: $INFO[ListItem.Icon]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<include name="debuginfovideoplayer">

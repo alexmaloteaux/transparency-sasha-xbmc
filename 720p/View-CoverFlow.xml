@@ -1226,7 +1226,7 @@
 		<control type="wraplist" id="55">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
+			<visible>Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
 			<posx>-410</posx>
 			<posy>260</posy>
 			<width>2100</width>

@@ -492,7 +492,7 @@
 				<height>272</height>
 				<texture background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Movies) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>310</posx>
@@ -501,7 +501,7 @@
 				<height>272</height>
 				<texture flipy="true" diffuse="diffuse_mirror2.png">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(Movies) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>150</posx>
@@ -511,7 +511,7 @@
 				<aspectratio scalediffuse="true">stretch</aspectratio>
 				<texture diffuse="thumb-diffuse.png" background="true">$VAR[IconBanner]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>150</posx>
@@ -521,7 +521,7 @@
 				<aspectratio scalediffuse="true">stretch</aspectratio>
 				<texture flipy="true" diffuse="thumb-diffuse-mirror.png" background="true">$VAR[IconBanner]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>275</posx>
@@ -574,7 +574,7 @@
 				<width>197</width>
 				<height>315</height>
 				<texture>case-tv.png</texture>
-				<visible>[[Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !Skin.HasSetting(HideTVShowCase) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !Skin.HasSetting(HideTVShowCase) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 		<control type="group">
