@@ -119,19 +119,19 @@
 				<item>
 					<label>31224</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],mediapath=$ESCINFO[ListItem.Path],extrathumbs)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],extrathumbs)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
 					<label>31221</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],mediapath=$ESCINFO[ListItem.Path],extrafanart)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],extrafanart)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
 					<label>31229</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],mediapath=$ESCINFO[ListItem.Path],discart)</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],discart)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
 				</item>
 				<item>
