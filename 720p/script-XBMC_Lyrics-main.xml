@@ -160,19 +160,6 @@
 				<visible>Control.IsVisible(110)</visible>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> -->
-			<control type="label" id="2">
-				<description>Pick label</description>
-				<posx>45</posx>
-				<posy>90</posy>
-				<width>710</width>
-				<height>30</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<label>[B]$LOCALIZE[31054][/B]</label>
-				<textcolor>lightblue</textcolor>
-				<visible>Control.IsVisible(120)</visible>
-			</control>
 			<control type="list" id="120">
 				<posx>45</posx>
 				<posy>120</posy>
