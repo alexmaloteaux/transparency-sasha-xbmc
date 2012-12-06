@@ -232,11 +232,6 @@
 		<value condition="!IsEmpty(ListItem(12).Art(poster))">$INFO[ListItem(12).Art(poster)]</value>
 		<value>$INFO[ListItem(12).Icon]</value>
 	</variable>
-	<variable name="IncludesBreadcrumbsMusicFiles">
-		<value condition="Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left)">$LOCALIZE[1038]</value>
-		<value condition="Substring(Container.FolderPath,shout://,Left)">$LOCALIZE[260]</value>
-		<value condition="Substring(Container.FolderPath,lastfm://,Left)">$LOCALIZE[15200]</value>
-	</variable>
 	<variable name="IncludesBreadcrumbsMusicLibrary1">
 		<value condition="Substring(Container.FolderPath,musicdb://1/,Left)">$LOCALIZE[135]</value>
 		<value condition="Substring(Container.FolderPath,musicdb://2/,Left)">$LOCALIZE[133]</value>
@@ -249,8 +244,6 @@
 		<value condition="Substring(Container.FolderPath,musicdb://9/,Left)">$LOCALIZE[652]</value>
 		<value condition="Substring(Container.FolderPath,musicdb://10/,Left)">$LOCALIZE[1050]</value>
 		<value condition="Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left)">$LOCALIZE[1038]</value>
-		<value condition="Substring(Container.FolderPath,shout://,Left)">$LOCALIZE[260]</value>
-		<value condition="Substring(Container.FolderPath,lastfm://,Left)">$LOCALIZE[15200]</value>
 		<value condition="Substring(Container.FolderPath,special://musicplaylists/,Left)">$LOCALIZE[136]</value>
 		<value condition="Substring(Container.FolderPath,videodb://3/,Left)">$LOCALIZE[20389]</value>
 	</variable>
