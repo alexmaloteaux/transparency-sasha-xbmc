@@ -1139,6 +1139,11 @@
 		<value condition="!Container.Content(TVShows) + !substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="!Container.Content(TVShows) + substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
+	<variable name="ViewSlideLabel2">
+		<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value condition="!IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
+		<value condition="!IsEmpty(ListItem.TagLine)">$INFO[ListItem.TagLine]</value>
+	</variable>
 	<variable name="ViewWallLabel1">
 		<value condition="Container.Content(Artists) + !stringcompare(ListItem.Label,..)">[B]$INFO[ListItem.Label][/B]</value>
 		<value condition="Container.Content(Albums) + !stringcompare(ListItem.Label,..)">[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label][/B]</value>
