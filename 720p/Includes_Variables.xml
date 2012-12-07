@@ -1192,6 +1192,7 @@
 	</variable>
 	<variable name="Weather26">
 		<value condition="StringCompare(Weather.Plugin,weather.wunderground)">[B]$INFO[Window.Property(Hourly.6.Temperature),[COLOR=lightblue]$LOCALIZE[401] :[/COLOR][CR]][CR][B]$INFO[Window.Property(Hourly.6.FeelsLike),[COLOR=lightblue]$LOCALIZE[33024] :[/COLOR][CR]][/B]</value>
+	</variable>
 	<variable name="Weather27">
 		<value condition="StringCompare(Weather.Plugin,weather.wunderground)">[B]$INFO[Window.Property(Hourly.6.ChancePrecipitation),[COLOR=lightblue]$LOCALIZE[33022] :[/COLOR][CR]][CR][B]$INFO[Window.Property(Hourly.6.Humidity),[COLOR=lightblue]$LOCALIZE[33023] :[/COLOR][CR]][/B]</value>
 	</variable>
