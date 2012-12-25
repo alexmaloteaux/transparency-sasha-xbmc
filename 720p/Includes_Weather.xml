@@ -4322,15 +4322,6 @@
 			<texture>$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
 		</control>
 	</include>
-	<include name="Weather_Weekend3_Icon">
-		<control type="image">
-			<posx>123</posx>
-			<posy>140</posy>
-			<width>140</width>
-			<height>140</height>
-			<texture>$INFO[Window.Property(Weekend.3.OutlookIcon)]</texture>
-		</control>
-	</include>
 	<include name="Weather_Animated_Weekend1_Icon">
 		<control type="multiimage">
 			<posx>123</posx>
@@ -4350,18 +4341,6 @@
 			<width>140</width>
 			<height>140</height>
 			<imagepath>weather/$INFO[Window.Property(Weekend.2.FanartCode)]</imagepath>
-			<timeperimage>100</timeperimage>
-			<randomize>false</randomize>
-			<fadetime>0</fadetime>
-		</control>
-	</include>
-	<include name="Weather_Animated_Weekend3_Icon">
-		<control type="multiimage">
-			<posx>123</posx>
-			<posy>140</posy>
-			<width>140</width>
-			<height>140</height>
-			<imagepath>weather/$INFO[Window.Property(Weekend.3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>

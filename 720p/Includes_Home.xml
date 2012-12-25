@@ -2845,7 +2845,7 @@
 			<include condition="!Skin.HasSetting(Menu_Music) + !Skin.HasSetting(Menu_Music_Sub)">HomeSubMusic</include>
 			<include condition="!Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub)">HomeSubPictures</include>
 			<include condition="!Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub)">HomeSubPrograms</include>
-			<include condition="!Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub)">HomeSubPrograms</include>
+			<include condition="!Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub)">HomeSubWeather</include>
 			<include condition="Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub)">HomeSubFavourites</include>
 			<include condition="!Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub)">HomeSubSettings</include>
 			<include condition="Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub)">HomeSubPlayDisc</include>
