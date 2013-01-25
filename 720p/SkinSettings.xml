@@ -1975,7 +1975,8 @@
 						<include>ButtonMenuSettings1</include>
 						<onfocus>Skin.SetString(SettingsMenu,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TV)</onclick>
-						<selected>Skin.HasSetting(Menu_TV)</selected>
+						<selected>!Skin.HasSetting(Menu_TV)</selected>
+						<enable>System.GetBool(pvrmanager.enabled)</enable>
 					</control>
 					<control type="radiobutton" id="807">
 						<description>Menu Music</description>
@@ -2760,7 +2761,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8100">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + Skin.HasSetting(Menu_TV)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + !Skin.HasSetting(Menu_TV)</visible>
 					<posx>460</posx>
 					<posy>265</posy>
 					<width>350</width>
@@ -4733,7 +4734,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + Skin.HasSetting(Menu_TV_Sub_Custom1) + Skin.String(TVCustom,1)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + !Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + Skin.HasSetting(Menu_TV_Sub_Custom1) + Skin.String(TVCustom,1)</visible>
 					<posy>292</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -4745,7 +4746,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + Skin.HasSetting(Menu_TV_Sub_Custom2) + Skin.String(TVCustom,2)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + !Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + Skin.HasSetting(Menu_TV_Sub_Custom2) + Skin.String(TVCustom,2)</visible>
 					<posy>320</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -4757,7 +4758,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + Skin.HasSetting(Menu_TV_Sub_Custom3) + Skin.String(TVCustom,3)</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + !Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + Skin.HasSetting(Menu_TV_Sub_Custom3) + Skin.String(TVCustom,3)</visible>
 					<posy>348</posy>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
@@ -6242,7 +6243,7 @@
 					<width>25</width>
 					<height>19</height>
 					<texture>nav-right.png</texture>
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + [[Skin.HasSetting(Menu_TV_Sub_Custom1) + Skin.String(TVCustom,1)] | [Skin.HasSetting(Menu_TV_Sub_Custom2) + Skin.String(TVCustom,2)] | [Skin.HasSetting(Menu_TV_Sub_Custom3) + Skin.String(TVCustom,3)]]</visible>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,5) + !Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub) + [[Skin.HasSetting(Menu_TV_Sub_Custom1) + Skin.String(TVCustom,1)] | [Skin.HasSetting(Menu_TV_Sub_Custom2) + Skin.String(TVCustom,2)] | [Skin.HasSetting(Menu_TV_Sub_Custom3) + Skin.String(TVCustom,3)]]</visible>
 					<animation effect="slide" start="0,0" end="0,28" time="100" tween="linear" condition="Skin.String(TVCustom,2)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,56" time="100" tween="linear" condition="Skin.String(TVCustom,3)">Conditional</animation>
 				</control>
