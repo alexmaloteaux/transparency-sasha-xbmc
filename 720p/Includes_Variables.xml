@@ -703,12 +703,12 @@
 		<value condition="!Skin.HasSetting(Hide_Shutdown_Eject)">shut-eject-nofocus.png</value>
 	</variable>
 	<variable name="SkinSettingsPlayer1Score">
-		<value condition="IsEmpty(Skin.String(player1score))">[B]Score: [COLOR=lightblue]0[/COLOR][/B]</value>
-		<value condition="!IsEmpty(Skin.String(player1score))">[B]Score: [COLOR=lightblue]$INFO[Skin.String(player1score)][/COLOR][/B]</value>
+		<value condition="IsEmpty(Skin.String(player1score))">[B]$LOCALIZE[31307]: [COLOR=lightblue]0[/COLOR][/B]</value>
+		<value condition="!IsEmpty(Skin.String(player1score))">[B]$LOCALIZE[31307]: [COLOR=lightblue]$INFO[Skin.String(player1score)][/COLOR][/B]</value>
 	</variable>
 	<variable name="SkinSettingsPlayer2Score">
-		<value condition="IsEmpty(Skin.String(player2score))">[B]Score: [COLOR=lightblue]0[/COLOR][/B]</value>
-		<value condition="!IsEmpty(Skin.String(player2score))">[B]Score: [COLOR=lightblue]$INFO[Skin.String(player2score)][/COLOR][/B]</value>
+		<value condition="IsEmpty(Skin.String(player2score))">[B]$LOCALIZE[31307]: [COLOR=lightblue]0[/COLOR][/B]</value>
+		<value condition="!IsEmpty(Skin.String(player2score))">[B]$LOCALIZE[31307]: [COLOR=lightblue]$INFO[Skin.String(player2score)][/COLOR][/B]</value>
 	</variable>
 	<variable name="SkinSettingsGameSign1">
 		<value condition="Skin.HasSetting(cross1)">game-cross.png</value>
@@ -747,12 +747,12 @@
 		<value condition="Skin.HasSetting(circle9)">game-circle.png</value>
 	</variable>
 	<variable name="SkinSettingsPlayerWins">
-		<value condition="Control.IsVisible(78)">[B]$INFO[Skin.String(player1name)] Wins !!![/B]</value>
-		<value condition="Control.IsVisible(79)">[B]$INFO[Skin.String(player2name)] Wins !!![/B]</value>
+		<value condition="Control.IsVisible(78)">[B]$INFO[Skin.String(player1name)] $LOCALIZE[31308] !!![/B]</value>
+		<value condition="Control.IsVisible(79)">[B]$INFO[Skin.String(player2name)] $LOCALIZE[31308] !!![/B]</value>
 	</variable>
 	<variable name="SkinSettingsPlayerWon">
-		<value condition="Skin.String(player1score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player1name)] HAS WON !!![/B]</value>
-		<value condition="Skin.String(player2score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] HAS WON !!![/B]</value>
+		<value condition="Skin.String(player1score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player1name)] $LOCALIZE[31309] !!![/B]</value>
+		<value condition="Skin.String(player2score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] $LOCALIZE[31309] !!![/B]</value>
 	</variable>
 	<variable name="ViewCoverFlowLabel1">
 		<value condition="Container.Content(Albums) + !Window.IsVisible(MusicFiles)">$INFO[ListItem.Label2]</value>

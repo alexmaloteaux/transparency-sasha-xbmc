@@ -6420,7 +6420,7 @@
 						<posy>20</posy>
 						<width>400</width>
 						<height>35</height>
-						<label>PLAYER 1:</label>
+						<label>$LOCALIZE[31301] 1:</label>
 						<font>font-30</font>
 						<align>center</align>
 					</control>
@@ -6457,7 +6457,7 @@
 						<posy>20</posy>
 						<width>400</width>
 						<height>35</height>
-						<label>PLAYER 2:</label>
+						<label>$LOCALIZE[31301] 2:</label>
 						<font>font-30</font>
 						<align>center</align>
 					</control>
@@ -6494,7 +6494,7 @@
 						<posy>100</posy>
 						<width>160</width>
 						<height>30</height>
-						<label>[B]START[/B]</label>
+						<label>[B]$LOCALIZE[31302][/B]</label>
 						<font>font-30</font>
 						<align>center</align>
 						<texturenofocus border="7">game-nofocus.png</texturenofocus>
@@ -6550,7 +6550,7 @@
 						<posy>100</posy>
 						<width>160</width>
 						<height>30</height>
-						<label>[B]QUIT[/B]</label>
+						<label>[B]$LOCALIZE[31303][/B]</label>
 						<font>font-30</font>
 						<align>center</align>
 						<texturenofocus border="7">game-nofocus.png</texturenofocus>
@@ -6603,7 +6603,7 @@
 						<posy>40</posy>
 						<width>480</width>
 						<height>35</height>
-						<label>[B]Please enter player names...[/B]</label>
+						<label>[B]$LOCALIZE[31304][/B]</label>
 						<font>font-25</font>
 						<textcolor>red</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -6616,7 +6616,7 @@
 						<posy>330</posy>
 						<width>300</width>
 						<height>40</height>
-						<label>[B]It's your turn[CR]$INFO[Skin.String(player1name)][/B]</label>
+						<label>[B]$LOCALIZE[31305][CR]$INFO[Skin.String(player1name)][/B]</label>
 						<font>font-28</font>
 						<textcolor>lightgreen</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -6640,7 +6640,7 @@
 						<posy>330</posy>
 						<width>300</width>
 						<height>40</height>
-						<label>[B]It's your turn[CR]$INFO[Skin.String(player2name)][/B]</label>
+						<label>[B]$LOCALIZE[31305][CR]$INFO[Skin.String(player2name)][/B]</label>
 						<font>font-28</font>
 						<textcolor>lightgreen</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -6664,7 +6664,7 @@
 						<posy>40</posy>
 						<width>480</width>
 						<height>35</height>
-						<label>[B]Press UP to continue...[/B]</label>
+						<label>[B]$LOCALIZE[31306][/B]</label>
 						<font>font-25</font>
 						<textcolor>red</textcolor>
 						<shadowcolor>black</shadowcolor>
