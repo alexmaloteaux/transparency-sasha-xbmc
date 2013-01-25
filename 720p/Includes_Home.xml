@@ -1691,7 +1691,7 @@
 					<include condition="Skin.HasSetting(HomeRandomTVShows)">RandomEpisodesList</include>
 					<include condition="Skin.HasSetting(HomeWatchlistTVShows)">RecommendedEpisodesList</include>
 				</content>
-			</control>			
+			</control>
 			<control type="label">
 				<posx>805</posx>
 				<posy>127</posy>
@@ -1703,7 +1703,7 @@
 				<font>font-15c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>			
+			</control>
 		</control>
 	</include>
 	<include name="RecentlyAddedMusicVideos">
@@ -1881,7 +1881,7 @@
 					<include condition="Skin.HasSetting(HomeRandomMusicVideos)">RandomMusicVideosList</include>
 					<include condition="Skin.HasSetting(HomeRecommendedMusicVideos)">RecommendedMusicVideosList</include>
 				</content>
-			</control>			
+			</control>
 			<control type="label">
 				<posx>805</posx>
 				<posy>127</posy>
@@ -1893,7 +1893,7 @@
 				<font>font-15c</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>			
+			</control>
 		</control>
 	</include>
 	<include name="RecentlyAddedAlbums">

@@ -53,7 +53,6 @@
 				<height>360</height>
 				<texture>case-tv.png</texture>
 				<visible>[Container.Content(TVShows) + [[SubString(Container.FolderPath,videodb://2/2/,left) + [!Skin.HasSetting(TVShowsPosters) | !StringCompare(Container.FolderPath,videodb://2/2/)]] | [!SubString(Container.FolderPath,videodb://2/2/,left) + !Skin.HasSetting(TVShowsPosters)]]] + !Skin.HasSetting(HideTVShowCase)</visible>
-
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -203,10 +202,10 @@
 						<onright>5</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
-                                                <onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
-                                                <onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50) + System.HasAddon(script.metadata.actors)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick>
-                                                <onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + System.HasAddon(script.metadata.actors)">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick>
-                                                <onclick condition="[Container.Content(Movies) | Container.Content(Episodes)] + System.HasAddon(script.metadata.actors)">SetProperty(WriterName,$INFO[ListItem.Writer],Home)</onclick>
+						<onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
+						<onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50) + System.HasAddon(script.metadata.actors)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick>
+						<onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + System.HasAddon(script.metadata.actors)">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick>
+						<onclick condition="[Container.Content(Movies) | Container.Content(Episodes)] + System.HasAddon(script.metadata.actors)">SetProperty(WriterName,$INFO[ListItem.Writer],Home)</onclick>
 						<onclick>ActivateWindow(1115)</onclick>
 					</control>
 				</control>
@@ -225,7 +224,7 @@
 				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + SubString(Container.FolderPath,videodb://2/2/,left) + !StringCompare(Container.FolderPath,videodb://2/2/)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters) + !SubString(Container.FolderPath,videodb://2/2/,left)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 				<visible>Control.HasFocus(5) | Control.HasFocus(8) | Control.HasFocus(6) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(1113)</visible>
