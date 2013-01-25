@@ -2070,7 +2070,6 @@
 					<include condition="!Skin.HasSetting(HomeRecentAlbums)">RecentAlbumsList</include>
 					<include condition="Skin.HasSetting(HomeRandomAlbums)">RandomAlbumsList</include>
 					<include condition="Skin.HasSetting(HomeWatchlistAlbums)">RecommendedAlbumsList</include>
-
 				</content>
 			</control>
 			<control type="label">
@@ -2331,7 +2330,6 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom1)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom2)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom3)">Conditional</animation>
-
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
