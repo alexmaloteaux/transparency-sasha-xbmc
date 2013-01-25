@@ -200,6 +200,10 @@
 		<value condition="!IsEmpty(ListItem(12).Art(poster))">$INFO[ListItem(12).Art(poster)]</value>
 		<value>$INFO[ListItem(12).Icon]</value>
 	</variable>
+	<variable name="IconPosterPlayer">
+		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+		<value>$INFO[VideoPlayer.Cover]</value>
+	</variable>
 	<variable name="IncludesBreadcrumbsMusicLibrary1">
 		<value condition="Substring(Container.FolderPath,musicdb://1/,Left)">$LOCALIZE[135]</value>
 		<value condition="Substring(Container.FolderPath,musicdb://2/,Left)">$LOCALIZE[133]</value>

@@ -48,7 +48,7 @@
 					<width>80</width>
 					<height>120</height>
 					<aspectratio>stretch</aspectratio>
-					<texture fallback="DefaultVideo.png" background="true">$INFO[Listitem.Art(poster)]</texture>
+					<texture fallback="DefaultVideo.png" background="true">$VAR[IconPoster]</texture>
 					<bordersize>1</bordersize>
 					<colordiffuse>39FFFFFF</colordiffuse>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
@@ -77,7 +77,7 @@
 					<width>80</width>
 					<height>120</height>
 					<aspectratio>stretch</aspectratio>
-					<texture fallback="DefaultVideo.png" background="true">$INFO[Listitem.Art(poster)]</texture>
+					<texture fallback="DefaultVideo.png" background="true">$VAR[IconPoster]</texture>
 					<bordertexture>black.png</bordertexture>
 					<bordersize>2</bordersize>
 					<animation effect="zoom" start="100" end="140" center="auto">Focus</animation>
