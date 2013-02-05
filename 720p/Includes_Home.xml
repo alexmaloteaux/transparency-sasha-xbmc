@@ -2839,7 +2839,7 @@
 			<include condition="!Skin.HasSetting(Menu_Movies) + !Skin.HasSetting(Menu_Movies_Sub)">HomeSubMovies</include>
 			<include condition="!Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(Menu_TVShows_Sub)">HomeSubTVShows</include>
 			<include condition="Skin.HasSetting(Menu_MusicVideos) + !Skin.HasSetting(Menu_MusicVideos_Sub)">HomeSubMusicVideos</include>
-			<include condition="Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub)">HomeSubTV</include>
+			<include condition="!Skin.HasSetting(Menu_TV) + Skin.HasSetting(Menu_TV_Sub)">HomeSubTV</include>
 			<include condition="!Skin.HasSetting(Menu_Music) + !Skin.HasSetting(Menu_Music_Sub)">HomeSubMusic</include>
 			<include condition="!Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub)">HomeSubPictures</include>
 			<include condition="!Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub)">HomeSubPrograms</include>
