@@ -381,7 +381,6 @@
 						<width>60</width>
 						<height>60</height>
 						<texture>shut-shutdown-focus.png</texture>
-						<pulseonselect>yes</pulseonselect>
 						<visible>[Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32) | Control.HasFocus(33) | Control.HasFocus(34) | Control.HasFocus(35)]</visible>
 					</control>
 				</control>
