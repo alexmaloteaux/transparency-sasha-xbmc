@@ -136,24 +136,24 @@
 				<texture diffuse="thumb-diffuse.png">$INFO[Container(2).Listitem.Icon]</texture>
 			</control>
 			<control type="label">
-				<posx>310</posx>
-				<posy>545</posy>
-				<width>770</width>
+				<posx>200</posx>
+				<posy>520</posy>
+				<width>880</width>
 				<height>30</height>
-				<font>font-28</font>
+				<font>font-25</font>
 				<textcolor>white</textcolor>
-				<align>left</align>
+				<align>center</align>
 				<aligny>bottom</aligny>
 				<label>$INFO[Container(2).ListItem.Label,[COLOR=blue]$LOCALIZE[20093] : [/COLOR]]</label>
 			</control>
 			<control type="label">
-				<posx>310</posx>
-				<posy>573</posy>
-				<width>770</width>
+				<posx>200</posx>
+				<posy>554</posy>
+				<width>880</width>
 				<height>30</height>
-				<font>font-28</font>
+				<font>font-25</font>
 				<textcolor>white</textcolor>
-				<align>left</align>
+				<align>center</align>
 				<aligny>bottom</aligny>
 				<label>$INFO[Container(2).ListItem.Label2,[COLOR=blue]$LOCALIZE[31047] : [/COLOR]]</label>
 			</control>
@@ -181,9 +181,35 @@
 					<posy>0</posy>
 					<include>ButtonCommonValues</include>
 					<label>20096</label>
+					<onup>5</onup>
+					<ondown>5</ondown>
 					<onleft>2</onleft>
 					<onright>2</onright>
 					<onback>SetFocus(2)</onback>
+				</control>
+				<control type="button" id="5">
+					<description>Auto Login screen</description>
+					<posx>0</posx>
+					<posy>45</posy>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[33084]</label>
+					<onup>4</onup>
+					<ondown>4</ondown>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<onback>SetFocus(2)</onback>
+					<enable>!System.HasLoginScreen</enable>
+				</control>
+				<control type="label">
+					<description>Auto Login screen</description>
+					<posx>10</posx>
+					<posy>74</posy>
+					<width>163</width>
+					<height>47</height>
+					<textcolor>white</textcolor>
+					<font>font-15</font>
+					<label>$INFO[System.ProfileAutoLogin]</label>
+					<enable>!System.HasLoginScreen</enable>
 				</control>
 			</control>
 		</control>
