@@ -329,7 +329,7 @@
 			<description>Genres</description>
 			<label>$VAR[IncludesBreadcrumbsMusicLibrary1]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://,Left) | Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left) | Substring(Container.FolderPath,special://musicplaylists/,Left) | Substring(Container.FolderPath,videodb://3/,Left)</visible>
+			<visible>Substring(Container.FolderPath,musicdb://,Left) | Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left) | Substring(Container.FolderPath,special://musicplaylists/,Left) | Substring(Container.FolderPath,videodb://musicvideos/,Left)</visible>
 		</control>
 		<control type="image">
 			<width>29</width>
@@ -343,7 +343,7 @@
 			<description>Top 100 Songs</description>
 			<label>$VAR[IncludesBreadcrumbsMusicLibrary2]</label>
 			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,musicdb://5/1,Left) | Substring(Container.FolderPath,musicdb://5/2,Left) | Substring(Container.FolderPath,videodb://3/1,Left) | Substring(Container.FolderPath,videodb://3/2,Left) | Substring(Container.FolderPath,videodb://3/3,Left) | Substring(Container.FolderPath,videodb://3/4,Left) | Substring(Container.FolderPath,videodb://3/5,Left) | Substring(Container.FolderPath,videodb://3/6,Left) | Substring(Container.FolderPath,videodb://3/7,Left)</visible>
+			<visible>Substring(Container.FolderPath,musicdb://top100/songs/,Left) | Substring(Container.FolderPath,musicdb://top100/albums/,Left) | Substring(Container.FolderPath,videodb://musicvideos/genres/,Left) | Substring(Container.FolderPath,videodb://musicvideos/titles/,Left) | Substring(Container.FolderPath,videodb://musicvideos/years/,Left) | Substring(Container.FolderPath,videodb://musicvideos/artists/,Left) | Substring(Container.FolderPath,videodb://musicvideos/albums/,Left) | Substring(Container.FolderPath,videodb://musicvideos/directors/,Left) | Substring(Container.FolderPath,videodb://musicvideos/studios/,Left)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs-MusicPlaylist">
@@ -590,13 +590,13 @@
 			<texture>dot.png</texture>
 			<animation effect="fade" start="0" end="100" center="0,15" time="400">Visible</animation>
 			<animation effect="fade" start="100" end="0" center="0,15" time="400">Hidden</animation>
-			<visible>!StringCompare(Container.FolderPath,videodb://1/) + !StringCompare(Container.FolderPath,videodb://2/) + !StringCompare(Container.FolderPath,videodb://3/) + !IsEmpty(Container.FolderPath)</visible>
+			<visible>!StringCompare(Container.FolderPath,videodb://movies/) + !StringCompare(Container.FolderPath,videodb://tvshows/) + !StringCompare(Container.FolderPath,videodb://musicvideos/) + !IsEmpty(Container.FolderPath)</visible>
 		</control>
 		<control type="label" id="1102">
 			<description>Genres</description>
 			<label>$VAR[IncludesBreadcrumbsVideos2]</label>
 			<include>WindowTitleCommons</include>
-			<visible>!StringCompare(Container.FolderPath,videodb://1/) + !StringCompare(Container.FolderPath,videodb://2/) + !StringCompare(Container.FolderPath,videodb://3/)</visible>
+			<visible>!StringCompare(Container.FolderPath,videodb://movies/) + !StringCompare(Container.FolderPath,videodb://tvshows/) + !StringCompare(Container.FolderPath,videodb://musicvideos/)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs-VideoPlaylist">

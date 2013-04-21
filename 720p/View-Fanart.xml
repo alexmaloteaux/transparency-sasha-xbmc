@@ -256,7 +256,7 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)]]] | !Container.Content(Genres)</visible>
+				<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)]]] | !Container.Content(Genres)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -264,8 +264,8 @@
 				<width>214</width>
 				<height>265</height>
 				<texture>thumb-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + [[!Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)] | [!Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)] | 
-[!Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)]]</visible>
+				<visible>!stringcompare(ListItem.Label,..) + [[!Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)] | [!Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)] | 
+[!Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)]]</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -276,7 +276,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture diffuse="thumb-diffuse.png" fallback="genre-movies-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
 				<bordersize>6</bordersize>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -287,7 +287,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture diffuse="thumb-diffuse.png" fallback="genre-tvshows-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
 				<bordersize>6</bordersize>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -298,7 +298,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture diffuse="thumb-diffuse.png" fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
 				<bordersize>6</bordersize>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 			</control>
 		</control>
 	</include>
@@ -566,7 +566,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ] $INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="label">
 				<posx>257</posx>
@@ -579,7 +579,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ] [COLOR=lightblue] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label>
-				<visible>!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
@@ -593,7 +593,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
@@ -607,7 +607,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]</visible>
+				<visible>!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)]</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -633,7 +633,7 @@
 				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-120,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 				<animation effect="slide" start="-120,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
-				<visible>![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)] + Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>![SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)] + Skin.HasSetting(TVShowsPosters) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>18</posx>
@@ -1157,7 +1157,7 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<visible>stringcompare(ListItem.Label,..) | ![!Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)]</visible>
+				<visible>stringcompare(ListItem.Label,..) | ![!Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)]</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -1165,7 +1165,7 @@
 				<width>214</width>
 				<height>265</height>
 				<texture>thumb-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -1176,7 +1176,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture diffuse="thumb-diffuse.png" fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
 				<bordersize>6</bordersize>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 		</control>
 	</include>

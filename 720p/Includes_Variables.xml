@@ -205,52 +205,52 @@
 		<value>$INFO[VideoPlayer.Cover]</value>
 	</variable>
 	<variable name="IncludesBreadcrumbsMusicLibrary1">
-		<value condition="Substring(Container.FolderPath,musicdb://1/,Left)">$LOCALIZE[135]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://2/,Left)">$LOCALIZE[133]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://3/,Left)">$LOCALIZE[132]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://4/,Left)">$LOCALIZE[134]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://5/,Left)">$LOCALIZE[271]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://6/,Left)">$LOCALIZE[359]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://7/,Left)">$LOCALIZE[517]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://8/,Left)">$LOCALIZE[521]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://9/,Left)">$LOCALIZE[652]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://10/,Left)">$LOCALIZE[1050]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://genres/,Left)">$LOCALIZE[135]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://artists/,Left)">$LOCALIZE[133]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://albums/,Left)">$LOCALIZE[132]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://songs/,Left)">$LOCALIZE[134]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://top100/,Left)">$LOCALIZE[271]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://recentlyaddedalbums/,Left)">$LOCALIZE[359]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://recentlyplayedalbums/,Left)">$LOCALIZE[517]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://compilations/,Left)">$LOCALIZE[521]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://years/,Left)">$LOCALIZE[652]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://singles/,Left)">$LOCALIZE[1050]</value>
 		<value condition="Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left)">$LOCALIZE[1038]</value>
 		<value condition="Substring(Container.FolderPath,special://musicplaylists/,Left)">$LOCALIZE[136]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/,Left)">$LOCALIZE[20389]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/,Left)">$LOCALIZE[20389]</value>
 	</variable>
 	<variable name="IncludesBreadcrumbsMusicLibrary2">
-		<value condition="Substring(Container.FolderPath,musicdb://5/1/,Left)">$LOCALIZE[10504]</value>
-		<value condition="Substring(Container.FolderPath,musicdb://5/2/,Left)">$LOCALIZE[10505]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/1/,Left)">$LOCALIZE[135]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/2/,Left)">$LOCALIZE[369]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/3/,Left)">$LOCALIZE[562]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/4/,Left)">$LOCALIZE[133]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/5/,Left)">$LOCALIZE[132]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/6/,Left)">$LOCALIZE[20348]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/7/,Left)">$LOCALIZE[20388]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://top100/songs/,Left)">$LOCALIZE[10504]</value>
+		<value condition="Substring(Container.FolderPath,musicdb://top100/albums/,Left)">$LOCALIZE[10505]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/genres/,Left)">$LOCALIZE[135]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/titles/,Left)">$LOCALIZE[369]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/years/,Left)">$LOCALIZE[562]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/artists/,Left)">$LOCALIZE[133]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/albums/,Left)">$LOCALIZE[132]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/directors/,Left)">$LOCALIZE[20348]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/studios/,Left)">$LOCALIZE[20388]</value>
 	</variable>
 	<variable name="IncludesBreadcrumbsVideos1">
-		<value condition="Substring(Container.FolderPath,videodb://1/,Left)">$LOCALIZE[342]</value>
-		<value condition="Substring(Container.FolderPath,videodb://2/,Left)">$LOCALIZE[20343]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/,Left)">$LOCALIZE[20389]</value>
-		<value condition="Substring(Container.FolderPath,videodb://4/,Left)">$LOCALIZE[20386]</value>
-		<value condition="Substring(Container.FolderPath,videodb://5/,Left)">$LOCALIZE[20387]</value>
-		<value condition="Substring(Container.FolderPath,videodb://6/,Left)">$LOCALIZE[20390]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/,Left)">$LOCALIZE[342]</value>
+		<value condition="Substring(Container.FolderPath,videodb://tvshows/,Left)">$LOCALIZE[20343]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/,Left)">$LOCALIZE[20389]</value>
+		<value condition="Substring(Container.FolderPath,videodb://recentlyaddedmovies/,Left)">$LOCALIZE[20386]</value>
+		<value condition="Substring(Container.FolderPath,videodb://recentlyaddedepisodes/,Left)">$LOCALIZE[20387]</value>
+		<value condition="Substring(Container.FolderPath,videodb://recentlyaddedmusicvideos/,Left)">$LOCALIZE[20390]</value>
 		<value condition="Substring(Container.FolderPath,special://videoplaylists/,Left)">$LOCALIZE[136]</value>
 		<value condition="Substring(Container.FolderPath,plugin://video/,Left)">$LOCALIZE[1037]</value>
 	</variable>
 	<variable name="IncludesBreadcrumbsVideos2">
-		<value condition="Substring(Container.FolderPath,videodb://1/1/,Left) | Substring(Container.FolderPath,videodb://2/1/,Left) | Substring(Container.FolderPath,videodb://3/1/,Left)">$LOCALIZE[135]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/2/,Left) | Substring(Container.FolderPath,videodb://2/2/,Left) | Substring(Container.FolderPath,videodb://3/2/,Left)">$LOCALIZE[369]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/3/,Left) | Substring(Container.FolderPath,videodb://2/3/,Left) | Substring(Container.FolderPath,videodb://3/3/,Left)">$LOCALIZE[562]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/4/,Left) | Substring(Container.FolderPath,videodb://2/4/,Left)">$LOCALIZE[344]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/5/,Left) | Substring(Container.FolderPath,videodb://3/6/,Left)">$LOCALIZE[20348]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/6/,Left) | Substring(Container.FolderPath,videodb://2/5/,Left) | Substring(Container.FolderPath,videodb://3/7/,Left)">$LOCALIZE[20388]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/7/,Left)">$LOCALIZE[20434]</value>
-		<value condition="Substring(Container.FolderPath,videodb://1/8/,Left)">$LOCALIZE[20451]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/4/,Left)">$LOCALIZE[133]</value>
-		<value condition="Substring(Container.FolderPath,videodb://3/5/,Left)">$LOCALIZE[132]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/genres/,Left) | Substring(Container.FolderPath,videodb://tvshows/genres/,Left) | Substring(Container.FolderPath,videodb://musicvideos/genres/,Left)">$LOCALIZE[135]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/titles/,Left) | Substring(Container.FolderPath,videodb://tvshows/titles/,Left) | Substring(Container.FolderPath,videodb://musicvideos/titles/,Left)">$LOCALIZE[369]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/years/,Left) | Substring(Container.FolderPath,videodb://tvshows/years/,Left) | Substring(Container.FolderPath,videodb://musicvideos/years/,Left)">$LOCALIZE[562]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/actors/,Left) | Substring(Container.FolderPath,videodb://tvshows/actors/,Left)">$LOCALIZE[344]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/directors/,Left) | Substring(Container.FolderPath,videodb://musicvideos/directors/,Left)">$LOCALIZE[20348]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/studios/,Left) | Substring(Container.FolderPath,videodb://tvshows/studios/,Left) | Substring(Container.FolderPath,videodb://musicvideos/studios/,Left)">$LOCALIZE[20388]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/sets/,Left)">$LOCALIZE[20434]</value>
+		<value condition="Substring(Container.FolderPath,videodb://movies/countries/,Left)">$LOCALIZE[20451]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/artists/,Left)">$LOCALIZE[133]</value>
+		<value condition="Substring(Container.FolderPath,videodb://musicvideos/albums/,Left)">$LOCALIZE[132]</value>
 	</variable>
 	<variable name="IncludesCommonNowPlayingVideoLabel1">
 		<value condition="[!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(MusicVideos)] | Control.IsVisible(592) | Control.IsVisible(598)">$INFO[VideoPlayer.Title]</value>
@@ -772,11 +772,11 @@
 	</variable>
 	<variable name="ViewFanartLabel2">
 		<value condition="Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
-		<value condition="Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
+		<value condition="Skin.HasSetting(TVShowsPosters) + [SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel3">
 		<value condition="!Skin.HasSetting(TVShowsPosters) + IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
-		<value condition="!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://2/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
+		<value condition="!Skin.HasSetting(TVShowsPosters) | ![SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel4">
 		<value condition="Container.Content(Episodes)">$INFO[ListItem.Title]</value>

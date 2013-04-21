@@ -18,7 +18,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://1/) + !substring(Container.FolderPath,videodb://2/) + !substring(Container.FolderPath,videodb://3/) + !substring(Container.FolderPath,videodb://4/) + !substring(Container.FolderPath,videodb://5/)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>[IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + !substring(Container.FolderPath,videodb://movies/) + !substring(Container.FolderPath,videodb://tvshows/) + !substring(Container.FolderPath,videodb://musicvideos/) + !substring(Container.FolderPath,videodb://recentlyaddedmovies/) + !substring(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -32,7 +32,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://1/) | substring(Container.FolderPath,videodb://4/)] + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://movies/) | substring(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -46,7 +46,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://2/) | substring(Container.FolderPath,videodb://5/)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + [substring(Container.FolderPath,videodb://tvshows/) | substring(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -60,7 +60,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://3/) + ![Control.IsVisible(598) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + substring(Container.FolderPath,videodb://musicvideos/) + ![Control.IsVisible(598) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<include condition="Skin.HasSetting(MoviesExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-movies</include>
 		<include condition="Skin.HasSetting(TVShowsExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-tvshows</include>

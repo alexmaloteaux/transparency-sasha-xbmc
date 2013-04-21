@@ -1,6 +1,6 @@
 <includes>
 	<include name="VideoMediaFlags">
-		<visible>!stringcompare(ListItem.Label,..) + !SubString(ListItem.Path,videodb://1/7/,left)</visible>
+		<visible>!stringcompare(ListItem.Label,..) + !SubString(ListItem.Path,videodb://movies/sets/,left)</visible>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -68,7 +68,7 @@
 		</control>
 	</include>
 	<include name="MovieStudioFlag">
-		<visible>!stringcompare(ListItem.Label,..) + !SubString(ListItem.Path,videodb://1/7/,left)</visible>
+		<visible>!stringcompare(ListItem.Label,..) + !SubString(ListItem.Path,videodb://movies/sets/,left)</visible>
 		<control type="image">
 			<posx>751</posx>
 			<posy>622</posy>

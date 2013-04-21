@@ -358,7 +358,7 @@
 				<height>109</height>
 				<aspectratio>keep</aspectratio>
 				<texture>flags/movies/studio/$INFO[Listitem.label,,.png]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios) + !stringcompare(Container.FolderPath,videodb://3/6/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios) + !stringcompare(Container.FolderPath,videodb://musicvideos/directors/)</visible>
 			</control>
 			<control type="image">
 				<posx>128</posx>
@@ -367,7 +367,7 @@
 				<height>109</height>
 				<aspectratio>keep</aspectratio>
 				<texture>flags/music/recordlabel/$INFO[Listitem.label,,.png]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios) + stringcompare(Container.FolderPath,videodb://3/6/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios) + stringcompare(Container.FolderPath,videodb://musicvideos/directors/)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -377,7 +377,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>87</posx>
@@ -385,7 +385,7 @@
 				<width>231</width>
 				<height>286</height>
 				<texture fallback="genre-movies-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -393,7 +393,7 @@
 				<width>405</width>
 				<height>500</height>
 				<texture>genre_icon_overlay.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="label">
 				<posx>99</posx>
@@ -405,7 +405,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://1/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -415,7 +415,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>87</posx>
@@ -423,7 +423,7 @@
 				<width>231</width>
 				<height>286</height>
 				<texture fallback="genre-tvshows-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -431,7 +431,7 @@
 				<width>405</width>
 				<height>500</height>
 				<texture>genre_icon_overlay.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="label">
 				<posx>99</posx>
@@ -443,7 +443,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://2/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -453,7 +453,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>87</posx>
@@ -461,7 +461,7 @@
 				<width>231</width>
 				<height>286</height>
 				<texture fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -469,7 +469,7 @@
 				<width>405</width>
 				<height>500</height>
 				<texture>genre_icon_overlay.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 			</control>
 			<control type="label">
 				<posx>99</posx>
@@ -481,7 +481,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://3/1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -825,7 +825,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>87</posx>
@@ -833,7 +833,7 @@
 				<width>231</width>
 				<height>286</height>
 				<texture fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -841,7 +841,7 @@
 				<width>405</width>
 				<height>500</height>
 				<texture>genre_icon_overlay.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 			<control type="label">
 				<posx>99</posx>
@@ -853,7 +853,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://1/)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 		</control>
 		<control type="group">

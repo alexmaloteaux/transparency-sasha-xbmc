@@ -3382,7 +3382,7 @@
 				<item id="8113">
 					<description>Menu Music Sub MusicVideos</description>
 					<label>$LOCALIZE[20389]</label>
-					<onclick>ActivateWindow(MusicLibrary,videodb://3/2,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,videodb://musicvideos/titles/,return)</onclick>
 					<visible>Skin.HasSetting(Menu_Music_Sub_MusicVideos)</visible>
 				</item>
 				<item id="8114">
