@@ -1,5 +1,4 @@
 <window>
-	<onload condition="Skin.HasSetting(Vis-LastFM) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow)</onload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="visualisation" id="2">
