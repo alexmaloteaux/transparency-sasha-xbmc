@@ -1419,13 +1419,13 @@
 		</control>
 	</include>
 	<include name="CommonVisualizationBackground">
-		<control type="visualisation">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
-		</control>
+		<include condition="!Skin.HasSetting(Vis-Visualization)">home-visualisation1</include>
+		<include condition="Skin.HasSetting(Vis-LastFM)">home-artistslideshow</include>
+		<include condition="Skin.HasSetting(Vis-Slideshow) + !Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
+		<include condition="[!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-fanart-fallback</include>
+		<include condition="[!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-musicplayer-fanart</include>
+		<include condition="Skin.HasSetting(Vis-CDWall) + !Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
+		<include condition="!Skin.HasSetting(Vis-Visualization)">home-visualisation2</include>
 	</include>
 	<include name="ContentPanel">
 		<include condition="Skin.HasSetting(HateTransparency)">T-Panel1</include>
