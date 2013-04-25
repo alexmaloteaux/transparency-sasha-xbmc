@@ -190,7 +190,7 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="group">
-					<posx>710</posx>
+					<posx>702</posx>
 					<posy>158</posy>
 					<width>328</width>
 					<height>40</height>
@@ -218,7 +218,7 @@
 						<font>-</font>
 						<texturefocus>osdplayer-previous-focus.png</texturefocus>
 						<texturenofocus>osdplayer-previous-nofocus.png</texturenofocus>
-						<onleft>918</onleft>
+						<onleft>919</onleft>
 						<onright>902</onright>
 						<onup>901</onup>
 						<ondown>901</ondown>
@@ -417,7 +417,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>984</posx>
+					<posx>944</posx>
 					<posy>678</posy>
 					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
 					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
@@ -559,13 +559,76 @@
 						<texturefocus>osd-teletext-focus.png</texturefocus>
 						<texturenofocus>osd-teletext-nofocus.png</texturenofocus>
 						<onleft>917</onleft>
-						<onright>901</onright>
+						<onright>919</onright>
 						<onup>918</onup>
 						<ondown>918</ondown>
 						<onclick>ActivateWindow(Teletext)</onclick>
 						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
 						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
+					<control type="button" id="919">
+						<description>Info button</description>
+						<posx>360</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<font>-</font>
+						<texturefocus>osd-info-focus.png</texturefocus>
+						<texturenofocus>osd-info-nofocus.png</texturenofocus>
+						<onleft>918</onleft>
+						<onright>901</onright>
+						<onup>918</onup>
+						<ondown>918</ondown>
+						<onclick>Skin.ToggleSetting(VideoOSDInfo)</onclick>
+						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
+						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasTeletext">Conditional</animation>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<posy>385</posy>
+				<visible>Skin.HasSetting(VideoOSDInfo)</visible>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
+				<include condition="Skin.HasSetting(HateTransparency)">T-Underlay36</include>
+				<control type="image">
+					<description>media info background image</description>
+					<posx>300</posx>
+					<posy>-95</posy>
+					<width>980</width>
+					<height>270</height>
+					<texture diffuse="underlay-diffuse.png" border="0,11,0,11">underlay3.png</texture>
+				</control>
+				<control type="textbox">
+					<description>Plot</description>
+					<posx>385</posx>
+					<posy>-65</posy>
+					<width>805</width>
+					<height>215</height>
+					<font>font-20</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<pagecontrol>60</pagecontrol>
+					<label>$INFO[VideoPlayer.Plot]</label>
+					<autoscroll time="2000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>1215</posx>
+					<posy>-82</posy>
+					<width>20</width>
+					<height>245</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+					<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+					<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+					<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+					<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+					<onup>60</onup>
+					<ondown>60</ondown>
+					<onleft>2</onleft>
+					<onright>1</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
 				</control>
 			</control>
 		</control>
