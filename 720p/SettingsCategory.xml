@@ -200,7 +200,6 @@
 			<posy>23</posy>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
-			<include>CommonNowPlaying</include>
 			<control type="group">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
@@ -284,6 +283,29 @@
 			<description>separator image</description>
 			<height>2</height>
 			<texture>separator.png</texture>
+		</control>
+		<control type="group">
+			<include>Window_OpenClose_Settings_Bottom_Animation</include>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay55</include>
+			<control type="image">
+				<posx>240</posx>
+				<posy>640</posy>
+				<width>800</width>
+				<height>100</height>
+				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+			</control>
+			<control type="textbox" id="6">
+				<posx>240</posx>
+				<posy>652</posy>
+				<width>800</width>
+				<height>66</height>
+				<align>center</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<font>font-20</font>
+				<include>VisibleFadeEffect</include>
+				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+			</control>
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
