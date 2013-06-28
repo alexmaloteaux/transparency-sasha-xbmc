@@ -241,22 +241,22 @@
 		<include>CommonFileCount3</include>
 		<include>CommonFileCount13</include>
 		<control type="button" id="5">
-			<description>OK button</description>
+			<description>Get more button</description>
 			<posx>205</posx>
 			<posy>570</posy>
 			<width>200</width>
 			<height>35</height>
-			<label>186</label>
+			<label>-</label>
 			<font>font-23</font>
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
 			<texturefocus border="7">button-focus.png</texturefocus>
 			<texturenofocus border="7">button-nofocus.png</texturenofocus>
-			<onleft>61</onleft>
-			<onright>61</onright>
-			<onup>3</onup>
-			<ondown>3</ondown>
+			<onleft>62</onleft>
+			<onright>62</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>
 		</control>
 	</controls>
 </window>
