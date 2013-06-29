@@ -899,7 +899,7 @@
 				<posy>6</posy>
 				<width>136</width>
 				<height>136</height>
-				<texture diffuse="thumb-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+				<texture diffuse="thumb-diffuse.png">$INFO[Player.Art(thumb)]</texture>
 				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="image">
@@ -926,7 +926,7 @@
 				<width>250</width>
 				<height>141</height>
 				<aspectratio align="center" scalediffuse="true">keep</aspectratio>
-				<texture diffuse="video-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+				<texture diffuse="video-diffuse.png">$INFO[Player.Art(thumb)]</texture>
 				<visible>VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">

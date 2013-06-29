@@ -113,7 +113,7 @@
 					<posy>44</posy>
 					<width>279</width>
 					<height>157</height>
-					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<texture>$INFO[Player.Art(thumb)]</texture>
 				</control>
 				<control type="image">
 					<posx>-100</posx>
@@ -136,7 +136,7 @@
 					<posy>18</posy>
 					<width>140</width>
 					<height>200</height>
-					<texture>$VAR[IconPosterPlayer]</texture>
+					<texture>$INFO[Player.Art(thumb)]</texture>
 				</control>
 				<control type="image">
 					<posx>138</posx>
