@@ -35,7 +35,7 @@
 					<posy>40</posy>
 					<width>206</width>
 					<height>292</height>
-					<texture>$VAR[IconPosterPlayer]</texture>
+					<texture>$INFO[Player.Art(thumb)]</texture>
 					<visible>VideoPlayer.Content(Movies) + ![SubString(Player.FileNameAndPath,http,left) | SubString(Player.FileNameAndPath,mms,left) | SubString(Player.FileNameAndPath,rtmp,left)]</visible>
 				</control>
 				<control type="image">

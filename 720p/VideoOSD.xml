@@ -189,60 +189,38 @@
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 				</control>
-				<control type="group">
-					<posx>702</posx>
-					<posy>158</posy>
-					<width>328</width>
-					<height>40</height>
-					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
-					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
-					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
-					<animation effect="slide" start="0,0" end="20,0" time="0" condition="Player.CanRecord">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
-				</control>
 			</control>
-			<control type="group" id="920">
-				<control type="group">
+			<control type="group">
+				<control type="grouplist">
 					<posx>322</posx>
 					<posy>678</posy>
 					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
 					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<onup>60</onup>
+					<onleft>919</onleft>
+					<onright>911</onright>
 					<control type="button" id="901">
-						<posx>0</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-previous-focus.png</texturefocus>
 						<texturenofocus>osdplayer-previous-nofocus.png</texturenofocus>
-						<onleft>919</onleft>
-						<onright>902</onright>
-						<onup>901</onup>
-						<ondown>901</ondown>
 						<onclick>PlayerControl(Previous)</onclick>
 					</control>
 					<control type="button" id="902">
-						<posx>40</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-rewind-focus.png</texturefocus>
 						<texturenofocus>osdplayer-rewind-nofocus.png</texturenofocus>
-						<onleft>901</onleft>
-						<onright>903</onright>
-						<onup>902</onup>
-						<ondown>902</ondown>
 						<onclick>PlayerControl(Rewind)</onclick>
 					</control>
 					<control type="togglebutton" id="903">
-						<posx>80</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -252,123 +230,101 @@
 						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 						<alttexturefocus>osdplayer-play-focus.png</alttexturefocus>
 						<alttexturenofocus>osdplayer-play-nofocus.png</alttexturenofocus>
-						<onleft>902</onleft>
-						<onright>904</onright>
-						<onup>903</onup>
-						<ondown>903</ondown>
 						<onclick>PlayerControl(Play)</onclick>
 					</control>
 					<control type="button" id="904">
-						<posx>120</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-forward-focus.png</texturefocus>
 						<texturenofocus>osdplayer-forward-nofocus.png</texturenofocus>
-						<onleft>903</onleft>
-						<onright>905</onright>
-						<onup>904</onup>
-						<ondown>904</ondown>
 						<onclick>PlayerControl(Forward)</onclick>
 					</control>
 					<control type="button" id="905">
-						<posx>160</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-next-focus.png</texturefocus>
 						<texturenofocus>osdplayer-next-nofocus.png</texturenofocus>
-						<onleft>904</onleft>
-						<onright>906</onright>
-						<onup>905</onup>
-						<ondown>905</ondown>
 						<onclick>PlayerControl(Next)</onclick>
 					</control>
 					<control type="button" id="906">
-						<posx>200</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-stop-focus.png</texturefocus>
 						<texturenofocus>osdplayer-stop-nofocus.png</texturenofocus>
-						<onleft>905</onleft>
-						<onright>907</onright>
-						<onup>906</onup>
-						<ondown>906</ondown>
 						<onclick>PlayerControl(Stop)</onclick>
 					</control>
-					<control type="button" id="907">
-						<posx>240</posx>
-						<posy>0</posy>
+					<control type="group" id="999">
 						<width>40</width>
 						<height>40</height>
-						<label>-</label>
-						<font>-</font>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<onleft>906</onleft>
-						<onright>908</onright>
-						<onup>907</onup>
-						<ondown>907</ondown>
-						<onclick>PlayerControl(Repeat)</onclick>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>osdplayer-repeat-nofocus.png</texture>
-						<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + !Control.HasFocus(907)</visible>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>osdplayer-repeat-focus.png</texture>
-						<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + Control.HasFocus(907)</visible>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>osdplayer-repeatone-nofocus.png</texture>
-						<visible>Playlist.IsRepeatOne + !Control.HasFocus(907)</visible>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>osdplayer-repeatone-focus.png</texture>
-						<visible>Playlist.IsRepeatOne + Control.HasFocus(907)</visible>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>osdplayer-repeatall-nofocus.png</texture>
-						<visible>Playlist.IsRepeat + !Control.HasFocus(907)</visible>
-					</control>
-					<control type="image">
-						<posx>240</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>osdplayer-repeatall-focus.png</texture>
-						<visible>Playlist.IsRepeat + Control.HasFocus(907)</visible>
+						<control type="button" id="907">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<label>-</label>
+							<font>-</font>
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onleft>906</onleft>
+							<onright>908</onright>
+							<onclick>PlayerControl(Repeat)</onclick>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<texture>osdplayer-repeat-nofocus.png</texture>
+							<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + !Control.HasFocus(907)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<texture>osdplayer-repeat-focus.png</texture>
+							<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + Control.HasFocus(907)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<texture>osdplayer-repeatone-nofocus.png</texture>
+							<visible>Playlist.IsRepeatOne + !Control.HasFocus(907)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<texture>osdplayer-repeatone-focus.png</texture>
+							<visible>Playlist.IsRepeatOne + Control.HasFocus(907)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<texture>osdplayer-repeatall-nofocus.png</texture>
+							<visible>Playlist.IsRepeat + !Control.HasFocus(907)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>40</width>
+							<height>40</height>
+							<texture>osdplayer-repeatall-focus.png</texture>
+							<visible>Playlist.IsRepeat + Control.HasFocus(907)</visible>
+						</control>
 					</control>
 					<control type="togglebutton" id="908">
-						<posx>280</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -379,56 +335,42 @@
 						<alttexturefocus>osdplayer-randomselected-focus.png</alttexturefocus>
 						<alttexturenofocus>osdplayer-randomselected-nofocus.png</alttexturenofocus>
 						<onclick>PlayerControl(Random)</onclick>
-						<onleft>907</onleft>
-						<onright>909</onright>
-						<onup>908</onup>
-						<ondown>908</ondown>
 					</control>
 					<control type="button" id="909">
-						<posx>320</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-record-focus.png</texturefocus>
 						<texturenofocus>osdplayer-record-nofocus.png</texturenofocus>
-						<onleft>908</onleft>
-						<onright>910</onright>
-						<onup>909</onup>
-						<ondown>909</ondown>
 						<onclick>PlayerControl(record)</onclick>
 						<visible>Player.CanRecord + !Player.Recording</visible>
 					</control>
 					<control type="button" id="910">
-						<posx>320</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osdplayer-recordrecording-focus.png</texturefocus>
 						<texturenofocus>osdplayer-recordrecording-nofocus.png</texturenofocus>
-						<onleft>909</onleft>
-						<onright>911</onright>
-						<onup>910</onup>
-						<ondown>910</ondown>
 						<onclick>PlayerControl(record)</onclick>
 						<visible>Player.CanRecord + Player.Recording</visible>
 					</control>
 				</control>
-				<control type="group">
-					<posx>944</posx>
+				<control type="grouplist">
+					<posx>862</posx>
 					<posy>678</posy>
+					<width>400</width>
 					<animation effect="slide" start="0,230" end="0,0" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowOpen</animation>
 					<animation effect="slide" start="0,0" end="0,230" time="300" condition="!Window.IsVisible(FullscreenInfo)">WindowClose</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
-					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<align>right</align>
+					<onleft>910</onleft>
+					<onright>901</onright>
 					<control type="button" id="911">
 						<description>Channels Menu</description>
-						<posx>40</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -436,17 +378,10 @@
 						<texturenofocus>osd-channels-nofocus.png</texturenofocus>
 						<texturefocus>osd-channels-focus.png</texturefocus>
 						<onclick>ActivateWindow(PVROSDChannels)</onclick>
-						<onleft>910</onleft>
-						<onright>912</onright>
-						<onup>911</onup>
-						<ondown>911</ondown>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<control type="button" id="912">
 						<description>EPG Menu</description>
-						<posx>80</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -454,17 +389,10 @@
 						<texturenofocus>osd-epg-nofocus.png</texturenofocus>
 						<texturefocus>osd-epg-focus.png</texturefocus>
 						<onclick>ActivateWindow(PVROSDGuide)</onclick>
-						<onleft>911</onleft>
-						<onright>921</onright>
-						<onup>912</onup>
-						<ondown>912</ondown>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<control type="button" id="921">
 						<description>3D Menu</description>
-						<posx>80</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -472,16 +400,10 @@
 						<texturenofocus>osd-3d-nofocus.png</texturenofocus>
 						<texturefocus>osd-3d-focus.png</texturefocus>
 						<onclick>ActivateWindow(1116)</onclick>
-						<onleft>912</onleft>
-						<onright>913</onright>
-						<onup>921</onup>
-						<ondown>921</ondown>
 						<visible>VideoPlayer.IsStereoscopic</visible>
 					</control>
 					<control type="button" id="913">
 						<description>Audio Menu</description>
-						<posx>120</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -489,16 +411,10 @@
 						<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 						<texturefocus>osd-audio-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
-						<onleft>921</onleft>
-						<onright>914</onright>
-						<onup>913</onup>
-						<ondown>913</ondown>
 						<visible>!Skin.HasSetting(KioskMode)</visible>
 					</control>
 					<control type="button" id="914">
 						<description>Video Menu</description>
-						<posx>160</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -506,16 +422,10 @@
 						<texturenofocus>osd-video-nofocus.png</texturenofocus>
 						<texturefocus>osd-video-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDVideoSettings)</onclick>
-						<onleft>913</onleft>
-						<onright>915</onright>
-						<onup>914</onup>
-						<ondown>914</ondown>
 						<visible>!Skin.HasSetting(KioskMode)</visible>
 					</control>
 					<control type="button" id="915">
 						<description>Bookmarks Menu</description>
-						<posx>200</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -523,15 +433,9 @@
 						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 						<texturefocus>osd-bookmark-focus.png</texturefocus>
 						<onclick>ActivateWindow(VideoBookmarks)</onclick>
-						<onleft>914</onleft>
-						<onright>916</onright>
-						<onup>915</onup>
-						<ondown>915</ondown>
 					</control>
 					<control type="togglebutton" id="916">
 						<description>Subtitles button</description>
-						<posx>240</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
@@ -546,63 +450,38 @@
 						<altclick>Dialog.Close(videoosd)</altclick>
 						<altclick>RunScript($INFO[Skin.String(SubsScript_Path)])</altclick>
 						<usealttexture>IsEmpty(Skin.String(SubsScript_Path))</usealttexture>
-						<onleft>915</onleft>
-						<onright>917</onright>
-						<onup>916</onup>
-						<ondown>916</ondown>
 					</control>
 					<control type="button" id="917">
 						<description>DVD menu button</description>
-						<posx>280</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturenofocus>osd-dvd-nofocus.png</texturenofocus>
 						<texturefocus>osd-dvd-focus.png</texturefocus>
-						<onleft>916</onleft>
-						<onright>918</onright>
-						<onup>917</onup>
-						<ondown>917</ondown>
 						<onclick>PlayerControl(ShowVideoMenu)</onclick>
 						<visible>VideoPlayer.HasMenu</visible>
 					</control>
 					<control type="button" id="918">
 						<description>Teletext button</description>
-						<posx>320</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osd-teletext-focus.png</texturefocus>
 						<texturenofocus>osd-teletext-nofocus.png</texturenofocus>
-						<onleft>917</onleft>
-						<onright>919</onright>
-						<onup>918</onup>
-						<ondown>918</ondown>
 						<onclick>ActivateWindow(Teletext)</onclick>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
 						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
 					<control type="button" id="919">
 						<description>Info button</description>
-						<posx>360</posx>
-						<posy>0</posy>
 						<width>40</width>
 						<height>40</height>
 						<label>-</label>
 						<font>-</font>
 						<texturefocus>osd-info-focus.png</texturefocus>
 						<texturenofocus>osd-info-nofocus.png</texturenofocus>
-						<onleft>918</onleft>
-						<onright>901</onright>
-						<onup>918</onup>
-						<ondown>918</ondown>
 						<onclick>Skin.ToggleSetting(VideoOSDInfo)</onclick>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
-						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="!VideoPlayer.HasTeletext">Conditional</animation>
 					</control>
 				</control>
 			</control>
@@ -645,8 +524,8 @@
 					<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
 					<onup>60</onup>
 					<ondown>60</ondown>
-					<onleft>2</onleft>
-					<onright>1</onright>
+					<onleft>919</onleft>
+					<onright>919</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
