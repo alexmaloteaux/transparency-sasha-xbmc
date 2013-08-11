@@ -198,6 +198,7 @@
 					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<animation effect="slide" start="0,0" end="20,0" time="0" condition="Player.CanRecord">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-20,0" time="0" condition="VideoPlayer.HasTeletext">Conditional</animation>
 				</control>
@@ -439,6 +440,7 @@
 						<onright>912</onright>
 						<onup>911</onup>
 						<ondown>911</ondown>
+						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<control type="button" id="912">
@@ -453,10 +455,28 @@
 						<texturefocus>osd-epg-focus.png</texturefocus>
 						<onclick>ActivateWindow(PVROSDGuide)</onclick>
 						<onleft>911</onleft>
-						<onright>913</onright>
+						<onright>921</onright>
 						<onup>912</onup>
 						<ondown>912</ondown>
+						<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="button" id="921">
+						<description>3D Menu</description>
+						<posx>80</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<font>-</font>
+						<texturenofocus>osd-3d-nofocus.png</texturenofocus>
+						<texturefocus>osd-3d-focus.png</texturefocus>
+						<onclick>ActivateWindow(1116)</onclick>
+						<onleft>912</onleft>
+						<onright>913</onright>
+						<onup>921</onup>
+						<ondown>921</ondown>
+						<visible>VideoPlayer.IsStereoscopic</visible>
 					</control>
 					<control type="button" id="913">
 						<description>Audio Menu</description>
@@ -469,7 +489,7 @@
 						<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 						<texturefocus>osd-audio-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
-						<onleft>912</onleft>
+						<onleft>921</onleft>
 						<onright>914</onright>
 						<onup>913</onup>
 						<ondown>913</ondown>
