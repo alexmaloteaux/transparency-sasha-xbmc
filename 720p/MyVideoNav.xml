@@ -173,7 +173,7 @@
 					<label>-</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>610</onup>
+					<onup>22</onup>
 					<ondown>3</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
@@ -186,7 +186,7 @@
 					<onleft>50</onleft>
 					<onright>4</onright>
 					<onup>2</onup>
-					<ondown>7</ondown>
+					<ondown>10</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="togglebutton" id="4">
@@ -198,39 +198,27 @@
 					<onleft>3</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
-					<ondown>7</ondown>
+					<ondown>10</ondown>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ToggleButtonNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ToggleButtonWide</include>
-					<visible>!Skin.HasSetting(KioskMode)</visible>
-				</control>
-				<control type="radiobutton" id="7">
-					<description>Stack button</description>
-					<posx>0</posx>
-					<posy>90</posy>
-					<label>$LOCALIZE[346]</label>
-					<include>ButtonCommonValues</include>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>3</onup>
-					<ondown>10</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="10">
 					<description>Watched Toggle</description>
 					<posx>0</posx>
-					<posy>135</posy>
+					<posy>90</posy>
 					<include>ButtonCommonValues</include>
 					<label>20367</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>7</onup>
+					<onup>3</onup>
 					<ondown>8</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<posx>0</posx>
-					<posy>180</posy>
+					<posy>135</posy>
 					<include>ButtonCommonValues</include>
 					<label>137</label>
 					<onleft>50</onleft>
@@ -242,7 +230,7 @@
 				<control type="edit" id="19">
 					<description>Filter</description>
 					<posx>0</posx>
-					<posy>225</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<onleft>50</onleft>
@@ -251,20 +239,36 @@
 					<ondown>20</ondown>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced + !Skin.HasSetting(KioskMode)</visible>
 				</control>
-				<control type="radiobutton" id="20">
+				<control type="radiobutton" id="19">
 					<description>Advanced Filter</description>
 					<posx>0</posx>
-					<posy>225</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
-					<ondown>16</ondown>
+					<onup>8</onup>
+					<ondown>20</ondown>
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 					<selected>Container.Filtered</selected>
 					<visible>Container.CanFilterAdvanced + !Skin.HasSetting(KioskMode)</visible>
+				</control>
+				<control type="togglebutton" id="20">
+					<description>Update Library</description>
+					<posx>0</posx>
+					<posy>225</posy>
+					<include>ButtonCommonValues</include>
+					<label>653</label>
+					<altlabel>13353</altlabel>
+					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<usealttexture>library.isscanningvideo</usealttexture> 
+					<onleft>3</onleft>
+					<onright>50</onright>
+					<onup>19</onup>
+					<ondown>16</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
@@ -314,11 +318,26 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>11</onup>
-					<ondown>2</ondown>
+					<ondown>22</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(11)">conditional</animation>
 					<animation effect="slide" end="0,-360" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
+				</control>
+				<control type="button" id="22">
+					<description>now playing</description>
+					<posx>0</posx>
+					<posy>450</posy>
+					<include>ButtonCommonValues</include>
+					<label>13350</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>610</onup>
+					<ondown>2</ondown>
+					<onclick>ActivateWindow(videoplaylist)</onclick>
+					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(11)">conditional</animation>
+					<animation effect="slide" end="0,-270" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -326,7 +345,8 @@
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" start="0,0" end="0,-45" time="0" condition="!Control.IsVisible(11)">conditional</animation>
-					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio | Player.HasVideo">Conditional</animation>
+					<animation effect="slide" end="0,90" time="0" condition="Player.HasVideo">Conditional</animation>
+					<animation effect="slide" end="0,45" time="0" condition="Player.HasAudio">Conditional</animation>
 					<animation effect="slide" end="0,-360" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
