@@ -1322,7 +1322,19 @@
 			</control>
 			<control type="label">
 				<posx>262</posx>
-				<posy>607</posy>
+				<posy>606</posy>
+				<width>613</width>
+				<height>30</height>
+				<font>font-25</font>
+				<textcolor>lightblue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Album]</label>
+			</control>
+			<control type="label">
+				<posx>262</posx>
+				<posy>632</posy>
 				<width>613</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1331,11 +1343,10 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$VAR[ViewFanartLabel7]</label>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="Window.IsVisible(MusicFiles)">conditional</animation>
 			</control>
 			<control type="label">
 				<posx>262</posx>
-				<posy>618</posy>
+				<posy>577</posy>
 				<width>450</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1348,7 +1359,7 @@
 			</control>
 			<control type="label">
 				<posx>865</posx>
-				<posy>618</posy>
+				<posy>577</posy>
 				<width>150</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1361,18 +1372,6 @@
 			</control>
 			<control type="label">
 				<posx>262</posx>
-				<posy>644</posy>
-				<width>613</width>
-				<height>30</height>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$VAR[ViewFanartLabel8]</label>
-			</control>
-			<control type="label">
-				<posx>262</posx>
 				<posy>667</posy>
 				<width>613</width>
 				<height>30</height>
@@ -1382,6 +1381,19 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$VAR[ViewFanartLabel9]</label>
+			</control>
+			<control type="label">
+				<posx>390</posx>
+				<posy>667</posy>
+				<width>613</width>
+				<height>30</height>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$VAR[ViewFanartLabel8]</label>
+				<visible>!ListItem.IsPlaying + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]</visible>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
