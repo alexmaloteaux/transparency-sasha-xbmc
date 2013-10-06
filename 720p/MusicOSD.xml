@@ -202,9 +202,9 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<posx>982</posx>
+				<posx>902</posx>
 				<posy>678</posy>
-				<width>280</width>
+				<width>360</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<align>right</align>
@@ -291,6 +291,28 @@
 					<altclick>Dialog.Close(musicosd)</altclick>
 					<altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
 					<usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
+				</control>
+				<control type="button" id="919">
+					<description>Last.fm love</description>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-love-nofocus.png</texturenofocus>
+					<texturefocus>osd-love-focus.png</texturefocus>
+					<onclick>RunScript(plugin.audio.lastfm,action=LastFM.Love)</onclick>
+					<visible>!IsEmpty(Window(Home).Property(LastFM.CanLove))</visible>
+				</control>
+				<control type="button" id="920">
+					<description>Last.fm ban</description>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-ban-nofocus.png</texturenofocus>
+					<texturefocus>osd-ban-focus.png</texturefocus>
+					<onclick>RunScript(plugin.audio.lastfm,action=LastFM.Ban))</onclick>
+					<visible>!IsEmpty(Window(Home).Property(LastFM.CanBan)</visible>
 				</control>
 			</control>
 		</control>
