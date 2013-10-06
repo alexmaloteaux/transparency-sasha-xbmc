@@ -29,7 +29,7 @@
 				<onclick>PreviousMenu</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
-			<control type="label" id="2">
+			<control type="label" id="99">
 				<description>heading label</description>
 				<posx>40</posx>
 				<posy>40</posy>
@@ -38,7 +38,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-32</font>
-				<label>31053</label>
 				<textcolor>blue</textcolor>
 			</control>
 			<control type="label" id="200">
