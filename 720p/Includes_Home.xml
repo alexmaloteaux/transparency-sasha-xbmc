@@ -2734,7 +2734,7 @@
 	<include name="HomeTVButton">
 		<item id="5">
 			<label>19020</label>
-			<onclick>ActivateWindow(TV)</onclick>
+			<onclick>ActivateWindow(PVR)</onclick>
 			<icon>special://skin/backgrounds/tv.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 		</item>
