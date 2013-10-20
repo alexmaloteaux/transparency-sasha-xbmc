@@ -94,8 +94,6 @@
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
 				<textoffsetx>7</textoffsetx>
-				<textureradioon>radiobutton-focus.png</textureradioon>
-				<textureradiooff>radiobutton-nofocus.png</textureradiooff>
 			</control>
 			<control type="spincontrolex" id="9">
 				<description>Default SpinControlex</description>
@@ -104,10 +102,6 @@
 				<height>30</height>
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
-				<textureup>scroll-up.png</textureup>
-				<texturedown>scroll-down.png</texturedown>
-				<textureupfocus>scroll-up-focus.png</textureupfocus>
-				<texturedownfocus>scroll-down-focus.png</texturedownfocus>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<disabledcolor>disabled</disabledcolor>
