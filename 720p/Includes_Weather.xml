@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="weather">
 		<include>Window_OpenClose_Right_Panel_Animation</include>
@@ -1190,8 +1191,8 @@
 						<ondown>6000</ondown>
 						<onleft>9000</onleft>
 						<onright>5998</onright>
-						<onclick condition="IsEmpty(Skin.String(WeatherVideo))">PlayMedia(&quot;$INFO[Window.Property(Video)]&quot;,1)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(WeatherVideo))">PlayMedia(&quot;$INFO[Skin.String(WeatherVideo)]&quot;,1)</onclick>
+						<onclick condition="IsEmpty(Skin.String(WeatherVideo))">PlayMedia("$INFO[Window.Property(Video)]",1)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(WeatherVideo))">PlayMedia("$INFO[Skin.String(WeatherVideo)]",1)</onclick>
 						<animation effect="fade" start="100" end="0" time="50" condition="Control.HasFocus(5998)">Conditional</animation>
 						<visible>![IsEmpty(Skin.String(WeatherVideo)) + IsEmpty(Window.Property(Video))]</visible>
 					</control>

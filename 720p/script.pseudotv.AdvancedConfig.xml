@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<coordinates>
 		<system>1</system>
@@ -147,22 +148,22 @@
 					<onclick>SetFocus(120)</onclick>
 					<visible allowhiddenfocus="true">Control.HasFocus(130) | StringCompare(Window.Property(itempress),120) | StringCompare(Window.Property(itempress),121) | StringCompare(Window.Property(itempress),122) | StringCompare(Window.Property(itempress),123) | StringCompare(Window.Property(itempress),124) | StringCompare(Window.Property(itempress),125) | StringCompare(Window.Property(itempress),126)</visible>
 					<animation condition="StringCompare(Window.Property(itempress),121)" reversible="false">
-						<effect type="slide" start="0,35" time="500" />
+						<effect type="slide" start="0,35" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),122)" reversible="false">
-						<effect type="slide" start="0,70" time="500" />
+						<effect type="slide" start="0,70" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),123)" reversible="false">
-						<effect type="slide" start="0,105" time="500" />
+						<effect type="slide" start="0,105" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),124)" reversible="false">
-						<effect type="slide" start="0,140" time="500" />
+						<effect type="slide" start="0,140" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),125)" reversible="false">
-						<effect type="slide" start="0,175" time="500" />
+						<effect type="slide" start="0,175" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),126)" reversible="false">
-						<effect type="slide" start="0,210" time="500" />
+						<effect type="slide" start="0,210" time="500"/>
 					</animation>
 				</control>
 				<control type="group" id="102">
@@ -173,32 +174,32 @@
 					<height>210</height>
 					<visible>StringCompare(Window.Property(itempress),120) | StringCompare(Window.Property(itempress),121) | StringCompare(Window.Property(itempress),122) | StringCompare(Window.Property(itempress),123) | StringCompare(Window.Property(itempress),124) | StringCompare(Window.Property(itempress),125) | StringCompare(Window.Property(itempress),126)</visible>
 					<animation condition="StringCompare(Window.Property(itempress),120)" reversible="false">
-						<effect type="slide" start="0,30" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,30" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),121)" reversible="false">
-						<effect type="slide" start="0,65" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,65" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),122)" reversible="false">
-						<effect type="slide" start="0,100" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,100" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),123)" reversible="false">
-						<effect type="slide" start="0,135" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,135" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),124)" reversible="false">
-						<effect type="slide" start="0,170" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,170" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),125)" reversible="false">
-						<effect type="slide" start="0,205" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,205" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<animation condition="StringCompare(Window.Property(itempress),126)" reversible="false">
-						<effect type="slide" start="0,240" time="500" />
-						<effect type="zoom" start="100,0" time="500" />
+						<effect type="slide" start="0,240" time="500"/>
+						<effect type="zoom" start="100,0" time="500"/>
 					</animation>
 					<control type="button" id="131">
 						<posx>10</posx>

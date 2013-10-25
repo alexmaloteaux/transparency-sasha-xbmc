@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="Fanart-Videos">
 		<control type="list" id="50">
@@ -155,11 +156,11 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false"/>
 					</animation>
 					<animation type="unfocus">
 						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
@@ -174,11 +175,11 @@
 					<bordersize>13</bordersize>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false"/>
 					</animation>
 					<animation type="unfocus">
 						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
@@ -191,11 +192,11 @@
 					<texture>$VAR[PartlyWatched]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="18,2" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>
 					</animation>
 					<animation type="unfocus">
 						<effect type="slide" start="18,2" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
@@ -208,11 +209,11 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<animation type="focus">
 						<effect type="slide" start="0,0" end="18,2" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>
 					</animation>
 					<animation type="unfocus">
 						<effect type="slide" start="18,2" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false" />
+						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
@@ -458,8 +459,8 @@
 				<onright>50</onright>
 				<onup>7005</onup>
 				<ondown>7005</ondown>
-				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
-				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
+				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]")</onclick>
+				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]",1)</onclick>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !IsEmpty(Listitem.Trailer)</visible>
 			</control>
 		</control>

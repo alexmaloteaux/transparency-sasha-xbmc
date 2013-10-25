@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="CoverFlow-Movies">
 		<control type="videowindow">
@@ -1249,7 +1250,7 @@
 					<posy>12</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture></texture>
+					<texture/>
 				</control>
 			</focusedlayout>
 		</control>
@@ -1363,8 +1364,8 @@
 				<ondown>55</ondown>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
-				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
+				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]")</onclick>
+				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]",1)</onclick>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !IsEmpty(Listitem.Trailer)</visible>
 			</control>
 		</control>
@@ -2913,7 +2914,7 @@
 					<posy>28</posy>
 					<width>318</width>
 					<height>318</height>
-					<texture></texture>
+					<texture/>
 				</control>
 			</focusedlayout>
 		</control>

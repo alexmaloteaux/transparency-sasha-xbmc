@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="home-videowindow">
 		<control type="videowindow">
@@ -2861,31 +2862,31 @@
 				<item id="8102">
 					<description>Menu Videos Sub Custom1</description>
 					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom1_Label)]</label>
-					<onclick>ActivateWindow(Videos,&quot;$INFO[Skin.String(Menu_Videos_Sub_Custom1_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Videos,"$INFO[Skin.String(Menu_Videos_Sub_Custom1_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom1)</visible>
 				</item>
 				<item id="8103">
 					<description>Menu Videos Sub Custom2</description>
 					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom2_Label)]</label>
-					<onclick>ActivateWindow(Videos,&quot;$INFO[Skin.String(Menu_Videos_Sub_Custom2_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Videos,"$INFO[Skin.String(Menu_Videos_Sub_Custom2_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom2)</visible>
 				</item>
 				<item id="8104">
 					<description>Menu Videos Sub Custom3</description>
 					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom3_Label)]</label>
-					<onclick>ActivateWindow(Videos,&quot;$INFO[Skin.String(Menu_Videos_Sub_Custom3_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Videos,"$INFO[Skin.String(Menu_Videos_Sub_Custom3_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom3)</visible>
 				</item>
 				<item id="8105">
 					<description>Menu Videos Sub Custom4</description>
 					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom4_Label)]</label>
-					<onclick>ActivateWindow(Videos,&quot;$INFO[Skin.String(Menu_Videos_Sub_Custom4_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Videos,"$INFO[Skin.String(Menu_Videos_Sub_Custom4_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom4)</visible>
 				</item>
 				<item id="8106">
 					<description>Menu Videos Sub Custom5</description>
 					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom5_Label)]</label>
-					<onclick>ActivateWindow(Videos,&quot;$INFO[Skin.String(Menu_Videos_Sub_Custom5_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Videos,"$INFO[Skin.String(Menu_Videos_Sub_Custom5_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom5)</visible>
 				</item>
 				<item id="8107">
@@ -3457,31 +3458,31 @@
 				<item id="8103">
 					<description>Menu Pictures Sub Custom1</description>
 					<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Label)]</label>
-					<onclick>ActivateWindow(Pictures,&quot;$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Pictures,"$INFO[Skin.String(Menu_Pictures_Sub_Custom1_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom1)</visible>
 				</item>
 				<item id="8104">
 					<description>Menu Pictures Sub Custom2</description>
 					<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Label)]</label>
-					<onclick>ActivateWindow(Pictures,&quot;$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Pictures,"$INFO[Skin.String(Menu_Pictures_Sub_Custom2_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom2)</visible>
 				</item>
 				<item id="8105">
 					<description>Menu Pictures Sub Custom3</description>
 					<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Label)]</label>
-					<onclick>ActivateWindow(Pictures,&quot;$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Pictures,"$INFO[Skin.String(Menu_Pictures_Sub_Custom3_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom3)</visible>
 				</item>
 				<item id="8106">
 					<description>Menu Pictures Sub Custom4</description>
 					<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Label)]</label>
-					<onclick>ActivateWindow(Pictures,&quot;$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Pictures,"$INFO[Skin.String(Menu_Pictures_Sub_Custom4_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom4)</visible>
 				</item>
 				<item id="8107">
 					<description>Menu Pictures Sub Custom5</description>
 					<label>$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Label)]</label>
-					<onclick>ActivateWindow(Pictures,&quot;$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Pictures,"$INFO[Skin.String(Menu_Pictures_Sub_Custom5_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Pictures_Sub_Custom5)</visible>
 				</item>
 				<item id="8108">
@@ -3550,61 +3551,61 @@
 				<item id="8103">
 					<description>Menu Programs Sub Custom1</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom1_Label)]</label>
-					<onclick>ActivateWindow(Programs,&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom1_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Programs,"$INFO[Skin.String(Menu_Programs_Sub_Custom1_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom1)</visible>
 				</item>
 				<item id="8104">
 					<description>Menu Programs Sub Custom2</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom2_Label)]</label>
-					<onclick>ActivateWindow(Programs,&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom2_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Programs,"$INFO[Skin.String(Menu_Programs_Sub_Custom2_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom2)</visible>
 				</item>
 				<item id="8105">
 					<description>Menu Programs Sub Custom3</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom3_Label)]</label>
-					<onclick>ActivateWindow(Programs,&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom3_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Programs,"$INFO[Skin.String(Menu_Programs_Sub_Custom3_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom3)</visible>
 				</item>
 				<item id="8106">
 					<description>Menu Programs Sub Custom4</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom4_Label)]</label>
-					<onclick>ActivateWindow(Programs,&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom4_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Programs,"$INFO[Skin.String(Menu_Programs_Sub_Custom4_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom4)</visible>
 				</item>
 				<item id="8107">
 					<description>Menu Programs Sub Custom5</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom5_Label)]</label>
-					<onclick>ActivateWindow(Programs,&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom5_Path)]&quot;,return)</onclick>
+					<onclick>ActivateWindow(Programs,"$INFO[Skin.String(Menu_Programs_Sub_Custom5_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom5)</visible>
 				</item>
 				<item id="8108">
 					<description>Menu Programs Sub Custom6</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom6_Label)]</label>
-					<onclick>System.Exec(&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)]&quot;,return)</onclick>
+					<onclick>System.Exec("$INFO[Skin.String(Menu_Programs_Sub_Custom6_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom6)</visible>
 				</item>
 				<item id="8109">
 					<description>Menu Programs Sub Custom7</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom7_Label)]</label>
-					<onclick>System.Exec(&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)]&quot;,return)</onclick>
+					<onclick>System.Exec("$INFO[Skin.String(Menu_Programs_Sub_Custom7_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom7)</visible>
 				</item>
 				<item id="81010">
 					<description>Menu Programs Sub Custom8</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom8_Label)]</label>
-					<onclick>System.Exec(&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)]&quot;,return)</onclick>
+					<onclick>System.Exec("$INFO[Skin.String(Menu_Programs_Sub_Custom8_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom8)</visible>
 				</item>
 				<item id="81011">
 					<description>Menu Programs Sub Custom9</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom9_Label)]</label>
-					<onclick>System.Exec(&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)]&quot;,return)</onclick>
+					<onclick>System.Exec("$INFO[Skin.String(Menu_Programs_Sub_Custom9_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom9)</visible>
 				</item>
 				<item id="81012">
 					<description>Menu Programs Sub Custom10</description>
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom10_Label)]</label>
-					<onclick>System.Exec(&quot;$INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)]&quot;,return)</onclick>
+					<onclick>System.Exec("$INFO[Skin.String(Menu_Programs_Sub_Custom10_Path)]",return)</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom10)</visible>
 				</item>
 				<item id="8113">

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
@@ -5,12 +6,12 @@
 		<posy>0</posy>
 	</coordinates>
 	<animation type="WindowOpen" reversible="true">
-		<effect type="zoom" start="500" end="100" center="640,360" time="200" />
-		<effect type="fade" start="0" end="100" time="200" />
+		<effect type="zoom" start="500" end="100" center="640,360" time="200"/>
+		<effect type="fade" start="0" end="100" time="200"/>
 	</animation>
 	<animation type="WindowClose" reversible="false">
-		<effect type="zoom" start="100" end="300" center="640,360" easing="in" tween="back" time="300" />
-		<effect type="fade" start="100" end="0" time="300" />
+		<effect type="zoom" start="100" end="300" center="640,360" easing="in" tween="back" time="300"/>
+		<effect type="fade" start="100" end="0" time="300"/>
 	</animation>
 	<controls>
 		<control type="image">

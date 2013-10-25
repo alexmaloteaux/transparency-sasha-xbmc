@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
@@ -164,7 +165,7 @@
 					<posy>110</posy>
 					<width>625</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</label>
+					<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ]     $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font-20</font>

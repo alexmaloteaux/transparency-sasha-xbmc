@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="Icons-Movies">
 		<control type="videowindow">
@@ -509,8 +510,8 @@
 				<ondown>57</ondown>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;)</onclick>
-				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia(&quot;$INFO[ListItem.Trailer]&quot;,1)</onclick>
+				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]")</onclick>
+				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]",1)</onclick>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !IsEmpty(Listitem.Trailer)</visible>
 			</control>
 		</control>

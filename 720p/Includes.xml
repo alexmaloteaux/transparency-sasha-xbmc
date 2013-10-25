@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include file="defaults.xml"/>
 	<include file="Includes_Variables.xml"/>
@@ -1558,21 +1559,21 @@
 		<font>font-160</font>
 		<textcolor>99FFFFFF</textcolor>
 		<scroll>true</scroll>
-		<scrollsuffix></scrollsuffix>
+		<scrollsuffix/>
 		<label>$INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     </label>
 	</include>
 	<include name="MusicPlayerArtist">
 		<font>font-80</font>
 		<textcolor>99666666</textcolor>
 		<scroll>true</scroll>
-		<scrollsuffix></scrollsuffix>
+		<scrollsuffix/>
 		<label>$INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     $INFO[MusicPlayer.Artist]     </label>
 	</include>
 	<include name="MusicPlayerTitle">
 		<font>font-160</font>
 		<textcolor>99FFFFFF</textcolor>
 		<scroll>true</scroll>
-		<scrollsuffix></scrollsuffix>
+		<scrollsuffix/>
 		<label>$INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     $INFO[MusicPlayer.Title]     </label>
 	</include>
 	<include name="NextAiredInfo">
@@ -1785,7 +1786,7 @@
 				<viewtype label="">panel</viewtype>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>-</scrolltime>
-				<hitrect x="-10" y="-10" w="1" h="1" />
+				<hitrect x="-10" y="-10" w="1" h="1"/>
 				<itemlayout height="35" width="35">
 					<control type="label">
 						<posx>10</posx>
