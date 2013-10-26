@@ -6,7 +6,7 @@
 			<posy>489</posy>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596) + Container.OnNext</visible>
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<control type="image">
 				<posx>-35</posx>
 				<posy>129</posy>
@@ -445,7 +445,7 @@
 			<posy>489</posy>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596) + Container.OnPrevious</visible>
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<control type="image">
 				<posx>-107</posx>
 				<posy>129</posy>

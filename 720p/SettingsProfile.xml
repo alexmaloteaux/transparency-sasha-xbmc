@@ -210,7 +210,7 @@
 					<textcolor>white</textcolor>
 					<font>font-15</font>
 					<label>$INFO[System.ProfileAutoLogin]</label>
-					<enable>!System.HasLoginScreen</enable>
+					<visible>!System.HasLoginScreen</visible>
 				</control>
 			</control>
 		</control>

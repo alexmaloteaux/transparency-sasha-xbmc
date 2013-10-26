@@ -23,11 +23,11 @@
 			</control>
 		</control>
 		<control type="group" id="7011">
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(590) + Container.OnNext</visible>
 		</control>
 		<control type="group" id="7012">
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(590) + Container.OnPrevious</visible>
 		</control>
 		<control type="group">
@@ -614,11 +614,11 @@
 	</include>
 	<include name="Item-Music">
 		<control type="group" id="7011">
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(595) + Container.OnNext</visible>
 		</control>
 		<control type="group" id="7012">
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(595) + Container.OnPrevious</visible>
 		</control>
 		<control type="group">

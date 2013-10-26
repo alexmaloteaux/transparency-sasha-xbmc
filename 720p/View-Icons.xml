@@ -456,11 +456,11 @@
 			<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
 		</control>
 		<control type="group" id="7029">
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(57) + Container.OnNext</visible>
 		</control>
 		<control type="group" id="7030">
-			<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<visible>Control.IsVisible(57) + Container.OnPrevious</visible>
 		</control>
 		<control type="group">
@@ -544,7 +544,7 @@
 				<texture>floor.png</texture>
 			</control>
 			<control type="group" id="7015">
-				<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+				<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 				<visible>Container.OnNext</visible>
 				<control type="image">
 					<posx>546</posx>
@@ -559,7 +559,7 @@
 				</control>
 			</control>
 			<control type="group" id="7016">
-				<animation effect="fade" begin="100" end="100" time="250">Hidden</animation>
+				<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
 				<control type="image">
 					<posx>546</posx>
@@ -574,7 +574,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation effect="fade" begin="100" end="0" time="35">Hidden</animation>
+				<animation effect="fade" start="100" end="0" time="35">Hidden</animation>
 				<visible>!Control.IsVisible(7015) + !Control.IsVisible(7016)</visible>
 				<control type="image">
 					<posx>546</posx>
