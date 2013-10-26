@@ -30,12 +30,13 @@
 				<onclick>PreviousMenu</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
-			<control type="label" id="99">
+			<control type="label">
 				<description>heading label</description>
 				<posx>40</posx>
 				<posy>40</posy>
 				<width>720</width>
 				<height>30</height>
+				<label>$ADDON[script.cu.lrclyrics 32199]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-32</font>
