@@ -7469,7 +7469,6 @@
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<align>center</align>
 						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
 						<visible>Skin.String(player1score,5) | Skin.String(player2score,5)</visible>
 					</control>
@@ -7483,7 +7482,6 @@
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<align>center</align>
 						<animation effect="fade" start="100" end="60" time="800" loop="true" condition="true">Conditional</animation>
 						<visible>Skin.String(player1score,5) | Skin.String(player2score,5)</visible>
 					</control>
