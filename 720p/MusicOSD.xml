@@ -313,7 +313,7 @@
 					<texturenofocus>osd-ban-nofocus.png</texturenofocus>
 					<texturefocus>osd-ban-focus.png</texturefocus>
 					<onclick>RunScript(plugin.audio.lastfm,action=LastFM.Ban))</onclick>
-					<visible>!IsEmpty(Window(Home).Property(LastFM.CanBan)</visible>
+					<visible>!IsEmpty(Window(Home).Property(LastFM.CanBan))</visible>
 				</control>
 			</control>
 		</control>
