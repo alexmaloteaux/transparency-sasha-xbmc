@@ -122,40 +122,29 @@
 				<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay5.png</texture>
 			</control>
 			<control type="button" id="20">
+				<posx>-10</posx>
+				<posy>-10</posy>
+				<width>1</width>
+				<height>1</height>
+				<visible>false</visible>
+			</control>
+			<control type="button" id="99">
 				<posx>440</posx>
 				<posy>60</posy>
-				<width>200</width>
+				<width>400</width>
 				<height>35</height>
-				<label>10037</label>
+				<label>$LOCALIZE[31100] $INFO[Control.GetLabel(20)]</label>
 				<font>font-23</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<texturefocus border="7">button-focus.png</texturefocus>
 				<onleft>21</onleft>
 				<onright>21</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
+				<onup>5</onup>
+				<ondown>5</ondown>
 				<onclick>settingslevelchange</onclick>
-			</control>
-			<control type="button" id="21">
-				<posx>640</posx>
-				<posy>60</posy>
-				<width>200</width>
-				<height>35</height>
-				<label>10035</label>
-				<font>font-23</font>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onleft>20</onleft>
-				<onright>20</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
-				<onclick>settingsreset</onclick>
 			</control>
 			<control type="image">
 				<posx>440</posx>
@@ -177,7 +166,7 @@
 				<pagecontrol>90</pagecontrol>
 				<onleft>3</onleft>
 				<onright>90</onright>
-				<onup>5</onup>
+				<onup>99</onup>
 				<ondown>5</ondown>
 			</control>
 			<control type="scrollbar" id="90">
@@ -231,7 +220,7 @@
 				<itemgap>-2</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
-				<onup>20</onup>
+				<onup>3</onup>
 				<ondown>3</ondown>
 			</control>
 		</control>
