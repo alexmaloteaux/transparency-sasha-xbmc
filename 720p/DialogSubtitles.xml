@@ -126,7 +126,7 @@
 						<posy>6</posy>
 						<width>27</width>
 						<height>18</height>
-						<texture>countries/$INFO[ListItem.Thumb]</texture>
+						<texture>countries/$INFO[ListItem.Thumb,,.gif]</texture>
 					</control>
 					<control type="label">
 						<posx>40</posx>
@@ -198,7 +198,7 @@
 						<posy>6</posy>
 						<width>27</width>
 						<height>18</height>
-						<texture>countries/$INFO[ListItem.Thumb]</texture>
+						<texture>countries/$INFO[ListItem.Thumb,,.gif]</texture>
 					</control>
 					<control type="label">
 						<posx>40</posx>
