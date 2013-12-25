@@ -280,7 +280,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>20</onup>
-					<ondown>17</ondown>
+					<ondown>11</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="radiobutton" id="11">
@@ -291,7 +291,7 @@
 					<label>12333</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>17</onup>
+					<onup>16</onup>
 					<ondown>610</ondown>
 					<pulseonselect>no</pulseonselect>
 					<onclick>Xbmc.MasterMode</onclick>
