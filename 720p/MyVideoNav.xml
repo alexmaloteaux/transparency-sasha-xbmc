@@ -237,10 +237,10 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
-					<ondown>20</ondown>
+					<ondown>23</ondown>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced + !Skin.HasSetting(KioskMode)</visible>
 				</control>
-				<control type="radiobutton" id="19">
+				<control type="radiobutton" id="23">
 					<description>Advanced Filter</description>
 					<posx>0</posx>
 					<posy>180</posy>
@@ -267,7 +267,7 @@
 					<usealttexture>library.isscanningvideo</usealttexture> 
 					<onleft>3</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
+					<onup>23</onup>
 					<ondown>16</ondown>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
