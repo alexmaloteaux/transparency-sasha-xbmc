@@ -688,6 +688,17 @@
 						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
 						<selected>!Skin.HasSetting(homepageSysteminfo)</selected>
 					</control>
+					<control type="image" id="233">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="234">
+						<description>enable Favorite Button</description>
+						<label>$LOCALIZE[31107]</label>
+						<onclick>Skin.ToggleSetting(HideFavorite)</onclick>
+						<selected>Skin.HasSetting(HideFavorite)</selected>
+					</control>
 				</control>
 				<control type="scrollbar" id="299">
 					<posx>1083</posx>

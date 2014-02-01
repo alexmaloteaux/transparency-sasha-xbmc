@@ -78,7 +78,7 @@
 				<include condition="!Skin.HasSetting(Show_Custom_Home_Logo)">Logo</include>
 				<include condition="Skin.HasSetting(Show_Custom_Home_Logo)">Logo-Custom</include>
 				<control type="grouplist">
-					<posx>669</posx>
+					<posx>620</posx>
 					<posy>0</posy>
 					<width>529</width>
 					<height>30</height>
@@ -86,6 +86,7 @@
 					<orientation>horizontal</orientation>
 					<itemgap>0</itemgap>
 					<animation effect="slide" start="0,0" end="20,0" time="0" condition="Skin.HasSetting(HideSearch)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="49,0" time="0" condition="Skin.HasSetting(HideFavorite)">Conditional</animation>
 					<control type="label">
 						<description>date label</description>
 						<width min="10" max="400">auto</width>
@@ -113,6 +114,42 @@
 				</control>
 				<include condition="!Skin.HasSetting(HideSearch)">SearchButton</include>
 				<control type="image">
+					<posx>1170</posx>
+					<posy>0</posy>
+					<width>29</width>
+					<height>30</height>
+					<texture>dot.png</texture>
+                                        <visible>[!Skin.HasSetting(HideFavorite)]</visible>
+				</control>
+				<control type="button" id="15">
+					<description>Favorite Button</description>
+					<posx>1199</posx>
+					<posy>7</posy>
+					<width>20</width>
+					<height>20</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<pulseonselect>true</pulseonselect>
+					<onleft>10</onleft>
+					<onright>20</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<visible>[!Skin.HasSetting(HideFavorite)]</visible>
+				</control>
+				<control type="image">
+					<posx>1199</posx>
+					<posy>7</posy>
+					<width>20</width>
+					<height>20</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[HomeFavButton]</texture>
+					<animation effect="rotate" start="0" end="-360" center="auto" time="800" condition="Control.HasFocus(15)">Conditional</animation>
+					<visible>[!Skin.HasSetting(HideFavorite)]</visible>
+				</control>
+				<control type="image">
 					<posx>1219</posx>
 					<posy>0</posy>
 					<width>29</width>
@@ -131,7 +168,7 @@
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>true</pulseonselect>
-					<onleft>10</onleft>
+					<onleft>15</onleft>
 					<onright>10</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
