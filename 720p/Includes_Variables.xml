@@ -1355,4 +1355,8 @@
 	<variable name="Weather84">
 		<value condition="StringCompare(Weather.Plugin,weather.wunderground)">[B]$LOCALIZE[33050][/B]</value>
 	</variable>
+	<variable name="PlayDiscCustomNameString">
+		<value condition="Skin.String(PlayDiscCustomName)">$INFO[Skin.String(PlayDiscCustomName)]</value>
+		<value condition="!Skin.String(PlayDiscCustomName)">$LOCALIZE[341]</value>
+	</variable>
 </includes>

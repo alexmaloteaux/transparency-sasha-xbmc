@@ -3768,6 +3768,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu PlayDisc Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(PlayDiscCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(PlayDiscCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu PlayDisc Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>

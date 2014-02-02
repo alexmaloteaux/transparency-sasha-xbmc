@@ -2799,7 +2799,7 @@
 	</include>
 	<include name="HomePlayDiscButton">
 		<item id="13">
-			<label>341</label>
+			<label>$VAR[PlayDiscCustomNameString]</label>
 			<onclick>PlayDVD()</onclick>
 			<icon>special://skin/backgrounds/playdisc.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
