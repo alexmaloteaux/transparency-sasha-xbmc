@@ -1355,6 +1355,50 @@
 	<variable name="Weather84">
 		<value condition="StringCompare(Weather.Plugin,weather.wunderground)">[B]$LOCALIZE[33050][/B]</value>
 	</variable>
+	<variable name="VideosCustomNameString">
+		<value condition="Skin.String(VideosCustomName)">$INFO[Skin.String(VideosCustomName)]</value>
+		<value condition="!Skin.String(VideosCustomName)">$LOCALIZE[3]</value>
+	</variable>
+	<variable name="MoviesCustomNameString">
+		<value condition="Skin.String(MoviesCustomName)">$INFO[Skin.String(MoviesCustomName)]</value>
+		<value condition="!Skin.String(MoviesCustomName)">$LOCALIZE[342]</value>
+	</variable>
+	<variable name="TvShowsCustomNameString">
+		<value condition="Skin.String(TvShowsCustomName)">$INFO[Skin.String(TvShowsCustomName)]</value>
+		<value condition="!Skin.String(TvShowsCustomName)">$LOCALIZE[20343]</value>
+	</variable>
+	<variable name="MusicVideosCustomNameString">
+		<value condition="Skin.String(MusicVideosCustomName)">$INFO[Skin.String(MusicVideosCustomName)]</value>
+		<value condition="!Skin.String(MusicVideosCustomName)">$LOCALIZE[20389]</value>
+	</variable>
+	<variable name="TvCustomNameString">
+		<value condition="Skin.String(TvCustomName)">$INFO[Skin.String(TvCustomName)]</value>
+		<value condition="!Skin.String(TvCustomName)">$LOCALIZE[19020]</value>
+	</variable>
+	<variable name="MusicCustomNameString">
+		<value condition="Skin.String(MusicCustomName)">$INFO[Skin.String(MusicCustomName)]</value>
+		<value condition="!Skin.String(MusicCustomName)">$LOCALIZE[2]</value>
+	</variable>
+	<variable name="PicturesCustomNameString">
+		<value condition="Skin.String(PicturesCustomName)">$INFO[Skin.String(PicturesCustomName)]</value>
+		<value condition="!Skin.String(PicturesCustomName)">$LOCALIZE[1]</value>
+	</variable>
+	<variable name="ProgramsCustomNameString">
+		<value condition="Skin.String(ProgramsCustomName)">$INFO[Skin.String(ProgramsCustomName)]</value>
+		<value condition="!Skin.String(ProgramsCustomName)">$LOCALIZE[24001]</value>
+	</variable>
+	<variable name="WeatherCustomNameString">
+		<value condition="Skin.String(WeatherCustomName)">$INFO[Skin.String(WeatherCustomName)]</value>
+		<value condition="!Skin.String(WeatherCustomName)">$LOCALIZE[8]</value>
+	</variable>
+	<variable name="FavoritesCustomNameString">
+		<value condition="Skin.String(FavoritesCustomName)">$INFO[Skin.String(FavoritesCustomName)]</value>
+		<value condition="!Skin.String(FavoritesCustomName)">$LOCALIZE[1036]</value>
+	</variable>
+	<variable name="SettingsCustomNameString">
+		<value condition="Skin.String(SettingsCustomName)">$INFO[Skin.String(SettingsCustomName)]</value>
+		<value condition="!Skin.String(SettingsCustomName)">$LOCALIZE[5]</value>
+	</variable>
 	<variable name="PlayDiscCustomNameString">
 		<value condition="Skin.String(PlayDiscCustomName)">$INFO[Skin.String(PlayDiscCustomName)]</value>
 		<value condition="!Skin.String(PlayDiscCustomName)">$LOCALIZE[341]</value>
