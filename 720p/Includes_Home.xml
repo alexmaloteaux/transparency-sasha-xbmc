@@ -2701,7 +2701,7 @@
 	</include>
 	<include name="HomeVideosButton">
 		<item id="1">
-			<label>3</label>
+			<label>$VAR[VideosCustomNameString]</label>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<icon>special://skin/backgrounds/videos.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Videos_Folder)]</thumb>
@@ -2709,7 +2709,7 @@
 	</include>
 	<include name="HomeMoviesButton">
 		<item id="2">
-			<label>342</label>
+			<label>$VAR[MoviesCustomNameString]</label>
 			<onclick condition="!Skin.HasSetting(CinemaScript_HomeMenu)">ActivateWindow(Videos,movietitles,return)</onclick>
 			<onclick condition="Skin.HasSetting(CinemaScript_HomeMenu)">RunScript(script.cinema.experience,movietitles)</onclick>
 			<include condition="!Skin.HasSetting(Home_Movies_Fanart_Background)">home-movies-background</include>
@@ -2718,7 +2718,7 @@
 	</include>
 	<include name="HomeTVShowsButton">
 		<item id="3">
-			<label>20343</label>
+			<label>$VAR[TvShowsCustomNameString]</label>
 			<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
 			<include condition="!Skin.HasSetting(Home_TVShows_Fanart_Background)">home-tvshows-background</include>
 			<include condition="Skin.HasSetting(Home_TVShows_Fanart_Background)">home-tvshows-background-fanart</include>
@@ -2726,7 +2726,7 @@
 	</include>
 	<include name="HomeMusicVideosButton">
 		<item id="4">
-			<label>20389</label>
+			<label>$VAR[MusicVideosCustomNameString]</label>
 			<onclick>ActivateWindow(Videos,musicvideotitles,return)</onclick>
 			<icon>special://skin/backgrounds/musicvideos.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
@@ -2734,7 +2734,7 @@
 	</include>
 	<include name="HomeTVButton">
 		<item id="5">
-			<label>19020</label>
+			<label>$VAR[TvCustomNameString]</label>
 			<onclick>ActivateWindow(PVR)</onclick>
 			<icon>special://skin/backgrounds/tv.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
@@ -2742,7 +2742,7 @@
 	</include>
 	<include name="HomeMusicButton">
 		<item id="6">
-			<label>2</label>
+			<label>$VAR[MusicCustomNameString]</label>
 			<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
 			<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 			<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
@@ -2750,7 +2750,7 @@
 	</include>
 	<include name="HomeMusicFilesButton">
 		<item id="6">
-			<label>2</label>
+			<label>$VAR[MusicCustomNameString]</label>
 			<onclick>ActivateWindow(MusicFiles)</onclick>
 			<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 			<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
@@ -2758,7 +2758,7 @@
 	</include>
 	<include name="HomePicturesButton">
 		<item id="7">
-			<label>1</label>
+			<label>$VAR[PicturesCustomNameString]</label>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<icon>special://skin/backgrounds/pictures.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
@@ -2766,7 +2766,7 @@
 	</include>
 	<include name="HomeProgramsButton">
 		<item id="8">
-			<label>24001</label>
+			<label>$VAR[ProgramsCustomNameString]</label>
 			<onclick>ActivateWindow(Programs,addons,return)</onclick>
 			<icon>special://skin/backgrounds/programs.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
@@ -2774,7 +2774,7 @@
 	</include>
 	<include name="HomeWeatherButton">
 		<item id="10">
-			<label>8</label>
+			<label>$VAR[WeatherCustomNameString]</label>
 			<onclick>ActivateWindow(Weather)</onclick>
 			<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
 			<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + !Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-background-conditional</include>
@@ -2783,7 +2783,7 @@
 	</include>
 	<include name="HomeFavouritesButton">
 		<item id="11">
-			<label>1036</label>
+			<label>$VAR[FavoritesCustomNameString]</label>
 			<onclick>ActivateWindow(Favourites)</onclick>
 			<icon>special://skin/backgrounds/favourites.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
@@ -2791,7 +2791,7 @@
 	</include>
 	<include name="HomeSettingsButton">
 		<item id="12">
-			<label>5</label>
+			<label>$VAR[SettingsCustomNameString]</label>
 			<onclick>ActivateWindow(Settings)</onclick>
 			<icon>special://skin/backgrounds/settings.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>

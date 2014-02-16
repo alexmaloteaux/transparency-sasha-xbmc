@@ -2116,6 +2116,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Videos Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(VideosCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(VideosCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Videos Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -2213,6 +2221,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Movies Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(MoviesCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(MoviesCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Movies Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -2454,6 +2470,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu TvShows Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(TvShowsCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(TvShowsCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu TVShows Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -2614,6 +2638,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu MusicVideos Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(MusicVideosCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(MusicVideosCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu MusicVideos Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -2783,6 +2815,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu TV Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(TvCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(TvCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu TV Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -2835,6 +2875,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Music Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(MusicCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(MusicCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Music Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -3067,6 +3115,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Pictures Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(PicturesCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(PicturesCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Pictures Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -3218,6 +3274,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Programs Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(ProgramsCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(ProgramsCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Programs Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -3450,6 +3514,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Wheater Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(WeatherCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(WeatherCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Weather Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -3529,6 +3601,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Favorites Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(FavoritesCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(FavoritesCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Favourites Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>
@@ -3599,6 +3679,14 @@
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<include>VisibleFadeEffect</include>
+					<control type="button" id="8199">
+						<description>Menu Settings Alternative Name</description>
+						<label>[B]$LOCALIZE[31201] :  [/B][COLOR=lightblue]$INFO[Skin.String(SettingsCustomName)][/COLOR]</label>
+						<include>ButtonMenuSettings2</include>
+						<onclick>Skin.SetString(SettingsCustomName)</onclick>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+					</control>
 					<control type="radiobutton" id="8101">
 						<description>Menu Settings Sub</description>
 						<label>[B]$LOCALIZE[1034][/B]</label>

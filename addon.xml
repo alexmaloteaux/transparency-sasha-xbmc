@@ -7,7 +7,6 @@
 		<import addon="script.globalsearch" version="1.1.1"/>
 		<import addon="service.skin.widgets" version="0.0.27"/>
 		<import addon="service.qlock" version="0.5.4"/>
-		<import addon="script.dvdextras" version="1.2.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p"/>
