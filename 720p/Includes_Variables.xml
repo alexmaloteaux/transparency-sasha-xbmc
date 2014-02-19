@@ -346,6 +346,13 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">flags/movies/audiocodec/dtsma71.png</value>
 		<value>flags/movies/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="IncludesMediaFlagsVideoAudioCodec2">
+		<value condition="[stringcompare(ListItem.AudioCodec,ac3)">flags/movies/audiocodec/dd.png</value>
+		<value condition="[stringcompare(ListItem.AudioCodec,dca)">flags/movies/audiocodec/dts.png</value>
+		<value condition="stringcompare(ListItem.AudioCodec,dtshd_hra)">flags/movies/audiocodec/dtshd_hra.png</value>
+		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma)">flags/movies/audiocodec/dtsma.png</value>
+		<value>flags/movies/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
+	</variable>
 	<variable name="IncludesMediaFlagsVideoSource">
 		<value condition="substring(ListItem.Filename,dvdrip) | substring(ListItem.Filename,sddvd) | substring(ListItem.Filename,.ifo,Right) | substring(ListItem.Filename,.vob,Right) | [[!substring(ListItem.Filename,hddvd) + !substring(ListItem.Filename,pdtv) + !substring(ListItem.Filename,bluray) + !substring(ListItem.Filename,blu-ray) + !substring(ListItem.Filename,brrip) + !substring(ListItem.Filename,sdtv) + !substring(ListItem.Filename,tvrip) + !substring(ListItem.Filename,hdtv) + !substring(ListItem.Filename,.evo,Right) + !substring(ListItem.Filename,.m2ts,Right) + !substring(ListItem.Filename,.bdmv,Right)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [stringcompare(ListItem.VideoResolution,480) | stringcompare(ListItem.VideoResolution,540) | stringcompare(ListItem.VideoResolution,576)]]">flags/movies/source/dvd.png</value>
 		<value condition="substring(ListItem.Filename,hddvd) | substring(ListItem.Filename,.evo,Right)">flags/movies/source/hddvd.png</value>
