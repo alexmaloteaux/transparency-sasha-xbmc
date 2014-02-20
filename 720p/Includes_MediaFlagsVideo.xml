@@ -10,6 +10,7 @@
 			<texture fallback="mediaflag-resolution.png">flags/movies/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 		</control>
 		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>68</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -17,6 +18,15 @@
 			<texture fallback="mediaflag-aspectratio.png">flags/movies/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>64</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-aspectratio.png">flags/movies/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>136</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -24,6 +34,15 @@
 			<texture fallback="mediaflag-videocodec.png">flags/movies/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>128</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-videocodec.png">flags/movies/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>204</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -31,6 +50,23 @@
 			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoAudioCodec]</texture>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>192</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoAudioCodec2]</texture>
+		</control>
+		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>256</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoChannels]</texture>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>272</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -38,6 +74,15 @@
 			<texture fallback="mediaflag-source.png">$VAR[IncludesMediaFlagsVideoSource]</texture>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-source.png">$VAR[IncludesMediaFlagsVideoSource]</texture>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>340</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -45,6 +90,15 @@
 			<texture>$VAR[IncludesMediaFlagsVideoSubtitles]</texture>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>384</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture>$VAR[IncludesMediaFlagsVideoSubtitles]</texture>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>408</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -52,6 +106,15 @@
 			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>448</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>476</posx>
 			<posy>0</posy>
 			<width>64</width>
@@ -60,7 +123,26 @@
 			<visible>![Container.Content(Movies) + [Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>512</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>48</height>
+			<texture>mediaflag.png</texture>
+			<visible>![Container.Content(Movies) + [Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
 			<posx>484</posx>
+			<posy>6</posy>
+			<width>52</width>
+			<height>35</height>
+			<texture fallback="mediaflag-studio.png">flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
+			<visible>[[Container.Content(Movies) + ![[Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57)] | [!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist)]]  + !stringcompare(ListItem.Label,..)</visible>
+		</control>
+		<control type="image">
+			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<posx>520</posx>
 			<posy>6</posy>
 			<width>52</width>
 			<height>35</height>
