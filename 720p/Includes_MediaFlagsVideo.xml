@@ -63,7 +63,7 @@
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
-			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoChannels]</texture>
+			<texture fallback="flags/movies/channels/0.png">$VAR[IncludesMediaFlagsVideoChannels]</texture>
 		</control>
 		<control type="image">
 			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>

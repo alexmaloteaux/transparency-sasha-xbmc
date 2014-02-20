@@ -454,6 +454,26 @@
 		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,8)">flags/movies/audiocodec/dtsma71.png</value>
 		<value>flags/movies/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="IncludesMediaFlagsVideoFullScreenAudioCodec2">
+		<value condition="stringcompare(VideoPlayer.AudioCodec,ac3)">flags/movies/audiocodec/dd.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioCodec,dca)">flags/movies/audiocodec/dts.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_hra)">flags/movies/audiocodec/dtshra.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_ma)">flags/movies/audiocodec/dtsma.png</value>
+		<value>flags/movies/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</value>
+	</variable>
+	<variable name="IncludesMediaFlagsVideoFullScreenChannels">
+		<value condition="stringcompare(VideoPlayer.AudioChannels,0)">flags/movies/channels/0.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,1)">flags/movies/channels/1.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,2)">flags/movies/channels/2.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,3) + !stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + !stringcompare(VideoPlayer.AudioCodec,ac3)">flags/movies/channels/3.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,3) + stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioCodec,ac3)">flags/movies/channels/3.0.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,4)">flags/movies/channels/4.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,5)">flags/movies/channels/5.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,6)">flags/movies/channels/6.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,7)">flags/movies/channels/7.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,8)">flags/movies/channels/8.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,10)">flags/movies/channels/10.png</value>
+	</variable>
 	<variable name="IncludesMediaFlagsVideoFullScreenRating">
 		<value condition="substring(VideoPlayer.Mpaa,Rated G) | substring(VideoPlayer.Mpaa,Rated: G)">flags/movies/rating/rating-g.png</value>
 		<value condition="[substring(VideoPlayer.Mpaa,Rated PG) | substring(VideoPlayer.Mpaa,Rated: PG)] + !substring(VideoPlayer.Mpaa,Rated PG-13) + !substring(VideoPlayer.Mpaa,Rated: PG-13)">flags/movies/rating/rating-pg.png</value>
