@@ -1179,6 +1179,11 @@
 						<onclick>Skin.ToggleSetting(Enable_Music_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Music_Media_Flags)</selected>
 					</control>
+					<control type="radiobutton" id="499">
+						<label>All - Separate codec and channels flags</label>
+						<onclick>Skin.ToggleSetting(Enable_Codec_Channel_Flags)</onclick>
+						<selected>!Skin.HasSetting(Enable_Codec_Channel_Flags)</selected>
+					</control>
 					<control type="image" id="416">
 						<width>880</width>
 						<height>2</height>
