@@ -1311,6 +1311,16 @@
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
+					<control type="radiobutton" id="519">
+						<label>31217</label>
+						<onclick>Skin.ToggleSetting(DisableVideoExtras)</onclick>
+						<selected>Skin.HasSetting(DisableVideoExtras)</selected>
+					</control>
+					<control type="image" id="520">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
 				</control>
 				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>
