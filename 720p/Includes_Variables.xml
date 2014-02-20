@@ -355,7 +355,7 @@
 		<value condition="stringcompare(ListItem.AudioChannels,1)">flags/movies/channels/1.png</value>
 		<value condition="stringcompare(ListItem.AudioChannels,2)">flags/movies/channels/2.png</value>
 		<value condition="stringcompare(ListItem.AudioChannels,3) + !stringcompare(ListItem.AudioCodec,dtshd_ma) + !stringcompare(ListItem.AudioCodec,ac3)">flags/movies/channels/3.png</value>
-		<value condition="stringcompare(ListItem.AudioChannels,3) + stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioCodec,ac3)">flags/movies/channels/3.0.png</value>
+		<value condition="stringcompare(ListItem.AudioChannels,3) + [stringcompare(ListItem.AudioCodec,dtshd_ma) |  stringcompare(ListItem.AudioCodec,ac3)]">flags/movies/channels/3.0.png</value>
 		<value condition="stringcompare(ListItem.AudioChannels,4)">flags/movies/channels/4.png</value>
 		<value condition="stringcompare(ListItem.AudioChannels,5)">flags/movies/channels/5.png</value>
 		<value condition="stringcompare(ListItem.AudioChannels,6)">flags/movies/channels/6.png</value>
@@ -467,7 +467,7 @@
 		<value condition="stringcompare(VideoPlayer.AudioChannels,1)">flags/movies/channels/1.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioChannels,2)">flags/movies/channels/2.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioChannels,3) + !stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + !stringcompare(VideoPlayer.AudioCodec,ac3)">flags/movies/channels/3.png</value>
-		<value condition="stringcompare(VideoPlayer.AudioChannels,3) + stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioCodec,ac3)">flags/movies/channels/3.0.png</value>
+		<value condition="stringcompare(VideoPlayer.AudioChannels,3) + [stringcompare(ListItem.AudioCodec,dtshd_ma) |  stringcompare(ListItem.AudioCodec,ac3)]">flags/movies/channels/3.0.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioChannels,4)">flags/movies/channels/4.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioChannels,5)">flags/movies/channels/5.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioChannels,6)">flags/movies/channels/6.png</value>

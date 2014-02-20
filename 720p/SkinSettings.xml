@@ -1189,11 +1189,6 @@
 						<onclick>Skin.ToggleSetting(Enable_Dimension_Flags)</onclick>
 						<selected>Skin.HasSetting(Enable_Dimension_Flags)</selected>
 					</control>
-					<control type="radiobutton" id="499">
-						<label>$LOCALIZE[31148]</label>
-						<onclick>Skin.ToggleSetting(Enable_VideoExtras_Flags)</onclick>
-						<selected>Skin.HasSetting(Enable_VideoExtras_Flags)</selected>
-					</control>
 					<control type="image" id="416">
 						<width>880</width>
 						<height>2</height>
