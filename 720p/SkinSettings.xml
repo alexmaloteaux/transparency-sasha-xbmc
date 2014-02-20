@@ -1179,10 +1179,20 @@
 						<onclick>Skin.ToggleSetting(Enable_Music_Media_Flags)</onclick>
 						<selected>!Skin.HasSetting(Enable_Music_Media_Flags)</selected>
 					</control>
-					<control type="radiobutton" id="499">
+					<control type="radiobutton" id="497">
 						<label>$LOCALIZE[31152]</label>
 						<onclick>Skin.ToggleSetting(Enable_Codec_Channel_Flags)</onclick>
 						<selected>Skin.HasSetting(Enable_Codec_Channel_Flags)</selected>
+					</control>
+					<control type="radiobutton" id="498">
+						<label>$LOCALIZE[31147]</label>
+						<onclick>Skin.ToggleSetting(Enable_Dimension_Flags)</onclick>
+						<selected>Skin.HasSetting(Enable_Dimension_Flags)</selected>
+					</control>
+					<control type="radiobutton" id="499">
+						<label>$LOCALIZE[31148]</label>
+						<onclick>Skin.ToggleSetting(Enable_VideoExtras_Flags)</onclick>
+						<selected>Skin.HasSetting(Enable_VideoExtras_Flags)</selected>
 					</control>
 					<control type="image" id="416">
 						<width>880</width>
