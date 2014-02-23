@@ -45,10 +45,10 @@
 					<height>20</height>
 					<font>font-32</font>
 					<textcolor>blue</textcolor>
-					<label>$LOCALIZE[287]</label>
+					<label>$INFO[Player.Filename]</label>
 					<align>center</align>
 				</control>
-				<control type="group" id="111">
+				<control type="group" id="130">
 					<control type="grouplist">
 						<posx>515</posx>
 						<posy>2</posy>
@@ -68,7 +68,7 @@
 							<height>40</height>
 							<font>font-21</font>
 							<textcolor>white</textcolor>
-							<label>$ADDON[script.xbmc.subtitles 655]</label>
+							<label>$LOCALIZE[31005]</label>
 							<aligny>center</aligny>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
