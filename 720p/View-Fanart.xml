@@ -447,8 +447,8 @@
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<animation effect="slide" end="-401,0" time="0" condition="Skin.HasSetting(FanartLong)">Conditional</animation>
 			<control type="button" id="7005">
-				<posx>1222</posx>
-				<posy>14</posy>
+				<posx>1240</posx>
+				<posy>95</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -519,6 +519,29 @@
 				<texture>movieset.png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + SubString(Container.Folderpath,videodb://,left)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>100</height>
+				<texture border="10">underlay.png</texture>
+				<visible>!IsEmpty(ListItem.FileName)</visible>
+			</control>
+			<control type="textbox">
+				<description>Plot Value for Movies</description>
+				<posx>40</posx>
+				<posy>10</posy>
+				<width>1200</width>
+				<height>70</height>
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[ListItem.Plot]</label>
+				<pulseonselect></pulseonselect>
+				<autoscroll time="2000" delay="7000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>!IsEmpty(ListItem.FileName)</visible>
 			</control>
 		</control>
 		<control type="group">
