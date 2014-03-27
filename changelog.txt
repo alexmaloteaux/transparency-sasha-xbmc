@@ -4,10 +4,12 @@ Custom changes added by sasha :
 -Add an option to add a Favorite Button between GlobalSearch and Shutdown Menu
 -Add an option to separate Video and Channels Video Flags
 -Allow the user to customize Menu Names
--Add VideoExtras Button
+-Add VideoExtras Button in DialogVideoInfo
+-Add extras flags and display them in the mediaflagsvideo in windowmovie (require  pr xxxxx to be applied : https://github...)
 -Add a 3D flag icon on media flag list
+-Add pcm_16le flag (some lpcm 7.1 mkv use this)
 -Add H265/HEVC flags (works only with fernetmenta fork)
--Add pcm_16le flag
+
 
 TODO : 
 

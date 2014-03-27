@@ -2,7 +2,7 @@
 <includes>
 	<include name="Fanart-Videos">
 		<control type="list" id="50">
-			<onitemchanged>XBMC.RunScript(script.videoextras,test,"$INFO[ListItem.FilenameAndPath]")</onitemchanged>
+			<onitemchanged>XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onitemchanged>
 			<posx>200</posx>
 			<width>355</width>
 			<onleft>7005</onleft>
