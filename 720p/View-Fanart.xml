@@ -3,6 +3,7 @@
 	<include name="Fanart-Videos">
 		<control type="list" id="50">
 			<onitemchanged condition="[Container.Content(Movies) | Container.Content(TVShows)] + !Skin.HasSetting(DisableVideoExtras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onitemchanged>
+			<onitemchanged>XBMC.RunScript(script.videoextras,test,"$INFO[ListItem.FilenameAndPath]")</onitemchanged>
 			<posx>200</posx>
 			<width>355</width>
 			<onleft>7005</onleft>
@@ -357,14 +358,27 @@
 				<control type="label">
 					<posx>257</posx>
 					<posy>593</posy>
-					<width>610</width>
+					<width>500</width>
 					<height>30</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
+					<label>[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]</label>
+				</control>
+				<control type="label">
+					<posx>330</posx>
+					<posy>593</posy>
+					<width>430</width>
+					<scroll>true</scroll>
+					<height>30</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Genre]</label>
 				</control>
 				<control type="label">
 					<posx>257</posx>

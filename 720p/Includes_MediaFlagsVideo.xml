@@ -10,14 +10,14 @@
 			<texture fallback="mediaflag-resolution.png">flags/movies/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 		</control>
 		<control type="image">
-			<posx>64</posx>
+			<posx>62</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-aspectratio.png">flags/movies/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 		</control>
 		<control type="image">
-			<posx>128</posx>
+			<posx>124</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
@@ -25,15 +25,15 @@
 		</control>
 		<control type="image">
 			<visible>Skin.HasSetting(Enable_Dimension_Flags)</visible>
-			<posx>192</posx>
+			<posx>186</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-videocodec.png">$VAR[IncludesMediaFlagsVideoDimension]</texture>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>192</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>186</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
@@ -41,44 +41,44 @@
 		</control>
 		<control type="image">
 			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>256</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>248</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="flags/movies/channels/0.png">$VAR[IncludesMediaFlagsVideoAudioChannels]</texture>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="48,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>272</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>248</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-source.png">$VAR[IncludesMediaFlagsVideoSource]</texture>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="44,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>340</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>310</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
 			<texture>$VAR[IncludesMediaFlagsVideoSubtitles]</texture>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="40,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>408</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>372</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="40,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>476</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>434</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
@@ -86,9 +86,9 @@
 			<visible>!Skin.HasSetting(DisableVideoExtras)</visible>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="36,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>476</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>496</posx>
 			<posy>0</posy>
 			<width>64</width>
 			<height>48</height>
@@ -96,9 +96,9 @@
 			<visible>![Container.Content(Movies) + [Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !stringcompare(ListItem.Label,..)</visible>
 		</control>
 		<control type="image">
-			<animation effect="slide" start="0,0" end="36,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="64,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
-			<posx>484</posx>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags)">Conditional</animation>
+			<posx>501</posx>
 			<posy>6</posy>
 			<width>52</width>
 			<height>35</height>
@@ -109,8 +109,8 @@
 	<include name="MovieStudioFlag">
 		<visible>!stringcompare(ListItem.Label,..) + !SubString(ListItem.Path,videodb://movies/sets/,left)</visible>
 		<control type="image">
-			<posx>751</posx>
-			<posy>622</posy>
+			<posx>763</posx>
+			<posy>626</posy>
 			<width>115</width>
 			<height>85</height>
 			<texture>mediaflag.png</texture>
@@ -119,8 +119,8 @@
 			<visible>!stringcompare(ListItem.Label,..)</visible>
 		</control>
 		<control type="image">
-			<posx>762</posx>
-			<posy>633</posy>
+			<posx>774</posx>
+			<posy>637</posy>
 			<width>93</width>
 			<height>63</height>
 			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudio]</texture>
