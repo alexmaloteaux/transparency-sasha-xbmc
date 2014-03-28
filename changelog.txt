@@ -5,7 +5,7 @@ Custom changes added by sasha :
 -Add an option to separate Video and Channels Video Flags
 -Allow the user to customize Menu Names
 -Add VideoExtras Button in DialogVideoInfo
--Add extras flags and display them in the mediaflagsvideo in windowmovie (require  pr xxxxx to be applied : https://github...)
+-Add extras flags and display them in the mediaflagsvideo in windowmovie (require Pr_4482 to be applied : https://github.com/xbmc/xbmc/pull/4482/
 -Add a 3D flag icon on media flag list
 -Add pcm_16le flag (some lpcm 7.1 mkv use this)
 -Add H265/HEVC flags (works only with fernetmenta fork)
@@ -19,7 +19,9 @@ TODO :
 -Correct the offset of the mediaflags position iwn the VideoFullscreen and in the different View_xxx
 -Xml dialog for videosextras
 -test de banner size bug fix above with tvshow long list and no banner mode ...
-
+-check extras for tvshows
+-correct display issue with plot on musicvideo pvr and tvshows
+-in fanart view add rating genre and year
 
 ---------------------------------------------------------------------------------------
 
