@@ -52,7 +52,8 @@
 			<posx>557</posx>
 			<posy>138</posy>
 			<width>20</width>
-			<height>444</height>
+			<include condition="!Skin.HasSetting(FanartShowPlot)">ScrollbarFanartNormalHeight</include>
+			<include condition="Skin.HasSetting(FanartShowPlot)">ScrollbarFanartNormalHeightPlot</include>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
@@ -1460,8 +1461,22 @@
 	</include>
 	<include name="FanartNormal">
 		<posy>142</posy>
+		<include condition="!Skin.HasSetting(FanartShowPlot)">FanartNormalHeight</include>
+		<include condition="Skin.HasSetting(FanartShowPlot)">FanartNormalHeightPlot</include>
+	</include>
+	<include name="FanartNormalHeight">
 		<height>436</height>
 	</include>
+	<include name="FanartNormalHeightPlot">
+		<height>290</height>
+	</include>
+	<include name="ScrollbarFanartNormalHeight">
+		<height>444</height>
+	</include>
+	<include name="ScrollbarFanartNormalHeightPlot">
+		<height>310</height>
+	</include>
+
 	<include name="FanartShort">
 		<posy>142</posy>
 		<height>291</height>
