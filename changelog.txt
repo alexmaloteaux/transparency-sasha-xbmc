@@ -9,7 +9,6 @@ Custom changes added by sasha :
 -Add a 3D flag icon on media flag list
 -Add pcm_16le flag (some lpcm 7.1 mkv use this)
 -Add H265/HEVC flags (works only with fernetmenta fork)
--Correct a small bug in view-fanarts : List size height should not changed based on Fanart_Show_Banners options when not in TVshow content
 -Different plot position for View/Fanart Movie
 
 
@@ -18,10 +17,11 @@ TODO :
 -Adapt MediaFlagsVideoFullScreen with animations instead of double icon too
 -Correct the offset of the mediaflags position iwn the VideoFullscreen and in the different View_xxx
 -Xml dialog for videosextras
--test de banner size bug fix above with tvshow long list and no banner mode ...
 -check extras for tvshows
 -correct display issue with plot on musicvideo pvr and tvshows
--in fanart view add rating genre and year
+-in fanart view add rating genre and year for tv shows
+-music playlist
+-add disable extra button
 
 ---------------------------------------------------------------------------------------
 

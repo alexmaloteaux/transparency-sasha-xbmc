@@ -2,7 +2,6 @@
 <includes>
 	<include name="Fanart-Videos">
 		<control type="list" id="50">
-			<onitemchanged condition="[Container.Content(Movies) | Container.Content(TVShows)] + !Skin.HasSetting(DisableVideoExtras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onitemchanged>
 			<posx>200</posx>
 			<width>355</width>
 			<onleft>7005</onleft>
@@ -13,15 +12,12 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<include condition="![Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)] + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
-			<include condition="![Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartShort)">FanartShort</include>
-			<include condition="![Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartLong)">FanartLong</include>
-			<include condition="[Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)] + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormalBanners</include>
-			<include condition="[Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartShort)">FanartShortBanners</include>
-			<include condition="[Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartLong)">FanartLongBanners</include>
-			<include condition="[Container.Content(TVShows) + !Skin.HasSetting(Fanart_Show_Banners)] + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
-			<include condition="[Container.Content(TVShows) + !Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartShort)">FanartShort</include>
-			<include condition="[Container.Content(TVShows) + !Skin.HasSetting(Fanart_Show_Banners)] + Skin.HasSetting(FanartLong)">FanartLong</include>
+			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
+			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartShort)">FanartShort</include>
+			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLong</include>
+			<include condition="Skin.HasSetting(Fanart_Show_Banners) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormalBanners</include>
+			<include condition="Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartShort)">FanartShortBanners</include>
+			<include condition="Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLongBanners</include>
 			<itemlayout width="355" height="29" condition="![Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)]">
 				<control type="image">
 					<posx>0</posx>
@@ -356,30 +352,18 @@
 				<visible>IsEmpty(ListItem.Title) + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="group">
+				<visible>!Skin.HasSetting(FanartShowPlot)</visible>
 				<control type="label">
 					<posx>257</posx>
 					<posy>593</posy>
-					<width>500</width>
+					<width>610</width>
 					<height>30</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]</label>
-				</control>
-				<control type="label">
-					<posx>330</posx>
-					<posy>593</posy>
-					<width>430</width>
-					<scroll>true</scroll>
-					<height>30</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Genre]</label>
+					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
 					<posx>257</posx>
@@ -432,20 +416,12 @@
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(FanartShowPlot)</visible>
-                       		<control type="image">
-                               		<posx>875</posx>
-                               		<posy>550</posy>
-                               		<width>405</width>
-                               		<height>158</height>
-                               		<texture border="10">underlay.png</texture>
-                               		<visible>!IsEmpty(ListItem.FileName)</visible>
-                       		</control>
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
-					<posx>900</posx>
-					<posy>560</posy>
-					<width>368</width>
-					<height>130</height>
+					<posx>257</posx>
+					<posy>595</posy>
+					<width>490</width>
+					<height>62</height>
 					<font>font-19</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -471,8 +447,8 @@
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<animation effect="slide" end="-401,0" time="0" condition="Skin.HasSetting(FanartLong)">Conditional</animation>
 			<control type="button" id="7005">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<posx>1222</posx>
+				<posy>14</posy>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -543,6 +519,15 @@
 				<texture>movieset.png</texture>
 				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!stringcompare(ListItem.Label,..) + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + SubString(Container.Folderpath,videodb://,left)</visible>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<posy>378</posy>
+				<width>33</width>
+				<height>12</height>
+				<texture>3d-logo.png</texture>
+				<animation effect="slide" end="0,-40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<visible>ListItem.IsStereoScopic</visible>
 			</control>
 		</control>
 		<control type="group">

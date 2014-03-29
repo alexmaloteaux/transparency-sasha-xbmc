@@ -4,6 +4,7 @@
 	<include file="Includes_Variables.xml"/>
 	<include file="View-CoverFlow.xml"/>
 	<include file="View-Fanart.xml"/>
+	<include file="View-Fanart2.xml"/>
 	<include file="View-FullList.xml"/>
 	<include file="View-Icons.xml"/>
 	<include file="View-Item.xml"/>
@@ -52,8 +53,7 @@
 			<posx>557</posx>
 			<posy>138</posy>
 			<width>20</width>
-			<include condition="!Skin.HasSetting(FanartShowPlot)">ScrollbarFanartNormalHeight</include>
-			<include condition="Skin.HasSetting(FanartShowPlot)">ScrollbarFanartNormalHeightPlot</include>
+			<height>444</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
 			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
@@ -96,6 +96,54 @@
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<visible>!Window.IsVisible(PVR) + Control.IsVisible(50) + Skin.HasSetting(FanartLong)</visible>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>557</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>310</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>!Window.IsVisible(PVR) + Control.IsVisible(69) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)</visible>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>557</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>298</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>!Window.IsVisible(PVR) + Control.IsVisible(69) + Skin.HasSetting(FanartShort)</visible>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>557</posx>
+			<posy>138</posy>
+			<width>20</width>
+			<height>675</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>!Window.IsVisible(PVR) + Control.IsVisible(69) + Skin.HasSetting(FanartLong)</visible>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>675</posx>
@@ -1461,22 +1509,12 @@
 	</include>
 	<include name="FanartNormal">
 		<posy>142</posy>
-		<include condition="!Skin.HasSetting(FanartShowPlot)">FanartNormalHeight</include>
-		<include condition="Skin.HasSetting(FanartShowPlot)">FanartNormalHeightPlot</include>
-	</include>
-	<include name="FanartNormalHeight">
 		<height>436</height>
 	</include>
-	<include name="FanartNormalHeightPlot">
+	<include name="FanartNormal2">
+		<posy>142</posy>
 		<height>290</height>
 	</include>
-	<include name="ScrollbarFanartNormalHeight">
-		<height>444</height>
-	</include>
-	<include name="ScrollbarFanartNormalHeightPlot">
-		<height>310</height>
-	</include>
-
 	<include name="FanartShort">
 		<posy>142</posy>
 		<height>291</height>
