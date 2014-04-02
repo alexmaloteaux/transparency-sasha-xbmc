@@ -2,6 +2,7 @@
 <includes>
 	<include name="Thumbnail">
 		<control type="panel" id="53">
+			<onitemchanged condition="[Container.Content(Movies) | Container.Content(TVShows)] + !Skin.HasSetting(DisableVideoExtras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onitemchanged>
 			<posx>177</posx>
 			<posy>114</posy>
 			<width>906</width>
