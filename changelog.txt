@@ -6,22 +6,17 @@ Custom changes added by sasha :
 -Allow the user to customize Menu Names
 -Add VideoExtras Button in DialogVideoInfo
 -Add extras flags and display them in the mediaflagsvideo in windowmovie (require Pr_4482 to be applied : https://github.com/xbmc/xbmc/pull/4482/
--Add a 3D flag icon on media flag list
+-Add a 3D flag icon on media flag list for movies
 -Add pcm_16le flag (some lpcm 7.1 mkv use this)
 -Add H265/HEVC flags (works only with fernetmenta fork)
--Different plot position for View/Fanart Movie
-
+-Add a new Fanart2 View with different plot movie position
 
 TODO : 
 
 -Adapt MediaFlagsVideoFullScreen with animations instead of double icon too
 -Correct the offset of the mediaflags position iwn the VideoFullscreen and in the different View_xxx
 -Xml dialog for videosextras
--check extras for tvshows
--finish fanart2
 -in fanart view add rating genre and year for tv shows
--add disable extra button
-
 
 ---------------------------------------------------------------------------------------
 
