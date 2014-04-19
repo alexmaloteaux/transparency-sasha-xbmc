@@ -83,7 +83,7 @@
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="flags/movies/Extras/noextras.png">$VAR[IncludesMediaFlagsExtras]</texture>
-			<visible>!Skin.HasSetting(DisableVideoExtras) + Skin.HasSetting(Enable_Extras_Flags)</visible>
+			<visible>!Skin.HasSetting(DisableVideoExtras) + Skin.HasSetting(Enable_Extras_Flags) + !Window.IsVisible(movieinformation) </visible>
 		</control>
 		<control type="image">
 			<animation effect="slide" start="0,0" end="62,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
