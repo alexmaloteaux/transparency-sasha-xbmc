@@ -363,6 +363,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
 					<label>[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]</label>
 				</control>
 				<control type="label">
