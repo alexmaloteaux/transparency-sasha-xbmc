@@ -14,8 +14,8 @@
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal2</include>
-			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartShort)">FanartShort</include>
-			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLong</include>
+			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartShort)">FanartShort2</include>
+			<include condition="!Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLong2</include>
 			<include condition="Skin.HasSetting(Fanart_Show_Banners) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormalBanners</include>
 			<include condition="Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartShort)">FanartShortBanners</include>
 			<include condition="Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLongBanners</include>
