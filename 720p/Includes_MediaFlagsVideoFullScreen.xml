@@ -23,7 +23,15 @@
 			<texture fallback="mediaflag-videocodec.png">flags/movies/videocodec/$INFO[VideoPlayer.VideoCodec,,.png]</texture>
 		</control>
 		<control type="image">
-			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<visible>Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]</visible>
+			<posx>150</posx>
+			<posy>0</posy>
+			<width>53</width>
+			<height>40</height>
+			<texture fallback="mediaflag-videocodec.png">$VAR[IncludesMediaFlagsVideoDimension]</texture>
+		</control>
+		<control type="image">
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]">Conditional</animation>
 			<posx>150</posx>
 			<posy>0</posy>
 			<width>53</width>
@@ -32,14 +40,7 @@
 		</control>
 		<control type="image">
 			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
-			<posx>150</posx>
-			<posy>0</posy>
-			<width>53</width>
-			<height>40</height>
-			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoFullScreenAudioCodec2]</texture>
-		</control>
-		<control type="image">
-			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]">Conditional</animation>
 			<posx>200</posx>
 			<posy>0</posy>
 			<width>53</width>
@@ -47,7 +48,8 @@
 			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoFullScreenChannels]</texture>
 		</control>
 		<control type="image">
-			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]">Conditional</animation>
 			<posx>200</posx>
 			<posy>0</posy>
 			<width>53</width>
@@ -55,15 +57,19 @@
 			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoFullScreenRating]</texture>
 		</control>
 		<control type="image">
-			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]">Conditional</animation>
 			<posx>250</posx>
 			<posy>0</posy>
 			<width>53</width>
 			<height>40</height>
-			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoFullScreenRating]</texture>
+			<texture fallback="flags/movies/Extras/noextras.png">$VAR[IncludesMediaFlagsFullscreenExtras]</texture>
+			<visible>!Skin.HasSetting(DisableVideoExtras) + Skin.HasSetting(Enable_Extras_Flags) + !Window.IsVisible(movieinformation)</visible>
 		</control>
 		<control type="image">
-			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="!Skin.HasSetting(DisableVideoExtras) + Skin.HasSetting(Enable_Extras_Flags) + !Window.IsVisible(movieinformation)">Conditional</animation>
 			<posx>250</posx>
 			<posy>0</posy>
 			<width>53</width>
@@ -71,24 +77,10 @@
 			<texture>mediaflag.png</texture>
 		</control>
 		<control type="image">
-			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
-			<posx>300</posx>
-			<posy>0</posy>
-			<width>53</width>
-			<height>40</height>
-			<texture>mediaflag.png</texture>
-		</control>
-		<control type="image">
-			<visible>!Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Codec_Channel_Flags)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(Enable_Dimension_Flags) + [!Container.Content(Musicvideos) + Control.IsVisible(69)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="50,0" time="0" condition="!Skin.HasSetting(DisableVideoExtras) + Skin.HasSetting(Enable_Extras_Flags) + !Window.IsVisible(movieinformation)">Conditional</animation>
 			<posx>255</posx>
-			<posy>5</posy>
-			<width>43</width>
-			<height>30</height>
-			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoFullScreenStudio]</texture>
-		</control>
-		<control type="image">
-			<visible>Skin.HasSetting(Enable_Codec_Channel_Flags)</visible>
-			<posx>305</posx>
 			<posy>5</posy>
 			<width>43</width>
 			<height>30</height>

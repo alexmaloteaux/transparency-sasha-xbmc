@@ -431,6 +431,10 @@
 		<value condition="IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))">flags/movies/Extras/extras.png</value>
 		<value condition="!IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))">flags/movies/Extras/noextras.png</value>
 	</variable>
+	<variable name="IncludesMediaFlagsFullscreenExtras">
+		<value condition="IsEmpty(Window(fullscreeninfo).Property(HideVideoExtrasButton))">flags/movies/Extras/extras.png</value>
+		<value condition="!IsEmpty(Window(fullscreeninfo).Property(HideVideoExtrasButton))">flags/movies/Extras/noextras.png</value>
+	</variable>
 	<variable name="IncludesMediaFlagsVideoFullScreenAudioCodec">
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1)">flags/movies/audiocodec/dd10.png</value>
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,2)">flags/movies/audiocodec/dd20.png</value>
@@ -457,13 +461,6 @@
 		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,6)">flags/movies/audiocodec/dtsma51.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,7)">flags/movies/audiocodec/dtsma61.png</value>
 		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_ma) + stringcompare(VideoPlayer.AudioChannels,8)">flags/movies/audiocodec/dtsma71.png</value>
-		<value>flags/movies/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</value>
-	</variable>
-	<variable name="IncludesMediaFlagsVideoFullScreenAudioCodec2">
-		<value condition="stringcompare(VideoPlayer.AudioCodec,ac3)">flags/movies/audiocodec/dd.png</value>
-		<value condition="stringcompare(VideoPlayer.AudioCodec,dca)">flags/movies/audiocodec/dts.png</value>
-		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_hra)">flags/movies/audiocodec/dtshra.png</value>
-		<value condition="stringcompare(VideoPlayer.AudioCodec,dtshd_ma)">flags/movies/audiocodec/dtsma.png</value>
 		<value>flags/movies/audiocodec/$INFO[VideoPlayer.AudioCodec,,.png]</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoFullScreenChannels">

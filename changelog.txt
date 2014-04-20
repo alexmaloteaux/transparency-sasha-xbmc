@@ -11,13 +11,17 @@ Custom changes added by sasha :
 -Add H265/HEVC flags (works only with fernetmenta fork)
 -Add a new Fanart2 View with different plot movie position
 
+
 TODO : 
 
--Adapt MediaFlagsVideoFullScreen with animations instead of double icon too
 -Correct the offset of the mediaflags position iwn the VideoFullscreen and in the different View_xxx
 -Xml dialog for videosextras
 -in fanart view add rating genre and year for tv shows
 -add xbmc logo in fanart 2
+-add dbid extras cache method
+
+
+adapt videoinfo : check if file exists / extract core function for videosservice / lllow set property on fullscreenvideo
 ---------------------------------------------------------------------------------------
 
 Transparency! v6.0.6
