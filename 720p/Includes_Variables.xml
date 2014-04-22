@@ -432,8 +432,8 @@
 		<value condition="!IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))">flags/movies/Extras/noextras.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsFullscreenExtras">
-		<value condition="IsEmpty(Window(fullscreeninfo).Property(HideVideoExtrasButton))">flags/movies/Extras/extras.png</value>
-		<value condition="!IsEmpty(Window(fullscreeninfo).Property(HideVideoExtrasButton))">flags/movies/Extras/noextras.png</value>
+		<value condition="IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))">flags/movies/Extras/extras.png</value>
+		<value condition="!IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))">flags/movies/Extras/noextras.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoFullScreenAudioCodec">
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1) + !Skin.HasSetting(Enable_Codec_Channel_Flags)">flags/movies/audiocodec/dd10.png</value>
