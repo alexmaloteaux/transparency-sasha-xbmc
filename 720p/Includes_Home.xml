@@ -2858,6 +2858,7 @@
 			<visible>Container(5040).HasFocus(1)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Videos Sub Custom1</description>
@@ -2913,15 +2914,16 @@
 	<include name="HomeSubMovies">
 		<control type="fixedlist" id="8001">
 			<visible>Container(5040).HasFocus(2)</visible>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 			<content>
-                                <item id="8002">
-                                        <description>Menu Movies Sub Files</description>
-                                        <label>$LOCALIZE[744]</label>
-                                        <onclick>ActivateWindow(Videos,Files)</onclick>
-                                        <visible>!Skin.HasSetting(Menu_Movies_Sub_Files)</visible>
-                                </item>
+               <item id="8002">
+					<description>Menu Movies Sub Files</description>
+					<label>$LOCALIZE[744]</label>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
+                    <visible>!Skin.HasSetting(Menu_Movies_Sub_Files)</visible>
+                </item>
 				<item id="8103">
 					<description>Menu Movies Sub Library</description>
 					<label>$LOCALIZE[14022]</label>
@@ -3076,6 +3078,7 @@
 			<visible>Container(5040).HasFocus(3)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu TVShows Sub TVGuide</description>
@@ -3175,6 +3178,7 @@
 			<visible>Container(5040).HasFocus(4)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu MusicVideos Sub Genres</description>
@@ -3280,6 +3284,7 @@
 			<visible>Container(5040).HasFocus(5)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu TV Sub Custom1</description>
@@ -3307,6 +3312,7 @@
 			<visible>Container(5040).HasFocus(6)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Music Sub Files</description>
@@ -3454,6 +3460,7 @@
 			<visible>Container(5040).HasFocus(7)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Pictures Sub PicturePlugins</description>
@@ -3547,6 +3554,7 @@
 			<visible>Container(5040).HasFocus(8)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Programs Sub Files</description>
@@ -3694,6 +3702,7 @@
 			<visible>Container(5040).HasFocus(10)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Weather Sub Custom1</description>
@@ -3739,6 +3748,7 @@
 			<visible>Container(5040).HasFocus(11)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Favourites Sub Custom1</description>
@@ -3778,6 +3788,7 @@
 			<visible>Container(5040).HasFocus(12)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Settings Sub Skin Settings</description>
@@ -3883,6 +3894,7 @@
 			<visible>Container(5040).HasFocus(13)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu PlayDisc Sub Player Controls</description>
@@ -3934,6 +3946,7 @@
 			<visible>Container(5040).HasFocus(14)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Custom1 Sub Custom1</description>
@@ -4003,6 +4016,7 @@
 			<visible>Container(5040).HasFocus(15)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Custom2 Sub Custom1</description>
@@ -4072,6 +4086,7 @@
 			<visible>Container(5040).HasFocus(16)</visible>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<content>
 				<item id="8102">
 					<description>Menu Custom3 Sub Custom1</description>
@@ -4162,6 +4177,7 @@
 			<texture border="30,0,30,0">submenu-hor.png</texture>
 			<animation effect="zoom" start="115,601,1050,1" end="115,566,1050,35" time="200">Visible</animation>
 			<animation effect="zoom" start="115,566,1050,35" end="115,601,1050,1" time="200">Hidden</animation>
+			<animation effect="slide" start="0,0" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>ControlGroup(8000).HasFocus</visible>
 		</control>
 	</include>
